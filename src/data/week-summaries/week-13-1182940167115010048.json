@@ -1,0 +1,46 @@
+{
+  "week": 13,
+  "season": "2025",
+  "leagueId": "1182940167115010048",
+  "persona": "Dan Patrick",
+  "summary": "You know, they say timing is everything in sports, and this week in fantasy football? Let's just say some of you folks had the timing of a sundial in a coal mine. We had blowouts that would make the '85 Bears blush, and performances so cold they could keep your Thanksgiving leftovers fresh.\n\nLet's start with the game of the week – and I use that term loosely – cosmohouck absolutely *dismantling* Langland, 129.8 to 42.02. That's an 87.78-point beatdown that felt less like a competition and more like a public service announcement about what not to do. Bijan Robinson put up 27.8 points, Drake Maye added 20.5, and they were EN FUEGO. Meanwhile, Langland trotted out Chimere Dike, who scored negative points – which takes a special kind of talent – and Isaiah Williams with a goose egg. You can't stop Bijan Robinson, you can only hope to contain him... and Langland couldn't even hope. But here's the thing: mastab24 is the team we should really be watching. They just dropped 157.74 points – the highest score of the week – behind A.J. Brown's 30.2 and Rashee Rice's 25.4. That's a two-week hot streak that's got them looking like the '98 Broncos heading into the playoffs. They're trending up while everyone else is trending toward the unemployment line.\n\nSpeaking of trending the wrong direction, can we talk about the civil war happening in Detroit? drobs started Jameson Williams, who torched the field for 23.4 points, while Tishathefish benched him and had to watch Amon-Ra St. Brown lay an absolute egg – zero points. Nothing. Nada. Zilch. That's like choosing between Beatles and Stones and picking the guy who can't play guitar. Patrick Mahomes dropped 29.4 for drobs in that 130-point explosion, and powerperson never had a chance with Trevor Etienne's 0.9 points. At some point, you've got to wonder if Trevor Etienne actually played or if he just stood on the sideline eating nachos.\n\nNow, Tishathefish had the worst week for lineup decisions that I've seen since someone thought it was a good idea to let me host a game show. The data shows multiple benching disasters, and when you're sitting guys who could've helped while starting Amon-Ra for zero and Pat Freiermuth for zero, that's not bad luck – that's a cry for help. Meanwhile, tr4sh somehow won with Justin Jefferson scoring 1.4 points and Aaron Jones adding 2.5. That's like winning a spelling bee while having laryngitis. Tyrod Taylor with 21.3 points saved that bacon, but that three-week cold streak? It's got more chill than a penguin's wine cellar.\n\nHere's my bold prediction for next week: mastab24 is going to score 160-plus and absolutely obliterate whoever has the misfortune of facing them. They're trending up, they're on a two-week hot streak, and A.J. Brown and Rashee Rice just reminded everyone that you don't bring a knife to a gunfight. As for the rest of you? Well, half the league is trending down like my golf scores after lunch, and if you're Langland averaging 45.8 points recently, you might want to check if your roster is actually filled with guys who play football. This week reminded me of something my dad used to say: \"Some days you're the windshield, some days you're the bug.\" And folks, about half of you were bugs getting scraped off a Mack truck doing ninety.",
+  "generatedAt": "2025-12-03T10:08:47.330Z",
+  "matchupScores": [
+    {
+      "team1": "drobs",
+      "team1Score": 130.38,
+      "team2": "powerperson",
+      "team2Score": 56.44
+    },
+    {
+      "team1": "Langland",
+      "team1Score": 42.02,
+      "team2": "cosmohouck",
+      "team2Score": 129.8
+    },
+    {
+      "team1": "PrinceofPizza",
+      "team1Score": 132.78,
+      "team2": "mjgrana",
+      "team2Score": 118
+    },
+    {
+      "team1": "Seananigans",
+      "team1Score": 92.78,
+      "team2": "TophTT",
+      "team2Score": 78.2
+    },
+    {
+      "team1": "Shogunation",
+      "team1Score": 133.26,
+      "team2": "mastab24",
+      "team2Score": 157.74
+    },
+    {
+      "team1": "tr4sh",
+      "team1Score": 66.66,
+      "team2": "Tishathefish",
+      "team2Score": 47.28
+    }
+  ]
+}
