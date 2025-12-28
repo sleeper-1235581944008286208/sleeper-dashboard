@@ -1,0 +1,160 @@
+{
+  "tradeId": "7c636ab335aff965",
+  "week": 11,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "finthefiddle",
+    "stephen375"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 1458,
+        "valueLost": 3240,
+        "netValueChange": -1782,
+        "estimatedPowerScoreChange": -1.5,
+        "playersGained": [
+          {
+            "name": "Alec Pierce",
+            "value": 1458
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Dontayvion Wicks",
+            "value": 103
+          },
+          {
+            "name": "Bhayshul Tuten",
+            "value": 1203
+          },
+          {
+            "name": "Harold Fannin",
+            "value": 1934
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Alec Pierce",
+          "position": "WR",
+          "team": "IND",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Dontayvion Wicks",
+          "position": "WR",
+          "team": "GB",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "team": "JAX",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Harold Fannin",
+          "position": "TE",
+          "team": "CLE",
+          "age": 21,
+          "careerStage": "Developing"
+        }
+      ]
+    },
+    {
+      "teamName": "stephen375",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 27.3,
+        "powerRank": 16,
+        "lineupValueScore": 28.4,
+        "performanceScore": 23.4,
+        "positionalScore": 37.4,
+        "depthScore": 9.7,
+        "totalTeams": 16,
+        "totalRosterValue": 17055
+      },
+      "tradeImpact": {
+        "valueGained": 3240,
+        "valueLost": 1458,
+        "netValueChange": 1782,
+        "estimatedPowerScoreChange": 1.5,
+        "playersGained": [
+          {
+            "name": "Dontayvion Wicks",
+            "value": 103
+          },
+          {
+            "name": "Bhayshul Tuten",
+            "value": 1203
+          },
+          {
+            "name": "Harold Fannin",
+            "value": 1934
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Alec Pierce",
+            "value": 1458
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Dontayvion Wicks",
+          "position": "WR",
+          "team": "GB",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "team": "JAX",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Harold Fannin",
+          "position": "TE",
+          "team": "CLE",
+          "age": 21,
+          "careerStage": "Developing"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Alec Pierce",
+          "position": "WR",
+          "team": "IND",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Gary Neville",
+  "analysis": "Look, on the surface, this is a classic case of a win-now team making what they *think* is a shrewd move to consolidate depth into a single starter. But I've got to be honest—finthefiddle has absolutely bottled this one. They're top of the league, power score of 92, everything's clicking, and they've just given away a 21-year-old tight end who's gone from 7.8 to 13 points per game. Harold Fannin is the exact type of asset you don't trade when you're rebuilding, let alone when you're competing. Tight ends at that age with elite premium value? They're gold dust. You simply don't find them.\n\nHere's where context matters—this is where the trade swings completely. Yes, Alec Pierce has improved post-trade, up 2.6 points per game, and finthefiddle probably looked at their depth chart and thought \"we're strong at wide receiver, we can afford to move some pieces.\" But they've given up three players, including Fannin who's outperforming everyone in this deal, and Tuten who still has RB scarcity value despite his recent downturn. For what? A marginal upgrade at a deep position? It's poor squad management from a team that should know better. Stephen375, sitting dead last at 27.3 power score, has absolutely done the business here. They've acquired youth, scarcity at premium positions, and a tight end who could be a cornerstone piece for the next five years.\n\nThis reminds me of the Herschel Walker trade in reverse—not in scale, but in philosophy. The contender gave up multiple pieces for one established name, but unlike the Cowboys getting Walker, finthefiddle hasn't landed a game-changing superstar. They've essentially done what Minnesota did: mortgaged assets without getting proper return. **Winner: stephen375, and it's not particularly close.** The rebuilding side has fleeced the league leader, which tells you everything about how value was assessed here.\n\n**My bold prediction?** In two years' time, we'll look back at this as the moment stephen375's rebuild truly began. Harold Fannin will be a top-five dynasty tight end averaging 12-15 points per game, and finthefiddle will be wondering how they let a 21-year-old premium asset slip through their fingers for Alec Pierce. Sometimes the best trades aren't about winning now—they're about not losing your future. This trade fails that test spectacularly.",
+  "generatedAt": "2025-12-28T22:27:49.110Z"
+}

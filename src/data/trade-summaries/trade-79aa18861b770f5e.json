@@ -1,0 +1,96 @@
+{
+  "tradeId": "79aa18861b770f5e",
+  "week": 10,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "finthefiddle",
+    "raaaaaidddderrrrrs"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Alexander Mattison",
+          "position": "RB",
+          "team": "MIA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Elijah Moore",
+          "position": "WR",
+          "team": "DEN",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "raaaaaidddderrrrrs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 34,
+        "powerRank": 12,
+        "lineupValueScore": 23.1,
+        "performanceScore": 59.6,
+        "positionalScore": 29.1,
+        "depthScore": 4.4,
+        "totalTeams": 16,
+        "totalRosterValue": 13895
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Elijah Moore",
+          "position": "WR",
+          "team": "DEN",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Alexander Mattison",
+          "position": "RB",
+          "team": "MIA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "**\"The Desperate Swap: When Two Managers Get It Completely Wrong\"**\n\nAbsolute shambles, this trade. Two managers looking at each other across the table, neither one having a clue what they're doing. \"Finthefiddle\" – let's call him \"The Panic Buyer\" – sitting pretty at #1 with a power score of 92, and he's trading for Alexander Mattison? In week 10? Have a word with yourself. You're top of the league, you've got the best lineup value in the competition, and you're chasing a Miami running back who's averaging 7.2 points per game. That's not ambition, that's desperation dressed up as strategy. And the numbers don't lie – Mattison goes on to score 4.0 PPG after the trade. Four points! My grandmother could've told you that was coming. You gave up a young receiver entering his prime for a declining backup. Criminal decision-making.\n\nAnd then there's \"raaaaaidddderrrrrs\" – we'll call him \"The Yard Sale Manager\" – sitting down at #12 with a pathetic power score of 34, and he's giving away the one position that actually matters. Running backs are scarce, everyone knows this, it's fundamental fantasy football. But no, he'd rather have Elijah Moore, who promptly goes out and proves him right with 8.8 PPG. Fair play to Moore, he's done his job. But here's the thing – when you're #12 in the league with a depth score of 4.4, you can't afford to be clever. You need points NOW, not potential. Both managers thought they were being smart, thought they saw something the other didn't. Turns out they were both wrong about what they were getting, just in different ways.\n\n**The Rivalry Angle:** This is \"The Trade That Haunts Two Leagues.\" Mark my words – in two years' time, both these managers will be lying awake at night thinking about this disaster. Finthefiddle will have lost a championship because he weakened his depth for nothing, while Raaaaaidddderrrrrs will still be scraping around in 12th place wondering why he can't find a decent running back. They'll see each other at the draft table, and there'll be that awkward silence. That moment where they both know they got played – not by each other, but by their own arrogance. \n\n**The Bold Prediction:** In two years, Elijah Moore will be a WR2 on a contending NFL team, and Alexander Mattison will be fighting for a roster spot as a third-string back. Both managers will have moved on from fantasy football entirely, too embarrassed to show their faces after this absolute masterclass in how NOT to evaluate talent. The league will still be talking about it. \"Remember that Mattison-Moore trade?\" they'll say, shaking their heads. That's your legacy, lads. Congratulations.",
+  "generatedAt": "2025-12-28T22:35:12.074Z"
+}

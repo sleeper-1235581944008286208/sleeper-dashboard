@@ -1,0 +1,116 @@
+{
+  "tradeId": "f0ad90df43e14ad5",
+  "week": 11,
+  "season": "2023",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "finthefiddle",
+    "stephen375"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 177,
+        "valueLost": 156,
+        "netValueChange": 21,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [
+          {
+            "name": "Dalton Schultz",
+            "value": 177
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Brian Robinson",
+            "value": 156
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "team": "HOU",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Brian Robinson",
+          "position": "RB",
+          "team": "SF",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "stephen375",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 27.3,
+        "powerRank": 16,
+        "lineupValueScore": 28.4,
+        "performanceScore": 23.4,
+        "positionalScore": 37.4,
+        "depthScore": 9.7,
+        "totalTeams": 16,
+        "totalRosterValue": 17055
+      },
+      "tradeImpact": {
+        "valueGained": 156,
+        "valueLost": 177,
+        "netValueChange": -21,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [
+          {
+            "name": "Brian Robinson",
+            "value": 156
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Dalton Schultz",
+            "value": 177
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Brian Robinson",
+          "position": "RB",
+          "team": "SF",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "team": "HOU",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Gary Lineker",
+  "analysis": "I have to say, there's something rather peculiar about this trade, isn't there? Here we have finthefiddle, sitting pretty at the top of the table with a Power Score of 92, essentially swapping a productive running back for a tight end in what looks like a classic \"win-now\" move. The logic seems sound on paper – they're addressing what the metrics suggest is a positional need, trading from a position of strength. But here's the rub: Brian Robinson was averaging 13.5 points per game at the time, whilst Dalton Schultz was putting up just 8.4. It's a bit like trading a reliable midfielder for a goalkeeper when you're already winning matches, isn't it? Sometimes the numbers don't tell the whole story about what you actually need.\n\nWhat's particularly striking about this deal is how it mirrors the sort of moves we used to see in the NFL when teams would panic-trade for a big name without considering the trajectory. It reminds me a bit of the Trent Richardson trade back in 2013 – the Browns sent a productive back to Indianapolis for what seemed like value, and neither side really came out ahead. The post-trade numbers here are absolutely brutal for both players: Robinson dropped to 6.0 PPG and Schultz fell to 6.3 PPG. Both managers thought they were being clever, but as it turns out, they were essentially rearranging deck chairs on the Titanic. The value metrics suggested finthefiddle gained 21 points in the exchange, but football isn't played on spreadsheets, is it?\n\nThe timing of this trade in Week 11 is crucial context – we're deep into the season, playoffs are looming, and finthefiddle is making a move they believe pushes them over the top. Meanwhile, stephen375, dead last in the Power Score rankings at 27.3, is clearly playing for next year. It's a sensible strategy for a rebuilding side to swap a tight end for a younger running back with more long-term appeal. The tragedy, really, is that neither player maintained their form after the swap. Sometimes in fantasy football, as in life, the best trades are the ones you don't make. Both managers will look back at this one and wonder if they'd have been better off standing pat – a draw that felt like a loss for everyone involved.",
+  "generatedAt": "2025-12-28T22:39:43.603Z"
+}

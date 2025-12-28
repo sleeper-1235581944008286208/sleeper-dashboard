@@ -1,0 +1,96 @@
+{
+  "tradeId": "e2502f5f379d4f2a",
+  "week": 6,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "finthefiddle",
+    "stephen375"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Austin Ekeler",
+          "position": "RB",
+          "team": "WAS",
+          "age": 30,
+          "careerStage": "Declining"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Calvin Ridley",
+          "position": "WR",
+          "team": "TEN",
+          "age": 31,
+          "careerStage": "Declining"
+        }
+      ]
+    },
+    {
+      "teamName": "stephen375",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 27.3,
+        "powerRank": 16,
+        "lineupValueScore": 28.4,
+        "performanceScore": 23.4,
+        "positionalScore": 37.4,
+        "depthScore": 9.7,
+        "totalTeams": 16,
+        "totalRosterValue": 17055
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Calvin Ridley",
+          "position": "WR",
+          "team": "TEN",
+          "age": 31,
+          "careerStage": "Declining"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Austin Ekeler",
+          "position": "RB",
+          "team": "WAS",
+          "age": 30,
+          "careerStage": "Declining"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Jamie Carragher",
+  "analysis": "Listen, if you look at the value exchange here, this is absolutely BAFFLING from both sides because nobody's won! It's like watching two teams agree to a straight swap of declining defenders – you're both getting older, you're both getting slower, and neither of you has improved your squad!\n\nFinthefiddle, you're top of the league, 92 power score, you're in WIN-NOW mode, and you've traded a wide receiver averaging 8.9 points for a running back averaging 8.8 points. But here's the thing – and this is CRUCIAL – running back scarcity matters! You're thinking tactically about positional value, which I respect. It's like when the Broncos traded for Russell Wilson – you're mortgaging present assets to fill an immediate need. The problem is, Ekeler's dropped to 5.8 PPG after the trade! That's a THREE-POINT decline! You've essentially brought in a declining asset who's given you LESS production than what you gave away. Meanwhile, Ridley's only dropped 1.2 PPG – he's been the more consistent performer! The tactical logic was sound, but the execution's been an absolute DISASTER.\n\nAnd Stephen375, what are you doing here, mate? You're DEAD LAST in the league with a 27.3 power score, you're rebuilding for the future, and you've acquired a 31-year-old receiver in his declining phase? This isn't rebuilding, this is rearranging deck chairs on the Titanic! If you're future-focused, you need draft picks, you need young assets with upside. Instead, you've swapped one aging veteran for another aging veteran. It's like the Browns trading for Deshaun Watson but somehow WORSE because at least they thought they were getting an elite talent! Neither of these players moves the needle for your rebuild.\n\nHere's my bold prediction: In two years' time, BOTH these players are out of fantasy relevance entirely, and this trade goes down as one of those \"what were they thinking?\" moments. Ekeler will be 32, probably a backup or out of the league. Ridley will be 33, maybe hanging on as a WR3. Neither team gained ANY power score from this deal – ZERO! – and that tells you everything. This was a tactical wash that helped nobody. Absolutely criminal business from both sides.",
+  "generatedAt": "2025-12-28T22:32:40.783Z"
+}

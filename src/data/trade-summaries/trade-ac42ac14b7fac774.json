@@ -1,0 +1,130 @@
+{
+  "tradeId": "ac42ac14b7fac774",
+  "week": 3,
+  "season": "2023",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "mikeybhoy",
+    "jdmorris"
+  ],
+  "sides": [
+    {
+      "teamName": "jdmorris",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 34.5,
+        "powerRank": 10,
+        "lineupValueScore": 27.2,
+        "performanceScore": 51.3,
+        "positionalScore": 32.6,
+        "depthScore": 11.9,
+        "totalTeams": 16,
+        "totalRosterValue": 16362
+      },
+      "tradeImpact": {
+        "valueGained": 3969,
+        "valueLost": 162,
+        "netValueChange": 3807,
+        "estimatedPowerScoreChange": 3.2,
+        "playersGained": [
+          {
+            "name": "Josh Jacobs",
+            "value": 3969
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Darnell Mooney",
+            "value": 162
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "team": "GB",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Calvin Ridley",
+          "position": "WR",
+          "team": "TEN",
+          "age": 31,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Darnell Mooney",
+          "position": "WR",
+          "team": "ATL",
+          "age": 28,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "mikeybhoy",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 50.6,
+        "powerRank": 4,
+        "lineupValueScore": 45.4,
+        "performanceScore": 54.8,
+        "positionalScore": 62.2,
+        "depthScore": 42.1,
+        "totalTeams": 16,
+        "totalRosterValue": 27241
+      },
+      "tradeImpact": {
+        "valueGained": 162,
+        "valueLost": 3969,
+        "netValueChange": -3807,
+        "estimatedPowerScoreChange": -3.2,
+        "playersGained": [
+          {
+            "name": "Darnell Mooney",
+            "value": 162
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Josh Jacobs",
+            "value": 3969
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Calvin Ridley",
+          "position": "WR",
+          "team": "TEN",
+          "age": 31,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Darnell Mooney",
+          "position": "WR",
+          "team": "ATL",
+          "age": 28,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "team": "GB",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Simon Jordan",
+  "analysis": "Look, let me tell you something about this trade - we've got \"The Bargain Hunter\" jdmorris absolutely *fleecing* \"The Complacent Contender\" mikeybhoy in what can only be described as a masterclass in exploiting positional scarcity. And the numbers don't lie, do they? A net value swing of nearly 4,000 points? That's not a trade, that's a HEIST!\n\nHere's what infuriates me about mikeybhoy's position - you're sitting pretty at rank #4, you've got a power score of 50.6, and you decide to trade away a PRIME running back for what? Depth at wide receiver? The most replaceable position in fantasy football? Josh Jacobs goes on to average 13.9 points per game - that's a 5.6 point improvement - while you're collecting two receivers who DECLINE and barely move the needle respectively. Calvin Ridley at 31 years old drops from 9.9 to 8.3 PPG, and you're telling me that's worth surrendering the scarcity premium at running back? That's not strategy, that's negligence! You had LEVERAGE, you had POSITIONAL STRENGTH, and you capitulated like a man who doesn't understand the fundamental economics of fantasy football. Running backs win championships, and you've just handed one to a team ranked #10 who desperately needed exactly what you gave them.\n\nMeanwhile, jdmorris - The Bargain Hunter - executes this trade with the precision of a corporate raider identifying an undervalued asset. Three weeks into the season, Jacobs is averaging 8.3 PPG, everyone's panicking about his slow start, and jdmorris swoops in with two receivers that *feel* like value but are actually fool's gold. This is what separates the championship managers from the also-rans - the ability to see through short-term variance and identify long-term value. The 3.2 power score gain tells you everything you need to know about who won this negotiation.\n\nHere's my bold prediction: In two years, we'll look back at this trade as the exact moment mikeybhoy's dynasty window slammed shut while jdmorris built the foundation for sustained success. Jacobs will have delivered multiple RB1 seasons, and those two receivers? They'll be waiver wire fodder or depth pieces on rebuilding rosters. Mark my words - this is the trade that separated the pretenders from the contenders.",
+  "generatedAt": "2025-12-28T22:37:33.503Z"
+}

@@ -1,0 +1,160 @@
+{
+  "tradeId": "9de77fe35557c7d2",
+  "week": 6,
+  "season": "2023",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "finthefiddle",
+    "jdmorris"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 434,
+        "valueLost": 11407,
+        "netValueChange": -10973,
+        "estimatedPowerScoreChange": -9.1,
+        "playersGained": [
+          {
+            "name": "Aaron Jones",
+            "value": 404
+          },
+          {
+            "name": "Joshua Palmer",
+            "value": 30
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Jahmyr Gibbs",
+            "value": 9227
+          },
+          {
+            "name": "C.J. Stroud",
+            "value": 2180
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Aaron Jones",
+          "position": "RB",
+          "team": "MIN",
+          "age": 31,
+          "careerStage": "Veteran/End of Career"
+        },
+        {
+          "name": "Joshua Palmer",
+          "position": "WR",
+          "team": "BUF",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "team": "DET",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "C.J. Stroud",
+          "position": "QB",
+          "team": "HOU",
+          "age": 24,
+          "careerStage": "Developing"
+        }
+      ]
+    },
+    {
+      "teamName": "jdmorris",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 34.5,
+        "powerRank": 10,
+        "lineupValueScore": 27.2,
+        "performanceScore": 51.3,
+        "positionalScore": 32.6,
+        "depthScore": 11.9,
+        "totalTeams": 16,
+        "totalRosterValue": 16362
+      },
+      "tradeImpact": {
+        "valueGained": 11407,
+        "valueLost": 434,
+        "netValueChange": 10973,
+        "estimatedPowerScoreChange": 9.1,
+        "playersGained": [
+          {
+            "name": "Jahmyr Gibbs",
+            "value": 9227
+          },
+          {
+            "name": "C.J. Stroud",
+            "value": 2180
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Aaron Jones",
+            "value": 404
+          },
+          {
+            "name": "Joshua Palmer",
+            "value": 30
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "team": "DET",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "C.J. Stroud",
+          "position": "QB",
+          "team": "HOU",
+          "age": 24,
+          "careerStage": "Developing"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Aaron Jones",
+          "position": "RB",
+          "team": "MIN",
+          "age": 31,
+          "careerStage": "Veteran/End of Career"
+        },
+        {
+          "name": "Joshua Palmer",
+          "position": "WR",
+          "team": "BUF",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Simon Jordan",
+  "analysis": "Look, let me tell you something about this trade - this is an absolute MASTERCLASS in how to fleece someone who thinks they're too clever by half. You've got \"The Impatient Tycoon\" finthefiddle sitting at the top of the league, number one power ranking, and what does he do? He panics. He PANICS! He's got Jahmyr Gibbs averaging 5.3 points through six games and decides \"I need to win NOW\" - well congratulations, you've just traded away a Ferrari for a Ford Escort because you couldn't wait for the engine to warm up.\n\nMeanwhile, \"The Patient Vulture\" jdmorris at rank ten is circling overhead, and he swoops in with surgical precision. He's offering Aaron Jones - a 31-year-old running back whose body has more miles on it than a New York taxi - and Joshua Palmer, who's essentially roster filler. And what does he extract? A 23-year-old running back who goes on to average 18.6 points per game - that's a THIRTEEN POINT improvement - and C.J. Stroud, a developing franchise quarterback. This isn't a trade, this is ROBBERY in broad daylight! The value differential here is nearly 11,000 points. ELEVEN THOUSAND! If you're finthefiddle's league mates, you should be investigating whether jdmorris has compromising photographs, because there's no other rational explanation for this heist.\n\nHere's what infuriates me about this deal - finthefiddle had ALL the leverage. He's the number one team, he's got time, he's got depth, and he capitulates like he's negotiating with a gun to his head. Week six isn't even halfway through the season! You know what this reminds me of? The Herschel Walker trade. The Vikings thought they were one piece away from a Super Bowl, mortgaged their entire future, and the Cowboys built a dynasty. That's EXACTLY what's happened here. jdmorris has acquired generational value while finthefiddle got a brief rental on an aging asset and a wide receiver who somehow got WORSE after the trade.\n\nMy bold prediction? In two years, when Gibbs is a consensus top-five dynasty asset and Stroud is throwing for 4,500 yards a season, this trade will be studied in fantasy football circles as the textbook example of why you don't sacrifice the future for marginal present gains. finthefiddle may have won his league that year - though I'd bet good money he didn't - but jdmorris? He's built a FOUNDATION. That's the difference between being smart and being clever, and finthefiddle thought he was being clever when really, he was just being foolish.",
+  "generatedAt": "2025-12-28T22:38:32.340Z"
+}

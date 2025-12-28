@@ -1,0 +1,128 @@
+{
+  "tradeId": "0de2435f63c983c9",
+  "week": 10,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "Tmac1418",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 1074,
+        "netValueChange": -1074,
+        "estimatedPowerScoreChange": -0.9,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Brock Purdy",
+            "value": 849
+          },
+          {
+            "name": "Jalen Coker",
+            "value": 225
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Trey Benson",
+          "position": "RB",
+          "team": "ARI",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Brock Purdy",
+          "position": "QB",
+          "team": "SF",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jalen Coker",
+          "position": "WR",
+          "team": "CAR",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "Tmac1418",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 36.1,
+        "powerRank": 9,
+        "lineupValueScore": 29.8,
+        "performanceScore": 49.8,
+        "positionalScore": 35.6,
+        "depthScore": 18.9,
+        "totalTeams": 16,
+        "totalRosterValue": 17875
+      },
+      "tradeImpact": {
+        "valueGained": 1074,
+        "valueLost": 0,
+        "netValueChange": 1074,
+        "estimatedPowerScoreChange": 0.9,
+        "playersGained": [
+          {
+            "name": "Brock Purdy",
+            "value": 849
+          },
+          {
+            "name": "Jalen Coker",
+            "value": 225
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Brock Purdy",
+          "position": "QB",
+          "team": "SF",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jalen Coker",
+          "position": "WR",
+          "team": "CAR",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Trey Benson",
+          "position": "RB",
+          "team": "ARI",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "This is absolutely embarrassing from finthefiddle. Shocking. You're top of the league, you've got a Power Score of 92, and you've bottled it completely. Gave away a quarterback averaging 14.5 points for a running back who can't get on the pitch. Trey Benson's done nothing - 2.6 points per game, and after the trade? Zero. Absolutely zero. What were you thinking?\n\nLet's be clear about what's happened here. Purdy goes on to score 20 points per game after you let him go. Coker jumps from 1 point to 8.1. That's a combined 12.5 point swing you've handed to a mid-table team. Meanwhile, Benson gives you nothing. Not a single point in four games. You've lost over 1,000 in value, dropped nearly a full power score point, and for what? \"Win-now mode\" - don't make me laugh. You don't win now by trading productive players for passengers. That's not ambition, that's stupidity.\n\nTmac1418 has absolutely mugged you off. Sitting there in 9th place and you've just handed them two players in form, both entering their prime, for a lad who can't get off the bench in Arizona. They've gained everything you've lost - the exact same 1,074 in value. They're laughing at you. The whole league should be laughing at you. When you're the number one team, you don't panic and make desperate moves. You trust your squad, you stay disciplined, and you certainly don't give away starting-caliber players for nothing.\n\nThis is a masterclass in how to throw away a championship. Finthefiddle, you've been done here. Absolutely done. Tmac1418 is the clear winner - they've robbed you blind and improved their team for the stretch run. You? You've shown weak mentality when it mattered most. Unacceptable.",
+  "generatedAt": "2025-12-28T22:26:15.238Z"
+}

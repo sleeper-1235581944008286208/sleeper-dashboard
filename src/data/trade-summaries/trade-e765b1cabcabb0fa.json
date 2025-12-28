@@ -1,0 +1,248 @@
+{
+  "tradeId": "e765b1cabcabb0fa",
+  "week": 8,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "NiallCarslaw",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 17053,
+        "valueLost": 12542,
+        "netValueChange": 4511,
+        "estimatedPowerScoreChange": 3.8,
+        "playersGained": [
+          {
+            "name": "Ja'Marr Chase",
+            "value": 10208
+          },
+          {
+            "name": "Isiah Pacheco",
+            "value": 380
+          },
+          {
+            "name": "Matthew Golden",
+            "value": 1153
+          },
+          {
+            "name": "TreVeyon Henderson",
+            "value": 5312
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Jauan Jennings",
+            "value": 675
+          },
+          {
+            "name": "Rachaad White",
+            "value": 187
+          },
+          {
+            "name": "Bucky Irving",
+            "value": 6087
+          },
+          {
+            "name": "Emeka Egbuka",
+            "value": 5593
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "team": "CIN",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Isiah Pacheco",
+          "position": "RB",
+          "team": "KC",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Matthew Golden",
+          "position": "WR",
+          "team": "GB",
+          "age": 22,
+          "careerStage": "Developing"
+        },
+        {
+          "name": "TreVeyon Henderson",
+          "position": "RB",
+          "team": "NE",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jauan Jennings",
+          "position": "WR",
+          "team": "SF",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Rachaad White",
+          "position": "RB",
+          "team": "TB",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Bucky Irving",
+          "position": "RB",
+          "team": "TB",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Emeka Egbuka",
+          "position": "WR",
+          "team": "TB",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "NiallCarslaw",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 45.8,
+        "powerRank": 7,
+        "lineupValueScore": 51,
+        "performanceScore": 40.4,
+        "positionalScore": 52.3,
+        "depthScore": 5.8,
+        "totalTeams": 16,
+        "totalRosterValue": 30607
+      },
+      "tradeImpact": {
+        "valueGained": 12542,
+        "valueLost": 17053,
+        "netValueChange": -4511,
+        "estimatedPowerScoreChange": -3.8,
+        "playersGained": [
+          {
+            "name": "Jauan Jennings",
+            "value": 675
+          },
+          {
+            "name": "Rachaad White",
+            "value": 187
+          },
+          {
+            "name": "Bucky Irving",
+            "value": 6087
+          },
+          {
+            "name": "Emeka Egbuka",
+            "value": 5593
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Ja'Marr Chase",
+            "value": 10208
+          },
+          {
+            "name": "Isiah Pacheco",
+            "value": 380
+          },
+          {
+            "name": "Matthew Golden",
+            "value": 1153
+          },
+          {
+            "name": "TreVeyon Henderson",
+            "value": 5312
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Jauan Jennings",
+          "position": "WR",
+          "team": "SF",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Rachaad White",
+          "position": "RB",
+          "team": "TB",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Bucky Irving",
+          "position": "RB",
+          "team": "TB",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Emeka Egbuka",
+          "position": "WR",
+          "team": "TB",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "team": "CIN",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Isiah Pacheco",
+          "position": "RB",
+          "team": "KC",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Matthew Golden",
+          "position": "WR",
+          "team": "GB",
+          "age": 22,
+          "careerStage": "Developing"
+        },
+        {
+          "name": "TreVeyon Henderson",
+          "position": "RB",
+          "team": "NE",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Simon Jordan",
+  "analysis": "Look, let me tell you something about this trade - it's an absolute DISASTER for finthefiddle, and I don't care what the power score projections tell you. This is a masterclass in how the number one team in your league can get absolutely FLEECED by someone sitting in seventh place who understood the assignment better than the supposed contender.\n\nLet's talk about leverage, shall we? NiallCarslaw just pulled off the heist of the century in Week 8. He's sitting there at 7th place, looking at Ja'Marr Chase - a bonafide WR1 talent - and he's got finthefiddle salivating over the name value. But here's what actually happened: finthefiddle gave up FOUR players averaging between 11-14 points per game in their pre-trade form - real, consistent production - for a collection of players that proceeded to absolutely CRATER. Chase drops nearly 4 points per game, Pacheco becomes fantasy irrelevant at 3.3 PPG, and don't even get me started on Matthew Golden at 1.8 PPG. The ONLY player who delivered was TreVeyon Henderson at 17.9 PPG, but guess what? That doesn't make up for the fact that you gave away Egbuka who was putting up 14.5 PPG, Bucky Irving at 11.2, and Rachaad White at 11.8. The mathematics don't lie - you traded DEPTH and PRODUCTION for NAMES and HOPE.\n\nHere's my bold prediction: in two years, this trade will be taught in fantasy football leagues as a cautionary tale about how chasing star power in win-now mode can absolutely OBLITERATE your championship aspirations. NiallCarslaw is the clear winner here, and it's not even remotely close. He turned one elite receiver and a collection of mediocrity into FOUR productive assets, while finthefiddle - despite gaining 4,511 in \"net value\" according to these projections - actually LOST the trade the moment Henderson started exploding for nearly 18 points per game. You're the number one team in the league, and you just handed your competition the exact pieces they needed while dismantling your own depth. That's not strategy, that's self-sabotage with a bow on it.",
+  "generatedAt": "2025-12-28T22:25:38.537Z"
+}
