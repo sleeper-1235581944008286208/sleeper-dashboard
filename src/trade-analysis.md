@@ -259,7 +259,67 @@ if (tradeAnalyses.length === 0) {
         </div>
 
         <!-- Trade Details with Power Score Impact -->
-        ${analysis.trade ? html`
+        ${analysis.sides ? html`
+          <div style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(0, 0, 0, 0.2); border-radius: 0.5rem; font-size: 0.875rem;">
+            ${analysis.sides.map(side => {
+              const impact = side.tradeImpact;
+              const isWinner = impact?.netValueChange > 500;
+              const isLoser = impact?.netValueChange < -500;
+
+              return html`
+                <div style="margin-bottom: 1rem; ${isWinner ? 'border-left: 3px solid #22c55e; padding-left: 1rem;' : isLoser ? 'border-left: 3px solid #ef4444; padding-left: 1rem;' : ''}">
+                  <!-- Team Header with Power Score -->
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                    <div>
+                      <span style="font-weight: 600; color: #22c55e;">${side.teamName}</span>
+                      ${side.powerScore ? html`
+                        <span style="font-size: 0.75rem; color: #94a3b8; margin-left: 0.5rem;">
+                          #${side.powerScore.powerRank} Power (${side.powerScore.powerScore})
+                        </span>
+                      ` : ''}
+                      <span style="font-size: 0.75rem; color: #64748b; margin-left: 0.5rem;">${side.teamContext}</span>
+                    </div>
+                    ${impact ? html`
+                      <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="font-size: 0.75rem; color: #94a3b8;">Net:</span>
+                        <span style="font-weight: 700; color: ${impact.netValueChange > 0 ? '#22c55e' : impact.netValueChange < 0 ? '#ef4444' : '#94a3b8'};">
+                          ${impact.netValueChange > 0 ? '+' : ''}${impact.netValueChange.toLocaleString()}
+                        </span>
+                        ${impact.estimatedPowerScoreChange ? html`
+                          <span style="font-size: 0.625rem; color: ${impact.estimatedPowerScoreChange > 0 ? '#22c55e' : '#ef4444'};">
+                            (${impact.estimatedPowerScoreChange > 0 ? '+' : ''}${impact.estimatedPowerScoreChange} PWR)
+                          </span>
+                        ` : ''}
+                        ${isWinner ? html`<span style="background: rgba(34, 197, 94, 0.2); color: #22c55e; padding: 0.125rem 0.5rem; border-radius: 1rem; font-size: 0.625rem; font-weight: 700;">WIN</span>` : ''}
+                        ${isLoser ? html`<span style="background: rgba(239, 68, 68, 0.2); color: #ef4444; padding: 0.125rem 0.5rem; border-radius: 1rem; font-size: 0.625rem; font-weight: 700;">LOSS</span>` : ''}
+                      </div>
+                    ` : ''}
+                  </div>
+                  <!-- Receives -->
+                  ${side.receives?.length > 0 ? html`
+                    <div style="margin-bottom: 0.25rem;">
+                      <span style="color: #94a3b8;">Receives:</span>
+                      <span style="color: #cbd5e1; margin-left: 0.5rem;">
+                        ${side.receives.map(a => a.position === 'PICK' ? a.name : `${a.name} (${a.position})`).join(', ')}
+                      </span>
+                      ${impact ? html`<span style="color: #22c55e; font-size: 0.75rem; margin-left: 0.5rem;">(+${impact.valueGained.toLocaleString()})</span>` : ''}
+                    </div>
+                  ` : ''}
+                  <!-- Gives -->
+                  ${side.gives?.length > 0 ? html`
+                    <div>
+                      <span style="color: #94a3b8;">Gives:</span>
+                      <span style="color: #cbd5e1; margin-left: 0.5rem;">
+                        ${side.gives.map(a => a.position === 'PICK' ? a.name : `${a.name} (${a.position})`).join(', ')}
+                      </span>
+                      ${impact ? html`<span style="color: #ef4444; font-size: 0.75rem; margin-left: 0.5rem;">(-${impact.valueLost.toLocaleString()})</span>` : ''}
+                    </div>
+                  ` : ''}
+                </div>
+              `;
+            })}
+          </div>
+        ` : analysis.trade ? html`
           <div style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(0, 0, 0, 0.2); border-radius: 0.5rem; font-size: 0.875rem;">
             ${(() => {
               const rosterIds = new Set([
