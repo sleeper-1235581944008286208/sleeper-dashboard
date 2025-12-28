@@ -126,44 +126,60 @@ const displayRankings = rankings.map(team => {
 </div>
 
 ```js
+// Use Inputs.table for proper formatting
+const tableData = displayRankings.map(team => ({
+  "Rank": `#${team.powerRank}`,
+  "": team.trend,
+  "Team": team.teamName,
+  "Power": team.powerScore.toFixed(1),
+  "Lineup": team.lineupValueScore.toFixed(1),
+  "Perf": team.performanceScore.toFixed(1),
+  "Pos": team.positionalScore.toFixed(1),
+  "Depth": team.depthScore.toFixed(1),
+  "Record": `${team.wins}-${team.losses}`
+}));
+
 const rankingsTableContent = html`
   <div class="card">
     <h3 style="margin-top: 0;">Team Power Rankings</h3>
     <p style="color: #cbd5e1; margin-bottom: 1.5rem;">
-      Teams ranked by composite Power Score. <strong>▲</strong> = roster suggests higher rank, <strong>▼</strong> = roster suggests lower rank.
+      Teams ranked by composite Power Score. <span style="color: #22c55e;">▲</span> = roster suggests higher rank, <span style="color: #ef4444;">▼</span> = roster suggests lower rank.
     </p>
-    <div style="overflow-x: auto;">
-      <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
-        <thead>
-          <tr style="border-bottom: 2px solid rgba(139, 92, 246, 0.3);">
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 50px;">Rank</th>
-            <th style="padding: 0.75rem 0.25rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 30px;"></th>
-            <th style="padding: 0.75rem 0.5rem; text-align: left; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em;">Team</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #8b5cf6; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 70px;">Power</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 60px;">Lineup</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 55px;">Perf</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 50px;">Pos</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 55px;">Depth</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 60px;">Record</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${displayRankings.map((team, i) => html`
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); ${i % 2 === 0 ? 'background: rgba(139, 92, 246, 0.03);' : ''}">
-              <td style="padding: 0.75rem 0.5rem; text-align: center; font-weight: 700; color: #f8fafc;">#${team.powerRank}</td>
-              <td style="padding: 0.75rem 0.25rem; text-align: center; font-weight: 700; color: ${team.trendColor}; font-size: 1rem;">${team.trend}</td>
-              <td style="padding: 0.75rem 0.5rem; text-align: left; color: #f8fafc; font-weight: 500;">${team.teamName}</td>
-              <td style="padding: 0.75rem 0.5rem; text-align: center; font-weight: 700; color: #8b5cf6; font-size: 1rem;">${team.powerScore.toFixed(1)}</td>
-              <td style="padding: 0.75rem 0.5rem; text-align: center; color: #cbd5e1;">${team.lineupValueScore.toFixed(1)}</td>
-              <td style="padding: 0.75rem 0.5rem; text-align: center; color: #cbd5e1;">${team.performanceScore.toFixed(1)}</td>
-              <td style="padding: 0.75rem 0.5rem; text-align: center; color: #cbd5e1;">${team.positionalScore.toFixed(1)}</td>
-              <td style="padding: 0.75rem 0.5rem; text-align: center; color: #cbd5e1;">${team.depthScore.toFixed(1)}</td>
-              <td style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 500;">${team.wins}-${team.losses}</td>
-            </tr>
-          `)}
-        </tbody>
-      </table>
-    </div>
+    ${Inputs.table(tableData, {
+      columns: ["Rank", "", "Team", "Power", "Lineup", "Perf", "Pos", "Depth", "Record"],
+      header: {
+        "Rank": "Rank",
+        "": "",
+        "Team": "Team",
+        "Power": "Power",
+        "Lineup": "Lineup",
+        "Perf": "Perf",
+        "Pos": "Pos",
+        "Depth": "Depth",
+        "Record": "Record"
+      },
+      width: {
+        "Rank": 60,
+        "": 40,
+        "Team": 140,
+        "Power": 70,
+        "Lineup": 70,
+        "Perf": 60,
+        "Pos": 55,
+        "Depth": 60,
+        "Record": 70
+      },
+      align: {
+        "Rank": "center",
+        "": "center",
+        "Power": "center",
+        "Lineup": "center",
+        "Perf": "center",
+        "Pos": "center",
+        "Depth": "center",
+        "Record": "center"
+      }
+    })}
   </div>
 `;
 
