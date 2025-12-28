@@ -1,0 +1,116 @@
+{
+  "tradeId": "5dd67b0ca3da2a91",
+  "week": 2,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "finthefiddle",
+    "stevenbar24"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 521,
+        "valueLost": 1525,
+        "netValueChange": -1004,
+        "estimatedPowerScoreChange": -0.8,
+        "playersGained": [
+          {
+            "name": "Dallas Goedert",
+            "value": 521
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Kyle Pitts",
+            "value": 1525
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "team": "PHI",
+          "age": 30,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Kyle Pitts",
+          "position": "TE",
+          "team": "ATL",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "stevenbar24",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 56.2,
+        "powerRank": 3,
+        "lineupValueScore": 51.3,
+        "performanceScore": 67.8,
+        "positionalScore": 63.5,
+        "depthScore": 13.5,
+        "totalTeams": 16,
+        "totalRosterValue": 30780
+      },
+      "tradeImpact": {
+        "valueGained": 1525,
+        "valueLost": 521,
+        "netValueChange": 1004,
+        "estimatedPowerScoreChange": 0.8,
+        "playersGained": [
+          {
+            "name": "Kyle Pitts",
+            "value": 1525
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Dallas Goedert",
+            "value": 521
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Kyle Pitts",
+          "position": "TE",
+          "team": "ATL",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "team": "PHI",
+          "age": 30,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "This is absolutely ridiculous. Finthefiddle's at the top of the league, sitting pretty at 92 power score, and he's bottled it. Completely bottled it. You're in win-now mode, you're the best team in the league, and you've just traded away the younger player for... what exactly? A few months of negligible difference? Look at the numbers - both lads ended up scoring 10.4 PPG after the trade. IDENTICAL. But one's 25 years old and entering his prime, the other's 30 and on the downslope. It's basic stuff. You don't trade youth for age when you're getting the same production. That's not clever management, that's panic. That's weakness.\n\nStevenbar24 has absolutely mugged him off here. He's sitting there at third place, needs to close the gap, and he's just gotten a younger, more valuable asset for literally nothing. The value swing tells you everything - plus-1,004 in his favor. He's building for the future while still competing now. That's proper football intelligence. That's having a plan and sticking to it. Meanwhile, the number one team just gave away a premium dynasty asset because they got impatient. Pitts was underperforming at 6.2 PPG, sure, but so was Goedert at 5.4! They both came good at the exact same rate. The difference is one has five more years of elite production ahead of him.\n\nHere's my prediction: In two years, Goedert's either retired or a back-end TE2, and Pitts is a top-five tight end in his absolute prime. Finthefiddle will look back at this trade and realize he sacrificed his dynasty future for a title he probably would've won anyway with that 92 power score. That's the killer - he didn't even need to make this move. Sometimes the best trade is no trade at all. Stevenbar24 wins this one, and it's not even close. He's got the discipline, he's got the vision, and he's just picked the pocket of the league's best team. That's embarrassing for finthefiddle. Absolutely embarrassing.",
+  "generatedAt": "2025-12-28T22:19:07.879Z"
+}

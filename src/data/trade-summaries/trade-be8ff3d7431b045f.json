@@ -1,0 +1,120 @@
+{
+  "tradeId": "be8ff3d7431b045f",
+  "week": 5,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "decdweir",
+    "jamesclarkson96"
+  ],
+  "sides": [
+    {
+      "teamName": "decdweir",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 49.1,
+        "powerRank": 5,
+        "lineupValueScore": 48.2,
+        "performanceScore": 51.3,
+        "positionalScore": 59.3,
+        "depthScore": 15.4,
+        "totalTeams": 16,
+        "totalRosterValue": 28925
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 103,
+        "netValueChange": -103,
+        "estimatedPowerScoreChange": -0.1,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Dontayvion Wicks",
+            "value": 103
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Jeremy McNichols",
+          "position": "RB",
+          "team": "WAS",
+          "age": 30,
+          "careerStage": "Declining"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Dontayvion Wicks",
+          "position": "WR",
+          "team": "GB",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Marvin Mims",
+          "position": "WR",
+          "team": "DEN",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.5,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 47.7,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 103,
+        "valueLost": 0,
+        "netValueChange": 103,
+        "estimatedPowerScoreChange": 0.1,
+        "playersGained": [
+          {
+            "name": "Dontayvion Wicks",
+            "value": 103
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Dontayvion Wicks",
+          "position": "WR",
+          "team": "GB",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Marvin Mims",
+          "position": "WR",
+          "team": "DEN",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jeremy McNichols",
+          "position": "RB",
+          "team": "WAS",
+          "age": 30,
+          "careerStage": "Declining"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Jamie Carragher",
+  "analysis": "Look, if you analyze the value exchange here, this was ALWAYS going to favor one side, and I'll tell you what – decdweir, \"The Panic Seller,\" has absolutely bottled this one. You're sitting there at 49.1 power score, fifth in the league, playoff contender written all over you, and you've just shipped out TWO young receivers entering their prime for a 30-year-old journeyman running back averaging 6.4 points per game? That's madness, absolute madness!\n\nLet me break down the logic – or lack thereof – step by step. McNichols drops to 4.7 PPG after the trade while Wicks improves and Mims, despite his own struggles, still represents young upside. The depth score tells you everything: 15.4! You had NO depth, and instead of building it, you've GUTTED what little young talent you had for a short-term fix that wasn't even fixing anything! This reminds me of when the Browns traded Trent Richardson to the Colts – desperate team making a win-now move that backfired spectacularly because they overvalued position scarcity and undervalued actual talent. Meanwhile, jamesclarkson96, \"The Vulture,\" is sitting down at 29.5 power score, fourteenth in the league, and he's played an absolute blinder here. He's gained 103 in value, flipped an aging asset at peak perceived value, and now he's got two young pieces to build around.\n\nHere's my bold prediction: In two years, this trade gets talked about as the turning point for both franchises, but in opposite directions. The Vulture parlays these young receivers into a core that lifts him from bottom-feeder to contender, while The Panic Seller watches McNichols retire and realizes he sold his future for four games of mediocrity. This is the beginning of a rivalry, mark my words – when these two meet in the playoffs in 2027, and Wicks or Mims goes off for 20+ points, we'll all remember this was the trade that changed everything. The tactical logic here was simple: value youth over age, upside over safety, dynasty assets over weekly desperation. One manager understood the assignment; the other just failed the exam spectacularly.",
+  "generatedAt": "2025-12-28T22:23:17.849Z"
+}

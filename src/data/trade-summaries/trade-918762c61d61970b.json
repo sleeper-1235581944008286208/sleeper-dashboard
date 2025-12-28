@@ -1,0 +1,106 @@
+{
+  "tradeId": "918762c61d61970b",
+  "week": 1,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "danielb6",
+    "decdweir"
+  ],
+  "sides": [
+    {
+      "teamName": "decdweir",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 49.1,
+        "powerRank": 5,
+        "lineupValueScore": 48.2,
+        "performanceScore": 51.3,
+        "positionalScore": 59.3,
+        "depthScore": 15.4,
+        "totalTeams": 16,
+        "totalRosterValue": 28925
+      },
+      "tradeImpact": {
+        "valueGained": 50,
+        "valueLost": 0,
+        "netValueChange": 50,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [
+          {
+            "name": "Jake Bates",
+            "value": 50
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Jake Bates",
+          "position": "K",
+          "team": "DET",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Matt Gay",
+          "position": "K",
+          "team": "FA",
+          "age": 31,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "danielb6",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 27.6,
+        "powerRank": 15,
+        "lineupValueScore": 25.7,
+        "performanceScore": 33.4,
+        "positionalScore": 29.9,
+        "depthScore": 3.8,
+        "totalTeams": 16,
+        "totalRosterValue": 15459
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 50,
+        "netValueChange": -50,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Jake Bates",
+            "value": 50
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Matt Gay",
+          "position": "K",
+          "team": "FA",
+          "age": 31,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jake Bates",
+          "position": "K",
+          "team": "DET",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Simon Jordan",
+  "analysis": "Let me tell you something about this trade - it's an absolute FARCE masquerading as fantasy football strategy. We're talking about two grown men negotiating over KICKERS like they're trading away Patrick Mahomes and Justin Jefferson. This is the equivalent of rearranging deck chairs on the Titanic while arguing about which chair has better lumbar support.\n\nBut here's where it gets interesting, because buried in this absurdity is actually a microcosm of leverage and decision-making. Let's call decdweir \"The Spreadsheet Savant\" - sitting pretty at 5th place with a 49.1 Power Score, clearly someone who obsesses over marginal gains. And danielb6? He's \"The Basement Bargainer\" - languishing at 15th with a dismal 27.6 Power Score, taking whatever scraps he can get. The Savant looked at Jake Bates averaging 9.8 points with the high-octane Detroit offense and said \"I'll have some of that, thank you very much.\" Meanwhile, The Basement Bargainer shipped him off like he was selling stock at its peak. And here's the delicious irony - Bates promptly regressed to 7.7 PPG while Gay improved to 7.6 PPG. The Basement Bargainer actually WON this trade despite being in complete shambles positionally! This is like the 2017 Browns trading a 2018 second-rounder for Jamie Collins and somehow looking competent by accident.\n\nMy bold prediction? In two years, both managers will have forgotten this trade ever happened because Jake Bates will be on his third team and Matt Gay will be coaching high school football. Neither kicker matters a jot to these rosters' trajectories. But if we're declaring a winner purely on results - and I deal in RESULTS, not projections - then The Basement Bargainer takes it. He dumped the perceived asset at peak value and got better production from the return piece. That takes either genius or blind luck, and given his 15th place standing, I'm leaning toward the latter. The Spreadsheet Savant lost this trade on points, pure and simple, though his 5th place finish suggests he's got bigger fish to fry than worrying about which replacement-level kicker costs him 2.1 points per game.",
+  "generatedAt": "2025-12-28T22:16:49.276Z"
+}

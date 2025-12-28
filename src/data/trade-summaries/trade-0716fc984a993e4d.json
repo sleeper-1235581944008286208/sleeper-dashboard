@@ -1,0 +1,106 @@
+{
+  "tradeId": "0716fc984a993e4d",
+  "week": 3,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "danielb6",
+    "jamesclarkson96"
+  ],
+  "sides": [
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.5,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 47.7,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 1898,
+        "valueLost": 0,
+        "netValueChange": 1898,
+        "estimatedPowerScoreChange": 1.6,
+        "playersGained": [
+          {
+            "name": "Colston Loveland",
+            "value": 1898
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Colston Loveland",
+          "position": "TE",
+          "team": "CHI",
+          "age": 21,
+          "careerStage": "Developing"
+        }
+      ],
+      "gives": [
+        {
+          "name": "KaVontae Turpin",
+          "position": "WR",
+          "team": "DAL",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "danielb6",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 27.6,
+        "powerRank": 15,
+        "lineupValueScore": 25.7,
+        "performanceScore": 33.4,
+        "positionalScore": 29.9,
+        "depthScore": 3.8,
+        "totalTeams": 16,
+        "totalRosterValue": 15459
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 1898,
+        "netValueChange": -1898,
+        "estimatedPowerScoreChange": -1.6,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Colston Loveland",
+            "value": 1898
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "KaVontae Turpin",
+          "position": "WR",
+          "team": "DAL",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Colston Loveland",
+          "position": "TE",
+          "team": "CHI",
+          "age": 21,
+          "careerStage": "Developing"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "This is absolutely shocking. Danielb6, \"The Asset Burner,\" has given away a young tight end in a scarce position for a 29-year-old receiver who promptly fell off a cliff. Week 3 of the season – you've barely seen what you've got, and you're panicking already? That's weak. That's the mentality of someone who doesn't trust their own decisions. Loveland was 21 years old, developing, at the most premium position in fantasy football, and you've shipped him out for a gadget player having one decent game. Embarrassing. Jamesclarkson96, \"The Vulture,\" saw you coming a mile away and picked your pocket clean.\n\nLet's talk about what happened after this disaster. Loveland goes from 2.1 points per game to 8.7 – that's a proper breakout from a young player doing exactly what you'd expect. Meanwhile, Turpin drops from 8.8 to 2.0 points per game. That's a six-point swing EVERY SINGLE WEEK. The Vulture gained nearly 2,000 in value and improved his power score while The Asset Burner lost the exact same amount. This isn't a trade – it's a mugging. And danielb6 was sat there, second-to-last in the league, making decisions like this. No wonder you're 15th out of 16.\n\nHere's my prediction: In two years, Loveland will be a top-five tight end, and Turpin will be out of the league or a special teams afterthought. This trade will be used as exhibit A in \"How Not To Manage A Dynasty Team.\" The fundamentals were screaming at you – elite scarcity at tight end, youth, developing talent – and you ignored every single one of them for a short-term fix that wasn't even a fix.\n\n**Winner: jamesclarkson96 (The Vulture)** – Absolute robbery. **Loser: danielb6 (The Asset Burner)** – You've got no one to blame but yourself.",
+  "generatedAt": "2025-12-28T22:20:35.220Z"
+}

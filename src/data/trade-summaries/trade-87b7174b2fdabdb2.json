@@ -1,0 +1,182 @@
+{
+  "tradeId": "87b7174b2fdabdb2",
+  "week": 1,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "stephen375",
+    "ChunkyDog1998"
+  ],
+  "sides": [
+    {
+      "teamName": "ChunkyDog1998",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 48.1,
+        "powerRank": 6,
+        "lineupValueScore": 43.4,
+        "performanceScore": 52.1,
+        "positionalScore": 51.5,
+        "depthScore": 61.8,
+        "totalTeams": 16,
+        "totalRosterValue": 26033
+      },
+      "tradeImpact": {
+        "valueGained": 9016,
+        "valueLost": 4196,
+        "netValueChange": 4820,
+        "estimatedPowerScoreChange": 4,
+        "playersGained": [
+          {
+            "name": "D'Andre Swift",
+            "value": 1438
+          },
+          {
+            "name": "Garrett Wilson",
+            "value": 6671
+          },
+          {
+            "name": "Josh Downs",
+            "value": 907
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Mark Andrews",
+            "value": 227
+          },
+          {
+            "name": "Josh Jacobs",
+            "value": 3969
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "D'Andre Swift",
+          "position": "RB",
+          "team": "CHI",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "team": "NYJ",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Josh Downs",
+          "position": "WR",
+          "team": "IND",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Mark Andrews",
+          "position": "TE",
+          "team": "BAL",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "team": "GB",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "stephen375",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 27.3,
+        "powerRank": 16,
+        "lineupValueScore": 28.4,
+        "performanceScore": 23.4,
+        "positionalScore": 37.4,
+        "depthScore": 9.7,
+        "totalTeams": 16,
+        "totalRosterValue": 17055
+      },
+      "tradeImpact": {
+        "valueGained": 4196,
+        "valueLost": 9016,
+        "netValueChange": -4820,
+        "estimatedPowerScoreChange": -4,
+        "playersGained": [
+          {
+            "name": "Mark Andrews",
+            "value": 227
+          },
+          {
+            "name": "Josh Jacobs",
+            "value": 3969
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "D'Andre Swift",
+            "value": 1438
+          },
+          {
+            "name": "Garrett Wilson",
+            "value": 6671
+          },
+          {
+            "name": "Josh Downs",
+            "value": 907
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Mark Andrews",
+          "position": "TE",
+          "team": "BAL",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "team": "GB",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "D'Andre Swift",
+          "position": "RB",
+          "team": "CHI",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "team": "NYJ",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Josh Downs",
+          "position": "WR",
+          "team": "IND",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Simon Jordan",
+  "analysis": "Look, let me tell you something about this trade - this is PRECISELY the kind of deal that separates the clever from the catastrophically naive in fantasy football. ChunkyDog1998, \"The Consolidator,\" has absolutely fleeced stephen375, \"The Liquidator,\" and I don't care what the pre-trade projections said. This wasn't a trade - this was a HEIST dressed up as negotiation.\n\nLet's break down the sheer audacity of what's happened here. The Consolidator, sitting at sixth place and staring down a playoff run, has turned THREE assets into TWO - and in doing so, upgraded at running back while absorbing the Garrett Wilson disaster. Yes, Wilson cratered from 10.7 to 4.2 points per game - an absolute CATASTROPHE - but here's the genius: they were buying low on talent while selling Mark Andrews at peak positional scarcity value. Josh Jacobs goes on to score 15.6 per game for stephen375? Brilliant for The Liquidator, except he's dead last in the league with a 9.7 depth score! What good is winning the post-trade performance battle when you're hemorrhaging games because you've got no bench? Meanwhile, D'Andre Swift pumps out 14.4 per game, and ChunkyDog1998 gains four power score points while pushing toward the playoffs. This is the difference between understanding VALUE versus understanding LEVERAGE. The Consolidator understood they could absorb one bad asset (Wilson) because they were getting three bites at the apple for the price of two. Risk mitigation through volume - that's business acumen.\n\nBut here's where The Liquidator's strategy becomes absolutely BAFFLING - if you're rebuilding, if you're ranked 16th out of 16 teams, WHY are you trading away youth for 30-year-old Mark Andrews and 27-year-old Josh Jacobs? This isn't rebuilding, this is REARRANGING DECK CHAIRS ON THE TITANIC! You've given away Garrett Wilson at 25, Josh Downs at 24, and Swift at 26 - all players entering or in their prime - for short-term production that nets you... what exactly? A 4-point power score DROP while you sit in the basement? The audacity of calling yourself future-focused while trading the future away is STAGGERING. Yes, Jacobs outperformed Swift by 1.2 points per game post-trade, but in two years, when Jacobs is 29 and potentially declining, Swift will be 28 and Wilson - if he escapes the Jets' quarterback purgatory - could be a WR1. The Liquidator sold assets at their lowest valuations and called it strategy.\n\nHere's my BOLD prediction: In two years' time, this trade will be taught in fantasy football leagues as a cautionary tale titled \"How to Disguise Panic as Process.\" ChunkyDog1998 will have parlayed this into sustained competitiveness, possibly even a championship, while stephen375 will STILL be rebuilding, wondering why acquiring \"winners\" didn't translate to winning. The rivalry here isn't between these two managers - it's between The Consolidator and the concept of fair value itself, because they've proven you can win a trade even when one of your acquired assets completely implodes. That's not luck - that's LEVERAGE. And The Liquidator? They've learned the most expensive lesson in fantasy sports: youth and draft capital are the only currencies that matter when you're in the cellar, and they just spent it all on veteran production they couldn't use. Absolutely extraordinary.",
+  "generatedAt": "2025-12-28T22:18:13.329Z"
+}

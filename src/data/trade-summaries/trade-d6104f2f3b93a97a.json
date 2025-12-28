@@ -1,0 +1,116 @@
+{
+  "tradeId": "d6104f2f3b93a97a",
+  "week": 3,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "BigBishAl76",
+    "decdweir"
+  ],
+  "sides": [
+    {
+      "teamName": "decdweir",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 49.1,
+        "powerRank": 5,
+        "lineupValueScore": 48.2,
+        "performanceScore": 51.3,
+        "positionalScore": 59.3,
+        "depthScore": 15.4,
+        "totalTeams": 16,
+        "totalRosterValue": 28925
+      },
+      "tradeImpact": {
+        "valueGained": 1164,
+        "valueLost": 187,
+        "netValueChange": 977,
+        "estimatedPowerScoreChange": 0.8,
+        "playersGained": [
+          {
+            "name": "Quentin Johnston",
+            "value": 1164
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Rachaad White",
+            "value": 187
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "team": "LAC",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Rachaad White",
+          "position": "RB",
+          "team": "TB",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "BigBishAl76",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 60.5,
+        "powerRank": 2,
+        "lineupValueScore": 53.3,
+        "performanceScore": 72.8,
+        "positionalScore": 75.6,
+        "depthScore": 12.2,
+        "totalTeams": 16,
+        "totalRosterValue": 32028
+      },
+      "tradeImpact": {
+        "valueGained": 187,
+        "valueLost": 1164,
+        "netValueChange": -977,
+        "estimatedPowerScoreChange": -0.8,
+        "playersGained": [
+          {
+            "name": "Rachaad White",
+            "value": 187
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Quentin Johnston",
+            "value": 1164
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Rachaad White",
+          "position": "RB",
+          "team": "TB",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "team": "LAC",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Simon Jordan",
+  "analysis": "Let me tell you something about this trade - it's an absolute MASTERCLASS in exploiting positional scarcity, and BigBishAl76 has been taken to the cleaners in broad daylight. You're sitting at rank #2 with a 60.5 power score, you're in win-now mode, and you've just hemorrhaged nearly a THOUSAND points in value for what? A running back who's averaging 11.4 points per game? This is the equivalent of selling your Mercedes for a bicycle because someone convinced you petrol is too expensive. Decdweir has pulled off highway robbery here, and the numbers don't lie - they've gained 977 points in value while moving UP in power score despite sitting three spots below in the standings. That's not just good business, that's EXCEPTIONAL business.\n\nNow let's talk about the reality of what's happened here post-trade, shall we? Both players have regressed - White's dropped from 11.4 to 9.6 PPG, Johnston's slipped from 8.0 to 7.5. But here's the critical distinction: BigBishAl76 paid a PREMIUM for depreciation. You gave up a young wide receiver entering his prime, in the deepest position in fantasy football, for a 26-year-old running back whose shelf life is already ticking down like a time bomb. In two years' time, Quentin Johnston will be 26, potentially hitting his peak receiving years with Herbert throwing him the football, while Rachaad White will be 28, likely watching from the sideline as some rookie takes his carries. Mark my words - decdweir will look back on this as the moment they positioned themselves for dynasty dominance.\n\nThe leverage in this negotiation was entirely one-sided, and it's frankly EMBARRASSING that BigBishAl76 didn't recognize it. When you're ranked #2, you negotiate from STRENGTH, not desperation. You don't overpay for marginal running back production when your positional score is already at 75.6. This reeks of panic, of someone who looked at their depth chart and made an emotional decision rather than a calculated one. Decdweir, sitting at #5 with a paltry 15.4 depth score, just turned their weakness into someone else's problem and got paid handsomely for it. They've created a rivalry here whether they know it or not - because when Johnston is posting WR2 numbers in 2027 and White is fighting for touches, BigBishAl76 will remember exactly who took them for a ride. This isn't just a bad trade; it's a cautionary tale about understanding value, leverage, and the fundamental economics of dynasty football.",
+  "generatedAt": "2025-12-28T22:21:09.324Z"
+}

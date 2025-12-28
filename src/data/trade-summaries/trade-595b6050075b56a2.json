@@ -1,0 +1,134 @@
+{
+  "tradeId": "595b6050075b56a2",
+  "week": 1,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "finthefiddle",
+    "chitown314"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 85,
+        "valueLost": 0,
+        "netValueChange": 85,
+        "estimatedPowerScoreChange": 0.1,
+        "playersGained": [
+          {
+            "name": "Christian Kirk",
+            "value": 85
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Christian Kirk",
+          "position": "WR",
+          "team": "HOU",
+          "age": 29,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Jordan James",
+          "position": "RB",
+          "team": "SF",
+          "age": 21,
+          "careerStage": "Developing"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Roschon Johnson",
+          "position": "RB",
+          "team": "CHI",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Tory Horton",
+          "position": "WR",
+          "team": "SEA",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "chitown314",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 34.3,
+        "powerRank": 11,
+        "lineupValueScore": 32,
+        "performanceScore": 33.5,
+        "positionalScore": 50.2,
+        "depthScore": 14.6,
+        "totalTeams": 16,
+        "totalRosterValue": 19219
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 85,
+        "netValueChange": -85,
+        "estimatedPowerScoreChange": -0.1,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Christian Kirk",
+            "value": 85
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Roschon Johnson",
+          "position": "RB",
+          "team": "CHI",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Tory Horton",
+          "position": "WR",
+          "team": "SEA",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Christian Kirk",
+          "position": "WR",
+          "team": "HOU",
+          "age": 29,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Jordan James",
+          "position": "RB",
+          "team": "SF",
+          "age": 21,
+          "careerStage": "Developing"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Alan Shearer",
+  "analysis": "Right, let's cut through the noise here — this is a tale of two managers playing completely different games, and one of them has absolutely bottled it.\n\n**finthefiddle**, who I'm calling \"The Magician,\" has pulled off an absolute masterclass in highway robbery. Sitting at the top of the table with a 92 Power Score, they've somehow convinced a rebuilding side to hand over Jordan James, a 21-year-old running back with his entire career ahead of him, for essentially pocket change. Yes, Christian Kirk had been producing 6.9 points per game before the deal, but he's 29 years old and his production fell off a cliff afterward. And what did finthefiddle give up? Roschon Johnson, who's done absolutely nothing post-trade, and Tory Horton, who ironically became the best player in this entire deal at 8.5 PPG. But here's the thing — when you're a championship contender, you take the upside swing on a rookie running back every single time. The value gained says it all: +85 to finthefiddle, -85 to chitown314. That's not a trade, that's a mugging.\n\nNow **chitown314**, \"The Rebuilder Gone Wrong,\" has made a fundamental error that I see far too often in fantasy football. If you're rebuilding with a 34.3 Power Score and sitting 11th out of 16, why on earth are you trading away your youngest, most valuable asset in Jordan James? At 21 years old, that's exactly the type of player you BUILD around, not ship out. Yes, Tory Horton turned out to be a nice piece at 8.5 PPG, but you've swapped a potential RB1 for a back-end starter and a veteran receiver in decline. That's not rebuilding, that's treading water. The numbers don't lie — chitown's Power Score barely moved, which tells you everything: this trade did nothing to accelerate their rebuild.\n\nAt the end of the day, this comes down to one simple truth: **finthefiddle wins this trade, and it's not even close.** The Magician added a young running back with genuine upside while giving up spare parts, and The Rebuilder Gone Wrong got fleeced despite accidentally landing Tory Horton's breakout. Here's my bold prediction: in two years' time, if Jordan James develops into even a mid-range RB2, this trade will be remembered as the moment finthefiddle locked in their dynasty dominance while chitown314 looks back and wonders what they were thinking. Mark my words — this is the type of deal that defines leagues for years to come.",
+  "generatedAt": "2025-12-28T22:18:32.093Z"
+}

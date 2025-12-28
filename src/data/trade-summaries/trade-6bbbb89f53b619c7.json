@@ -1,0 +1,174 @@
+{
+  "tradeId": "6bbbb89f53b619c7",
+  "week": 2,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "jdmorris",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 8373,
+        "valueLost": 6896,
+        "netValueChange": 1477,
+        "estimatedPowerScoreChange": 1.2,
+        "playersGained": [
+          {
+            "name": "Drake London",
+            "value": 7209
+          },
+          {
+            "name": "Quentin Johnston",
+            "value": 1164
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Stefon Diggs",
+            "value": 635
+          },
+          {
+            "name": "Omarion Hampton",
+            "value": 6261
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Drake London",
+          "position": "WR",
+          "team": "ATL",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "team": "LAC",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Stefon Diggs",
+          "position": "WR",
+          "team": "NE",
+          "age": 32,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Calvin Ridley",
+          "position": "WR",
+          "team": "TEN",
+          "age": 31,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "team": "LAC",
+          "age": 22,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "jdmorris",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 34.5,
+        "powerRank": 10,
+        "lineupValueScore": 27.2,
+        "performanceScore": 51.3,
+        "positionalScore": 32.6,
+        "depthScore": 11.9,
+        "totalTeams": 16,
+        "totalRosterValue": 16362
+      },
+      "tradeImpact": {
+        "valueGained": 6896,
+        "valueLost": 8373,
+        "netValueChange": -1477,
+        "estimatedPowerScoreChange": -1.2,
+        "playersGained": [
+          {
+            "name": "Stefon Diggs",
+            "value": 635
+          },
+          {
+            "name": "Omarion Hampton",
+            "value": 6261
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Drake London",
+            "value": 7209
+          },
+          {
+            "name": "Quentin Johnston",
+            "value": 1164
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Stefon Diggs",
+          "position": "WR",
+          "team": "NE",
+          "age": 32,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Calvin Ridley",
+          "position": "WR",
+          "team": "TEN",
+          "age": 31,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "team": "LAC",
+          "age": 22,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Drake London",
+          "position": "WR",
+          "team": "ATL",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "team": "LAC",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "This is absolutely shocking. finthefiddle - let's call him \"The Graveyard Keeper\" because he's collecting aging players like tombstones - has completely mugged jdmorris here. And jdmorris? \"The Charity Case\" is more like it. Giving away youth for decline. It's embarrassing, really.\n\nLook at the numbers. Calvin Ridley goes from 9.6 to 3.5 points per game. THREE POINT FIVE! That's a 6-point drop. Diggs is 32 years old and declining. Meanwhile, Drake London improves to 10.3 PPG and he's only 24. This reminds me of when the Vikings traded for Herschel Walker - except jdmorris is playing the Vikings' role, giving up the future for immediate mediocrity. The Graveyard Keeper gets younger, gets better production, and somehow GAINS value doing it. The top team in the league just got younger and deeper while the 10th place team collected pensioners. That's not competing, that's giving up.\n\nAnd let's talk about Hampton - a running back, the most valuable scarce asset in fantasy. The Charity Case just handed him over along with two prime-age receivers for what? Two declining veterans who can't even maintain their production? He's ranked 10th out of 16 and his power score DROPPED after this. Dropped! You're in the playoff hunt and you're trading away a 22-year-old running back who's averaging 9.1 PPG after the trade. Have a word with yourself. The Graveyard Keeper is laughing all the way to the championship while you're stuck wondering why Ridley's giving you 3.5 points a week.\n\nBold prediction: In two years, finthefiddle wins another title with London and Johnston contributing, while jdmorris is explaining to his league-mates why he's rebuilding. Diggs will be retired, Ridley will be irrelevant, and Hampton will be a legitimate RB2. This trade will be studied as a textbook example of how NOT to compete. Absolutely shameful from The Charity Case. No standards, no accountability, no clue.",
+  "generatedAt": "2025-12-28T22:19:42.220Z"
+}

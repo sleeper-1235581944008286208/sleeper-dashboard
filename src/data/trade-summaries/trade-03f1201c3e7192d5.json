@@ -1,0 +1,160 @@
+{
+  "tradeId": "03f1201c3e7192d5",
+  "week": 7,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "NiallCarslaw",
+    "raaaaaidddderrrrrs"
+  ],
+  "sides": [
+    {
+      "teamName": "raaaaaidddderrrrrs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 34,
+        "powerRank": 12,
+        "lineupValueScore": 23.1,
+        "performanceScore": 59.6,
+        "positionalScore": 29.1,
+        "depthScore": 4.4,
+        "totalTeams": 16,
+        "totalRosterValue": 13895
+      },
+      "tradeImpact": {
+        "valueGained": 4267,
+        "valueLost": 1600,
+        "netValueChange": 2667,
+        "estimatedPowerScoreChange": 2.2,
+        "playersGained": [
+          {
+            "name": "Jalen Hurts",
+            "value": 3950
+          },
+          {
+            "name": "Tyler Allgeier",
+            "value": 317
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Jakobi Meyers",
+            "value": 1220
+          },
+          {
+            "name": "Isiah Pacheco",
+            "value": 380
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Jalen Hurts",
+          "position": "QB",
+          "team": "PHI",
+          "age": 27,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Tyler Allgeier",
+          "position": "RB",
+          "team": "ATL",
+          "age": 25,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jakobi Meyers",
+          "position": "WR",
+          "team": "JAX",
+          "age": 29,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Isiah Pacheco",
+          "position": "RB",
+          "team": "KC",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "NiallCarslaw",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 45.8,
+        "powerRank": 7,
+        "lineupValueScore": 51,
+        "performanceScore": 40.4,
+        "positionalScore": 52.3,
+        "depthScore": 5.8,
+        "totalTeams": 16,
+        "totalRosterValue": 30607
+      },
+      "tradeImpact": {
+        "valueGained": 1600,
+        "valueLost": 4267,
+        "netValueChange": -2667,
+        "estimatedPowerScoreChange": -2.2,
+        "playersGained": [
+          {
+            "name": "Jakobi Meyers",
+            "value": 1220
+          },
+          {
+            "name": "Isiah Pacheco",
+            "value": 380
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Jalen Hurts",
+            "value": 3950
+          },
+          {
+            "name": "Tyler Allgeier",
+            "value": 317
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Jakobi Meyers",
+          "position": "WR",
+          "team": "JAX",
+          "age": 29,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Isiah Pacheco",
+          "position": "RB",
+          "team": "KC",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jalen Hurts",
+          "position": "QB",
+          "team": "PHI",
+          "age": 27,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Tyler Allgeier",
+          "position": "RB",
+          "team": "ATL",
+          "age": 25,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Gary Lineker",
+  "analysis": "Well, this is one of those trades where you look at the numbers and think, \"Someone's had an absolute mare here,\" and I'm afraid it's pretty clear who that is. Our friend at NiallCarslaw — let's call him \"The Generous Donor\" — has essentially handed Jalen Hurts, a quarterback averaging over 20 points per game, to a playoff contender for what amounts to a bag of chips and a pat on the back. Meanwhile, raaaaaidddderrrrrs — or as I'll call them, \"The Opportunist\" — has pulled off the sort of heist that would make Danny Ocean blush. They've upgraded massively at the most important fantasy position while giving up relatively replaceable pieces. It's the equivalent of swapping a tenner for a fifty and somehow convincing the other person they've got the better deal.\n\nLet's break down what actually happened here, because the post-trade numbers tell quite a story. Hurts has dipped slightly to 19.7 points per game, but that's still elite QB1 production. Tyler Allgeier has actually improved to 8.6 PPG, which is a lovely bonus. On the flip side, Pacheco has absolutely cratered to 3.8 PPG — presumably injured or losing work to someone else — which means NiallCarslaw essentially received one functioning asset in Meyers, who's putting up a perfectly pedestrian 9.7 PPG. When you're middle of the pack and trading away your best player for depth pieces, you're not building toward anything, you're just rearranging deck chairs. The power score shift of +2.2 for The Opportunist and -2.2 for The Generous Donor tells you everything: this was highway robbery, legally conducted.\n\nThe winner here is unquestionably raaaaaidddderrrrrs, and it's not particularly close. They were sitting at 12th out of 16 teams, needed a spark, and managed to acquire a genuine difference-maker at quarterback without sacrificing their roster structure. NiallCarslaw, I'm afraid, has lost this one comprehensively. They've weakened their lineup value significantly for minimal return, and in a 16-team league where quarterback and running back scarcity matters enormously, they've just made life considerably harder for themselves.\n\nMy bold prediction? In two years' time, we'll look back at this trade as the turning point in raaaaaidddderrrrrs' season — the moment they went from also-ran to legitimate contender. Hurts will have delivered them to the playoffs, possibly a championship, while NiallCarslaw will still be searching for that elusive QB1 they gave away for a song. It's a bit like selling your car because you needed petrol money — technically you've solved the immediate problem, but you're going to regret it every single day. Football, bloody hell... or in this case, fantasy football, bloody hell.",
+  "generatedAt": "2025-12-28T22:25:01.355Z"
+}
