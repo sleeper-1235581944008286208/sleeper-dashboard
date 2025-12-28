@@ -133,37 +133,26 @@ const rankingsTableContent = html`
       Teams ranked by composite Power Score. <strong>▲</strong> = roster suggests higher rank, <strong>▼</strong> = roster suggests lower rank.
     </p>
     <div style="overflow-x: auto;">
-      <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem; table-layout: fixed;">
-        <colgroup>
-          <col style="width: 60px;">
-          <col style="width: 50px;">
-          <col style="width: auto; min-width: 120px;">
-          <col style="width: 90px;">
-          <col style="width: 70px;">
-          <col style="width: 70px;">
-          <col style="width: 70px;">
-          <col style="width: 60px;">
-          <col style="width: 70px;">
-        </colgroup>
+      <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
         <thead>
           <tr style="border-bottom: 2px solid rgba(139, 92, 246, 0.3);">
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Rank</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;"></th>
-            <th style="padding: 0.75rem 0.5rem; text-align: left; color: #94a3b8; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Team</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #8b5cf6; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Power</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Lineup</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Perf</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Pos</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Depth</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Record</th>
+            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 50px;">Rank</th>
+            <th style="padding: 0.75rem 0.25rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 30px;"></th>
+            <th style="padding: 0.75rem 0.5rem; text-align: left; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em;">Team</th>
+            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #8b5cf6; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 70px;">Power</th>
+            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 60px;">Lineup</th>
+            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 55px;">Perf</th>
+            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 50px;">Pos</th>
+            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 55px;">Depth</th>
+            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 60px;">Record</th>
           </tr>
         </thead>
         <tbody>
           ${displayRankings.map((team, i) => html`
             <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); ${i % 2 === 0 ? 'background: rgba(139, 92, 246, 0.03);' : ''}">
               <td style="padding: 0.75rem 0.5rem; text-align: center; font-weight: 700; color: #f8fafc;">#${team.powerRank}</td>
-              <td style="padding: 0.75rem 0.5rem; text-align: center; font-weight: 700; color: ${team.trendColor}; font-size: 1rem;">${team.trend}</td>
-              <td style="padding: 0.75rem 0.5rem; text-align: left; color: #f8fafc; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${team.teamName}</td>
+              <td style="padding: 0.75rem 0.25rem; text-align: center; font-weight: 700; color: ${team.trendColor}; font-size: 1rem;">${team.trend}</td>
+              <td style="padding: 0.75rem 0.5rem; text-align: left; color: #f8fafc; font-weight: 500;">${team.teamName}</td>
               <td style="padding: 0.75rem 0.5rem; text-align: center; font-weight: 700; color: #8b5cf6; font-size: 1rem;">${team.powerScore.toFixed(1)}</td>
               <td style="padding: 0.75rem 0.5rem; text-align: center; color: #cbd5e1;">${team.lineupValueScore.toFixed(1)}</td>
               <td style="padding: 0.75rem 0.5rem; text-align: center; color: #cbd5e1;">${team.performanceScore.toFixed(1)}</td>
