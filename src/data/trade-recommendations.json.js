@@ -1,7 +1,7 @@
 // Data loader for Trade Recommendations
 // Generates mutually beneficial trade recommendations using power score data
 
-const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID || "1235581944008286208";
+const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID;
 
 // Configuration
 const VALUE_TOLERANCE_PERCENT = 0.30;

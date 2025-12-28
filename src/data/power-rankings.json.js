@@ -1,6 +1,6 @@
 // Data loader for Power Rankings
 // Calculates team power scores based on roster strength, performance, and positional advantages
-const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID || "1235581944008286208";
+const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID;
 
 // DynastyProcess data URLs
 const DP_VALUES_URL = "https://raw.githubusercontent.com/dynastyprocess/data/master/files/values.csv";

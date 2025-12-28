@@ -25,8 +25,15 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Configuration
-const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID || "1235581944008286208";
+const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID;
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
+
+if (!LEAGUE_ID) {
+  console.error('❌ Error: SLEEPER_LEAGUE_ID environment variable not set');
+  console.error('Please add your Sleeper league ID to .env file:');
+  console.error('SLEEPER_LEAGUE_ID=your-league-id');
+  process.exit(1);
+}
 
 if (!ANTHROPIC_API_KEY) {
   console.error('❌ Error: ANTHROPIC_API_KEY environment variable not set');

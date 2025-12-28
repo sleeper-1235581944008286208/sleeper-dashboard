@@ -1,6 +1,6 @@
 // Data loader for Sleeper matchups
 // Fetches matchups for all weeks in the current season
-const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID || "1235581944008286208";
+const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID;
 
 async function fetchMatchups() {
   // First, get league info to know how many weeks

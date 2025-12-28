@@ -1,6 +1,6 @@
 // Data loader for Sleeper league information
 // Set your league ID here or pass it as an environment variable
-const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID || "1235581944008286208";
+const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID;
 
 async function fetchLeague() {
   const response = await fetch(`https://api.sleeper.app/v1/league/${LEAGUE_ID}`);
