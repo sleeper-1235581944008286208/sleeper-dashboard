@@ -407,7 +407,11 @@ if (tradeAnalyses.length === 0) {
         ` : ''}
 
         <!-- Analysis -->
-        <div style="color: #e2e8f0; line-height: 1.7; white-space: pre-wrap; font-size: 0.9375rem;">
+        <div style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+          <span style="font-size: 1.25rem;">🎙️</span>
+          <span style="font-weight: 600; color: #22c55e; font-size: 0.9375rem;">Analysis by ${analysis.persona}</span>
+        </div>
+        <div style="color: #e2e8f0; line-height: 1.7; white-space: pre-wrap; font-size: 0.9375rem; border-left: 3px solid rgba(34, 197, 94, 0.4); padding-left: 1rem; margin-left: 0.25rem;">
 ${analysis.analysis}
         </div>
 
