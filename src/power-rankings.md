@@ -253,9 +253,10 @@ const teamASelector = Inputs.select(
 );
 const teamAId = Generators.input(teamASelector);
 
+const teamBOptions = rankings.map(t => ({ value: t.rosterId, label: `${t.teamName} (#${t.powerRank})` }));
 const teamBSelector = Inputs.select(
-  rankings.map(t => ({ value: t.rosterId, label: `${t.teamName} (#${t.powerRank})` })),
-  { label: "Team 2", format: x => x.label, value: rankings[1] ? { value: rankings[1].rosterId, label: `${rankings[1].teamName} (#${rankings[1].powerRank})` } : undefined }
+  teamBOptions,
+  { label: "Team 2", format: x => x.label, value: teamBOptions[1] }
 );
 const teamBId = Generators.input(teamBSelector);
 ```
@@ -280,29 +281,29 @@ const teamBPlayers = (teamBRoster?.players || [])
 ```
 
 ```js
-// Player selection checkboxes
-const teamAGivingSelector = Inputs.checkbox(
-  teamAPlayers,
+// Player selection - grouped by position for easier scanning
+const posOrder = {QB: 1, RB: 2, WR: 3, TE: 4, K: 5, DEF: 6};
+const teamAPlayersSorted = [...teamAPlayers].sort((a, b) => (posOrder[a.position] || 99) - (posOrder[b.position] || 99) || b.value - a.value);
+const teamBPlayersSorted = [...teamBPlayers].sort((a, b) => (posOrder[a.position] || 99) - (posOrder[b.position] || 99) || b.value - a.value);
+
+const teamAGivingSelector = Inputs.select(
+  teamAPlayersSorted,
   {
-    label: "Select players to trade:",
-    format: p => html`<span style="display: inline-flex; align-items: center; gap: 0.5rem;">
-      <span style="background: ${p.position === 'QB' ? '#ef4444' : p.position === 'RB' ? '#22c55e' : p.position === 'WR' ? '#3b82f6' : p.position === 'TE' ? '#f97316' : '#94a3b8'}; color: white; padding: 0.125rem 0.375rem; border-radius: 0.25rem; font-size: 0.7rem; font-weight: 600;">${p.position}</span>
-      <span>${p.name}</span>
-      <span style="color: #8b5cf6; font-weight: 600;">${p.value.toLocaleString()}</span>
-    </span>`
+    label: "Select players:",
+    format: p => `[${p.position}] ${p.name} — ${p.value.toLocaleString()}`,
+    multiple: true,
+    size: 10
   }
 );
 const teamAGiving = Generators.input(teamAGivingSelector);
 
-const teamBGivingSelector = Inputs.checkbox(
-  teamBPlayers,
+const teamBGivingSelector = Inputs.select(
+  teamBPlayersSorted,
   {
-    label: "Select players to trade:",
-    format: p => html`<span style="display: inline-flex; align-items: center; gap: 0.5rem;">
-      <span style="background: ${p.position === 'QB' ? '#ef4444' : p.position === 'RB' ? '#22c55e' : p.position === 'WR' ? '#3b82f6' : p.position === 'TE' ? '#f97316' : '#94a3b8'}; color: white; padding: 0.125rem 0.375rem; border-radius: 0.25rem; font-size: 0.7rem; font-weight: 600;">${p.position}</span>
-      <span>${p.name}</span>
-      <span style="color: #8b5cf6; font-weight: 600;">${p.value.toLocaleString()}</span>
-    </span>`
+    label: "Select players:",
+    format: p => `[${p.position}] ${p.name} — ${p.value.toLocaleString()}`,
+    multiple: true,
+    size: 10
   }
 );
 const teamBGiving = Generators.input(teamBGivingSelector);
