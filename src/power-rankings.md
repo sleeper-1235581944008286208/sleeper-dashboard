@@ -126,18 +126,8 @@ const displayRankings = rankings.map(team => {
 </div>
 
 ```js
-// Use Inputs.table for proper formatting
-const tableData = displayRankings.map(team => ({
-  "Rank": `#${team.powerRank}`,
-  "": team.trend,
-  "Team": team.teamName,
-  "Power": team.powerScore.toFixed(1),
-  "Lineup": team.lineupValueScore.toFixed(1),
-  "Perf": team.performanceScore.toFixed(1),
-  "Pos": team.positionalScore.toFixed(1),
-  "Depth": team.depthScore.toFixed(1),
-  "Record": `${team.wins}-${team.losses}`
-}));
+// Add record field to displayRankings for table
+const tableRankings = displayRankings.map(t => ({...t, record: `${t.wins}-${t.losses}`}));
 
 const rankingsTableContent = html`
   <div class="card">
@@ -145,39 +135,37 @@ const rankingsTableContent = html`
     <p style="color: #cbd5e1; margin-bottom: 1.5rem;">
       Teams ranked by composite Power Score. <span style="color: #22c55e;">▲</span> = roster suggests higher rank, <span style="color: #ef4444;">▼</span> = roster suggests lower rank.
     </p>
-    ${Inputs.table(tableData, {
-      columns: ["Rank", "", "Team", "Power", "Lineup", "Perf", "Pos", "Depth", "Record"],
+    ${Inputs.table(tableRankings, {
+      columns: ["powerRank", "trend", "teamName", "powerScore", "lineupValueScore", "performanceScore", "positionalScore", "depthScore", "record"],
       header: {
-        "Rank": "Rank",
-        "": "",
-        "Team": "Team",
-        "Power": "Power",
-        "Lineup": "Lineup",
-        "Perf": "Perf",
-        "Pos": "Pos",
-        "Depth": "Depth",
-        "Record": "Record"
+        powerRank: "Rank",
+        trend: "",
+        teamName: "Team",
+        powerScore: "Power",
+        lineupValueScore: "Lineup",
+        performanceScore: "Perf",
+        positionalScore: "Pos",
+        depthScore: "Depth",
+        record: "Record"
+      },
+      format: {
+        powerRank: d => `#${d}`,
+        powerScore: d => d.toFixed(1),
+        lineupValueScore: d => d.toFixed(1),
+        performanceScore: d => d.toFixed(1),
+        positionalScore: d => d.toFixed(1),
+        depthScore: d => d.toFixed(1)
       },
       width: {
-        "Rank": 60,
-        "": 40,
-        "Team": 140,
-        "Power": 70,
-        "Lineup": 70,
-        "Perf": 60,
-        "Pos": 55,
-        "Depth": 60,
-        "Record": 70
-      },
-      align: {
-        "Rank": "center",
-        "": "center",
-        "Power": "center",
-        "Lineup": "center",
-        "Perf": "center",
-        "Pos": "center",
-        "Depth": "center",
-        "Record": "center"
+        powerRank: 55,
+        trend: 35,
+        teamName: 130,
+        powerScore: 65,
+        lineupValueScore: 65,
+        performanceScore: 55,
+        positionalScore: 50,
+        depthScore: 55,
+        record: 65
       }
     })}
   </div>
