@@ -59,7 +59,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SLEEPER_LEAGUE_ID: ${{ secrets.SLEEPER_LEAGUE_ID }}
-          COMMENTATOR_REGION: ${{ github.event.inputs.region || secrets.COMMENTATOR_REGION || 'US' }}
+          COMMENTATOR_REGION: ${{ github.event.inputs.region || secrets.COMMENTATOR_REGION || 'UK' }}
 
       - name: Check for new summaries
         id: check_changes
