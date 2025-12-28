@@ -40,6 +40,8 @@ jobs:
 
       - name: Build with Observable Framework
         run: npm run build
+        env:
+          SLEEPER_LEAGUE_ID: ${{ secrets.SLEEPER_LEAGUE_ID }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
