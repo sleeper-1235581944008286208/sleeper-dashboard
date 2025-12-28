@@ -132,12 +132,15 @@ const personaStyle = weeklySummary ? (personaStyles[weeklySummary.persona] || pe
 ```
 
 ```js
+// Always display the week selector at the top
+display(weekInput);
+```
+
+```js
 // Display AI-generated summary if available
 if (weeklySummary && personaStyle) {
   const summaryContent = html`
     <div style="padding: 0;">
-      ${weekInput}
-
       <div style="
         margin: 1.5rem 0;
         padding: 2rem;
@@ -222,9 +225,6 @@ if (weeklySummary && personaStyle) {
       ${summaryContent}
     </div>
   </details>`);
-} else {
-  // No summary available - just show the week selector
-  display(weekInput);
 }
 ```
 
