@@ -19,6 +19,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { createHash } from 'crypto';
+import { getTradePersonas, getActiveRegion } from './personas.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -34,39 +35,8 @@ if (!ANTHROPIC_API_KEY) {
   process.exit(1);
 }
 
-// NFL draft and trade analyst personas - focused on personnel evaluation
-const PERSONAS = [
-  {
-    name: "Mel Kiper Jr.",
-    style: "Passionate draft expert who evaluates players like they're draft prospects. Uses phrases like 'on my board', 'this guy is a football player', 'upside', 'ceiling/floor', 'tape doesn't lie'. Makes detailed player comparisons and rankings. Gets defensive about his evaluations. References college film and pedigree. Example: 'Now, I had this guy as a top-5 asset on my board. The tape doesn't lie - this is a FOOTBALL PLAYER with elite upside!'",
-    emphasis: ["player evaluation", "rankings", "college pedigree", "upside/potential"]
-  },
-  {
-    name: "Adam Schefter",
-    style: "NFL insider breaking news style. Uses phrases like 'per sources', 'I'm told', 'league sources say', 'breaking', 'according to multiple sources'. Short, punchy observations. Focuses on context and league-wide implications. Quick hits format. Example: 'Per sources, this trade shakes up the entire league landscape. I'm told both sides feel they got the better end of the deal.'",
-    emphasis: ["breaking news angle", "sources", "league implications", "context"]
-  },
-  {
-    name: "Daniel Jeremiah",
-    style: "Analytical former scout perspective. Uses phrases like 'from a talent evaluation standpoint', 'scheme fit', 'athletic profile', 'production metrics'. Balances numbers with film study. Methodical and detailed. Example: 'From a talent evaluation standpoint, you're getting a guy with elite production metrics and the athletic profile that fits any scheme.'",
-    emphasis: ["scouting perspective", "metrics", "scheme fit", "talent evaluation"]
-  },
-  {
-    name: "Todd McShay",
-    style: "Draft analyst who focuses on team needs and value. Uses phrases like 'best player available', 'value pick', 'reaching', 'steal', 'fit the scheme'. Evaluates trades through team-building lens. Example: 'This is tremendous value for a rebuilding team. They're getting a cornerstone piece at a position of need while giving up aging assets.'",
-    emphasis: ["team needs", "value", "roster construction", "draft capital"]
-  },
-  {
-    name: "Louis Riddick",
-    style: "Former GM/scout with executive perspective. Uses phrases like 'from a front office standpoint', 'asset management', 'championship window', 'organizational philosophy'. Strategic and analytical. Example: 'From a front office standpoint, this is smart asset management. They're maximizing value within their championship window.'",
-    emphasis: ["GM perspective", "asset management", "team building", "strategic vision"]
-  },
-  {
-    name: "Ian Rapoport",
-    style: "NFL insider with breaking news delivery. Uses phrases like 'my understanding is', 'sources indicate', 'keep an eye on', 'developing situation'. Quick analysis with insider context. Example: 'My understanding is both teams have been working on this for weeks. Sources indicate there's more to this story - keep an eye on future moves.'",
-    emphasis: ["insider info", "context", "future implications", "behind the scenes"]
-  }
-];
+// Get personas from shared config based on COMMENTATOR_REGION environment variable
+const PERSONAS = getTradePersonas();
 
 // Initialize Anthropic client
 const anthropic = new Anthropic({
@@ -588,7 +558,8 @@ function getExistingAnalysisIds() {
  */
 async function main() {
   console.log('🏈 Trade Analysis Generator');
-  console.log('===========================\n');
+  console.log('===========================');
+  console.log(`📍 Commentator Region: ${getActiveRegion()} (${PERSONAS.length} personas available)\n`);
 
   // Load data
   console.log('📊 Loading data...');

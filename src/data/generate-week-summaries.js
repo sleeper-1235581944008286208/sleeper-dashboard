@@ -19,6 +19,7 @@ import Anthropic from '@anthropic-ai/sdk';
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { getWeeklyPersonas, getActiveRegion } from './personas.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -34,39 +35,8 @@ if (!ANTHROPIC_API_KEY) {
   process.exit(1);
 }
 
-// Sports commentator personas with their signature styles
-const PERSONAS = [
-  {
-    name: "Pat McAfee",
-    style: "Energetic, enthusiastic, uses lots of capitals and exclamations. Signature phrases: 'BOOM!', 'BANGER!', 'FOR THE BRAND!', 'LETS GOOOO!'. Very conversational and casual with modern slang. Example: 'That's a BANGER of a performance! This guy is ELECTRIC, FOR THE BRAND!' Give managers wrestling-style nicknames.",
-    emphasis: ["big plays", "excitement", "energy"]
-  },
-  {
-    name: "Lee Corso",
-    style: "Excited, dramatic, builds suspense. Signature phrases: 'Not so fast my friend!', 'Oh boy!', 'Uh oh!'. Makes bold predictions, references traditions. Example: 'Not so fast my friend! You thought this was over? OH BOY were you wrong!' Create dramatic narratives.",
-    emphasis: ["upsets", "predictions", "drama"]
-  },
-  {
-    name: "Stuart Scott",
-    style: "Cool, smooth, hip-hop and pop culture references. Signature phrases: 'Boo-yah!', 'As cool as the other side of the pillow', 'He must be the bus driver because he was takin' him to school!' Rhythmic delivery with clever wordplay and analogies. Example: 'Boo-yah! That performance was cooler than the other side of the pillow!'",
-    emphasis: ["style", "wordplay", "pop culture"]
-  },
-  {
-    name: "Scott Van Pelt",
-    style: "Laid-back, witty, conversational with dry humor. References late-night sports culture, 'Bad Beats', and gambling. Self-deprecating and relatable. Example: 'Of course he left 40 points on the bench. That's a Bad Beat if I've ever seen one.' Sympathetic but sarcastic.",
-    emphasis: ["bad beats", "relatability", "dry humor"]
-  },
-  {
-    name: "Rich Eisen",
-    style: "Polished, enthusiastic but measured. Heavy on pop culture references - movies, TV shows, music. Signature: comparing plays to movie scenes. Example: 'That comeback was like the Death Star assault in Star Wars - impossible odds, but he pulled it off!' Smart analogies and references.",
-    emphasis: ["comebacks", "movie/TV references", "smart analogies"]
-  },
-  {
-    name: "Dan Patrick",
-    style: "Dry wit, deadpan delivery with subtle sarcasm. Signature phrases: 'En Fuego!', 'You can't stop him, you can only hope to contain him'. Clever wordplay, easy-going. Example: 'He's en fuego! You can't stop him, you can only hope to contain him... and even that's not working.' Classic sports cliches with ironic twist.",
-    emphasis: ["irony", "cliches twisted", "deadpan"]
-  }
-];
+// Get personas from shared config based on COMMENTATOR_REGION environment variable
+const PERSONAS = getWeeklyPersonas();
 
 // Initialize Anthropic client
 const anthropic = new Anthropic({
@@ -707,7 +677,8 @@ async function main() {
   const specificWeek = args[0] ? parseInt(args[0]) : null;
 
   console.log('🏈 Weekly Matchup Summary Generator');
-  console.log('=====================================\n');
+  console.log('=====================================');
+  console.log(`📍 Commentator Region: ${getActiveRegion()} (${PERSONAS.length} personas available)\n`);
 
   // Load data
   console.log('📊 Loading data...');
