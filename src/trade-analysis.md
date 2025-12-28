@@ -18,6 +18,16 @@ const players = await FileAttachment("data/players.json").json();
 const rosters = await FileAttachment("data/rosters.json").json();
 const users = await FileAttachment("data/users.json").json();
 
+// Load power rankings data for trade impact
+let powerData = null;
+try {
+  powerData = await FileAttachment("data/power-rankings.json").json();
+} catch (e) {
+  console.log("Power rankings data not available");
+}
+const playerValues = powerData?.playerValues || {};
+const powerRankings = powerData?.rankings || [];
+
 // Debug logging
 console.log(`Loaded ${tradeAnalyses.length} trade analyses`);
 console.log(`Loaded ${trades.length} trades`);
@@ -38,6 +48,68 @@ function getUserByRosterId(rosterId) {
   return users.find(u => u.user_id === roster.owner_id);
 }
 
+// Calculate trade value impact
+function calculateTradeImpact(trade) {
+  if (!trade || !playerValues || Object.keys(playerValues).length === 0) return null;
+
+  const rosterIds = new Set([
+    ...Object.values(trade.adds || {}),
+    ...Object.values(trade.drops || {})
+  ]);
+
+  const impacts = {};
+
+  Array.from(rosterIds).forEach(rosterId => {
+    const user = getUserByRosterId(rosterId);
+    const userName = user?.display_name || `Team ${rosterId}`;
+
+    let valueReceived = 0;
+    let valueGiven = 0;
+    const playersReceived = [];
+    const playersGiven = [];
+
+    // Calculate what this roster receives
+    if (trade.adds) {
+      Object.entries(trade.adds).forEach(([playerId, rId]) => {
+        if (rId === rosterId) {
+          const pv = playerValues[playerId];
+          if (pv) {
+            valueReceived += pv.value;
+            playersReceived.push({ name: pv.name, value: pv.value, position: pv.position });
+          }
+        }
+      });
+    }
+
+    // Calculate what this roster gives
+    if (trade.drops) {
+      Object.entries(trade.drops).forEach(([playerId, rId]) => {
+        if (rId === rosterId) {
+          const pv = playerValues[playerId];
+          if (pv) {
+            valueGiven += pv.value;
+            playersGiven.push({ name: pv.name, value: pv.value, position: pv.position });
+          }
+        }
+      });
+    }
+
+    const netValue = valueReceived - valueGiven;
+    impacts[rosterId] = {
+      userName,
+      valueReceived,
+      valueGiven,
+      netValue,
+      playersReceived,
+      playersGiven,
+      isWinner: netValue > 500,
+      isLoser: netValue < -500
+    };
+  });
+
+  return impacts;
+}
+
 // Match analyses to trade details
 const enrichedAnalyses = tradeAnalyses.map(analysis => {
   // Find the corresponding trade
@@ -55,9 +127,12 @@ const enrichedAnalyses = tradeAnalyses.map(analysis => {
     }) && t.week === analysis.week && t.season === analysis.season;
   });
 
+  const tradeImpact = calculateTradeImpact(trade);
+
   return {
     ...analysis,
-    trade
+    trade,
+    tradeImpact
   };
 });
 
@@ -183,7 +258,7 @@ if (tradeAnalyses.length === 0) {
           </div>
         </div>
 
-        <!-- Trade Details -->
+        <!-- Trade Details with Power Score Impact -->
         ${analysis.trade ? html`
           <div style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(0, 0, 0, 0.2); border-radius: 0.5rem; font-size: 0.875rem;">
             ${(() => {
@@ -195,6 +270,7 @@ if (tradeAnalyses.length === 0) {
               return Array.from(rosterIds).map(rosterId => {
                 const user = getUserByRosterId(rosterId);
                 const userName = user?.display_name || `Team ${rosterId}`;
+                const impact = analysis.tradeImpact?.[rosterId];
 
                 // Get what this roster receives
                 const receives = [];
@@ -229,9 +305,21 @@ if (tradeAnalyses.length === 0) {
                 }
 
                 return html`
-                  <div style="margin-bottom: 1rem;">
-                    <div style="font-weight: 600; color: #22c55e; margin-bottom: 0.5rem;">
-                      ${userName}
+                  <div style="margin-bottom: 1rem; ${impact?.isWinner ? 'border-left: 3px solid #22c55e; padding-left: 1rem;' : impact?.isLoser ? 'border-left: 3px solid #ef4444; padding-left: 1rem;' : ''}">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                      <div style="font-weight: 600; color: #22c55e;">
+                        ${userName}
+                      </div>
+                      ${impact ? html`
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                          <span style="font-size: 0.75rem; color: #94a3b8;">Net Value:</span>
+                          <span style="font-weight: 700; color: ${impact.netValue > 0 ? '#22c55e' : impact.netValue < 0 ? '#ef4444' : '#94a3b8'};">
+                            ${impact.netValue > 0 ? '+' : ''}${impact.netValue.toLocaleString()}
+                          </span>
+                          ${impact.isWinner ? html`<span style="background: rgba(34, 197, 94, 0.2); color: #22c55e; padding: 0.125rem 0.5rem; border-radius: 1rem; font-size: 0.625rem; font-weight: 700;">WIN</span>` : ''}
+                          ${impact.isLoser ? html`<span style="background: rgba(239, 68, 68, 0.2); color: #ef4444; padding: 0.125rem 0.5rem; border-radius: 1rem; font-size: 0.625rem; font-weight: 700;">LOSS</span>` : ''}
+                        </div>
+                      ` : ''}
                     </div>
                     ${receives.length > 0 ? html`
                       <div style="margin-bottom: 0.25rem;">
@@ -239,6 +327,7 @@ if (tradeAnalyses.length === 0) {
                         <span style="color: #cbd5e1; margin-left: 0.5rem;">
                           ${receives.join(', ')}
                         </span>
+                        ${impact ? html`<span style="color: #22c55e; font-size: 0.75rem; margin-left: 0.5rem;">(+${impact.valueReceived.toLocaleString()})</span>` : ''}
                       </div>
                     ` : ''}
                     ${gives.length > 0 ? html`
@@ -247,6 +336,7 @@ if (tradeAnalyses.length === 0) {
                         <span style="color: #cbd5e1; margin-left: 0.5rem;">
                           ${gives.join(', ')}
                         </span>
+                        ${impact ? html`<span style="color: #ef4444; font-size: 0.75rem; margin-left: 0.5rem;">(-${impact.valueGiven.toLocaleString()})</span>` : ''}
                       </div>
                     ` : ''}
                   </div>
