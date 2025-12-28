@@ -329,11 +329,16 @@ function processTradeData(trade, users, players, rosters, matchupsAllYears, powe
     ...Object.values(trade.drops || {})
   ]);
 
-  // Map roster IDs to user names
+  // Map roster IDs to user names by looking up roster -> owner_id -> user
   const rosterMap = {};
   rosterIds.forEach(rosterId => {
-    const user = users.find(u => u.user_id === rosterId || u.metadata?.roster_id === rosterId);
-    rosterMap[rosterId] = user?.display_name || `Team ${rosterId}`;
+    // Find the roster to get the owner_id
+    const roster = rosters.find(r => r.roster_id === rosterId);
+    const ownerId = roster?.owner_id;
+
+    // Find the user by owner_id
+    const user = ownerId ? users.find(u => u.user_id === ownerId) : null;
+    rosterMap[rosterId] = user?.display_name || user?.username || `Team ${rosterId}`;
   });
 
   // Find the actual trading parties (who owns the rosters)
@@ -620,12 +625,36 @@ function saveAnalysis(tradeData, persona, analysis) {
     mkdirSync(outputDir, { recursive: true });
   }
 
+  // Build detailed sides info for the output
+  const sidesDetail = tradeData.sides.map(side => ({
+    teamName: side.userName,
+    teamContext: side.teamContext,
+    powerScore: side.powerScore,
+    tradeImpact: side.tradeImpact,
+    receives: side.receives.map(a => ({
+      name: a.name,
+      position: a.position,
+      team: a.team,
+      age: a.age,
+      careerStage: a.careerStage
+    })),
+    gives: side.gives.map(a => ({
+      name: a.name,
+      position: a.position,
+      team: a.team,
+      age: a.age,
+      careerStage: a.careerStage
+    }))
+  }));
+
   const data = {
     tradeId: tradeData.tradeId,
     week: tradeData.week,
     season: tradeData.season,
     leagueId: LEAGUE_ID,
     participants: tradeData.participants,
+    sides: sidesDetail,
+    draftPicks: tradeData.draftPicks,
     persona: persona.name,
     analysis,
     generatedAt: new Date().toISOString()
