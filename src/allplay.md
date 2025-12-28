@@ -194,13 +194,15 @@ const allPlayChartContent = html`
     ${Plot.plot({
       marginLeft: 200,
       marginBottom: 60,
+      marginRight: 100,
+      width: 800,
       height: teams.length * 60,
       x: {
         label: "All-Play Win Percentage →",
         grid: true,
         labelAnchor: "center",
         domain: [0, 1],
-        percent: true
+        tickFormat: d => `${(d * 100).toFixed(0)}%`
       },
       y: {
         label: null
