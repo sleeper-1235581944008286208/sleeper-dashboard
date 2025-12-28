@@ -149,19 +149,17 @@ const rankingsTableContent = html`
     <p style="color: #cbd5e1; margin-bottom: 1.5rem;">
       Teams ranked by composite Power Score. <strong>▲</strong> = roster suggests higher rank, <strong>▼</strong> = roster suggests lower rank.
     </p>
-    <div style="overflow-x: auto;">
-      <div class="rankings-grid" style="display: grid; grid-template-columns: 50px 50px 1fr 80px 70px 70px 70px 70px 70px; gap: 0; font-size: 0.875rem; min-width: 700px;">
-        <div style="padding: 0.75rem 0.5rem; text-align: left; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">#</div>
-        <div style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Trend</div>
-        <div style="padding: 0.75rem 0.5rem; text-align: left; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Team</div>
-        <div style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Power</div>
-        <div style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Lineup</div>
-        <div style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Perf</div>
-        <div style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Pos</div>
-        <div style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Depth</div>
-        <div style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Record</div>
-        ${rankingsRows}
-      </div>
+    <div class="rankings-grid" style="display: grid; grid-template-columns: 40px 40px 1fr 70px 60px 60px 60px 60px 60px; gap: 0; font-size: 0.875rem;">
+      <div style="padding: 0.75rem 0.5rem; text-align: left; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">#</div>
+      <div style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Trend</div>
+      <div style="padding: 0.75rem 0.5rem; text-align: left; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Team</div>
+      <div style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Power</div>
+      <div style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Lineup</div>
+      <div style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Perf</div>
+      <div style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Pos</div>
+      <div style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Depth</div>
+      <div style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Record</div>
+      ${rankingsRows}
     </div>
   </div>
 `;

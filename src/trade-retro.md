@@ -507,18 +507,17 @@ if (sortedTradeRecords.length > 0) {
       <div style="padding: 12px 16px; background: rgba(59, 130, 246, 0.1); border-left: 4px solid #3b82f6; border-radius: 6px; margin-bottom: 20px; font-size: 13px; line-height: 1.6;">
         <strong style="color: #3b82f6; font-size: 14px;">📊 Note:</strong> These records are current and will change as traded draft picks are used and those players perform in future seasons.
       </div>
-      <div style="overflow-x: auto;">
-        <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
-          <colgroup>
-            <col style="width: 70px;">
-            <col>
-            <col style="width: 130px;">
-            <col style="width: 70px;">
-            <col style="width: 80px;">
-            <col style="width: 75px;">
-            <col style="width: 70px;">
-            <col style="width: 75px;">
-          </colgroup>
+      <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+        <colgroup>
+          <col style="width: 50px;">
+          <col>
+          <col style="width: 100px;">
+          <col style="width: 55px;">
+          <col style="width: 60px;">
+          <col style="width: 55px;">
+          <col style="width: 55px;">
+          <col style="width: 60px;">
+        </colgroup>
           <thead>
             <tr style="border-bottom: 2px solid rgba(255, 255, 255, 0.1);">
               <th style="padding: 12px 8px; text-align: left; color: var(--theme-foreground-alt); font-weight: 600;">Rank</th>
@@ -551,8 +550,7 @@ if (sortedTradeRecords.length > 0) {
               </tr>`;
             })}
           </tbody>
-        </table>
-      </div>
+      </table>
       <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255, 255, 255, 0.1); font-size: 12px; color: var(--theme-foreground-alt); line-height: 1.6;">
         <strong>How it works:</strong> A team "wins" a trade if they gain 20+ more career fantasy points than they gave up.
         Trades with smaller differentials (&lt;20 pts) are considered "draws" (even trades). Rankings are based on win percentage.
