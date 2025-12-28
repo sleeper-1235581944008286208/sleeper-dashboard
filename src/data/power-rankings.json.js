@@ -10,32 +10,41 @@ const DP_VALUES_URL = "https://raw.githubusercontent.com/dynastyprocess/data/mas
  */
 function parseCSV(csvText) {
   const lines = csvText.trim().split('\n');
-  const headers = lines[0].split(',').map(h => h.trim());
+
+  // Parse header row, stripping quotes
+  const rawHeaders = parseCSVLine(lines[0]);
+  const headers = rawHeaders.map(h => h.replace(/^"|"$/g, '').trim());
 
   return lines.slice(1).map(line => {
-    // Handle quoted fields with commas
-    const values = [];
-    let current = '';
-    let inQuotes = false;
-
-    for (const char of line) {
-      if (char === '"') {
-        inQuotes = !inQuotes;
-      } else if (char === ',' && !inQuotes) {
-        values.push(current.trim());
-        current = '';
-      } else {
-        current += char;
-      }
-    }
-    values.push(current.trim());
-
+    const values = parseCSVLine(line);
     const obj = {};
     headers.forEach((header, i) => {
       obj[header] = values[i] || '';
     });
     return obj;
   });
+}
+
+/**
+ * Parse a single CSV line handling quoted fields
+ */
+function parseCSVLine(line) {
+  const values = [];
+  let current = '';
+  let inQuotes = false;
+
+  for (const char of line) {
+    if (char === '"') {
+      inQuotes = !inQuotes;
+    } else if (char === ',' && !inQuotes) {
+      values.push(current.trim());
+      current = '';
+    } else {
+      current += char;
+    }
+  }
+  values.push(current.trim());
+  return values;
 }
 
 /**
