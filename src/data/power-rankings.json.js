@@ -437,9 +437,9 @@ async function calculatePowerRankings() {
     const losses = roster.settings?.losses || 0;
     const winPct = (wins + losses) > 0 ? wins / (wins + losses) : 0;
 
-    // Performance score: blend of win%, all-play%, and points rank
-    const performanceScore = (allPlay.winPct * 60) + (winPct * 40);
-    const actualPerformanceScore = performanceScore * 100;
+    // Performance score: blend of win%, all-play%, and points rank (already 0-100 scale)
+    const performanceScore = ((allPlay.winPct * 60) + (winPct * 40));
+    const actualPerformanceScore = performanceScore; // Don't multiply by 100 - already 0-100
 
     // 3. Positional Advantage
     const positionalScore = calculatePositionalAdvantage(teamLineup, teamLineups, slots);
