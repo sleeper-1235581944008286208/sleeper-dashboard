@@ -1,0 +1,58 @@
+{
+  "week": 14,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "persona": "Jamie Carragher",
+  "summary": "Right, let me tell you something - Week 14 was an absolute masterclass in how fantasy football can turn on a sixpence, and some of you lot are making decisions that'd get you relegated from Sunday league. We had Josh Allen putting on a clinic with 46.8 points - FORTY-SIX POINT EIGHT - and at the other end, poor danielb6 is trotting out Roman Wilson for a big fat zero and Nick Chubb managing 0.3. That's not fantasy football, that's fantasy nightmare, that is.\n\nNow, if you want to talk about a proper rivalry brewing here, cast your eyes on chitown314 and stevenbar24. Chitown's been on a three-week hot streak, averaging 131.5 points, and they've just battered the #3 ranked team by nearly 27 points. Joe Burrow with 26.4, RJ Harvey with 25.0 - that's the kind of form that wins you leagues. But here's the thing that gets me: stevenbar24's averaging 140 points on the season but they're trending stable, maybe even a bit cold. They had Matthew Stafford deliver 28.2 and the Chargers defense chip in with 14.4, but when Deebo Samuel and Rashee Rice are giving you 5.7 and 5.9, you're asking for trouble. This is a #11 seed taking down a #3, and that tells me stevenbar24 better sort themselves out quick because their season average won't mean anything if they keep getting picked off by teams on the rise.\n\nThe absolute demolition job of the week? That's mikeybhoy putting 53 points on poor danielb6. Fifty-three! Josh Allen going nuclear with that 46.8, the Vikings defense adding 21.4 - that's what I call a complete performance. And look, danielb6's on a three-week cold streak, averaging just 91.2, trending down like a stone. When your best players are Saquon Barkley and your kicker Jason Myers, and you're still only mustering 75.1 points, you've got fundamental problems in that squad. Meanwhile, BigBishAl76 - the #2 power ranking - proved exactly why they're up there, putting up 146.76 against Tmac1418. Kyren Williams with 22.7, Jared Goff with 20.7, that's tactical nous right there.\n\nBut let's talk about the real story here - finthefiddle. The #1 power ranking, 92 on the index, season average of 157.9, and they're STILL finding ways to improve, recent form at 167.6. Jahmyr Gibbs with 36.0, Jaxon Smith-Njigba with 25.6 - that's championship-level stuff. They beat jamesclarkson96 who actually had Michael Wilson deliver 35.2 and Lamar Jackson put up 27.1, but it wasn't enough. That's the difference between a contender and a pretender right there. And can we talk about NiallCarslaw for a second? Shedeur Sanders with 41.0 points and Brandon Aubrey - A KICKER - contributing 23.0. When your kicker's outscoring most people's wide receivers, you know you've had a result. They absolutely battered bequietamy by nearly 39 points despite Justin Jefferson giving them a measly 2.6. That's depth, that is. That's what wins you weeks when your stars don't show up.",
+  "generatedAt": "2025-12-28T22:15:21.317Z",
+  "matchupScores": [
+    {
+      "team1": "bequietamy",
+      "team1Score": 107.34,
+      "team2": "NiallCarslaw",
+      "team2Score": 146.26
+    },
+    {
+      "team1": "chitown314",
+      "team1Score": 144.96,
+      "team2": "stevenbar24",
+      "team2Score": 118.14
+    },
+    {
+      "team1": "decdweir",
+      "team1Score": 100.88,
+      "team2": "ChunkyDog1998",
+      "team2Score": 112.38
+    },
+    {
+      "team1": "finthefiddle",
+      "team1Score": 143.32,
+      "team2": "jamesclarkson96",
+      "team2Score": 124.36
+    },
+    {
+      "team1": "jdmorris",
+      "team1Score": 102.24,
+      "team2": "MarkusArnold",
+      "team2Score": 89.28
+    },
+    {
+      "team1": "mikeybhoy",
+      "team1Score": 128.14,
+      "team2": "danielb6",
+      "team2Score": 75.1
+    },
+    {
+      "team1": "raaaaaidddderrrrrs",
+      "team1Score": 103.8,
+      "team2": "stephen375",
+      "team2Score": 92.6
+    },
+    {
+      "team1": "Tmac1418",
+      "team1Score": 119.36,
+      "team2": "BigBishAl76",
+      "team2Score": 146.76
+    }
+  ]
+}

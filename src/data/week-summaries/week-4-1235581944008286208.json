@@ -1,0 +1,58 @@
+{
+  "week": 4,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "persona": "Gary Neville",
+  "summary": "Right, Week 4 then, and what we've witnessed here is a masterclass in how fantasy football can swing on the finest of margins – or in some cases, get absolutely battered by a 77-point margin. Let me tell you, when MarkusArnold puts 164.84 on the board against chitown314's 86.96, that's not just a win, that's a statement. Justin Fields with 35.6 points and Quinshon Judkins adding 26.5 – that's your leadership right there. Meanwhile, chitown314 had Christian McCaffrey putting in a decent 25.6, but when your Baltimore Ravens defense is giving you minus-3, you're fighting with one hand tied behind your back. The context here matters: this wasn't about chitown314 being dreadful, it was about MarkusArnold hitting peak form at precisely the right moment.\n\nNow, let's talk about the rivalry that's brewing at the top of this league – finthefiddle versus BigBishAl76. Number one takes on number two in the power rankings, and you'd expect fireworks, wouldn't you? What you got was finthefiddle extending their authority with a 153.52 to 131.12 victory. Bucky Irving with 27.5 and Drake Maye chipping in 26.2 – that's the sort of consistency you need from your leaders when the pressure's on. But here's what concerns me about BigBishAl76: when David Montgomery gives you just 1.2 points, that's a problem you can't paper over, even with Justin Jefferson's 20.1. This feels like Liverpool versus Manchester United in the mid-2010s – one side's got the momentum and the other's trying to figure out where it all went wrong. Finthefiddle's on a two-week hot streak averaging 146.1, and you've got to fancy them to keep this going.\n\nThe week's standout moment? That's got to be jamesclarkson96's demolition of ChunkyDog1998, and it reminds me of that Sergio Agüero moment in 2012 – you think you're in control, you're having a decent week with 133.32 points, and then boom, Kenneth Gainwell drops 34.4 on you out of nowhere. James Cook adding 26.5 for good measure, and suddenly you're staring at a 171.68 total wondering what just happened. ChunkyDog1998 had DK Metcalf putting in 24.6, they had C.J. Stroud with 24.9, and it still wasn't enough. That's the beautiful brutality of this game – sometimes doing well just isn't good enough.\n\nElsewhere, stevenbar24 continues their two-week hot streak with 151.88, led by the week's overall top performer Ashton Jeanty with an absolutely ridiculous 40.5 points. That's your match-winner right there. But the game that'll keep me up at night is bequietamy sneaking past danielb6 by just 6.42 points despite having Dylan Sampson put up minus-0.2. Minus points! When Puka Nacua has to bail you out with 33.0 and Carson Wentz – yes, Carson Wentz – drops 28.7 to save your bacon, you've got to count your blessings. Daniel b6 will be devastated because Matt Gay gave them 18.0 from the kicking position and the Philadelphia Eagles defense added 18.4, but when Cedric Tillman musters just 1.6, those are the margins that cost you matches. On paper it's close, but context matters – this is where squad depth and a bit of fortune swings the whole matchup. That's Week 4 done, and if you're not paying attention to form and momentum now, you'll be left behind.",
+  "generatedAt": "2025-12-28T22:11:13.011Z",
+  "matchupScores": [
+    {
+      "team1": "bequietamy",
+      "team1Score": 126.3,
+      "team2": "danielb6",
+      "team2Score": 119.88
+    },
+    {
+      "team1": "chitown314",
+      "team1Score": 86.96,
+      "team2": "MarkusArnold",
+      "team2Score": 164.84
+    },
+    {
+      "team1": "ChunkyDog1998",
+      "team1Score": 133.32,
+      "team2": "jamesclarkson96",
+      "team2Score": 171.68
+    },
+    {
+      "team1": "decdweir",
+      "team1Score": 158.2,
+      "team2": "NiallCarslaw",
+      "team2Score": 105.8
+    },
+    {
+      "team1": "finthefiddle",
+      "team1Score": 153.52,
+      "team2": "BigBishAl76",
+      "team2Score": 131.12
+    },
+    {
+      "team1": "jdmorris",
+      "team1Score": 140.16,
+      "team2": "raaaaaidddderrrrrs",
+      "team2Score": 91.98
+    },
+    {
+      "team1": "stevenbar24",
+      "team1Score": 151.88,
+      "team2": "stephen375",
+      "team2Score": 140.5
+    },
+    {
+      "team1": "Tmac1418",
+      "team1Score": 118.48,
+      "team2": "mikeybhoy",
+      "team2Score": 133.86
+    }
+  ]
+}

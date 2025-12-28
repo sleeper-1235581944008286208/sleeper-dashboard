@@ -604,7 +604,7 @@ Return ONLY the analysis text, no preamble or meta-commentary.`;
   const message = await anthropic.messages.create({
     model: 'claude-sonnet-4-5',
     max_tokens: 1500,
-    temperature: 1.0,
+    // temperature: 1.0,
     top_p: 0.95,  // Add nucleus sampling for more variety
     messages: [{
       role: 'user',
