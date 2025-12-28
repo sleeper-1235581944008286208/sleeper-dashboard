@@ -25,9 +25,6 @@ on:
 permissions:
   contents: write
 
-env:
-  COMMENTATOR_REGION: UK
-
 jobs:
   generate-summaries:
     runs-on: ubuntu-latest
@@ -62,7 +59,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SLEEPER_LEAGUE_ID: ${{ secrets.SLEEPER_LEAGUE_ID }}
-          COMMENTATOR_REGION: ${{ github.event.inputs.region || env.COMMENTATOR_REGION }}
+          COMMENTATOR_REGION: ${{ github.event.inputs.region || secrets.COMMENTATOR_REGION }}
 
       - name: Check for new summaries
         id: check_changes
