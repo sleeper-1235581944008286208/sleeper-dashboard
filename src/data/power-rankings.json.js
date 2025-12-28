@@ -373,6 +373,32 @@ function calculateDepthScore(rosterPlayerIds, playerValues, starters, players) {
 }
 
 /**
+ * Calculate power score for a hypothetical roster (for trade simulation)
+ */
+function calculateTeamPowerScore(rosterPlayerIds, playerValues, slots, players, allLineups, maxLineupValue, performanceScore) {
+  const lineupData = calculateOptimalLineupValue(rosterPlayerIds, playerValues, slots, players);
+  const lineupValueScore = (lineupData.totalValue / maxLineupValue) * 100;
+  const positionalScore = calculatePositionalAdvantage(lineupData, allLineups, slots);
+  const depthScore = calculateDepthScore(rosterPlayerIds, playerValues, lineupData.starters, players);
+
+  const powerScore = (
+    (lineupValueScore * 0.50) +
+    (performanceScore * 0.30) +
+    (positionalScore * 0.15) +
+    (depthScore * 0.05)
+  );
+
+  return {
+    powerScore: Math.round(powerScore * 10) / 10,
+    lineupValueScore: Math.round(lineupValueScore * 10) / 10,
+    positionalScore: Math.round(positionalScore * 10) / 10,
+    depthScore: Math.round(depthScore * 10) / 10,
+    totalRosterValue: lineupData.totalValue,
+    starters: lineupData.starters
+  };
+}
+
+/**
  * Main power rankings calculation
  */
 async function calculatePowerRankings() {
@@ -478,9 +504,44 @@ async function calculatePowerRankings() {
     currentWeek: league.settings?.leg || 1
   };
 
+  // Create player values lookup for trade simulator (only rostered players + top free agents)
+  const playerValuesLookup = {};
+  const rosteredPlayerIds = new Set();
+  rosters.forEach(roster => {
+    (roster.players || []).forEach(pid => rosteredPlayerIds.add(pid));
+  });
+
+  // Include all rostered players
+  rosteredPlayerIds.forEach(playerId => {
+    const valueData = playerValues.get(playerId);
+    if (valueData) {
+      playerValuesLookup[playerId] = {
+        name: valueData.name,
+        position: valueData.position,
+        team: valueData.team,
+        value: valueData.value
+      };
+    }
+  });
+
+  // Create roster lookup for trade simulator
+  const rosterLookup = {};
+  rosters.forEach(roster => {
+    const user = users.find(u => u.user_id === roster.owner_id);
+    rosterLookup[roster.roster_id] = {
+      oderId: roster.owner_id,
+      teamName: user?.display_name || `Team ${roster.roster_id}`,
+      players: roster.players || [],
+      performanceScore: powerRankings.find(r => r.rosterId === roster.roster_id)?.performanceScore || 50
+    };
+  });
+
   return {
     rankings: powerRankings,
     league: leagueInfo,
+    playerValues: playerValuesLookup,
+    rosters: rosterLookup,
+    maxLineupValue,
     lastUpdated: new Date().toISOString()
   };
 }

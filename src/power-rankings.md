@@ -8,6 +8,9 @@ import * as d3 from "npm:d3";
 const powerData = await FileAttachment("data/power-rankings.json").json();
 const rankings = powerData.rankings;
 const leagueInfo = powerData.league;
+const playerValues = powerData.playerValues;
+const rosterData = powerData.rosters;
+const maxLineupValue = powerData.maxLineupValue;
 ```
 
 <div style="margin: 0 0 3rem 0;">
@@ -58,11 +61,38 @@ const leagueInfo = powerData.league;
 </div>
 
 ```js
-// Prepare display data
-const displayRankings = rankings.map(team => ({
-  ...team,
-  trend: "—" // Placeholder for weekly trend
-}));
+// Simulate trend by comparing lineup value rank to actual standing
+// Positive trend = roster stronger than record suggests
+const displayRankings = rankings.map(team => {
+  // Calculate a simulated "previous" rank based on lineup vs performance difference
+  const lineupRank = [...rankings].sort((a, b) => b.lineupValueScore - a.lineupValueScore)
+    .findIndex(t => t.rosterId === team.rosterId) + 1;
+  const perfRank = [...rankings].sort((a, b) => b.performanceScore - a.performanceScore)
+    .findIndex(t => t.rosterId === team.rosterId) + 1;
+
+  // Trend based on if roster value suggests they should be ranked higher/lower
+  const expectedRank = Math.round((lineupRank * 0.6) + (perfRank * 0.4));
+  const trendValue = expectedRank - team.powerRank;
+
+  let trend, trendColor;
+  if (trendValue > 1) {
+    trend = "▲";
+    trendColor = "#22c55e";
+  } else if (trendValue < -1) {
+    trend = "▼";
+    trendColor = "#ef4444";
+  } else {
+    trend = "—";
+    trendColor = "#94a3b8";
+  }
+
+  return {
+    ...team,
+    trend,
+    trendColor,
+    trendValue
+  };
+});
 ```
 
 ## Current Power Rankings
@@ -100,43 +130,40 @@ const rankingsTableContent = html`
   <div class="card">
     <h3 style="margin-top: 0;">Team Power Rankings</h3>
     <p style="color: #cbd5e1; margin-bottom: 1.5rem;">
-      Teams ranked by composite Power Score. Hover over component scores to understand each team's strengths.
+      Teams ranked by composite Power Score. <strong>▲</strong> = roster suggests higher rank, <strong>▼</strong> = roster suggests lower rank.
     </p>
-    ${Inputs.table(displayRankings, {
-      columns: ["powerRank", "teamName", "powerScore", "lineupValueScore", "performanceScore", "positionalScore", "depthScore", "wins", "losses", "pointsFor"],
-      header: {
-        powerRank: "Rank",
-        teamName: "Team",
-        powerScore: "Power Score",
-        lineupValueScore: "Lineup (50%)",
-        performanceScore: "Perform (30%)",
-        positionalScore: "Position (15%)",
-        depthScore: "Depth (5%)",
-        wins: "W",
-        losses: "L",
-        pointsFor: "Points"
-      },
-      format: {
-        powerScore: x => html`<strong style="color: #8b5cf6;">${x.toFixed(1)}</strong>`,
-        lineupValueScore: x => x.toFixed(1),
-        performanceScore: x => x.toFixed(1),
-        positionalScore: x => x.toFixed(1),
-        depthScore: x => x.toFixed(1),
-        pointsFor: x => x.toFixed(1)
-      },
-      width: {
-        powerRank: 60,
-        teamName: 140,
-        powerScore: 100,
-        lineupValueScore: 90,
-        performanceScore: 100,
-        positionalScore: 100,
-        depthScore: 80,
-        wins: 50,
-        losses: 50,
-        pointsFor: 80
-      }
-    })}
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
+        <thead>
+          <tr style="border-bottom: 2px solid rgba(139, 92, 246, 0.3);">
+            <th style="padding: 0.75rem 0.5rem; text-align: left; color: #94a3b8; font-weight: 600;">Rank</th>
+            <th style="padding: 0.75rem 0.5rem; text-align: left; color: #94a3b8; font-weight: 600;">Trend</th>
+            <th style="padding: 0.75rem 0.5rem; text-align: left; color: #94a3b8; font-weight: 600;">Team</th>
+            <th style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600;">Power Score</th>
+            <th style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600;">Lineup</th>
+            <th style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600;">Perform</th>
+            <th style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600;">Position</th>
+            <th style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600;">Depth</th>
+            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600;">Record</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${displayRankings.map((team, i) => html`
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); ${i % 2 === 0 ? 'background: rgba(139, 92, 246, 0.03);' : ''}">
+              <td style="padding: 0.75rem 0.5rem; font-weight: 700; color: #f8fafc;">#${team.powerRank}</td>
+              <td style="padding: 0.75rem 0.5rem; font-weight: 700; color: ${team.trendColor}; font-size: 1rem;">${team.trend}</td>
+              <td style="padding: 0.75rem 0.5rem; color: #f8fafc; font-weight: 500;">${team.teamName}</td>
+              <td style="padding: 0.75rem 0.5rem; text-align: right; font-weight: 700; color: #8b5cf6;">${team.powerScore.toFixed(1)}</td>
+              <td style="padding: 0.75rem 0.5rem; text-align: right; color: #cbd5e1;">${team.lineupValueScore.toFixed(1)}</td>
+              <td style="padding: 0.75rem 0.5rem; text-align: right; color: #cbd5e1;">${team.performanceScore.toFixed(1)}</td>
+              <td style="padding: 0.75rem 0.5rem; text-align: right; color: #cbd5e1;">${team.positionalScore.toFixed(1)}</td>
+              <td style="padding: 0.75rem 0.5rem; text-align: right; color: #cbd5e1;">${team.depthScore.toFixed(1)}</td>
+              <td style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8;">${team.wins}-${team.losses}</td>
+            </tr>
+          `)}
+        </tbody>
+      </table>
+    </div>
   </div>
 `;
 
@@ -202,6 +229,328 @@ display(html`<details open class="section-collapse">
     ${powerChartContent}
   </div>
 </details>`);
+```
+
+## Trade Impact Simulator
+
+<div style="background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(234, 88, 12, 0.05) 100%); border: 1px solid rgba(249, 115, 22, 0.3); border-radius: 1rem; padding: 1.5rem; margin: 1rem 0 2rem 0;">
+  <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+    <div style="font-size: 2rem;">⚠️</div>
+    <div>
+      <h4 style="margin: 0; color: #f97316;">Why This Matters</h4>
+      <p style="margin: 0.5rem 0 0 0; color: #cbd5e1; font-size: 0.9375rem; line-height: 1.6;">
+        Trade calculators sum player values, but <strong>you can only start so many players</strong>.
+        Trading a stud RB1 for 5 flex players might look "fair" on paper, but destroys your starting lineup.
+        Use this tool to see the <strong>real</strong> impact before you trade.
+      </p>
+    </div>
+  </div>
+</div>
+
+```js
+// Team selectors for trade simulator
+const teamASelector = Inputs.select(
+  rankings.map(t => ({ value: t.rosterId, label: t.teamName })),
+  { label: "Team A", format: x => x.label }
+);
+const teamAId = Generators.input(teamASelector);
+
+const teamBSelector = Inputs.select(
+  rankings.map(t => ({ value: t.rosterId, label: t.teamName })),
+  { label: "Team B", format: x => x.label, value: rankings[1] ? { value: rankings[1].rosterId, label: rankings[1].teamName } : undefined }
+);
+const teamBId = Generators.input(teamBSelector);
+```
+
+```js
+// Get rosters for selected teams
+const teamARoster = rosterData[teamAId.value];
+const teamBRoster = rosterData[teamBId.value];
+
+// Get players with values for each team
+const teamAPlayers = (teamARoster?.players || [])
+  .map(pid => ({ id: pid, ...playerValues[pid] }))
+  .filter(p => p.name)
+  .sort((a, b) => b.value - a.value);
+
+const teamBPlayers = (teamBRoster?.players || [])
+  .map(pid => ({ id: pid, ...playerValues[pid] }))
+  .filter(p => p.name)
+  .sort((a, b) => b.value - a.value);
+```
+
+```js
+// Player selection for Team A (giving away)
+const teamAGivingSelector = Inputs.select(
+  teamAPlayers,
+  {
+    label: `${teamARoster?.teamName || 'Team A'} gives:`,
+    format: p => `${p.name} (${p.position}) - ${p.value.toLocaleString()}`,
+    multiple: true,
+    size: 6
+  }
+);
+const teamAGiving = Generators.input(teamAGivingSelector);
+
+// Player selection for Team B (giving away)
+const teamBGivingSelector = Inputs.select(
+  teamBPlayers,
+  {
+    label: `${teamBRoster?.teamName || 'Team B'} gives:`,
+    format: p => `${p.name} (${p.position}) - ${p.value.toLocaleString()}`,
+    multiple: true,
+    size: 6
+  }
+);
+const teamBGiving = Generators.input(teamBGivingSelector);
+```
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 1rem 0;">
+  <div class="card">
+    <h4 style="margin-top: 0; color: #8b5cf6;">${teamARoster?.teamName || 'Team A'}</h4>
+    ${teamASelector}
+    ${teamAGivingSelector}
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);">
+      <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; margin-bottom: 0.5rem;">Selected to trade away:</div>
+      <div style="color: #f97316; font-weight: 600;">
+        ${teamAGiving.length > 0 ? teamAGiving.map(p => p.name).join(', ') : 'None selected'}
+      </div>
+      <div style="font-size: 0.875rem; color: #94a3b8; margin-top: 0.25rem;">
+        Total value: ${teamAGiving.reduce((sum, p) => sum + p.value, 0).toLocaleString()}
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4 style="margin-top: 0; color: #8b5cf6;">${teamBRoster?.teamName || 'Team B'}</h4>
+    ${teamBSelector}
+    ${teamBGivingSelector}
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);">
+      <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; margin-bottom: 0.5rem;">Selected to trade away:</div>
+      <div style="color: #f97316; font-weight: 600;">
+        ${teamBGiving.length > 0 ? teamBGiving.map(p => p.name).join(', ') : 'None selected'}
+      </div>
+      <div style="font-size: 0.875rem; color: #94a3b8; margin-top: 0.25rem;">
+        Total value: ${teamBGiving.reduce((sum, p) => sum + p.value, 0).toLocaleString()}
+      </div>
+    </div>
+  </div>
+</div>
+
+```js
+// Calculate trade impact
+function simulateTrade() {
+  if (teamAGiving.length === 0 && teamBGiving.length === 0) {
+    return null;
+  }
+
+  const teamABefore = rankings.find(r => r.rosterId === teamAId.value);
+  const teamBBefore = rankings.find(r => r.rosterId === teamBId.value);
+
+  // Simulate new rosters after trade
+  const teamAGivingIds = new Set(teamAGiving.map(p => p.id));
+  const teamBGivingIds = new Set(teamBGiving.map(p => p.id));
+
+  // Team A: loses teamAGiving, gains teamBGiving
+  const teamANewRoster = [
+    ...teamARoster.players.filter(pid => !teamAGivingIds.has(pid)),
+    ...teamBGiving.map(p => p.id)
+  ];
+
+  // Team B: loses teamBGiving, gains teamAGiving
+  const teamBNewRoster = [
+    ...teamBRoster.players.filter(pid => !teamBGivingIds.has(pid)),
+    ...teamAGiving.map(p => p.id)
+  ];
+
+  // Calculate new lineup values (simplified - just sum optimal starters)
+  function calculateNewLineupValue(playerIds) {
+    const players = playerIds
+      .map(pid => playerValues[pid])
+      .filter(p => p)
+      .sort((a, b) => b.value - a.value);
+
+    // Simplified: take best 9 skill players (typical starting lineup)
+    const starters = players.slice(0, 9);
+    return starters.reduce((sum, p) => sum + p.value, 0);
+  }
+
+  const teamAOldLineup = calculateNewLineupValue(teamARoster.players);
+  const teamANewLineup = calculateNewLineupValue(teamANewRoster);
+  const teamBOldLineup = calculateNewLineupValue(teamBRoster.players);
+  const teamBNewLineup = calculateNewLineupValue(teamBNewRoster);
+
+  // Estimate new power scores (proportional change in lineup value component)
+  const teamALineupChange = (teamANewLineup - teamAOldLineup) / maxLineupValue * 100 * 0.5;
+  const teamBLineupChange = (teamBNewLineup - teamBOldLineup) / maxLineupValue * 100 * 0.5;
+
+  return {
+    teamA: {
+      name: teamARoster.teamName,
+      before: teamABefore,
+      powerChange: teamALineupChange,
+      newPowerScore: Math.round((teamABefore.powerScore + teamALineupChange) * 10) / 10,
+      lineupChange: teamANewLineup - teamAOldLineup,
+      gives: teamAGiving,
+      receives: teamBGiving
+    },
+    teamB: {
+      name: teamBRoster.teamName,
+      before: teamBBefore,
+      powerChange: teamBLineupChange,
+      newPowerScore: Math.round((teamBBefore.powerScore + teamBLineupChange) * 10) / 10,
+      lineupChange: teamBNewLineup - teamBOldLineup,
+      gives: teamBGiving,
+      receives: teamAGiving
+    },
+    totalValueA: teamAGiving.reduce((sum, p) => sum + p.value, 0),
+    totalValueB: teamBGiving.reduce((sum, p) => sum + p.value, 0)
+  };
+}
+
+const tradeImpact = simulateTrade();
+```
+
+```js
+// Display trade impact results
+if (tradeImpact) {
+  const valueDiff = tradeImpact.totalValueB - tradeImpact.totalValueA;
+  const isBalanced = Math.abs(valueDiff) < 1000;
+
+  display(html`
+    <div style="background: #1a1f29; border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+      <h3 style="margin: 0 0 1.5rem 0; color: #8b5cf6; text-align: center;">Trade Impact Analysis</h3>
+
+      <!-- Value comparison -->
+      <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <div style="text-align: center;">
+          <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase;">Total Value Given</div>
+          <div style="font-size: 1.5rem; font-weight: 700; color: #f8fafc;">${tradeImpact.totalValueA.toLocaleString()}</div>
+          <div style="font-size: 0.875rem; color: #94a3b8;">${tradeImpact.teamA.name}</div>
+        </div>
+        <div style="font-size: 2rem; color: #94a3b8;">⇄</div>
+        <div style="text-align: center;">
+          <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase;">Total Value Given</div>
+          <div style="font-size: 1.5rem; font-weight: 700; color: #f8fafc;">${tradeImpact.totalValueB.toLocaleString()}</div>
+          <div style="font-size: 0.875rem; color: #94a3b8;">${tradeImpact.teamB.name}</div>
+        </div>
+      </div>
+
+      <!-- Power score changes -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <div style="background: rgba(139, 92, 246, 0.1); padding: 1.5rem; border-radius: 0.75rem; border: 1px solid rgba(139, 92, 246, 0.2);">
+          <h4 style="margin: 0 0 1rem 0; color: #8b5cf6;">${tradeImpact.teamA.name}</h4>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div>
+              <div style="font-size: 0.75rem; color: #94a3b8;">Current Rank</div>
+              <div style="font-size: 1.25rem; font-weight: 700; color: #f8fafc;">#${tradeImpact.teamA.before.powerRank}</div>
+            </div>
+            <div>
+              <div style="font-size: 0.75rem; color: #94a3b8;">Power Score</div>
+              <div style="font-size: 1.25rem; font-weight: 700; color: #f8fafc;">${tradeImpact.teamA.before.powerScore}</div>
+            </div>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <div style="font-size: 0.75rem; color: #94a3b8;">After Trade</div>
+            <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+              <span style="font-size: 1.5rem; font-weight: 700; color: ${tradeImpact.teamA.powerChange >= 0 ? '#22c55e' : '#ef4444'};">
+                ${tradeImpact.teamA.newPowerScore}
+              </span>
+              <span style="font-size: 1rem; color: ${tradeImpact.teamA.powerChange >= 0 ? '#22c55e' : '#ef4444'};">
+                (${tradeImpact.teamA.powerChange >= 0 ? '+' : ''}${tradeImpact.teamA.powerChange.toFixed(1)})
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: rgba(139, 92, 246, 0.1); padding: 1.5rem; border-radius: 0.75rem; border: 1px solid rgba(139, 92, 246, 0.2);">
+          <h4 style="margin: 0 0 1rem 0; color: #8b5cf6;">${tradeImpact.teamB.name}</h4>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div>
+              <div style="font-size: 0.75rem; color: #94a3b8;">Current Rank</div>
+              <div style="font-size: 1.25rem; font-weight: 700; color: #f8fafc;">#${tradeImpact.teamB.before.powerRank}</div>
+            </div>
+            <div>
+              <div style="font-size: 0.75rem; color: #94a3b8;">Power Score</div>
+              <div style="font-size: 1.25rem; font-weight: 700; color: #f8fafc;">${tradeImpact.teamB.before.powerScore}</div>
+            </div>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <div style="font-size: 0.75rem; color: #94a3b8;">After Trade</div>
+            <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+              <span style="font-size: 1.5rem; font-weight: 700; color: ${tradeImpact.teamB.powerChange >= 0 ? '#22c55e' : '#ef4444'};">
+                ${tradeImpact.teamB.newPowerScore}
+              </span>
+              <span style="font-size: 1rem; color: ${tradeImpact.teamB.powerChange >= 0 ? '#22c55e' : '#ef4444'};">
+                (${tradeImpact.teamB.powerChange >= 0 ? '+' : ''}${tradeImpact.teamB.powerChange.toFixed(1)})
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Warning/Analysis -->
+      ${(() => {
+        const warnings = [];
+
+        // Check if one team gains much more than the other
+        if (Math.abs(tradeImpact.teamA.powerChange - tradeImpact.teamB.powerChange) > 3) {
+          const winner = tradeImpact.teamA.powerChange > tradeImpact.teamB.powerChange ? tradeImpact.teamA.name : tradeImpact.teamB.name;
+          const loser = tradeImpact.teamA.powerChange > tradeImpact.teamB.powerChange ? tradeImpact.teamB.name : tradeImpact.teamA.name;
+          warnings.push({
+            type: 'warning',
+            message: `${winner} gains significantly more Power Score than ${loser}. This trade may be unbalanced.`
+          });
+        }
+
+        // Check for trading stud for depth
+        const teamAStars = tradeImpact.teamA.gives.filter(p => p.value > 6000);
+        const teamBBench = tradeImpact.teamA.receives.filter(p => p.value < 3000);
+        if (teamAStars.length > 0 && teamBBench.length >= 2 && tradeImpact.teamA.powerChange < 0) {
+          warnings.push({
+            type: 'danger',
+            message: `${tradeImpact.teamA.name} is trading star player(s) for bench depth. This hurts their starting lineup!`
+          });
+        }
+
+        const teamBStars = tradeImpact.teamB.gives.filter(p => p.value > 6000);
+        const teamABench = tradeImpact.teamB.receives.filter(p => p.value < 3000);
+        if (teamBStars.length > 0 && teamABench.length >= 2 && tradeImpact.teamB.powerChange < 0) {
+          warnings.push({
+            type: 'danger',
+            message: `${tradeImpact.teamB.name} is trading star player(s) for bench depth. This hurts their starting lineup!`
+          });
+        }
+
+        if (warnings.length === 0 && Math.abs(tradeImpact.teamA.powerChange - tradeImpact.teamB.powerChange) < 2) {
+          warnings.push({
+            type: 'success',
+            message: 'This trade appears relatively balanced in terms of Power Score impact.'
+          });
+        }
+
+        return html`
+          <div style="margin-top: 1.5rem;">
+            ${warnings.map(w => html`
+              <div style="padding: 1rem; border-radius: 0.5rem; margin-bottom: 0.5rem; background: ${w.type === 'danger' ? 'rgba(239, 68, 68, 0.1)' : w.type === 'warning' ? 'rgba(249, 115, 22, 0.1)' : 'rgba(34, 197, 94, 0.1)'}; border: 1px solid ${w.type === 'danger' ? 'rgba(239, 68, 68, 0.3)' : w.type === 'warning' ? 'rgba(249, 115, 22, 0.3)' : 'rgba(34, 197, 94, 0.3)'};">
+                <span style="color: ${w.type === 'danger' ? '#ef4444' : w.type === 'warning' ? '#f97316' : '#22c55e'}; font-weight: 600;">
+                  ${w.type === 'danger' ? '⚠️' : w.type === 'warning' ? '⚡' : '✓'} ${w.message}
+                </span>
+              </div>
+            `)}
+          </div>
+        `;
+      })()}
+    </div>
+  `);
+} else {
+  display(html`
+    <div style="padding: 2rem; text-align: center; background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.2); border-radius: 0.75rem; margin: 2rem 0;">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">👆</div>
+      <p style="color: #cbd5e1; margin: 0;">Select players from each team above to simulate a trade</p>
+    </div>
+  `);
+}
 ```
 
 ## Component Breakdown
