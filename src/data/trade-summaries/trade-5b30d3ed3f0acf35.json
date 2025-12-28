@@ -1,0 +1,160 @@
+{
+  "tradeId": "5b30d3ed3f0acf35",
+  "week": 5,
+  "season": "2025",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "cosmohouck",
+    "Langland"
+  ],
+  "sides": [
+    {
+      "teamName": "Langland",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 18.1,
+        "powerRank": 12,
+        "lineupValueScore": 27.3,
+        "performanceScore": 6.4,
+        "positionalScore": 13.9,
+        "depthScore": 7.8,
+        "totalTeams": 12,
+        "totalRosterValue": 13107
+      },
+      "tradeImpact": {
+        "valueGained": 639,
+        "valueLost": 1540,
+        "netValueChange": -901,
+        "estimatedPowerScoreChange": -0.9,
+        "playersGained": [
+          {
+            "name": "Keon Coleman",
+            "value": 318
+          },
+          {
+            "name": "Jacory Croskey-Merritt",
+            "value": 321
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Matthew Stafford",
+            "value": 1226
+          },
+          {
+            "name": "Jordan Mason",
+            "value": 314
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Keon Coleman",
+          "position": "WR",
+          "team": "BUF",
+          "age": 22,
+          "careerStage": "Developing"
+        },
+        {
+          "name": "Jacory Croskey-Merritt",
+          "position": "RB",
+          "team": "WAS",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "team": "LAR",
+          "age": 37,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Jordan Mason",
+          "position": "RB",
+          "team": "MIN",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 1540,
+        "valueLost": 639,
+        "netValueChange": 901,
+        "estimatedPowerScoreChange": 0.9,
+        "playersGained": [
+          {
+            "name": "Matthew Stafford",
+            "value": 1226
+          },
+          {
+            "name": "Jordan Mason",
+            "value": 314
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Keon Coleman",
+            "value": 318
+          },
+          {
+            "name": "Jacory Croskey-Merritt",
+            "value": 321
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "team": "LAR",
+          "age": 37,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Jordan Mason",
+          "position": "RB",
+          "team": "MIN",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Keon Coleman",
+          "position": "WR",
+          "team": "BUF",
+          "age": 22,
+          "careerStage": "Developing"
+        },
+        {
+          "name": "Jacory Croskey-Merritt",
+          "position": "RB",
+          "team": "WAS",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Todd McShay",
+  "analysis": "Look, when you're staring up from the basement at 12th out of 12 teams, you can't be making moves that cost you 901 points of value – I don't care WHAT your timeline is. But let me tell you something about \"The Patient Rebuilder\" Langland here: this is a classic case of a team getting enamored with youth and upside while completely misreading the value chart. You're giving up a steady QB1 in Stafford who's still putting up 11.6 points per game over 57 games of data, and Jordan Mason, who yes, is only averaging 4.1 but he's in his PRIME YEARS at the most scarce position in fantasy football. What are you getting back? Keon Coleman, a second-year receiver who's been wildly inconsistent at 6.1 PPG, and Jacory Croskey-Merritt – a rookie running back who had ONE hot stretch of five games. This isn't buying low on talent, this is reaching in the third round for a guy you could've gotten in the sixth.\n\nNow flip the script to \"The Apex Predator\" cosmohouck, sitting pretty at #1 with a 93.4 Power Score, and THIS is how you exploit a rebuilding team at the trade deadline. Week 5, right when contenders need to solidify their rosters, and cosmohouck identifies two young assets with inflated value after small sample sizes and flips them for proven commodities. Stafford gives you that QB streaming flexibility, and Mason provides RB depth when injuries inevitably hit. The 0.9 Power Score bump might seem small, but when you're already at the top, you're not looking for home runs – you're looking for roster insurance and pieces that fit the scheme. This is textbook \"win-now\" maneuvering, giving up uncertain futures for guaranteed production TODAY.\n\nHere's my bold prediction: in two years, we're going to look back at this trade as the moment Langland's rebuild went completely off the rails. Croskey-Merritt? He'll be a backup splitting carries in Washington's crowded backfield. Coleman might develop into a WR3, but you traded PROVEN assets for maybes. Meanwhile, cosmohouck is going to parlay this savvy value grab into a championship run this season, and that trophy will be all the validation needed. The gap between first and last isn't just talent – it's understanding value, roster construction, and knowing when to strike. One team here gets it, and one team just mortgaged their future on lottery tickets. In the war between patience and urgency, sometimes the patient man just gets left behind.",
+  "generatedAt": "2025-12-28T21:27:01.481Z"
+}

@@ -1,0 +1,121 @@
+{
+  "tradeId": "e73161161b78dd29",
+  "week": 1,
+  "season": "2023",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Shogunation",
+    "powerperson"
+  ],
+  "sides": [
+    {
+      "teamName": "Shogunation",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 76.4,
+        "powerRank": 4,
+        "lineupValueScore": 79,
+        "performanceScore": 78.2,
+        "positionalScore": 62.7,
+        "depthScore": 80.9,
+        "totalTeams": 12,
+        "totalRosterValue": 37890
+      },
+      "tradeImpact": {
+        "valueGained": 395,
+        "valueLost": 0,
+        "netValueChange": 395,
+        "estimatedPowerScoreChange": 0.4,
+        "playersGained": [
+          {
+            "name": "Travis Kelce",
+            "value": 395
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Travis Kelce",
+          "position": "TE",
+          "team": "KC",
+          "age": 36,
+          "careerStage": "Veteran/End of Career"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Chig Okonkwo",
+          "position": "TE",
+          "team": "TEN",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2024 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "powerperson",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 23.8,
+        "powerRank": 11,
+        "lineupValueScore": 26.4,
+        "performanceScore": 21.6,
+        "positionalScore": 20.9,
+        "depthScore": 19.1,
+        "totalTeams": 12,
+        "totalRosterValue": 12690
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 395,
+        "netValueChange": -395,
+        "estimatedPowerScoreChange": -0.4,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Travis Kelce",
+            "value": 395
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Chig Okonkwo",
+          "position": "TE",
+          "team": "TEN",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2024 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Travis Kelce",
+          "position": "TE",
+          "team": "KC",
+          "age": 36,
+          "careerStage": "Veteran/End of Career"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2024",
+      "round": 2,
+      "from": "Shogunation",
+      "to": "powerperson"
+    }
+  ],
+  "persona": "Louis Riddick",
+  "analysis": "Look, from a front office standpoint, this is a TEXTBOOK example of two organizations with completely different timelines executing their organizational philosophy to perfection. Shogunation—let's call him \"The Closer\"—is sitting at a 76.4 power score, ranked fourth in a competitive league, and he's doing what every win-now franchise MUST do: he's aggressively attacking his championship window. Trading Chig Okonkwo and a second-round pick for Travis Kelce at the time? That's asset management 101. You've got the greatest tight end we've ever seen still in a Kansas City uniform, still catching passes from Patrick Mahomes, and you're adding that elite premium at a scarce position to push your roster over the top. Meanwhile, powerperson—and I'm dubbing him \"The Architect\"—is sitting at 23.8, second-to-last in the league, and he's building for TOMORROW. He correctly identified that Kelce's value would never be higher, moved him for a young ascending asset and draft capital. That's smart, disciplined team building when you're not competing.\n\nBut here's where it gets FASCINATING from an evaluation perspective: Kelce's production fell off a CLIFF post-trade, dropping over four points per game while Okonkwo stayed essentially flat. The Closer got burned here, plain and simple. This reminds me of when the Rams traded for Jalen Ramsey—sometimes you mortgage future assets for a win-now piece and it works out beautifully. Other times, you get the Broncos trading for Russell Wilson. You're betting on sustained excellence from a veteran at the tail end of his career, and Father Time remains undefeated in this league. The performance metrics don't lie—Kelce went from 13.8 PPG to 9.7 PPG. That's not championship-caliber production at the tight end position, especially when you're giving up a young piece and draft capital.\n\nHere's my BOLD prediction: in two years, we're looking back at this trade as the inflection point that defined both franchises' trajectories. The Architect parlayed this move into a complete roster rebuild, turned that second-rounder into another young cornerstone, and is now COMPETING while The Closer is retooling after his window slammed shut. This becomes the cautionary tale about overpaying for aging veterans in dynasty formats. The storyline here? This is David versus Goliath—the rebuilding team slaying the giant contender by correctly timing the market, selling high on a depreciating asset, and watching their competitor's championship window close while they're ascending. From a strategic vision standpoint, powerperson executed a MASTERCLASS in value extraction, and sometimes in this league, the team that looks like it \"lost\" the trade on paper ends up winning the war.",
+  "generatedAt": "2025-12-28T21:35:56.886Z"
+}

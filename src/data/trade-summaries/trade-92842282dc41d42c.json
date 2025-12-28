@@ -1,0 +1,173 @@
+{
+  "tradeId": "92842282dc41d42c",
+  "week": 9,
+  "season": "2022",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "drobs",
+    "cosmohouck"
+  ],
+  "sides": [
+    {
+      "teamName": "drobs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 51.3,
+        "powerRank": 6,
+        "lineupValueScore": 53.3,
+        "performanceScore": 57.3,
+        "positionalScore": 36.8,
+        "depthScore": 38,
+        "totalTeams": 12,
+        "totalRosterValue": 25560
+      },
+      "tradeImpact": {
+        "valueGained": 3072,
+        "valueLost": 326,
+        "netValueChange": 2746,
+        "estimatedPowerScoreChange": 2.9,
+        "playersGained": [
+          {
+            "name": "DeVonta Smith",
+            "value": 3072
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Isaiah Likely",
+            "value": 326
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Dawson Knox",
+          "position": "TE",
+          "team": "BUF",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "DeVonta Smith",
+          "position": "WR",
+          "team": "PHI",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2024 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Isaiah Likely",
+          "position": "TE",
+          "team": "BAL",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2024 Round 1 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2024 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 326,
+        "valueLost": 3072,
+        "netValueChange": -2746,
+        "estimatedPowerScoreChange": -2.9,
+        "playersGained": [
+          {
+            "name": "Isaiah Likely",
+            "value": 326
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "DeVonta Smith",
+            "value": 3072
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Isaiah Likely",
+          "position": "TE",
+          "team": "BAL",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2024 Round 1 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2024 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Dawson Knox",
+          "position": "TE",
+          "team": "BUF",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "DeVonta Smith",
+          "position": "WR",
+          "team": "PHI",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2024 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2024",
+      "round": 1,
+      "from": "drobs",
+      "to": "cosmohouck"
+    },
+    {
+      "season": "2024",
+      "round": 2,
+      "from": "drobs",
+      "to": "cosmohouck"
+    },
+    {
+      "season": "2024",
+      "round": 2,
+      "from": "cosmohouck",
+      "to": "drobs"
+    }
+  ],
+  "persona": "Mel Kiper Jr.",
+  "analysis": "Look, I've been doing this for over forty years, and let me tell you something - drobs just pulled off a HEIST here. An absolute HEIST! When I evaluate fantasy assets, I look at them like draft prospects, and DeVonta Smith? This guy was a HEISMAN TROPHY WINNER at Alabama. The tape doesn't lie, folks. This is a bonafide WR1 who was averaging 8.5 points per game before the trade and exploded to 10.9 afterward. That's not luck - that's TALENT manifesting itself. And Dawson Knox? Prime years tight end from Ole Miss who went from 4.5 to 7.5 PPG post-trade. Meanwhile, Isaiah Likely is essentially a lateral move at the position - 4.6 PPG before, 4.6 PPG after. The numbers SPEAK FOR THEMSELVES! Drobs gave up a first-round pick, sure, but gained a second-rounder back AND acquired two ascending assets while sitting at #6 in the power rankings. That's how you close the gap on the top teams.\n\nNow cosmohouck - the #1 ranked team with a 93.4 Power Score - I understand the logic here. You're stacked, you're in win-now mode, you want draft capital to reload. But here's my problem: you gave up a Heisman winner and a productive tight end for what? Essentially three lottery tickets when you're ALREADY the best team in the league! This reminds me of the Herschel Walker trade, except cosmohouck is playing the role of the Vikings - mortgaging proven talent for future assets when they should be going ALL-IN right now. The tape on DeVonta Smith coming out of Alabama was ELITE - I had him as a top-15 dynasty asset on my board, and his post-trade performance proved it. You don't trade that kind of pedigree when you're the #1 seed!\n\nThe winner here is drobs, and it's not even CLOSE. They improved their Power Score by 2.9 points while cosmohouck DROPPED by the same amount. Net value gained? Plus-2,746 for drobs! They acquired over 3,000 in value and only gave up 326. That's not a trade - that's ROBBERY! This is what happens when a savvy GM identifies undervalued assets and strikes when a top team gets complacent. Mark my words: drobs is making a playoff run on the back of this deal, and when DeVonta Smith is putting up WR1 numbers in the fantasy playoffs, cosmohouck is going to be kicking themselves for trading away a guy with his ceiling. The Philadelphia connection, the Jalen Hurts chemistry - you can't quantify that on a spreadsheet, but it MATTERS!",
+  "generatedAt": "2025-12-28T21:46:07.160Z"
+}

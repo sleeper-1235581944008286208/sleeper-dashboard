@@ -1,0 +1,182 @@
+{
+  "tradeId": "047fa1ab8c9d61cd",
+  "week": 5,
+  "season": "2025",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "PrinceofPizza",
+    "Tishathefish"
+  ],
+  "sides": [
+    {
+      "teamName": "PrinceofPizza",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 80.8,
+        "powerRank": 3,
+        "lineupValueScore": 89.3,
+        "performanceScore": 63.7,
+        "positionalScore": 86.5,
+        "depthScore": 81,
+        "totalTeams": 12,
+        "totalRosterValue": 42833
+      },
+      "tradeImpact": {
+        "valueGained": 7126,
+        "valueLost": 8119,
+        "netValueChange": -993,
+        "estimatedPowerScoreChange": -1,
+        "playersGained": [
+          {
+            "name": "Tee Higgins",
+            "value": 3138
+          },
+          {
+            "name": "Rome Odunze",
+            "value": 3988
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Jordan Addison",
+            "value": 2124
+          },
+          {
+            "name": "J.J. McCarthy",
+            "value": 1425
+          },
+          {
+            "name": "Bucky Irving",
+            "value": 4570
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Tee Higgins",
+          "position": "WR",
+          "team": "CIN",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Rome Odunze",
+          "position": "WR",
+          "team": "CHI",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jordan Addison",
+          "position": "WR",
+          "team": "MIN",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "J.J. McCarthy",
+          "position": "QB",
+          "team": "MIN",
+          "age": 22,
+          "careerStage": "Developing"
+        },
+        {
+          "name": "Bucky Irving",
+          "position": "RB",
+          "team": "TB",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "Tishathefish",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 50,
+        "powerRank": 7,
+        "lineupValueScore": 60.7,
+        "performanceScore": 36.4,
+        "positionalScore": 47.1,
+        "depthScore": 33.9,
+        "totalTeams": 12,
+        "totalRosterValue": 29125
+      },
+      "tradeImpact": {
+        "valueGained": 8119,
+        "valueLost": 7126,
+        "netValueChange": 993,
+        "estimatedPowerScoreChange": 1,
+        "playersGained": [
+          {
+            "name": "Jordan Addison",
+            "value": 2124
+          },
+          {
+            "name": "J.J. McCarthy",
+            "value": 1425
+          },
+          {
+            "name": "Bucky Irving",
+            "value": 4570
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Tee Higgins",
+            "value": 3138
+          },
+          {
+            "name": "Rome Odunze",
+            "value": 3988
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Jordan Addison",
+          "position": "WR",
+          "team": "MIN",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "J.J. McCarthy",
+          "position": "QB",
+          "team": "MIN",
+          "age": 22,
+          "careerStage": "Developing"
+        },
+        {
+          "name": "Bucky Irving",
+          "position": "RB",
+          "team": "TB",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Tee Higgins",
+          "position": "WR",
+          "team": "CIN",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Rome Odunze",
+          "position": "WR",
+          "team": "CHI",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Louis Riddick",
+  "analysis": "From a front office standpoint, this is a masterclass in understanding organizational philosophy and where your franchise sits in its competitive cycle. Let me tell you something - PrinceofPizza, who I'm dubbing \"The Win-Now Gambler,\" just made a decision that could haunt this organization for years, and Tishathefish - \"The Patient Architect\" - absolutely fleeced them in broad daylight. When you're sitting at 80.8 power score, ranked third in your league, you're supposed to be ADDING premium assets at the running back position, not shipping out a 12.2 points per game producer like Bucky Irving. That's franchise malpractice, folks. Irving is THE scarcest commodity in fantasy football - a young running back entering his prime with significant volume. You're telling me you gave up that kind of asset management flexibility for Tee Higgins, who's dealing with injury concerns, and Rome Odunze, who just put up a ZERO? I don't care what the dynasty rankings say - this is poor asset allocation within your championship window.\n\nHere's what really troubles me from an executive perspective: The Win-Now Gambler paid a premium price for damaged goods. Higgins has been injury-prone his entire career, and while he's talented, you don't mortgage three young assets - including McCarthy, who could become a QB1 in this league - for a receiver who might not even finish the season healthy. Meanwhile, The Patient Architect just acquired the crown jewel of this deal in Bucky Irving, plus Jordan Addison who was actually OUTPRODUCING Higgins pre-trade at 9.7 PPG, AND a developmental quarterback with starting potential. That's called building sustainable value, my friend. Tishathefish gained 993 in net value and improved their power score while PrinceofPizza LOST ground despite being in win-now mode. That's organizational dysfunction at its finest.\n\nMy bold prediction? In two years, this trade gets discussed in fantasy circles the same way the Herschel Walker trade gets discussed in NFL history - as the deal that fundamentally altered two franchises' trajectories. Bucky Irving will be a top-12 fantasy running back, McCarthy will be starting for Minnesota and providing QB1 value, and Addison will still be producing solid WR2 numbers. Meanwhile, Higgins will have changed teams, dealt with more injuries, and The Win-Now Gambler will be wondering how they squandered their championship window by mismanaging their most valuable positional assets. The winner here is crystal clear - it's The Patient Architect by a LANDSLIDE. They just accelerated their rebuild by two years while the supposed contender mortgaged their future for lateral moves at wide receiver. That's not how you build championship rosters, and that's certainly not how you maximize your competitive window when you're already sitting in the top three of your league.",
+  "generatedAt": "2025-12-28T21:27:42.957Z"
+}

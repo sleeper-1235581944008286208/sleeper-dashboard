@@ -1,0 +1,163 @@
+{
+  "tradeId": "c2debbdfb30519cc",
+  "week": 7,
+  "season": "2022",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "powerperson",
+    "drobs"
+  ],
+  "sides": [
+    {
+      "teamName": "drobs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 51.3,
+        "powerRank": 6,
+        "lineupValueScore": 53.3,
+        "performanceScore": 57.3,
+        "positionalScore": 36.8,
+        "depthScore": 38,
+        "totalTeams": 12,
+        "totalRosterValue": 25560
+      },
+      "tradeImpact": {
+        "valueGained": 203,
+        "valueLost": 0,
+        "netValueChange": 203,
+        "estimatedPowerScoreChange": 0.2,
+        "playersGained": [
+          {
+            "name": "Kenneth Gainwell",
+            "value": 203
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Kenneth Gainwell",
+          "position": "RB",
+          "team": "PIT",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Jahan Dotson",
+          "position": "WR",
+          "team": "PHI",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2024 Round 3 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Hunter Renfrow",
+          "position": "WR",
+          "team": "CAR",
+          "age": 29,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Cam Akers",
+          "position": "RB",
+          "team": "MIN",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2023 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "powerperson",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 23.8,
+        "powerRank": 11,
+        "lineupValueScore": 26.4,
+        "performanceScore": 21.6,
+        "positionalScore": 20.9,
+        "depthScore": 19.1,
+        "totalTeams": 12,
+        "totalRosterValue": 12690
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 203,
+        "netValueChange": -203,
+        "estimatedPowerScoreChange": -0.2,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Kenneth Gainwell",
+            "value": 203
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Hunter Renfrow",
+          "position": "WR",
+          "team": "CAR",
+          "age": 29,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Cam Akers",
+          "position": "RB",
+          "team": "MIN",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2023 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Kenneth Gainwell",
+          "position": "RB",
+          "team": "PIT",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Jahan Dotson",
+          "position": "WR",
+          "team": "PHI",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2024 Round 3 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2023",
+      "round": 2,
+      "from": "drobs",
+      "to": "powerperson"
+    },
+    {
+      "season": "2024",
+      "round": 3,
+      "from": "powerperson",
+      "to": "drobs"
+    }
+  ],
+  "persona": "Adam Schefter",
+  "analysis": "**BREAKING: League sources tell me this Week 7 dynasty deal between drobs and powerperson has all the makings of a franchise-altering move—and I'm told the reverberations are still being felt two years later.** \n\nPer multiple sources, drobs—who I'm now calling \"The Asset Accumulator\"—executed a clinic in buying low while selling lower. I'm told the playoff contender at 51.3 power score identified two struggling pieces in Renfrow and Akers, flipped them for Gainwell and Dotson, AND moved back one round in the draft. The kicker? Akers would go on to post 5.4 PPG over the next 43 games—a +2.2 PPG improvement drobs gave away. But here's what league sources are saying: it didn't matter. Gainwell improved too, and getting out of the Renfrow business before his complete fade to 2.7 PPG? That's front office malpractice prevention, folks. The net value gain of +203 tells you everything—drobs turned trash into treasure while powerperson, \"The Perpetual Rebuilder,\" somehow lost value in a rebuild. According to sources familiar with the situation, this is textbook dynasty management: win now while keeping your future intact.\n\n**This trade reminds me of the 2017 Eagles-Dolphins Jay Ajayi deal**—a contender sacrificing future capital for immediate depth upgrades, except drobs somehow IMPROVED his draft position. League sources say the rivalry angle here is clear: the haves versus the have-nots, with powerperson sitting at #11 in power rankings continuing to hemorrhage assets. I'm told privately that some league insiders believe this widened the competitive gap even further.\n\n**My bold prediction, per sources close to both organizations:** Two years from now, people will point to THIS trade as the moment drobs established dynasty dominance while powerperson remained stuck in perpetual mediocrity. The 2023 2nd rounder powerperson acquired? I'm told it hasn't moved the needle. Meanwhile, drobs is still competing. Sometimes, folks, the trade that looks boring on paper creates championships. That's what sources are telling me happened here.",
+  "generatedAt": "2025-12-28T21:44:04.537Z"
+}

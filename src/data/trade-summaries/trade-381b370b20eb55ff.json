@@ -1,0 +1,135 @@
+{
+  "tradeId": "381b370b20eb55ff",
+  "week": 7,
+  "season": "2022",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Langland",
+    "cosmohouck"
+  ],
+  "sides": [
+    {
+      "teamName": "Langland",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 18.1,
+        "powerRank": 12,
+        "lineupValueScore": 27.3,
+        "performanceScore": 6.4,
+        "positionalScore": 13.9,
+        "depthScore": 7.8,
+        "totalTeams": 12,
+        "totalRosterValue": 13107
+      },
+      "tradeImpact": {
+        "valueGained": 1226,
+        "valueLost": 0,
+        "netValueChange": 1226,
+        "estimatedPowerScoreChange": 1.3,
+        "playersGained": [
+          {
+            "name": "Matthew Stafford",
+            "value": 1226
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "team": "LAR",
+          "age": 37,
+          "careerStage": "Declining"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Dawson Knox",
+          "position": "TE",
+          "team": "BUF",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2023 Round 3 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2025 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 1226,
+        "netValueChange": -1226,
+        "estimatedPowerScoreChange": -1.3,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Matthew Stafford",
+            "value": 1226
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Dawson Knox",
+          "position": "TE",
+          "team": "BUF",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2023 Round 3 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2025 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "team": "LAR",
+          "age": 37,
+          "careerStage": "Declining"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2023",
+      "round": 3,
+      "from": "Langland",
+      "to": "cosmohouck"
+    },
+    {
+      "season": "2025",
+      "round": 2,
+      "from": "Langland",
+      "to": "cosmohouck"
+    }
+  ],
+  "persona": "Mel Kiper Jr.",
+  "analysis": "Look, I've been doing this for over four decades, and let me tell you something - this trade right here is a TEXTBOOK example of what I call \"The Desperate Contender\" versus \"The Future Mortgager,\" and folks, the tape doesn't lie on this one! Cosmohouck - sitting pretty at #1 with a 93.4 Power Score - is going ALL-IN like it's draft night and their guy is still on the board. They're giving up Matthew Stafford, a guy I had ranked as a solid QB1 coming out of Georgia - and yes, I was RIGHT about that evaluation - for Dawson Knox, who let me remind everyone, was a THIRD-ROUND pick out of Ole Miss. Now, Knox has that \"elite premium\" designation at tight end, and I get it, scarcity matters. But you're also throwing in a 2023 third AND a 2025 second rounder? That's mortgage-the-future territory right there! \n\nHere's where Langland - and I'm calling them \"The Bottom Feeder Bandit\" because they're sitting at dead last with an 18.1 Power Score and somehow ROBBING people - absolutely FLEECES the contender. They turn a struggling tight end averaging 4.0 PPG and two draft picks into a quarterback who goes on to average 11.9 PPG over the next 51 games! That's a +2.5 PPG improvement, and they're getting VALUE - 1,226 points of value gained with ZERO lost! Meanwhile, \"The Win-Now Warrior\" cosmohouck gets Knox, who does improve to 7.2 PPG, but let me ask you this: is a 3.2 PPG upgrade at tight end worth giving up your starting quarterback AND two premium draft picks when you're trying to WIN NOW? The mathematics don't add up on my board!\n\nMy BOLD PREDICTION: In two years, we're looking back at this as the trade that COST cosmohouck a championship dynasty. Stafford goes on to have a resurgence - and I'm talking Top-10 QB numbers here - while those draft picks turn into legitimate starters for a rebuilding Langland squad. This becomes the signature rivalry in this league: The team that had everything and gave it away versus the last-place team that built their comeback on this very deal. Mark it down, folks - this is the kind of trade that gets brought up at every draft party for the next decade!",
+  "generatedAt": "2025-12-28T21:42:42.674Z"
+}

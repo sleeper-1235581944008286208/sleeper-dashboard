@@ -1,0 +1,152 @@
+{
+  "tradeId": "32655cf972e53ae7",
+  "week": 8,
+  "season": "2022",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "drobs",
+    "PrinceofPizza"
+  ],
+  "sides": [
+    {
+      "teamName": "drobs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 51.3,
+        "powerRank": 6,
+        "lineupValueScore": 53.3,
+        "performanceScore": 57.3,
+        "positionalScore": 36.8,
+        "depthScore": 38,
+        "totalTeams": 12,
+        "totalRosterValue": 25560
+      },
+      "tradeImpact": {
+        "valueGained": 603,
+        "valueLost": 174,
+        "netValueChange": 429,
+        "estimatedPowerScoreChange": 0.4,
+        "playersGained": [
+          {
+            "name": "David Montgomery",
+            "value": 603
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Marquise Brown",
+            "value": 75
+          },
+          {
+            "name": "Darius Slayton",
+            "value": 99
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Nyheim Hines",
+          "position": "RB",
+          "team": "LAC",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "David Montgomery",
+          "position": "RB",
+          "team": "DET",
+          "age": 28,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Hollywood Brown",
+          "position": "WR",
+          "team": "KC",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Darius Slayton",
+          "position": "WR",
+          "team": "NYG",
+          "age": 28,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "PrinceofPizza",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 80.8,
+        "powerRank": 3,
+        "lineupValueScore": 89.3,
+        "performanceScore": 63.7,
+        "positionalScore": 86.5,
+        "depthScore": 81,
+        "totalTeams": 12,
+        "totalRosterValue": 42833
+      },
+      "tradeImpact": {
+        "valueGained": 174,
+        "valueLost": 603,
+        "netValueChange": -429,
+        "estimatedPowerScoreChange": -0.4,
+        "playersGained": [
+          {
+            "name": "Marquise Brown",
+            "value": 75
+          },
+          {
+            "name": "Darius Slayton",
+            "value": 99
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "David Montgomery",
+            "value": 603
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Hollywood Brown",
+          "position": "WR",
+          "team": "KC",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Darius Slayton",
+          "position": "WR",
+          "team": "NYG",
+          "age": 28,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Nyheim Hines",
+          "position": "RB",
+          "team": "LAC",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "David Montgomery",
+          "position": "RB",
+          "team": "DET",
+          "age": 28,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Mel Kiper Jr.",
+  "analysis": "Look, I've been doing this for over four decades, and let me tell you something about this trade – drobs just pulled off a HEIST in Week 8! This is the kind of move that changes franchises, folks. When you're sitting at #6 in the Power Score rankings at 51.3, you need to make BOLD moves, and getting David Montgomery – who I had as an RB1 talent coming out of Iowa State – for Hollywood Brown and Darius Slayton? That's highway robbery! Montgomery is a FOOTBALL PLAYER, people. The tape doesn't lie. This guy averaged 8.3 PPG before the deal and immediately jumped to 11.2 PPG after. That's the kind of production upgrade that wins you championships. Now, Nyheim Hines didn't pan out – I'll admit that – but you don't make trades in Week 8 of the playoff push without swinging for upside at the running back position, where scarcity is REAL.\n\nHere's what PrinceofPizza didn't understand: when you're already at 80.8 Power Score, ranked #3, you don't trade away running back depth for wide receiver depth! The positional value chart I keep right here on my desk says running backs are GOLD in fantasy, and receivers? They're a dime a dozen! Hollywood Brown was putting up 11.0 PPG, sure, but he CRATERED to 4.4 PPG post-trade. You know what that tells me? The situation matters! Brown went from being a WR2 to whatever he became in Kansas City, buried on the depth chart. This reminds me of the Herschel Walker trade – one team thinks they're getting multiple pieces, but the other team gets the STUD who changes everything. Montgomery was that piece.\n\nAnd let me get defensive here for a second because I know the analytics crowd is going to say \"Mel, Nyheim Hines only scored 1.7 PPG after the trade!\" You know what I say to that? WHO CARES! You make this trade ten times out of ten when you're drobs! The net value gained was +429 – FOUR HUNDRED AND TWENTY-NINE! The floor on Montgomery alone made this worthwhile. When you're building for a championship run, you consolidate talent at premium positions. That's Roster Construction 101, and frankly, I'm surprised PrinceofPizza – with an 86.5 Positional Score – didn't see this coming. \n\nMark my words: two years from now, we're going to look back at this trade and drobs is going to have a championship banner, while PrinceofPizza is going to be kicking themselves for giving up a workhorse running back for receiver DEPTH pieces. Montgomery's ceiling in that Detroit offense? Sky high. This trade had FRANCHISE-ALTERING implications, and the tape – the RESULTS – they don't lie, folks!",
+  "generatedAt": "2025-12-28T21:45:08.136Z"
+}

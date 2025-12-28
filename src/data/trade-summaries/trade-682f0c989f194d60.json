@@ -1,0 +1,181 @@
+{
+  "tradeId": "682f0c989f194d60",
+  "week": 10,
+  "season": "2024",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "mjgrana",
+    "powerperson"
+  ],
+  "sides": [
+    {
+      "teamName": "mjgrana",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 86.7,
+        "powerRank": 2,
+        "lineupValueScore": 94.6,
+        "performanceScore": 75.9,
+        "positionalScore": 77.1,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 45417
+      },
+      "tradeImpact": {
+        "valueGained": 375,
+        "valueLost": 6123,
+        "netValueChange": -5748,
+        "estimatedPowerScoreChange": -6,
+        "playersGained": [
+          {
+            "name": "Chuba Hubbard",
+            "value": 375
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Daniel Jones",
+            "value": 2389
+          },
+          {
+            "name": "Chris Olave",
+            "value": 3734
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Derek Carr",
+          "position": "QB",
+          "team": "FA",
+          "age": 34,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "team": "CAR",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2025 Round 1 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Daniel Jones",
+          "position": "QB",
+          "team": "IND",
+          "age": 28,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Chris Olave",
+          "position": "WR",
+          "team": "NO",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2025 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "powerperson",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 23.8,
+        "powerRank": 11,
+        "lineupValueScore": 26.4,
+        "performanceScore": 21.6,
+        "positionalScore": 20.9,
+        "depthScore": 19.1,
+        "totalTeams": 12,
+        "totalRosterValue": 12690
+      },
+      "tradeImpact": {
+        "valueGained": 6123,
+        "valueLost": 375,
+        "netValueChange": 5748,
+        "estimatedPowerScoreChange": 6,
+        "playersGained": [
+          {
+            "name": "Daniel Jones",
+            "value": 2389
+          },
+          {
+            "name": "Chris Olave",
+            "value": 3734
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Chuba Hubbard",
+            "value": 375
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Daniel Jones",
+          "position": "QB",
+          "team": "IND",
+          "age": 28,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Chris Olave",
+          "position": "WR",
+          "team": "NO",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2025 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Derek Carr",
+          "position": "QB",
+          "team": "FA",
+          "age": 34,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "team": "CAR",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2025 Round 1 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2025",
+      "round": 1,
+      "from": "powerperson",
+      "to": "mjgrana"
+    },
+    {
+      "season": "2025",
+      "round": 2,
+      "from": "mjgrana",
+      "to": "powerperson"
+    }
+  ],
+  "persona": "Mel Kiper Jr.",
+  "analysis": "Look, I'm going to be VERY honest with you here - when I first saw this trade come across my desk, I had to check the tape twice because **mjgrana**, who I'm now calling \"The Mortgage Broker\" for betting the entire farm on this season, just made a move that has my board completely upside down! This guy traded away Chris Olave - a former OHIO STATE BUCKEYE, first-round pedigree, 25 years old entering his PRIME - and Daniel Jones, who still has the athletic traits I loved coming out of Duke, PLUS moved up from Round 2 to Round 1 in next year's draft. And for WHAT? A 34-year-old Derek Carr whose tape shows CLEAR decline - we're talking a 5.5 point per game DROP after the trade - and Chuba Hubbard, who, look, I respect the production bump to 9.4 PPG, but let's be real about the CEILING here. When you're sitting at 86.7 power score, ranked #2 in your league, and you LOSE 6 points off that metric while hemorrhaging 5,748 in net value, that's not win-now strategy - that's panic mode! The tape doesn't lie, folks!\n\nNow let's talk about **powerperson**, and I'm dubbing this crafty GM \"The Patient Pathfinder\" because THIS is how you rebuild the RIGHT way! Sitting at 23.8 power score, dead last in lineup value, this manager just fleeced a contender by acquiring youth, pedigree, and draft capital. Chris Olave - yes, he's averaging just 4.4 PPG post-trade in a Saints offense that's been absolute CHAOS, but I had this guy as a top-50 dynasty asset on my board coming into the season! The college tape from Ohio State shows ELITE route running, separation skills, and hands. You're getting him at his LOWEST value point, and when the Saints figure out their quarterback situation, this guy's ceiling is a weekly WR2 with WR1 upside! Daniel Jones has been disappointing at 9.1 PPG, sure, but he's 28 years old with rushing upside and now a fresh start in Indianapolis. PLUS you moved from Round 1 to Round 2 next year? That's draft capital manipulation at its finest!\n\nHere's my BOLD prediction for you: In two years, we're going to look back at this trade and The Patient Pathfinder is going to have Chris Olave as a top-15 fantasy receiver when New Orleans gets competent quarterback play, while The Mortgage Broker will be kicking himself for chasing Chuba Hubbard's brief moment of relevance when Carolina inevitably drafts a running back high or signs someone in free agency. Derek Carr? He might not even be in the league! The risk profile here is COMPLETELY lopsided - mjgrana took on massive short-term risk for minimal gain (that -6 power score drop speaks VOLUMES), while powerperson absorbed essentially ZERO risk while adding foundational pieces for the future. When you're a contender giving up a 25-year-old first-round receiver for a 34-year-old quarterback, you better WIN the championship THIS year, because the tape shows this roster just got OLDER and LESS valuable. Mark it down - this trade is going to age like milk for The Mortgage Broker and like fine wine for The Patient Pathfinder!",
+  "generatedAt": "2025-12-28T21:32:43.513Z"
+}

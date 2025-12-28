@@ -1,0 +1,116 @@
+{
+  "tradeId": "38fa903a18a73297",
+  "week": 3,
+  "season": "2022",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "mastab24",
+    "Shogunation"
+  ],
+  "sides": [
+    {
+      "teamName": "Shogunation",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 76.4,
+        "powerRank": 4,
+        "lineupValueScore": 79,
+        "performanceScore": 78.2,
+        "positionalScore": 62.7,
+        "depthScore": 80.9,
+        "totalTeams": 12,
+        "totalRosterValue": 37890
+      },
+      "tradeImpact": {
+        "valueGained": 3751,
+        "valueLost": 2917,
+        "netValueChange": 834,
+        "estimatedPowerScoreChange": 0.9,
+        "playersGained": [
+          {
+            "name": "Dak Prescott",
+            "value": 3751
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Jared Goff",
+            "value": 2917
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Dak Prescott",
+          "position": "QB",
+          "team": "DAL",
+          "age": 32,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jared Goff",
+          "position": "QB",
+          "team": "DET",
+          "age": 30,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "mastab24",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 64.6,
+        "powerRank": 5,
+        "lineupValueScore": 70,
+        "performanceScore": 68.3,
+        "positionalScore": 52.1,
+        "depthScore": 26.7,
+        "totalTeams": 12,
+        "totalRosterValue": 33582
+      },
+      "tradeImpact": {
+        "valueGained": 2917,
+        "valueLost": 3751,
+        "netValueChange": -834,
+        "estimatedPowerScoreChange": -0.9,
+        "playersGained": [
+          {
+            "name": "Jared Goff",
+            "value": 2917
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Dak Prescott",
+            "value": 3751
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Jared Goff",
+          "position": "QB",
+          "team": "DET",
+          "age": 30,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Dak Prescott",
+          "position": "QB",
+          "team": "DAL",
+          "age": 32,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Mel Kiper Jr.",
+  "analysis": "Look, I've been doing this for over four decades, and when I see a trade like this, I have to tell you - the tape DOESN'T LIE, folks! We're talking about two quarterbacks who were FIRST ROUND PICKS - Goff went number one overall out of Cal in 2016, Prescott was that steal in the fourth round out of Mississippi State. But here's what matters: What were these guys doing on the field in Week 3 of 2022?\n\nNow, Shogunation is sitting there at a 76.4 Power Score, ranked fourth, and they make this move - and I LOVE IT. I had Dak Prescott ranked AHEAD of Jared Goff on my board coming into that season, and guess what? Shogunation saw what I saw! Yes, Goff had the hot start at 18.5 points per game through three weeks, but you're telling me you're going to evaluate a quarterback based on THREE GAMES? Are you kidding me?! This is about the CEILING, people! Dak was coming off that thumb injury - 1.5 points per game early - but this guy is a FOOTBALL PLAYER with elite weapons in Dallas. The post-trade numbers prove it: 13.7 PPG for Dak versus 16.7 for Goff. Wait, you're saying Goff was better? NO! Because Shogunation gained 834 in net value and improved their power score while mastab24 went the WRONG direction. They sold low on a guy recovering from injury!\n\nMastab24 - and I hate to say this because they're in win-now mode too - they PANICKED. This is like when the Vikings traded for Bradford instead of waiting on Bridgewater! You chase the hot hand early in the season, and you end up on the wrong side of value. Their depth score of 26.7 tells me they couldn't afford to be wrong here, and folks, they were WRONG. The regression was coming for Goff, and while he stayed serviceable at 16.7 PPG, you gave up the higher upside arm. Shogunation wins this trade going away - they bought low on Prescott's pedigree and sold high on three-week sample size theater. THAT'S how you build a championship roster!",
+  "generatedAt": "2025-12-28T21:42:23.682Z"
+}

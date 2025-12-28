@@ -1,0 +1,107 @@
+{
+  "tradeId": "498a2830afbbde0e",
+  "week": 6,
+  "season": "2023",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "mastab24",
+    "Shogunation"
+  ],
+  "sides": [
+    {
+      "teamName": "Shogunation",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 76.4,
+        "powerRank": 4,
+        "lineupValueScore": 79,
+        "performanceScore": 78.2,
+        "positionalScore": 62.7,
+        "depthScore": 80.9,
+        "totalTeams": 12,
+        "totalRosterValue": 37890
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 131,
+        "netValueChange": -131,
+        "estimatedPowerScoreChange": -0.1,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Dalton Schultz",
+            "value": 131
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "2025 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "team": "HOU",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "mastab24",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 64.6,
+        "powerRank": 5,
+        "lineupValueScore": 70,
+        "performanceScore": 68.3,
+        "positionalScore": 52.1,
+        "depthScore": 26.7,
+        "totalTeams": 12,
+        "totalRosterValue": 33582
+      },
+      "tradeImpact": {
+        "valueGained": 131,
+        "valueLost": 0,
+        "netValueChange": 131,
+        "estimatedPowerScoreChange": 0.1,
+        "playersGained": [
+          {
+            "name": "Dalton Schultz",
+            "value": 131
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "team": "HOU",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "2025 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2025",
+      "round": 2,
+      "from": "mastab24",
+      "to": "Shogunation"
+    }
+  ],
+  "persona": "Adam Schefter",
+  "analysis": "**BREAKING: League sources confirm Shogunation has dealt tight end Dalton Schultz to mastab24 for a 2025 second-round pick in what insiders are calling a classic \"win-now versus future assets\" swap.**\n\nPer multiple sources, this trade represents a fascinating divergence in philosophy between two contending teams. Shogunation—what I'm calling \"The Asset Collector\"—is essentially selling low on a tight end who was producing 6.4 PPG, banking that a future second-rounder will yield more value than a declining veteran at the league's most unpredictable position. Meanwhile, mastab24—who sources tell me should be nicknamed \"The All-In Gambler\"—is sacrificing future capital to address an immediate need, I'm told. The data shows mastab24's 26.7 depth score is alarmingly thin, ranking dead last among these metrics, and league sources say they felt compelled to mortgage tomorrow for today. The 131-point value swing suggests this was lopsided on paper, but here's the kicker: Schultz proceeded to *decline* nearly a full point per game post-trade. That's the tight end position in a nutshell, folks.\n\nFrom a risk-profile standpoint, league sources characterize this as low-risk for Shogunation despite their win-now positioning at Power Score 76.4. They're essentially flipping a replacement-level tight end—because let's be honest, that's what a 5.6 PPG player becomes—into draft capital that could yield a difference-maker. Mastab24 is taking on positional scarcity risk in a year where tight end proved volatile, but I'm told they felt their depth issues required immediate action. This reminds me of the 2017 Duane Brown trade—Seahawks giving up draft picks for an aging veteran to plug a hole for a playoff push. Sometimes you've got to pay the premium when you're in the race.\n\n**MY BOLD PREDICTION:** In two years, league sources will point to this as the moment Shogunation's dynasty truly took off. That 2025 second-rounder becomes a productive RB2 or WR3, while Schultz is out of fantasy relevance entirely. According to people familiar with the matter, this is how you extend championship windows—selling aging assets before the market realizes they're cooked.",
+  "generatedAt": "2025-12-28T21:40:06.714Z"
+}

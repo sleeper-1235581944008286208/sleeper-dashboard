@@ -1,0 +1,135 @@
+{
+  "tradeId": "195f40ae647844da",
+  "week": 1,
+  "season": "2025",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Tishathefish",
+    "cosmohouck"
+  ],
+  "sides": [
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 179,
+        "netValueChange": -179,
+        "estimatedPowerScoreChange": -0.2,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Jalen Coker",
+            "value": 179
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "2025 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jalen Coker",
+          "position": "WR",
+          "team": "CAR",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2025 Round 3 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2026 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "Tishathefish",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 50,
+        "powerRank": 7,
+        "lineupValueScore": 60.7,
+        "performanceScore": 36.4,
+        "positionalScore": 47.1,
+        "depthScore": 33.9,
+        "totalTeams": 12,
+        "totalRosterValue": 29125
+      },
+      "tradeImpact": {
+        "valueGained": 179,
+        "valueLost": 0,
+        "netValueChange": 179,
+        "estimatedPowerScoreChange": 0.2,
+        "playersGained": [
+          {
+            "name": "Jalen Coker",
+            "value": 179
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Jalen Coker",
+          "position": "WR",
+          "team": "CAR",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2025 Round 3 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2026 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "2025 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2025",
+      "round": 2,
+      "from": "Tishathefish",
+      "to": "cosmohouck"
+    },
+    {
+      "season": "2025",
+      "round": 3,
+      "from": "cosmohouck",
+      "to": "Tishathefish"
+    },
+    {
+      "season": "2026",
+      "round": 2,
+      "from": "cosmohouck",
+      "to": "Tishathefish"
+    }
+  ],
+  "persona": "Daniel Jeremiah",
+  "analysis": "From a talent evaluation standpoint, this is a classic case of \"The Draft Capital Hoarder\" making a move with \"The Lottery Ticket Collector,\" and I've got to tell you, the value matrix here is pretty clear-cut. When you look at Jalen Coker's athletic profile and production metrics – we're talking 3.5 points per game through ten games as an undrafted rookie – you're getting a guy who flashed enough on tape to earn snaps in Carolina, but hasn't shown the consistency you need from a fantasy asset. Tishathefish is essentially buying three lottery tickets here: a young receiver entering his athletic prime, plus two mid-round picks to work with. The rebuilding team gains 179 points in net value according to the trade calculator, and that makes sense when you're accumulating darts to throw. They're banking on developmental upside over proven production.\n\nNow, cosmohouck – sitting at that number one power score with a stacked roster – this is what contenders do. You consolidate. You move the back-end depth pieces and future assets to keep your window open. The -0.2 power score change is negligible when you're already at 93.4, and moving up from Round 3 to Round 2 in 2025 gives you a better shot at an impact rookie if you need to reload mid-season. The 2026 second-rounder is the real cost here, but when you're in win-now mode with a Lineup Value of 100 and perfect Depth score, you can afford to mortgage a little future equity. From a scheme fit perspective, this trade aligns perfectly with both teams' competitive timelines.\n\nHere's my bold prediction: in two years, we're going to look back at this trade as a complete wash. Coker profiles as a WR3/4 type – good size, runs decent routes, but doesn't have that elite separation skill or target share to become a fantasy difference-maker. Those picks that Tishathefish gave up? One of them probably hits as a depth piece, maybe a streaming option. Neither team will regret this move because it served its purpose in the moment. The risk profile for cosmohouck is minimal – you're trading spare parts when you're loaded. For Tishathefish, you're taking on the risk that none of these three assets pan out, but when you're sitting at a 50 power score and ranked seventh, you need volume of swings, not precision. Sometimes the best trades aren't the home runs; they're the ones that make sense for where your roster is in the competitive cycle.",
+  "generatedAt": "2025-12-28T21:24:14.460Z"
+}

@@ -1,0 +1,217 @@
+{
+  "tradeId": "10952a2d36d3f7fd",
+  "week": 4,
+  "season": "2023",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "mjgrana",
+    "Seananigans"
+  ],
+  "sides": [
+    {
+      "teamName": "mjgrana",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 86.7,
+        "powerRank": 2,
+        "lineupValueScore": 94.6,
+        "performanceScore": 75.9,
+        "positionalScore": 77.1,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 45417
+      },
+      "tradeImpact": {
+        "valueGained": 10604,
+        "valueLost": 14004,
+        "netValueChange": -3400,
+        "estimatedPowerScoreChange": -3.5,
+        "playersGained": [
+          {
+            "name": "Joe Burrow",
+            "value": 7827
+          },
+          {
+            "name": "Kyren Williams",
+            "value": 2777
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Puka Nacua",
+            "value": 7772
+          },
+          {
+            "name": "C.J. Stroud",
+            "value": 6232
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Joe Burrow",
+          "position": "QB",
+          "team": "CIN",
+          "age": 28,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Kyren Williams",
+          "position": "RB",
+          "team": "LAR",
+          "age": 25,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Skyy Moore",
+          "position": "WR",
+          "team": "SF",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2024 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jerome Ford",
+          "position": "RB",
+          "team": "CLE",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Puka Nacua",
+          "position": "WR",
+          "team": "LAR",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "C.J. Stroud",
+          "position": "QB",
+          "team": "HOU",
+          "age": 24,
+          "careerStage": "Developing"
+        },
+        {
+          "name": "2024 Round 1 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "Seananigans",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 43.2,
+        "powerRank": 9,
+        "lineupValueScore": 47.7,
+        "performanceScore": 46.8,
+        "positionalScore": 28.5,
+        "depthScore": 20,
+        "totalTeams": 12,
+        "totalRosterValue": 22895
+      },
+      "tradeImpact": {
+        "valueGained": 14004,
+        "valueLost": 10604,
+        "netValueChange": 3400,
+        "estimatedPowerScoreChange": 3.5,
+        "playersGained": [
+          {
+            "name": "Puka Nacua",
+            "value": 7772
+          },
+          {
+            "name": "C.J. Stroud",
+            "value": 6232
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Joe Burrow",
+            "value": 7827
+          },
+          {
+            "name": "Kyren Williams",
+            "value": 2777
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Jerome Ford",
+          "position": "RB",
+          "team": "CLE",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Puka Nacua",
+          "position": "WR",
+          "team": "LAR",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "C.J. Stroud",
+          "position": "QB",
+          "team": "HOU",
+          "age": 24,
+          "careerStage": "Developing"
+        },
+        {
+          "name": "2024 Round 1 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Joe Burrow",
+          "position": "QB",
+          "team": "CIN",
+          "age": 28,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Kyren Williams",
+          "position": "RB",
+          "team": "LAR",
+          "age": 25,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Skyy Moore",
+          "position": "WR",
+          "team": "SF",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2024 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2024",
+      "round": 1,
+      "from": "mjgrana",
+      "to": "Seananigans"
+    },
+    {
+      "season": "2024",
+      "round": 2,
+      "from": "Seananigans",
+      "to": "mjgrana"
+    }
+  ],
+  "persona": "Ian Rapoport",
+  "analysis": "**BREAKING: Major Dynasty Trade Shakes Up League as Contender Goes All-In**\n\nMy understanding is that mjgrana—let's call him \"The Mortgage Man\" for mortgaging his future here—has been eyeing a championship push for weeks, and sources indicate this deal was about consolidating assets into immediate impact. Here's the thing: at the time of the trade in Week 4, 2023, this looked like classic win-now aggression. Burrow was an established QB1, and the team was betting against the rookie hype surrounding Stroud and Puka Nacua's scorching 19.0 PPG start. But—and this is key—they also landed Kyren Williams, who was averaging just 4.6 points per game at that point. That's the kind of buy-low dart throw contenders dream about, and folks, it absolutely hit. Williams exploded for 14.2 PPG post-trade, a +9.5 PPG improvement that kept this deal from being a complete disaster.\n\nNow, Seananigans—we'll call him \"The Asset Collector\" for stockpiling young talent and draft capital—pulled off what sources are telling me is one of the shrewdest rebuilding moves I've seen. Keep an eye on this: he acquired three pieces who were on absolute fire through four weeks, plus moved up from a second to a first-round pick. The gamble? All three players regressed post-trade. Stroud dropped from 18.5 to 13.2 PPG, Puka fell from 19.0 to 12.1, and Jerome Ford cratered from 12.3 to 7.6. But here's the insider context everyone's missing—even with that regression, Stroud and Puka remained fantasy-relevant starters, and Asset Collector gained elite youth plus premium draft capital. My understanding is he improved his Power Score by 3.5 points while Mortgage Man dropped 3.5, which tells you everything about the long-term value disparity.\n\n**THE VERDICT:** Seananigans wins this trade, and frankly, it's not particularly close when you evaluate total value exchanged. Yes, Kyren Williams becoming a league-winner softens the blow significantly for mjgrana, but the net loss of 3,400 in value tells the story. The Mortgage Man gave up a generational rookie WR season from Puka, a potential franchise QB in Stroud who's still just 24 years old, AND moved back in the draft—all while sitting at #2 in the Power Rankings where incremental improvements matter most. Sources indicate Burrow's decline to 13.7 PPG made the QB swap a wash at best, and losing Puka's ceiling was the killer. Keep an eye on this developing situation: sometimes the best win-now moves are the ones you *don't* make. Asset Collector bought the dip on three ascending talents and got paid handsomely to do it. This is how you rebuild the right way in dynasty leagues.",
+  "generatedAt": "2025-12-28T21:39:08.249Z"
+}

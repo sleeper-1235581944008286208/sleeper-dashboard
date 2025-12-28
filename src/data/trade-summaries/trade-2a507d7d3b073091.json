@@ -1,0 +1,116 @@
+{
+  "tradeId": "2a507d7d3b073091",
+  "week": 1,
+  "season": "2023",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "drobs",
+    "Seananigans"
+  ],
+  "sides": [
+    {
+      "teamName": "drobs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 51.3,
+        "powerRank": 6,
+        "lineupValueScore": 53.3,
+        "performanceScore": 57.3,
+        "positionalScore": 36.8,
+        "depthScore": 38,
+        "totalTeams": 12,
+        "totalRosterValue": 25560
+      },
+      "tradeImpact": {
+        "valueGained": 755,
+        "valueLost": 1153,
+        "netValueChange": -398,
+        "estimatedPowerScoreChange": -0.4,
+        "playersGained": [
+          {
+            "name": "Wan'Dale Robinson",
+            "value": 755
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Jaylen Warren",
+            "value": 1153
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "team": "NYG",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jaylen Warren",
+          "position": "RB",
+          "team": "PIT",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "Seananigans",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 43.2,
+        "powerRank": 9,
+        "lineupValueScore": 47.7,
+        "performanceScore": 46.8,
+        "positionalScore": 28.5,
+        "depthScore": 20,
+        "totalTeams": 12,
+        "totalRosterValue": 22895
+      },
+      "tradeImpact": {
+        "valueGained": 1153,
+        "valueLost": 755,
+        "netValueChange": 398,
+        "estimatedPowerScoreChange": 0.4,
+        "playersGained": [
+          {
+            "name": "Jaylen Warren",
+            "value": 1153
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Wan'Dale Robinson",
+            "value": 755
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Jaylen Warren",
+          "position": "RB",
+          "team": "PIT",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "team": "NYG",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Todd McShay",
+  "analysis": "Look, when you're evaluating a Week 1 trade in 2023, you've got to understand the landscape both managers were working with at that moment. This is classic \"The Tinkerer\" versus \"The Value Hunter\" here – drobs making an early-season move trying to find that perfect roster construction, while Seananigans is capitalizing on positional scarcity like a savvy GM in the war room.\n\nHere's the thing: drobs absolutely reached here, and the numbers tell the story. You're giving up a running back – and folks, we cannot overstate the importance of RB depth in fantasy football – for a receiver coming off injury concerns in a crowded Giants receiver room. Now, I get the thought process: Wan'Dale Robinson had the pedigree, the draft capital the Giants invested, and you're thinking \"this guy's about to break out.\" But from a pure value standpoint and roster construction perspective, you simply cannot trade away running back depth this early in the season. The Power Score impact tells you everything – drobs dropped 0.4 points while Seananigans gained 0.4. That's nearly a full point swing in team valuation, and when you're already sitting at 6th out of 12, you can't afford to give away assets at a premium position for a speculative play at a deep position.\n\nThe irony? Both players improved post-trade, but here's what matters: Jaylen Warren gave you 7.8 PPG in a high-value position behind Najee Harris in Pittsburgh's scheme, while Wan'Dale gave you 7.2 PPG in a crowded New York receiving corps. Seananigans got the better player at the position of greater scarcity – that's draft 101, folks. You always take the best player available at premium positions, and running back is THE premium position in fantasy. Warren was the steal here, plain and simple.\n\n**THE VERDICT:** Seananigans wins this trade going away. They identified a team need, exploited positional value, and got a prime-aged running back with standalone flex value and RB1 upside if Najee went down. That's championship-level roster construction. Drobs? They got cute, they overthought it, and they paid for it with diminished trade value and a weaker positional foundation. In a twelve-team league where you're fighting for playoff positioning, you cannot give away running backs in Week 1. That's not building a contender – that's hoping lightning strikes twice.",
+  "generatedAt": "2025-12-28T21:36:16.174Z"
+}

@@ -1,0 +1,130 @@
+{
+  "tradeId": "1c13892ad13a168e",
+  "week": 1,
+  "season": "2025",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Shogunation",
+    "Tishathefish"
+  ],
+  "sides": [
+    {
+      "teamName": "Shogunation",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 76.4,
+        "powerRank": 4,
+        "lineupValueScore": 79,
+        "performanceScore": 78.2,
+        "positionalScore": 62.7,
+        "depthScore": 80.9,
+        "totalTeams": 12,
+        "totalRosterValue": 37890
+      },
+      "tradeImpact": {
+        "valueGained": 370,
+        "valueLost": 64,
+        "netValueChange": 306,
+        "estimatedPowerScoreChange": 0.3,
+        "playersGained": [
+          {
+            "name": "Dallas Goedert",
+            "value": 370
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Pat Freiermuth",
+            "value": 64
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "team": "PHI",
+          "age": 30,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Pat Freiermuth",
+          "position": "TE",
+          "team": "PIT",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Khalil Herbert",
+          "position": "RB",
+          "team": "NYJ",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "Tishathefish",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 50,
+        "powerRank": 7,
+        "lineupValueScore": 60.7,
+        "performanceScore": 36.4,
+        "positionalScore": 47.1,
+        "depthScore": 33.9,
+        "totalTeams": 12,
+        "totalRosterValue": 29125
+      },
+      "tradeImpact": {
+        "valueGained": 64,
+        "valueLost": 370,
+        "netValueChange": -306,
+        "estimatedPowerScoreChange": -0.3,
+        "playersGained": [
+          {
+            "name": "Pat Freiermuth",
+            "value": 64
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Dallas Goedert",
+            "value": 370
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Pat Freiermuth",
+          "position": "TE",
+          "team": "PIT",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Khalil Herbert",
+          "position": "RB",
+          "team": "NYJ",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "team": "PHI",
+          "age": 30,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Daniel Jeremiah",
+  "analysis": "Alright, let's break down this Week 1 deal between what I'm calling \"The Opportunist\" in Shogunation and \"The Optimist\" in Tishathefish. From a talent evaluation standpoint, this is a classic win-now versus rebuild transaction, and the timing here is absolutely critical to understanding the value exchange.\n\nWhen you study the tape on this trade, Shogunation is making a pure positional upgrade at tight end while sitting at that #4 power ranking. Dallas Goedert comes into this deal as a 30-year-old veteran in an elite offensive scheme in Philadelphia, and the production metrics post-trade speak for themselves - 11.7 points per game compared to Freiermuth's 1.5. That's a six-point swing at a premium position, folks. The athletic profile on Goedert shows a guy who can still win at the catch point and create after the catch in that Philly system. Meanwhile, Freiermuth's situation in Pittsburgh is concerning from a scheme fit perspective - we're seeing regression in his opportunities, and that 4.1 PPG drop post-trade tells you everything about his current utilization. Throwing in Khalil Herbert as a depth piece to get this done? That's smart roster management when you're in the top four and Herbert's buried on a Jets depth chart.\n\nFrom Tishathefish's perspective - sitting at #7 with a 50 power score and clearly rebuilding - the evaluation process here is flawed. The Optimist is betting on Freiermuth's age-26 profile and \"entering prime\" designation, but you can't ignore what the film shows you right now. Pittsburgh's offensive infrastructure isn't supporting tight end production, and you're trading away a guy who's producing at an elite level in real time for future projection. Yes, you're getting four years younger at the position, but Goedert's production spike of six points per game in a championship-caliber offense is tangible value you're surrendering. The net value loss of 306 points in the analytics confirms what the eye test tells us.\n\n**The Verdict:** Shogunation wins this trade decisively. The Opportunist identified a rebuilding team, acquired immediate production at a scarce position, and improved his starting lineup while maintaining an 80.9 depth score. Sometimes in fantasy football, just like in the NFL draft, you've got to trust the current production metrics over projected future value. Tishathefish needed draft capital or younger high-upside assets - not a downgrade at tight end with minimal compensation. This is what we call a \"value mismatch,\" and it's going to show up in the standings.",
+  "generatedAt": "2025-12-28T21:25:19.472Z"
+}

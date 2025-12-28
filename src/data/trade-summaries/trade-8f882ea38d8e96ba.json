@@ -1,0 +1,97 @@
+{
+  "tradeId": "8f882ea38d8e96ba",
+  "week": 7,
+  "season": "2022",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Langland",
+    "cosmohouck"
+  ],
+  "sides": [
+    {
+      "teamName": "Langland",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 18.1,
+        "powerRank": 12,
+        "lineupValueScore": 27.3,
+        "performanceScore": 6.4,
+        "positionalScore": 13.9,
+        "depthScore": 7.8,
+        "totalTeams": 12,
+        "totalRosterValue": 13107
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Dontrell Hilliard",
+          "position": "RB",
+          "team": "FA",
+          "age": 28,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "2024 Round 3 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "2024 Round 3 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Dontrell Hilliard",
+          "position": "RB",
+          "team": "FA",
+          "age": 28,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2024",
+      "round": 3,
+      "from": "Langland",
+      "to": "cosmohouck"
+    }
+  ],
+  "persona": "Todd McShay",
+  "analysis": "Look, when I see a trade like this, I immediately go to my board and ask myself: what are we really talking about here in terms of value? And folks, this is about as lopsided as it gets.\n\nCosmohouck is sitting at the top of the league with a 93.4 power score—that's a LOADED roster—and they just fleeced a rebuilding team. Let's call this what it is: they turned a 28-year-old journeyman running back who was averaging under six points per game into draft capital. That's asset management 101. Dontrell Hilliard? He's a replacement-level player, a depth piece at best who wasn't even moving the needle for their championship roster. They sold high on name recognition and got a future third-round pick—that's a STEAL in dynasty formats. Meanwhile, Langland is dead last in power score at 18.1, supposedly rebuilding and accumulating future assets, and they just REACHED for a running back with maybe six months of fantasy relevance left. This is the exact opposite of what a rebuilding team should be doing. You don't trade draft capital—your lifeblood when you're at the bottom—for aging veterans at the most replaceable position in fantasy football. That's roster construction malpractice.\n\nThe post-trade numbers tell the story I expected: Hilliard averaged 2.4 points per game after this deal, losing over three points per game in production. He brought ZERO value to Langland's lineup. Cosmohouck, on the other hand, banked that third-rounder and stayed dominant. This is why the rich get richer in dynasty leagues—the top team identified a disposable asset, found someone willing to overpay, and added to their war chest while maintaining their stranglehold on the league.\n\nHere's my bold prediction: in two years, we'll look back at this as the moment Langland's rebuild went off the rails. That 2024 third-rounder could've been a young receiver or a dynasty RB2—instead, they got 26 total points from Hilliard over eleven games. Cosmohouck will have turned that pick into another contributor while continuing to lap the field. **WINNER: Cosmohouck by a landslide. LOSER: Langland, and it's not even close.** This is a masterclass in exploitation—when you're the best team in the league, this is how you stay there.",
+  "generatedAt": "2025-12-28T21:43:01.548Z"
+}

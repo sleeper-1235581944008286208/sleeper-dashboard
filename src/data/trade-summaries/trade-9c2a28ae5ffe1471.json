@@ -1,0 +1,106 @@
+{
+  "tradeId": "9c2a28ae5ffe1471",
+  "week": 1,
+  "season": "2022",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Langland",
+    "Tishathefish"
+  ],
+  "sides": [
+    {
+      "teamName": "Langland",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 18.1,
+        "powerRank": 12,
+        "lineupValueScore": 27.3,
+        "performanceScore": 6.4,
+        "positionalScore": 13.9,
+        "depthScore": 7.8,
+        "totalTeams": 12,
+        "totalRosterValue": 13107
+      },
+      "tradeImpact": {
+        "valueGained": 67,
+        "valueLost": 0,
+        "netValueChange": 67,
+        "estimatedPowerScoreChange": 0.1,
+        "playersGained": [
+          {
+            "name": "Kareem Hunt",
+            "value": 67
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Kareem Hunt",
+          "position": "RB",
+          "team": "KC",
+          "age": 30,
+          "careerStage": "Declining"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Damien Harris",
+          "position": "RB",
+          "team": "FA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "Tishathefish",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 50,
+        "powerRank": 7,
+        "lineupValueScore": 60.7,
+        "performanceScore": 36.4,
+        "positionalScore": 47.1,
+        "depthScore": 33.9,
+        "totalTeams": 12,
+        "totalRosterValue": 29125
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 67,
+        "netValueChange": -67,
+        "estimatedPowerScoreChange": -0.1,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Kareem Hunt",
+            "value": 67
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Damien Harris",
+          "position": "RB",
+          "team": "FA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Kareem Hunt",
+          "position": "RB",
+          "team": "KC",
+          "age": 30,
+          "careerStage": "Declining"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Adam Schefter",
+  "analysis": "Breaking news out of fantasy football: In a Week 1 blockbuster that's raising eyebrows across the league, I'm told Langland and Tishathefish have executed a running back swap that has major implications for both rebuilding franchises. Per sources, Langland—sitting dead last at 12th with an 18.1 power score—has acquired 30-year-old Kareem Hunt from Tishathefish in exchange for 27-year-old Damien Harris. League sources say this is the classic case of two teams that both believe they're getting younger, but the age difference here is marginal at best. What's fascinating: Langland gains 67 points of trade value in this deal while Tishathefish loses that exact amount. I'm told both GMs are confident they made the right call, but the numbers tell a very different story.\n\nHere's what makes this trade particularly intriguing, per multiple sources close to the situation: Hunt was coming off a monster 21-point Week 1 performance, while Harris struggled to just 6.8 points. According to people familiar with the decision-making, Tishathefish may have been selling high on Hunt's hot start, trying to get younger in their rebuild. But here's the kicker—Hunt proceeded to average just 7.2 PPG over his next 54 games while Harris managed only 2.8 PPG over 34 games. I'm told this became a lose-lose situation fast, with both backs significantly underperforming post-trade. The reality? Both players were already on career downswings, and this trade was essentially rearranging deck chairs on the Titanic for two rebuilding squads.\n\nMy bold prediction, per what I'm hearing around the league: In two years, neither of these players will be fantasy-relevant, and both teams will look back at this as a missed opportunity to acquire actual young assets or draft capital. League sources suggest this trade epitomizes the danger of overthinking marginal veteran swaps when you're sitting at the bottom of the standings. When you're ranked 12th and 7th respectively in a 12-team league, I'm told you need to be swinging for home runs, not trading one declining back for another. Mark it down—this goes down as a cautionary tale about rebuild strategy gone wrong.",
+  "generatedAt": "2025-12-28T21:41:18.827Z"
+}

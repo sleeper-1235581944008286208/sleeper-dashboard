@@ -1,0 +1,121 @@
+{
+  "tradeId": "a0f9057574b7f3bd",
+  "week": 9,
+  "season": "2023",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "drobs",
+    "powerperson"
+  ],
+  "sides": [
+    {
+      "teamName": "drobs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 51.3,
+        "powerRank": 6,
+        "lineupValueScore": 53.3,
+        "performanceScore": 57.3,
+        "positionalScore": 36.8,
+        "depthScore": 38,
+        "totalTeams": 12,
+        "totalRosterValue": 25560
+      },
+      "tradeImpact": {
+        "valueGained": 495,
+        "valueLost": 0,
+        "netValueChange": 495,
+        "estimatedPowerScoreChange": 0.5,
+        "playersGained": [
+          {
+            "name": "Chris Godwin",
+            "value": 495
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Chris Godwin",
+          "position": "WR",
+          "team": "TB",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Kadarius Toney",
+          "position": "WR",
+          "team": "FA",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2026 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "powerperson",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 23.8,
+        "powerRank": 11,
+        "lineupValueScore": 26.4,
+        "performanceScore": 21.6,
+        "positionalScore": 20.9,
+        "depthScore": 19.1,
+        "totalTeams": 12,
+        "totalRosterValue": 12690
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 495,
+        "netValueChange": -495,
+        "estimatedPowerScoreChange": -0.5,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Chris Godwin",
+            "value": 495
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Kadarius Toney",
+          "position": "WR",
+          "team": "FA",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2026 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Chris Godwin",
+          "position": "WR",
+          "team": "TB",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2026",
+      "round": 2,
+      "from": "drobs",
+      "to": "powerperson"
+    }
+  ],
+  "persona": "Mel Kiper Jr.",
+  "analysis": "Look, I've been analyzing talent for over four decades, and when I see a trade like this, I HAVE to break down the tape on these players. Chris Godwin - this is a guy I had as a FIRST-ROUND talent coming out of Penn State in 2017. We're talking about a polished route-runner with outstanding hands and football IQ. Now, Kadarius Toney? Florida product, elite athleticism, first-round pick in 2021 - I'll give him that. BUT - and this is a BIG but - the tape doesn't lie, folks. Toney's averaging 2.9 points per game before this deal? That's not a starting-caliber NFL receiver, I don't care how much \"upside\" people want to talk about. When you're a playoff contender sitting at #6 with a 51.3 power score, you don't mess around with lottery tickets. You get the PROVEN commodity, and drobs - I'm calling him \"The Closer\" - understood the assignment here.\n\nNow let's talk about what powerperson - \"The Tanker\" - is doing here. They're sitting at #11 in power rankings with a 23.8 score, and they're punting a guy who's giving them 9.1 points per game for a 2026 second-rounder and damaged goods? This reminds me of the Vikings trading a first-rounder for Sam Bradford - sometimes you're so desperate you make a move that looks terrible on paper AND on the field! Sure, they're rebuilding, but you know what rebuilding teams need? ASSETS WITH VALUE! Godwin still had trade equity even after this deal - 6.6 points per game post-trade isn't lighting the world on fire, but it's legitimate NFL production. Toney? He fell off a CLIFF to 1.4 PPG. That's roster clogger territory!\n\nThe winner here? It's not even CLOSE - drobs wins this trade going away! They added 495 points of net value, upgraded their starting lineup during a playoff push, and gave up essentially NOTHING. A 2026 pick and a guy who wasn't even on my fantasy board? That's pennies on the dollar for a receiver who had WR2 upside in Tampa Bay's offense. This is like the Rams trading for Matthew Stafford - an aggressive win-now move that shows CONVICTION. The Tanker got fleeced here, plain and simple. When you're rebuilding, you collect picks AND proven talent, not just throw assets away for hope and prayers. The tape, the numbers, the power scores - they ALL say The Closer pulled off a heist!",
+  "generatedAt": "2025-12-28T21:40:44.644Z"
+}

@@ -1,0 +1,97 @@
+{
+  "tradeId": "5401591e31dd91c4",
+  "week": 1,
+  "season": "2023",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "tr4sh",
+    "cosmohouck"
+  ],
+  "sides": [
+    {
+      "teamName": "tr4sh",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 41.8,
+        "powerRank": 10,
+        "lineupValueScore": 53.4,
+        "performanceScore": 32.6,
+        "positionalScore": 32.2,
+        "depthScore": 9.7,
+        "totalTeams": 12,
+        "totalRosterValue": 25621
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Jimmy Garoppolo",
+          "position": "QB",
+          "team": "LAR",
+          "age": 33,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "2024 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "2024 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jimmy Garoppolo",
+          "position": "QB",
+          "team": "LAR",
+          "age": 33,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2024",
+      "round": 2,
+      "from": "tr4sh",
+      "to": "cosmohouck"
+    }
+  ],
+  "persona": "Daniel Jeremiah",
+  "analysis": "Alright, let's dig into this one from a talent evaluation standpoint, because this is a fascinating study in championship window management. You've got cosmohouck sitting at the top of the league with a 93.4 Power Score - and when I see those metrics across the board, that 100 in lineup value, that 100 in depth - this is a team that's built to win NOW. So what do they do? They flip Jimmy Garoppolo, a 33-year-old quarterback averaging 9.5 points per game, for a future second-round pick. This reminds me of when the Chiefs traded Alex Smith to Washington - they knew Patrick Mahomes was their guy, so they maximized Smith's value while they still could. Cosmohouck is clearly looking at their quarterback room and saying \"we don't need this depth piece eating a roster spot when we can add a future asset.\"\n\nNow from a scheme fit perspective, let's talk about tr4sh. You're sitting at 41.8 Power Score, ranked 10th out of 12, and you're giving up draft capital for a veteran quarterback in Week 1? The production metrics here are really concerning - Garoppolo goes on to post just 5.4 points per game post-trade, a four-point drop from his previous average. That's a red flag from a talent evaluation standpoint. When you're rebuilding, every draft pick is currency, and second-rounders in dynasty formats can net you young skill position players with upside. Instead, you're getting a journeyman quarterback whose athletic profile at 33 years old with 11 years of experience is trending downward, not upward.\n\nThe risk profile here is completely asymmetrical. Cosmohouck is getting a no-risk lottery ticket - that second-rounder could hit on a breakout player, and at worst, it's a bench piece. They're operating from a position of strength with that elite depth score. Meanwhile, tr4sh is trading future flexibility for immediate production that frankly never materialized. The timing is what kills me about this deal - Week 1 of the season, you haven't even evaluated your roster in live competition yet, and you're already mortgaging the future for a 33-year-old quarterback.\n\nHere's my bold prediction: In two years, this trade looks like highway robbery for cosmohouck. That 2024 second-rounder becomes a starting-caliber player while Garoppolo is likely out of the league or a clipboard holder. From a pure value standpoint, this is a masterclass in selling high from the contender and a cautionary tale about panic moves from the rebuilding side. When you're at the bottom of the Power Score rankings, you need to be accumulating assets, not depleting them for veterans on the wrong side of 30. This one's not even close.",
+  "generatedAt": "2025-12-28T21:33:03.145Z"
+}

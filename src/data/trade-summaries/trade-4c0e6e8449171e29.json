@@ -1,0 +1,106 @@
+{
+  "tradeId": "4c0e6e8449171e29",
+  "week": 1,
+  "season": "2024",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Langland",
+    "drobs"
+  ],
+  "sides": [
+    {
+      "teamName": "drobs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 51.3,
+        "powerRank": 6,
+        "lineupValueScore": 53.3,
+        "performanceScore": 57.3,
+        "positionalScore": 36.8,
+        "depthScore": 38,
+        "totalTeams": 12,
+        "totalRosterValue": 25560
+      },
+      "tradeImpact": {
+        "valueGained": 799,
+        "valueLost": 0,
+        "netValueChange": 799,
+        "estimatedPowerScoreChange": 0.8,
+        "playersGained": [
+          {
+            "name": "Quentin Johnston",
+            "value": 799
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "team": "LAC",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Raheem Mostert",
+          "position": "RB",
+          "team": "LV",
+          "age": 33,
+          "careerStage": "Veteran/End of Career"
+        }
+      ]
+    },
+    {
+      "teamName": "Langland",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 18.1,
+        "powerRank": 12,
+        "lineupValueScore": 27.3,
+        "performanceScore": 6.4,
+        "positionalScore": 13.9,
+        "depthScore": 7.8,
+        "totalTeams": 12,
+        "totalRosterValue": 13107
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 799,
+        "netValueChange": -799,
+        "estimatedPowerScoreChange": -0.8,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Quentin Johnston",
+            "value": 799
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Raheem Mostert",
+          "position": "RB",
+          "team": "LV",
+          "age": 33,
+          "careerStage": "Veteran/End of Career"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "team": "LAC",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Todd McShay",
+  "analysis": "Look, when you break down this Week 1 deal, this is **textbook value creation** for drobs and frankly, a head-scratcher for Langland. I mean, we're talking about a last-place team trading away a 24-year-old wide receiver entering his prime for a 33-year-old running back with maybe half a season of tread left on the tires. That's not rebuilding—that's sabotage.\n\nLet me tell you why drobs absolutely *crushed* this one. They identified a position of need, targeted a player with untapped upside, and bought low at the perfect time. Quentin Johnston was the classic \"talent over production\" guy—first-round pedigree, elite athleticism, just needed the opportunity. And what happens? He more than **doubles** his scoring output post-trade, going from 4.3 to 8.6 points per game. Meanwhile, Mostert—who they correctly identified as a depreciating asset—falls off a cliff, dropping from 11.4 to 3.9 PPG. The age curve in this league is *undefeated* at the running back position, folks. drobs understood the assignment: maximize roster construction by flipping aging production for ascending talent. That's an 800-point value swing and nearly a full Power Score point gained. That's a **steal** in dynasty terms.\n\nNow Langland—and I hate to pile on a team already sitting at 12th—but this is the exact opposite of what you do when you're rebuilding. You're sitting at an 18.1 Power Score with virtually no depth, and you trade the **best player available** in terms of long-term value for immediate production you can't even use? That's reaching for need over value, and it backfired spectacularly. If you're in last place, you accumulate young assets, not veterans on their last legs heading to Las Vegas. Johnston was *exactly* the type of cornerstone piece you build around—a former top pick breaking out in his second year. Instead, they watched him flourish elsewhere while Mostert gave them four weeks of mediocrity before disappearing. \n\nThis trade is the perfect case study in understanding your competitive window. drobs, sitting at 6th but clearly playoff-hunting, made a calculated bet on talent evaluation and won big. Langland? They mortgaged the future for a rental car that broke down immediately. In the draft room, we'd call this a **massive value discrepancy**, and the results speak for themselves.",
+  "generatedAt": "2025-12-28T21:30:28.211Z"
+}

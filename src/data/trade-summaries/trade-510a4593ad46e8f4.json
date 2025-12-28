@@ -1,0 +1,135 @@
+{
+  "tradeId": "510a4593ad46e8f4",
+  "week": 5,
+  "season": "2023",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "mjgrana",
+    "powerperson"
+  ],
+  "sides": [
+    {
+      "teamName": "mjgrana",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 86.7,
+        "powerRank": 2,
+        "lineupValueScore": 94.6,
+        "performanceScore": 75.9,
+        "positionalScore": 77.1,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 45417
+      },
+      "tradeImpact": {
+        "valueGained": 1536,
+        "valueLost": 0,
+        "netValueChange": 1536,
+        "estimatedPowerScoreChange": 1.6,
+        "playersGained": [
+          {
+            "name": "Terry McLaurin",
+            "value": 1536
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Terry McLaurin",
+          "position": "WR",
+          "team": "WAS",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2024 Round 3 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Donovan Peoples-Jones",
+          "position": "WR",
+          "team": "FA",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2024 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "powerperson",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 23.8,
+        "powerRank": 11,
+        "lineupValueScore": 26.4,
+        "performanceScore": 21.6,
+        "positionalScore": 20.9,
+        "depthScore": 19.1,
+        "totalTeams": 12,
+        "totalRosterValue": 12690
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 1536,
+        "netValueChange": -1536,
+        "estimatedPowerScoreChange": -1.6,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Terry McLaurin",
+            "value": 1536
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Donovan Peoples-Jones",
+          "position": "WR",
+          "team": "FA",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2024 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Terry McLaurin",
+          "position": "WR",
+          "team": "WAS",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2024 Round 3 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2024",
+      "round": 3,
+      "from": "powerperson",
+      "to": "mjgrana"
+    },
+    {
+      "season": "2024",
+      "round": 2,
+      "from": "mjgrana",
+      "to": "powerperson"
+    }
+  ],
+  "persona": "Daniel Jeremiah",
+  "analysis": "From a talent evaluation standpoint, this is what I call a classic \"contender tax\" trade—and man, \"The Closer\" mjgrana just paid it willingly to solidify that championship window. You're looking at a team sitting at 86.7 power score, ranked second in the league, and they're essentially swapping a second-round pick for a third to upgrade from Donovan Peoples-Jones to Terry McLaurin. Now, when you dive into the production metrics, Terry was putting up 10.5 PPG pre-trade while DPJ was at 6.1—that's a 4.4-point per game upgrade at a position where consistency wins championships. The athletic profile here heavily favors McLaurin too; we're talking about a guy with elite route-running savvy and separation skills versus a player who frankly never carved out more than a WR3 role in Cleveland. This reminds me of the Broncos trading up for Von Miller—sometimes you mortgage a bit of future capital when you know your window is NOW.\n\n\"The Asset Collector\" powerperson is operating from the complete opposite playbook here, and honestly, from a rebuilding perspective, this is textbook stuff. Sitting at 23.8 power score and ranked 11th out of 12, they're not competing this year, so moving a 30-year-old receiver—even one as talented as Terry—to acquire draft capital makes perfect sense from a scheme fit for their timeline. They're essentially banking on that second-round pick being worth more than the production differential between these receivers. The problem? DPJ completely fell off a cliff post-trade, dropping to 0.6 PPG. That's the risk when you acquire a guy who hasn't proven he can be \"the guy\" anywhere. You're hoping for developmental upside, but sometimes the tape doesn't lie.\n\nWeek 5 timing here is crucial—this is right when contenders start identifying their roster holes and rebuilders are taking phone calls on veterans. The gap in their respective power scores tells you everything about the motivations: mjgrana added 1.6 points to an already elite roster while powerperson sacrificed the same amount, but when you're that far back, you're playing 2025 chess while everyone else is playing 2023 checkers. The post-trade numbers are fascinating though—McLaurin's slight dip to 9.7 PPG still represents consistent WR2 production for the contender, while DPJ's collapse validates exactly why he was the throw-in piece. From a pure value exchange, mjgrana gave up essentially nothing (a struggling WR and one round of draft capital movement) to acquire a proven commodity. That's how you operate when you're in win-now mode—you identify the guys who can help you in December and January, and you go get them. Both managers executed their respective strategies perfectly based on their competitive windows.",
+  "generatedAt": "2025-12-28T21:39:29.324Z"
+}

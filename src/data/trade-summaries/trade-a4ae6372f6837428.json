@@ -1,0 +1,106 @@
+{
+  "tradeId": "a4ae6372f6837428",
+  "week": 9,
+  "season": "2022",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "PrinceofPizza",
+    "cosmohouck"
+  ],
+  "sides": [
+    {
+      "teamName": "PrinceofPizza",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 80.8,
+        "powerRank": 3,
+        "lineupValueScore": 89.3,
+        "performanceScore": 63.7,
+        "positionalScore": 86.5,
+        "depthScore": 81,
+        "totalTeams": 12,
+        "totalRosterValue": 42833
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 131,
+        "netValueChange": -131,
+        "estimatedPowerScoreChange": -0.1,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Dalton Schultz",
+            "value": 131
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Tyler Boyd",
+          "position": "WR",
+          "team": "FA",
+          "age": 30,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "team": "HOU",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 131,
+        "valueLost": 0,
+        "netValueChange": 131,
+        "estimatedPowerScoreChange": 0.1,
+        "playersGained": [
+          {
+            "name": "Dalton Schultz",
+            "value": 131
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "team": "HOU",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Tyler Boyd",
+          "position": "WR",
+          "team": "FA",
+          "age": 30,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Daniel Jeremiah",
+  "analysis": "Alright, let's break down this deal from a talent evaluation standpoint, because when I look at the metrics here, this one has \"win-now desperation\" written all over it for PrinceofPizza—and I'm not sure the juice was worth the squeeze. We've got **\"The Bargain Bin Bandit\"** in PrinceofPizza making a move that frankly looks like selling low on positional scarcity, while **\"The Apex Predator\"** cosmohouck is doing what the best GMs do—exploiting market inefficiencies when they see them. From a pure value perspective, you're looking at a 131-point swing in dynasty value, which in my experience evaluating these situations, is a significant gap that's hard to justify unless you've got some immediate roster construction issue we're not seeing.\n\nNow let's get into the film—well, the production metrics in this case. Tyler Boyd at the time of this trade was posting 11.0 PPG, which looks solid on the surface, but context matters here. He's playing in a loaded Cincinnati receiving corps, his target share was volatile, and the athletic profile at age 30 with nine years of NFL mileage? That's a depreciating asset, folks. Meanwhile, Dalton Schultz was only at 3.1 PPG through nine games in 2022, but here's what a scout sees: tight end is an *elite premium* position in fantasy—the scarcity factor is real. You're trading away a position where you can gain 5-7 points per week on your opponent for a receiver in a deep pool where replacement level isn't that far behind. And wouldn't you know it, the post-trade data proves it out—Schultz improves to 6.6 PPG while Boyd craters to 6.1 PPG. That's a 10-point swing in the wrong direction for PrinceofPizza. From a scheme fit and roster construction angle, cosmohouck at 93.4 power score with a perfect 100 in depth could afford to move a WR3/4 type to shore up a premium position. That's championship-level team building.\n\n**The Winner:** The Apex Predator takes this one convincingly. Cosmohouck turned a depreciating WR asset into a scarce positional advantage while already sitting at #1 in the league. That's how you press your advantage when you're in pole position. **The Loser:** The Bargain Bin Bandit got caught chasing short-term points without respecting the positional value hierarchy. The -0.1 power score change tells the story—lateral move at best, value destruction at worst. \n\n**My bold prediction two years out:** This trade will be remembered as the moment cosmohouck locked up a championship window. Boyd will be out of fantasy relevance entirely by 2024, while Schultz—even if he's just a TE1.5—will have provided 30-40 more points over this span than Boyd. In dynasty formats, you win by accumulating premium position players, and PrinceofPizza learned that lesson the hard way. Sometimes the tape doesn't lie, and the production metrics were screaming \"hold your tight end\" from the jump.",
+  "generatedAt": "2025-12-28T21:47:10.096Z"
+}

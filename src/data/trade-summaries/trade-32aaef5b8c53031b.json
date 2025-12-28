@@ -1,0 +1,145 @@
+{
+  "tradeId": "32aaef5b8c53031b",
+  "week": 1,
+  "season": "2025",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "cosmohouck",
+    "powerperson"
+  ],
+  "sides": [
+    {
+      "teamName": "powerperson",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 23.8,
+        "powerRank": 11,
+        "lineupValueScore": 26.4,
+        "performanceScore": 21.6,
+        "positionalScore": 20.9,
+        "depthScore": 19.1,
+        "totalTeams": 12,
+        "totalRosterValue": 12690
+      },
+      "tradeImpact": {
+        "valueGained": 22,
+        "valueLost": 4516,
+        "netValueChange": -4494,
+        "estimatedPowerScoreChange": -4.7,
+        "playersGained": [
+          {
+            "name": "Audric Estime",
+            "value": 22
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Brock Purdy",
+            "value": 4516
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Audric Estime",
+          "position": "RB",
+          "team": "PHI",
+          "age": 22,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2026 Round 1 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2026 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Brock Purdy",
+          "position": "QB",
+          "team": "SF",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 4516,
+        "valueLost": 22,
+        "netValueChange": 4494,
+        "estimatedPowerScoreChange": 4.7,
+        "playersGained": [
+          {
+            "name": "Brock Purdy",
+            "value": 4516
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Audric Estime",
+            "value": 22
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Brock Purdy",
+          "position": "QB",
+          "team": "SF",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Audric Estime",
+          "position": "RB",
+          "team": "PHI",
+          "age": 22,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2026 Round 1 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2026 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2026",
+      "round": 1,
+      "from": "cosmohouck",
+      "to": "powerperson"
+    },
+    {
+      "season": "2026",
+      "round": 2,
+      "from": "cosmohouck",
+      "to": "powerperson"
+    }
+  ],
+  "persona": "Mel Kiper Jr.",
+  "analysis": "Look, let me tell you something - this trade right here reminds me of the Herschel Walker deal, and I'm not being hyperbolic! You've got \"The Future Farmer\" powerperson absolutely MORTGAGING the present to plant seeds for tomorrow, while \"Cosmo the Closer\" cosmohouck is going ALL-IN, sitting at #1 with a 93.4 Power Score, thinking Brock Purdy is the missing piece to win it all RIGHT NOW. But here's the problem - and the tape DOESN'T LIE on this one - Purdy has COMPLETELY CRATERED post-trade! We're talking 16.8 points per game historically, and now he's putting up a PUTRID 3.5 PPG over five games? That's a -13.2 point swing! I don't care if you're Bill Walsh reincarnated, that kind of drop-off is CATASTROPHIC for a contender!\n\nNow, let's talk about what powerperson gave up here. Brock Purdy - I had him as a QB1 on my board coming into this season. Mr. Irrelevant turned franchise quarterback, 25 years old, entering his prime with Kyle Shanahan calling plays. That's ELITE pedigree in terms of situation! But you know what? When you're 11th out of 12 teams with a 23.8 Power Score, you CAN'T compete with these assets - you need DRAFT CAPITAL and YOUTH! Audric Estime is 22 years old, just scratching the surface at the running back position which has SIGNIFICANT SCARCITY in dynasty formats. Sure, he's only averaging 2.2 PPG, but this guy is a FOOTBALL PLAYER with legitimate three-down upside! Plus, you're getting TWO premium picks - a 2026 first AND second rounder from the league's BEST team? That's potentially a top-3 overall pick we're talking about!\n\nHere's where cosmohouck miscalculated - and I've been doing this for over 40 YEARS, so listen closely - when you're ranked #1, you don't trade significant draft capital for a quarterback who IMMEDIATELY forgets how to play football! This is the fantasy equivalent of the Rams trading for Matthew Stafford, except Stafford actually PERFORMED! Cosmohouck gave up assets valued at 22 points and got back 4,516 in paper value, but what good is paper value when your new quarterback is scoring 3.5 points per game? The ceiling was supposed to be a championship, but the floor has fallen out COMPLETELY! Meanwhile, powerperson took a -4.7 Power Score hit now, but in dynasty formats, those 2026 picks are GOLD when they're coming from a team that just sabotaged itself!\n\nWINNER: Powerperson - \"The Future Farmer\" just pulled off a HEIST! The Closer thought he was closing the championship window, but instead he got CLOSED OUT by Purdy's inexplicable collapse. This rebuilding squad turned a depreciating asset into premium draft capital and a young running back with upside. Mark it down - this trade will be studied in dynasty leagues for YEARS as the perfect example of selling high and buying the future!",
+  "generatedAt": "2025-12-28T21:24:58.824Z"
+}

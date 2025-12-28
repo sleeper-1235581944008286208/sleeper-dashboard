@@ -1,0 +1,116 @@
+{
+  "tradeId": "e2bb2254dbc13602",
+  "week": 1,
+  "season": "2023",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Shogunation",
+    "mastab24"
+  ],
+  "sides": [
+    {
+      "teamName": "Shogunation",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 76.4,
+        "powerRank": 4,
+        "lineupValueScore": 79,
+        "performanceScore": 78.2,
+        "positionalScore": 62.7,
+        "depthScore": 80.9,
+        "totalTeams": 12,
+        "totalRosterValue": 37890
+      },
+      "tradeImpact": {
+        "valueGained": 495,
+        "valueLost": 1291,
+        "netValueChange": -796,
+        "estimatedPowerScoreChange": -0.8,
+        "playersGained": [
+          {
+            "name": "Chris Godwin",
+            "value": 495
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Courtland Sutton",
+            "value": 1291
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Chris Godwin",
+          "position": "WR",
+          "team": "TB",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Courtland Sutton",
+          "position": "WR",
+          "team": "DEN",
+          "age": 30,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "mastab24",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 64.6,
+        "powerRank": 5,
+        "lineupValueScore": 70,
+        "performanceScore": 68.3,
+        "positionalScore": 52.1,
+        "depthScore": 26.7,
+        "totalTeams": 12,
+        "totalRosterValue": 33582
+      },
+      "tradeImpact": {
+        "valueGained": 1291,
+        "valueLost": 495,
+        "netValueChange": 796,
+        "estimatedPowerScoreChange": 0.8,
+        "playersGained": [
+          {
+            "name": "Courtland Sutton",
+            "value": 1291
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Chris Godwin",
+            "value": 495
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Courtland Sutton",
+          "position": "WR",
+          "team": "DEN",
+          "age": 30,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Chris Godwin",
+          "position": "WR",
+          "team": "TB",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Mel Kiper Jr.",
+  "analysis": "Look, let me tell you something about this trade right now - this is EXACTLY like when the Broncos shipped Demaryius Thomas to Houston back in 2018. You've got two teams making a lateral move at receiver, but the tape tells a completely different story about how this thing played out!\n\nWhen I had these guys on my board heading into Week 1 of 2023, I had Godwin SIGNIFICANTLY higher than Sutton - and I wasn't alone! Chris Godwin, former Penn State Nittany Lion, this guy is a FOOTBALL PLAYER. Third-round pedigree out of Happy Valley in 2017, he put up over 1,300 yards in 2019. But here's the thing - and I hate being right about this - the injury history was a red flag I circled in permanent marker. That ACL tear, the competition for targets with Mike Evans, the quarterback situation in Tampa... Shogunation saw a 29-year-old receiver with upside and thought they were buying low on talent. Instead, they watched Godwin average just 7.0 PPG over 39 games while Sutton - COURTLAND SUTTON, the SMU product, 6-foot-4 with legitimate NFL size - goes out and produces 10.3 PPG in Denver! This is a HOME RUN for mastab24!\n\nHere's what kills me about this deal: Shogunation was ranked #4 with a 76.4 Power Score - they're in win-now mode and they DOWNGRADE their production by 2.4 points per game! Meanwhile, mastab24 at #5 gains nearly 800 points in value and improves their Power Score. The ceiling on Sutton with Sean Payton arriving in Denver was OBVIOUS if you studied the tape. Russell Wilson or no Russell Wilson, this guy creates separation, he's got elite ball skills, and he's a red zone weapon. Godwin's floor dropped through the basement with Baker Mayfield's inconsistency. The depth score for mastab24 was just 26.7 - they needed this hit, and brother, they CRUSHED it! This is the kind of evaluation that wins championships, and frankly, Shogunation should've had Sutton higher on their board from day one!",
+  "generatedAt": "2025-12-28T21:38:45.614Z"
+}

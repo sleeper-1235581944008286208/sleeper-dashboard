@@ -1,0 +1,131 @@
+{
+  "tradeId": "7b9b01c07fd86a40",
+  "week": 9,
+  "season": "2024",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "drobs",
+    "Shogunation"
+  ],
+  "sides": [
+    {
+      "teamName": "drobs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 51.3,
+        "powerRank": 6,
+        "lineupValueScore": 53.3,
+        "performanceScore": 57.3,
+        "positionalScore": 36.8,
+        "depthScore": 38,
+        "totalTeams": 12,
+        "totalRosterValue": 25560
+      },
+      "tradeImpact": {
+        "valueGained": 4506,
+        "valueLost": 1237,
+        "netValueChange": 3269,
+        "estimatedPowerScoreChange": 3.4,
+        "playersGained": [
+          {
+            "name": "Baker Mayfield",
+            "value": 4506
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Anthony Richardson",
+            "value": 1237
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "team": "TB",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2025 Round 3 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Anthony Richardson",
+          "position": "QB",
+          "team": "IND",
+          "age": 23,
+          "careerStage": "Developing"
+        }
+      ]
+    },
+    {
+      "teamName": "Shogunation",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 76.4,
+        "powerRank": 4,
+        "lineupValueScore": 79,
+        "performanceScore": 78.2,
+        "positionalScore": 62.7,
+        "depthScore": 80.9,
+        "totalTeams": 12,
+        "totalRosterValue": 37890
+      },
+      "tradeImpact": {
+        "valueGained": 1237,
+        "valueLost": 4506,
+        "netValueChange": -3269,
+        "estimatedPowerScoreChange": -3.4,
+        "playersGained": [
+          {
+            "name": "Anthony Richardson",
+            "value": 1237
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Baker Mayfield",
+            "value": 4506
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Anthony Richardson",
+          "position": "QB",
+          "team": "IND",
+          "age": 23,
+          "careerStage": "Developing"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "team": "TB",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2025 Round 3 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2025",
+      "round": 3,
+      "from": "Shogunation",
+      "to": "drobs"
+    }
+  ],
+  "persona": "Ian Rapoport",
+  "analysis": "**BREAKING: Sources Tell Me This Trade Tells Two Very Different Stories**\n\nMy understanding is that \"drobs\" — let's call him \"The Opportunist\" — identified a massive efficiency gap here and pounced on it in Week 9. Sources indicate this move was about immediate survival for a team sitting at #6 in the power rankings. Here's what I'm hearing: Baker Mayfield was absolutely balling out in Tampa Bay's system, averaging 19.1 points per game after this deal went down, while Anthony Richardson was struggling at just 7.0 PPG. The Opportunist recognized he needed wins NOW, and my sources say he couldn't wait around for Richardson's development curve. Getting that 2025 third-round pick as a sweetener? That's just savvy negotiating. The numbers don't lie — this move bumped his power score up 3.4 points when he desperately needed playoff momentum.\n\nNow here's where it gets interesting, folks. \"Shogunation\" — I'm calling him \"The Architect\" — was sitting pretty at #4 with a 76.4 power score, one of the strongest rosters in this league. My understanding is The Architect could afford to play the long game here. Sources tell me he's betting on Richardson's elite rushing upside and dual-threat capability to eventually unlock what made him a top draft pick. Was giving up a prime-year Baker overpaying? The metrics say absolutely yes — a 3.4-point power score hit is significant. But keep an eye on this: The Architect has the depth (80.9 depth score!) to absorb short-term losses while investing in upside.\n\n**My bold prediction?** In two years, we're going to look back at this deal and say The Opportunist won the battle but The Architect won the war. Here's why: Richardson will be 25 years old entering his absolute athletic prime, while Mayfield will be 32 and likely declining. If — and this is a big if, folks — Indianapolis figures out their offensive infrastructure and Richardson stays healthy, The Architect could be sitting on a top-5 dynasty QB asset. But make no mistake, drobs made the right win-now move for his situation. This is textbook contender versus dynasty-builder philosophy, and my sources indicate both managers understood exactly what they were doing. Developing situation to monitor closely.",
+  "generatedAt": "2025-12-28T21:31:58.963Z"
+}

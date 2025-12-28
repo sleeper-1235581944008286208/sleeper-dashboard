@@ -1,0 +1,138 @@
+{
+  "tradeId": "08ac4521465e3f91",
+  "week": 5,
+  "season": "2025",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "drobs",
+    "PrinceofPizza"
+  ],
+  "sides": [
+    {
+      "teamName": "drobs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 51.3,
+        "powerRank": 6,
+        "lineupValueScore": 53.3,
+        "performanceScore": 57.3,
+        "positionalScore": 36.8,
+        "depthScore": 38,
+        "totalTeams": 12,
+        "totalRosterValue": 25560
+      },
+      "tradeImpact": {
+        "valueGained": 2363,
+        "valueLost": 799,
+        "netValueChange": 1564,
+        "estimatedPowerScoreChange": 1.6,
+        "playersGained": [
+          {
+            "name": "Sam Darnold",
+            "value": 2075
+          },
+          {
+            "name": "Isiah Pacheco",
+            "value": 288
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Quentin Johnston",
+            "value": 799
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Sam Darnold",
+          "position": "QB",
+          "team": "SEA",
+          "age": 28,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Isiah Pacheco",
+          "position": "RB",
+          "team": "KC",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "team": "LAC",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "PrinceofPizza",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 80.8,
+        "powerRank": 3,
+        "lineupValueScore": 89.3,
+        "performanceScore": 63.7,
+        "positionalScore": 86.5,
+        "depthScore": 81,
+        "totalTeams": 12,
+        "totalRosterValue": 42833
+      },
+      "tradeImpact": {
+        "valueGained": 799,
+        "valueLost": 2363,
+        "netValueChange": -1564,
+        "estimatedPowerScoreChange": -1.6,
+        "playersGained": [
+          {
+            "name": "Quentin Johnston",
+            "value": 799
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Sam Darnold",
+            "value": 2075
+          },
+          {
+            "name": "Isiah Pacheco",
+            "value": 288
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "team": "LAC",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Sam Darnold",
+          "position": "QB",
+          "team": "SEA",
+          "age": 28,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Isiah Pacheco",
+          "position": "RB",
+          "team": "KC",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Ian Rapoport",
+  "analysis": "**BREAKING: Sources confirm drobs and PrinceofPizza have completed a Week 5 deal that has significant playoff implications**\n\nMy understanding is that drobs—let's call him \"The Bargain Hunter\" based on this haul—identified a critical window to acquire legitimate starting talent at premium positions. Sources indicate PrinceofPizza, who I'm dubbing \"The Risk Manager\" given his willingness to move proven assets while sitting comfortably at #3 in the power rankings, felt comfortable enough with his 80.8 Power Score to consolidate and take a flier on upside. Here's what I'm hearing: drobs was desperate for QB stability and RB depth, and he got both. Sam Darnold is putting up 20.0 PPG post-trade—that's elite QB1 production, folks. Isiah Pacheco gives you that Chiefs backfield security everyone wants, even if the volume fluctuates week-to-week. In return? They're giving up Quentin Johnston, a guy who posted a goose egg immediately after the trade. The value discrepancy here is stark—we're talking a net gain of over 1,500 in value metrics for drobs.\n\nKeep an eye on how this developing situation affects the playoff race. PrinceofPizza takes a -1.6 Power Score hit, but here's the thing—when you're already ranked #3 with an 80.8 rating, you can absorb that. My sources indicate this might be about roster construction and positional flexibility rather than immediate impact. They're betting Johnston breaks out, but the timing is interesting. Trading away a QB averaging 20 PPG and a Chiefs RB for a receiver who's been wildly inconsistent through two years? That's either galaxy-brain roster management or a miscalculation. The risk profile heavily favors drobs here—he's getting proven commodities at scarce positions while giving up a dart throw at WR.\n\n**My bold prediction**: In two years, we're looking back at this as the trade that defined drobs' championship window. Darnold and Pacheco will have provided the stability that vaulted him into contention, while Johnston—despite flashes—never quite becomes the consistent WR1 PrinceofPizza hoped for. The value gap was simply too significant. This is a classic case of a top-heavy team getting cute when they should've stood pat. Sources close to the situation tell me drobs is already working the phones for additional moves. Stay tuned—this might just be the beginning.",
+  "generatedAt": "2025-12-28T21:27:20.887Z"
+}

@@ -1,0 +1,96 @@
+{
+  "tradeId": "964ce675fc92e516",
+  "week": 1,
+  "season": "2022",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Langland",
+    "mjgrana"
+  ],
+  "sides": [
+    {
+      "teamName": "Langland",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 18.1,
+        "powerRank": 12,
+        "lineupValueScore": 27.3,
+        "performanceScore": 6.4,
+        "positionalScore": 13.9,
+        "depthScore": 7.8,
+        "totalTeams": 12,
+        "totalRosterValue": 13107
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Mark Ingram",
+          "position": "RB",
+          "team": "FA",
+          "age": 33,
+          "careerStage": "Veteran/End of Career"
+        }
+      ],
+      "gives": [
+        {
+          "name": "William Fuller",
+          "position": "WR",
+          "team": "FA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "mjgrana",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 86.7,
+        "powerRank": 2,
+        "lineupValueScore": 94.6,
+        "performanceScore": 75.9,
+        "positionalScore": 77.1,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 45417
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "William Fuller",
+          "position": "WR",
+          "team": "FA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Mark Ingram",
+          "position": "RB",
+          "team": "FA",
+          "age": 33,
+          "careerStage": "Veteran/End of Career"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Todd McShay",
+  "analysis": "Look, when I see this deal go down in Week 1 of 2022, I'm immediately asking myself: what are these teams *really* trying to accomplish here? And folks, this is a classic case of two managers operating in completely different windows – which, in theory, should create tremendous value on both sides. But I'm not sure either team maximized their return here.\n\nLet's start with Langland – I'm calling him \"The Patient Rebuilder\" – sitting at dead last with an 18.1 Power Score. This team needs to stockpile assets and prioritize positions of scarcity, which is exactly what running backs represent in dynasty formats. Getting Mark Ingram at 33 years old? That's not a cornerstone piece, folks. That's a band-aid on a gunshot wound. Sure, Ingram outperformed his 0.8 PPG start and gave you a serviceable 3.2 PPG over 13 games, but we're talking about a rebuilding team trading away Will Fuller – who's 27 and theoretically in his prime years – for a rental piece with no long-term value. This is a \"win-now\" move for a team that has no business trying to win now. You're ranked 12th out of 12! You need draft capital, you need young upside, you need to be thinking two to three years down the road. This isn't just reaching – this is asset mismanagement at a critical stage of the rebuild.\n\nNow mjgrana – we'll call him \"Mr. All-In\" – sitting pretty at #2 with an 86.7 Power Score and maximum depth at 100. *This* is a contender making a calculated move, and I actually don't love it for them either. You're flipping a 33-year-old running back who's clearly on his last legs for a receiver who, let's be honest, couldn't stay on the field if you paid him. Fuller's injury history is longer than my draft notes, and for a win-now team with elite depth, you're banking on the \"best ability is availability\" principle with a guy who's proven time and again he can't deliver. Yes, receiver is deeper positionally, but you had the RB scarcity working in your favor. You should've squeezed more value out of Ingram, especially dealing with a rebuilding team that should be desperate for any semblance of production.\n\n**The Verdict**: I'm giving this one to mjgrana as the winner, but it's like winning by default. \"The Patient Rebuilder\" made a fundamental team-building error that no competent GM should make – trading youth for age when you're in last place. At least \"Mr. All-In\" was operating within his competitive window, even if he didn't maximize his leverage. My bold prediction? In two years, both these players are out of the league, this trade is completely forgotten, and Langland is *still* rebuilding because they kept making moves like this one. Sometimes the best trade analysis is the simplest: know your roster construction goals and stick to them. One team did, one team didn't. That's your winner right there.",
+  "generatedAt": "2025-12-28T21:42:05.782Z"
+}

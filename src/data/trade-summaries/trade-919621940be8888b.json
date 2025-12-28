@@ -1,0 +1,138 @@
+{
+  "tradeId": "919621940be8888b",
+  "week": 1,
+  "season": "2024",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "cosmohouck",
+    "drobs"
+  ],
+  "sides": [
+    {
+      "teamName": "drobs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 51.3,
+        "powerRank": 6,
+        "lineupValueScore": 53.3,
+        "performanceScore": 57.3,
+        "positionalScore": 36.8,
+        "depthScore": 38,
+        "totalTeams": 12,
+        "totalRosterValue": 25560
+      },
+      "tradeImpact": {
+        "valueGained": 1010,
+        "valueLost": 3072,
+        "netValueChange": -2062,
+        "estimatedPowerScoreChange": -2.1,
+        "playersGained": [
+          {
+            "name": "Isaiah Likely",
+            "value": 326
+          },
+          {
+            "name": "Jayden Reed",
+            "value": 684
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "DeVonta Smith",
+            "value": 3072
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Isaiah Likely",
+          "position": "TE",
+          "team": "BAL",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jayden Reed",
+          "position": "WR",
+          "team": "GB",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "DeVonta Smith",
+          "position": "WR",
+          "team": "PHI",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 3072,
+        "valueLost": 1010,
+        "netValueChange": 2062,
+        "estimatedPowerScoreChange": 2.1,
+        "playersGained": [
+          {
+            "name": "DeVonta Smith",
+            "value": 3072
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Isaiah Likely",
+            "value": 326
+          },
+          {
+            "name": "Jayden Reed",
+            "value": 684
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "DeVonta Smith",
+          "position": "WR",
+          "team": "PHI",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Isaiah Likely",
+          "position": "TE",
+          "team": "BAL",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jayden Reed",
+          "position": "WR",
+          "team": "GB",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Louis Riddick",
+  "analysis": "Look, from a front office standpoint, this is what we call a championship window miscalculation by drobs, and I'll tell you exactly why. When you're sitting at 51.3 power score as the sixth seed, you cannot afford to make lateral moves that don't address your core deficiencies. This trade reminds me of when the Rams traded for Jalen Ramsey – except in reverse. Instead of a contender going all-in, we've got a team on the bubble trying to get cute with asset management, and it backfired spectacularly.\n\nLet's break down the organizational philosophy here. Cosmohouck is operating at a 93.4 power score – they're the juggernaut, the team with a 100 rating in lineup value and depth. They moved Isaiah Likely and Jayden Reed for DeVonta Smith, and here's the genius: they understood positional value versus positional scarcity. Yes, tight end is the scarcest position, but when you're already loaded across the board, you can sacrifice a \"premium\" asset that's averaging 5.4 points per game to consolidate at wide receiver. Smith was giving you 11.3 PPG with Jalen Hurts throwing him the football in an elite offense. That's real production, not theoretical upside. Post-trade, even with both sides regressing, cosmohouck still won because Reed dropped to 6.6 PPG – that's a 4.6 point nosedive. They dumped the regression before it tanked their lineup.\n\nFrom drobs' perspective, this is failed asset management, plain and simple. You're banking on Isaiah Likely becoming the next Mark Andrews when Mark Andrews is still there! You're hoping Jayden Reed breaks out in a Green Bay offense with Christian Watson, Romeo Doubs, and Doak Walker candidates in the backfield. Meanwhile, you gave up a bonafide WR1 in Philadelphia's explosive offense. The net value loss of 2,062 tells the whole story – that's not just a bad trade, that's organizational malpractice when you're trying to make a playoff push. The winner here is crystal clear: cosmohouck pulled off highway robbery, turning depth pieces into a starting-caliber player while widening their power score advantage. This is the rich getting richer, and drobs? They just helped build their rival's dynasty.",
+  "generatedAt": "2025-12-28T21:30:07.707Z"
+}

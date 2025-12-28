@@ -1,0 +1,167 @@
+{
+  "tradeId": "78c2b5624c957250",
+  "week": 2,
+  "season": "2025",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "mjgrana",
+    "drobs"
+  ],
+  "sides": [
+    {
+      "teamName": "drobs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 51.3,
+        "powerRank": 6,
+        "lineupValueScore": 53.3,
+        "performanceScore": 57.3,
+        "positionalScore": 36.8,
+        "depthScore": 38,
+        "totalTeams": 12,
+        "totalRosterValue": 25560
+      },
+      "tradeImpact": {
+        "valueGained": 158,
+        "valueLost": 4625,
+        "netValueChange": -4467,
+        "estimatedPowerScoreChange": -4.7,
+        "playersGained": [
+          {
+            "name": "Marvin Mims",
+            "value": 158
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Baker Mayfield",
+            "value": 4506
+          },
+          {
+            "name": "Brian Robinson",
+            "value": 119
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Marvin Mims",
+          "position": "WR",
+          "team": "DEN",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2026 Round 2 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2027 Round 1 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "team": "TB",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Brian Robinson",
+          "position": "RB",
+          "team": "SF",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "mjgrana",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 86.7,
+        "powerRank": 2,
+        "lineupValueScore": 94.6,
+        "performanceScore": 75.9,
+        "positionalScore": 77.1,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 45417
+      },
+      "tradeImpact": {
+        "valueGained": 4625,
+        "valueLost": 158,
+        "netValueChange": 4467,
+        "estimatedPowerScoreChange": 4.7,
+        "playersGained": [
+          {
+            "name": "Baker Mayfield",
+            "value": 4506
+          },
+          {
+            "name": "Brian Robinson",
+            "value": 119
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Marvin Mims",
+            "value": 158
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "team": "TB",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Brian Robinson",
+          "position": "RB",
+          "team": "SF",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Marvin Mims",
+          "position": "WR",
+          "team": "DEN",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2026 Round 2 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2027 Round 1 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2026",
+      "round": 2,
+      "from": "mjgrana",
+      "to": "drobs"
+    },
+    {
+      "season": "2027",
+      "round": 1,
+      "from": "mjgrana",
+      "to": "drobs"
+    }
+  ],
+  "persona": "Mel Kiper Jr.",
+  "analysis": "Look, let me tell you something about this trade - and I'm gonna be VERY direct here because the tape doesn't lie, folks - this is HIGHWAY ROBBERY by mjgrana, and I don't care what anybody says! When I had my dynasty board up in Week 2, I had Baker Mayfield as a TOP-12 quarterback asset, Brian Robinson as a RB2 with workhorse potential, and Marvin Mims? He was a dart throw, a guy who MIGHT develop into something. Now drobs is sitting there at 51.3 power score, ranked 6th, and he's shipping out immediate production for... what? A flier receiver and future picks? This is like when the Rams said \"we don't need draft picks\" and went ALL-IN - except drobs is doing the OPPOSITE while claiming to be a playoff contender! That doesn't make SENSE!\n\nHere's what kills me about this deal - and I'm getting fired up because this is MALPRACTICE - Baker Mayfield goes out and averages 20.7 PPG after the trade! That's a 5.5 point per game INCREASE! The guy is a former number one overall pick, he's got legitimate NFL tape showing he can sling it in Tampa's system, and you're telling me he's worth a 2026 second-rounder and a 2027 first? Get OUT of here! And Brian Robinson, yeah he's struggling now at 2.0 PPG post-trade, but running backs are GOLD in fantasy, and you're trading RB depth when you're trying to compete? I don't care if he went to San Francisco and the opportunity dried up - you don't give away the position with the most scarcity! Meanwhile, mjgrana - who's ALREADY at 86.7 power score, ranked 2nd - just added a 4.7 power score boost. This is the rich getting RICHER!\n\nThis trade reminds me of the Herschel Walker deal, except drobs is playing the Vikings' role here - mortgaging proven players for future assets that MIGHT pan out. The value lost? 4,467 points net! That's not a trade, that's a DONATION! Now, mjgrana is in win-now mode with a depth score of 100 - ONE HUNDRED! - and he just got cheaper at QB and added RB depth without giving up anything that hurts today. Winner? mjgrana in a LANDSLIDE. Loser? drobs, and it's not even close.\n\nHere's my bold prediction, and write this down: In two years, when we look back at this trade in 2027, that first-round pick drobs got will be picking 10th or later because mjgrana's team is going to be DOMINANT, and Marvin Mims will be a WR3 at best while Baker Mayfield is still slinging touchdowns somewhere. This is the kind of trade that keeps a competitive team stuck in the middle of the pack. On MY board, this goes down as one of the most lopsided dynasty deals I've ever analyzed!",
+  "generatedAt": "2025-12-28T21:26:40.687Z"
+}

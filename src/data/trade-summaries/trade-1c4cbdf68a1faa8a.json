@@ -1,0 +1,145 @@
+{
+  "tradeId": "1c4cbdf68a1faa8a",
+  "week": 10,
+  "season": "2024",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "cosmohouck",
+    "mjgrana"
+  ],
+  "sides": [
+    {
+      "teamName": "mjgrana",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 86.7,
+        "powerRank": 2,
+        "lineupValueScore": 94.6,
+        "performanceScore": 75.9,
+        "positionalScore": 77.1,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 45417
+      },
+      "tradeImpact": {
+        "valueGained": 4591,
+        "valueLost": 375,
+        "netValueChange": 4216,
+        "estimatedPowerScoreChange": 4.4,
+        "playersGained": [
+          {
+            "name": "George Pickens",
+            "value": 4591
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Chuba Hubbard",
+            "value": 375
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "George Pickens",
+          "position": "WR",
+          "team": "DAL",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2025 Round 3 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "team": "CAR",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2025 Round 1 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 375,
+        "valueLost": 4591,
+        "netValueChange": -4216,
+        "estimatedPowerScoreChange": -4.4,
+        "playersGained": [
+          {
+            "name": "Chuba Hubbard",
+            "value": 375
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "George Pickens",
+            "value": 4591
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "team": "CAR",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2025 Round 1 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "George Pickens",
+          "position": "WR",
+          "team": "DAL",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2025 Round 3 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2025",
+      "round": 1,
+      "from": "mjgrana",
+      "to": "cosmohouck"
+    },
+    {
+      "season": "2025",
+      "round": 3,
+      "from": "cosmohouck",
+      "to": "mjgrana"
+    }
+  ],
+  "persona": "Adam Schefter",
+  "analysis": "**BREAKING: In a blockbuster Week 10 swap that league sources say could define both franchises' championship windows, mjgrana has acquired George Pickens and a 2025 third-round pick from cosmohouck in exchange for Chuba Hubbard and a 2025 first-rounder, per sources familiar with the deal.** I'm told this trade was weeks in the making, with mjgrana—sitting at #2 in the power rankings with an 86.7 score—aggressively pushing to add a young ascending receiver while simultaneously mortgaging future draft capital. According to multiple sources, mjgrana's front office views Pickens' post-trade surge to 11.2 PPG as validation they bought low on a breakout candidate, netting over 4,200 points in dynasty value while upgrading at a position of need. Sources say mjgrana feels like the team that landed Amari Cooper from the Raiders in 2018—giving up premium capital but getting a difference-maker right when the championship window cracked open.\n\n**Meanwhile, cosmohouck—the league's top-ranked team with a staggering 93.4 power score—went full \"win-now\" mode, per league sources.** I'm told the reigning power rankings leader prioritized running back scarcity over everything else, viewing Hubbard's steady 9.4 PPG production as exactly what a championship roster needs down the stretch. Sources close to the situation say cosmohouck's brain trust studied the Rams' approach when they traded multiple firsts for Jalen Ramsey—championship teams don't rebuild, they reload. The -4.4 power score projection? According to people familiar with cosmohouck's thinking, that's just noise when you're already sitting at #1 and adding a scarce positional asset.\n\n**Here's what I'm hearing around league circles: This trade has created a fascinating rivalry dynamic between the top two contenders.** Multiple sources tell me other GMs view this as mjgrana trying to close the 6.7-point power gap with cosmohouck by getting younger and more explosive at receiver, while cosmohouck doubled down on 2024 dominance by stockpiling RB depth and future draft ammunition. The Pickens side of this? League sources say his 2.1 PPG improvement post-trade has mjgrana's front office feeling like geniuses. But here's the kicker, per sources: Hubbard's also performing better for cosmohouck than he did pre-trade. I'm told both teams believe they fleeced the other—and isn't that exactly what makes a legendary trade deadline deal?",
+  "generatedAt": "2025-12-28T21:32:18.345Z"
+}

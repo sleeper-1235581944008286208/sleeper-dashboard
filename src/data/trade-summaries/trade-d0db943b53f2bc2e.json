@@ -1,0 +1,106 @@
+{
+  "tradeId": "d0db943b53f2bc2e",
+  "week": 1,
+  "season": "2023",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "cosmohouck",
+    "Shogunation"
+  ],
+  "sides": [
+    {
+      "teamName": "Shogunation",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 76.4,
+        "powerRank": 4,
+        "lineupValueScore": 79,
+        "performanceScore": 78.2,
+        "positionalScore": 62.7,
+        "depthScore": 80.9,
+        "totalTeams": 12,
+        "totalRosterValue": 37890
+      },
+      "tradeImpact": {
+        "valueGained": 117,
+        "valueLost": 0,
+        "netValueChange": 117,
+        "estimatedPowerScoreChange": 0.1,
+        "playersGained": [
+          {
+            "name": "Rashod Bateman",
+            "value": 117
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Rashod Bateman",
+          "position": "WR",
+          "team": "BAL",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "A.J. Dillon",
+          "position": "RB",
+          "team": "PHI",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 117,
+        "netValueChange": -117,
+        "estimatedPowerScoreChange": -0.1,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Rashod Bateman",
+            "value": 117
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "A.J. Dillon",
+          "position": "RB",
+          "team": "PHI",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Rashod Bateman",
+          "position": "WR",
+          "team": "BAL",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Adam Schefter",
+  "analysis": "**BREAKING: Sources say Shogunation has pulled off what insiders are calling \"The Great Heist of Week 1,\" acquiring Rashod Bateman from league-leading cosmohouck in exchange for A.J. Dillon. Per league sources, this deal represents a masterclass in value extraction—Shogunation nets +117 in value while cosmohouck absorbs a -117 hit. I'm told Shogunation's GM, who sources around the league are now dubbing \"The Sniper\" for his precision strikes, identified market inefficiency and pounced. Meanwhile, cosmohouck—a team I'm calling \"The Complacent King\" given his #1 ranking—may have gotten comfortable at the top.**\n\nHere's what I'm hearing from multiple sources: This trade hinges on positional scarcity versus performance trajectory. Dillon was producing 8.3 PPG pre-deal but plummeted to 6.4 PPG afterward—a 2.0-point nosedive. Bateman, conversely, erupted from 2.7 PPG to 5.5 PPG, a significant +2.8 uptick over 39 games. League sources tell me The Sniper correctly anticipated Bateman's breakout while The Complacent King overvalued running back scarcity. According to team officials, Shogunation was already strong at #4 overall—this move made them even more dangerous despite their +0.1 Power Score change barely registering on paper.\n\nPer sources, this deal reminds me of the 2017 Patriots-Browns trade when New England flipped a declining asset for future value—except here, the future arrived immediately. Winner: Shogunation, and it's not particularly close. I'm told cosmohouck's front office believed adding RB depth would solidify their championship odds, but when you're already at 93.4 Power Score with maxed-out lineup value and depth metrics, you're trading from a position of strength into diminishing returns. Sources say The Sniper exploited this perfectly—acquiring a prime-aged receiver entering his breakout while unloading backfield uncertainty. This is the kind of move that defines championships in November, folks.",
+  "generatedAt": "2025-12-28T21:37:14.443Z"
+}
