@@ -91,7 +91,14 @@ async function loadData() {
     matchupsAllYears = JSON.parse(readFileSync(matchupsAllYearsPath, 'utf-8'));
   }
 
-  return { trades, rosters, users, players, league, matchupsAllYears };
+  // Load power rankings data (optional)
+  const powerRankingsPath = join(cacheDir, 'power-rankings.json');
+  let powerRankings = null;
+  if (existsSync(powerRankingsPath)) {
+    powerRankings = JSON.parse(readFileSync(powerRankingsPath, 'utf-8'));
+  }
+
+  return { trades, rosters, users, players, league, matchupsAllYears, powerRankings };
 }
 
 /**
@@ -231,9 +238,91 @@ function evaluateTeamContext(rosterId, rosters, week, season) {
 }
 
 /**
+ * Get team power score data from power rankings
+ */
+function getTeamPowerScore(rosterId, powerRankings) {
+  if (!powerRankings || !powerRankings.rankings) {
+    return null;
+  }
+
+  const teamRanking = powerRankings.rankings.find(r => r.rosterId === rosterId);
+  if (!teamRanking) {
+    return null;
+  }
+
+  return {
+    powerScore: teamRanking.powerScore,
+    powerRank: teamRanking.powerRank,
+    lineupValueScore: teamRanking.lineupValueScore,
+    performanceScore: teamRanking.performanceScore,
+    positionalScore: teamRanking.positionalScore,
+    depthScore: teamRanking.depthScore,
+    totalTeams: powerRankings.rankings.length,
+    totalRosterValue: teamRanking.totalRosterValue
+  };
+}
+
+/**
+ * Calculate estimated power score change from a trade
+ * Uses player dynasty values to estimate impact on lineup value score
+ */
+function calculateTradeImpact(rosterId, trade, powerRankings) {
+  if (!powerRankings || !powerRankings.playerValues || !powerRankings.maxLineupValue) {
+    return null;
+  }
+
+  const playerValues = powerRankings.playerValues;
+  let valueGained = 0;
+  let valueLost = 0;
+  const playersGained = [];
+  const playersLost = [];
+
+  // Calculate value of players received
+  if (trade.adds) {
+    Object.entries(trade.adds).forEach(([playerId, receivingRosterId]) => {
+      if (receivingRosterId === rosterId && playerValues[playerId]) {
+        valueGained += playerValues[playerId].value || 0;
+        playersGained.push({
+          name: playerValues[playerId].name,
+          value: playerValues[playerId].value
+        });
+      }
+    });
+  }
+
+  // Calculate value of players given up
+  if (trade.drops) {
+    Object.entries(trade.drops).forEach(([playerId, givingRosterId]) => {
+      if (givingRosterId === rosterId && playerValues[playerId]) {
+        valueLost += playerValues[playerId].value || 0;
+        playersLost.push({
+          name: playerValues[playerId].name,
+          value: playerValues[playerId].value
+        });
+      }
+    });
+  }
+
+  const netValueChange = valueGained - valueLost;
+
+  // Estimate power score change
+  // Lineup value is 50% of power score, and is normalized against max lineup value
+  const lineupValueImpact = (netValueChange / powerRankings.maxLineupValue) * 100 * 0.50;
+
+  return {
+    valueGained,
+    valueLost,
+    netValueChange,
+    estimatedPowerScoreChange: Math.round(lineupValueImpact * 10) / 10,
+    playersGained,
+    playersLost
+  };
+}
+
+/**
  * Process trade data for analysis
  */
-function processTradeData(trade, users, players, rosters, matchupsAllYears) {
+function processTradeData(trade, users, players, rosters, matchupsAllYears, powerRankings) {
   // Get involved roster IDs
   const rosterIds = new Set([
     ...Object.values(trade.adds || {}),
@@ -251,7 +340,9 @@ function processTradeData(trade, users, players, rosters, matchupsAllYears) {
   const participants = Array.from(rosterIds).map(rosterId => ({
     rosterId,
     userName: rosterMap[rosterId],
-    context: evaluateTeamContext(rosterId, rosters, trade.week, trade.season)
+    context: evaluateTeamContext(rosterId, rosters, trade.week, trade.season),
+    powerScore: getTeamPowerScore(rosterId, powerRankings),
+    tradeImpact: calculateTradeImpact(rosterId, trade, powerRankings)
   }));
 
   // Organize assets by side
@@ -261,6 +352,8 @@ function processTradeData(trade, users, players, rosters, matchupsAllYears) {
     sides[participant.rosterId] = {
       userName: participant.userName,
       teamContext: participant.context,
+      powerScore: participant.powerScore,
+      tradeImpact: participant.tradeImpact,
       receives: [],
       gives: []
     };
@@ -376,6 +469,20 @@ async function generateAnalysis(tradeData, persona) {
   sides.forEach((side, index) => {
     tradeDetailsText += `**${side.userName}** (${side.teamContext})\n`;
 
+    // Add power score information if available
+    if (side.powerScore) {
+      tradeDetailsText += `Power Score: ${side.powerScore.powerScore} (Rank #${side.powerScore.powerRank} of ${side.powerScore.totalTeams})\n`;
+      tradeDetailsText += `  - Lineup Value: ${side.powerScore.lineupValueScore} | Performance: ${side.powerScore.performanceScore} | Positional: ${side.powerScore.positionalScore} | Depth: ${side.powerScore.depthScore}\n`;
+
+      // Add trade impact on power score
+      if (side.tradeImpact) {
+        const impact = side.tradeImpact;
+        const sign = impact.estimatedPowerScoreChange >= 0 ? '+' : '';
+        tradeDetailsText += `Trade Impact: ${sign}${impact.estimatedPowerScoreChange} estimated power score change\n`;
+        tradeDetailsText += `  - Value Gained: ${impact.valueGained.toLocaleString()} | Value Lost: ${impact.valueLost.toLocaleString()} | Net: ${impact.netValueChange >= 0 ? '+' : ''}${impact.netValueChange.toLocaleString()}\n`;
+      }
+    }
+
     if (side.receives.length > 0) {
       tradeDetailsText += `RECEIVES:\n`;
       side.receives.forEach(asset => {
@@ -476,7 +583,14 @@ Focus on what ${persona.name} emphasizes: ${persona.emphasis.join(', ')}
 SPECIAL INSTRUCTIONS:
 ${selected.map((instruction, i) => `${i + 1}. ${instruction}`).join('\n')}
 
-Keep it entertaining and insightful. Evaluate the players involved, the value exchanged, and potential implications. Use ${persona.name}'s actual catchphrases and speaking style. Make it feel like ${persona.name} is breaking down this trade for fans.
+POWER SCORE CONTEXT:
+Power Score is a composite metric (0-100) measuring overall team strength:
+- Lineup Value: Dynasty asset value of optimal starters
+- Performance: Actual results (win%, all-play record)
+- Positional: Advantage vs league average at each position
+- Depth: Quality of bench/backup players
+
+Keep it entertaining and insightful. Evaluate the players involved, the value exchanged, and potential implications. Consider how this trade affects each team's Power Score and competitive position. Use ${persona.name}'s actual catchphrases and speaking style. Make it feel like ${persona.name} is breaking down this trade for fans.
 
 Return ONLY the analysis text, no preamble or meta-commentary.`;
 
@@ -563,12 +677,18 @@ async function main() {
 
   // Load data
   console.log('📊 Loading data...');
-  const { trades, rosters, users, players, league, matchupsAllYears } = await loadData();
-  console.log(`✅ Loaded ${trades.length} trades\n`);
+  const { trades, rosters, users, players, league, matchupsAllYears, powerRankings } = await loadData();
+  console.log(`✅ Loaded ${trades.length} trades`);
+  if (powerRankings) {
+    console.log(`✅ Loaded power rankings for ${powerRankings.rankings?.length || 0} teams`);
+  } else {
+    console.log(`⚠️ Power rankings not available (run build first)`);
+  }
+  console.log('');
 
   // Process all trades with enhanced metrics
   const processedTrades = trades.map(trade =>
-    processTradeData(trade, users, players, rosters, matchupsAllYears)
+    processTradeData(trade, users, players, rosters, matchupsAllYears, powerRankings)
   );
 
   // Filter trades that need analysis
