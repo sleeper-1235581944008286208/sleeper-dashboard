@@ -234,14 +234,12 @@ display(html`<details open class="section-collapse">
 ## Trade Impact Simulator
 
 <div style="background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(234, 88, 12, 0.05) 100%); border: 1px solid rgba(249, 115, 22, 0.3); border-radius: 1rem; padding: 1.5rem; margin: 1rem 0 2rem 0;">
-  <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-    <div style="font-size: 2rem;">⚠️</div>
+  <div style="display: flex; align-items: center; gap: 1rem;">
+    <div style="font-size: 2rem;">💡</div>
     <div>
-      <h4 style="margin: 0; color: #f97316;">Why This Matters</h4>
+      <h4 style="margin: 0; color: #f97316;">See the Real Impact</h4>
       <p style="margin: 0.5rem 0 0 0; color: #cbd5e1; font-size: 0.9375rem; line-height: 1.6;">
-        Trade calculators sum player values, but <strong>you can only start so many players</strong>.
-        Trading a stud RB1 for 5 flex players might look "fair" on paper, but destroys your starting lineup.
-        Use this tool to see the <strong>real</strong> impact before you trade.
+        Select two teams and pick players from each side to see how the trade affects <strong>starting lineup strength</strong>, not just total value.
       </p>
     </div>
   </div>
@@ -250,14 +248,14 @@ display(html`<details open class="section-collapse">
 ```js
 // Team selectors for trade simulator
 const teamASelector = Inputs.select(
-  rankings.map(t => ({ value: t.rosterId, label: t.teamName })),
-  { label: "Team A", format: x => x.label }
+  rankings.map(t => ({ value: t.rosterId, label: `${t.teamName} (#${t.powerRank})` })),
+  { label: "Team 1", format: x => x.label }
 );
 const teamAId = Generators.input(teamASelector);
 
 const teamBSelector = Inputs.select(
-  rankings.map(t => ({ value: t.rosterId, label: t.teamName })),
-  { label: "Team B", format: x => x.label, value: rankings[1] ? { value: rankings[1].rosterId, label: rankings[1].teamName } : undefined }
+  rankings.map(t => ({ value: t.rosterId, label: `${t.teamName} (#${t.powerRank})` })),
+  { label: "Team 2", format: x => x.label, value: rankings[1] ? { value: rankings[1].rosterId, label: `${rankings[1].teamName} (#${rankings[1].powerRank})` } : undefined }
 );
 const teamBId = Generators.input(teamBSelector);
 ```
@@ -266,6 +264,8 @@ const teamBId = Generators.input(teamBSelector);
 // Get rosters for selected teams
 const teamARoster = rosterData[teamAId.value];
 const teamBRoster = rosterData[teamBId.value];
+const teamAInfo = rankings.find(r => r.rosterId === teamAId.value);
+const teamBInfo = rankings.find(r => r.rosterId === teamBId.value);
 
 // Get players with values for each team
 const teamAPlayers = (teamARoster?.players || [])
@@ -280,59 +280,85 @@ const teamBPlayers = (teamBRoster?.players || [])
 ```
 
 ```js
-// Player selection for Team A (giving away)
-const teamAGivingSelector = Inputs.select(
+// Player selection checkboxes
+const teamAGivingSelector = Inputs.checkbox(
   teamAPlayers,
   {
-    label: `${teamARoster?.teamName || 'Team A'} gives:`,
-    format: p => `${p.name} (${p.position}) - ${p.value.toLocaleString()}`,
-    multiple: true,
-    size: 6
+    label: "Select players to trade:",
+    format: p => html`<span style="display: inline-flex; align-items: center; gap: 0.5rem;">
+      <span style="background: ${p.position === 'QB' ? '#ef4444' : p.position === 'RB' ? '#22c55e' : p.position === 'WR' ? '#3b82f6' : p.position === 'TE' ? '#f97316' : '#94a3b8'}; color: white; padding: 0.125rem 0.375rem; border-radius: 0.25rem; font-size: 0.7rem; font-weight: 600;">${p.position}</span>
+      <span>${p.name}</span>
+      <span style="color: #8b5cf6; font-weight: 600;">${p.value.toLocaleString()}</span>
+    </span>`
   }
 );
 const teamAGiving = Generators.input(teamAGivingSelector);
 
-// Player selection for Team B (giving away)
-const teamBGivingSelector = Inputs.select(
+const teamBGivingSelector = Inputs.checkbox(
   teamBPlayers,
   {
-    label: `${teamBRoster?.teamName || 'Team B'} gives:`,
-    format: p => `${p.name} (${p.position}) - ${p.value.toLocaleString()}`,
-    multiple: true,
-    size: 6
+    label: "Select players to trade:",
+    format: p => html`<span style="display: inline-flex; align-items: center; gap: 0.5rem;">
+      <span style="background: ${p.position === 'QB' ? '#ef4444' : p.position === 'RB' ? '#22c55e' : p.position === 'WR' ? '#3b82f6' : p.position === 'TE' ? '#f97316' : '#94a3b8'}; color: white; padding: 0.125rem 0.375rem; border-radius: 0.25rem; font-size: 0.7rem; font-weight: 600;">${p.position}</span>
+      <span>${p.name}</span>
+      <span style="color: #8b5cf6; font-weight: 600;">${p.value.toLocaleString()}</span>
+    </span>`
   }
 );
 const teamBGiving = Generators.input(teamBGivingSelector);
 ```
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 1rem 0;">
-  <div class="card">
-    <h4 style="margin-top: 0; color: #8b5cf6;">${teamARoster?.teamName || 'Team A'}</h4>
+<div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; margin: 1rem 0; align-items: start;">
+  <div class="card" style="border: 2px solid rgba(139, 92, 246, 0.3);">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+      <div>
+        <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase;">Team 1</div>
+        <h4 style="margin: 0; color: #8b5cf6;">${teamARoster?.teamName || 'Team A'}</h4>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 0.75rem; color: #94a3b8;">Power Rank</div>
+        <div style="font-size: 1.25rem; font-weight: 700; color: #f8fafc;">#${teamAInfo?.powerRank || '?'}</div>
+      </div>
+    </div>
     ${teamASelector}
-    ${teamAGivingSelector}
-    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);">
-      <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; margin-bottom: 0.5rem;">Selected to trade away:</div>
-      <div style="color: #f97316; font-weight: 600;">
-        ${teamAGiving.length > 0 ? teamAGiving.map(p => p.name).join(', ') : 'None selected'}
+    <div style="max-height: 300px; overflow-y: auto; margin-top: 1rem; padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 0.5rem;">
+      ${teamAGivingSelector}
+    </div>
+    <div style="margin-top: 1rem; padding: 1rem; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 0.5rem;">
+      <div style="font-size: 0.75rem; color: #ef4444; text-transform: uppercase; font-weight: 600;">Trading Away</div>
+      <div style="font-size: 1.5rem; font-weight: 700; color: #f8fafc; margin-top: 0.25rem;">
+        ${teamAGiving.reduce((sum, p) => sum + p.value, 0).toLocaleString()}
       </div>
-      <div style="font-size: 0.875rem; color: #94a3b8; margin-top: 0.25rem;">
-        Total value: ${teamAGiving.reduce((sum, p) => sum + p.value, 0).toLocaleString()}
-      </div>
+      <div style="font-size: 0.875rem; color: #94a3b8;">${teamAGiving.length} player${teamAGiving.length !== 1 ? 's' : ''}</div>
     </div>
   </div>
 
-  <div class="card">
-    <h4 style="margin-top: 0; color: #8b5cf6;">${teamBRoster?.teamName || 'Team B'}</h4>
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem 1rem;">
+    <div style="font-size: 2.5rem; color: #8b5cf6;">⇄</div>
+    <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; margin-top: 0.5rem;">Trade</div>
+  </div>
+
+  <div class="card" style="border: 2px solid rgba(139, 92, 246, 0.3);">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+      <div>
+        <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase;">Team 2</div>
+        <h4 style="margin: 0; color: #8b5cf6;">${teamBRoster?.teamName || 'Team B'}</h4>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 0.75rem; color: #94a3b8;">Power Rank</div>
+        <div style="font-size: 1.25rem; font-weight: 700; color: #f8fafc;">#${teamBInfo?.powerRank || '?'}</div>
+      </div>
+    </div>
     ${teamBSelector}
-    ${teamBGivingSelector}
-    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);">
-      <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; margin-bottom: 0.5rem;">Selected to trade away:</div>
-      <div style="color: #f97316; font-weight: 600;">
-        ${teamBGiving.length > 0 ? teamBGiving.map(p => p.name).join(', ') : 'None selected'}
+    <div style="max-height: 300px; overflow-y: auto; margin-top: 1rem; padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 0.5rem;">
+      ${teamBGivingSelector}
+    </div>
+    <div style="margin-top: 1rem; padding: 1rem; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 0.5rem;">
+      <div style="font-size: 0.75rem; color: #ef4444; text-transform: uppercase; font-weight: 600;">Trading Away</div>
+      <div style="font-size: 1.5rem; font-weight: 700; color: #f8fafc; margin-top: 0.25rem;">
+        ${teamBGiving.reduce((sum, p) => sum + p.value, 0).toLocaleString()}
       </div>
-      <div style="font-size: 0.875rem; color: #94a3b8; margin-top: 0.25rem;">
-        Total value: ${teamBGiving.reduce((sum, p) => sum + p.value, 0).toLocaleString()}
-      </div>
+      <div style="font-size: 0.875rem; color: #94a3b8;">${teamBGiving.length} player${teamBGiving.length !== 1 ? 's' : ''}</div>
     </div>
   </div>
 </div>

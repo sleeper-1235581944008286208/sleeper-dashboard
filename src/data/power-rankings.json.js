@@ -2,8 +2,9 @@
 // Calculates team power scores based on roster strength, performance, and positional advantages
 const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID || "1182940167115010048";
 
-// DynastyProcess values CSV URL
+// DynastyProcess data URLs
 const DP_VALUES_URL = "https://raw.githubusercontent.com/dynastyprocess/data/master/files/values.csv";
+const DP_PLAYER_IDS_URL = "https://raw.githubusercontent.com/dynastyprocess/data/master/files/db_playerids.csv";
 
 /**
  * Parse CSV string into array of objects
@@ -64,12 +65,13 @@ function normalizeName(name) {
  * Fetch all required data
  */
 async function fetchAllData() {
-  const [league, rosters, users, players, dpValuesText] = await Promise.all([
+  const [league, rosters, users, players, dpValuesText, dpPlayerIdsText] = await Promise.all([
     fetch(`https://api.sleeper.app/v1/league/${LEAGUE_ID}`).then(r => r.json()),
     fetch(`https://api.sleeper.app/v1/league/${LEAGUE_ID}/rosters`).then(r => r.json()),
     fetch(`https://api.sleeper.app/v1/league/${LEAGUE_ID}/users`).then(r => r.json()),
     fetch('https://api.sleeper.app/v1/players/nfl').then(r => r.json()),
-    fetch(DP_VALUES_URL).then(r => r.text())
+    fetch(DP_VALUES_URL).then(r => r.text()),
+    fetch(DP_PLAYER_IDS_URL).then(r => r.text())
   ]);
 
   // Fetch matchups for performance calculation
@@ -91,8 +93,9 @@ async function fetchAllData() {
   }
 
   const dpValues = parseCSV(dpValuesText);
+  const dpPlayerIds = parseCSV(dpPlayerIdsText);
 
-  return { league, rosters, users, players, dpValues, matchups };
+  return { league, rosters, users, players, dpValues, dpPlayerIds, matchups };
 }
 
 /**
@@ -130,18 +133,38 @@ function getStartingSlots(league) {
 }
 
 /**
- * Match DynastyProcess values to Sleeper players
+ * Match DynastyProcess values to Sleeper players using Sleeper ID
  */
-function matchPlayerValues(players, dpValues, isSF) {
+function matchPlayerValues(players, dpValues, dpPlayerIds, isSF) {
   const playerValues = new Map();
   const valueColumn = isSF ? 'value_2qb' : 'value_1qb';
 
-  // Create lookup by normalized name + position
-  const dpLookup = new Map();
+  // Create lookup from sleeper_id to player ID record
+  const sleeperIdToPlayerRecord = new Map();
+  dpPlayerIds.forEach(record => {
+    if (record.sleeper_id) {
+      sleeperIdToPlayerRecord.set(record.sleeper_id, record);
+    }
+  });
+
+  // Create lookup from fantasypros_id to dynasty values
+  const fpIdToValues = new Map();
+  dpValues.forEach(dp => {
+    if (dp.fp_id) {
+      fpIdToValues.set(dp.fp_id, dp);
+    }
+  });
+
+  // Create fallback lookup by normalized name + position
+  const nameLookup = new Map();
   dpValues.forEach(dp => {
     const key = `${normalizeName(dp.player)}_${dp.pos}`;
-    dpLookup.set(key, dp);
+    nameLookup.set(key, dp);
   });
+
+  let matchedById = 0;
+  let matchedByName = 0;
+  let unmatched = 0;
 
   // Match each Sleeper player
   Object.entries(players).forEach(([playerId, player]) => {
@@ -149,9 +172,22 @@ function matchPlayerValues(players, dpValues, isSF) {
 
     const fullName = `${player.first_name} ${player.last_name}`;
     const position = player.position;
-    const key = `${normalizeName(fullName)}_${position}`;
+    let dpMatch = null;
 
-    const dpMatch = dpLookup.get(key);
+    // Primary: Match by Sleeper ID → FantasyPros ID → Values
+    const playerRecord = sleeperIdToPlayerRecord.get(playerId);
+    if (playerRecord && playerRecord.fantasypros_id) {
+      dpMatch = fpIdToValues.get(playerRecord.fantasypros_id);
+      if (dpMatch) matchedById++;
+    }
+
+    // Fallback: Match by normalized name + position
+    if (!dpMatch) {
+      const key = `${normalizeName(fullName)}_${position}`;
+      dpMatch = nameLookup.get(key);
+      if (dpMatch) matchedByName++;
+    }
+
     if (dpMatch) {
       const value = parseInt(dpMatch[valueColumn]) || 0;
       playerValues.set(playerId, {
@@ -162,6 +198,7 @@ function matchPlayerValues(players, dpValues, isSF) {
         age: dpMatch.age ? parseFloat(dpMatch.age) : player.age
       });
     } else {
+      unmatched++;
       // Fallback: assign minimal value for unmatched players
       playerValues.set(playerId, {
         value: position === 'K' ? 50 : position === 'DEF' ? 100 : 200,
@@ -172,6 +209,8 @@ function matchPlayerValues(players, dpValues, isSF) {
       });
     }
   });
+
+  console.error(`Player matching: ${matchedById} by ID, ${matchedByName} by name, ${unmatched} unmatched`);
 
   return playerValues;
 }
@@ -411,11 +450,11 @@ function calculateTeamPowerScore(rosterPlayerIds, playerValues, slots, players, 
  * Main power rankings calculation
  */
 async function calculatePowerRankings() {
-  const { league, rosters, users, players, dpValues, matchups } = await fetchAllData();
+  const { league, rosters, users, players, dpValues, dpPlayerIds, matchups } = await fetchAllData();
 
   const isSF = isSuperflexLeague(league);
   const slots = getStartingSlots(league);
-  const playerValues = matchPlayerValues(players, dpValues, isSF);
+  const playerValues = matchPlayerValues(players, dpValues, dpPlayerIds, isSF);
 
   // Calculate lineup values for all teams
   const teamLineups = rosters.map(roster => {
