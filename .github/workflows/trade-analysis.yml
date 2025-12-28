@@ -1,9 +1,9 @@
-name: Generate Weekly Summaries
+name: Generate Trade Analysis
 
 on:
-  # Run every Wednesday at 10 AM UTC (5 AM EST) - after Monday Night Football
+  # Run every day at 8 AM UTC to catch new trades
   schedule:
-    - cron: '0 10 * * 3'
+    - cron: '0 8 * * *'
 
   # Allow manual trigger with optional region override
   workflow_dispatch:
@@ -17,16 +17,12 @@ on:
           - US
           - UK
           - EUR
-      week:
-        description: 'Specific week to generate (leave empty for all missing)'
-        required: false
-        type: string
 
 permissions:
   contents: write
 
 jobs:
-  generate-summaries:
+  generate-analysis:
     runs-on: ubuntu-latest
 
     steps:
@@ -49,40 +45,35 @@ jobs:
         env:
           SLEEPER_LEAGUE_ID: ${{ secrets.SLEEPER_LEAGUE_ID }}
 
-      - name: Generate weekly summaries
-        run: |
-          if [ -n "${{ github.event.inputs.week }}" ]; then
-            npm run generate-summary ${{ github.event.inputs.week }}
-          else
-            npm run generate-summaries
-          fi
+      - name: Generate trade analysis
+        run: npm run generate-trade-analysis
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SLEEPER_LEAGUE_ID: ${{ secrets.SLEEPER_LEAGUE_ID }}
           COMMENTATOR_REGION: ${{ github.event.inputs.region || secrets.COMMENTATOR_REGION || 'US' }}
 
-      - name: Check for new summaries
+      - name: Check for new analyses
         id: check_changes
         run: |
-          if [ -z "$(git status --porcelain src/data/week-summaries/)" ]; then
+          if [ -z "$(git status --porcelain src/data/trade-summaries/)" ]; then
             echo "changes=false" >> $GITHUB_OUTPUT
-            echo "No new summaries generated"
+            echo "No new trade analyses generated"
           else
             echo "changes=true" >> $GITHUB_OUTPUT
-            echo "New summaries detected!"
-            git status --short src/data/week-summaries/
+            echo "New trade analyses detected!"
+            git status --short src/data/trade-summaries/
           fi
 
-      - name: Commit and push new summaries
+      - name: Commit and push new analyses
         if: steps.check_changes.outputs.changes == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/week-summaries/
+          git add src/data/trade-summaries/
           git commit -m "$(cat <<'EOF'
-          Auto-generate weekly summaries
+          Add AI-generated trade analysis
 
-          Generated new AI-powered weekly summaries with power rankings context.
+          Generated expert commentary on league trades with power score context.
 
           Automated by GitHub Actions
           EOF
@@ -92,11 +83,11 @@ jobs:
       - name: Summary
         if: steps.check_changes.outputs.changes == 'true'
         run: |
-          echo "New weekly summaries generated and pushed!"
+          echo "New trade analyses generated and pushed!"
           echo "Deployment will trigger automatically"
 
-      - name: No new summaries
+      - name: No new analyses
         if: steps.check_changes.outputs.changes == 'false'
         run: |
-          echo "All weeks already have summaries"
+          echo "All trades already have analyses"
           echo "No action needed"
