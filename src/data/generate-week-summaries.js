@@ -248,13 +248,38 @@ async function loadData() {
     console.warn('⚠️ Players data not found. Player stats will be limited.');
   }
 
-  return { league, matchups, rosters, users, atrocities, players };
+  // Load power rankings
+  const powerRankingsPath = join(cacheDir, 'power-rankings.json');
+  let powerRankings = null;
+  if (existsSync(powerRankingsPath)) {
+    powerRankings = JSON.parse(readFileSync(powerRankingsPath, 'utf-8'));
+  }
+
+  return { league, matchups, rosters, users, atrocities, players, powerRankings };
+}
+
+/**
+ * Get team power score from power rankings
+ */
+function getTeamPowerScore(rosterId, powerRankings) {
+  if (!powerRankings || !powerRankings.rankings) {
+    return null;
+  }
+  const teamRanking = powerRankings.rankings.find(r => r.rosterId === rosterId);
+  if (!teamRanking) {
+    return null;
+  }
+  return {
+    powerScore: teamRanking.powerScore,
+    powerRank: teamRanking.powerRank,
+    totalTeams: powerRankings.rankings.length
+  };
 }
 
 /**
  * Process matchup data for a specific week
  */
-function processWeekData(weekData, rosters, users, atrocities, players = {}, allMatchups = []) {
+function processWeekData(weekData, rosters, users, atrocities, players = {}, allMatchups = [], powerRankings = null) {
   const { week, matchups } = weekData;
 
   // Create roster lookup with user names
@@ -266,7 +291,8 @@ function processWeekData(weekData, rosters, users, atrocities, players = {}, all
       seasonPoints: (roster.settings?.fpts || 0) + (roster.settings?.fpts_decimal || 0) / 100,
       wins: roster.settings?.wins || 0,
       losses: roster.settings?.losses || 0,
-      rosterId: roster.roster_id
+      rosterId: roster.roster_id,
+      powerScore: getTeamPowerScore(roster.roster_id, powerRankings)
     };
   });
 
@@ -313,12 +339,14 @@ function processWeekData(weekData, rosters, users, atrocities, players = {}, all
         team1TopPlayers: team1Players.topPlayers,
         team1BottomPlayers: team1Players.bottomPlayers,
         team1Trends: team1Trends,
+        team1PowerScore: roster1.powerScore,
         team2: roster2.userName,
         team2Score: team2.points,
         team2SeasonAvg: roster2.seasonPoints,
         team2TopPlayers: team2Players.topPlayers,
         team2BottomPlayers: team2Players.bottomPlayers,
         team2Trends: team2Trends,
+        team2PowerScore: roster2.powerScore,
         winner,
         margin: margin.toFixed(2),
         isCloseGame: margin < 10
@@ -373,6 +401,11 @@ async function generateSummary(weekData, persona) {
   // Build detailed matchup text with player performances
   const matchupText = matchups.map(m => {
     let text = `${m.team1} (${m.team1Score}) vs ${m.team2} (${m.team2Score}) - ${m.winner} wins by ${m.margin}`;
+
+    // Add power rankings context
+    if (m.team1PowerScore && m.team2PowerScore) {
+      text += `\n  Power Rankings: ${m.team1} #${m.team1PowerScore.powerRank} (${m.team1PowerScore.powerScore}) vs ${m.team2} #${m.team2PowerScore.powerRank} (${m.team2PowerScore.powerScore})`;
+    }
 
     // Add top performers for each team
     if (m.team1TopPlayers?.length > 0) {
@@ -682,11 +715,17 @@ async function main() {
 
   // Load data
   console.log('📊 Loading data...');
-  const { league, matchups, rosters, users, atrocities, players } = await loadData();
+  const { league, matchups, rosters, users, atrocities, players, powerRankings } = await loadData();
   const season = league.season || new Date().getFullYear();
   console.log(`✅ Loaded ${matchups.length} weeks of matchups for ${season} season`);
   console.log(`✅ Loaded ${atrocities.length} atrocities across all weeks`);
-  console.log(`✅ Loaded ${Object.keys(players).length} players for enhanced stats\n`);
+  console.log(`✅ Loaded ${Object.keys(players).length} players for enhanced stats`);
+  if (powerRankings) {
+    console.log(`✅ Loaded power rankings for ${powerRankings.rankings?.length || 0} teams`);
+  } else {
+    console.log(`⚠️ Power rankings not available (run build first)`);
+  }
+  console.log('');
 
   // Determine which weeks to process
   let weeksToProcess = [];
@@ -717,7 +756,7 @@ async function main() {
         weeksToProcess.push(weekData);
       } else if (existingSummary.matchupScores) {
         // Check if scores have changed since last generation
-        const processedData = processWeekData(weekData, rosters, users, atrocities, players, matchups);
+        const processedData = processWeekData(weekData, rosters, users, atrocities, players, matchups, powerRankings);
         const currentScores = extractMatchupScores(processedData.matchups);
 
         if (haveScoresChanged(existingSummary.matchupScores, currentScores)) {
@@ -727,7 +766,7 @@ async function main() {
       } else {
         // Old format without matchupScores - check if it needs regeneration
         // by processing and checking if scores look valid
-        const processedData = processWeekData(weekData, rosters, users, atrocities, players, matchups);
+        const processedData = processWeekData(weekData, rosters, users, atrocities, players, matchups, powerRankings);
         const currentScores = extractMatchupScores(processedData.matchups);
 
         // If the summary mentions zero scores but current data shows real scores,
@@ -769,7 +808,7 @@ async function main() {
     console.log(`📅 Processing Week ${weekData.week}...`);
 
     // Process week data with player stats and trends
-    const processedData = processWeekData(weekData, rosters, users, atrocities, players, matchups);
+    const processedData = processWeekData(weekData, rosters, users, atrocities, players, matchups, powerRankings);
 
     // Extract scores for storage and validation
     const matchupScores = extractMatchupScores(processedData.matchups);
