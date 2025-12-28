@@ -27,6 +27,7 @@ const __dirname = dirname(__filename);
 // Configuration
 const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID || "1182940167115010048";
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
+const FETCH_REAL_WORLD_CONTEXT = process.env.FETCH_REAL_WORLD_CONTEXT === 'true'; // Enable with FETCH_REAL_WORLD_CONTEXT=true
 
 if (!ANTHROPIC_API_KEY) {
   console.error('❌ Error: ANTHROPIC_API_KEY environment variable not set');
@@ -98,7 +99,399 @@ async function loadData() {
     powerRankings = JSON.parse(readFileSync(powerRankingsPath, 'utf-8'));
   }
 
-  return { trades, rosters, users, players, league, matchupsAllYears, powerRankings };
+  // Load draft picks for context (optional)
+  const draftPicksPath = join(cacheDir, 'draft-picks.json');
+  let draftPicks = [];
+  if (existsSync(draftPicksPath)) {
+    draftPicks = JSON.parse(readFileSync(draftPicksPath, 'utf-8'));
+  }
+
+  return { trades, rosters, users, players, league, matchupsAllYears, powerRankings, draftPicks };
+}
+
+/**
+ * Analyze manager's trading history and patterns
+ */
+function analyzeManagerTradingHistory(rosterId, allTrades, currentTradeTimestamp, users, rosters) {
+  const roster = rosters.find(r => r.roster_id === rosterId);
+  const ownerId = roster?.owner_id;
+  const user = ownerId ? users.find(u => u.user_id === ownerId) : null;
+  const managerName = user?.display_name || user?.username || `Team ${rosterId}`;
+
+  // Find all trades this manager has been involved in
+  const managerTrades = allTrades.filter(trade => {
+    const involvedRosters = new Set([
+      ...Object.values(trade.adds || {}),
+      ...Object.values(trade.drops || {})
+    ]);
+    return involvedRosters.has(rosterId);
+  });
+
+  // Trades before this one
+  const priorTrades = managerTrades.filter(t => t.created < currentTradeTimestamp);
+  const tradesThisSeason = priorTrades.filter(t => t.season === managerTrades.find(mt => mt.created === currentTradeTimestamp)?.season);
+
+  // Analyze trading patterns
+  let playersBought = 0;
+  let playersSold = 0;
+  let picksAcquired = 0;
+  let picksSold = 0;
+
+  priorTrades.forEach(trade => {
+    // Count players received vs given
+    Object.entries(trade.adds || {}).forEach(([playerId, receivingRoster]) => {
+      if (receivingRoster === rosterId) playersBought++;
+    });
+    Object.entries(trade.drops || {}).forEach(([playerId, givingRoster]) => {
+      if (givingRoster === rosterId) playersSold++;
+    });
+    // Count picks
+    (trade.draft_picks || []).forEach(pick => {
+      if (pick.owner_id === rosterId) picksAcquired++;
+      if (pick.previous_owner_id === rosterId) picksSold++;
+    });
+  });
+
+  // Determine trading style
+  let tradingStyle = 'balanced';
+  if (playersBought > playersSold * 1.5) tradingStyle = 'aggressive buyer';
+  else if (playersSold > playersBought * 1.5) tradingStyle = 'seller/rebuilder';
+  if (picksAcquired > picksSold * 2) tradingStyle = 'future-focused (stockpiling picks)';
+  else if (picksSold > picksAcquired * 2) tradingStyle = 'win-now (selling picks for talent)';
+
+  return {
+    managerName,
+    totalTradesAllTime: managerTrades.length,
+    tradesThisSeason: tradesThisSeason.length,
+    tradeRank: priorTrades.length + 1, // This is their Nth trade
+    playersBought,
+    playersSold,
+    picksAcquired,
+    picksSold,
+    tradingStyle,
+    isActiveTrador: managerTrades.length >= 5
+  };
+}
+
+/**
+ * Get team record and standings at time of trade
+ */
+function getTeamStandingsAtTrade(rosterId, tradeWeek, tradeSeason, matchupsAllYears, rosters) {
+  const roster = rosters.find(r => r.roster_id === rosterId);
+  if (!roster) return null;
+
+  // Get current record from roster settings
+  const currentWins = roster.settings?.wins || 0;
+  const currentLosses = roster.settings?.losses || 0;
+  const currentPointsFor = (roster.settings?.fpts || 0) + ((roster.settings?.fpts_decimal || 0) / 100);
+
+  // Calculate record at time of trade from matchups
+  let winsAtTrade = 0;
+  let lossesAtTrade = 0;
+  let pointsAtTrade = 0;
+
+  const seasonData = matchupsAllYears[tradeSeason];
+  if (seasonData && seasonData.matchups) {
+    seasonData.matchups.forEach(weekData => {
+      if (weekData.week < tradeWeek) {
+        const teamMatchup = weekData.matchups.find(m => m.roster_id === rosterId);
+        if (teamMatchup) {
+          const matchId = teamMatchup.matchup_id;
+          const opponent = weekData.matchups.find(m => m.matchup_id === matchId && m.roster_id !== rosterId);
+
+          if (opponent) {
+            if (teamMatchup.points > opponent.points) winsAtTrade++;
+            else if (teamMatchup.points < opponent.points) lossesAtTrade++;
+          }
+          pointsAtTrade += teamMatchup.points || 0;
+        }
+      }
+    });
+  }
+
+  const totalGames = winsAtTrade + lossesAtTrade;
+  const winPct = totalGames > 0 ? winsAtTrade / totalGames : 0;
+
+  // Determine playoff position/status
+  let playoffStatus = 'unknown';
+  if (totalGames >= 4) {
+    if (winPct >= 0.7) playoffStatus = 'playoff lock';
+    else if (winPct >= 0.5) playoffStatus = 'playoff contender';
+    else if (winPct >= 0.35) playoffStatus = 'on the bubble';
+    else playoffStatus = 'likely eliminated';
+  }
+
+  return {
+    winsAtTrade,
+    lossesAtTrade,
+    recordAtTrade: `${winsAtTrade}-${lossesAtTrade}`,
+    winPctAtTrade: Math.round(winPct * 100),
+    pointsAtTrade: Math.round(pointsAtTrade * 10) / 10,
+    currentRecord: `${currentWins}-${currentLosses}`,
+    currentPointsFor: Math.round(currentPointsFor * 10) / 10,
+    playoffStatus,
+    gamesPlayed: totalGames
+  };
+}
+
+/**
+ * Get head-to-head history between two teams
+ */
+function getHeadToHeadHistory(roster1Id, roster2Id, matchupsAllYears) {
+  let team1Wins = 0;
+  let team2Wins = 0;
+  let ties = 0;
+  const matchups = [];
+
+  Object.entries(matchupsAllYears).forEach(([season, seasonData]) => {
+    if (!seasonData.matchups) return;
+
+    seasonData.matchups.forEach(weekData => {
+      const team1Match = weekData.matchups.find(m => m.roster_id === roster1Id);
+      const team2Match = weekData.matchups.find(m => m.roster_id === roster2Id);
+
+      if (team1Match && team2Match && team1Match.matchup_id === team2Match.matchup_id) {
+        // They played each other this week!
+        const result = {
+          season,
+          week: weekData.week,
+          team1Score: team1Match.points,
+          team2Score: team2Match.points
+        };
+        matchups.push(result);
+
+        if (team1Match.points > team2Match.points) team1Wins++;
+        else if (team2Match.points > team1Match.points) team2Wins++;
+        else ties++;
+      }
+    });
+  });
+
+  return {
+    team1Wins,
+    team2Wins,
+    ties,
+    totalMatchups: matchups.length,
+    recentMatchups: matchups.slice(-3), // Last 3 matchups
+    isRivalry: matchups.length >= 4 && Math.abs(team1Wins - team2Wins) <= 2
+  };
+}
+
+/**
+ * Analyze season timing and context
+ */
+function analyzeSeasonContext(tradeWeek, tradeSeason, league) {
+  const playoffStartWeek = league.settings?.playoff_week_start || 15;
+  const regularSeasonWeeks = playoffStartWeek - 1;
+
+  let seasonPhase = 'unknown';
+  let urgency = 'normal';
+  let strategicContext = '';
+
+  if (tradeWeek <= 3) {
+    seasonPhase = 'early season';
+    strategicContext = 'Small sample size - basing decisions on projections more than results';
+    urgency = 'low';
+  } else if (tradeWeek <= 6) {
+    seasonPhase = 'early-mid season';
+    strategicContext = 'Trends emerging but still time to course correct';
+    urgency = 'moderate';
+  } else if (tradeWeek <= 9) {
+    seasonPhase = 'mid season';
+    strategicContext = 'Clear picture of contenders vs pretenders forming';
+    urgency = 'moderate';
+  } else if (tradeWeek <= 12) {
+    seasonPhase = 'late season push';
+    strategicContext = 'Playoff positioning critical - win-now moves expected';
+    urgency = 'high';
+  } else if (tradeWeek < playoffStartWeek) {
+    seasonPhase = 'playoff positioning';
+    strategicContext = 'Final roster moves before playoffs - desperation trades possible';
+    urgency = 'very high';
+  } else {
+    seasonPhase = 'playoffs';
+    strategicContext = 'Trading during playoffs - unusual, dynasty-focused move';
+    urgency = 'strategic';
+  }
+
+  return {
+    seasonPhase,
+    tradeWeek,
+    playoffStartWeek,
+    weeksUntilPlayoffs: Math.max(0, playoffStartWeek - tradeWeek),
+    urgency,
+    strategicContext,
+    isTradeDeadlinePeriod: tradeWeek >= regularSeasonWeeks - 2 && tradeWeek < playoffStartWeek
+  };
+}
+
+/**
+ * Get league-wide trade context
+ */
+function getLeagueTradeContext(currentTrade, allTrades, powerRankings) {
+  const sameSeason = allTrades.filter(t => t.season === currentTrade.season);
+  const beforeThis = sameSeason.filter(t => t.created < currentTrade.created);
+
+  // Calculate average trade size
+  let totalPlayersTraded = 0;
+  sameSeason.forEach(trade => {
+    totalPlayersTraded += Object.keys(trade.adds || {}).length;
+  });
+  const avgPlayersPerTrade = sameSeason.length > 0 ? totalPlayersTraded / sameSeason.length : 0;
+
+  // Find biggest trade by player count
+  const biggestTrade = sameSeason.reduce((max, trade) => {
+    const size = Object.keys(trade.adds || {}).length;
+    return size > (max?.size || 0) ? { trade, size } : max;
+  }, null);
+
+  // Get power ranking context
+  let leaderName = '';
+  let lastPlaceName = '';
+  if (powerRankings?.rankings?.length > 0) {
+    const sorted = [...powerRankings.rankings].sort((a, b) => b.powerScore - a.powerScore);
+    leaderName = sorted[0]?.teamName || '';
+    lastPlaceName = sorted[sorted.length - 1]?.teamName || '';
+  }
+
+  return {
+    totalTradesThisSeason: sameSeason.length,
+    tradeNumberThisSeason: beforeThis.length + 1,
+    avgPlayersPerTrade: Math.round(avgPlayersPerTrade * 10) / 10,
+    isBiggestTradeOfSeason: biggestTrade?.trade?.created === currentTrade.created,
+    leagueLeader: leaderName,
+    lastPlace: lastPlaceName,
+    leagueIsActive: sameSeason.length >= 10
+  };
+}
+
+/**
+ * Analyze player value trajectory (rising/falling)
+ */
+function analyzePlayerTrajectory(playerId, player, powerRankings) {
+  if (!powerRankings?.playerValues?.[playerId]) return null;
+
+  const playerValue = powerRankings.playerValues[playerId];
+  const age = player.age || 0;
+  const position = player.position;
+
+  // Position-specific value curves
+  const peakAges = {
+    'QB': { peak: 29, decline: 35, longevity: 'high' },
+    'RB': { peak: 25, decline: 28, longevity: 'low' },
+    'WR': { peak: 27, decline: 30, longevity: 'medium' },
+    'TE': { peak: 28, decline: 32, longevity: 'medium' }
+  };
+
+  const curve = peakAges[position] || { peak: 27, decline: 30, longevity: 'medium' };
+
+  let trajectory = 'stable';
+  let valueOutlook = '';
+
+  if (age < curve.peak - 2) {
+    trajectory = 'rising';
+    valueOutlook = 'Value likely to increase as player enters prime';
+  } else if (age < curve.peak) {
+    trajectory = 'approaching peak';
+    valueOutlook = 'Nearing peak production years';
+  } else if (age <= curve.decline) {
+    trajectory = 'peak years';
+    valueOutlook = 'In prime production window';
+  } else if (age <= curve.decline + 2) {
+    trajectory = 'declining';
+    valueOutlook = 'Production likely to decrease - sell window may be closing';
+  } else {
+    trajectory = 'late career';
+    valueOutlook = 'Limited remaining fantasy value - high bust risk';
+  }
+
+  return {
+    currentValue: playerValue.value,
+    trajectory,
+    valueOutlook,
+    ageVsPeak: age - curve.peak,
+    yearsUntilDecline: Math.max(0, curve.decline - age),
+    positionLongevity: curve.longevity
+  };
+}
+
+/**
+ * Fetch real-world context for players via web search
+ */
+async function fetchPlayerRealWorldContext(playerNames, tradeDate) {
+  const contexts = [];
+
+  for (const playerName of playerNames.slice(0, 4)) { // Limit to top 4 players to avoid rate limits
+    try {
+      // Search for recent news about the player
+      const searchQuery = `${playerName} NFL fantasy football news ${new Date(tradeDate).getFullYear()}`;
+
+      const response = await anthropic.messages.create({
+        model: 'claude-sonnet-4-5',
+        max_tokens: 300,
+        messages: [{
+          role: 'user',
+          content: `Based on your knowledge, provide a brief 2-3 sentence summary of ${playerName}'s NFL situation, recent performance, and any relevant news or concerns fantasy managers should know about. Focus on facts that would be relevant for evaluating a fantasy trade. If you don't have specific recent info, mention their general reputation and role.`
+        }]
+      });
+
+      contexts.push({
+        player: playerName,
+        context: response.content[0].text
+      });
+
+      // Small delay to avoid rate limiting
+      await new Promise(resolve => setTimeout(resolve, 500));
+    } catch (error) {
+      console.error(`Failed to fetch context for ${playerName}:`, error.message);
+      contexts.push({
+        player: playerName,
+        context: 'Context unavailable'
+      });
+    }
+  }
+
+  return contexts;
+}
+
+/**
+ * Get player's original draft position for context
+ */
+function getPlayerDraftContext(playerId, playerName, draftPicksData) {
+  // Handle different data structures - draftPicksData may be object keyed by year or array
+  let allPicks = [];
+
+  if (Array.isArray(draftPicksData)) {
+    allPicks = draftPicksData;
+  } else if (draftPicksData && typeof draftPicksData === 'object') {
+    // Object keyed by year (e.g., { "2022": { picks: [...] }, "2023": { picks: [...] } })
+    Object.entries(draftPicksData).forEach(([year, yearData]) => {
+      if (yearData?.picks && Array.isArray(yearData.picks)) {
+        yearData.picks.forEach(pick => {
+          allPicks.push({ ...pick, season: year });
+        });
+      }
+    });
+  }
+
+  // Look for when this player was drafted
+  const pick = allPicks.find(p => p.player_id === playerId);
+
+  if (pick) {
+    return {
+      wasDrafted: true,
+      draftYear: pick.season,
+      round: pick.round,
+      pickNumber: pick.pick_no,
+      draftedBy: pick.roster_id,
+      draftContext: `Drafted in round ${pick.round} (pick ${pick.pick_no}) in ${pick.season}`
+    };
+  }
+
+  return {
+    wasDrafted: false,
+    draftContext: 'Undrafted or acquired via waivers'
+  };
 }
 
 /**
@@ -320,9 +713,9 @@ function calculateTradeImpact(rosterId, trade, powerRankings) {
 }
 
 /**
- * Process trade data for analysis
+ * Process trade data for analysis with rich context
  */
-function processTradeData(trade, users, players, rosters, matchupsAllYears, powerRankings) {
+function processTradeData(trade, users, players, rosters, matchupsAllYears, powerRankings, allTrades, league, draftPicksData) {
   // Get involved roster IDs
   const rosterIds = new Set([
     ...Object.values(trade.adds || {}),
@@ -341,16 +734,43 @@ function processTradeData(trade, users, players, rosters, matchupsAllYears, powe
     rosterMap[rosterId] = user?.display_name || user?.username || `Team ${rosterId}`;
   });
 
-  // Find the actual trading parties (who owns the rosters)
-  const participants = Array.from(rosterIds).map(rosterId => ({
-    rosterId,
-    userName: rosterMap[rosterId],
-    context: evaluateTeamContext(rosterId, rosters, trade.week, trade.season),
-    powerScore: getTeamPowerScore(rosterId, powerRankings),
-    tradeImpact: calculateTradeImpact(rosterId, trade, powerRankings)
-  }));
+  // Get roster IDs as array for head-to-head analysis
+  const rosterIdArray = Array.from(rosterIds);
 
-  // Organize assets by side
+  // === NEW CONTEXT DATA ===
+
+  // Season timing context
+  const seasonContext = analyzeSeasonContext(trade.week, trade.season, league);
+
+  // League-wide trade context
+  const leagueContext = getLeagueTradeContext(trade, allTrades, powerRankings);
+
+  // Head-to-head history (if 2-team trade)
+  let headToHead = null;
+  if (rosterIdArray.length === 2) {
+    headToHead = getHeadToHeadHistory(rosterIdArray[0], rosterIdArray[1], matchupsAllYears);
+  }
+
+  // Find the actual trading parties with enhanced context
+  const participants = Array.from(rosterIds).map(rosterId => {
+    // Manager trading history
+    const managerHistory = analyzeManagerTradingHistory(rosterId, allTrades, trade.created, users, rosters);
+
+    // Team standings at time of trade
+    const standings = getTeamStandingsAtTrade(rosterId, trade.week, trade.season, matchupsAllYears, rosters);
+
+    return {
+      rosterId,
+      userName: rosterMap[rosterId],
+      context: evaluateTeamContext(rosterId, rosters, trade.week, trade.season),
+      powerScore: getTeamPowerScore(rosterId, powerRankings),
+      tradeImpact: calculateTradeImpact(rosterId, trade, powerRankings),
+      managerHistory,
+      standings
+    };
+  });
+
+  // Organize assets by side with enhanced context
   const sides = {};
 
   participants.forEach(participant => {
@@ -359,12 +779,14 @@ function processTradeData(trade, users, players, rosters, matchupsAllYears, powe
       teamContext: participant.context,
       powerScore: participant.powerScore,
       tradeImpact: participant.tradeImpact,
+      managerHistory: participant.managerHistory,
+      standings: participant.standings,
       receives: [],
       gives: []
     };
   });
 
-  // Process player adds (what each side receives)
+  // Process player adds (what each side receives) with enhanced trajectory data
   if (trade.adds) {
     Object.entries(trade.adds).forEach(([playerId, rosterId]) => {
       const player = players[playerId];
@@ -377,8 +799,11 @@ function processTradeData(trade, users, players, rosters, matchupsAllYears, powe
           trade.week,
           matchupsAllYears
         );
+        const trajectory = analyzePlayerTrajectory(playerId, player, powerRankings);
+        const draftContext = getPlayerDraftContext(playerId, `${player.first_name} ${player.last_name}`, draftPicksData);
 
         sides[rosterId].receives.push({
+          playerId,
           name: `${player.first_name} ${player.last_name}`,
           position: player.position,
           team: player.team || 'FA',
@@ -386,13 +811,15 @@ function processTradeData(trade, users, players, rosters, matchupsAllYears, powe
           yearsExp: player.years_exp,
           careerStage,
           positionalValue,
-          performanceMetrics
+          performanceMetrics,
+          trajectory,
+          draftContext
         });
       }
     });
   }
 
-  // Process player drops (what each side gives)
+  // Process player drops (what each side gives) with enhanced trajectory data
   if (trade.drops) {
     Object.entries(trade.drops).forEach(([playerId, rosterId]) => {
       const player = players[playerId];
@@ -405,8 +832,11 @@ function processTradeData(trade, users, players, rosters, matchupsAllYears, powe
           trade.week,
           matchupsAllYears
         );
+        const trajectory = analyzePlayerTrajectory(playerId, player, powerRankings);
+        const draftContext = getPlayerDraftContext(playerId, `${player.first_name} ${player.last_name}`, draftPicksData);
 
         sides[rosterId].gives.push({
+          playerId,
           name: `${player.first_name} ${player.last_name}`,
           position: player.position,
           team: player.team || 'FA',
@@ -414,7 +844,9 @@ function processTradeData(trade, users, players, rosters, matchupsAllYears, powe
           yearsExp: player.years_exp,
           careerStage,
           positionalValue,
-          performanceMetrics
+          performanceMetrics,
+          trajectory,
+          draftContext
         });
       }
     });
@@ -451,137 +883,259 @@ function processTradeData(trade, users, players, rosters, matchupsAllYears, powe
     });
   }
 
+  // Collect all player names for real-world context lookup
+  const allPlayerNames = [];
+  Object.values(sides).forEach(side => {
+    side.receives.forEach(p => { if (p.position !== 'PICK') allPlayerNames.push(p.name); });
+    side.gives.forEach(p => { if (p.position !== 'PICK') allPlayerNames.push(p.name); });
+  });
+
   return {
     tradeId: generateTradeId(trade),
     week: trade.week,
     season: trade.season,
     created: new Date(trade.created).toLocaleString(),
+    createdTimestamp: trade.created,
     sides: Object.values(sides).filter(side => side.receives.length > 0 || side.gives.length > 0),
     draftPicks,
-    participants: participants.map(p => p.userName)
+    participants: participants.map(p => p.userName),
+    // NEW CONTEXT DATA
+    seasonContext,
+    leagueContext,
+    headToHead,
+    allPlayerNames
   };
 }
 
 /**
- * Generate LLM analysis for a trade
+ * Generate LLM analysis for a trade with comprehensive context
  */
-async function generateAnalysis(tradeData, persona) {
-  const { sides, week, season, participants, draftPicks } = tradeData;
+async function generateAnalysis(tradeData, persona, realWorldContext = []) {
+  const { sides, week, season, participants, draftPicks, seasonContext, leagueContext, headToHead, allPlayerNames } = tradeData;
 
-  // Build trade details text with enhanced metrics
-  let tradeDetailsText = `TRADE DETAILS (Week ${week}, ${season} Season):\n\n`;
+  // ============ BUILD COMPREHENSIVE CONTEXT ============
 
+  // 1. TRADE HEADER
+  let promptText = `=== FANTASY FOOTBALL TRADE ANALYSIS ===\n`;
+  promptText += `Trade Date: Week ${week}, ${season} Season\n`;
+  promptText += `Trade #${leagueContext?.tradeNumberThisSeason || '?'} of ${leagueContext?.totalTradesThisSeason || '?'} this season\n\n`;
+
+  // 2. SEASON CONTEXT
+  if (seasonContext) {
+    promptText += `📅 SEASON TIMING:\n`;
+    promptText += `  Phase: ${seasonContext.seasonPhase.toUpperCase()}\n`;
+    promptText += `  Urgency Level: ${seasonContext.urgency}\n`;
+    promptText += `  Weeks Until Playoffs: ${seasonContext.weeksUntilPlayoffs}\n`;
+    promptText += `  Strategic Context: ${seasonContext.strategicContext}\n`;
+    if (seasonContext.isTradeDeadlinePeriod) {
+      promptText += `  ⚠️ TRADE DEADLINE PERIOD - High-stakes decisions expected\n`;
+    }
+    promptText += `\n`;
+  }
+
+  // 3. HEAD-TO-HEAD RIVALRY (if applicable)
+  if (headToHead && headToHead.totalMatchups > 0) {
+    promptText += `🏈 HEAD-TO-HEAD HISTORY:\n`;
+    promptText += `  All-Time Record: ${headToHead.team1Wins}-${headToHead.team2Wins}${headToHead.ties > 0 ? `-${headToHead.ties}` : ''}\n`;
+    if (headToHead.isRivalry) {
+      promptText += `  ⚔️ RIVALRY ALERT: These teams have a competitive history!\n`;
+    }
+    promptText += `\n`;
+  }
+
+  // 4. EACH TEAM'S DETAILED PROFILE
   sides.forEach((side, index) => {
-    tradeDetailsText += `**${side.userName}** (${side.teamContext})\n`;
+    promptText += `${'═'.repeat(50)}\n`;
+    promptText += `TEAM ${index + 1}: ${side.userName}\n`;
+    promptText += `${'═'.repeat(50)}\n`;
 
-    // Add power score information if available
+    // Team standing and record
+    if (side.standings) {
+      promptText += `📊 RECORD AT TRADE TIME: ${side.standings.recordAtTrade} (${side.standings.winPctAtTrade}% win rate)\n`;
+      promptText += `   Playoff Status: ${side.standings.playoffStatus}\n`;
+      promptText += `   Points Scored: ${side.standings.pointsAtTrade}\n`;
+    }
+
+    // Power score breakdown
     if (side.powerScore) {
-      tradeDetailsText += `Power Score: ${side.powerScore.powerScore} (Rank #${side.powerScore.powerRank} of ${side.powerScore.totalTeams})\n`;
-      tradeDetailsText += `  - Lineup Value: ${side.powerScore.lineupValueScore} | Performance: ${side.powerScore.performanceScore} | Positional: ${side.powerScore.positionalScore} | Depth: ${side.powerScore.depthScore}\n`;
+      promptText += `💪 POWER SCORE: ${side.powerScore.powerScore}/100 (Rank #${side.powerScore.powerRank} of ${side.powerScore.totalTeams})\n`;
+      promptText += `   Components: Lineup ${side.powerScore.lineupValueScore} | Performance ${side.powerScore.performanceScore} | Position ${side.powerScore.positionalScore} | Depth ${side.powerScore.depthScore}\n`;
+    }
 
-      // Add trade impact on power score
-      if (side.tradeImpact) {
-        const impact = side.tradeImpact;
-        const sign = impact.estimatedPowerScoreChange >= 0 ? '+' : '';
-        tradeDetailsText += `Trade Impact: ${sign}${impact.estimatedPowerScoreChange} estimated power score change\n`;
-        tradeDetailsText += `  - Value Gained: ${impact.valueGained.toLocaleString()} | Value Lost: ${impact.valueLost.toLocaleString()} | Net: ${impact.netValueChange >= 0 ? '+' : ''}${impact.netValueChange.toLocaleString()}\n`;
+    // Manager trading history and style
+    if (side.managerHistory) {
+      const mh = side.managerHistory;
+      promptText += `🎯 MANAGER PROFILE:\n`;
+      promptText += `   Trading Style: ${mh.tradingStyle}\n`;
+      promptText += `   This is trade #${mh.tradeRank} all-time (${mh.tradesThisSeason} this season)\n`;
+      promptText += `   Historical Pattern: ${mh.playersBought} players acquired, ${mh.playersSold} players traded away\n`;
+      promptText += `   Draft Capital: ${mh.picksAcquired} picks acquired, ${mh.picksSold} picks traded\n`;
+      if (mh.isActiveTrador) {
+        promptText += `   ⚡ ACTIVE TRADER - Known for making moves\n`;
       }
     }
 
+    // Trade impact
+    if (side.tradeImpact) {
+      const impact = side.tradeImpact;
+      const sign = impact.estimatedPowerScoreChange >= 0 ? '+' : '';
+      promptText += `📈 TRADE IMPACT: ${sign}${impact.estimatedPowerScoreChange} projected power score change\n`;
+      promptText += `   Value Received: ${impact.valueGained.toLocaleString()} | Value Given: ${impact.valueLost.toLocaleString()}\n`;
+      promptText += `   Net Value: ${impact.netValueChange >= 0 ? '+' : ''}${impact.netValueChange.toLocaleString()}\n`;
+    }
+
+    // Assets received
     if (side.receives.length > 0) {
-      tradeDetailsText += `RECEIVES:\n`;
+      promptText += `\n📥 RECEIVES:\n`;
       side.receives.forEach(asset => {
         if (asset.position === 'PICK') {
-          tradeDetailsText += `  - ${asset.name}${asset.from ? ` (from ${asset.from})` : ''}\n`;
+          promptText += `  • ${asset.name}${asset.from ? ` (from ${asset.from})` : ''}\n`;
         } else {
-          tradeDetailsText += `  - ${asset.name} (${asset.position}, ${asset.team}`;
-          if (asset.age) tradeDetailsText += `, Age ${asset.age}`;
-          if (asset.yearsExp !== undefined) tradeDetailsText += `, ${asset.yearsExp} yrs exp`;
-          tradeDetailsText += `)\n`;
+          promptText += `  • ${asset.name} (${asset.position}, ${asset.team})\n`;
+          promptText += `    Age: ${asset.age || 'N/A'} | Experience: ${asset.yearsExp || 0} years\n`;
+          promptText += `    Career Stage: ${asset.careerStage} | Position Value: ${asset.positionalValue}\n`;
 
-          // Add career stage analysis
-          if (asset.careerStage) {
-            tradeDetailsText += `    Career Stage: ${asset.careerStage}\n`;
+          // Value trajectory
+          if (asset.trajectory) {
+            promptText += `    Value Trajectory: ${asset.trajectory.trajectory.toUpperCase()} - ${asset.trajectory.valueOutlook}\n`;
+            promptText += `    Dynasty Value: ${asset.trajectory.currentValue?.toLocaleString() || 'N/A'} | Years to Decline: ${asset.trajectory.yearsUntilDecline}\n`;
           }
 
-          // Add positional value context
-          if (asset.positionalValue) {
-            tradeDetailsText += `    Position Value: ${asset.positionalValue}\n`;
+          // Draft context
+          if (asset.draftContext) {
+            promptText += `    Draft History: ${asset.draftContext.draftContext}\n`;
           }
 
-          // Add performance metrics if available
-          if (asset.performanceMetrics && asset.performanceMetrics.preTradeGames > 0) {
-            tradeDetailsText += `    Pre-Trade Performance: ${asset.performanceMetrics.preTradeAvg.toFixed(1)} PPG (${asset.performanceMetrics.preTradeGames} games)\n`;
-
-            if (asset.performanceMetrics.postTradeGames > 0) {
-              const diff = asset.performanceMetrics.postTradeAvg - asset.performanceMetrics.preTradeAvg;
-              const direction = diff > 0 ? '+' : '';
-              tradeDetailsText += `    Post-Trade Performance: ${asset.performanceMetrics.postTradeAvg.toFixed(1)} PPG (${asset.performanceMetrics.postTradeGames} games) - ${direction}${diff.toFixed(1)} PPG\n`;
-            }
+          // Performance metrics
+          if (asset.performanceMetrics?.preTradeGames > 0) {
+            promptText += `    Fantasy Performance: ${asset.performanceMetrics.preTradeAvg.toFixed(1)} PPG (${asset.performanceMetrics.preTradeGames} games)\n`;
           }
         }
       });
     }
 
+    // Assets given
     if (side.gives.length > 0) {
-      tradeDetailsText += `GIVES UP:\n`;
+      promptText += `\n📤 GIVES UP:\n`;
       side.gives.forEach(asset => {
         if (asset.position === 'PICK') {
-          tradeDetailsText += `  - ${asset.name}\n`;
+          promptText += `  • ${asset.name}\n`;
         } else {
-          tradeDetailsText += `  - ${asset.name} (${asset.position}, ${asset.team}`;
-          if (asset.age) tradeDetailsText += `, Age ${asset.age}`;
-          if (asset.yearsExp !== undefined) tradeDetailsText += `, ${asset.yearsExp} yrs exp`;
-          tradeDetailsText += `)\n`;
+          promptText += `  • ${asset.name} (${asset.position}, ${asset.team})\n`;
+          promptText += `    Age: ${asset.age || 'N/A'} | Experience: ${asset.yearsExp || 0} years\n`;
+          promptText += `    Career Stage: ${asset.careerStage} | Position Value: ${asset.positionalValue}\n`;
 
-          // Add career stage analysis
-          if (asset.careerStage) {
-            tradeDetailsText += `    Career Stage: ${asset.careerStage}\n`;
+          if (asset.trajectory) {
+            promptText += `    Value Trajectory: ${asset.trajectory.trajectory.toUpperCase()} - ${asset.trajectory.valueOutlook}\n`;
+            promptText += `    Dynasty Value: ${asset.trajectory.currentValue?.toLocaleString() || 'N/A'}\n`;
           }
 
-          // Add positional value context
-          if (asset.positionalValue) {
-            tradeDetailsText += `    Position Value: ${asset.positionalValue}\n`;
-          }
-
-          // Add performance metrics if available
-          if (asset.performanceMetrics && asset.performanceMetrics.preTradeGames > 0) {
-            tradeDetailsText += `    Pre-Trade Performance: ${asset.performanceMetrics.preTradeAvg.toFixed(1)} PPG (${asset.performanceMetrics.preTradeGames} games)\n`;
-
-            if (asset.performanceMetrics.postTradeGames > 0) {
-              const diff = asset.performanceMetrics.postTradeAvg - asset.performanceMetrics.preTradeAvg;
-              const direction = diff > 0 ? '+' : '';
-              tradeDetailsText += `    Post-Trade Performance: ${asset.performanceMetrics.postTradeAvg.toFixed(1)} PPG (${asset.performanceMetrics.postTradeGames} games) - ${direction}${diff.toFixed(1)} PPG\n`;
-            }
+          if (asset.performanceMetrics?.preTradeGames > 0) {
+            promptText += `    Fantasy Performance: ${asset.performanceMetrics.preTradeAvg.toFixed(1)} PPG (${asset.performanceMetrics.preTradeGames} games)\n`;
           }
         }
       });
     }
 
-    tradeDetailsText += '\n';
+    promptText += `\n`;
   });
 
-  // Add variety instructions
-  const varietyInstructions = [
-    "Give both managers a creative nickname based on their trading style",
-    "Make a bold prediction about how this trade will look in 2 years",
-    "Compare this trade to a famous real NFL trade",
-    "Identify a clear 'winner' and 'loser' (or declare it even)",
-    "Create a dramatic storyline or rivalry angle",
-    "Reference the timing and context of when this trade happened in the season",
-    "Evaluate the value and risk profile of each side"
+  // 5. REAL-WORLD PLAYER CONTEXT (if available)
+  if (realWorldContext && realWorldContext.length > 0) {
+    promptText += `${'═'.repeat(50)}\n`;
+    promptText += `🌍 REAL-WORLD NFL CONTEXT:\n`;
+    promptText += `${'═'.repeat(50)}\n`;
+    realWorldContext.forEach(ctx => {
+      if (ctx.context !== 'Context unavailable') {
+        promptText += `${ctx.player}: ${ctx.context}\n\n`;
+      }
+    });
+  }
+
+  // 6. LEAGUE CONTEXT
+  if (leagueContext) {
+    promptText += `${'═'.repeat(50)}\n`;
+    promptText += `🏆 LEAGUE CONTEXT:\n`;
+    promptText += `${'═'.repeat(50)}\n`;
+    promptText += `  Total Trades This Season: ${leagueContext.totalTradesThisSeason}\n`;
+    promptText += `  Average Players Per Trade: ${leagueContext.avgPlayersPerTrade}\n`;
+    if (leagueContext.leagueLeader) {
+      promptText += `  Current League Leader: ${leagueContext.leagueLeader}\n`;
+    }
+    if (leagueContext.isBiggestTradeOfSeason) {
+      promptText += `  🚨 THIS IS THE BIGGEST TRADE OF THE SEASON!\n`;
+    }
+    promptText += `\n`;
+  }
+
+  // ============ VARIETY AND STYLE INSTRUCTIONS ============
+
+  // Famous NFL trades to reference (variety pool)
+  const nflTradeComparisons = [
+    "the Jamal Adams trade (Jets to Seahawks) - a star demanding out, team getting picks",
+    "the Khalil Mack trade (Raiders to Bears) - mortgaging the future for a superstar",
+    "the Stefon Diggs trade (Vikings to Bills) - disgruntled star finds new home, immediate impact",
+    "the DeAndre Hopkins trade (Texans to Cardinals) - lopsided deal that haunted one team",
+    "the Davante Adams trade (Packers to Raiders) - reuniting with a former QB",
+    "the Tyreek Hill trade (Chiefs to Dolphins) - record-breaking WR deal",
+    "the Russell Wilson trade (Seahawks to Broncos) - blockbuster that backfired",
+    "the Matthew Stafford/Jared Goff swap - win-now meets rebuild",
+    "the Odell Beckham Jr. trade (Giants to Browns) - splash move that fizzled",
+    "the Amari Cooper trade (Raiders to Cowboys) - mid-season acquisition paying dividends"
   ];
 
-  // Randomly select 3-4 special instructions
-  const selectedCount = 3 + Math.floor(Math.random() * 2); // 3 or 4
+  const randomTradeComp = nflTradeComparisons[Math.floor(Math.random() * nflTradeComparisons.length)];
+
+  // Dynamic variety instructions based on trade context
+  const varietyInstructions = [
+    "Give both managers creative nicknames based on their trading patterns and this specific move",
+    `Draw parallels to ${randomTradeComp}`,
+    "Make a bold, specific prediction about how this trade will look in hindsight",
+    "Identify the clear winner/loser with specific reasoning, or explain why it's truly even",
+    "Comment on the timing - was this trade made at the right moment in the season?",
+    "Evaluate the risk/reward profile for each side",
+    "Discuss championship implications - how does this affect each team's title odds?",
+    "Reference the managers' trading histories and whether this move fits their pattern"
+  ];
+
+  // Select 3-4 random instructions
+  const selectedCount = 3 + Math.floor(Math.random() * 2);
   const shuffled = [...varietyInstructions].sort(() => Math.random() - 0.5);
   const selected = shuffled.slice(0, selectedCount);
 
-  const prompt = `You are ${persona.name}, the legendary NFL analyst. Analyze this fantasy football trade in your signature style.
+  // ============ FINAL PROMPT ============
 
-${tradeDetailsText}
+  const prompt = `You are ${persona.name}, the legendary NFL analyst/reporter. Analyze this fantasy football dynasty trade in your signature style.
 
-Write a 3-4 paragraph analysis in ${persona.name}'s style: ${persona.style}
+${promptText}
+
+=== YOUR ANALYSIS INSTRUCTIONS ===
+
+Write a 4-5 paragraph analysis in ${persona.name}'s authentic voice and style: ${persona.style}
+
+Key elements to emphasize (${persona.name}'s specialties): ${persona.emphasis.join(', ')}
+
+MUST INCLUDE these elements:
+${selected.map((instruction, i) => `${i + 1}. ${instruction}`).join('\n')}
+
+IMPORTANT GUIDELINES:
+- Use the manager trading history to characterize their approach (aggressive buyer? rebuilder? win-now?)
+- Reference their records and playoff positioning when evaluating the trade's wisdom
+- Consider player value trajectories (rising stars vs declining assets)
+- Factor in the season timing (early season speculation vs late season desperation)
+- Use specific data points from the context provided (power scores, values, records)
+- Make it feel like a real broadcast/article from ${persona.name}
+- Use ${persona.name}'s actual catchphrases and speaking patterns
+- Be entertaining, insightful, and occasionally controversial
+
+POWER SCORE CONTEXT FOR REFERENCE:
+Power Score (0-100) measures overall team strength:
+- Lineup Value (50%): Dynasty asset value of optimal starters
+- Performance (30%): Actual results (win%, all-play record)
+- Positional (15%): Advantage vs league average at each position
+- Depth (5%): Quality of bench/backup players
+
+Return ONLY the analysis text. No preamble, headers, or meta-commentary.
 
 Focus on what ${persona.name} emphasizes: ${persona.emphasis.join(', ')}
 
@@ -605,7 +1159,6 @@ Return ONLY the analysis text, no preamble or meta-commentary.`;
     model: 'claude-sonnet-4-5',
     max_tokens: 1500,
     temperature: 1.0,
-    top_p: 0.95,  // Add nucleus sampling for more variety
     messages: [{
       role: 'user',
       content: prompt
@@ -707,18 +1260,25 @@ async function main() {
 
   // Load data
   console.log('📊 Loading data...');
-  const { trades, rosters, users, players, league, matchupsAllYears, powerRankings } = await loadData();
+  const { trades, rosters, users, players, league, matchupsAllYears, powerRankings, draftPicks } = await loadData();
   console.log(`✅ Loaded ${trades.length} trades`);
+  console.log(`✅ Loaded ${Object.keys(matchupsAllYears).length} seasons of matchup history`);
   if (powerRankings) {
     console.log(`✅ Loaded power rankings for ${powerRankings.rankings?.length || 0} teams`);
   } else {
     console.log(`⚠️ Power rankings not available (run build first)`);
   }
+  if (draftPicks?.length > 0) {
+    console.log(`✅ Loaded ${draftPicks.length} draft picks for context`);
+  }
+  if (FETCH_REAL_WORLD_CONTEXT) {
+    console.log(`🌍 Real-world context fetching: ENABLED`);
+  }
   console.log('');
 
   // Process all trades with enhanced metrics
   const processedTrades = trades.map(trade =>
-    processTradeData(trade, users, players, rosters, matchupsAllYears, powerRankings)
+    processTradeData(trade, users, players, rosters, matchupsAllYears, powerRankings, trades, league, draftPicks)
   );
 
   // Filter trades that need analysis
@@ -740,7 +1300,14 @@ async function main() {
 
     // Generate analysis
     try {
-      const analysis = await generateAnalysis(tradeData, persona);
+      // Optionally fetch real-world context for players
+      let realWorldContext = [];
+      if (FETCH_REAL_WORLD_CONTEXT && tradeData.allPlayerNames?.length > 0) {
+        console.log(`   🔍 Fetching real-world context for ${tradeData.allPlayerNames.slice(0, 4).join(', ')}...`);
+        realWorldContext = await fetchPlayerRealWorldContext(tradeData.allPlayerNames, tradeData.createdTimestamp);
+      }
+
+      const analysis = await generateAnalysis(tradeData, persona, realWorldContext);
 
       // Save to file
       saveAnalysis(tradeData, persona, analysis);
