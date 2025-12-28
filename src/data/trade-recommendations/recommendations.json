@@ -1,0 +1,2760 @@
+{
+  "generatedAt": "2025-12-28T22:22:32.746Z",
+  "league": "LOC",
+  "recommendations": [
+    {
+      "team1": "Shogunation",
+      "team2": "PrinceofPizza",
+      "team1Gives": [
+        {
+          "name": "Anthony Richardson",
+          "position": "QB",
+          "value": 1237
+        },
+        {
+          "name": "Oronde Gadsden",
+          "position": "TE",
+          "value": 1090
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Tee Higgins",
+          "position": "WR",
+          "value": 3138
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2327,
+        "valueReceived": 3138,
+        "netValue": 811,
+        "lineupImprovement": 1435,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tee Higgins",
+            "replaces": "Davante Adams",
+            "improvement": 1435
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.5,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3138,
+        "valueReceived": 2327,
+        "netValue": -811,
+        "lineupImprovement": 959,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Oronde Gadsden",
+            "replaces": "Dalton Schultz",
+            "improvement": 959
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1,
+        "wouldImproveLineup": true
+      },
+      "type": "2-for-1",
+      "positionSwap": "WR consolidation",
+      "score": 270,
+      "combinedPowerGain": 2.5,
+      "bothImprove": true,
+      "fairExchange": true
+    },
+    {
+      "team1": "PrinceofPizza",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Tee Higgins",
+          "position": "WR",
+          "value": 3138
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "value": 1226
+        },
+        {
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "value": 1943
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3138,
+        "valueReceived": 3169,
+        "netValue": 31,
+        "lineupImprovement": 1812,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tucker Kraft",
+            "replaces": "Dalton Schultz",
+            "improvement": 1812
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.9,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3169,
+        "valueReceived": 3138,
+        "netValue": -31,
+        "lineupImprovement": 130,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tee Higgins",
+            "replaces": "Brian Thomas",
+            "improvement": 130
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.1,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-2",
+      "positionSwap": "WR consolidation",
+      "score": 265,
+      "combinedPowerGain": 2,
+      "bothImprove": true,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "PrinceofPizza",
+      "team1Gives": [
+        {
+          "name": "Dak Prescott",
+          "position": "QB",
+          "value": 3751
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Tee Higgins",
+          "position": "WR",
+          "value": 3138
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3751,
+        "valueReceived": 3138,
+        "netValue": -613,
+        "lineupImprovement": 1435,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tee Higgins",
+            "replaces": "Davante Adams",
+            "improvement": 1435
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.5,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3138,
+        "valueReceived": 3751,
+        "netValue": 613,
+        "lineupImprovement": 1362,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Dak Prescott",
+            "replaces": "Daniel Jones",
+            "improvement": 1362
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.4,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "QB → WR",
+      "score": 264,
+      "combinedPowerGain": 2.9,
+      "bothImprove": true,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "PrinceofPizza",
+      "team1Gives": [
+        {
+          "name": "Anthony Richardson",
+          "position": "QB",
+          "value": 1237
+        },
+        {
+          "name": "Oronde Gadsden",
+          "position": "TE",
+          "value": 1090
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Zay Flowers",
+          "position": "WR",
+          "value": 2588
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2327,
+        "valueReceived": 2588,
+        "netValue": 261,
+        "lineupImprovement": 885,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Zay Flowers",
+            "replaces": "Davante Adams",
+            "improvement": 885
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.9,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 2588,
+        "valueReceived": 2327,
+        "netValue": -261,
+        "lineupImprovement": 959,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Oronde Gadsden",
+            "replaces": "Dalton Schultz",
+            "improvement": 959
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1,
+        "wouldImproveLineup": true
+      },
+      "type": "2-for-1",
+      "positionSwap": "WR consolidation",
+      "score": 264,
+      "combinedPowerGain": 1.9,
+      "bothImprove": true,
+      "fairExchange": true
+    },
+    {
+      "team1": "PrinceofPizza",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Tee Higgins",
+          "position": "WR",
+          "value": 3138
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Trevor Lawrence",
+          "position": "QB",
+          "value": 4319
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3138,
+        "valueReceived": 4319,
+        "netValue": 1181,
+        "lineupImprovement": 1930,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Trevor Lawrence",
+            "replaces": "Daniel Jones",
+            "improvement": 1930
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 2,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 4319,
+        "valueReceived": 3138,
+        "netValue": -1181,
+        "lineupImprovement": 130,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tee Higgins",
+            "replaces": "Brian Thomas",
+            "improvement": 130
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.1,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "WR → QB",
+      "score": 256,
+      "combinedPowerGain": 2.1,
+      "bothImprove": true,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "PrinceofPizza",
+      "team1Gives": [
+        {
+          "name": "Dak Prescott",
+          "position": "QB",
+          "value": 3751
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Chris Olave",
+          "position": "WR",
+          "value": 3734
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3751,
+        "valueReceived": 3734,
+        "netValue": -17,
+        "lineupImprovement": 2031,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Chris Olave",
+            "replaces": "Davante Adams",
+            "improvement": 2031
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 2.1,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3734,
+        "valueReceived": 3751,
+        "netValue": 17,
+        "lineupImprovement": 1362,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Dak Prescott",
+            "replaces": "Daniel Jones",
+            "improvement": 1362
+          }
+        ],
+        "starterLoss": 1867,
+        "estimatedPowerChange": -0.5,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "QB → WR",
+      "score": 251,
+      "combinedPowerGain": 1.6,
+      "bothImprove": true,
+      "fairExchange": true
+    },
+    {
+      "team1": "PrinceofPizza",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Tee Higgins",
+          "position": "WR",
+          "value": 3138
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "value": 969
+        },
+        {
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "value": 1943
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3138,
+        "valueReceived": 2912,
+        "netValue": -226,
+        "lineupImprovement": 1812,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tucker Kraft",
+            "replaces": "Dalton Schultz",
+            "improvement": 1812
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.9,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 2912,
+        "valueReceived": 3138,
+        "netValue": 226,
+        "lineupImprovement": 130,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tee Higgins",
+            "replaces": "Brian Thomas",
+            "improvement": 130
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.1,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-2",
+      "positionSwap": "WR consolidation",
+      "score": 250,
+      "combinedPowerGain": 2,
+      "bothImprove": true,
+      "fairExchange": true
+    },
+    {
+      "team1": "PrinceofPizza",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Tee Higgins",
+          "position": "WR",
+          "value": 3138
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Luther Burden",
+          "position": "WR",
+          "value": 1587
+        },
+        {
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "value": 1943
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3138,
+        "valueReceived": 3530,
+        "netValue": 392,
+        "lineupImprovement": 1812,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tucker Kraft",
+            "replaces": "Dalton Schultz",
+            "improvement": 1812
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.9,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3530,
+        "valueReceived": 3138,
+        "netValue": -392,
+        "lineupImprovement": 130,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tee Higgins",
+            "replaces": "Brian Thomas",
+            "improvement": 130
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.1,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-2",
+      "positionSwap": "WR consolidation",
+      "score": 250,
+      "combinedPowerGain": 2,
+      "bothImprove": true,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "PrinceofPizza",
+      "team1Gives": [
+        {
+          "name": "D'Andre Swift",
+          "position": "RB",
+          "value": 946
+        },
+        {
+          "name": "Oronde Gadsden",
+          "position": "TE",
+          "value": 1090
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Zay Flowers",
+          "position": "WR",
+          "value": 2588
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2036,
+        "valueReceived": 2588,
+        "netValue": 552,
+        "lineupImprovement": 885,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Zay Flowers",
+            "replaces": "Davante Adams",
+            "improvement": 885
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.9,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 2588,
+        "valueReceived": 2036,
+        "netValue": -552,
+        "lineupImprovement": 959,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Oronde Gadsden",
+            "replaces": "Dalton Schultz",
+            "improvement": 959
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1,
+        "wouldImproveLineup": true
+      },
+      "type": "2-for-1",
+      "positionSwap": "WR consolidation",
+      "score": 249,
+      "combinedPowerGain": 1.9,
+      "bothImprove": true,
+      "fairExchange": true
+    },
+    {
+      "team1": "drobs",
+      "team2": "Tishathefish",
+      "team1Gives": [
+        {
+          "name": "Sam Darnold",
+          "position": "QB",
+          "value": 2075
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Jordan Addison",
+          "position": "WR",
+          "value": 2124
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2075,
+        "valueReceived": 2124,
+        "netValue": 49,
+        "lineupImprovement": 1440,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Jordan Addison",
+            "replaces": "Jayden Reed",
+            "improvement": 1440
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.5,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 2124,
+        "valueReceived": 2075,
+        "netValue": -49,
+        "lineupImprovement": 650,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Sam Darnold",
+            "replaces": "J.J. McCarthy",
+            "improvement": 650
+          }
+        ],
+        "starterLoss": 1062,
+        "estimatedPowerChange": -0.4,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "QB → WR",
+      "score": 246,
+      "combinedPowerGain": 1.1,
+      "bothImprove": true,
+      "fairExchange": true
+    },
+    {
+      "team1": "PrinceofPizza",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Chris Olave",
+          "position": "WR",
+          "value": 3734
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Trevor Lawrence",
+          "position": "QB",
+          "value": 4319
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3734,
+        "valueReceived": 4319,
+        "netValue": 585,
+        "lineupImprovement": 1930,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Trevor Lawrence",
+            "replaces": "Daniel Jones",
+            "improvement": 1930
+          }
+        ],
+        "starterLoss": 1867,
+        "estimatedPowerChange": 0.1,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 4319,
+        "valueReceived": 3734,
+        "netValue": -585,
+        "lineupImprovement": 726,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Chris Olave",
+            "replaces": "Brian Thomas",
+            "improvement": 726
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.8,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "WR → QB",
+      "score": 244,
+      "combinedPowerGain": 0.9,
+      "bothImprove": true,
+      "fairExchange": true
+    },
+    {
+      "team1": "drobs",
+      "team2": "TophTT",
+      "team1Gives": [
+        {
+          "name": "Chris Godwin",
+          "position": "WR",
+          "value": 495
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Mason Taylor",
+          "position": "TE",
+          "value": 426
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 495,
+        "valueReceived": 426,
+        "netValue": -69,
+        "lineupImprovement": 243,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Mason Taylor",
+            "replaces": "Mark Andrews",
+            "improvement": 243
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.3,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 426,
+        "valueReceived": 495,
+        "netValue": 69,
+        "lineupImprovement": 142,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Chris Godwin",
+            "replaces": "Tre' Harris",
+            "improvement": 142
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.1,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "WR → TE",
+      "score": 239,
+      "combinedPowerGain": 0.4,
+      "bothImprove": true,
+      "fairExchange": true
+    },
+    {
+      "team1": "mastab24",
+      "team2": "TophTT",
+      "team1Gives": [
+        {
+          "name": "Pat Bryant",
+          "position": "WR",
+          "value": 359
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Mason Taylor",
+          "position": "TE",
+          "value": 426
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 359,
+        "valueReceived": 426,
+        "netValue": 67,
+        "lineupImprovement": 328,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Mason Taylor",
+            "replaces": "Cade Otton",
+            "improvement": 328
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.3,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 426,
+        "valueReceived": 359,
+        "netValue": -67,
+        "lineupImprovement": 6,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Pat Bryant",
+            "replaces": "Tre' Harris",
+            "improvement": 6
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "WR → TE",
+      "score": 238,
+      "combinedPowerGain": 0.3,
+      "bothImprove": true,
+      "fairExchange": true
+    },
+    {
+      "team1": "Seananigans",
+      "team2": "TophTT",
+      "team1Gives": [
+        {
+          "name": "Kayshon Boutte",
+          "position": "WR",
+          "value": 399
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Mason Taylor",
+          "position": "TE",
+          "value": 426
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 399,
+        "valueReceived": 426,
+        "netValue": 27,
+        "lineupImprovement": 331,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Mason Taylor",
+            "replaces": "Juwan Johnson",
+            "improvement": 331
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.3,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 426,
+        "valueReceived": 399,
+        "netValue": -27,
+        "lineupImprovement": 46,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Kayshon Boutte",
+            "replaces": "Tre' Harris",
+            "improvement": 46
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "WR → TE",
+      "score": 238,
+      "combinedPowerGain": 0.3,
+      "bothImprove": true,
+      "fairExchange": true
+    },
+    {
+      "team1": "PrinceofPizza",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Zay Flowers",
+          "position": "WR",
+          "value": 2588
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "value": 1226
+        },
+        {
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "value": 1943
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2588,
+        "valueReceived": 3169,
+        "netValue": 581,
+        "lineupImprovement": 1812,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tucker Kraft",
+            "replaces": "Dalton Schultz",
+            "improvement": 1812
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.9,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3169,
+        "valueReceived": 2588,
+        "netValue": -581,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "1-for-2",
+      "positionSwap": "WR consolidation",
+      "score": 129,
+      "combinedPowerGain": 1.9,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "PrinceofPizza",
+      "team1Gives": [
+        {
+          "name": "Anthony Richardson",
+          "position": "QB",
+          "value": 1237
+        },
+        {
+          "name": "D'Andre Swift",
+          "position": "RB",
+          "value": 946
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Tee Higgins",
+          "position": "WR",
+          "value": 3138
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2183,
+        "valueReceived": 3138,
+        "netValue": 955,
+        "lineupImprovement": 1435,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tee Higgins",
+            "replaces": "Davante Adams",
+            "improvement": 1435
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.5,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3138,
+        "valueReceived": 2183,
+        "netValue": -955,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "2-for-1",
+      "positionSwap": "WR consolidation",
+      "score": 125,
+      "combinedPowerGain": 1.5,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Dak Prescott",
+          "position": "QB",
+          "value": 3751
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "value": 969
+        },
+        {
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "value": 1943
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3751,
+        "valueReceived": 2912,
+        "netValue": -839,
+        "lineupImprovement": 876,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Rico Dowdle",
+            "replaces": "D'Andre Swift",
+            "improvement": 23
+          },
+          {
+            "newPlayer": "Tucker Kraft",
+            "replaces": "Oronde Gadsden",
+            "improvement": 853
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.9,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 2912,
+        "valueReceived": 3751,
+        "netValue": 839,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "1-for-2",
+      "positionSwap": "QB consolidation",
+      "score": 124,
+      "combinedPowerGain": 0.9,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "PrinceofPizza",
+      "team2": "mjgrana",
+      "team1Gives": [
+        {
+          "name": "Daniel Jones",
+          "position": "QB",
+          "value": 2389
+        },
+        {
+          "name": "Kyle Monangai",
+          "position": "RB",
+          "value": 822
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "value": 4506
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3211,
+        "valueReceived": 4506,
+        "netValue": 1295,
+        "lineupImprovement": 2117,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Baker Mayfield",
+            "replaces": "Daniel Jones",
+            "improvement": 2117
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 2.2,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 4506,
+        "valueReceived": 3211,
+        "netValue": -1295,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "2-for-1",
+      "positionSwap": "QB consolidation",
+      "score": 122,
+      "combinedPowerGain": 2.2,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "drobs",
+      "team2": "PrinceofPizza",
+      "team1Gives": [
+        {
+          "name": "Sam Darnold",
+          "position": "QB",
+          "value": 2075
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Zay Flowers",
+          "position": "WR",
+          "value": 2588
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2075,
+        "valueReceived": 2588,
+        "netValue": 513,
+        "lineupImprovement": 1904,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Zay Flowers",
+            "replaces": "Jayden Reed",
+            "improvement": 1904
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 2,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 2588,
+        "valueReceived": 2075,
+        "netValue": -513,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "QB → WR",
+      "score": 120,
+      "combinedPowerGain": 2,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "PrinceofPizza",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Daniel Jones",
+          "position": "QB",
+          "value": 2389
+        },
+        {
+          "name": "Kyle Monangai",
+          "position": "RB",
+          "value": 822
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Trevor Lawrence",
+          "position": "QB",
+          "value": 4319
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3211,
+        "valueReceived": 4319,
+        "netValue": 1108,
+        "lineupImprovement": 1930,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Trevor Lawrence",
+            "replaces": "Daniel Jones",
+            "improvement": 1930
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 2,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 4319,
+        "valueReceived": 3211,
+        "netValue": -1108,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "2-for-1",
+      "positionSwap": "QB consolidation",
+      "score": 120,
+      "combinedPowerGain": 2,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "PrinceofPizza",
+      "team1Gives": [
+        {
+          "name": "Anthony Richardson",
+          "position": "QB",
+          "value": 1237
+        },
+        {
+          "name": "D'Andre Swift",
+          "position": "RB",
+          "value": 946
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Zay Flowers",
+          "position": "WR",
+          "value": 2588
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2183,
+        "valueReceived": 2588,
+        "netValue": 405,
+        "lineupImprovement": 885,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Zay Flowers",
+            "replaces": "Davante Adams",
+            "improvement": 885
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.9,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 2588,
+        "valueReceived": 2183,
+        "netValue": -405,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "2-for-1",
+      "positionSwap": "WR consolidation",
+      "score": 119,
+      "combinedPowerGain": 0.9,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "mastab24",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Xavier Worthy",
+          "position": "WR",
+          "value": 1521
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "value": 1943
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 1521,
+        "valueReceived": 1943,
+        "netValue": 422,
+        "lineupImprovement": 1845,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tucker Kraft",
+            "replaces": "Cade Otton",
+            "improvement": 1845
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.9,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 1943,
+        "valueReceived": 1521,
+        "netValue": -422,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "WR → TE",
+      "score": 119,
+      "combinedPowerGain": 1.9,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "drobs",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Sam Darnold",
+          "position": "QB",
+          "value": 2075
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "value": 1943
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2075,
+        "valueReceived": 1943,
+        "netValue": -132,
+        "lineupImprovement": 1760,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tucker Kraft",
+            "replaces": "Mark Andrews",
+            "improvement": 1760
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.8,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 1943,
+        "valueReceived": 2075,
+        "netValue": 132,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "QB → TE",
+      "score": 118,
+      "combinedPowerGain": 1.8,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "PrinceofPizza",
+      "team1Gives": [
+        {
+          "name": "Dak Prescott",
+          "position": "QB",
+          "value": 3751
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Daniel Jones",
+          "position": "QB",
+          "value": 2389
+        },
+        {
+          "name": "Kyle Monangai",
+          "position": "RB",
+          "value": 822
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3751,
+        "valueReceived": 3211,
+        "netValue": -540,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "team2Impact": {
+        "valueGiven": 3211,
+        "valueReceived": 3751,
+        "netValue": 540,
+        "lineupImprovement": 1362,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Dak Prescott",
+            "replaces": "Daniel Jones",
+            "improvement": 1362
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.4,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-2",
+      "positionSwap": "QB consolidation",
+      "score": 114,
+      "combinedPowerGain": 1.4,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "PrinceofPizza",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Zay Flowers",
+          "position": "WR",
+          "value": 2588
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "value": 969
+        },
+        {
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "value": 1943
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2588,
+        "valueReceived": 2912,
+        "netValue": 324,
+        "lineupImprovement": 1812,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tucker Kraft",
+            "replaces": "Dalton Schultz",
+            "improvement": 1812
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.9,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 2912,
+        "valueReceived": 2588,
+        "netValue": -324,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "1-for-2",
+      "positionSwap": "WR consolidation",
+      "score": 114,
+      "combinedPowerGain": 1.9,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "PrinceofPizza",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Zay Flowers",
+          "position": "WR",
+          "value": 2588
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Luther Burden",
+          "position": "WR",
+          "value": 1587
+        },
+        {
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "value": 1943
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2588,
+        "valueReceived": 3530,
+        "netValue": 942,
+        "lineupImprovement": 1812,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tucker Kraft",
+            "replaces": "Dalton Schultz",
+            "improvement": 1812
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.9,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3530,
+        "valueReceived": 2588,
+        "netValue": -942,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "1-for-2",
+      "positionSwap": "WR consolidation",
+      "score": 114,
+      "combinedPowerGain": 1.9,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "PrinceofPizza",
+      "team2": "mjgrana",
+      "team1Gives": [
+        {
+          "name": "Daniel Jones",
+          "position": "QB",
+          "value": 2389
+        },
+        {
+          "name": "Bryce Young",
+          "position": "QB",
+          "value": 1465
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "value": 4506
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3854,
+        "valueReceived": 4506,
+        "netValue": 652,
+        "lineupImprovement": 2117,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Baker Mayfield",
+            "replaces": "Daniel Jones",
+            "improvement": 2117
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 2.2,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 4506,
+        "valueReceived": 3854,
+        "netValue": -652,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "2-for-1",
+      "positionSwap": "QB consolidation",
+      "score": 112,
+      "combinedPowerGain": 2.2,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "mjgrana",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "value": 4506
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "value": 1226
+        },
+        {
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "value": 1943
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 4506,
+        "valueReceived": 3169,
+        "netValue": -1337,
+        "lineupImprovement": 1658,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tucker Kraft",
+            "replaces": "T.J. Hockenson",
+            "improvement": 1658
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.7,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3169,
+        "valueReceived": 4506,
+        "netValue": 1337,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "1-for-2",
+      "positionSwap": "QB consolidation",
+      "score": 112,
+      "combinedPowerGain": 1.7,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "mjgrana",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "value": 4506
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Luther Burden",
+          "position": "WR",
+          "value": 1587
+        },
+        {
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "value": 1943
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 4506,
+        "valueReceived": 3530,
+        "netValue": -976,
+        "lineupImprovement": 1658,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tucker Kraft",
+            "replaces": "T.J. Hockenson",
+            "improvement": 1658
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.7,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3530,
+        "valueReceived": 4506,
+        "netValue": 976,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "1-for-2",
+      "positionSwap": "QB consolidation",
+      "score": 112,
+      "combinedPowerGain": 1.7,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "PrinceofPizza",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Tee Higgins",
+          "position": "WR",
+          "value": 3138
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "value": 1226
+        },
+        {
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "value": 969
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3138,
+        "valueReceived": 2195,
+        "netValue": -943,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "team2Impact": {
+        "valueGiven": 2195,
+        "valueReceived": 3138,
+        "netValue": 943,
+        "lineupImprovement": 130,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tee Higgins",
+            "replaces": "Brian Thomas",
+            "improvement": 130
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.1,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-2",
+      "positionSwap": "WR consolidation",
+      "score": 111,
+      "combinedPowerGain": 0.1,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "mastab24",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Xavier Worthy",
+          "position": "WR",
+          "value": 1521
+        },
+        {
+          "name": "Courtland Sutton",
+          "position": "WR",
+          "value": 1291
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Trevor Lawrence",
+          "position": "QB",
+          "value": 4319
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2812,
+        "valueReceived": 4319,
+        "netValue": 1507,
+        "lineupImprovement": 1402,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Trevor Lawrence",
+            "replaces": "Jared Goff",
+            "improvement": 1402
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.5,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 4319,
+        "valueReceived": 2812,
+        "netValue": -1507,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "2-for-1",
+      "positionSwap": "QB consolidation",
+      "score": 110,
+      "combinedPowerGain": 1.5,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "PrinceofPizza",
+      "team2": "Tishathefish",
+      "team1Gives": [
+        {
+          "name": "Tee Higgins",
+          "position": "WR",
+          "value": 3138
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Michael Penix",
+          "position": "QB",
+          "value": 1334
+        },
+        {
+          "name": "Jakobi Meyers",
+          "position": "WR",
+          "value": 842
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3138,
+        "valueReceived": 2176,
+        "netValue": -962,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "team2Impact": {
+        "valueGiven": 2176,
+        "valueReceived": 3138,
+        "netValue": 962,
+        "lineupImprovement": 984,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tee Higgins",
+            "replaces": "Travis Hunter",
+            "improvement": 984
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-2",
+      "positionSwap": "WR consolidation",
+      "score": 110,
+      "combinedPowerGain": 1,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Anthony Richardson",
+          "position": "QB",
+          "value": 1237
+        },
+        {
+          "name": "D'Andre Swift",
+          "position": "RB",
+          "value": 946
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Brian Thomas",
+          "position": "WR",
+          "value": 3008
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2183,
+        "valueReceived": 3008,
+        "netValue": 825,
+        "lineupImprovement": 1305,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Brian Thomas",
+            "replaces": "Davante Adams",
+            "improvement": 1305
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.4,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3008,
+        "valueReceived": 2183,
+        "netValue": -825,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "2-for-1",
+      "positionSwap": "WR consolidation",
+      "score": 109,
+      "combinedPowerGain": 1.4,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Anthony Richardson",
+          "position": "QB",
+          "value": 1237
+        },
+        {
+          "name": "Oronde Gadsden",
+          "position": "TE",
+          "value": 1090
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Brian Thomas",
+          "position": "WR",
+          "value": 3008
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2327,
+        "valueReceived": 3008,
+        "netValue": 681,
+        "lineupImprovement": 1305,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Brian Thomas",
+            "replaces": "Davante Adams",
+            "improvement": 1305
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.4,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3008,
+        "valueReceived": 2327,
+        "netValue": -681,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "2-for-1",
+      "positionSwap": "WR consolidation",
+      "score": 109,
+      "combinedPowerGain": 1.4,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "D'Andre Swift",
+          "position": "RB",
+          "value": 946
+        },
+        {
+          "name": "Oronde Gadsden",
+          "position": "TE",
+          "value": 1090
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Brian Thomas",
+          "position": "WR",
+          "value": 3008
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2036,
+        "valueReceived": 3008,
+        "netValue": 972,
+        "lineupImprovement": 1305,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Brian Thomas",
+            "replaces": "Davante Adams",
+            "improvement": 1305
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.4,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3008,
+        "valueReceived": 2036,
+        "netValue": -972,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "2-for-1",
+      "positionSwap": "WR consolidation",
+      "score": 109,
+      "combinedPowerGain": 1.4,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "mjgrana",
+      "team1Gives": [
+        {
+          "name": "Dak Prescott",
+          "position": "QB",
+          "value": 3751
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Travis Etienne",
+          "position": "RB",
+          "value": 2211
+        },
+        {
+          "name": "Terry McLaurin",
+          "position": "WR",
+          "value": 1536
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3751,
+        "valueReceived": 3747,
+        "netValue": -4,
+        "lineupImprovement": 1265,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Travis Etienne",
+            "replaces": "D'Andre Swift",
+            "improvement": 1265
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.3,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3747,
+        "valueReceived": 3751,
+        "netValue": 4,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "1-for-2",
+      "positionSwap": "QB consolidation",
+      "score": 108,
+      "combinedPowerGain": 1.3,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "mjgrana",
+      "team1Gives": [
+        {
+          "name": "Dak Prescott",
+          "position": "QB",
+          "value": 3751
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Travis Etienne",
+          "position": "RB",
+          "value": 2211
+        },
+        {
+          "name": "DJ Moore",
+          "position": "WR",
+          "value": 1020
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3751,
+        "valueReceived": 3231,
+        "netValue": -520,
+        "lineupImprovement": 1265,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Travis Etienne",
+            "replaces": "D'Andre Swift",
+            "improvement": 1265
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.3,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3231,
+        "valueReceived": 3751,
+        "netValue": 520,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "1-for-2",
+      "positionSwap": "QB consolidation",
+      "score": 108,
+      "combinedPowerGain": 1.3,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "mastab24",
+      "team2": "PrinceofPizza",
+      "team1Gives": [
+        {
+          "name": "Xavier Worthy",
+          "position": "WR",
+          "value": 1521
+        },
+        {
+          "name": "Courtland Sutton",
+          "position": "WR",
+          "value": 1291
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Tee Higgins",
+          "position": "WR",
+          "value": 3138
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2812,
+        "valueReceived": 3138,
+        "netValue": 326,
+        "lineupImprovement": 1102,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tee Higgins",
+            "replaces": "DK Metcalf",
+            "improvement": 1102
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.1,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3138,
+        "valueReceived": 2812,
+        "netValue": -326,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "2-for-1",
+      "positionSwap": "WR consolidation",
+      "score": 106,
+      "combinedPowerGain": 1.1,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "cosmohouck",
+      "team2": "Tishathefish",
+      "team1Gives": [
+        {
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "value": 1943
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Jordan Addison",
+          "position": "WR",
+          "value": 2124
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 1943,
+        "valueReceived": 2124,
+        "netValue": 181,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "team2Impact": {
+        "valueGiven": 2124,
+        "valueReceived": 1943,
+        "netValue": -181,
+        "lineupImprovement": 1647,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tucker Kraft",
+            "replaces": "Theo Johnson",
+            "improvement": 1647
+          }
+        ],
+        "starterLoss": 1062,
+        "estimatedPowerChange": 0.6,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "TE → WR",
+      "score": 106,
+      "combinedPowerGain": 0.6,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "mastab24",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Xavier Worthy",
+          "position": "WR",
+          "value": 1521
+        },
+        {
+          "name": "Courtland Sutton",
+          "position": "WR",
+          "value": 1291
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Brian Thomas",
+          "position": "WR",
+          "value": 3008
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2812,
+        "valueReceived": 3008,
+        "netValue": 196,
+        "lineupImprovement": 972,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Brian Thomas",
+            "replaces": "DK Metcalf",
+            "improvement": 972
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3008,
+        "valueReceived": 2812,
+        "netValue": -196,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "2-for-1",
+      "positionSwap": "WR consolidation",
+      "score": 105,
+      "combinedPowerGain": 1,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "PrinceofPizza",
+      "team2": "Tishathefish",
+      "team1Gives": [
+        {
+          "name": "Zay Flowers",
+          "position": "WR",
+          "value": 2588
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Michael Penix",
+          "position": "QB",
+          "value": 1334
+        },
+        {
+          "name": "Jakobi Meyers",
+          "position": "WR",
+          "value": 842
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 2588,
+        "valueReceived": 2176,
+        "netValue": -412,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "team2Impact": {
+        "valueGiven": 2176,
+        "valueReceived": 2588,
+        "netValue": 412,
+        "lineupImprovement": 434,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Zay Flowers",
+            "replaces": "Travis Hunter",
+            "improvement": 434
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.5,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-2",
+      "positionSwap": "WR consolidation",
+      "score": 105,
+      "combinedPowerGain": 0.5,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "mastab24",
+      "team1Gives": [
+        {
+          "name": "Dak Prescott",
+          "position": "QB",
+          "value": 3751
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Xavier Worthy",
+          "position": "WR",
+          "value": 1521
+        },
+        {
+          "name": "Courtland Sutton",
+          "position": "WR",
+          "value": 1291
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3751,
+        "valueReceived": 2812,
+        "netValue": -939,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "team2Impact": {
+        "valueGiven": 2812,
+        "valueReceived": 3751,
+        "netValue": 939,
+        "lineupImprovement": 834,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Dak Prescott",
+            "replaces": "Jared Goff",
+            "improvement": 834
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.9,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-2",
+      "positionSwap": "QB consolidation",
+      "score": 104,
+      "combinedPowerGain": 0.9,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "PrinceofPizza",
+      "team1Gives": [
+        {
+          "name": "Dak Prescott",
+          "position": "QB",
+          "value": 3751
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Daniel Jones",
+          "position": "QB",
+          "value": 2389
+        },
+        {
+          "name": "Bryce Young",
+          "position": "QB",
+          "value": 1465
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3751,
+        "valueReceived": 3854,
+        "netValue": 103,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "team2Impact": {
+        "valueGiven": 3854,
+        "valueReceived": 3751,
+        "netValue": -103,
+        "lineupImprovement": 1362,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Dak Prescott",
+            "replaces": "Daniel Jones",
+            "improvement": 1362
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 1.4,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-2",
+      "positionSwap": "QB consolidation",
+      "score": 104,
+      "combinedPowerGain": 1.4,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Dak Prescott",
+          "position": "QB",
+          "value": 3751
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "value": 1226
+        },
+        {
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "value": 1943
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3751,
+        "valueReceived": 3169,
+        "netValue": -582,
+        "lineupImprovement": 853,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tucker Kraft",
+            "replaces": "Oronde Gadsden",
+            "improvement": 853
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.9,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3169,
+        "valueReceived": 3751,
+        "netValue": 582,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "1-for-2",
+      "positionSwap": "QB consolidation",
+      "score": 104,
+      "combinedPowerGain": 0.9,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "cosmohouck",
+      "team1Gives": [
+        {
+          "name": "Dak Prescott",
+          "position": "QB",
+          "value": 3751
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Luther Burden",
+          "position": "WR",
+          "value": 1587
+        },
+        {
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "value": 1943
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 3751,
+        "valueReceived": 3530,
+        "netValue": -221,
+        "lineupImprovement": 853,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Tucker Kraft",
+            "replaces": "Oronde Gadsden",
+            "improvement": 853
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.9,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 3530,
+        "valueReceived": 3751,
+        "netValue": 221,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "1-for-2",
+      "positionSwap": "QB consolidation",
+      "score": 104,
+      "combinedPowerGain": 0.9,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "drobs",
+      "team2": "TophTT",
+      "team1Gives": [
+        {
+          "name": "Elic Ayomanor",
+          "position": "WR",
+          "value": 318
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Mason Taylor",
+          "position": "TE",
+          "value": 426
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 318,
+        "valueReceived": 426,
+        "netValue": 108,
+        "lineupImprovement": 243,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Mason Taylor",
+            "replaces": "Mark Andrews",
+            "improvement": 243
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.3,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 426,
+        "valueReceived": 318,
+        "netValue": -108,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "WR → TE",
+      "score": 103,
+      "combinedPowerGain": 0.3,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "drobs",
+      "team2": "TophTT",
+      "team1Gives": [
+        {
+          "name": "Tory Horton",
+          "position": "WR",
+          "value": 303
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Mason Taylor",
+          "position": "TE",
+          "value": 426
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 303,
+        "valueReceived": 426,
+        "netValue": 123,
+        "lineupImprovement": 243,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Mason Taylor",
+            "replaces": "Mark Andrews",
+            "improvement": 243
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.3,
+        "wouldImproveLineup": true
+      },
+      "team2Impact": {
+        "valueGiven": 426,
+        "valueReceived": 303,
+        "netValue": -123,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "WR → TE",
+      "score": 103,
+      "combinedPowerGain": 0.3,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "mastab24",
+      "team1Gives": [
+        {
+          "name": "Travis Kelce",
+          "position": "TE",
+          "value": 395
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Geno Smith",
+          "position": "QB",
+          "value": 360
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 395,
+        "valueReceived": 360,
+        "netValue": -35,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "team2Impact": {
+        "valueGiven": 360,
+        "valueReceived": 395,
+        "netValue": 35,
+        "lineupImprovement": 297,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Travis Kelce",
+            "replaces": "Cade Otton",
+            "improvement": 297
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.3,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "TE → QB",
+      "score": 103,
+      "combinedPowerGain": 0.3,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "mastab24",
+      "team1Gives": [
+        {
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "value": 370
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Geno Smith",
+          "position": "QB",
+          "value": 360
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 370,
+        "valueReceived": 360,
+        "netValue": -10,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "team2Impact": {
+        "valueGiven": 360,
+        "valueReceived": 370,
+        "netValue": 10,
+        "lineupImprovement": 272,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Dallas Goedert",
+            "replaces": "Cade Otton",
+            "improvement": 272
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.3,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "TE → QB",
+      "score": 103,
+      "combinedPowerGain": 0.3,
+      "bothImprove": false,
+      "fairExchange": true
+    },
+    {
+      "team1": "Shogunation",
+      "team2": "mastab24",
+      "team1Gives": [
+        {
+          "name": "Travis Kelce",
+          "position": "TE",
+          "value": 395
+        }
+      ],
+      "team2Gives": [
+        {
+          "name": "Pat Bryant",
+          "position": "WR",
+          "value": 359
+        }
+      ],
+      "team1Impact": {
+        "valueGiven": 395,
+        "valueReceived": 359,
+        "netValue": -36,
+        "lineupImprovement": 0,
+        "starterUpgrades": [],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0,
+        "wouldImproveLineup": false
+      },
+      "team2Impact": {
+        "valueGiven": 359,
+        "valueReceived": 395,
+        "netValue": 36,
+        "lineupImprovement": 297,
+        "starterUpgrades": [
+          {
+            "newPlayer": "Travis Kelce",
+            "replaces": "Cade Otton",
+            "improvement": 297
+          }
+        ],
+        "starterLoss": 0,
+        "estimatedPowerChange": 0.3,
+        "wouldImproveLineup": true
+      },
+      "type": "1-for-1 (need)",
+      "positionSwap": "TE → WR",
+      "score": 103,
+      "combinedPowerGain": 0.3,
+      "bothImprove": false,
+      "fairExchange": true
+    }
+  ]
+}
