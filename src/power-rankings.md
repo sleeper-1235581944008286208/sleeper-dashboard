@@ -126,43 +126,42 @@ const displayRankings = rankings.map(team => {
 </div>
 
 ```js
+// Build rankings rows as flat array of cells for proper grid layout
+const rankingsRows = displayRankings.flatMap((team, i) => {
+  const bg = i % 2 === 0 ? 'background: rgba(139, 92, 246, 0.03);' : '';
+  const border = 'border-bottom: 1px solid rgba(255,255,255,0.05);';
+  return [
+    html`<div style="padding: 0.75rem 0.5rem; text-align: left; font-weight: 700; color: #f8fafc; ${border} ${bg}">${team.powerRank}</div>`,
+    html`<div style="padding: 0.75rem 0.5rem; text-align: center; font-weight: 700; color: ${team.trendColor}; font-size: 1rem; ${border} ${bg}">${team.trend}</div>`,
+    html`<div style="padding: 0.75rem 0.5rem; text-align: left; color: #f8fafc; font-weight: 500; ${border} ${bg}">${team.teamName}</div>`,
+    html`<div style="padding: 0.75rem 0.5rem; text-align: right; font-weight: 700; color: #8b5cf6; ${border} ${bg}">${team.powerScore.toFixed(1)}</div>`,
+    html`<div style="padding: 0.75rem 0.5rem; text-align: right; color: #cbd5e1; ${border} ${bg}">${team.lineupValueScore.toFixed(1)}</div>`,
+    html`<div style="padding: 0.75rem 0.5rem; text-align: right; color: #cbd5e1; ${border} ${bg}">${team.performanceScore.toFixed(1)}</div>`,
+    html`<div style="padding: 0.75rem 0.5rem; text-align: right; color: #cbd5e1; ${border} ${bg}">${team.positionalScore.toFixed(1)}</div>`,
+    html`<div style="padding: 0.75rem 0.5rem; text-align: right; color: #cbd5e1; ${border} ${bg}">${team.depthScore.toFixed(1)}</div>`,
+    html`<div style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; white-space: nowrap; ${border} ${bg}">${team.wins}-${team.losses}</div>`
+  ];
+});
+
 const rankingsTableContent = html`
   <div class="card">
     <h3 style="margin-top: 0;">Team Power Rankings</h3>
     <p style="color: #cbd5e1; margin-bottom: 1.5rem;">
-      Teams ranked by composite Power Score. <span style="color: #22c55e; font-weight: bold;">▲</span> = roster suggests higher rank, <span style="color: #ef4444; font-weight: bold;">▼</span> = roster suggests lower rank.
+      Teams ranked by composite Power Score. <strong>▲</strong> = roster suggests higher rank, <strong>▼</strong> = roster suggests lower rank.
     </p>
     <div style="overflow-x: auto;">
-      <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
-        <thead>
-          <tr style="border-bottom: 2px solid rgba(139, 92, 246, 0.3);">
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase;">Rank</th>
-            <th style="padding: 0.75rem 0.25rem; text-align: center; width: 30px;"></th>
-            <th style="padding: 0.75rem 0.5rem; text-align: left; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase;">Team</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #8b5cf6; font-weight: 600; font-size: 0.7rem; text-transform: uppercase;">Power</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase;">Lineup</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase;">Perf</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase;">Pos</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase;">Depth</th>
-            <th style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.7rem; text-transform: uppercase;">W-L</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${displayRankings.map((team, i) => html`
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); ${i % 2 === 0 ? 'background: rgba(139, 92, 246, 0.03);' : ''}">
-              <td style="padding: 0.75rem 0.5rem; text-align: center; font-weight: 700; color: #f8fafc;">#${team.powerRank}</td>
-              <td style="padding: 0.75rem 0.25rem; text-align: center; font-weight: 700; color: ${team.trendColor}; font-size: 1rem;">${team.trend}</td>
-              <td style="padding: 0.75rem 0.5rem; text-align: left; color: #f8fafc; font-weight: 500;">${team.teamName}</td>
-              <td style="padding: 0.75rem 0.5rem; text-align: center; font-weight: 700; color: #8b5cf6; font-size: 1rem;">${team.powerScore.toFixed(1)}</td>
-              <td style="padding: 0.75rem 0.5rem; text-align: center; color: #cbd5e1;">${team.lineupValueScore.toFixed(1)}</td>
-              <td style="padding: 0.75rem 0.5rem; text-align: center; color: #cbd5e1;">${team.performanceScore.toFixed(1)}</td>
-              <td style="padding: 0.75rem 0.5rem; text-align: center; color: #cbd5e1;">${team.positionalScore.toFixed(1)}</td>
-              <td style="padding: 0.75rem 0.5rem; text-align: center; color: #cbd5e1;">${team.depthScore.toFixed(1)}</td>
-              <td style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 500;">${team.wins}-${team.losses}</td>
-            </tr>
-          `)}
-        </tbody>
-      </table>
+      <div class="rankings-grid" style="display: grid; grid-template-columns: 50px 50px 1fr 80px 70px 70px 70px 70px 70px; gap: 0; font-size: 0.875rem; min-width: 700px;">
+        <div style="padding: 0.75rem 0.5rem; text-align: left; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">#</div>
+        <div style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Trend</div>
+        <div style="padding: 0.75rem 0.5rem; text-align: left; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Team</div>
+        <div style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Power</div>
+        <div style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Lineup</div>
+        <div style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Perf</div>
+        <div style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Pos</div>
+        <div style="padding: 0.75rem 0.5rem; text-align: right; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Depth</div>
+        <div style="padding: 0.75rem 0.5rem; text-align: center; color: #94a3b8; font-weight: 600; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">Record</div>
+        ${rankingsRows}
+      </div>
     </div>
   </div>
 `;
