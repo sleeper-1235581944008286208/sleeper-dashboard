@@ -21,6 +21,14 @@ on:
         description: 'Specific week to generate (leave empty for all missing)'
         required: false
         type: string
+      league_type:
+        description: 'League type (dynasty or redraft)'
+        required: false
+        default: 'dynasty'
+        type: choice
+        options:
+          - dynasty
+          - redraft
 
 permissions:
   contents: write
@@ -60,6 +68,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SLEEPER_LEAGUE_ID: ${{ secrets.SLEEPER_LEAGUE_ID }}
           COMMENTATOR_REGION: ${{ github.event.inputs.region || secrets.COMMENTATOR_REGION }}
+          LEAGUE_TYPE: ${{ github.event.inputs.league_type || 'dynasty' }}
 
       - name: Check for new summaries
         id: check_changes
