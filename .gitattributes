@@ -1,0 +1,7 @@
+# Always keep our version of league-specific generated data during merges
+src/data/trade-summaries/** merge=ours
+src/data/week-summaries/** merge=ours
+
+# Keep our league ID in loaders
+src/data/trade-analysis.json.js merge=ours
+src/data/week-summaries.json.js merge=ours

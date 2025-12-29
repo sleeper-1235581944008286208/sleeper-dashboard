@@ -25,8 +25,15 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Configuration
-const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID || "1182940167115010048";
+const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID;
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
+
+if (!LEAGUE_ID) {
+  console.error('❌ Error: SLEEPER_LEAGUE_ID environment variable not set');
+  console.error('Please add your Sleeper league ID to .env file:');
+  console.error('SLEEPER_LEAGUE_ID=your-league-id');
+  process.exit(1);
+}
 
 if (!ANTHROPIC_API_KEY) {
   console.error('❌ Error: ANTHROPIC_API_KEY environment variable not set');
@@ -532,8 +539,8 @@ Return ONLY the summary text, no preamble or meta-commentary.`;
   const message = await anthropic.messages.create({
     model: 'claude-sonnet-4-5',
     max_tokens: 2000,
-    temperature: 1.0,
-    top_p: 0.95,  // Add nucleus sampling for more variety
+    // temperature: 1.0,
+    top_p: 0.80,  // Add nucleus sampling for more variety
     messages: [{
       role: 'user',
       content: prompt

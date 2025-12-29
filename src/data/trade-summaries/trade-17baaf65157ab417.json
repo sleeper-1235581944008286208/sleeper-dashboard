@@ -1,0 +1,160 @@
+{
+  "tradeId": "17baaf65157ab417",
+  "week": 3,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "bequietamy",
+    "Tmac1418"
+  ],
+  "sides": [
+    {
+      "teamName": "bequietamy",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 32.4,
+        "powerRank": 13,
+        "lineupValueScore": 28.8,
+        "performanceScore": 43.1,
+        "positionalScore": 32.4,
+        "depthScore": 4.2,
+        "totalTeams": 16,
+        "totalRosterValue": 17294
+      },
+      "tradeImpact": {
+        "valueGained": 597,
+        "valueLost": 2429,
+        "netValueChange": -1832,
+        "estimatedPowerScoreChange": -1.5,
+        "playersGained": [
+          {
+            "name": "Evan Engram",
+            "value": 138
+          },
+          {
+            "name": "Romeo Doubs",
+            "value": 459
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Juwan Johnson",
+            "value": 117
+          },
+          {
+            "name": "Luther Burden",
+            "value": 2312
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Evan Engram",
+          "position": "TE",
+          "team": "DEN",
+          "age": 31,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Romeo Doubs",
+          "position": "WR",
+          "team": "GB",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Juwan Johnson",
+          "position": "TE",
+          "team": "NO",
+          "age": 29,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Luther Burden",
+          "position": "WR",
+          "team": "CHI",
+          "age": 22,
+          "careerStage": "Developing"
+        }
+      ]
+    },
+    {
+      "teamName": "Tmac1418",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 36.1,
+        "powerRank": 9,
+        "lineupValueScore": 29.8,
+        "performanceScore": 49.8,
+        "positionalScore": 35.6,
+        "depthScore": 18.9,
+        "totalTeams": 16,
+        "totalRosterValue": 17875
+      },
+      "tradeImpact": {
+        "valueGained": 2429,
+        "valueLost": 597,
+        "netValueChange": 1832,
+        "estimatedPowerScoreChange": 1.5,
+        "playersGained": [
+          {
+            "name": "Juwan Johnson",
+            "value": 117
+          },
+          {
+            "name": "Luther Burden",
+            "value": 2312
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Evan Engram",
+            "value": 138
+          },
+          {
+            "name": "Romeo Doubs",
+            "value": 459
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Juwan Johnson",
+          "position": "TE",
+          "team": "NO",
+          "age": 29,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Luther Burden",
+          "position": "WR",
+          "team": "CHI",
+          "age": 22,
+          "careerStage": "Developing"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Evan Engram",
+          "position": "TE",
+          "team": "DEN",
+          "age": 31,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Romeo Doubs",
+          "position": "WR",
+          "team": "GB",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "Absolute madness from bequietamy here. You're sat at 13th out of 16, supposedly a \"playoff contender\" – have a day off – and you're trading away a tight end averaging 8.7 points per game for one giving you 6.7. What's the plan exactly? You've gone and swapped Juwan Johnson, who's producing, for a 31-year-old Evan Engram who promptly goes out and gives you even LESS after the deal. Criminal. And Luther Burden? He's a rookie, 22 years old, developing. You bin him off after THREE GAMES for Romeo Doubs who, fair play, improved a bit, but you've lost nearly 2,000 in value according to your own numbers. This is \"The Panic Merchant\" in full effect – making moves for the sake of making moves with no thought behind it whatsoever.\n\nNow Tmac1418, \"The Vulture,\" he's done what any smart manager does – he's taken advantage of someone who doesn't know what they're doing. Gained 1,832 in value, improved his power score, and he's sat there in 9th place getting stronger while his opponent gets weaker. Johnson kept producing at 8.3 PPG after the trade. Burden didn't work out immediately, dropped to 4.6, but that's the risk you take on a developing player – except Tmac has the DEPTH at 18.9 to absorb it. Meanwhile, bequietamy's depth is 4.2. FOUR POINT TWO. You can't afford to gamble away young assets when your bench is that thin.\n\nHere's my prediction: In two years, Luther Burden develops into a proper player – because that's what 22-year-olds do when you give them time – and bequietamy will be sat there wondering why they sold low on a rookie after three games. Engram will be retired or irrelevant at 33, and this trade will look even worse than it does now. The fundamentals are simple: you don't trade youth and production for age and decline when you're THIRTEENTH in the league. You especially don't do it when the numbers are screaming at you that you're losing value. This is poor decision-making, no accountability, no patience. Tmac's laughing all the way to the playoffs while The Panic Merchant is scrambling to explain how trading away a productive tight end made them better. It didn't.",
+  "generatedAt": "2025-12-28T22:21:49.932Z"
+}

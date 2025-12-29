@@ -1,0 +1,116 @@
+{
+  "tradeId": "c88386d3ae500e15",
+  "week": 1,
+  "season": "2023",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "finthefiddle",
+    "bequietamy"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 3858,
+        "valueLost": 242,
+        "netValueChange": 3616,
+        "estimatedPowerScoreChange": 3,
+        "playersGained": [
+          {
+            "name": "Tee Higgins",
+            "value": 3858
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Kenneth Gainwell",
+            "value": 242
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Tee Higgins",
+          "position": "WR",
+          "team": "CIN",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Kenneth Gainwell",
+          "position": "RB",
+          "team": "PIT",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "bequietamy",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 32.4,
+        "powerRank": 13,
+        "lineupValueScore": 28.8,
+        "performanceScore": 43.1,
+        "positionalScore": 32.4,
+        "depthScore": 4.2,
+        "totalTeams": 16,
+        "totalRosterValue": 17294
+      },
+      "tradeImpact": {
+        "valueGained": 242,
+        "valueLost": 3858,
+        "netValueChange": -3616,
+        "estimatedPowerScoreChange": -3,
+        "playersGained": [
+          {
+            "name": "Kenneth Gainwell",
+            "value": 242
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Tee Higgins",
+            "value": 3858
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Kenneth Gainwell",
+          "position": "RB",
+          "team": "PIT",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Tee Higgins",
+          "position": "WR",
+          "team": "CIN",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "This is absolutely disgraceful from bequietamy. Shocking. You're sat there at 13th out of 16, barely breathing, and you give away Tee Higgins for Kenneth Gainwell? Have a word with yourself.\n\nLet's call it what it is: \"The Fiddle\" has absolutely mugged off \"The Charity Case\" here. Week 1 of the season, and bequietamy's already waving the white flag. Tee Higgins hadn't even played a proper game yet - 0.0 points because it's Week 1 - and this manager panics like a frightened child. Higgins goes on to average 9.6 points per game over 50 games. Fifty games! Meanwhile, Gainwell barely improves, going from 9.4 to 10.3. Less than a point difference. You've traded away a proper WR1 for a middling running back who won't move the needle. Criminal.\n\nfinthefiddle's already top of the league with a 92 Power Score, stacked to the rafters, and somehow convinces a struggling team to make them even stronger. That's not clever trading - that's taking advantage of someone who doesn't know what they're doing. The value difference is staggering: +3,616 net value. You don't need to be a genius to see who won this. And bequietamy's already weak depth (4.2!) gets absolutely obliterated. No plan, no vision, just desperation.\n\nThe winner? finthefiddle, by a country mile. The loser? bequietamy, and frankly, they should be embarrassed. When you're 13th in the league, you don't give away your best assets for marginal gains. You fight, you build, you show some backbone. This is surrender dressed up as a trade. Unacceptable.",
+  "generatedAt": "2025-12-28T22:36:58.561Z"
+}

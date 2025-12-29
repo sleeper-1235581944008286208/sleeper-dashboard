@@ -1,5 +1,5 @@
 // Data loader for Sleeper matchups (all historical years)
-const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID || "1182940167115010048";
+const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID;
 
 async function fetchLeague(leagueId) {
   const response = await fetch(`https://api.sleeper.app/v1/league/${leagueId}`);

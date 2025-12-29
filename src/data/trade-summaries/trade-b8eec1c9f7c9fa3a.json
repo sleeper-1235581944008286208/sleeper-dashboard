@@ -1,0 +1,196 @@
+{
+  "tradeId": "b8eec1c9f7c9fa3a",
+  "week": 8,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "jdmorris",
+    "jamesclarkson96"
+  ],
+  "sides": [
+    {
+      "teamName": "jdmorris",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 34.5,
+        "powerRank": 10,
+        "lineupValueScore": 27.2,
+        "performanceScore": 51.3,
+        "positionalScore": 32.6,
+        "depthScore": 11.9,
+        "totalTeams": 16,
+        "totalRosterValue": 16362
+      },
+      "tradeImpact": {
+        "valueGained": 7449,
+        "valueLost": 4094,
+        "netValueChange": 3355,
+        "estimatedPowerScoreChange": 2.8,
+        "playersGained": [
+          {
+            "name": "Aaron Jones",
+            "value": 404
+          },
+          {
+            "name": "Bo Nix",
+            "value": 1465
+          },
+          {
+            "name": "Marvin Harrison",
+            "value": 5580
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Darnell Mooney",
+            "value": 162
+          },
+          {
+            "name": "Chase Brown",
+            "value": 3932
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Aaron Jones",
+          "position": "RB",
+          "team": "MIN",
+          "age": 31,
+          "careerStage": "Veteran/End of Career"
+        },
+        {
+          "name": "Bo Nix",
+          "position": "QB",
+          "team": "DEN",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Marvin Harrison",
+          "position": "WR",
+          "team": "ARI",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Darnell Mooney",
+          "position": "WR",
+          "team": "ATL",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Chase Brown",
+          "position": "RB",
+          "team": "CIN",
+          "age": 25,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Tank Dell",
+          "position": "WR",
+          "team": "HOU",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.5,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 47.7,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 4094,
+        "valueLost": 7449,
+        "netValueChange": -3355,
+        "estimatedPowerScoreChange": -2.8,
+        "playersGained": [
+          {
+            "name": "Darnell Mooney",
+            "value": 162
+          },
+          {
+            "name": "Chase Brown",
+            "value": 3932
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Aaron Jones",
+            "value": 404
+          },
+          {
+            "name": "Bo Nix",
+            "value": 1465
+          },
+          {
+            "name": "Marvin Harrison",
+            "value": 5580
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Darnell Mooney",
+          "position": "WR",
+          "team": "ATL",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Chase Brown",
+          "position": "RB",
+          "team": "CIN",
+          "age": 25,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Tank Dell",
+          "position": "WR",
+          "team": "HOU",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Aaron Jones",
+          "position": "RB",
+          "team": "MIN",
+          "age": 31,
+          "careerStage": "Veteran/End of Career"
+        },
+        {
+          "name": "Bo Nix",
+          "position": "QB",
+          "team": "DEN",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Marvin Harrison",
+          "position": "WR",
+          "team": "ARI",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Jamie Carragher",
+  "analysis": "Right, let me tell you something about this trade - this is absolutely SHOCKING business from jamesclarkson96. If you look at the value exchange here, this was always going to favor jdmorris, and the post-trade numbers prove it beyond any shadow of doubt. Chase Brown goes from averaging 10.3 points to 16.4 points - that's a +6.2 PPG explosion! Meanwhile, what does jdmorris get back? Marvin Harrison Jr. DROPS 3.3 points per game, Bo Nix craters by 8.4 points per game. This is a masterclass in selling high on name value and buying low on emerging talent.\n\nLook at the structure of what's happened here. jdmorris - I'm calling him \"The Liquidator\" - comes in at Week 8, ranked 10th of 16, knows he needs a shake-up, and what does he do? He bundles together three underperforming assets with big names and pedigree, packages them up like they're Harrods luxury goods, and ships them off for actual PRODUCTION. Chase Brown was the crown jewel going the other way, and he's gone on to become an absolute MONSTER. Meanwhile jamesclarkson96 - \"The Pedigree Collector\" - takes Aaron Jones at 31 years old, a rookie QB who's regressing to the mean, and a first-round receiver who can't get consistent targets. That's not building for the future, that's collecting trading cards! The power score impact tells you everything: +2.8 for jdmorris, -2.8 for jamesclarkson96. It's a perfect inverse - one team's treasure is literally the other team's trash.\n\nHere's my bold prediction: In two years' time, we'll look back at this trade and it'll be used in fantasy football forums as a cautionary tale about chasing names over production. Chase Brown will be a locked-in RB1, potentially worth double what he was in this deal, while Aaron Jones will be retired or a committee back, Marvin Harrison Jr. will still be frustratingly inconsistent in Arizona's mess of an offense, and Bo Nix... well, he might be decent, but he'll never justify the value given up here.\n\nThe winner? It's not even CLOSE - jdmorris absolutely FLEECED this deal. He got out from under aging assets and boom-or-bust rookies, secured a genuine workhorse running back in Chase Brown who's proven his worth, and still kept depth pieces. The Liquidator knew exactly what he was doing. jamesclarkson96 got sold a dream based on draft pedigree and preseason hype. In fantasy football, you play the percentages and the opportunities - jdmorris nailed both, while The Pedigree Collector got caught holding the bag on name value that never materialized into points. Tactical perfection versus tactical naivety.",
+  "generatedAt": "2025-12-28T22:33:02.058Z"
+}

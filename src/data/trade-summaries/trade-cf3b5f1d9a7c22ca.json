@@ -1,0 +1,116 @@
+{
+  "tradeId": "cf3b5f1d9a7c22ca",
+  "week": 4,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "ChunkyDog1998",
+    "jamesclarkson96"
+  ],
+  "sides": [
+    {
+      "teamName": "ChunkyDog1998",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 48.1,
+        "powerRank": 6,
+        "lineupValueScore": 43.4,
+        "performanceScore": 52.1,
+        "positionalScore": 51.5,
+        "depthScore": 61.8,
+        "totalTeams": 16,
+        "totalRosterValue": 26033
+      },
+      "tradeImpact": {
+        "valueGained": 2910,
+        "valueLost": 2180,
+        "netValueChange": 730,
+        "estimatedPowerScoreChange": 0.6,
+        "playersGained": [
+          {
+            "name": "Jordan Addison",
+            "value": 2910
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "C.J. Stroud",
+            "value": 2180
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Jordan Addison",
+          "position": "WR",
+          "team": "MIN",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "C.J. Stroud",
+          "position": "QB",
+          "team": "HOU",
+          "age": 24,
+          "careerStage": "Developing"
+        }
+      ]
+    },
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.5,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 47.7,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 2180,
+        "valueLost": 2910,
+        "netValueChange": -730,
+        "estimatedPowerScoreChange": -0.6,
+        "playersGained": [
+          {
+            "name": "C.J. Stroud",
+            "value": 2180
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Jordan Addison",
+            "value": 2910
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "C.J. Stroud",
+          "position": "QB",
+          "team": "HOU",
+          "age": 24,
+          "careerStage": "Developing"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jordan Addison",
+          "position": "WR",
+          "team": "MIN",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Simon Jordan",
+  "analysis": "Let me tell you something about this trade - it's an absolute FARCE, and I'll explain to you EXACTLY why one manager has been taken to the cleaners while the other is laughing all the way to the championship round.\n\nChunkyDog1998, sitting comfortably at sixth place with legitimate playoff aspirations, has just executed what I would call a masterclass in strategic asset management. They've identified a fundamental truth that separates the intelligent operators from the pretenders: in fantasy football, quarterbacks are ABUNDANT. They're giving away C.J. Stroud - a perfectly serviceable quarterback averaging 14.6 points per game - to acquire Jordan Addison, a young wide receiver entering his prime years. Now, Addison's production dropped slightly post-trade, but here's the critical point: wide receiver scarcity is REAL, quarterback scarcity is a MYTH. You can stream quarterbacks off the waiver wire every single week and compete. You cannot do that with starting-caliber wide receivers. ChunkyDog gains 730 in net value, improves their power score, and addresses depth at a position that actually matters. This is the equivalent of the Rams trading multiple first-round picks for Jalen Ramsey - you pay a premium at premium positions because that's where championships are won.\n\nMeanwhile, jamesclarkson96 - languishing at fourteenth place with a SHOCKING depth score of 4.5 - has just compounded their mediocrity. They're hemorrhaging 730 in value to acquire a quarterback when their team is fundamentally broken at every level. Your lineup value is 21.8! Your depth is non-existent! And you're trading away a young, developing wide receiver for a quarterback? This is NONSENSICAL. This is the fantasy football equivalent of the Browns trading for Deshaun Watson when they had seventeen other problems to address first. You don't fix a sinking ship by rearranging the deck chairs, and you certainly don't sacrifice long-term value when you're already out of contention.\n\nHere's my bold prediction: in two years' time, when Jordan Addison is a bonafide WR2 with upside and C.J. Stroud is still just another streaming quarterback option, ChunkyDog will look back at this as the trade that propelled them toward dynasty dominance. The winner here is OBVIOUS - ChunkyDog1998 by a country mile. They've gained leverage, improved their roster construction, and exploited someone who fundamentally misunderstands positional value. That's not just good business - that's BRILLIANT business.",
+  "generatedAt": "2025-12-28T22:22:30.381Z"
+}

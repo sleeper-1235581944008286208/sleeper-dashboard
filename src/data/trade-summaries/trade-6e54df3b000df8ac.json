@@ -1,0 +1,160 @@
+{
+  "tradeId": "6e54df3b000df8ac",
+  "week": 9,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "BigBishAl76",
+    "NiallCarslaw"
+  ],
+  "sides": [
+    {
+      "teamName": "BigBishAl76",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 60.5,
+        "powerRank": 2,
+        "lineupValueScore": 53.3,
+        "performanceScore": 72.8,
+        "positionalScore": 75.6,
+        "depthScore": 12.2,
+        "totalTeams": 16,
+        "totalRosterValue": 32028
+      },
+      "tradeImpact": {
+        "valueGained": 2082,
+        "valueLost": 2258,
+        "netValueChange": -176,
+        "estimatedPowerScoreChange": -0.1,
+        "playersGained": [
+          {
+            "name": "Jakobi Meyers",
+            "value": 1220
+          },
+          {
+            "name": "Jauan Jennings",
+            "value": 675
+          },
+          {
+            "name": "Rachaad White",
+            "value": 187
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Javonte Williams",
+            "value": 2258
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Jakobi Meyers",
+          "position": "WR",
+          "team": "JAX",
+          "age": 29,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Jauan Jennings",
+          "position": "WR",
+          "team": "SF",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Rachaad White",
+          "position": "RB",
+          "team": "TB",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Javonte Williams",
+          "position": "RB",
+          "team": "DAL",
+          "age": 25,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "NiallCarslaw",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 45.8,
+        "powerRank": 7,
+        "lineupValueScore": 51,
+        "performanceScore": 40.4,
+        "positionalScore": 52.3,
+        "depthScore": 5.8,
+        "totalTeams": 16,
+        "totalRosterValue": 30607
+      },
+      "tradeImpact": {
+        "valueGained": 2258,
+        "valueLost": 2082,
+        "netValueChange": 176,
+        "estimatedPowerScoreChange": 0.1,
+        "playersGained": [
+          {
+            "name": "Javonte Williams",
+            "value": 2258
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Jakobi Meyers",
+            "value": 1220
+          },
+          {
+            "name": "Jauan Jennings",
+            "value": 675
+          },
+          {
+            "name": "Rachaad White",
+            "value": 187
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Javonte Williams",
+          "position": "RB",
+          "team": "DAL",
+          "age": 25,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jakobi Meyers",
+          "position": "WR",
+          "team": "JAX",
+          "age": 29,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Jauan Jennings",
+          "position": "WR",
+          "team": "SF",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Rachaad White",
+          "position": "RB",
+          "team": "TB",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Jamie Carragher",
+  "analysis": "Right, let me tell you something about this trade - this is EXACTLY what happens when a team in win-now mode panics and overthinks their position. BigBishAl76, sitting pretty at rank #2 with a 60.5 power score, has absolutely bottled this one. Look at the numbers! They've traded away Javonte Williams, who's gone on to post 13.4 points per game - a MASSIVE 3.2 point improvement - and in return they've gotten Rachaad White who's completely fallen off a cliff at 7.4 PPG. That's a 4.1 point DROP! Yes, Meyers and Jennings have ticked up slightly, but we're talking 2.8 and 1.6 points respectively. You don't win fantasy championships by spreading your eggs across three baskets when one of those baskets has got a hole in the bottom! The math is brutal here - they lost 176 in net value, and more importantly, they've weakened the most scarce position on the board. Running backs with volume are GOLD in fantasy, and they've essentially traded one ascending back for one that's lost his role in Tampa.\n\nNow, NiallCarslaw at rank #7 - this lad's pulled off a proper heist, hasn't he? He's moved two WR2s and a declining running back for a genuine RB1 in Dallas. The depth argument doesn't hold water when you look at BigBishAl's positional score - they were already at 75.6! They didn't NEED depth at receiver; they needed to consolidate talent at running back. This reminds me of when the Dolphins traded for Jay Ajayi back in 2017 - everyone thought Philly was mad giving up a starting running back for a fourth-rounder, but they understood positional value and scarcity. NiallCarslaw has done the reverse here, turning depth pieces into a cornerstone asset.\n\nHere's my bold prediction: in two years' time, we'll look back at this as the trade that cost BigBishAl76 a championship run. Williams is 25 years old in a Dallas offense - he's got AT LEAST two more prime years ahead of him. Meanwhile, White's already showing his limitations at 26, and those two receivers? They're on the wrong side of their peaks. The winner here is CLEARLY NiallCarslaw, and it's not even close. Sometimes in fantasy, like in football, you've got to be ruthless and back quality over quantity. BigBishAl76 forgot that fundamental rule, and they'll be regretting this one come playoff time.",
+  "generatedAt": "2025-12-28T22:25:58.851Z"
+}

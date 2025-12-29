@@ -1,0 +1,58 @@
+{
+  "week": 9,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "persona": "Jamie Carragher",
+  "summary": "**\"ABSOLUTE CARNAGE THIS WEEK - AND IF YOU SCORED UNDER 100, YOU NEED TO HAVE A SERIOUS WORD WITH YOURSELF!\"**\n\nListen, I've seen some comprehensive performances in my time, but what we witnessed in Week 9 was a masterclass in separation between the elite and the also-rans. Eight matches, NOT A SINGLE ONE decided by less than 30 points - that's not a fantasy football week, that's a demolition derby! Let's start with the absolute massacre: stevenbar24 putting 151.9 past ChunkyDog1998's measly 73.56. Now, ChunkyDog1998 - let's call him \"The Invisible Dog\" after that performance - is ranked sixth in the power rankings, averaging 48.1 points above projection, and he puts up 73? That's criminal! Meanwhile, Caleb Williams goes absolutely nuclear with 47.7 points for stevenbar24. FORTY-SEVEN POINT SEVEN! When your quarterback puts up nearly as many points as your opponent's entire squad, you know it's been a proper battering. Ashton Jeanty chipped in with 21.4, and that's your two-week hot streak right there - riding the wave of form when it matters.\n\nBut here's where it gets really interesting from a tactical standpoint: finthefiddle - \"The Fantasy Maestro\" sitting pretty at number one in the power rankings - absolutely dismantled Tmac1418 with 174.56 points. The highest score of the week, and it wasn't even close! Christian McCaffrey returning from injury with 36.8 points, that's what elite players do. But the real story? Colston Loveland at tight end with 29.3 points - TWENTY-NINE POINT THREE from a tight end! That's the kind of positional advantage that wins you championships. Now, Jahmyr Gibbs only managed 4.3 points, which tells you everything about how the Lions are managing that backfield, but when you're scoring 174, you can carry a dud or two. That's what separates the consistent scorers from the volatile ones - depth of production across your roster.\n\nLet me tell you about some individual brilliance and absolute howlers this week. Drake London putting up 37.3 for MarkusArnold in a 41-point victory - that's your game-winner right there. Brock Bowers with 39.3 points for chitown314, who's trending up at exactly the right time with a recent average of 123.4. These are the performances that define seasons! On the flip side, we need to talk about the disasters: Alvin Kamara with 0.2 points for bequietamy - POINT TWO! That's not a running back performance, that's a statistical error! Roman Wilson actually going into NEGATIVE points at -1.1 for danielb6, who managed just 69.28 total - the lowest score of the week. When your wide receiver costs you points, you know it's been a mare of a weekend.\n\nThe quarterback class absolutely dominated this week, and if you look at the tactical logic here, it makes perfect sense with the matchups we had. Geno Smith dropping 34.8 for raaaaaidddderrrrrs in a 72-point demolition of decdweir, paired with Rico Dowdle's 32.6 - that's 67 points from two positions! Sam Darnold with 33.2 for BigBishAl76, Jaxson Dart with 33.7 for NiallCarslaw, Josh Allen with 36.8 for mikeybhoy - these are league-winning performances. But here's the thing: mikeybhoy LOST despite Josh Allen and Davante Adams combining for nearly 59 points, because chitown314 had Brock Bowers and Trevor Lawrence going absolutely mental. That's fantasy football - you can do everything right and still get beat when someone else's players hit form. Stephen375 needs a serious intervention though - three-week cold streak, trending down to 91.4 average, and sitting dead last at number 16 in the power rankings. When Patrick Mahomes with 15.5 is your top performer and you've got players like Jaydon Blue posting absolute zeroes, you're not competing, you're just making up the numbers. Sort it out!",
+  "generatedAt": "2025-12-28T22:13:15.070Z",
+  "matchupScores": [
+    {
+      "team1": "bequietamy",
+      "team1Score": 103.22,
+      "team2": "BigBishAl76",
+      "team2Score": 148.3
+    },
+    {
+      "team1": "chitown314",
+      "team1Score": 156.58,
+      "team2": "mikeybhoy",
+      "team2Score": 124.92
+    },
+    {
+      "team1": "ChunkyDog1998",
+      "team1Score": 73.56,
+      "team2": "stevenbar24",
+      "team2Score": 151.9
+    },
+    {
+      "team1": "decdweir",
+      "team1Score": 94.54,
+      "team2": "raaaaaidddderrrrrs",
+      "team2Score": 167.06
+    },
+    {
+      "team1": "finthefiddle",
+      "team1Score": 174.56,
+      "team2": "Tmac1418",
+      "team2Score": 119.92
+    },
+    {
+      "team1": "jdmorris",
+      "team1Score": 116.7,
+      "team2": "stephen375",
+      "team2Score": 83.8
+    },
+    {
+      "team1": "MarkusArnold",
+      "team1Score": 153.74,
+      "team2": "jamesclarkson96",
+      "team2Score": 111.76
+    },
+    {
+      "team1": "NiallCarslaw",
+      "team1Score": 124.44,
+      "team2": "danielb6",
+      "team2Score": 69.28
+    }
+  ]
+}

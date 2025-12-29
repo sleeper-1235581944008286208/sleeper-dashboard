@@ -1,0 +1,130 @@
+{
+  "tradeId": "d924a72ea8dcf2d5",
+  "week": 4,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "jamesclarkson96",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 5116,
+        "valueLost": 323,
+        "netValueChange": 4793,
+        "estimatedPowerScoreChange": 4,
+        "playersGained": [
+          {
+            "name": "Chris Olave",
+            "value": 5116
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Rhamondre Stevenson",
+            "value": 323
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Chris Olave",
+          "position": "WR",
+          "team": "NO",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Rhamondre Stevenson",
+          "position": "RB",
+          "team": "NE",
+          "age": 27,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Tory Horton",
+          "position": "WR",
+          "team": "SEA",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.5,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 47.7,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 323,
+        "valueLost": 5116,
+        "netValueChange": -4793,
+        "estimatedPowerScoreChange": -4,
+        "playersGained": [
+          {
+            "name": "Rhamondre Stevenson",
+            "value": 323
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Chris Olave",
+            "value": 5116
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Rhamondre Stevenson",
+          "position": "RB",
+          "team": "NE",
+          "age": 27,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Tory Horton",
+          "position": "WR",
+          "team": "SEA",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Chris Olave",
+          "position": "WR",
+          "team": "NO",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Jamie Carragher",
+  "analysis": "Right, let me tell you something about this trade - this is TEXTBOOK stuff from what I'm calling \"The Shark\" finthefiddle absolutely MUGGING \"The Charitable Soul\" jamesclarkson96 in broad daylight. Week 4, both teams are still figuring out what they've got, and finthefiddle - sitting pretty at number one with a 92 Power Score - spots blood in the water. They see a struggling manager ranked 14th out of 16, and they pounce. Look at the value exchange here: +4,793 net value for finthefiddle. That's not a trade, that's a HEIST! You're the top team in the league, you don't NEED to make this move, but you make it anyway because you can see Chris Olave is about to explode and you're getting him for essentially nothing. Rhamondre Stevenson averaging 8.5 points per game? That's replacement level! And Tory Horton's a rookie throwing up 7.1 over four games - he's a lottery ticket at best!\n\nNow here's where it gets absolutely CRIMINAL - look at what happened after the trade! Chris Olave goes from 7.3 points per game to 15.5! That's more than DOUBLING his output! Meanwhile, Stevenson? He goes from 8.5 to 8.9 - a measly 0.4 point improvement! Jamesclarkson96 essentially traded away a player who became a legitimate WR1 for a middling running back who barely moved the needle. If you're sitting at 29.5 Power Score, ranked 14th, you cannot afford to be giving away players entering their absolute peak for depth pieces. You need to be ACQUIRING the Chris Olaves of the world, not shipping them out! The Shark knew exactly what they were doing - they saw the positional value, they understood WR depth in fantasy, and they exploited a weaker manager's desperation for running back help.\n\nThe winner here? It's not even CLOSE - finthefiddle wins this trade by an absolute MILE. They added +4 to their Power Score while jamesclarkson96 dropped -4, and when you're already the best team in the league, that's how you build a championship roster. You take advantage of market inefficiencies, you buy low on talent about to break out, and you sell high on mediocrity dressed up as scarcity. The Charitable Soul got absolutely DONE here, and I'll tell you what - in a competitive league, this is the kind of trade that haunts you for the entire season. Chris Olave for Rhamondre Stevenson straight up would've been dodgy enough, but getting fleeced THIS badly when you're already near the bottom? That's how you guarantee you're picking in the top three next year's draft. Absolutely schooled.",
+  "generatedAt": "2025-12-28T22:22:51.066Z"
+}

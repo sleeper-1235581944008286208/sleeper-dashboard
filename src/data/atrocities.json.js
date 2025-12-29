@@ -1,6 +1,6 @@
 // Data loader for atrocity score analysis
 // Analyzes lineup decisions and calculates atrocity scores
-const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID || "1182940167115010048";
+const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID;
 
 /**
  * Fetch all required data

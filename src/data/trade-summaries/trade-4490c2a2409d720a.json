@@ -1,0 +1,182 @@
+{
+  "tradeId": "4490c2a2409d720a",
+  "week": 2,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "stephen375",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 18651,
+        "valueLost": 7402,
+        "netValueChange": 11249,
+        "estimatedPowerScoreChange": 9.4,
+        "playersGained": [
+          {
+            "name": "Jahmyr Gibbs",
+            "value": 9227
+          },
+          {
+            "name": "Jaxon Smith-Njigba",
+            "value": 9424
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Dallas Goedert",
+            "value": 521
+          },
+          {
+            "name": "Nico Collins",
+            "value": 6455
+          },
+          {
+            "name": "Jacory Croskey-Merritt",
+            "value": 426
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "team": "DET",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "team": "SEA",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "team": "PHI",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Nico Collins",
+          "position": "WR",
+          "team": "HOU",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jacory Croskey-Merritt",
+          "position": "RB",
+          "team": "WAS",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "stephen375",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 27.3,
+        "powerRank": 16,
+        "lineupValueScore": 28.4,
+        "performanceScore": 23.4,
+        "positionalScore": 37.4,
+        "depthScore": 9.7,
+        "totalTeams": 16,
+        "totalRosterValue": 17055
+      },
+      "tradeImpact": {
+        "valueGained": 7402,
+        "valueLost": 18651,
+        "netValueChange": -11249,
+        "estimatedPowerScoreChange": -9.4,
+        "playersGained": [
+          {
+            "name": "Dallas Goedert",
+            "value": 521
+          },
+          {
+            "name": "Nico Collins",
+            "value": 6455
+          },
+          {
+            "name": "Jacory Croskey-Merritt",
+            "value": 426
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Jahmyr Gibbs",
+            "value": 9227
+          },
+          {
+            "name": "Jaxon Smith-Njigba",
+            "value": 9424
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "team": "PHI",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Nico Collins",
+          "position": "WR",
+          "team": "HOU",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jacory Croskey-Merritt",
+          "position": "RB",
+          "team": "WAS",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "team": "DET",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "team": "SEA",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Simon Jordan",
+  "analysis": "Look, this is an absolute masterclass in exploitation, and I'm not mincing my words here. What we've witnessed is the fantasy football equivalent of the Herschel Walker trade – and stephen375 is playing the role of the Minnesota Vikings, getting absolutely fleeced by a contender who knew EXACTLY what they needed and took ruthless advantage of a rebuilding team's desperation.\n\nLet me be crystal clear about what's happened here: finthefiddle, sitting pretty at number one with a Power Score of 92, has identified the PRECISE moment in Week 2 to strike. They've given up a tight end averaging 5.4 points per game and a collection of assets that, quite frankly, don't move the needle for a championship push, and they've acquired Jahmyr Gibbs – who then proceeds to explode for 22.4 PPG – and Jaxon Smith-Njigba who nearly DOUBLES his production to 19.6 PPG. The net value swing of +11,249 isn't just a number on a spreadsheet; it's the difference between winning your league and wondering what might have been. Meanwhile, stephen375, languishing at dead last with a Power Score of 27.3, somehow convinced themselves that Dallas Goedert and Nico Collins were the building blocks of a future dynasty. Here's the problem: if you're rebuilding, you don't trade away 23-year-old running backs who are about to go nuclear! You've sold low on premium youth and bought high on aging assets. That's not rebuilding, that's capitulation.\n\nAnd here's my bold prediction – in two years' time, when Jahmyr Gibbs is a consensus top-five dynasty asset and JSN is a perennial WR1, we'll look back at this trade as the moment finthefiddle locked in their dynasty dominance while stephen375 condemned themselves to perpetual mediocrity. Goedert will be retired or irrelevant, and they'll have nothing to show for giving away a generational RB talent at precisely the wrong moment. The timing of this trade in Week 2 was CRUCIAL – early enough that the league hadn't fully priced in what these players would become, late enough that a savvy contender could see the writing on the wall. That's not luck, that's leveraging information asymmetry, and stephen375 got absolutely taken to the cleaners. If you're going to rebuild, you rebuild with YOUTH and UPSIDE, not with a 30-year-old tight end who's already shown you who he is. This isn't complicated – it's Commerce 101, and one manager clearly skipped that lecture.",
+  "generatedAt": "2025-12-28T22:18:49.905Z"
+}

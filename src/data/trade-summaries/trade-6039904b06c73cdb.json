@@ -1,0 +1,174 @@
+{
+  "tradeId": "6039904b06c73cdb",
+  "week": 2,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "raaaaaidddderrrrrs",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 94,
+        "valueLost": 3354,
+        "netValueChange": -3260,
+        "estimatedPowerScoreChange": -2.7,
+        "playersGained": [
+          {
+            "name": "Cooper Kupp",
+            "value": 94
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Aaron Rodgers",
+            "value": 25
+          },
+          {
+            "name": "Kenneth Walker",
+            "value": 2938
+          },
+          {
+            "name": "Adonai Mitchell",
+            "value": 391
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Cooper Kupp",
+          "position": "WR",
+          "team": "SEA",
+          "age": 32,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Zack Moss",
+          "position": "RB",
+          "team": "FA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Aaron Rodgers",
+          "position": "QB",
+          "team": "PIT",
+          "age": 42,
+          "careerStage": "Veteran/End of Career"
+        },
+        {
+          "name": "Kenneth Walker",
+          "position": "RB",
+          "team": "SEA",
+          "age": 25,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Adonai Mitchell",
+          "position": "WR",
+          "team": "NYJ",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "raaaaaidddderrrrrs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 34,
+        "powerRank": 12,
+        "lineupValueScore": 23.1,
+        "performanceScore": 59.6,
+        "positionalScore": 29.1,
+        "depthScore": 4.4,
+        "totalTeams": 16,
+        "totalRosterValue": 13895
+      },
+      "tradeImpact": {
+        "valueGained": 3354,
+        "valueLost": 94,
+        "netValueChange": 3260,
+        "estimatedPowerScoreChange": 2.7,
+        "playersGained": [
+          {
+            "name": "Aaron Rodgers",
+            "value": 25
+          },
+          {
+            "name": "Kenneth Walker",
+            "value": 2938
+          },
+          {
+            "name": "Adonai Mitchell",
+            "value": 391
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Cooper Kupp",
+            "value": 94
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Aaron Rodgers",
+          "position": "QB",
+          "team": "PIT",
+          "age": 42,
+          "careerStage": "Veteran/End of Career"
+        },
+        {
+          "name": "Kenneth Walker",
+          "position": "RB",
+          "team": "SEA",
+          "age": 25,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Adonai Mitchell",
+          "position": "WR",
+          "team": "NYJ",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Cooper Kupp",
+          "position": "WR",
+          "team": "SEA",
+          "age": 32,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Zack Moss",
+          "position": "RB",
+          "team": "FA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Alan Shearer",
+  "analysis": "Right, let's get stuck into this one because what we've got here is a masterclass in highway robbery. Week 2 of the season, and \"The Shark\" finthefiddle—sitting pretty at the top of the table with a 92 power score—has just been absolutely done over by \"The Vulture\" raaaaaidddderrrrrs. And I mean *done over*. This isn't just a bad trade, this is the kind of deal that makes you question whether someone's phone got nicked and the trade was sent by their mate down the pub.\n\nLet's talk facts, because facts don't lie. Finthefiddle gave up Kenneth Walker, who's banging in 10.2 points per game and continues to deliver at 10.8 after the deal, plus Aaron Rodgers who went from 8.2 to absolutely lighting it up at 15.2 PPG. That's a +7.0 swing! Meanwhile, what did they get back? Cooper Kupp, who promptly *dropped* from 8.7 to 6.6, and Zack Moss who absolutely fell off a cliff from 9.5 to 3.5 points per game. That's a -6.0 collapse! At the end of the day, this comes down to points—and finthefiddle traded away players who delivered them for players who categorically did not. The numbers are staring you right in the face: -3,260 in net value. That's not a trade, that's a donation.\n\nHere's what baffles me—finthefiddle was in win-now mode, ranked #1 in the league, and they've traded away a prime running back in Walker and a quarterback who found the fountain of youth for a declining 32-year-old receiver and a backup RB who barely saw the pitch. The Vulture, sitting down at #12, pulled off the heist of the century. They added +2.7 to their power score while The Shark lost the same amount. Rodgers at 42 years old has outscored both players finthefiddle received *combined*. This is the kind of trade that costs you championships.\n\n**VERDICT: Winner - raaaaaidddderrrrrs (and it's not even close). Loser - finthefiddle.** The Shark got circled by The Vulture in Week 2 and never saw it coming. Sometimes in fantasy football, you make a move that looks clever on paper and turns into a nightmare. This wasn't even clever on paper—it was a disaster from the jump, and the results prove it beyond any shadow of doubt. Absolutely shocking business from the league leader.",
+  "generatedAt": "2025-12-28T22:30:11.988Z"
+}

@@ -1,0 +1,160 @@
+{
+  "tradeId": "7455e70eca261c61",
+  "week": 10,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "NiallCarslaw",
+    "BigBishAl76"
+  ],
+  "sides": [
+    {
+      "teamName": "BigBishAl76",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 60.5,
+        "powerRank": 2,
+        "lineupValueScore": 53.3,
+        "performanceScore": 72.8,
+        "positionalScore": 75.6,
+        "depthScore": 12.2,
+        "totalTeams": 16,
+        "totalRosterValue": 32028
+      },
+      "tradeImpact": {
+        "valueGained": 6311,
+        "valueLost": 9611,
+        "netValueChange": -3300,
+        "estimatedPowerScoreChange": -2.7,
+        "playersGained": [
+          {
+            "name": "Parker Washington",
+            "value": 224
+          },
+          {
+            "name": "Bucky Irving",
+            "value": 6087
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Justin Jefferson",
+            "value": 9424
+          },
+          {
+            "name": "Rachaad White",
+            "value": 187
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Parker Washington",
+          "position": "WR",
+          "team": "JAX",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Bucky Irving",
+          "position": "RB",
+          "team": "TB",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "team": "MIN",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Rachaad White",
+          "position": "RB",
+          "team": "TB",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "NiallCarslaw",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 45.8,
+        "powerRank": 7,
+        "lineupValueScore": 51,
+        "performanceScore": 40.4,
+        "positionalScore": 52.3,
+        "depthScore": 5.8,
+        "totalTeams": 16,
+        "totalRosterValue": 30607
+      },
+      "tradeImpact": {
+        "valueGained": 9611,
+        "valueLost": 6311,
+        "netValueChange": 3300,
+        "estimatedPowerScoreChange": 2.7,
+        "playersGained": [
+          {
+            "name": "Justin Jefferson",
+            "value": 9424
+          },
+          {
+            "name": "Rachaad White",
+            "value": 187
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Parker Washington",
+            "value": 224
+          },
+          {
+            "name": "Bucky Irving",
+            "value": 6087
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "team": "MIN",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Rachaad White",
+          "position": "RB",
+          "team": "TB",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Parker Washington",
+          "position": "WR",
+          "team": "JAX",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Bucky Irving",
+          "position": "RB",
+          "team": "TB",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Jamie Carragher",
+  "analysis": "Right, let me break this one down for you because this is ABSOLUTE MADNESS from BigBishAl76! Look at what's happened here - you're the number two team in the league, you're in win-now mode, and you've just traded away JUSTIN JEFFERSON and Rachaad White for Parker Washington and Bucky Irving? I'm sorry, but that is a CATASTROPHIC decision!\n\nIf you look at the numbers, they tell you everything you need to know. BigBishAl76 - let's call him \"The Desperate Gambler\" - has lost 3,300 in net value and dropped 2.7 power score points when he's supposed to be CHALLENGING FOR A CHAMPIONSHIP! Meanwhile, NiallCarslaw - \"The Patient Opportunist\" - sitting there at rank seven, he's robbed him BLIND! He's gained that 3,300 value and boosted his power score by 2.7. This reminds me of the Herschel Walker trade, where the Vikings mortgaged their future for immediate success, except BigBishAl's done it in REVERSE - he's the one giving up the established stars! Post-trade, Jefferson's averaging 6.4 PPG and White's at 6.9 - yes, they've declined, but you don't panic sell elite assets when you're in second place! Washington's bumped up to 10.8 PPG, fair enough, but Irving's DROPPED to 9.4! \n\nThe tactical logic here is completely backwards. When you're at 60.5 power score and ranked second, you need STABILITY in your starting lineup, not lottery tickets! BigBishAl's depth score is already weak at 12.2 - he didn't need to consolidate, he needed to ADD quality! NiallCarslaw's playing the long game beautifully here, buying low on Jefferson and White when their value's temporarily suppressed, banking on regression to the mean. The rivalry angle? This could be the trade that DEFINES both seasons - either BigBishAl looks like a genius if Irving becomes the lead back, or NiallCarslaw leapfrogs him in the standings with the two proven commodities. My money's on The Patient Opportunist laughing all the way to the playoffs!",
+  "generatedAt": "2025-12-28T22:26:32.628Z"
+}

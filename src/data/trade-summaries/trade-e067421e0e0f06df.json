@@ -1,0 +1,158 @@
+{
+  "tradeId": "e067421e0e0f06df",
+  "week": 11,
+  "season": "2023",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "finthefiddle",
+    "ChunkyDog1998"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 94,
+        "valueLost": 2938,
+        "netValueChange": -2844,
+        "estimatedPowerScoreChange": -2.4,
+        "playersGained": [
+          {
+            "name": "Cooper Kupp",
+            "value": 94
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Kenneth Walker",
+            "value": 2938
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Logan Thomas",
+          "position": "TE",
+          "team": "FA",
+          "age": 33,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Cooper Kupp",
+          "position": "WR",
+          "team": "SEA",
+          "age": 32,
+          "careerStage": "Declining"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Joshua Dobbs",
+          "position": "QB",
+          "team": "NE",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Kenneth Walker",
+          "position": "RB",
+          "team": "SEA",
+          "age": 25,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Luke Musgrave",
+          "position": "TE",
+          "team": "GB",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "ChunkyDog1998",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 48.1,
+        "powerRank": 6,
+        "lineupValueScore": 43.4,
+        "performanceScore": 52.1,
+        "positionalScore": 51.5,
+        "depthScore": 61.8,
+        "totalTeams": 16,
+        "totalRosterValue": 26033
+      },
+      "tradeImpact": {
+        "valueGained": 2938,
+        "valueLost": 94,
+        "netValueChange": 2844,
+        "estimatedPowerScoreChange": 2.4,
+        "playersGained": [
+          {
+            "name": "Kenneth Walker",
+            "value": 2938
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Cooper Kupp",
+            "value": 94
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Joshua Dobbs",
+          "position": "QB",
+          "team": "NE",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Kenneth Walker",
+          "position": "RB",
+          "team": "SEA",
+          "age": 25,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Luke Musgrave",
+          "position": "TE",
+          "team": "GB",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Logan Thomas",
+          "position": "TE",
+          "team": "FA",
+          "age": 33,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Cooper Kupp",
+          "position": "WR",
+          "team": "SEA",
+          "age": 32,
+          "careerStage": "Declining"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Alan Shearer",
+  "analysis": "Right, let me tell you something about this trade - it's an absolute disaster for finthefiddle, and the numbers don't lie. When you're sat at the top of the league with a Power Score of 92, you don't mortgage your future for a 33-year-old tight end averaging 7.9 points per game. That's madness. This reminds me of the Herschel Walker trade back in 1989 - one team thinking they're getting the final piece for a championship run, but instead they've handed their future to the opposition on a silver platter. At the end of the day, finthefiddle gave up Kenneth Walker, a 25-year-old running back in his prime, and Luke Musgrave, who's just entering his best years, for Cooper Kupp at 32 and Logan Thomas who's clearly past it. The value lost here is staggering - nearly 3,000 points of value evaporated. ChunkyDog1998 absolutely mugged them off.\n\nHere's what really grinds my gears about this deal - the timing. Week 11, you're the number one team, and you panic? Joshua Dobbs was putting up 17.9 points per game through three matches. Yes, he fell off a cliff afterward, but you don't know that at the time. You're trading away a hot quarterback and a reliable RB1 for what? A tight end who promptly drops to 3.6 PPG after the trade? That's criminal. The post-trade performance tells you everything you need to know: Logan Thomas dropped 4.3 points per game, while Dobbs - despite his own struggles - was the kind of asset ChunkyDog1998 could flip or build around. Kenneth Walker maintained his production at over 10 PPG. You simply cannot give up that kind of reliability when you're in win-now mode.\n\nMy bold prediction? In two years' time, we'll look back at this as the trade that cost finthefiddle a dynasty championship. ChunkyDog1998 jumped from sixth place with a 48.1 Power Score and gained 2.4 points of power immediately - that's massive movement in the standings. They've got Walker locked in during his prime years, and they robbed finthefiddle blind. Meanwhile, the top team in the league lost 2.4 Power Score points and got older, slower, and less productive. This is the kind of trade that creates a rivalry, because finthefiddle will be watching ChunkyDog1998 ride Kenneth Walker to championships while they're left holding the bag with aging veterans. Mark my words - this deal will haunt finthefiddle for years to come. Shocking business, absolutely shocking.",
+  "generatedAt": "2025-12-28T22:39:07.690Z"
+}

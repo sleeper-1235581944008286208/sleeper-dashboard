@@ -1,0 +1,174 @@
+{
+  "tradeId": "6a86600fe7fe5e82",
+  "week": 2,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "mikeybhoy",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 906,
+        "valueLost": 11707,
+        "netValueChange": -10801,
+        "estimatedPowerScoreChange": -9,
+        "playersGained": [
+          {
+            "name": "Isiah Pacheco",
+            "value": 380
+          },
+          {
+            "name": "Rashid Shaheed",
+            "value": 526
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Bucky Irving",
+            "value": 6087
+          },
+          {
+            "name": "Ladd McConkey",
+            "value": 5620
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Isiah Pacheco",
+          "position": "RB",
+          "team": "KC",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Rashid Shaheed",
+          "position": "WR",
+          "team": "SEA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Zack Moss",
+          "position": "RB",
+          "team": "FA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Bucky Irving",
+          "position": "RB",
+          "team": "TB",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "team": "LAC",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "mikeybhoy",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 50.6,
+        "powerRank": 4,
+        "lineupValueScore": 45.4,
+        "performanceScore": 54.8,
+        "positionalScore": 62.2,
+        "depthScore": 42.1,
+        "totalTeams": 16,
+        "totalRosterValue": 27241
+      },
+      "tradeImpact": {
+        "valueGained": 11707,
+        "valueLost": 906,
+        "netValueChange": 10801,
+        "estimatedPowerScoreChange": 9,
+        "playersGained": [
+          {
+            "name": "Bucky Irving",
+            "value": 6087
+          },
+          {
+            "name": "Ladd McConkey",
+            "value": 5620
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Isiah Pacheco",
+            "value": 380
+          },
+          {
+            "name": "Rashid Shaheed",
+            "value": 526
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Zack Moss",
+          "position": "RB",
+          "team": "FA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Bucky Irving",
+          "position": "RB",
+          "team": "TB",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "team": "LAC",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Isiah Pacheco",
+          "position": "RB",
+          "team": "KC",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Rashid Shaheed",
+          "position": "WR",
+          "team": "SEA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Alan Shearer",
+  "analysis": "Right, let's get straight into this one because it's absolutely fascinating when you look at the numbers. We've got \"The Gambler\" finthefiddle sitting pretty at the top of the table with a 92 Power Score, in full win-now mode, and they've just made what I can only describe as a catastrophic decision. And on the other side, we've got \"The Bargain Hunter\" mikeybhoy, who's pulled off an absolute masterstroke here.\n\nLook at the facts – and facts don't lie in this game. Finthefiddle gave away Bucky Irving and Ladd McConkey, two young lads who went on to produce 10.4 points per game each after the deal. That's genuine, consistent production from players entering their prime years. They also shipped out Zack Moss, and fair enough, he didn't work out for mikeybhoy either. But what did they get back? Isiah Pacheco, who absolutely fell off a cliff with his production, dropping from 11.6 to just 4.0 points per game. That's a -7.6 decline! At the end of the day, this comes down to points – and Pacheco simply stopped delivering them. When you're the top team in the league and you're mortgaging young talent for what you think is a proven commodity, that player has to produce. Pacheco didn't. Simple as that.\n\nThis trade reminds me of the Trent Richardson deal back in 2013 – Cleveland thought they were getting massive value for a former first-rounder, while Indianapolis thought they were getting their franchise back. We all know how that turned out. The timing here is crucial too. Week 2 of the season, everyone's still evaluating their rosters, and finthefiddle panicked thinking they needed the \"proven\" name in Pacheco. But mikeybhoy saw the value in those rookies who'd only played two games. That's proper scouting, that is. The numbers tell the whole story: mikeybhoy gained over 10,800 in value and added 9 points to their Power Score, while finthefiddle dropped 9 points despite being the league's top team.\n\nHere's my bold prediction: in two years' time, we'll look back at this trade as the moment mikeybhoy's dynasty was born and finthefiddle's dominance ended. Irving and McConkey are 23 and 24 years old respectively – they've got five, six, seven years of prime production ahead of them. Finthefiddle traded away their future for one season of competitiveness, and they didn't even get that season from Pacheco. Absolute shambles. When you're number one in the league, you can afford to be patient with young talent. Instead, they got impatient, and it's cost them dearly. That's fantasy football – ruthless, unforgiving, and it always rewards those who trust the process and back genuine producers.",
+  "generatedAt": "2025-12-28T22:29:04.643Z"
+}

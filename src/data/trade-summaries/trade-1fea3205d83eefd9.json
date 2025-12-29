@@ -1,0 +1,116 @@
+{
+  "tradeId": "1fea3205d83eefd9",
+  "week": 10,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "jdmorris",
+    "decdweir"
+  ],
+  "sides": [
+    {
+      "teamName": "jdmorris",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 34.5,
+        "powerRank": 10,
+        "lineupValueScore": 27.2,
+        "performanceScore": 51.3,
+        "positionalScore": 32.6,
+        "depthScore": 11.9,
+        "totalTeams": 16,
+        "totalRosterValue": 16362
+      },
+      "tradeImpact": {
+        "valueGained": 4,
+        "valueLost": 1472,
+        "netValueChange": -1468,
+        "estimatedPowerScoreChange": -1.2,
+        "playersGained": [
+          {
+            "name": "Kirk Cousins",
+            "value": 4
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Rico Dowdle",
+            "value": 1472
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Kirk Cousins",
+          "position": "QB",
+          "team": "ATL",
+          "age": 37,
+          "careerStage": "Declining"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "team": "CAR",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "decdweir",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 49.1,
+        "powerRank": 5,
+        "lineupValueScore": 48.2,
+        "performanceScore": 51.3,
+        "positionalScore": 59.3,
+        "depthScore": 15.4,
+        "totalTeams": 16,
+        "totalRosterValue": 28925
+      },
+      "tradeImpact": {
+        "valueGained": 1472,
+        "valueLost": 4,
+        "netValueChange": 1468,
+        "estimatedPowerScoreChange": 1.2,
+        "playersGained": [
+          {
+            "name": "Rico Dowdle",
+            "value": 1472
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Kirk Cousins",
+            "value": 4
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "team": "CAR",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Kirk Cousins",
+          "position": "QB",
+          "team": "ATL",
+          "age": 37,
+          "careerStage": "Declining"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Simon Jordan",
+  "analysis": "Look, let me tell you something about this trade - this is an absolute MASTERCLASS in highway robbery, and I'm genuinely astounded that jdmorris didn't have the intellectual fortitude to see what was happening here. You're sitting at 10th in the league, desperately clawing for playoff position, and you've decided to trade away a running back entering his breakout phase for a 37-year-old quarterback in DECLINE? Are you having a laugh? This is \"The Desperate Buyer\" getting absolutely fleeced by \"The Patient Vulture,\" and the numbers don't lie - a net value swing of nearly 1,500 points tells you everything you need to know about who understood leverage in this negotiation.\n\nLet's dissect the fundamental absurdity of what jdmorris has done here. Rico Dowdle wasn't just improving post-trade - he EXPLODED from 8.4 to 14.1 points per game. That's a 68% increase in production at the most scarce position in fantasy football! Meanwhile, Kirk Cousins went from 17.9 to 13.4 - a 25% DROP - and you're a 37-year-old quarterback who the Atlanta Falcons will eventually realize isn't their future. Running backs with legitimate volume in their prime years are GOLD DUST in fantasy football, and you've exchanged that for fool's gold. The positional scarcity alone should have told you this was a non-starter. Quarterbacks are TEN-A-PENNY in fantasy leagues - you can stream them, you can find value on waivers, but show me where you're finding a starting running back putting up 14 points per game!\n\nNow decdweir, sitting pretty at 5th in the standings, saw an opportunity and POUNCED like a predator spotting wounded prey. This is what competent fantasy managers do - they identify desperation, they exploit positional anxiety, and they walk away with a +1.2 power score bump while their opponent bleeds value. The storyline here is clear: one manager panicked about quarterback production and made an emotional decision, while the other stayed cold, calculated, and ruthlessly capitalized on someone else's weakness. This isn't just winning a trade - this is a statement about understanding asset valuation and positional economics. jdmorris, you've been had, and the worst part is the evidence was RIGHT THERE in front of you. Absolutely schooled.",
+  "generatedAt": "2025-12-28T22:34:27.606Z"
+}

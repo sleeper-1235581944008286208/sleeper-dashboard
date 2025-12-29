@@ -1,0 +1,106 @@
+{
+  "tradeId": "fcf1903b272725a1",
+  "week": 2,
+  "season": "2023",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "ChunkyDog1998",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 3289,
+        "valueLost": 0,
+        "netValueChange": 3289,
+        "estimatedPowerScoreChange": 2.7,
+        "playersGained": [
+          {
+            "name": "Jameson Williams",
+            "value": 3289
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Jameson Williams",
+          "position": "WR",
+          "team": "DET",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jahan Dotson",
+          "position": "WR",
+          "team": "PHI",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "ChunkyDog1998",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 48.1,
+        "powerRank": 6,
+        "lineupValueScore": 43.4,
+        "performanceScore": 52.1,
+        "positionalScore": 51.5,
+        "depthScore": 61.8,
+        "totalTeams": 16,
+        "totalRosterValue": 26033
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 3289,
+        "netValueChange": -3289,
+        "estimatedPowerScoreChange": -2.7,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Jameson Williams",
+            "value": 3289
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Jahan Dotson",
+          "position": "WR",
+          "team": "PHI",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jameson Williams",
+          "position": "WR",
+          "team": "DET",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "**The Highway Robbery at Week 2**\n\nThis is an absolute disgrace from ChunkyDog1998 - let's call him \"The Charity Case\" - because that's exactly what he's been here. Giving away Jameson Williams for Jahan Dotson after just two weeks? That's not patience, that's panic. That's weak. Williams hadn't even got going yet, and you're shipping him out for a lad who'd done nothing special. Finthefiddle - \"The Vulture\" - saw blood in the water and pounced. Fair play to him for having the ruthlessness to make the call, but let's be honest, a trained monkey could've won this trade. Williams goes on to average 9.5 points per game over 44 games while Dotson regresses. The numbers don't lie: +3,289 in value gained versus ZERO. That's not a trade, that's a mugging.\n\nWhat makes this worse is the context. ChunkyDog is sitting at #6, already behind the eight-ball, and he's handing ammunition to the #1 team in the league. You want to know what separates winners from losers? It's moments like this. It's having the bottle to back your players, to trust your process, to not make knee-jerk decisions in Week 2 of the bloody season. The Vulture's already got a 92 power score - best in the league - and ChunkyDog just made him stronger while tanking his own team by 2.7 points. That's not competing, that's surrendering. You might as well have sent him a gift basket with Williams wrapped in a bow.\n\nThis reminds me of when the Raiders traded Khalil Mack to the Bears after holding out - except at least Oakland got draft picks back. ChunkyDog got a player who went BACKWARDS. The winner? Finthefiddle, and it's not even close. The loser? ChunkyDog and his entire season. My prediction for two years from now? Williams will still be producing in Detroit's offense while Dotson's bouncing around rosters, and ChunkyDog will still be wondering why he's never won anything. Some lessons you learn the hard way. This is one of them.",
+  "generatedAt": "2025-12-28T22:37:15.819Z"
+}

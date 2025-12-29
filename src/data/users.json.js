@@ -1,5 +1,5 @@
 // Data loader for Sleeper league users
-const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID || "1182940167115010048";
+const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID;
 
 async function fetchUsers() {
   const response = await fetch(`https://api.sleeper.app/v1/league/${LEAGUE_ID}/users`);

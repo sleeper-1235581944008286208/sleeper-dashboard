@@ -1,0 +1,120 @@
+{
+  "tradeId": "0930f836db4d0d2d",
+  "week": 4,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "stephen375",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 507,
+        "netValueChange": -507,
+        "estimatedPowerScoreChange": -0.4,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Jared Goff",
+            "value": 507
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Diontae Johnson",
+          "position": "WR",
+          "team": "FA",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jared Goff",
+          "position": "QB",
+          "team": "DET",
+          "age": 31,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Cam Akers",
+          "position": "RB",
+          "team": "SEA",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "stephen375",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 27.3,
+        "powerRank": 16,
+        "lineupValueScore": 28.4,
+        "performanceScore": 23.4,
+        "positionalScore": 37.4,
+        "depthScore": 9.7,
+        "totalTeams": 16,
+        "totalRosterValue": 17055
+      },
+      "tradeImpact": {
+        "valueGained": 507,
+        "valueLost": 0,
+        "netValueChange": 507,
+        "estimatedPowerScoreChange": 0.4,
+        "playersGained": [
+          {
+            "name": "Jared Goff",
+            "value": 507
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Jared Goff",
+          "position": "QB",
+          "team": "DET",
+          "age": 31,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Cam Akers",
+          "position": "RB",
+          "team": "SEA",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Diontae Johnson",
+          "position": "WR",
+          "team": "FA",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "Absolute shambles from finthefiddle. You're top of the league, sitting at 92 power score, in win-now mode, and you've just given away a quarterback who goes on to average 21 points per game for Diontae Johnson? Diontae Johnson! A player who drops to 2.7 points per game after you acquire him. That's not bad luck, that's poor judgment. You don't trade away a starting quarterback when you're trying to win now. You just don't. Goff went on to improve by nearly 5 points per game while Johnson fell off a cliff. The numbers don't lie - you lost 507 in value and got nothing back. Nothing. This is the kind of decision that costs you championships.\n\nWeek 4 is far too early to be making desperate moves, and this reeks of panic. What was the plan here? Shore up wide receiver depth by gutting your quarterback position? Ridiculous. Cam Akers wasn't setting the world alight at 5 points per game, granted, but you don't throw him in as a sweetener when you're already overpaying. Johnson was averaging 7.4 points before the trade - hardly inspiring - and then he completely disappeared. Meanwhile, Goff flourished in Detroit's offense exactly like anyone paying attention would've expected. This is basic homework. Do your research or don't make the trade.\n\nStephen375 absolutely fleeced you here. Dead last in the league at 27.3 power score, rebuilding, no hope this season, and he's managed to rob the league leader blind. Fair play to him - he saw you coming a mile away. He dumped a declining receiver and picked up a legitimate starting quarterback who immediately improved. That's 507 in value gained. That's smart business from a team with nothing to lose. \n\nClear winner: stephen375. Clear loser: finthefiddle. This trade makes the top team worse and gives the bottom team assets they had no right getting. Unacceptable from someone who should know better. You want to win now? Keep your best players. Simple as that.",
+  "generatedAt": "2025-12-28T22:31:59.296Z"
+}

@@ -1,0 +1,188 @@
+{
+  "tradeId": "55126d5e4280b5e3",
+  "week": 10,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "jdmorris",
+    "jamesclarkson96"
+  ],
+  "sides": [
+    {
+      "teamName": "jdmorris",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 34.5,
+        "powerRank": 10,
+        "lineupValueScore": 27.2,
+        "performanceScore": 51.3,
+        "positionalScore": 32.6,
+        "depthScore": 11.9,
+        "totalTeams": 16,
+        "totalRosterValue": 16362
+      },
+      "tradeImpact": {
+        "valueGained": 4094,
+        "valueLost": 213,
+        "netValueChange": 3881,
+        "estimatedPowerScoreChange": 3.2,
+        "playersGained": [
+          {
+            "name": "Darnell Mooney",
+            "value": 162
+          },
+          {
+            "name": "Chase Brown",
+            "value": 3932
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Cedric Tillman",
+            "value": 163
+          },
+          {
+            "name": "Chad Ryland",
+            "value": 50
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Tyler Bass",
+          "position": "K",
+          "team": "BUF",
+          "age": 28,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Darnell Mooney",
+          "position": "WR",
+          "team": "ATL",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Chase Brown",
+          "position": "RB",
+          "team": "CIN",
+          "age": 25,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Cedric Tillman",
+          "position": "WR",
+          "team": "CLE",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Chad Ryland",
+          "position": "K",
+          "team": "ARI",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jonathon Brooks",
+          "position": "RB",
+          "team": "CAR",
+          "age": 22,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.5,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 47.7,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 213,
+        "valueLost": 4094,
+        "netValueChange": -3881,
+        "estimatedPowerScoreChange": -3.2,
+        "playersGained": [
+          {
+            "name": "Cedric Tillman",
+            "value": 163
+          },
+          {
+            "name": "Chad Ryland",
+            "value": 50
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Darnell Mooney",
+            "value": 162
+          },
+          {
+            "name": "Chase Brown",
+            "value": 3932
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Cedric Tillman",
+          "position": "WR",
+          "team": "CLE",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Chad Ryland",
+          "position": "K",
+          "team": "ARI",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jonathon Brooks",
+          "position": "RB",
+          "team": "CAR",
+          "age": 22,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Tyler Bass",
+          "position": "K",
+          "team": "BUF",
+          "age": 28,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Darnell Mooney",
+          "position": "WR",
+          "team": "ATL",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Chase Brown",
+          "position": "RB",
+          "team": "CIN",
+          "age": 25,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Alan Shearer",
+  "analysis": "Right, let's get straight into this one because it's absolutely crystal clear what's happened here. Week 10, playoffs are in sight, and jdmorris has absolutely done jamesclarkson96 like a kipper. This is highway robbery dressed up as a fantasy football trade.\n\nAt the end of the day, this comes down to one player: Chase Brown. He's the jewel in this deal, and jdmorris has nicked him for virtually nothing. Brown was putting up 12.4 points per game before the trade and then exploded to 16.1 afterwards – that's a proper workhorse running back hitting his stride. What did jdmorris give up? Cedric Tillman, who looked decent in three games but completely fell off a cliff to 2.5 PPG after the trade, and Jonathon Brooks, who was literally doing nothing. Brooks had ZERO points in nine games – he wasn't even playing! This is like swapping fool's gold for the real thing. The kickers are irrelevant noise, frankly. Nobody wins their league with Tyler Bass.\n\nLook at the power scores and it tells you everything you need to know: +3.2 for jdmorris, -3.2 for jamesclarkson96. That's a six-point swing between two teams, and when you're sitting at rank 10 trying to make a playoff push, that's massive. Jamesclarkson96 was already struggling at rank 14 with virtually no depth (4.5 depth score is shocking), and he's just handed over his best asset for speculative pieces that completely flopped. Tillman lost 11.5 points per game after the move – that's catastrophic. Meanwhile, \"The Bargain Hunter\" jdmorris played this perfectly, identifying value and striking when the iron was hot. \"The Optimist\" jamesclarkson96 bet on potential over production and got absolutely nothing in return.\n\nThis isn't even close. Jdmorris wins this trade by an absolute landslide. In fantasy football, you back proven producers, not hope and prayers. Chase Brown was the real deal, and one manager recognized it while the other didn't. Simple as that.",
+  "generatedAt": "2025-12-28T22:34:09.093Z"
+}

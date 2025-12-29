@@ -1,0 +1,116 @@
+{
+  "tradeId": "af84868f54865d19",
+  "week": 3,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "jamesclarkson96",
+    "ChunkyDog1998"
+  ],
+  "sides": [
+    {
+      "teamName": "ChunkyDog1998",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 48.1,
+        "powerRank": 6,
+        "lineupValueScore": 43.4,
+        "performanceScore": 52.1,
+        "positionalScore": 51.5,
+        "depthScore": 61.8,
+        "totalTeams": 16,
+        "totalRosterValue": 26033
+      },
+      "tradeImpact": {
+        "valueGained": 849,
+        "valueLost": 25,
+        "netValueChange": 824,
+        "estimatedPowerScoreChange": 0.7,
+        "playersGained": [
+          {
+            "name": "Brock Purdy",
+            "value": 849
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Aaron Rodgers",
+            "value": 25
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Brock Purdy",
+          "position": "QB",
+          "team": "SF",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Aaron Rodgers",
+          "position": "QB",
+          "team": "PIT",
+          "age": 42,
+          "careerStage": "Veteran/End of Career"
+        }
+      ]
+    },
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.5,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 47.7,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 25,
+        "valueLost": 849,
+        "netValueChange": -824,
+        "estimatedPowerScoreChange": -0.7,
+        "playersGained": [
+          {
+            "name": "Aaron Rodgers",
+            "value": 25
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Brock Purdy",
+            "value": 849
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Aaron Rodgers",
+          "position": "QB",
+          "team": "PIT",
+          "age": 42,
+          "careerStage": "Veteran/End of Career"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Brock Purdy",
+          "position": "QB",
+          "team": "SF",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "Absolute madness, this trade. Week 3 of the season and \"The Panic Merchant\" ChunkyDog1998 is trading away a 42-year-old Aaron Rodgers for Brock Purdy like he's getting the crown jewels. Look at the numbers – Rodgers goes on to IMPROVE after the trade, Purdy falls off a cliff. That's not bad luck, that's poor judgment. You're a playoff contender at 6th place and you're making moves based on name value and age instead of what's actually happening on the pitch. Unforgivable.\n\nAnd don't even get me started on \"The Surrender Monkey\" jamesclarkson96. You're 14th out of 16 teams – you're drowning – and you give up a younger quarterback entering his prime for a 42-year-old on borrowed time? The value lost is 824 points! Eight hundred and twenty-four! That's not a trade, that's a white flag. Your depth score is 4.5 – FOUR POINT FIVE – and you're worried about shaving a year or two off your rebuild? You should be collecting assets like your life depends on it, not handing them over to a team that's already competitive.\n\nThis reminds me of the Herschel Walker trade, except both managers somehow lost. ChunkyDog watched Purdy drop 4.6 points per game while Rodgers got BETTER with a new team. The fundamentals were there – old player performing well, stay with what works – but no, had to chase the shiny toy. In two years, when Rodgers is retired and Purdy is fighting for relevance in a crowded San Francisco system, both of these managers will look back and wonder what they were thinking. They won't have an answer, because there isn't one. Shocking stuff.",
+  "generatedAt": "2025-12-28T22:20:50.095Z"
+}

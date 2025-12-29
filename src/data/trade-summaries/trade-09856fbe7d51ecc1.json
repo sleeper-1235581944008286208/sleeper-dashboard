@@ -1,0 +1,106 @@
+{
+  "tradeId": "09856fbe7d51ecc1",
+  "week": 1,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "finthefiddle",
+    "jamesclarkson96"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.4,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 2712,
+        "valueLost": 0,
+        "netValueChange": 2712,
+        "estimatedPowerScoreChange": 2.3,
+        "playersGained": [
+          {
+            "name": "RJ Harvey",
+            "value": 2712
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "RJ Harvey",
+          "position": "RB",
+          "team": "DEN",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Kaleb Johnson",
+          "position": "RB",
+          "team": "PIT",
+          "age": 22,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.5,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 47.7,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 2712,
+        "netValueChange": -2712,
+        "estimatedPowerScoreChange": -2.3,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "RJ Harvey",
+            "value": 2712
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Kaleb Johnson",
+          "position": "RB",
+          "team": "PIT",
+          "age": 22,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "RJ Harvey",
+          "position": "RB",
+          "team": "DEN",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Jamie Carragher",
+  "analysis": "Look, if you're asking me to analyze this trade, I've got to be honest with you - this is absolutely CRIMINAL what's happened here. Week 1 of the 2025 season, and \"The Opportunist\" finthefiddle has absolutely mugged off \"The Optimist\" jamesclarkson96 in broad daylight. This isn't just a bad trade, it's a DISASTER of epic proportions.\n\nLet me break down the tactical logic here, because it's actually quite simple when you look at the numbers. Finthefiddle is sat at the top of the table with a power score of 92 - they're a machine, they're in win-now mode, and they've identified exactly what they need. They've looked at Kaleb Johnson putting up minus-0.2 points per game and thought \"right, I need an upgrade at running back.\" So what do they do? They convince jamesclarkson96 - who's languishing at 14th out of 16 with a measly 29.5 power score - to swap RJ Harvey for Johnson. And here's the kicker: Harvey goes on to average 12.3 points per game over 16 matches while Johnson gives you essentially NOTHING. Zero point one points per game! That's not a running back, that's a roster clogger! The value exchange here was always going to favor the top team, but this is £2,712 in value swinging from a struggling side to the league leader. It's like watching a relegation team sell their best striker to the champions in January - it makes absolutely NO sense for the seller.\n\nWhat baffles me most is the strategic thinking from jamesclarkson96. You're 14th in the league, your depth score is 4.5 - that's ABYSMAL - and you're trading away a productive asset after just ONE game for what? Hope? Potential? This is the fantasy football equivalent of playing a high defensive line with slow center-backs - you're asking to get exposed! Meanwhile, The Opportunist has added nearly 4 points per game to their lineup and strengthened their stranglehold on first place. This is why the rich get richer in fantasy football - the top teams make ruthless, calculated moves while the bottom feeders convince themselves they're being clever.\n\nHere's my bold prediction: In two years' time, we'll look back at this as the trade that defined both of these managers' legacies. Finthefiddle will have parlayed this shrewd bit of business into a championship, possibly multiple titles, while jamesclarkson96 will still be wondering what went wrong. This trade perfectly encapsulates why one manager sits at 92 power score and the other is barely scraping 30. It's not luck, it's not chance - it's cold, hard tactical awareness versus hopeful thinking. Absolutely ruthless from The Opportunist, and I mean that as the highest compliment you can give in fantasy football.",
+  "generatedAt": "2025-12-28T22:17:47.076Z"
+}

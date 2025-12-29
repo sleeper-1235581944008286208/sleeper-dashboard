@@ -1,0 +1,58 @@
+{
+  "week": 6,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "persona": "Roy Keane",
+  "summary": "Right, let's get into this shambles of a week, shall we?\n\nFinthefiddle absolutely battered stevenbar24, 156 to 120. That's what proper preparation looks like. Drake Maye putting up 36 points, Jaxon Smith-Njigba with 30 - that's a manager who knows what he's doing. Four-week hot streak, sitting pretty at number one in the power rankings. This is the Invincibles of 2003-04, except it's actually happening right now. Meanwhile, stevenbar24's kicker Cam Little scored MINUS two points. Minus two! That's not fantasy football, that's a cry for help. You had Jonathan Taylor doing the business with 28 points and you still lost by 36. Unacceptable. I'll call finthefiddle \"The Don\" from here on out - he's running this league like a crime family, and everyone else is paying tribute.\n\nThe closest game of the week? Stephen375 sneaking past raaaaaidddderrrrrs by 4.3 points. Patrick Mahomes with 40 points and Dallas Goedert chipping in 24 - that's how you steal a win. But here's the thing about raaaaaidddderrrrrs: Rico Dowdle drops 42.9 points, the highest scorer of the entire week, Derrick Henry adds 20.5, and you STILL lose? That's a defensive disaster. When your two running backs give you 63 points combined and you can't get over the line, you need to look in the mirror. Keenan Allen with 5.7 points? Pathetic. You're relying on the Chiefs defense to save you? Have a word with yourself.\n\nNow let's talk about bequietamy - or as I'll call them, \"The Invisible Man\" - because 86 points is basically not showing up. Brandon McManus with zero points. ZERO. Did he even get on the plane? Jayden Daniels tried his best with 27.6, but when your second-best player is Alvin Kamara with 11.6, you're in the relegation zone. NiallCarslaw walked all over them by 37 points, the biggest blowout of the week. That's men against boys. And don't get me started on the lineup decisions I'm seeing here. Managers leaving 14, 17, 20 points on the bench - what are you doing? This isn't a Sunday afternoon kickabout at the park. You're making decisions that affect your season, and you're getting it wrong. Every. Single. Week.\n\nLook, there were some decent performances. Bijan Robinson with 40.8 for decdweir, Josh Jacobs with 35 for Tmac1418, Cam Skattebo with 36.5 for jdmorris - these are players showing up when it matters. But then you've got Darnell Mooney and Isaac TeSlaa both putting up absolute donuts. Zero points from a starting wide receiver? In what world is that acceptable? And Juwan Johnson with 0.5 points at tight end for Tmac1418 - you won your match despite that disgrace, but don't think I didn't notice. Three games decided by less than 10 points shows me this league is competitive, but competitive means nothing if you're leaving points on the bench and starting players who give you nothing. Do better. Be better. Or get used to losing.",
+  "generatedAt": "2025-12-28T22:11:59.007Z",
+  "matchupScores": [
+    {
+      "team1": "bequietamy",
+      "team1Score": 86.94,
+      "team2": "NiallCarslaw",
+      "team2Score": 124.42
+    },
+    {
+      "team1": "chitown314",
+      "team1Score": 98.42,
+      "team2": "jamesclarkson96",
+      "team2Score": 103.7
+    },
+    {
+      "team1": "ChunkyDog1998",
+      "team1Score": 122.94,
+      "team2": "danielb6",
+      "team2Score": 98.18
+    },
+    {
+      "team1": "decdweir",
+      "team1Score": 125.32,
+      "team2": "mikeybhoy",
+      "team2Score": 101.9
+    },
+    {
+      "team1": "finthefiddle",
+      "team1Score": 156.04,
+      "team2": "stevenbar24",
+      "team2Score": 120.18
+    },
+    {
+      "team1": "jdmorris",
+      "team1Score": 139.04,
+      "team2": "BigBishAl76",
+      "team2Score": 115.1
+    },
+    {
+      "team1": "raaaaaidddderrrrrs",
+      "team1Score": 129.48,
+      "team2": "stephen375",
+      "team2Score": 133.78
+    },
+    {
+      "team1": "Tmac1418",
+      "team1Score": 125.56,
+      "team2": "MarkusArnold",
+      "team2Score": 117.9
+    }
+  ]
+}

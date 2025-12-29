@@ -60,7 +60,7 @@ Each file contains:
 {
   "week": 1,
   "season": "2024",
-  "leagueId": "1182940167115010048",
+  "leagueId": "1235581944008286208",
   "persona": "Pat McAfee",
   "summary": "HOLY MOLY folks, what a week we had!...",
   "generatedAt": "2025-01-15T10:30:00Z"
