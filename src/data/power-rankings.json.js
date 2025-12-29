@@ -1,10 +1,33 @@
 // Data loader for Power Rankings
 // Calculates team power scores based on roster strength, performance, and positional advantages
 const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID;
+const LEAGUE_TYPE = process.env.LEAGUE_TYPE || 'dynasty'; // 'dynasty' or 'redraft'
 
-// DynastyProcess data URLs
+// DynastyProcess data URLs (for dynasty leagues)
 const DP_VALUES_URL = "https://raw.githubusercontent.com/dynastyprocess/data/master/files/values.csv";
 const DP_PLAYER_IDS_URL = "https://raw.githubusercontent.com/dynastyprocess/data/master/files/db_playerids.csv";
+
+// FantasyCalc API for ECR-based trade values (works for both dynasty and redraft)
+const FANTASYCALC_API_BASE = "https://api.fantasycalc.com/values/current";
+
+// Static fallback scarcity multipliers (used when FantasyCalc data unavailable)
+const STATIC_SCARCITY_FALLBACK = {
+  QB: 80,   // QBs are streamable in 1QB
+  RB: 150,  // RBs are scarce and injury-prone
+  WR: 100,  // Base value - WRs are most abundant
+  TE: 120,  // Elite TEs are rare
+  K: 20,    // Kickers are highly replaceable
+  DEF: 25   // Defenses are streamable
+};
+
+const SF_SCARCITY_FALLBACK = {
+  QB: 140,  // QBs much more valuable in SF
+  RB: 150,
+  WR: 100,
+  TE: 120,
+  K: 20,
+  DEF: 25
+};
 
 /**
  * Parse CSV string into array of objects
@@ -59,6 +82,86 @@ function normalizeName(name) {
     .replace(/\s+/g, ' ')       // Normalize spaces
     .replace(/\b(jr|sr|ii|iii|iv|v)\b/g, '') // Remove suffixes
     .trim();
+}
+
+/**
+ * Fetch FantasyCalc ECR-based values
+ * @param {boolean} isDynasty - true for dynasty, false for redraft
+ * @param {boolean} isSF - true for superflex/2QB
+ * @param {number} numTeams - number of teams in league
+ * @param {number} ppr - PPR scoring (0, 0.5, or 1)
+ */
+async function fetchFantasyCalcValues(isDynasty, isSF, numTeams = 12, ppr = 1) {
+  try {
+    const numQbs = isSF ? 2 : 1;
+    const url = `${FANTASYCALC_API_BASE}?isDynasty=${isDynasty}&numQbs=${numQbs}&numTeams=${numTeams}&ppr=${ppr}`;
+    console.error(`📊 Fetching FantasyCalc values: isDynasty=${isDynasty}, numQbs=${numQbs}`);
+
+    const response = await fetch(url);
+    if (!response.ok) {
+      console.error(`⚠️ FantasyCalc API error: ${response.status}`);
+      return null;
+    }
+
+    const data = await response.json();
+    console.error(`✅ FantasyCalc: Loaded ${data.length} player values`);
+    return data;
+  } catch (error) {
+    console.error(`⚠️ FantasyCalc fetch failed: ${error.message}`);
+    return null;
+  }
+}
+
+/**
+ * Fetch Sleeper projections for current week and rest of season
+ * @param {string} season - NFL season year
+ * @param {number} currentWeek - current NFL week
+ */
+async function fetchSleeperProjections(season, currentWeek) {
+  try {
+    const projections = new Map();
+
+    // Fetch projections for remaining weeks (current through 18)
+    const weekPromises = [];
+    for (let week = currentWeek; week <= 18; week++) {
+      weekPromises.push(
+        fetch(`https://api.sleeper.app/projections/nfl/${season}/${week}?season_type=regular`)
+          .then(r => r.ok ? r.json() : [])
+          .then(data => ({ week, data }))
+          .catch(() => ({ week, data: [] }))
+      );
+    }
+
+    const weekResults = await Promise.all(weekPromises);
+
+    // Aggregate projections - sum remaining weeks for ROS projection
+    weekResults.forEach(({ week, data }) => {
+      if (!Array.isArray(data)) return;
+
+      data.forEach(proj => {
+        const playerId = proj.player?.player_id || proj.player_id;
+        if (!playerId) return;
+
+        const pts = proj.stats?.pts_ppr || proj.stats?.pts_half_ppr || 0;
+
+        const existing = projections.get(playerId) || {
+          rosPoints: 0,
+          weeklyProjections: {},
+          player: proj.player
+        };
+
+        existing.rosPoints += pts;
+        existing.weeklyProjections[week] = pts;
+        projections.set(playerId, existing);
+      });
+    });
+
+    console.error(`✅ Sleeper Projections: Loaded ROS projections for ${projections.size} players (weeks ${currentWeek}-18)`);
+    return projections;
+  } catch (error) {
+    console.error(`⚠️ Sleeper projections fetch failed: ${error.message}`);
+    return new Map();
+  }
 }
 
 /**
@@ -130,6 +233,102 @@ function getStartingSlots(league) {
   });
 
   return slots;
+}
+
+/**
+ * Calculate dynamic position scarcity using VOR (Value Over Replacement) methodology
+ * This recalculates weekly based on current FantasyCalc ECR data
+ * @param {Array} fantasyCalcData - FantasyCalc API response with player values
+ * @param {Object} slots - League starting slots from getStartingSlots()
+ * @param {number} numTeams - Number of teams in league
+ * @param {boolean} isSF - Is Superflex league
+ * @returns {Object} Position multipliers keyed by position
+ */
+function calculateDynamicScarcity(fantasyCalcData, slots, numTeams, isSF) {
+  // Fallback if no FantasyCalc data
+  if (!fantasyCalcData || !Array.isArray(fantasyCalcData) || fantasyCalcData.length === 0) {
+    console.error(`⚠️ No FantasyCalc data - using static scarcity fallback`);
+    return isSF ? { ...SF_SCARCITY_FALLBACK } : { ...STATIC_SCARCITY_FALLBACK };
+  }
+
+  const positions = ['QB', 'RB', 'WR', 'TE', 'K', 'DEF'];
+  const vorMultipliers = {};
+  const vorDetails = {};
+
+  positions.forEach(pos => {
+    // Get players at this position sorted by ECR rank
+    const posPlayers = fantasyCalcData
+      .filter(p => p.player?.position === pos)
+      .sort((a, b) => (a.positionRank || 999) - (b.positionRank || 999));
+
+    if (posPlayers.length === 0) {
+      // No data for this position - use fallback
+      vorMultipliers[pos] = isSF && pos === 'QB'
+        ? SF_SCARCITY_FALLBACK[pos]
+        : STATIC_SCARCITY_FALLBACK[pos];
+      return;
+    }
+
+    // Calculate starters needed league-wide for this position
+    let startersNeeded = (slots[pos] || 0) * numTeams;
+
+    // FLEX eligibility (RB/WR/TE can fill FLEX spots)
+    // Estimate 33% of FLEX is filled by each eligible position
+    if (['RB', 'WR', 'TE'].includes(pos)) {
+      startersNeeded += Math.floor((slots.FLEX || 0) * numTeams * 0.33);
+    }
+
+    // SUPER_FLEX eligibility (QB gets ~40% in SF, others split remaining)
+    if (pos === 'QB' && isSF) {
+      startersNeeded += Math.floor((slots.SUPER_FLEX || 0) * numTeams * 0.4);
+    } else if (['RB', 'WR', 'TE'].includes(pos) && isSF) {
+      startersNeeded += Math.floor((slots.SUPER_FLEX || 0) * numTeams * 0.2);
+    }
+
+    // VOR calculation: Elite value - Replacement level value
+    const elitePlayer = posPlayers[0];
+    const replacementIndex = Math.min(startersNeeded, posPlayers.length - 1);
+    const replacementPlayer = posPlayers[replacementIndex];
+
+    const eliteValue = elitePlayer?.redraftValue || elitePlayer?.value || 0;
+    const replacementValue = replacementPlayer?.redraftValue || replacementPlayer?.value || 100;
+
+    // VOR spread = difference between elite and replacement
+    const vorSpread = Math.max(0, eliteValue - replacementValue);
+
+    vorMultipliers[pos] = vorSpread;
+    vorDetails[pos] = {
+      eliteValue,
+      replacementValue,
+      replacementRank: replacementIndex + 1,
+      startersNeeded,
+      playersAvailable: posPlayers.length
+    };
+  });
+
+  // Normalize to 20-200 scale with WR = 100 as baseline
+  const wrVor = vorMultipliers['WR'] || 1;
+  const normalizedMultipliers = {};
+
+  positions.forEach(pos => {
+    let normalized = Math.round((vorMultipliers[pos] / wrVor) * 100);
+    // Clamp to reasonable range
+    normalized = Math.max(20, Math.min(200, normalized));
+    normalizedMultipliers[pos] = normalized;
+  });
+
+  // Log the calculated scarcity values
+  console.error(`📊 Dynamic Scarcity (VOR):`);
+  positions.forEach(pos => {
+    const detail = vorDetails[pos];
+    if (detail) {
+      console.error(`   ${pos}: ${normalizedMultipliers[pos]} (elite=${detail.eliteValue}, repl=${detail.replacementValue} @ rank ${detail.replacementRank})`);
+    } else {
+      console.error(`   ${pos}: ${normalizedMultipliers[pos]} (fallback)`);
+    }
+  });
+
+  return normalizedMultipliers;
 }
 
 /**
@@ -211,6 +410,217 @@ function matchPlayerValues(players, dpValues, dpPlayerIds, isSF) {
   });
 
   console.error(`Player matching: ${matchedById} by ID, ${matchedByName} by name, ${unmatched} unmatched`);
+
+  return playerValues;
+}
+
+/**
+ * Calculate redraft values based on current season fantasy performance
+ * Uses PPG from matchups data with positional scarcity weighting
+ * @param {Object} scarcityMultipliers - Dynamic VOR-based scarcity multipliers (optional)
+ */
+function calculateRedraftValues(players, matchups, isSF, scarcityMultipliers = null) {
+  // Use static fallback if no dynamic scarcity provided
+  const multipliers = scarcityMultipliers || (isSF ? SF_SCARCITY_FALLBACK : STATIC_SCARCITY_FALLBACK);
+  const playerValues = new Map();
+  const playerStats = new Map(); // Track games and total points per player
+
+  // Aggregate player stats from all matchups
+  matchups.forEach(weekData => {
+    weekData.matchups.forEach(matchup => {
+      const starters = matchup.starters || [];
+      const playerPoints = matchup.players_points || {};
+
+      Object.entries(playerPoints).forEach(([playerId, points]) => {
+        if (points === null || points === undefined) return;
+
+        const existing = playerStats.get(playerId) || { games: 0, totalPoints: 0, starterGames: 0 };
+        existing.games++;
+        existing.totalPoints += points;
+        if (starters.includes(playerId)) {
+          existing.starterGames++;
+        }
+        playerStats.set(playerId, existing);
+      });
+    });
+  });
+
+  // Calculate PPG and convert to value
+  Object.entries(players).forEach(([playerId, player]) => {
+    if (!player || !player.first_name) return;
+
+    const fullName = `${player.first_name} ${player.last_name}`;
+    const position = player.position;
+    const stats = playerStats.get(playerId);
+
+    let value = 0;
+    let ppg = 0;
+
+    if (stats && stats.games > 0) {
+      ppg = stats.totalPoints / stats.games;
+
+      // Get dynamic VOR-based position multiplier
+      const posMultiplier = multipliers[position] || 50;
+
+      // Value = PPG * position multiplier
+      // This creates values roughly comparable to dynasty values (1000-9000 range)
+      value = Math.round(ppg * posMultiplier);
+
+      // Bonus for consistent starters (started >50% of games played)
+      if (stats.starterGames > stats.games * 0.5) {
+        value = Math.round(value * 1.1);
+      }
+    } else {
+      // No stats - assign minimal value based on position
+      value = position === 'K' ? 50 : position === 'DEF' ? 100 : 200;
+    }
+
+    playerValues.set(playerId, {
+      value,
+      ppg: Math.round(ppg * 10) / 10,
+      gamesPlayed: stats?.games || 0,
+      name: fullName,
+      position,
+      team: player.team,
+      age: player.age
+    });
+  });
+
+  // Log some stats
+  const withValue = Array.from(playerValues.values()).filter(p => p.value > 200);
+  console.error(`Redraft values (PPG-based): ${withValue.length} players with meaningful production`);
+
+  return playerValues;
+}
+
+/**
+ * Calculate enhanced redraft values using FantasyCalc ECR + Sleeper projections
+ * Primary: FantasyCalc ECR trade values (market-based)
+ * Secondary: Sleeper ROS projections (forward-looking)
+ * Fallback: PPG-based calculation with dynamic scarcity (historical)
+ * @param {Object} scarcityMultipliers - Dynamic VOR-based scarcity multipliers
+ */
+function calculateEnhancedRedraftValues(players, matchups, fantasyCalcData, sleeperProjections, isSF, scarcityMultipliers) {
+  const playerValues = new Map();
+
+  // Create FantasyCalc lookup by sleeperId
+  const fcLookup = new Map();
+  if (fantasyCalcData && Array.isArray(fantasyCalcData)) {
+    fantasyCalcData.forEach(fc => {
+      if (fc.player?.sleeperId) {
+        fcLookup.set(fc.player.sleeperId, fc);
+      }
+    });
+  }
+
+  // Calculate PPG from matchups as fallback
+  const playerStats = new Map();
+  matchups.forEach(weekData => {
+    weekData.matchups.forEach(matchup => {
+      const starters = matchup.starters || [];
+      const playerPoints = matchup.players_points || {};
+
+      Object.entries(playerPoints).forEach(([playerId, points]) => {
+        if (points === null || points === undefined) return;
+
+        const existing = playerStats.get(playerId) || { games: 0, totalPoints: 0, starterGames: 0 };
+        existing.games++;
+        existing.totalPoints += points;
+        if (starters.includes(playerId)) {
+          existing.starterGames++;
+        }
+        playerStats.set(playerId, existing);
+      });
+    });
+  });
+
+  let fcMatches = 0;
+  let projMatches = 0;
+  let ppgFallback = 0;
+
+  // Build player values
+  Object.entries(players).forEach(([playerId, player]) => {
+    if (!player || !player.first_name) return;
+
+    const fullName = `${player.first_name} ${player.last_name}`;
+    const position = player.position;
+    const stats = playerStats.get(playerId);
+    const fcData = fcLookup.get(playerId);
+    const projData = sleeperProjections?.get(playerId);
+
+    let value = 0;
+    let valueSource = 'none';
+    let ecrRank = null;
+    let posRank = null;
+    let tier = null;
+    let rosProjection = null;
+    let ppg = stats && stats.games > 0 ? stats.totalPoints / stats.games : 0;
+
+    // Primary: FantasyCalc ECR value
+    if (fcData) {
+      value = fcData.redraftValue || fcData.value || 0;
+      ecrRank = fcData.overallRank;
+      posRank = fcData.positionRank;
+      tier = fcData.maybeTier;
+      valueSource = 'fantasycalc';
+      fcMatches++;
+    }
+
+    // Add ROS projection bonus/adjustment
+    if (projData && projData.rosPoints > 0) {
+      rosProjection = Math.round(projData.rosPoints * 10) / 10;
+
+      if (valueSource === 'fantasycalc') {
+        // Blend ECR with projections - 70% ECR, 30% projection-based adjustment
+        const projValue = rosProjection * 50; // Scale projections to value range
+        value = Math.round(value * 0.7 + projValue * 0.3);
+      } else {
+        // Use projections as primary if no FCR
+        value = Math.round(rosProjection * 50);
+        valueSource = 'projection';
+        projMatches++;
+      }
+    }
+
+    // Fallback: PPG-based calculation with dynamic scarcity
+    if (value === 0 && stats && stats.games > 0) {
+      // Use dynamic VOR-based scarcity multiplier
+      const multiplier = scarcityMultipliers[position] || 50;
+      value = Math.round(ppg * multiplier);
+
+      // Bonus for consistent starters
+      if (stats.starterGames > stats.games * 0.5) {
+        value = Math.round(value * 1.1);
+      }
+      valueSource = 'ppg';
+      ppgFallback++;
+    }
+
+    // Minimum value for rostered players
+    if (value === 0) {
+      value = position === 'K' ? 50 : position === 'DEF' ? 100 : 200;
+    }
+
+    playerValues.set(playerId, {
+      value,
+      valueSource,
+      ecrRank,
+      positionRank: posRank,
+      tier,
+      rosProjection,
+      ppg: Math.round(ppg * 10) / 10,
+      gamesPlayed: stats?.games || 0,
+      name: fullName,
+      position,
+      team: player.team,
+      age: player.age
+    });
+  });
+
+  console.error(`📊 Enhanced Redraft Values:`);
+  console.error(`   FantasyCalc ECR matches: ${fcMatches}`);
+  console.error(`   Sleeper projection matches: ${projMatches}`);
+  console.error(`   PPG fallback: ${ppgFallback}`);
 
   return playerValues;
 }
@@ -423,17 +833,20 @@ function calculateDepthScore(rosterPlayerIds, playerValues, starters, players) {
 /**
  * Calculate power score for a hypothetical roster (for trade simulation)
  */
-function calculateTeamPowerScore(rosterPlayerIds, playerValues, slots, players, allLineups, maxLineupValue, performanceScore) {
+function calculateTeamPowerScore(rosterPlayerIds, playerValues, slots, players, allLineups, maxLineupValue, performanceScore, weights = null) {
+  // Default weights if not provided (dynasty defaults)
+  const w = weights || { lineup: 0.50, performance: 0.30, positional: 0.15, depth: 0.05 };
+
   const lineupData = calculateOptimalLineupValue(rosterPlayerIds, playerValues, slots, players);
   const lineupValueScore = (lineupData.totalValue / maxLineupValue) * 100;
   const positionalScore = calculatePositionalAdvantage(lineupData, allLineups, slots);
   const depthScore = calculateDepthScore(rosterPlayerIds, playerValues, lineupData.starters, players);
 
   const powerScore = (
-    (lineupValueScore * 0.50) +
-    (performanceScore * 0.30) +
-    (positionalScore * 0.15) +
-    (depthScore * 0.05)
+    (lineupValueScore * w.lineup) +
+    (performanceScore * w.performance) +
+    (positionalScore * w.positional) +
+    (depthScore * w.depth)
   );
 
   return {
@@ -450,11 +863,71 @@ function calculateTeamPowerScore(rosterPlayerIds, playerValues, slots, players, 
  * Main power rankings calculation
  */
 async function calculatePowerRankings() {
+  console.error(`\n🏈 Power Rankings Calculator`);
+  console.error(`📊 League Type: ${LEAGUE_TYPE.toUpperCase()}`);
+
   const { league, rosters, users, players, dpValues, dpPlayerIds, matchups } = await fetchAllData();
 
   const isSF = isSuperflexLeague(league);
   const slots = getStartingSlots(league);
-  const playerValues = matchPlayerValues(players, dpValues, dpPlayerIds, isSF);
+  const numTeams = rosters.length;
+  const currentWeek = league.settings?.leg || league.settings?.last_scored_leg || 1;
+
+  // Choose value source based on league type
+  let playerValues;
+  let valueSourceDetails = {};
+
+  // Variable to store scarcity multipliers (for output metadata)
+  let scarcityMultipliers = null;
+
+  if (LEAGUE_TYPE === 'redraft') {
+    console.error(`📈 Using ENHANCED REDRAFT values (FantasyCalc ECR + Sleeper Projections)`);
+
+    // Fetch external data sources for redraft
+    const [fantasyCalcData, sleeperProjections] = await Promise.all([
+      fetchFantasyCalcValues(false, isSF, numTeams, 1), // isDynasty=false for redraft
+      fetchSleeperProjections(league.season, currentWeek)
+    ]);
+
+    // Calculate dynamic scarcity using VOR methodology
+    scarcityMultipliers = calculateDynamicScarcity(fantasyCalcData, slots, numTeams, isSF);
+
+    playerValues = calculateEnhancedRedraftValues(
+      players,
+      matchups,
+      fantasyCalcData,
+      sleeperProjections,
+      isSF,
+      scarcityMultipliers
+    );
+
+    valueSourceDetails = {
+      primary: 'FantasyCalc ECR',
+      secondary: 'Sleeper ROS Projections',
+      fallback: 'Current Season PPG (VOR-weighted)',
+      fantasyCalcLoaded: fantasyCalcData ? fantasyCalcData.length : 0,
+      projectionsLoaded: sleeperProjections ? sleeperProjections.size : 0,
+      scarcityMethod: 'vor',
+      scarcityMultipliers
+    };
+  } else {
+    console.error(`📈 Using DYNASTY values (DynastyProcess trade values)`);
+    playerValues = matchPlayerValues(players, dpValues, dpPlayerIds, isSF);
+
+    valueSourceDetails = {
+      primary: 'DynastyProcess Trade Values',
+      secondary: null,
+      fallback: null
+    };
+  }
+
+  // Adjust component weights based on league type
+  // Redraft: Performance matters more, lineup value (long-term assets) matters less
+  const weights = LEAGUE_TYPE === 'redraft'
+    ? { lineup: 0.35, performance: 0.45, positional: 0.15, depth: 0.05 }
+    : { lineup: 0.50, performance: 0.30, positional: 0.15, depth: 0.05 };
+
+  console.error(`⚖️  Weights: Lineup ${weights.lineup * 100}%, Performance ${weights.performance * 100}%, Positional ${weights.positional * 100}%, Depth ${weights.depth * 100}%`);
 
   // Calculate lineup values for all teams
   const teamLineups = rosters.map(roster => {
@@ -500,12 +973,12 @@ async function calculatePowerRankings() {
       players
     );
 
-    // Calculate final Power Score
+    // Calculate final Power Score using dynamic weights
     const powerScore = (
-      (lineupValueScore * 0.50) +
-      (actualPerformanceScore * 0.30) +
-      (positionalScore * 0.15) +
-      (depthScore * 0.05)
+      (lineupValueScore * weights.lineup) +
+      (actualPerformanceScore * weights.performance) +
+      (positionalScore * weights.positional) +
+      (depthScore * weights.depth)
     );
 
     return {
@@ -546,10 +1019,13 @@ async function calculatePowerRankings() {
   const leagueInfo = {
     name: league.name,
     season: league.season,
+    leagueType: LEAGUE_TYPE,
     isSuperFlex: isSF,
     rosterSlots: slots,
     totalTeams: rosters.length,
-    currentWeek: league.settings?.leg || 1
+    currentWeek: league.settings?.leg || 1,
+    weights: weights,
+    valueSource: valueSourceDetails
   };
 
   // Create player values lookup for trade simulator (only rostered players + top free agents)
@@ -563,12 +1039,25 @@ async function calculatePowerRankings() {
   rosteredPlayerIds.forEach(playerId => {
     const valueData = playerValues.get(playerId);
     if (valueData) {
-      playerValuesLookup[playerId] = {
+      const lookup = {
         name: valueData.name,
         position: valueData.position,
         team: valueData.team,
         value: valueData.value
       };
+
+      // Include enhanced data for redraft leagues
+      if (LEAGUE_TYPE === 'redraft') {
+        if (valueData.ppg !== undefined) lookup.ppg = valueData.ppg;
+        if (valueData.gamesPlayed !== undefined) lookup.gamesPlayed = valueData.gamesPlayed;
+        if (valueData.ecrRank !== undefined) lookup.ecrRank = valueData.ecrRank;
+        if (valueData.positionRank !== undefined) lookup.positionRank = valueData.positionRank;
+        if (valueData.tier !== undefined) lookup.tier = valueData.tier;
+        if (valueData.rosProjection !== undefined) lookup.rosProjection = valueData.rosProjection;
+        if (valueData.valueSource !== undefined) lookup.valueSource = valueData.valueSource;
+      }
+
+      playerValuesLookup[playerId] = lookup;
     }
   });
 
@@ -590,6 +1079,7 @@ async function calculatePowerRankings() {
     playerValues: playerValuesLookup,
     rosters: rosterLookup,
     maxLineupValue,
+    weights,
     lastUpdated: new Date().toISOString()
   };
 }

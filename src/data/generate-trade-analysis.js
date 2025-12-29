@@ -1138,43 +1138,124 @@ IMPORTANT GUIDELINES:
 
 LEAGUE TYPE: ${LEAGUE_TYPE.toUpperCase()}
 ${LEAGUE_TYPE === 'dynasty' ? `
-This is a DYNASTY league - players are kept year over year. Focus on:
-- Long-term value and player trajectories (age, career stage)
-- Future draft picks and their importance
-- Building for sustained success over multiple seasons
-- Player development and "buy low/sell high" windows
+This is a DYNASTY league - players are kept year over year. Key considerations:
+- Long-term value and player trajectories (age, career stage, injury history)
+- Future draft picks are premium assets - 1st rounders especially valuable
+- Building for sustained success over multiple seasons vs "win now" mode
+- Player development windows and "buy low/sell high" opportunities
+- Age curves: RBs decline ~27, WRs peak 26-30, QBs can produce into late 30s
+- Rookie picks are lottery tickets - high variance but league-changing upside
+- Contenders should consolidate talent; rebuilders should accumulate picks/youth
 ` : `
-This is a REDRAFT league - rosters reset each year. Focus on:
-- Current season production and immediate impact
-- Remaining schedule and playoff implications
-- This year's championship window only
-- Ignore age/dynasty value - only this season matters
+This is a REDRAFT league - rosters reset each year. Key considerations:
+- Current season production and immediate fantasy impact ONLY
+- Remaining schedule strength and playoff matchups
+- This year's championship window - nothing else matters
+- Ignore age/dynasty value - a 32-year-old producing is better than a 23-year-old with "upside"
+- Playoff schedule (weeks 15-17) is crucial for evaluating players
+- Injuries and bye weeks have outsized importance
 `}
 
-POWER SCORE CONTEXT FOR REFERENCE:
-Power Score (0-100) measures overall team strength:
-- Lineup Value (50%): ${LEAGUE_TYPE === 'dynasty' ? 'Dynasty' : 'Current season'} asset value of optimal starters
-- Performance (30%): Actual results (win%, all-play record)
-- Positional (15%): Advantage vs league average at each position
-- Depth (5%): Quality of bench/backup players
+POWER SCORE METHODOLOGY (for interpreting team strength):
+Power Score (0-100) is a composite metric measuring overall team strength.
+
+${LEAGUE_TYPE === 'dynasty' ? `
+DYNASTY LEAGUE WEIGHTS & VALUES:
+1. LINEUP VALUE (50% weight):
+   - Based on DynastyProcess trade values (dynasty asset valuation)
+   - Factors in age, situation, contract, and long-term outlook
+   - Young studs valued higher than aging veterans
+   - Higher = more valuable dynasty assets
+
+2. PERFORMANCE (30% weight):
+   - Actual on-field results: Win%, All-Play record
+   - All-Play = record if you played every team each week (shows true strength vs luck)
+   - Teams with good All-Play but bad record are "unlucky" - regression candidates
+   - Teams with bad All-Play but good record are "lucky" - regression risks
+
+3. POSITIONAL ADVANTAGE (15% weight):
+   - Compares starters vs league average at each position
+   - Positional scarcity weighted: RB > TE > QB > WR (in standard leagues)
+   - Elite advantage at scarce positions (RB1, TE1) more valuable than WR depth
+
+4. DEPTH (5% weight):
+   - Quality of top backup at each position
+   - Important for injury insurance and bye week coverage
+   - Less critical in dynasty since trades can address needs
+` : `
+REDRAFT LEAGUE WEIGHTS & VALUES:
+1. LINEUP VALUE (35% weight - reduced from dynasty):
+   - Based on FantasyCalc ECR trade values + Sleeper ROS projections
+   - Weighted by DYNAMIC VOR SCARCITY (see below)
+   - Only measures what players are actually producing THIS SEASON
+   - Ignores age, dynasty value, and future potential
+
+2. PERFORMANCE (45% weight - increased from dynasty):
+   - Actual on-field results: Win%, All-Play record
+   - More heavily weighted because current production is everything
+   - All-Play = record if you played every team each week
+   - Best indicator of true team strength in redraft
+
+3. POSITIONAL ADVANTAGE (15% weight):
+   - Compares starters vs league average at each position
+   - Identifies teams with elite positional advantages
+   - Uses VOR-based scarcity for position weighting
+
+4. DEPTH (5% weight):
+   - Quality of top backup at each position
+   - Critical for bye weeks and injuries
+   - Late-season depth matters for playoff runs
+
+VOR (VALUE OVER REPLACEMENT) SCARCITY - DYNAMIC CALCULATION:
+This system calculates positional scarcity WEEKLY using real market data:
+- VOR = Elite Player Value - Replacement Level Value
+- Replacement Level = Player ranked at (starters needed per league)
+- Higher VOR spread = more valuable/scarce position
+- Recalculates each week to reflect injuries, bye weeks, and market shifts
+
+EXAMPLE VOR SCARCITY (normalized, WR=100 baseline):
+- QB: ~80-140 (varies by SuperFlex status)
+- RB: ~90-160 (high when bellcows injured)
+- WR: 100 (deepest position, baseline)
+- TE: ~80-150 (elite TEs create massive advantage)
+- K/DEF: ~20 (highly replaceable)
+
+WHY VOR MATTERS FOR TRADES:
+- A RB1 is worth MORE than a WR1 of equal PPG (scarcity premium)
+- Elite TEs (Kelce, Andrews tier) have outsized value due to position cliff
+- Mid-tier QBs are replaceable in 1QB but premium in SuperFlex
+- VOR helps identify when a trade is "fair by PPG" but "unfair by scarcity"
+`}
+
+INTERPRETING TRADE IMPACT:
+- Power Score CHANGE shows immediate roster impact
+- Positive change = team improved, Negative = team weakened
+- Small changes (< 2 points) are marginal moves
+- Large changes (> 5 points) are significant roster shifts
+- Consider BOTH sides: Zero-sum game means one team's gain is another's loss
+
+POSITIONAL VALUE TIERS (Dynasty Context):
+- ELITE: Top 3 at position - league-winners, rarely traded
+- STRONG: Top 4-12 - reliable starters, high trade value
+- AVERAGE: Top 13-24 - startable but replaceable
+- DEPTH: 25+ - bench pieces, handcuffs, lottery tickets
+
+VOR SCARCITY BY POSITION (Dynasty - approximate multipliers):
+- RB: 150 (highest scarcity - short careers, bellcow rarity)
+- TE: 120 (elite tier very thin - Kelce/Andrews gap is real)
+- WR: 100 (baseline - deepest position with longest careers)
+- QB: 80-140 (80 in 1QB, 140+ in SuperFlex due to demand)
+- K/DEF: 20-25 (streamable, minimal dynasty value)
+
+DRAFT PICK VALUES (Dynasty Reference):
+- Future 1st Round: Premium asset, especially early picks
+- Future 2nd Round: Solid value, can yield starters
+- Future 3rd+: Dart throws, best for depth
+- Current year picks more valuable as draft approaches
 
 Return ONLY the analysis text. No preamble, headers, or meta-commentary.
-
-Focus on what ${persona.name} emphasizes: ${persona.emphasis.join(', ')}
-
-SPECIAL INSTRUCTIONS:
-${selected.map((instruction, i) => `${i + 1}. ${instruction}`).join('\n')}
-
-POWER SCORE CONTEXT:
-Power Score is a composite metric (0-100) measuring overall team strength:
-- Lineup Value: Dynasty asset value of optimal starters
-- Performance: Actual results (win%, all-play record)
-- Positional: Advantage vs league average at each position
-- Depth: Quality of bench/backup players
-
-Keep it entertaining and insightful. Evaluate the players involved, the value exchanged, and potential implications. Consider how this trade affects each team's Power Score and competitive position. Use ${persona.name}'s actual catchphrases and speaking style. Make it feel like ${persona.name} is breaking down this trade for fans.
-
-Return ONLY the analysis text, no preamble or meta-commentary.`;
+Be entertaining and insightful. Use ${persona.name}'s authentic voice, catchphrases, and speaking patterns.
+Consider how this trade affects each team's competitive position and championship odds.`;
 
   console.log(`🤖 Generating analysis for ${participants.join(' vs ')} as ${persona.name}...`);
 
