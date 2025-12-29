@@ -172,8 +172,10 @@ const totalWins = enrichedAnalyses.reduce((sum, a) => {
 
 ```js
 const searchInput = view(Inputs.text({
-  placeholder: "Search by player, manager, or keyword...",
-  width: 280
+  label: "Search",
+  placeholder: "Player, manager, or keyword...",
+  width: 280,
+  value: ""
 }));
 ```
 
@@ -366,7 +368,7 @@ if (tradeAnalyses.length === 0) {
                 ${analysis.season} Season • Week ${analysis.week}
               </div>
               <div style="font-size: 1.25rem; font-weight: 700; color: #f8fafc;">
-                ${analysis.participants.join(' <span style="color: #22c55e; margin: 0 0.5rem;">⇄</span> ')}
+                ${analysis.participants.join(' ⇄ ')}
               </div>
             </div>
             <div style="display: flex; gap: 0.5rem; align-items: center;">
