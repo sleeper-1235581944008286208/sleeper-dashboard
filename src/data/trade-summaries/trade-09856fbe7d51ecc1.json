@@ -1,0 +1,106 @@
+{
+  "tradeId": "09856fbe7d51ecc1",
+  "week": 1,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "finthefiddle",
+    "jamesclarkson96"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 2712,
+        "valueLost": 0,
+        "netValueChange": 2712,
+        "estimatedPowerScoreChange": 2.3,
+        "playersGained": [
+          {
+            "name": "RJ Harvey",
+            "value": 2712
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "RJ Harvey",
+          "position": "RB",
+          "team": "DEN",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Kaleb Johnson",
+          "position": "RB",
+          "team": "PIT",
+          "age": 22,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.4,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 47.3,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 2712,
+        "netValueChange": -2712,
+        "estimatedPowerScoreChange": -2.3,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "RJ Harvey",
+            "value": 2712
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Kaleb Johnson",
+          "position": "RB",
+          "team": "PIT",
+          "age": 22,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "RJ Harvey",
+          "position": "RB",
+          "team": "DEN",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Alan Shearer",
+  "analysis": "Right, let's get straight into this one because at the end of the day, this trade is absolutely baffling from jamesclarkson96's perspective. We're talking about swapping two rookie running backs after ONE WEEK of football, and one side has completely bottled it.\n\nLook at the facts: RJ Harvey put up 8.4 points in Week 1, while Kaleb Johnson managed a grand total of minus-0.2 points. That's the difference between a player who actually saw the pitch and contributed versus someone who barely got a touch. Now, I understand it's early days and sample sizes are small, but jamesclarkson96 is literally trading away production for a question mark. Finthefiddle sits atop the league with a perfect 92 power score – this is a dominant side that just got even stronger by adding a running back who's already proven he can get opportunities in Denver's system. Meanwhile, jamesclarkson96 is languishing at 14th out of 16 teams with a 29.4 power score, and instead of demanding value, they're shipping out their only bright spot from Week 1. The net value swing of 2,712 points tells you everything – this is robbery in broad daylight.\n\nWhat makes this even more puzzling is both managers are active traders with balanced styles, but this move completely contradicts jamesclarkson96's situation. When you're at the bottom of the table, you cannot afford to trade away immediate production for hope. This isn't dynasty – age doesn't matter, potential doesn't matter, it's all about who's going to score you points over the next 14 weeks. Harvey is two years older at 24, which means absolutely nothing in redraft, but what DOES matter is he's already carved out a role worth 8.4 fantasy points while Johnson's sitting on Pittsburgh's bench doing nothing. Finthefiddle has made 22 career trades and typically moves on from players – they've offloaded 41 compared to 33 acquired – so they clearly saw this as addition by subtraction, dumping the Steelers backup for someone who can actually help them maintain that top spot.\n\nThe timing here couldn't be worse for the team giving up Harvey. Week 1 trades should be about capitalizing on small sample sizes, yes, but you capitalize when your player UNDERPERFORMS, not when they outproduce the competition. If Harvey had laid an egg and Johnson flashed, maybe you make this swap betting on talent over opportunity. But it's backwards! You're three months away from playoffs, and every single week matters in redraft. There's no \"wait for him to develop\" – Johnson needs to start producing NOW, and Pittsburgh's backfield situation gives you no confidence that's coming. Denver at least showed us they'll use Harvey. That's real information, not projection.\n\nThis is a clear winner-loser situation, and I'm not sitting on the fence: finthefiddle has absolutely fleeced this deal. They've improved their power score by 2.3 points while maintaining their stranglehold on first place, and they've done it by convincing a struggling team to swap proven production for Pittsburgh depth chart confusion. At the end of the day, fantasy football is about points on the board, and Harvey's the only player in this trade who's shown he can deliver them. Jamesclarkson96 needed to be aggressive to climb out of 14th place, but aggressive doesn't mean reckless – and this is reckless. Unless Kaleb Johnson suddenly becomes Pittsburgh's featured back, which seems unlikely given their approach, this trade will haunt them when they're watching playoffs from the outside looking in.",
+  "generatedAt": "2025-12-29T04:05:38.301Z"
+}

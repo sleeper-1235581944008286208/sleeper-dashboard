@@ -1,0 +1,144 @@
+{
+  "tradeId": "9b6f0884eda7f1ab",
+  "week": 4,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "jamesclarkson96",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 352,
+        "valueLost": 19,
+        "netValueChange": 333,
+        "estimatedPowerScoreChange": 0.3,
+        "playersGained": [
+          {
+            "name": "Sam Darnold",
+            "value": 352
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Geno Smith",
+            "value": 19
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Sam Darnold",
+          "position": "QB",
+          "team": "SEA",
+          "age": 28,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Roschon Johnson",
+          "position": "RB",
+          "team": "CHI",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Geno Smith",
+          "position": "QB",
+          "team": "LV",
+          "age": 35,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Antonio Gibson",
+          "position": "RB",
+          "team": "NE",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.4,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 47.3,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 19,
+        "valueLost": 352,
+        "netValueChange": -333,
+        "estimatedPowerScoreChange": -0.3,
+        "playersGained": [
+          {
+            "name": "Geno Smith",
+            "value": 19
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Sam Darnold",
+            "value": 352
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Geno Smith",
+          "position": "QB",
+          "team": "LV",
+          "age": 35,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Antonio Gibson",
+          "position": "RB",
+          "team": "NE",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Sam Darnold",
+          "position": "QB",
+          "team": "SEA",
+          "age": 28,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Roschon Johnson",
+          "position": "RB",
+          "team": "CHI",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Gary Lineker",
+  "analysis": "Well, this is quite the head-scratcher, isn't it? Here we have finthefiddle, sitting atop the power rankings at number one despite a rather underwhelming 1-2 start, swapping quarterbacks with jamesclarkson96, who finds himself languishing down at 14th in the standings. The timing is fascinating really – Week 4 feels early to be making these sorts of moves, but perhaps that's precisely the point. When you're 1-2 and your team metrics suggest you should be doing better, sometimes you need to back your judgment and act before everyone else catches on.\n\nLet's talk about what finthefiddle is actually doing here, because on the surface, trading away Sam Darnold after he's averaging 22.4 points per game seems absolutely bonkers. But this is redraft, and we need to remember that small sample sizes can be gloriously misleading. They're essentially saying \"I'll take the proven veteran Geno Smith's steady floor over Darnold's hot start,\" which is the sort of calculated risk that separates the wheat from the chaff. The 333-point net value swing looks dramatic, but those dynasty values simply don't matter here – it's all about who produces over the next 11 weeks. With a power score of 92 and the best lineup in the league, they can afford to be conservative. They're not gambling on lightning in a bottle; they're betting on consistency to grind out wins. Classic move from an active trader who's made 14 deals historically – they clearly trust their process over the noise.\n\nFor jamesclarkson96, this is a proper Hail Mary, and frankly, at 14th in the standings with a power score of just 29.4, what choice do they have? They're mortgaging any semblance of long-term value – not that it matters much in redraft – for the chance that Darnold's early-season heroics are genuine. If he keeps averaging 22 points per game, suddenly that basement-dwelling team starts looking competitive. If he regresses to his career mean? Well, they weren't making the playoffs anyway, were they? It's the classic \"nothing to lose\" scenario, and credit to them for recognizing it. Four trades already this season suggests they're not afraid to shake things up, and when you're staring down the barrel of another lost season, you might as well swing for the fences.\n\nThe rivalry element adds a delicious bit of spice to proceedings – these teams are deadlocked at 2-2 all-time, so there's definitely some pride on the line here. In a few months' time, one of these managers will look absolutely brilliant and the other will be wondering what on earth they were thinking. My suspicion? The smart money is on finthefiddle's steady hand, but football has a funny way of making us all look foolish. That's rather the beauty of it, isn't it?",
+  "generatedAt": "2025-12-29T04:23:52.291Z"
+}

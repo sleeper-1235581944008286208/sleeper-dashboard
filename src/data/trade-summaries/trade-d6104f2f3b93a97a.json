@@ -1,0 +1,116 @@
+{
+  "tradeId": "d6104f2f3b93a97a",
+  "week": 3,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "BigBishAl76",
+    "decdweir"
+  ],
+  "sides": [
+    {
+      "teamName": "decdweir",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 49,
+        "powerRank": 5,
+        "lineupValueScore": 48.2,
+        "performanceScore": 50.8,
+        "positionalScore": 59.3,
+        "depthScore": 15.4,
+        "totalTeams": 16,
+        "totalRosterValue": 28925
+      },
+      "tradeImpact": {
+        "valueGained": 1164,
+        "valueLost": 187,
+        "netValueChange": 977,
+        "estimatedPowerScoreChange": 0.8,
+        "playersGained": [
+          {
+            "name": "Quentin Johnston",
+            "value": 1164
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Rachaad White",
+            "value": 187
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "team": "LAC",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Rachaad White",
+          "position": "RB",
+          "team": "TB",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "BigBishAl76",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 60.4,
+        "powerRank": 2,
+        "lineupValueScore": 53.3,
+        "performanceScore": 72.6,
+        "positionalScore": 75.6,
+        "depthScore": 12.2,
+        "totalTeams": 16,
+        "totalRosterValue": 32028
+      },
+      "tradeImpact": {
+        "valueGained": 187,
+        "valueLost": 1164,
+        "netValueChange": -977,
+        "estimatedPowerScoreChange": -0.8,
+        "playersGained": [
+          {
+            "name": "Rachaad White",
+            "value": 187
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Quentin Johnston",
+            "value": 1164
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Rachaad White",
+          "position": "RB",
+          "team": "TB",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "team": "LAC",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Jamie Carragher",
+  "analysis": "Right, let me tell you something - this is absolutely MENTAL from BigBishAl76. I mean, what are we doing here? You're sitting at 1-1, you're the second-ranked team in the entire league with a 60.4 power score, and you're trading away a wide receiver with a dynasty value of 1,164 for a running back valued at 187? In a REDRAFT league? If you look at the value exchange here, this was always going to favor one side, and I'll tell you what - decdweir has absolutely robbed them blind. This is \"The Opportunist\" taking full advantage of \"The Impatient Contender,\" and there's no other way to spin it.\n\nHere's where it gets interesting from a tactical standpoint - the timing is absolutely DREADFUL for BigBishAl76. Week 3! We've got 12 weeks until the playoffs! You're making panic moves when you should be letting your roster breathe. Yes, Rachaad White gives you 11.4 points per game compared to Johnston's 8.0, but we're talking about a 26-year-old running back with maybe two years left in his prime versus a 24-year-old receiver who's entering his best years and is clearly establishing himself in that Chargers offense. In redraft, sure, age matters less than production - but Johnston's trajectory is UP while White's situation in Tampa is murky at best. You're paying a 977-point value premium to get 3.4 more points per game? The math doesn't math, as they say. For decdweir sitting at 0-2 with the fifth-best power score, this is BRILLIANT asset accumulation. They're not out of it - they're in the hunt - and they've just upgraded their roster significantly while barely touching their immediate scoring ceiling.\n\nThe risk-reward profile here is absolutely lopsided. BigBishAl76 is taking on MASSIVE risk for minimal reward - they're betting White stays healthy, maintains his role despite Bucky Irving's emergence, and that the three extra points per game make the difference in their playoff push. But what happens in Week 8 when White tweaks something? What happens when Tampa's offense continues to sputter? You've given up a rising asset for a depreciating one. Meanwhile, decdweir has almost NO risk here - they've upgraded their roster value by nearly 1,000 points, they've got a receiver who's genuinely breaking out in his second year, and if Johnston hits his ceiling down the stretch? They're laughing all the way to the championship. The reward for \"The Opportunist\" is potentially league-winning while giving up a running back they clearly didn't believe in. \n\nLook, I understand the logic from BigBishAl76's perspective - running backs are scarce, they want to compete NOW, and they're trying to capitalize on their strong start. But this is exactly the type of move that looks clever in Week 3 and absolutely HAUNTS you by Week 14. You don't trade 1,164 in value for 187 unless you're absolutely desperate, and at 1-1, you're NOT desperate! This is panic disguised as aggression, and decdweir has taken full advantage. If Johnston continues his upward trajectory - and everything suggests he will - this goes down as one of the worst trades of the season. Sometimes in fantasy, you've got to trust your process and let quality players develop. BigBishAl76 just blinked first, and it's going to cost them.",
+  "generatedAt": "2025-12-29T04:10:17.886Z"
+}

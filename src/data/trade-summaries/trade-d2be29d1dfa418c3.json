@@ -1,0 +1,182 @@
+{
+  "tradeId": "d2be29d1dfa418c3",
+  "week": 10,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "mikeybhoy",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 6641,
+        "valueLost": 6845,
+        "netValueChange": -204,
+        "estimatedPowerScoreChange": -0.2,
+        "playersGained": [
+          {
+            "name": "Rome Odunze",
+            "value": 5438
+          },
+          {
+            "name": "Bhayshul Tuten",
+            "value": 1203
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Isiah Pacheco",
+            "value": 380
+          },
+          {
+            "name": "Matthew Golden",
+            "value": 1153
+          },
+          {
+            "name": "TreVeyon Henderson",
+            "value": 5312
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Rome Odunze",
+          "position": "WR",
+          "team": "CHI",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "team": "JAX",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Isiah Pacheco",
+          "position": "RB",
+          "team": "KC",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Matthew Golden",
+          "position": "WR",
+          "team": "GB",
+          "age": 22,
+          "careerStage": "Developing"
+        },
+        {
+          "name": "TreVeyon Henderson",
+          "position": "RB",
+          "team": "NE",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "mikeybhoy",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 50.6,
+        "powerRank": 4,
+        "lineupValueScore": 45.4,
+        "performanceScore": 54.8,
+        "positionalScore": 62.2,
+        "depthScore": 42.1,
+        "totalTeams": 16,
+        "totalRosterValue": 27241
+      },
+      "tradeImpact": {
+        "valueGained": 6845,
+        "valueLost": 6641,
+        "netValueChange": 204,
+        "estimatedPowerScoreChange": 0.2,
+        "playersGained": [
+          {
+            "name": "Isiah Pacheco",
+            "value": 380
+          },
+          {
+            "name": "Matthew Golden",
+            "value": 1153
+          },
+          {
+            "name": "TreVeyon Henderson",
+            "value": 5312
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Rome Odunze",
+            "value": 5438
+          },
+          {
+            "name": "Bhayshul Tuten",
+            "value": 1203
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Isiah Pacheco",
+          "position": "RB",
+          "team": "KC",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Matthew Golden",
+          "position": "WR",
+          "team": "GB",
+          "age": 22,
+          "careerStage": "Developing"
+        },
+        {
+          "name": "TreVeyon Henderson",
+          "position": "RB",
+          "team": "NE",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Rome Odunze",
+          "position": "WR",
+          "team": "CHI",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "team": "JAX",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "Right, let me get this straight. **\"The Panicking Champion\"** finthefiddle, sitting pretty at 6-3, top of the power rankings, already has trade number 33 under his belt - and he's just blown up his own season. And **\"The Desperate Bubble Boy\"** mikeybhoy at 4-5, hanging on by his fingernails, somehow just got handed a lifeline by someone who should know better.\n\nThis is madness. Absolute madness. Finthefiddle is giving up TreVeyon Henderson - the lad's averaging 10.9 points per game in his rookie season with New England - for what? Rome Odunze at 8.8 PPG? That's Championship Week thinking right there, isn't it? Oh brilliant, lose 2 points per game in production when you've got five weeks to secure playoff seeding. And don't give me this \"dynasty value\" nonsense - this is REDRAFT. Henderson is producing NOW. Odunze is producing less NOW. It's not complicated mathematics. You're the number one team in the league and you're trading away your best performing piece for a Bears receiver who can't crack 9 points a game. That's the kind of decision that keeps you up at night in January when you're watching someone else lift the trophy.\n\nHere's what reminds me of the Jamal Adams trade - when Seattle gave up everything for a \"star\" and the Jets walked away laughing. Mikeybhoy just pulled off the same heist. He's desperate, sitting on the playoff bubble, and finthefiddle just handed him THREE pieces including a rookie running back who's been their best performer. This is finthefiddle demanding out of his own success, except nobody forced him to do it. The league-leading team just gave the fourth-ranked team exactly what they needed - immediate production at running back. Pacheco's been solid at 7.2 PPG, Henderson's at 10.9, and Golden's a young piece with upside. Meanwhile, finthefiddle gets back Odunze and Bhayshul Tuten at 5.2 PPG? In a REDRAFT league with five weeks to go? That's not strategy, that's self-sabotage.\n\nHere's my prediction: In three weeks, when Henderson's put up another 30-35 points and Odunze's given finthefiddle maybe 24, this trade will be the moment finthefiddle points to when explaining how he bottled a championship. Mikeybhoy will sneak into the playoffs at 6-7 or 7-6 because Henderson carried him down the stretch, and finthefiddle will finish 8-5 or 9-4 and get bounced in the first round because he traded away his most consistent scorer for \"potential.\" The data even shows it - finthefiddle's power score DROPPED and mikeybhoy's INCREASED. In redraft, that's all you need to know.\n\nThe winner? It's not even close - mikeybhoy by a country mile. He's on the bubble, he needed immediate help, and he just got a 10.9 PPG running back plus two other functional pieces. Finthefiddle? He's shown why making 33 trades doesn't make you smart - it just means you can't sit still and trust what's working. This is the league leader panicking for absolutely no reason. Sometimes the best trade is no trade at all. Finthefiddle just learned that lesson the hard way, or at least he will when his season ends earlier than it should've.",
+  "generatedAt": "2025-12-29T04:18:50.189Z"
+}

@@ -1,0 +1,116 @@
+{
+  "tradeId": "af84868f54865d19",
+  "week": 3,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "jamesclarkson96",
+    "ChunkyDog1998"
+  ],
+  "sides": [
+    {
+      "teamName": "ChunkyDog1998",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 48.4,
+        "powerRank": 6,
+        "lineupValueScore": 43.4,
+        "performanceScore": 53,
+        "positionalScore": 51.5,
+        "depthScore": 61.8,
+        "totalTeams": 16,
+        "totalRosterValue": 26033
+      },
+      "tradeImpact": {
+        "valueGained": 849,
+        "valueLost": 25,
+        "netValueChange": 824,
+        "estimatedPowerScoreChange": 0.7,
+        "playersGained": [
+          {
+            "name": "Brock Purdy",
+            "value": 849
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Aaron Rodgers",
+            "value": 25
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Brock Purdy",
+          "position": "QB",
+          "team": "SF",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Aaron Rodgers",
+          "position": "QB",
+          "team": "PIT",
+          "age": 42,
+          "careerStage": "Veteran/End of Career"
+        }
+      ]
+    },
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.4,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 47.3,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 25,
+        "valueLost": 849,
+        "netValueChange": -824,
+        "estimatedPowerScoreChange": -0.7,
+        "playersGained": [
+          {
+            "name": "Aaron Rodgers",
+            "value": 25
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Brock Purdy",
+            "value": 849
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Aaron Rodgers",
+          "position": "QB",
+          "team": "PIT",
+          "age": 42,
+          "careerStage": "Veteran/End of Career"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Brock Purdy",
+          "position": "QB",
+          "team": "SF",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Gary Neville",
+  "analysis": "Look, this is absolutely bonkers from jamesclarkson96, and I'll tell you why — context matters, and in this case, the context is screaming at you that you've made a massive error. You're sitting at 2-0, same record as ChunkyDog1998, but your power score is 29.4 compared to their 48.4. You're ranked 14th out of 16 teams despite the perfect record, which tells me you've been fortunate, not dominant. And what do you do? You trade away a 26-year-old quarterback averaging 16.6 points per game for a 42-year-old producing 14.3. In a redraft league! This isn't even a close call — ChunkyDog1998 has absolutely mugged you here, and the numbers back it up with an 824-point dynasty value swing.\n\nNow, there's something familiar about this, isn't there? It reminds me of the Davante Adams situation when he left Green Bay to reunite with Derek Carr in Las Vegas. Everyone got caught up in the romance of it — the chemistry, the history, the connection. But here's what actually happened: Adams went from Aaron Rodgers throwing him the ball to a Raiders team that was a complete mess, and the production suffered accordingly. This trade has that same nostalgic feel to it, except you're not even getting the player in his prime — you're getting him at 42 years old, playing for Pittsburgh in what is clearly the twilight of his career. Whatever memories you have of vintage Rodgers, they're just that: memories. This is redraft football, not a testimonial dinner.\n\nThe risk-reward profile here is completely lopsided. ChunkyDog1998 is taking on virtually zero risk — they're upgrading from a quarterback who's had injury concerns and is statistically producing less to a younger player who's already proven he can deliver consistent fantasy output in Kyle Shanahan's system. They gain 0.7 power score points, which might not sound like much, but when you're already ranked 6th and pushing for a championship, marginal gains matter. Meanwhile, jamesclarkson96, you're losing 0.7 power score when you can least afford it. Your depth score is 4.5 out of 100 — that's catastrophic. You need every bit of roster strength you can muster, and you've just downgraded at the most important position for what? A player who could retire mid-season, who's already shown declining production, and who offers you absolutely nothing beyond Week 17.\n\nFrom a championship perspective, this trade fundamentally alters the trajectory of both teams. ChunkyDog1998 was already in a solid position at 2-0 with decent depth, and now they've secured a quarterback who should be a top-10 producer all season long. That's the kind of move that wins you leagues — getting younger, more reliable production at a key position without giving up anything meaningful. For jamesclarkson96, though, this is where it gets properly worrying. You're an active trader, you've made 14 deals in your history, so clearly you believe in being aggressive. But there's a difference between being proactive and being reckless. With 12 weeks until the playoffs, you need consistency, not a science project. Rodgers might have a few vintage performances left in him, but he's just as likely to get hurt or simply fade away, and then where are you? This feels like a move made out of sentimentality or panic rather than sound strategy, and in redraft leagues, that's how you go from 2-0 to missing the playoffs entirely. ChunkyDog1998 wins this trade comfortably — I'd go so far as to say it's the bargain of their season.",
+  "generatedAt": "2025-12-29T04:09:53.870Z"
+}

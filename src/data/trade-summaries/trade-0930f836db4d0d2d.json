@@ -1,0 +1,120 @@
+{
+  "tradeId": "0930f836db4d0d2d",
+  "week": 4,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "stephen375",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 507,
+        "netValueChange": -507,
+        "estimatedPowerScoreChange": -0.4,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Jared Goff",
+            "value": 507
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Diontae Johnson",
+          "position": "WR",
+          "team": "FA",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jared Goff",
+          "position": "QB",
+          "team": "DET",
+          "age": 31,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Cam Akers",
+          "position": "RB",
+          "team": "SEA",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "stephen375",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 27.5,
+        "powerRank": 16,
+        "lineupValueScore": 28.4,
+        "performanceScore": 24.1,
+        "positionalScore": 37.4,
+        "depthScore": 9.7,
+        "totalTeams": 16,
+        "totalRosterValue": 17055
+      },
+      "tradeImpact": {
+        "valueGained": 507,
+        "valueLost": 0,
+        "netValueChange": 507,
+        "estimatedPowerScoreChange": 0.4,
+        "playersGained": [
+          {
+            "name": "Jared Goff",
+            "value": 507
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Jared Goff",
+          "position": "QB",
+          "team": "DET",
+          "age": 31,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Cam Akers",
+          "position": "RB",
+          "team": "SEA",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Diontae Johnson",
+          "position": "WR",
+          "team": "FA",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Alan Shearer",
+  "analysis": "Look, I'm going to be absolutely straight with you here - this trade is barmy, and I can't quite believe what I'm seeing from finthefiddle. You're sitting at the top of the power rankings, you're the strongest team in the league on paper, and you're essentially giving away a QB averaging 16.6 points per game for a wide receiver who's currently a free agent and barely cracking 7 points? That's madness. Absolute madness. At the end of the day, this comes down to points - and Jared Goff delivers them. Week in, week out, he's putting up numbers in that Detroit offense, and you're shipping him out alongside Cam Akers for what amounts to table scraps. I've seen some head-scratchers in my time, but \"The Capitulator\" - and that's what I'm calling finthefiddle now - has just thrown in the towel on value. You don't make trades like this when you're the number one power-ranked team in the league. You just don't.\n\nNow let's talk about stephen375, who I'm dubbing \"The Vulture\" - because mate, you've just swooped in and picked the bones clean here. You're 0-3, dead last in the league with a 27.5 power score, and you've just been handed a lifeline you absolutely didn't deserve. This reminds me of that Amari Cooper trade back in 2018, when Dallas gave up a first-rounder mid-season and Cooper immediately started delivering the goods. Goff is your Cooper - he's an established producer in a high-powered offense, and you're getting him for essentially nothing. That Detroit attack with Amon-Ra St. Brown and those weapons, Goff is a set-and-forget QB1 the rest of the way. You've turned your weakest position into a strength overnight, and you didn't have to sacrifice anything of real value to do it. That's brilliant business for a team that desperately needed a spark.\n\nHere's what really gets me about this deal - it's Week 4, not Week 14. The Capitulator still has eleven weeks until the playoffs to right the ship, but instead of consolidating that top power ranking and pushing for a championship, they're selling off proven producers for speculative pieces. In a redraft league! You're 1-2, sure, but your underlying metrics suggest you should be dominating. Your lineup value is maxed out at 100, your position ranking is perfect - you've just been unlucky. This is when you hold steady or buy low on struggling assets, not when you bin a reliable quarterback for a receiver who couldn't get on the field. Meanwhile, The Vulture has increased his power score and added legitimate firepower to a roster that was scoring 80 points less than you through three weeks. That quarterback upgrade alone could be worth 8-10 points per week, which in a redraft format is absolutely massive.\n\nChampionship implications? The Capitulator has just damaged their title odds significantly. You can't win leagues by giving away value - you just can't. That -507 net value tells the whole story. You're essentially punting on quarterback production, and unless you've got Patrick Mahomes hiding on your bench, that's not a recipe for success. The Vulture, on the other hand, has gone from no-hoper to dark horse with one move. An 0-3 start isn't insurmountable if you've got the production to turn it around, and Goff gives you exactly that. This is the kind of trade that can save a season - getting a proven producer at a premium position for a receiver who was droppable. I've seen crazier playoff runs start with less. But let's be clear: this trade works because one manager made a catastrophic error in judgment, not because both sides found mutual benefit. That's not smart trading - that's highway robbery.",
+  "generatedAt": "2025-12-29T04:24:43.145Z"
+}

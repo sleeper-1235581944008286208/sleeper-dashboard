@@ -1,0 +1,116 @@
+{
+  "tradeId": "5dd67b0ca3da2a91",
+  "week": 2,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "finthefiddle",
+    "stevenbar24"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 521,
+        "valueLost": 1525,
+        "netValueChange": -1004,
+        "estimatedPowerScoreChange": -0.8,
+        "playersGained": [
+          {
+            "name": "Dallas Goedert",
+            "value": 521
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Kyle Pitts",
+            "value": 1525
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "team": "PHI",
+          "age": 30,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Kyle Pitts",
+          "position": "TE",
+          "team": "ATL",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "stevenbar24",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 56.1,
+        "powerRank": 3,
+        "lineupValueScore": 51.3,
+        "performanceScore": 67.6,
+        "positionalScore": 63.5,
+        "depthScore": 13.5,
+        "totalTeams": 16,
+        "totalRosterValue": 30780
+      },
+      "tradeImpact": {
+        "valueGained": 1525,
+        "valueLost": 521,
+        "netValueChange": 1004,
+        "estimatedPowerScoreChange": 0.8,
+        "playersGained": [
+          {
+            "name": "Kyle Pitts",
+            "value": 1525
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Dallas Goedert",
+            "value": 521
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Kyle Pitts",
+          "position": "TE",
+          "team": "ATL",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "team": "PHI",
+          "age": 30,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Gary Lineker",
+  "analysis": "Well, well, well – here's a trade that's crystal clear in its intentions, even if the wisdom of it is rather more debatable. We've got finthefiddle, sitting atop the power rankings despite an 0-1 start, trading away Kyle Pitts for Dallas Goedert straight up. And really, when you strip away all the noise about youth and potential, this is what it comes down to in redraft: which tight end is going to score you more points between now and Week 17? The answer, I'm afraid, isn't particularly encouraging for finthefiddle.\n\nLet's look at the timing first, because it matters quite a lot. Week 2 is essentially panic station for some managers – you lose one match and suddenly you're ripping apart a squad that might've just had a bad weekend. Finthefiddle is the league's top-rated team by power score, yet here they are making what appears to be a fairly desperate move. Now, I understand the frustration with Pitts – we've all been waiting for him to become the generational talent we thought he'd be – but swapping him for a 30-year-old Goedert who's averaging less per game over the same sample size? That's trading on emotion rather than logic, and emotion rarely wins you fantasy titles.\n\nWhat's particularly interesting is that finthefiddle is our resident wheeler-dealer – 26 career trades, five already this season, constantly tinkering with the roster. There's nothing wrong with being active, mind you, but sometimes the best trade is the one you don't make. They're giving up 1,004 in dynasty value here, which in redraft terms translates to trading a younger asset with comparable production for an older one in decline. Goedert's fine, perfectly serviceable, but if we're being honest about the tight end position – and we should be, it's a nightmare to navigate – you want the player more likely to have breakout weeks. Pitts has shown 6.2 points per game to Goedert's 5.4, and in a redraft league, that gap could be the difference between a playoff berth and going home early.\n\nThe clear winner here? That's stevenbar24, and it's not particularly close. They've made just four career trades, they're 1-0 and rolling, and they've just added a younger, more productive tight end without giving up anything meaningful for this season. Yes, Goedert's in his \"peak years\" according to the data, but those peak years are producing fewer fantasy points than Pitts's supposed underachievement. In redraft, we don't care about future value beyond December – we care about who's going to outscore whom over the next 13 weeks. Stevenbar24 has acquired the better asset for that timeframe, simple as that. It's a fascinating swap really – one manager thinks they've upgraded for immediate production, while the other has actually done so. And that, more often than not, is how trades work out: one side sees what they want to see, and the other capitalizes on it.",
+  "generatedAt": "2025-12-29T04:07:21.661Z"
+}

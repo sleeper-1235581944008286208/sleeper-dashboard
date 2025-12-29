@@ -1,0 +1,182 @@
+{
+  "tradeId": "3ffc731cb9114c72",
+  "week": 11,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "jamesclarkson96",
+    "NiallCarslaw"
+  ],
+  "sides": [
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.4,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 47.3,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 6657,
+        "valueLost": 10333,
+        "netValueChange": -3676,
+        "estimatedPowerScoreChange": -3.1,
+        "playersGained": [
+          {
+            "name": "David Montgomery",
+            "value": 903
+          },
+          {
+            "name": "Marvin Harrison",
+            "value": 5580
+          },
+          {
+            "name": "Chimere Dike",
+            "value": 174
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Amon-Ra St. Brown",
+            "value": 8783
+          },
+          {
+            "name": "Jayden Higgins",
+            "value": 1550
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "David Montgomery",
+          "position": "RB",
+          "team": "DET",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Marvin Harrison",
+          "position": "WR",
+          "team": "ARI",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Chimere Dike",
+          "position": "WR",
+          "team": "TEN",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "team": "DET",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jayden Higgins",
+          "position": "WR",
+          "team": "HOU",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "NiallCarslaw",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 45.9,
+        "powerRank": 7,
+        "lineupValueScore": 51,
+        "performanceScore": 40.9,
+        "positionalScore": 52.3,
+        "depthScore": 5.8,
+        "totalTeams": 16,
+        "totalRosterValue": 30607
+      },
+      "tradeImpact": {
+        "valueGained": 10333,
+        "valueLost": 6657,
+        "netValueChange": 3676,
+        "estimatedPowerScoreChange": 3.1,
+        "playersGained": [
+          {
+            "name": "Amon-Ra St. Brown",
+            "value": 8783
+          },
+          {
+            "name": "Jayden Higgins",
+            "value": 1550
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "David Montgomery",
+            "value": 903
+          },
+          {
+            "name": "Marvin Harrison",
+            "value": 5580
+          },
+          {
+            "name": "Chimere Dike",
+            "value": 174
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "team": "DET",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jayden Higgins",
+          "position": "WR",
+          "team": "HOU",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "David Montgomery",
+          "position": "RB",
+          "team": "DET",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Marvin Harrison",
+          "position": "WR",
+          "team": "ARI",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Chimere Dike",
+          "position": "WR",
+          "team": "TEN",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Alan Shearer",
+  "analysis": "Right, let's get straight into this one because I've seen some puzzling moves in my time, but this trade has left me absolutely scratching my head. At the end of the day, fantasy football is about one thing and one thing only - putting points on the board when it matters most. And what we've got here is jamesclarkson96, sitting at 6-4 with just four weeks until the playoffs, trading away Amon-Ra St. Brown - a player averaging 14.8 points per game and absolutely delivering week in, week out - for Marvin Harrison Jr., who's putting up 9.2 per game and has been inconsistent at best. I don't care that Harrison's younger or has \"upside\" - this is redraft! Your roster resets in January! You're chasing points NOW, not building for next year's draft. Montgomery's 28 years old and averaging 11.5, and while that's decent production, you've just downgraded massively at wide receiver for a marginal gain at running back. The numbers don't lie: you've lost 3,676 in value and dropped your power score by 3.1 points. In a playoff race, that's absolutely criminal.\n\nNiallCarslaw, on the other hand, has pulled off an absolute masterclass here. They're 4-6, sitting on the bubble, desperate for reliable production, and they've just acquired the most consistent weapon in Detroit's arsenal. St. Brown is the definition of what I look for in a fantasy asset - week after week, he's there, he's producing, he's giving you that floor you can count on. Harrison's been a disappointment relative to his draft pedigree, and in a redraft league, I couldn't care less that he was picked fifth overall. Show me the points! Dike's barely played four games, and Montgomery's solid but replaceable at running back. Meanwhile, St. Brown is a bonafide WR1 who's approaching his absolute peak years. The +3.1 power score swing tells you everything you need to know - one team got significantly better, and it wasn't the one that needed it most.\n\nLet's talk timing, because this is where it gets even more baffling. We're calling jamesclarkson96 \"The Panic Merchant\" - this is their twentieth trade all-time and ninth this season, constantly tinkering when they should be backing their horses down the stretch. When you're 6-4 and in playoff position, you don't blow up your WR corps for potential. You ride your reliable performers and add pieces that complement them. Meanwhile, NiallCarslaw deserves the nickname \"The Opportunist\" - they've spotted a manager overthinking things, swooped in, and extracted premium value from someone who's traded themselves into confusion. That's smart business. In redraft, making moves in Week 11 should be about playoff matchups and guaranteed production, not gambling on breakouts that might never come.\n\nThis one's not even close for me - NiallCarslaw wins this trade by an absolute mile. They've turned spare parts and an underperforming rookie into a top-tier wide receiver who delivers every single week. The Opportunist just boosted their playoff chances significantly while The Panic Merchant has potentially traded themselves right out of contention. Remember, this isn't dynasty - Montgomery and Harrison's youth means absolutely nothing when rosters reset in three months. St. Brown is the best player in this deal by some distance, and in redraft, you simply don't trade the best player unless you're getting multiple proven producers back. One team understood the assignment; the other just failed their final exam. At the end of the day, fantasy football rewards production and punishes overthinking - and we've just seen a textbook example of both.",
+  "generatedAt": "2025-12-29T04:20:22.123Z"
+}

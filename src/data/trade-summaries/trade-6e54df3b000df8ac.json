@@ -1,0 +1,160 @@
+{
+  "tradeId": "6e54df3b000df8ac",
+  "week": 9,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "BigBishAl76",
+    "NiallCarslaw"
+  ],
+  "sides": [
+    {
+      "teamName": "BigBishAl76",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 60.4,
+        "powerRank": 2,
+        "lineupValueScore": 53.3,
+        "performanceScore": 72.6,
+        "positionalScore": 75.6,
+        "depthScore": 12.2,
+        "totalTeams": 16,
+        "totalRosterValue": 32028
+      },
+      "tradeImpact": {
+        "valueGained": 2082,
+        "valueLost": 2258,
+        "netValueChange": -176,
+        "estimatedPowerScoreChange": -0.1,
+        "playersGained": [
+          {
+            "name": "Jakobi Meyers",
+            "value": 1220
+          },
+          {
+            "name": "Jauan Jennings",
+            "value": 675
+          },
+          {
+            "name": "Rachaad White",
+            "value": 187
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Javonte Williams",
+            "value": 2258
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Jakobi Meyers",
+          "position": "WR",
+          "team": "JAX",
+          "age": 29,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Jauan Jennings",
+          "position": "WR",
+          "team": "SF",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Rachaad White",
+          "position": "RB",
+          "team": "TB",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Javonte Williams",
+          "position": "RB",
+          "team": "DAL",
+          "age": 25,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "NiallCarslaw",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 45.9,
+        "powerRank": 7,
+        "lineupValueScore": 51,
+        "performanceScore": 40.9,
+        "positionalScore": 52.3,
+        "depthScore": 5.8,
+        "totalTeams": 16,
+        "totalRosterValue": 30607
+      },
+      "tradeImpact": {
+        "valueGained": 2258,
+        "valueLost": 2082,
+        "netValueChange": 176,
+        "estimatedPowerScoreChange": 0.1,
+        "playersGained": [
+          {
+            "name": "Javonte Williams",
+            "value": 2258
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Jakobi Meyers",
+            "value": 1220
+          },
+          {
+            "name": "Jauan Jennings",
+            "value": 675
+          },
+          {
+            "name": "Rachaad White",
+            "value": 187
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Javonte Williams",
+          "position": "RB",
+          "team": "DAL",
+          "age": 25,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jakobi Meyers",
+          "position": "WR",
+          "team": "JAX",
+          "age": 29,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Jauan Jennings",
+          "position": "WR",
+          "team": "SF",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Rachaad White",
+          "position": "RB",
+          "team": "TB",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "This is absolutely baffling from BigBishAl76. You're 5-3, second in the power rankings, six weeks from the playoffs, and you're trading away a starting running back for what? Three pieces of a jigsaw puzzle that don't fit together? It's madness. Pure madness.\n\nLook, NiallCarslaw is 3-5, fighting for their life, sitting on the bubble, and they've just pulled off a proper heist here. They've turned spare parts into a genuine asset. This is your Amari Cooper moment – remember when Dallas gave up that first-rounder mid-season and everyone questioned it? Cooper came in and transformed their offense when it mattered most. That's what Javonte Williams could be for a desperate team needing to consolidate talent. One focused piece you can count on versus three players you're rotating through your lineup wondering who's going to show up. BigBishAl76 has done the opposite – they've taken reliability and turned it into chaos. Jakobi Meyers at 29, one year from decline? Jauan Jennings averaging 9.2 points as your depth piece? Rachaad White worth 187 in dynasty value, which tells you everything about what the market thinks of him? This isn't depth, it's desperation disguised as diversification.\n\nThe risk-reward here is completely lopsided. NiallCarslaw is getting +176 in net value and a 0.1 power score bump when they desperately need wins NOW. They've simplified their roster, added a running back in his peak years with three years before decline, and they're gambling that one strong piece beats three average ones down the stretch. That's the right mentality for a team on the bubble. BigBishAl76? They've taken a -176 value hit, lost 0.1 on their power score, and for what? To have more decisions to make each week? To spread their production across three inconsistent players instead of one you can pencil in? In redraft, week 9, as a contender, you consolidate. You don't fragment. This is basic stuff.\n\nHere's my prediction, and I'll be very clear about this: come playoff time in six weeks, BigBishAl76 will look at this trade and wonder what they were thinking. Javonte Williams will be starting every week for NiallCarslaw, helping drag them into the playoffs they had no business making, while BigBishAl76 is sat there deciding between Meyers and Jennings, watching both put up 6 points while their championship window closes. Mark my words – the team that simplified won this trade. The team that complicated their life will regret it. That's not analysis, that's fact.",
+  "generatedAt": "2025-12-29T04:17:09.729Z"
+}

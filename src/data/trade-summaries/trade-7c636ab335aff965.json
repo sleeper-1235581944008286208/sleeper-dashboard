@@ -1,0 +1,160 @@
+{
+  "tradeId": "7c636ab335aff965",
+  "week": 11,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "finthefiddle",
+    "stephen375"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 1458,
+        "valueLost": 3240,
+        "netValueChange": -1782,
+        "estimatedPowerScoreChange": -1.5,
+        "playersGained": [
+          {
+            "name": "Alec Pierce",
+            "value": 1458
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Dontayvion Wicks",
+            "value": 103
+          },
+          {
+            "name": "Bhayshul Tuten",
+            "value": 1203
+          },
+          {
+            "name": "Harold Fannin",
+            "value": 1934
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Alec Pierce",
+          "position": "WR",
+          "team": "IND",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Dontayvion Wicks",
+          "position": "WR",
+          "team": "GB",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "team": "JAX",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Harold Fannin",
+          "position": "TE",
+          "team": "CLE",
+          "age": 21,
+          "careerStage": "Developing"
+        }
+      ]
+    },
+    {
+      "teamName": "stephen375",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 27.5,
+        "powerRank": 16,
+        "lineupValueScore": 28.4,
+        "performanceScore": 24.1,
+        "positionalScore": 37.4,
+        "depthScore": 9.7,
+        "totalTeams": 16,
+        "totalRosterValue": 17055
+      },
+      "tradeImpact": {
+        "valueGained": 3240,
+        "valueLost": 1458,
+        "netValueChange": 1782,
+        "estimatedPowerScoreChange": 1.5,
+        "playersGained": [
+          {
+            "name": "Dontayvion Wicks",
+            "value": 103
+          },
+          {
+            "name": "Bhayshul Tuten",
+            "value": 1203
+          },
+          {
+            "name": "Harold Fannin",
+            "value": 1934
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Alec Pierce",
+            "value": 1458
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Dontayvion Wicks",
+          "position": "WR",
+          "team": "GB",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "team": "JAX",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Harold Fannin",
+          "position": "TE",
+          "team": "CLE",
+          "age": 21,
+          "careerStage": "Developing"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Alec Pierce",
+          "position": "WR",
+          "team": "IND",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "This is absolutely disgraceful. No other word for it. Finthefiddle is sitting at 7-3, top of the league, four weeks from the playoffs, and they've just thrown away their entire future for Alec Pierce. Alec Pierce! A lad averaging 7.3 points per game. This isn't a win-now move, it's a panic move from someone who doesn't understand what they're doing. They're giving up three players for one, including Harold Fannin – a 21-year-old tight end with elite scarcity value who's already producing 7.8 points per game. In a redraft league, you need depth for the playoff run. Injuries happen. Bye weeks happen. And when they do, finthefiddle will be scrambling because they've gutted their bench for minimal upgrade at receiver. It's madness.\n\nStephen375 has absolutely mugged them off here. He's 2-8, dead last in the league, season's over, and he's just turned one mediocre receiver into three assets. Now, before you say \"but Roy, it's redraft, those assets don't matter next year\" – you're missing the point. This trade makes stephen375's team better RIGHT NOW. Fannin gives him a legitimate tight end option. Tuten is a running back with upside who could win weeks down the stretch. Even Wicks has more potential than what he's getting from Pierce. The power scores don't lie – finthefiddle drops 1.5 points while stephen375 gains 1.5. That's a three-point swing, and in a league this tight, that matters.\n\nThis reminds me of the DeAndre Hopkins trade – the Texans practically giving away an elite receiver for peanuts because they lost the plot. Finthefiddle has done the same thing here. They've taken three players with legitimate value – nearly 3,250 points worth – and swapped them for 1,458 in Pierce. That's not analysis, that's arithmetic. A 1,782-point value loss when you're trying to win a championship? Criminal. And the worst part is the timing. Trade 38 of 39 this season – this is a desperate move from an active trader who's lost their bottle. They're tinkering when they should be solidifying. Championship teams don't panic and consolidate depth into marginal upgrades. They stay disciplined.\n\nStephen375 is the clear winner, no question about it. He's rebuilding from the basement and just got three players for the price of one. Finthefiddle? They've weakened themselves heading into the most important stretch of the season. Mark my words – when Pierce has a 3-point stinker in the playoffs and they're scrambling to replace an injured starter with nobody on the bench, they'll regret this shambles. That's what happens when you abandon discipline and chase names instead of building a proper squad. Absolute nonsense.",
+  "generatedAt": "2025-12-29T04:19:33.482Z"
+}

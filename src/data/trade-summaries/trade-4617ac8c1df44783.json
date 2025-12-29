@@ -1,0 +1,226 @@
+{
+  "tradeId": "4617ac8c1df44783",
+  "week": 6,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "finthefiddle",
+    "chitown314"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 7085,
+        "valueLost": 6615,
+        "netValueChange": 470,
+        "estimatedPowerScoreChange": 0.4,
+        "playersGained": [
+          {
+            "name": "Christian McCaffrey",
+            "value": 6410
+          },
+          {
+            "name": "Jauan Jennings",
+            "value": 675
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Courtland Sutton",
+            "value": 1915
+          },
+          {
+            "name": "Jerry Jeudy",
+            "value": 490
+          },
+          {
+            "name": "Michael Carter",
+            "value": 19
+          },
+          {
+            "name": "Woody Marks",
+            "value": 1479
+          },
+          {
+            "name": "RJ Harvey",
+            "value": 2712
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Christian McCaffrey",
+          "position": "RB",
+          "team": "SF",
+          "age": 29,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Jauan Jennings",
+          "position": "WR",
+          "team": "SF",
+          "age": 28,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Courtland Sutton",
+          "position": "WR",
+          "team": "DEN",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Jerry Jeudy",
+          "position": "WR",
+          "team": "CLE",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Michael Carter",
+          "position": "RB",
+          "team": "ARI",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Woody Marks",
+          "position": "RB",
+          "team": "HOU",
+          "age": 25,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "RJ Harvey",
+          "position": "RB",
+          "team": "DEN",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "chitown314",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 34.1,
+        "powerRank": 11,
+        "lineupValueScore": 32,
+        "performanceScore": 32.8,
+        "positionalScore": 50.2,
+        "depthScore": 14.6,
+        "totalTeams": 16,
+        "totalRosterValue": 19219
+      },
+      "tradeImpact": {
+        "valueGained": 6615,
+        "valueLost": 7085,
+        "netValueChange": -470,
+        "estimatedPowerScoreChange": -0.4,
+        "playersGained": [
+          {
+            "name": "Courtland Sutton",
+            "value": 1915
+          },
+          {
+            "name": "Jerry Jeudy",
+            "value": 490
+          },
+          {
+            "name": "Michael Carter",
+            "value": 19
+          },
+          {
+            "name": "Woody Marks",
+            "value": 1479
+          },
+          {
+            "name": "RJ Harvey",
+            "value": 2712
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Christian McCaffrey",
+            "value": 6410
+          },
+          {
+            "name": "Jauan Jennings",
+            "value": 675
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Courtland Sutton",
+          "position": "WR",
+          "team": "DEN",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Jerry Jeudy",
+          "position": "WR",
+          "team": "CLE",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Michael Carter",
+          "position": "RB",
+          "team": "ARI",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Woody Marks",
+          "position": "RB",
+          "team": "HOU",
+          "age": 25,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "RJ Harvey",
+          "position": "RB",
+          "team": "DEN",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Christian McCaffrey",
+          "position": "RB",
+          "team": "SF",
+          "age": 29,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Jauan Jennings",
+          "position": "WR",
+          "team": "SF",
+          "age": 28,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Jamie Carragher",
+  "analysis": "Look, I've seen some absolutely mad trades in my time analyzing fantasy football, but this one here? This is a MASTERCLASS in timing from finthefiddle. Absolutely brilliant. When you're 3-2 and sitting at the top of the power rankings with a 92 score, you don't need youth and potential - you need guaranteed production NOW. And that's exactly what Christian McCaffrey gives you, even at 29 years old with a declining trajectory. Forget all that dynasty nonsense about age - this is REDRAFT, and CMC is averaging 15.3 points per game! That's elite RB1 production, and in a league where running back scarcity is absolutely MASSIVE, you've just acquired the best win-now piece available. The value exchange here? It's 470 points in finthefiddle's favor on paper, but in real terms, it's even more lopsided when you consider positional scarcity. You're giving up Woody Marks and RJ Harvey - rookies averaging 7-point-something per game - plus Courtland Sutton who's 30 and in a dodgy Denver offense. For a contender, that's an absolute no-brainer.\n\nNow let's talk about chitown314, because THIS is where it gets interesting from a tactical standpoint. You're 0-5. ZERO AND FIVE! Likely eliminated from playoffs, sitting at 34.1 power score ranked 11th out of 16. What are you doing holding onto Christian McCaffrey? This is textbook asset management - selling high on a declining asset when you've got no shot at the title THIS year. The problem is, mate, you've absolutely FLEECED yourself on the return value! You're getting three young running backs with potential, sure, but you're only getting 6,615 in value back for 7,085 you're giving away. In redraft, this should've been a robbery going the OTHER direction! Harvey's got potential, Marks has opportunity in Houston, but neither is giving you the production you need if you were somehow trying to salvage this dumpster fire of a season. And here's the kicker - chitown314 has only made TWO trades all-time! This manager is NOT an active trader, doesn't have the experience of someone like finthefiddle who's made 31 career moves, and it SHOWS in this deal.\n\nThe championship implications here are crystal clear as day. Finthefiddle just went from playoff contender to legitimate title favorite. You've got a 92 power score BEFORE adding CMC, and now you're pairing him with whatever other studs you've got in that lineup? That's a championship-caliber move right there, and the +0.4 power score projection is probably UNDERSTATING the impact because it doesn't fully capture what an elite RB1 does in the playoffs. Nine weeks until playoffs means CMC has time to integrate into your squad, get healthy if needed, and be your workhorse down the stretch. Meanwhile, chitown314 is getting younger pieces that don't help them THIS season - Sutton's averaging 10.5 PPG but he's 30 and you're already eliminated, Jerry Jeudy's in Cleveland struggling at 8.2 PPG, and the rookies are lottery tickets. This is a REBUILD move disguised as... wait, it's REDRAFT! There IS no rebuild! This makes absolutely no sense for chitown314 unless they've completely given up on 2025 and are just collecting assets for... what exactly? Next year's draft?\n\nThe risk-reward profile here couldn't be more different for each side. Finthefiddle is taking on exactly ZERO risk - you're a contender getting the best player in the deal, and even if CMC gets injured, you've got depth and you're still 3-2 with the top power score in the league. This fits PERFECTLY with their trading pattern as a balanced but active trader - 10 deals this season alone means they're not afraid to make moves, and this is the big swing that could deliver a championship. Chitown314? You're taking on MASSIVE risk because you're betting on rookie production and aging receivers in a year where you're already cooked. The only way this makes sense is if you've completely punted on 2025, but again - IT'S REDRAFT! You don't get to keep these players! This is either a manager who doesn't understand league format or someone who's doing a mate a favor, and either way, it's absolutely baffling. This is the kind of deal that decides championships, and make no mistake - finthefiddle just won this trade by a COUNTRY MILE.",
+  "generatedAt": "2025-12-29T04:14:27.394Z"
+}

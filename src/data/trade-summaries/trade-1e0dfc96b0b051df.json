@@ -1,0 +1,180 @@
+{
+  "tradeId": "1e0dfc96b0b051df",
+  "week": 10,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "BigBishAl76",
+    "jdmorris"
+  ],
+  "sides": [
+    {
+      "teamName": "jdmorris",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 34.4,
+        "powerRank": 10,
+        "lineupValueScore": 27.2,
+        "performanceScore": 51.1,
+        "positionalScore": 32.6,
+        "depthScore": 11.9,
+        "totalTeams": 16,
+        "totalRosterValue": 16362
+      },
+      "tradeImpact": {
+        "valueGained": 409,
+        "valueLost": 3289,
+        "netValueChange": -2880,
+        "estimatedPowerScoreChange": -2.4,
+        "playersGained": [
+          {
+            "name": "Sam Darnold",
+            "value": 352
+          },
+          {
+            "name": "Emari Demercado",
+            "value": 57
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Jameson Williams",
+            "value": 3289
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Sam Darnold",
+          "position": "QB",
+          "team": "SEA",
+          "age": 28,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Emari Demercado",
+          "position": "RB",
+          "team": "ARI",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Tez Johnson",
+          "position": "WR",
+          "team": "TB",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Joe Flacco",
+          "position": "QB",
+          "team": "CIN",
+          "age": 40,
+          "careerStage": "Veteran/End of Career"
+        },
+        {
+          "name": "Jameson Williams",
+          "position": "WR",
+          "team": "DET",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jaylin Noel",
+          "position": "WR",
+          "team": "HOU",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "BigBishAl76",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 60.4,
+        "powerRank": 2,
+        "lineupValueScore": 53.3,
+        "performanceScore": 72.6,
+        "positionalScore": 75.6,
+        "depthScore": 12.2,
+        "totalTeams": 16,
+        "totalRosterValue": 32028
+      },
+      "tradeImpact": {
+        "valueGained": 3289,
+        "valueLost": 409,
+        "netValueChange": 2880,
+        "estimatedPowerScoreChange": 2.4,
+        "playersGained": [
+          {
+            "name": "Jameson Williams",
+            "value": 3289
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Sam Darnold",
+            "value": 352
+          },
+          {
+            "name": "Emari Demercado",
+            "value": 57
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Joe Flacco",
+          "position": "QB",
+          "team": "CIN",
+          "age": 40,
+          "careerStage": "Veteran/End of Career"
+        },
+        {
+          "name": "Jameson Williams",
+          "position": "WR",
+          "team": "DET",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jaylin Noel",
+          "position": "WR",
+          "team": "HOU",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Sam Darnold",
+          "position": "QB",
+          "team": "SEA",
+          "age": 28,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Emari Demercado",
+          "position": "RB",
+          "team": "ARI",
+          "age": 26,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Tez Johnson",
+          "position": "WR",
+          "team": "TB",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Alan Shearer",
+  "analysis": "Look, this trade is absolutely baffling from jdmorris, and I'll tell you exactly why. At the end of the day, we're Week 10 in a redraft league – five weeks until playoffs – and he's just given away a 40-year-old quarterback who's averaging 24 points per game for a younger one putting up 18.6. Let me be crystal clear: I don't care that Sam Darnold is 28 and Joe Flacco is 40. This isn't dynasty, this isn't about building for the future – you need points NOW. Flacco is delivering more of them, full stop. And while we're at it, Jameson Williams has a dynasty value of 3,289 compared to the 409 total you're getting back. Yes, he's only averaging 8 points per game, but he's playing for Detroit, one of the best offenses in football, and he's entering his prime. Trading him away for Emari Demercado and Tez Johnson – who've barely played meaningful snaps – is madness when you're 5-4 and fighting for your playoff life.\n\nBigBishAl76 has absolutely fleeced his opponent here, and the numbers don't lie. He's picking up 2,880 in net value while improving his power score by 2.4 points. He's already sitting at 6-3 with the second-best power score in the league at 60.4, and now he's adding a quarterback who's genuinely putting up elite numbers THIS season. Both managers are active traders – jdmorris with 10 all-time deals, BigBishAl76 with 12 – but this is where trading activity becomes trading recklessly. When you're ranked 10th out of 16 with a 5-4 record, you cannot afford to sacrifice immediate production for youth and potential. That's a luxury move for teams already locked into the playoffs or completely rebuilding, neither of which applies here.\n\nThe risk-reward profile here is completely lopsided. jdmorris is gambling that Darnold closes the 5.4 point-per-game gap with Flacco over the next five weeks, which seems unlikely given Seattle's inconsistent offense. He's hoping Demercado suddenly becomes relevant in Arizona's backfield and that Tez Johnson somehow emerges as a legitimate fantasy option in Tampa Bay. Meanwhile, BigBishAl76 risks nothing – he's getting a quarterback who's currently outperforming what he gave up, plus a young wide receiver on a Detroit team that's absolutely flying. Even if Flacco's ancient legs give out tomorrow, Williams alone makes this trade worthwhile given the scarcity of consistent wide receiver production.\n\nHere's my bold prediction: In three weeks' time, when jdmorris is watching the playoffs from the outside looking in and Flacco is still dropping 20+ point performances for BigBishAl76, this will go down as one of the worst late-season panic moves we've seen. The winner here is obvious – BigBishAl76 wins this trade by a country mile. He's turned depth pieces into immediate production and a rising asset, all while strengthening his position as the second-ranked team in the league. jdmorris? He's weakened his playoff push for players who might – MIGHT – have value in a league format that doesn't even exist for him. That's not balanced trading; that's gifting points to a rival who's already beating you in the standings. Absolutely baffling business.",
+  "generatedAt": "2025-12-29T04:18:25.031Z"
+}

@@ -1,0 +1,106 @@
+{
+  "tradeId": "ef512f42a3702969",
+  "week": 3,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "danielb6",
+    "stephen375"
+  ],
+  "sides": [
+    {
+      "teamName": "stephen375",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 27.5,
+        "powerRank": 16,
+        "lineupValueScore": 28.4,
+        "performanceScore": 24.1,
+        "positionalScore": 37.4,
+        "depthScore": 9.7,
+        "totalTeams": 16,
+        "totalRosterValue": 17055
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 227,
+        "netValueChange": -227,
+        "estimatedPowerScoreChange": -0.2,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Mark Andrews",
+            "value": 227
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Travis Hunter",
+          "position": "WR",
+          "team": "JAX",
+          "age": 22,
+          "careerStage": "Developing"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Mark Andrews",
+          "position": "TE",
+          "team": "BAL",
+          "age": 30,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "danielb6",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 27.6,
+        "powerRank": 15,
+        "lineupValueScore": 25.7,
+        "performanceScore": 33.4,
+        "positionalScore": 29.9,
+        "depthScore": 3.8,
+        "totalTeams": 16,
+        "totalRosterValue": 15459
+      },
+      "tradeImpact": {
+        "valueGained": 227,
+        "valueLost": 0,
+        "netValueChange": 227,
+        "estimatedPowerScoreChange": 0.2,
+        "playersGained": [
+          {
+            "name": "Mark Andrews",
+            "value": 227
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Mark Andrews",
+          "position": "TE",
+          "team": "BAL",
+          "age": 30,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Travis Hunter",
+          "position": "WR",
+          "team": "JAX",
+          "age": 22,
+          "careerStage": "Developing"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "This is absolute madness. Stephen375 is 0-2, dead last in power rankings, and he's trading away Mark Andrews—an elite tight end producing 7.8 points per game—for Travis Hunter, a rookie putting up 4.5 points per game at the deepest position in fantasy football. There's no logic here. None whatsoever.\n\nLet me tell you what this reminds me of—the Stefon Diggs trade from Minnesota to Buffalo. A proven commodity moves on, finds a new home, and delivers immediately. That's what danielb6 is getting here. Andrews is in his prime at 30, playing for Baltimore, and tight ends at his level don't grow on trees. Meanwhile, stephen375 is betting on potential at wide receiver when he should be desperate for production NOW. You're 0-2! You don't have time to develop rookies! This isn't a dynasty league where you can afford to think three years ahead. This is redraft. Every week counts. Every point matters. And you've just traded away 227 points of value for absolutely nothing.\n\nThe timing here is criminal. Week 3, early season, and stephen375 is already panicking. But instead of addressing his problems properly, he's making them worse. You don't trade elite positional scarcity for depth at wide receiver. The VOR calculation makes this crystal clear—tight end scarcity is massive, especially when you have a top-tier option. Andrews gives you a 3-4 point advantage over replacement level every single week. Hunter? He's a waiver wire player at this stage of his career. You can find 4.5 points per game from half the league's benches. This is surrender disguised as strategy.\n\nRisk and reward? There's no reward for stephen375. None. The risk is he continues losing because he's weakened his roster at a premium position for nothing. Danielb6 took a punt on a struggling team's desperation and absolutely cleaned up. He gave up a bench piece and got an every-week starter who could be the difference in playoff matchups. That's robbery. That's taking advantage of panic. And when you're ranked 15th out of 16 yourself, you take these gifts all day long. Stephen375 needed discipline and patience. Instead, he's shown neither. This is why you're 0-2, and this trade guarantees you'll stay there.",
+  "generatedAt": "2025-12-29T04:08:37.260Z"
+}

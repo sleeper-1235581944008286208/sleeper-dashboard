@@ -1,0 +1,116 @@
+{
+  "tradeId": "58a112ab69c9a9b0",
+  "week": 11,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "NiallCarslaw",
+    "jamesclarkson96"
+  ],
+  "sides": [
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.4,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 47.3,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 187,
+        "valueLost": 242,
+        "netValueChange": -55,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [
+          {
+            "name": "Rachaad White",
+            "value": 187
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Kenneth Gainwell",
+            "value": 242
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Rachaad White",
+          "position": "RB",
+          "team": "TB",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Kenneth Gainwell",
+          "position": "RB",
+          "team": "PIT",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "NiallCarslaw",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 45.9,
+        "powerRank": 7,
+        "lineupValueScore": 51,
+        "performanceScore": 40.9,
+        "positionalScore": 52.3,
+        "depthScore": 5.8,
+        "totalTeams": 16,
+        "totalRosterValue": 30607
+      },
+      "tradeImpact": {
+        "valueGained": 242,
+        "valueLost": 187,
+        "netValueChange": 55,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [
+          {
+            "name": "Kenneth Gainwell",
+            "value": 242
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Rachaad White",
+            "value": 187
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Kenneth Gainwell",
+          "position": "RB",
+          "team": "PIT",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Rachaad White",
+          "position": "RB",
+          "team": "TB",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Jamie Carragher",
+  "analysis": "Look, I've got to be honest with you - when I first saw this trade come across my desk, I thought someone had made a mistake with the data. You've got \"The Panic Button\" jamesclarkson96, sitting at 6-4 with just FOUR WEEKS until the playoffs, trading AWAY the better fantasy asset for the worse one. And on the other side, you've got \"The Bubble Boy\" NiallCarslaw at 4-6, clinging to playoff hopes by his fingernails, and he's moving OUT his more productive running back? This is madness! Absolute madness! White's averaging 11.5 points per game over 45 matches - that's a significant sample size, that tells you what you're getting. Gainwell? 8.2 per game over just 16. And here's jamesclarkson, ranked 14th out of 16 in power score with a woeful 4.5 depth rating, making his 19th career trade - his EIGHTH this season alone - and he's downgrading at running back when he desperately needs to be going the OTHER direction!\n\nNow, let me break down the logic here, because if you look at the value exchange, this was ALWAYS going to favor NiallCarslaw. He's picking up 55 points in dynasty value, but more importantly in a REDRAFT league, he's moving on from White right when you'd expect some regression. The Bubble Boy has made only six career trades, but when he moves, he moves with purpose - and this screams of a manager who's seen something in the Pittsburgh situation with Gainwell that the rest of us haven't caught up to yet. Maybe it's the playoff schedule, maybe it's the volume opportunity he's projecting. But here's what I know: the team with the BETTER record is taking the WORSE player by every measurable metric. That's not how you make the playoffs, that's how you watch them from your sofa!\n\nThis reminds me of the Tyreek Hill trade, it really does - when Kansas City sent an elite, proven producer to Miami and everyone said \"Chiefs are mad, they've lost their minds!\" But Andy Reid had seen something. He knew what he had in the structure, knew the value wasn't quite what everyone thought. Now, I'm not saying NiallCarslaw is Andy Reid - let's not get carried away - but The Panic Button is definitely making a Miami-esque move here, paying premium value for what he THINKS is the answer when the numbers are screaming at him that he's got it backwards. The difference? Miami at least got the MORE productive player. This is like if they'd traded Hill for Mecole Hardman and convinced themselves it was a masterstroke!\n\nHere's my bold prediction, and you can come back to me in three weeks when the playoff picture crystallizes: jamesclarkson96 misses the playoffs by ONE game, and Rachaad White finishes with fewer total points over the final four weeks than Kenneth Gainwell. The Bubble Boy, meanwhile? He sneaks into the playoffs at 7-7, rides Gainwell's late-season surge, and everyone's asking \"How did we miss that Pittsburgh situation?\" This trade is going to haunt The Panic Button, mark my words. When you're 6-4 with a power score of 29.4 and you're making lateral moves that decrease your value by 55 points, you're not building towards anything - you're rearranging deck chairs on the Titanic. Absolutely baffling business.",
+  "generatedAt": "2025-12-29T04:20:47.061Z"
+}

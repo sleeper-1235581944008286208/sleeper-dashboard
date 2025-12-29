@@ -1,0 +1,182 @@
+{
+  "tradeId": "4490c2a2409d720a",
+  "week": 2,
+  "season": "2025",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "stephen375",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 18651,
+        "valueLost": 7402,
+        "netValueChange": 11249,
+        "estimatedPowerScoreChange": 9.4,
+        "playersGained": [
+          {
+            "name": "Jahmyr Gibbs",
+            "value": 9227
+          },
+          {
+            "name": "Jaxon Smith-Njigba",
+            "value": 9424
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Dallas Goedert",
+            "value": 521
+          },
+          {
+            "name": "Nico Collins",
+            "value": 6455
+          },
+          {
+            "name": "Jacory Croskey-Merritt",
+            "value": 426
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "team": "DET",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "team": "SEA",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "team": "PHI",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Nico Collins",
+          "position": "WR",
+          "team": "HOU",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jacory Croskey-Merritt",
+          "position": "RB",
+          "team": "WAS",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "stephen375",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 27.5,
+        "powerRank": 16,
+        "lineupValueScore": 28.4,
+        "performanceScore": 24.1,
+        "positionalScore": 37.4,
+        "depthScore": 9.7,
+        "totalTeams": 16,
+        "totalRosterValue": 17055
+      },
+      "tradeImpact": {
+        "valueGained": 7402,
+        "valueLost": 18651,
+        "netValueChange": -11249,
+        "estimatedPowerScoreChange": -9.4,
+        "playersGained": [
+          {
+            "name": "Dallas Goedert",
+            "value": 521
+          },
+          {
+            "name": "Nico Collins",
+            "value": 6455
+          },
+          {
+            "name": "Jacory Croskey-Merritt",
+            "value": 426
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Jahmyr Gibbs",
+            "value": 9227
+          },
+          {
+            "name": "Jaxon Smith-Njigba",
+            "value": 9424
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "team": "PHI",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Nico Collins",
+          "position": "WR",
+          "team": "HOU",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jacory Croskey-Merritt",
+          "position": "RB",
+          "team": "WAS",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "team": "DET",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "team": "SEA",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Alan Shearer",
+  "analysis": "Right, let's get straight into this one because what we've got here is a proper smash-and-grab from finthefiddle – I'm calling him \"The League Bully\" – absolutely mugging stephen375, who I can only describe as \"The Charity Shop.\" And make no mistake, this is highway robbery in broad daylight.\n\nLook at the numbers, and they tell you everything you need to know. The League Bully is sat at the top of the power rankings despite an 0-1 start, and he's just turned Nico Collins, a 30-year-old tight end, and a complete unknown into Jahmyr Gibbs and Jaxon Smith-Njigba. That's an 11,249-point value swing! In a redraft league! Week 2! Gibbs is averaging 14.8 points per game in that Detroit offense that's absolutely flying, while JSN is coming off a season where he's established himself as a genuine weapon in Seattle. What's finthefiddle giving up? Collins is solid, no question – 10.3 PPG – but Goedert's averaging 5.4 points per game and already 30 years old. This isn't a trade; it's a heist. The Charity Shop, meanwhile, is dead last in the league with a 27.5 power score, and instead of acquiring young, productive talent, he's taken on an aging tight end and swapped his two best young pieces for immediate mediocrity. Absolutely baffling.\n\nThis reminds me of the Matthew Stafford-Jared Goff swap, except in this case, both teams think they're the Rams going all-in, but only one of them actually is. The League Bully is genuinely win-now – top power score, clearly a contender – and he's just acquired two players entering their absolute peak who'll deliver points NOW when it matters. The Charity Shop? He's sitting in 16th place of 16 teams! What is he going all-in for? A chance to finish 14th? In a redraft league, where none of this matters after December, he's traded away two 23-year-olds producing double-digit fantasy points for players who won't move the needle enough to save his season. If you're rebuilding, you do that in dynasty. In redraft, you're either competing or you're punting. There's no middle ground, and stephen375 has somehow found a way to do both badly.\n\nThe championship implications here are crystal clear: finthefiddle just widened the gap between himself and the rest of the league. He's already got the best power score, and he's added 9.4 points to it while his rival went the other direction. Gibbs in that Detroit offense is a league-winner – they're running the ball effectively, and he's getting the touches. JSN gives him a reliable WR2 with massive upside as Geno Smith continues to prove he's not the problem in Seattle. Meanwhile, The Charity Shop has essentially waved the white flag on 2025. You don't trade production for potential in Week 2 of redraft. You don't trade 23-year-olds for 30-year-olds unless you're getting a massive points-per-game upgrade. Collins for Goedert straight up would be questionable; adding Gibbs and JSN to the deal is madness.\n\nHere's my bold prediction: Come playoff time in Week 15, Gibbs will be a top-five running back, JSN will be a locked-in WR2, and The League Bully will be hoisting the trophy while The Charity Shop wonders what might have been. This trade will be studied in league history as the moment the 2025 season was decided. Goedert will be averaging 6 points per game, Collins will be solid but not spectacular at 11 PPG, and everyone will point to this deal as the turning point. At the end of the day, fantasy football is about putting points on the board, and The League Bully just acquired two players who do exactly that while giving up spare parts. Absolute masterclass in exploitation – and The Charity Shop has nobody to blame but himself.",
+  "generatedAt": "2025-12-29T04:06:58.113Z"
+}

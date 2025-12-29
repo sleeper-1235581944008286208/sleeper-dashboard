@@ -1,0 +1,96 @@
+{
+  "tradeId": "a267902620e1f0f7",
+  "week": 4,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "jamesclarkson96",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Jonathon Brooks",
+          "position": "RB",
+          "team": "CAR",
+          "age": 22,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "DeMario Douglas",
+          "position": "WR",
+          "team": "NE",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.4,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 47.3,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "DeMario Douglas",
+          "position": "WR",
+          "team": "NE",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jonathon Brooks",
+          "position": "RB",
+          "team": "CAR",
+          "age": 22,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "Look at this. Week 4, both teams sitting at 1-2, and they're swapping a running back who hasn't played a single down for a wide receiver averaging less than 5 points a game. Absolutely pointless. It's like rearranging deck chairs on the Titanic – doesn't matter which way you face them, you're still sinking.\n\nLet me call this what it is: \"The Hopeless\" trading with \"The Helpless.\" Finthefiddle is top of the power rankings but can't win a match to save his life, sitting there at 1-2 like a Ferrari with no petrol. And he's trading away immediate production – albeit rubbish production – for a player who's been healthy scratched all season. This is the Odell Beckham Jr. move all over again. Remember when the Browns gave up assets for OBJ thinking they'd bought a game-changer? He never stayed healthy, caused drama, and they ended up releasing him. Now finthefiddle is doing the same thing – chasing the name, the potential, the \"what if\" while his record is screaming for help NOW. It's Week 4 in a redraft league! You haven't got time for rehabilitation projects.\n\nAnd jamesclarkson96? Power score of 29.4 – fourteenth out of sixteen teams! He's getting a wide receiver who's caught passes from whatever disaster is happening in New England. DeMario Douglas isn't saving anyone's season. This lad is ranked near the bottom of the league and he's trading away a lottery ticket for immediate mediocrity. At least Brooks had the chance to come back and be something. Douglas IS something – he's a WR4 on a terrible offense. Both managers have been active traders this season, three deals each already, and you know what that tells me? They're panicking. Making moves for the sake of making moves. No plan, no strategy, just shuffling rubbish around hoping something sticks.\n\nThis trade changes neither team's power score. Zero impact. That should tell you everything you need to know. It's a complete waste of everyone's time. Two managers at 1-2, eleven weeks until the playoffs, and they're trading bench warmers like it matters. Have some standards. Make a real move or sit tight and fix what's actually broken with your starting lineups. This isn't accountability – it's desperation dressed up as activity.",
+  "generatedAt": "2025-12-29T04:25:02.605Z"
+}

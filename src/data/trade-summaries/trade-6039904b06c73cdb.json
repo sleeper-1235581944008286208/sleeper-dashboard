@@ -1,0 +1,174 @@
+{
+  "tradeId": "6039904b06c73cdb",
+  "week": 2,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "raaaaaidddderrrrrs",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 94,
+        "valueLost": 3354,
+        "netValueChange": -3260,
+        "estimatedPowerScoreChange": -2.7,
+        "playersGained": [
+          {
+            "name": "Cooper Kupp",
+            "value": 94
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Aaron Rodgers",
+            "value": 25
+          },
+          {
+            "name": "Kenneth Walker",
+            "value": 2938
+          },
+          {
+            "name": "Adonai Mitchell",
+            "value": 391
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Cooper Kupp",
+          "position": "WR",
+          "team": "SEA",
+          "age": 32,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Zack Moss",
+          "position": "RB",
+          "team": "FA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Aaron Rodgers",
+          "position": "QB",
+          "team": "PIT",
+          "age": 42,
+          "careerStage": "Veteran/End of Career"
+        },
+        {
+          "name": "Kenneth Walker",
+          "position": "RB",
+          "team": "SEA",
+          "age": 25,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Adonai Mitchell",
+          "position": "WR",
+          "team": "NYJ",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "raaaaaidddderrrrrs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 34,
+        "powerRank": 12,
+        "lineupValueScore": 23.1,
+        "performanceScore": 59.4,
+        "positionalScore": 29.1,
+        "depthScore": 4.4,
+        "totalTeams": 16,
+        "totalRosterValue": 13895
+      },
+      "tradeImpact": {
+        "valueGained": 3354,
+        "valueLost": 94,
+        "netValueChange": 3260,
+        "estimatedPowerScoreChange": 2.7,
+        "playersGained": [
+          {
+            "name": "Aaron Rodgers",
+            "value": 25
+          },
+          {
+            "name": "Kenneth Walker",
+            "value": 2938
+          },
+          {
+            "name": "Adonai Mitchell",
+            "value": 391
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Cooper Kupp",
+            "value": 94
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Aaron Rodgers",
+          "position": "QB",
+          "team": "PIT",
+          "age": 42,
+          "careerStage": "Veteran/End of Career"
+        },
+        {
+          "name": "Kenneth Walker",
+          "position": "RB",
+          "team": "SEA",
+          "age": 25,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Adonai Mitchell",
+          "position": "WR",
+          "team": "NYJ",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Cooper Kupp",
+          "position": "WR",
+          "team": "SEA",
+          "age": 32,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Zack Moss",
+          "position": "RB",
+          "team": "FA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Gary Lineker",
+  "analysis": "Well, well, well - this is what we call a proper dynasty manager wandering into a redraft league and making an absolute howler of a decision. Finthefiddle, sitting pretty at 1-0 with the top power score in the league, has just traded away Kenneth Walker - a 25-year-old running back in his prime producing 10.2 points per game - for Cooper Kupp, who at 32 is averaging fewer points and, let's be honest, is about as likely to stay healthy as I am to return to professional football. In a redraft league, you're not collecting baseball cards for future value, you're trying to win THIS season. And Kenneth Walker gives you that chance for the next 15 weeks. Cooper Kupp gives you anxiety every time you check the injury report.\n\nThe risk-reward profile here is absolutely lopsided, and not in finthefiddle's favor. They've essentially swapped a workhorse running back - remember, running backs are gold dust in fantasy - for an aging receiver who's already missed significant time and added Zack Moss, who's currently a free agent in real life according to this data. Meanwhile, raaaaaidddderrrrrs, sitting at 0-1 and desperately needing to climb from 12th place, just acquired a legitimate RB1 and a promising young receiver in Adonai Mitchell. Yes, they gave up some immediate receiving production in Kupp, but they've addressed their clear weakness. When your power score is 34 out of 100, you're not looking for safe moves - you're looking for game-changers. Kenneth Walker is exactly that.\n\nHere's my bold prediction: Come playoff time in Week 15, Kenneth Walker will still be a locked-in starter producing double-digit points, while Cooper Kupp will either be nursing an injury, splitting targets in a crowded Seattle offense, or just not quite worth the roster spot he's taking up. Finthefiddle will look back at this trade and wonder what they were thinking, especially when they face raaaaaidddderrrrrs in a potential playoff matchup and watch Walker bulldoze through their championship dreams. The value differential of 3,260 points in raaaaaidddderrrrrs' favor isn't just a number - it's a flashing warning sign that this trade was wildly uneven.\n\nAs for timing, Week 2 is precisely when you DON'T make panic moves based on small sample sizes, yet somehow finthefiddle - already the league leader - decided to tinker with success. It's baffling, really. Raaaaaidddderrrrrs needed to shake things up, and they got an absolute gift. This is the clearest trade winner I've seen in quite some time, and I suspect both managers will realize it by midseason. Sometimes in fantasy football, as in life, the best move is no move at all. Finthefiddle just learned that lesson the hard way.",
+  "generatedAt": "2025-12-29T04:22:38.382Z"
+}
