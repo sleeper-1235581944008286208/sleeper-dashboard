@@ -10,15 +10,23 @@ const DP_PLAYER_IDS_URL = "https://raw.githubusercontent.com/dynastyprocess/data
 // FantasyCalc API for ECR-based trade values (works for both dynasty and redraft)
 const FANTASYCALC_API_BASE = "https://api.fantasycalc.com/values/current";
 
-// Positional scarcity multipliers for PPG-based value calculation (fallback)
-// Higher = more valuable position (scarcity-based)
-const REDRAFT_POSITION_MULTIPLIERS = {
-  QB: 80,   // QBs are streamable in 1QB, more valuable in SF
+// Static fallback scarcity multipliers (used when FantasyCalc data unavailable)
+const STATIC_SCARCITY_FALLBACK = {
+  QB: 80,   // QBs are streamable in 1QB
   RB: 150,  // RBs are scarce and injury-prone
   WR: 100,  // Base value - WRs are most abundant
   TE: 120,  // Elite TEs are rare
   K: 20,    // Kickers are highly replaceable
   DEF: 25   // Defenses are streamable
+};
+
+const SF_SCARCITY_FALLBACK = {
+  QB: 140,  // QBs much more valuable in SF
+  RB: 150,
+  WR: 100,
+  TE: 120,
+  K: 20,
+  DEF: 25
 };
 
 /**
@@ -228,6 +236,102 @@ function getStartingSlots(league) {
 }
 
 /**
+ * Calculate dynamic position scarcity using VOR (Value Over Replacement) methodology
+ * This recalculates weekly based on current FantasyCalc ECR data
+ * @param {Array} fantasyCalcData - FantasyCalc API response with player values
+ * @param {Object} slots - League starting slots from getStartingSlots()
+ * @param {number} numTeams - Number of teams in league
+ * @param {boolean} isSF - Is Superflex league
+ * @returns {Object} Position multipliers keyed by position
+ */
+function calculateDynamicScarcity(fantasyCalcData, slots, numTeams, isSF) {
+  // Fallback if no FantasyCalc data
+  if (!fantasyCalcData || !Array.isArray(fantasyCalcData) || fantasyCalcData.length === 0) {
+    console.error(`⚠️ No FantasyCalc data - using static scarcity fallback`);
+    return isSF ? { ...SF_SCARCITY_FALLBACK } : { ...STATIC_SCARCITY_FALLBACK };
+  }
+
+  const positions = ['QB', 'RB', 'WR', 'TE', 'K', 'DEF'];
+  const vorMultipliers = {};
+  const vorDetails = {};
+
+  positions.forEach(pos => {
+    // Get players at this position sorted by ECR rank
+    const posPlayers = fantasyCalcData
+      .filter(p => p.player?.position === pos)
+      .sort((a, b) => (a.positionRank || 999) - (b.positionRank || 999));
+
+    if (posPlayers.length === 0) {
+      // No data for this position - use fallback
+      vorMultipliers[pos] = isSF && pos === 'QB'
+        ? SF_SCARCITY_FALLBACK[pos]
+        : STATIC_SCARCITY_FALLBACK[pos];
+      return;
+    }
+
+    // Calculate starters needed league-wide for this position
+    let startersNeeded = (slots[pos] || 0) * numTeams;
+
+    // FLEX eligibility (RB/WR/TE can fill FLEX spots)
+    // Estimate 33% of FLEX is filled by each eligible position
+    if (['RB', 'WR', 'TE'].includes(pos)) {
+      startersNeeded += Math.floor((slots.FLEX || 0) * numTeams * 0.33);
+    }
+
+    // SUPER_FLEX eligibility (QB gets ~40% in SF, others split remaining)
+    if (pos === 'QB' && isSF) {
+      startersNeeded += Math.floor((slots.SUPER_FLEX || 0) * numTeams * 0.4);
+    } else if (['RB', 'WR', 'TE'].includes(pos) && isSF) {
+      startersNeeded += Math.floor((slots.SUPER_FLEX || 0) * numTeams * 0.2);
+    }
+
+    // VOR calculation: Elite value - Replacement level value
+    const elitePlayer = posPlayers[0];
+    const replacementIndex = Math.min(startersNeeded, posPlayers.length - 1);
+    const replacementPlayer = posPlayers[replacementIndex];
+
+    const eliteValue = elitePlayer?.redraftValue || elitePlayer?.value || 0;
+    const replacementValue = replacementPlayer?.redraftValue || replacementPlayer?.value || 100;
+
+    // VOR spread = difference between elite and replacement
+    const vorSpread = Math.max(0, eliteValue - replacementValue);
+
+    vorMultipliers[pos] = vorSpread;
+    vorDetails[pos] = {
+      eliteValue,
+      replacementValue,
+      replacementRank: replacementIndex + 1,
+      startersNeeded,
+      playersAvailable: posPlayers.length
+    };
+  });
+
+  // Normalize to 20-200 scale with WR = 100 as baseline
+  const wrVor = vorMultipliers['WR'] || 1;
+  const normalizedMultipliers = {};
+
+  positions.forEach(pos => {
+    let normalized = Math.round((vorMultipliers[pos] / wrVor) * 100);
+    // Clamp to reasonable range
+    normalized = Math.max(20, Math.min(200, normalized));
+    normalizedMultipliers[pos] = normalized;
+  });
+
+  // Log the calculated scarcity values
+  console.error(`📊 Dynamic Scarcity (VOR):`);
+  positions.forEach(pos => {
+    const detail = vorDetails[pos];
+    if (detail) {
+      console.error(`   ${pos}: ${normalizedMultipliers[pos]} (elite=${detail.eliteValue}, repl=${detail.replacementValue} @ rank ${detail.replacementRank})`);
+    } else {
+      console.error(`   ${pos}: ${normalizedMultipliers[pos]} (fallback)`);
+    }
+  });
+
+  return normalizedMultipliers;
+}
+
+/**
  * Match DynastyProcess values to Sleeper players using Sleeper ID
  */
 function matchPlayerValues(players, dpValues, dpPlayerIds, isSF) {
@@ -313,8 +417,11 @@ function matchPlayerValues(players, dpValues, dpPlayerIds, isSF) {
 /**
  * Calculate redraft values based on current season fantasy performance
  * Uses PPG from matchups data with positional scarcity weighting
+ * @param {Object} scarcityMultipliers - Dynamic VOR-based scarcity multipliers (optional)
  */
-function calculateRedraftValues(players, matchups, isSF) {
+function calculateRedraftValues(players, matchups, isSF, scarcityMultipliers = null) {
+  // Use static fallback if no dynamic scarcity provided
+  const multipliers = scarcityMultipliers || (isSF ? SF_SCARCITY_FALLBACK : STATIC_SCARCITY_FALLBACK);
   const playerValues = new Map();
   const playerStats = new Map(); // Track games and total points per player
 
@@ -352,15 +459,12 @@ function calculateRedraftValues(players, matchups, isSF) {
     if (stats && stats.games > 0) {
       ppg = stats.totalPoints / stats.games;
 
-      // Get position multiplier (adjust for superflex)
-      let multiplier = REDRAFT_POSITION_MULTIPLIERS[position] || 50;
-      if (isSF && position === 'QB') {
-        multiplier = 140; // QBs much more valuable in SF
-      }
+      // Get dynamic VOR-based position multiplier
+      const posMultiplier = multipliers[position] || 50;
 
       // Value = PPG * position multiplier
       // This creates values roughly comparable to dynasty values (1000-9000 range)
-      value = Math.round(ppg * multiplier);
+      value = Math.round(ppg * posMultiplier);
 
       // Bonus for consistent starters (started >50% of games played)
       if (stats.starterGames > stats.games * 0.5) {
@@ -393,9 +497,10 @@ function calculateRedraftValues(players, matchups, isSF) {
  * Calculate enhanced redraft values using FantasyCalc ECR + Sleeper projections
  * Primary: FantasyCalc ECR trade values (market-based)
  * Secondary: Sleeper ROS projections (forward-looking)
- * Fallback: PPG-based calculation (historical)
+ * Fallback: PPG-based calculation with dynamic scarcity (historical)
+ * @param {Object} scarcityMultipliers - Dynamic VOR-based scarcity multipliers
  */
-function calculateEnhancedRedraftValues(players, matchups, fantasyCalcData, sleeperProjections, isSF) {
+function calculateEnhancedRedraftValues(players, matchups, fantasyCalcData, sleeperProjections, isSF, scarcityMultipliers) {
   const playerValues = new Map();
 
   // Create FantasyCalc lookup by sleeperId
@@ -477,12 +582,10 @@ function calculateEnhancedRedraftValues(players, matchups, fantasyCalcData, slee
       }
     }
 
-    // Fallback: PPG-based calculation
+    // Fallback: PPG-based calculation with dynamic scarcity
     if (value === 0 && stats && stats.games > 0) {
-      let multiplier = REDRAFT_POSITION_MULTIPLIERS[position] || 50;
-      if (isSF && position === 'QB') {
-        multiplier = 140;
-      }
+      // Use dynamic VOR-based scarcity multiplier
+      const multiplier = scarcityMultipliers[position] || 50;
       value = Math.round(ppg * multiplier);
 
       // Bonus for consistent starters
@@ -774,6 +877,9 @@ async function calculatePowerRankings() {
   let playerValues;
   let valueSourceDetails = {};
 
+  // Variable to store scarcity multipliers (for output metadata)
+  let scarcityMultipliers = null;
+
   if (LEAGUE_TYPE === 'redraft') {
     console.error(`📈 Using ENHANCED REDRAFT values (FantasyCalc ECR + Sleeper Projections)`);
 
@@ -783,20 +889,26 @@ async function calculatePowerRankings() {
       fetchSleeperProjections(league.season, currentWeek)
     ]);
 
+    // Calculate dynamic scarcity using VOR methodology
+    scarcityMultipliers = calculateDynamicScarcity(fantasyCalcData, slots, numTeams, isSF);
+
     playerValues = calculateEnhancedRedraftValues(
       players,
       matchups,
       fantasyCalcData,
       sleeperProjections,
-      isSF
+      isSF,
+      scarcityMultipliers
     );
 
     valueSourceDetails = {
       primary: 'FantasyCalc ECR',
       secondary: 'Sleeper ROS Projections',
-      fallback: 'Current Season PPG',
+      fallback: 'Current Season PPG (VOR-weighted)',
       fantasyCalcLoaded: fantasyCalcData ? fantasyCalcData.length : 0,
-      projectionsLoaded: sleeperProjections ? sleeperProjections.size : 0
+      projectionsLoaded: sleeperProjections ? sleeperProjections.size : 0,
+      scarcityMethod: 'vor',
+      scarcityMultipliers
     };
   } else {
     console.error(`📈 Using DYNASTY values (DynastyProcess trade values)`);
