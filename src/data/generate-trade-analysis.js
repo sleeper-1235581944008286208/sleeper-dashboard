@@ -28,6 +28,7 @@ const __dirname = dirname(__filename);
 const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID;
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 const FETCH_REAL_WORLD_CONTEXT = process.env.FETCH_REAL_WORLD_CONTEXT === 'true'; // Enable with FETCH_REAL_WORLD_CONTEXT=true
+const LEAGUE_TYPE = process.env.LEAGUE_TYPE || 'dynasty'; // 'dynasty' or 'redraft'
 
 if (!LEAGUE_ID) {
   console.error('❌ Error: SLEEPER_LEAGUE_ID environment variable not set');
@@ -1135,9 +1136,24 @@ IMPORTANT GUIDELINES:
 - Use ${persona.name}'s actual catchphrases and speaking patterns
 - Be entertaining, insightful, and occasionally controversial
 
+LEAGUE TYPE: ${LEAGUE_TYPE.toUpperCase()}
+${LEAGUE_TYPE === 'dynasty' ? `
+This is a DYNASTY league - players are kept year over year. Focus on:
+- Long-term value and player trajectories (age, career stage)
+- Future draft picks and their importance
+- Building for sustained success over multiple seasons
+- Player development and "buy low/sell high" windows
+` : `
+This is a REDRAFT league - rosters reset each year. Focus on:
+- Current season production and immediate impact
+- Remaining schedule and playoff implications
+- This year's championship window only
+- Ignore age/dynasty value - only this season matters
+`}
+
 POWER SCORE CONTEXT FOR REFERENCE:
 Power Score (0-100) measures overall team strength:
-- Lineup Value (50%): Dynasty asset value of optimal starters
+- Lineup Value (50%): ${LEAGUE_TYPE === 'dynasty' ? 'Dynasty' : 'Current season'} asset value of optimal starters
 - Performance (30%): Actual results (win%, all-play record)
 - Positional (15%): Advantage vs league average at each position
 - Depth (5%): Quality of bench/backup players
@@ -1281,6 +1297,7 @@ async function main() {
   if (FETCH_REAL_WORLD_CONTEXT) {
     console.log(`🌍 Real-world context fetching: ENABLED`);
   }
+  console.log(`🏈 League Type: ${LEAGUE_TYPE.toUpperCase()}`);
   console.log('');
 
   // Process all trades with enhanced metrics

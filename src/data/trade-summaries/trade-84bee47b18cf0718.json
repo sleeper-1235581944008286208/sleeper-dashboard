@@ -1,0 +1,107 @@
+{
+  "tradeId": "84bee47b18cf0718",
+  "week": 1,
+  "season": "2024",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "PrinceofPizza",
+    "cosmohouck"
+  ],
+  "sides": [
+    {
+      "teamName": "PrinceofPizza",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 80.8,
+        "powerRank": 3,
+        "lineupValueScore": 89.3,
+        "performanceScore": 63.7,
+        "positionalScore": 86.5,
+        "depthScore": 81,
+        "totalTeams": 12,
+        "totalRosterValue": 42833
+      },
+      "tradeImpact": {
+        "valueGained": 2075,
+        "valueLost": 0,
+        "netValueChange": 2075,
+        "estimatedPowerScoreChange": 2.2,
+        "playersGained": [
+          {
+            "name": "Sam Darnold",
+            "value": 2075
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Sam Darnold",
+          "position": "QB",
+          "team": "SEA",
+          "age": 28,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "2025 Round 3 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 2075,
+        "netValueChange": -2075,
+        "estimatedPowerScoreChange": -2.2,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Sam Darnold",
+            "value": 2075
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "2025 Round 3 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Sam Darnold",
+          "position": "QB",
+          "team": "SEA",
+          "age": 28,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2025",
+      "round": 3,
+      "from": "PrinceofPizza",
+      "to": "cosmohouck"
+    }
+  ],
+  "persona": "Todd McShay",
+  "analysis": "Look, I've seen a lot of head-scratching moves in my years covering football, but cosmohouck just gave away Sam Darnold for what amounts to a bag of footballs. This is a classic case of overvaluing draft capital at the expense of proven roster construction. PrinceofPizza is getting tremendous value here – we're talking about a quarterback who's entering his prime years, showed flashes of competency, and provides valuable depth at the most important position in fantasy football. You're getting a 28-year-old signal-caller with seven years until projected decline for a late third-round pick? That's not team building, that's a fire sale. The value differential here is stark: 2,075 dynasty points versus essentially zero. This isn't \"selling high\" – this is panic-selling assets when you're the number one ranked team in the league with a perfect 100 lineup score and 100 depth score. It makes absolutely no sense.\n\nHere's what really concerns me about this deal from cosmohouck's perspective: you're the league's top-ranked team at 93.4 power score, and you're hemorrhaging roster depth for draft picks you won't see pay dividends for another year or two. This reminds me of the DeAndre Hopkins trade when Bill O'Brien sent a top-five receiver to Arizona for David Johnson and a second-rounder. Everyone knew immediately Houston got fleeced, and it became organizational malpractice that haunted them for years. Now, I'm not saying Darnold is Hopkins – far from it – but the principle is the same: you're a championship-contending team giving away viable assets for future considerations that don't help you win NOW. Meanwhile, PrinceofPizza sits at number three in the league with an 80.8 power score, and they just added 2.2 points of projected improvement without sacrificing roster construction. That's textbook \"best player available\" philosophy – take the value when it presents itself, especially at quarterback where depth wins championships.\n\nThe championship implications here are real, folks. PrinceofPizza just fortified their quarterback room without touching their core roster, and that 2.2 power score bump could be the difference between a first-round bye and fighting through the wild card. They're future-focused historically – they've stockpiled four draft picks in previous deals – but they recognize when value presents itself. Smart organizations pounce on these opportunities. Meanwhile, cosmohouck is playing checkers while everyone else is playing chess. You've got the roster to win it all THIS YEAR, you're ranked first in the league, and you're trading away depth pieces for mid-round picks? That's not championship football. That's a team that doesn't understand the win-now window when they're sitting in it.\n\nHere's my bold prediction: two years from now, we'll look back at this trade as the moment cosmohouck's dynasty window started closing. They'll regret not capitalizing on their 93.4 power score when they had it, and PrinceofPizza will have parlayed this depth acquisition into a playoff run while continuing to stockpile assets. Darnold might never be a weekly starter for PrinceofPizza, but he's insurance, he's trade bait down the line, and he cost essentially nothing. This is the kind of value pick that championship teams make – low risk, high upside, fits the scheme of roster depth. Sometimes in dynasty football, you've got to recognize when you're reaching for draft picks and when you're getting a steal on proven commodities. PrinceofPizza understood the assignment. Cosmohouck is going to wish they had this one back.",
+  "generatedAt": "2025-12-29T01:41:17.611Z"
+}

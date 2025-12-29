@@ -1,0 +1,121 @@
+{
+  "tradeId": "b35d4bc4d4c2a325",
+  "week": 10,
+  "season": "2023",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "drobs",
+    "cosmohouck"
+  ],
+  "sides": [
+    {
+      "teamName": "drobs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 51.3,
+        "powerRank": 6,
+        "lineupValueScore": 53.3,
+        "performanceScore": 57.3,
+        "positionalScore": 36.8,
+        "depthScore": 38,
+        "totalTeams": 12,
+        "totalRosterValue": 25560
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 380,
+        "netValueChange": -380,
+        "estimatedPowerScoreChange": -0.4,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Rashid Shaheed",
+            "value": 380
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Cole Kmet",
+          "position": "TE",
+          "team": "CHI",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Rashid Shaheed",
+          "position": "WR",
+          "team": "NO",
+          "age": 27,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2026 Round 3 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 380,
+        "valueLost": 0,
+        "netValueChange": 380,
+        "estimatedPowerScoreChange": 0.4,
+        "playersGained": [
+          {
+            "name": "Rashid Shaheed",
+            "value": 380
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Rashid Shaheed",
+          "position": "WR",
+          "team": "NO",
+          "age": 27,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2026 Round 3 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Cole Kmet",
+          "position": "TE",
+          "team": "CHI",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2026",
+      "round": 3,
+      "from": "drobs",
+      "to": "cosmohouck"
+    }
+  ],
+  "persona": "Ian Rapoport",
+  "analysis": "Here's what I'm hearing on this fascinating late-season deal, folks. My understanding is that drobs, sitting at 5-4 and very much in the playoff hunt, made a classic win-now move by flipping Rashid Shaheed and a 2026 third-rounder to the league-leading but somehow 1-8 cosmohouck for Cole Kmet. Sources tell me this is all about plugging a hole at tight end for a team that believes it can make noise in the next four weeks. Now, here's the thing – and this is important – drobs is taking a significant value hit here, giving up 380 points of dynasty value for essentially nothing on paper. But when you're 5-4 with the playoffs staring you in the face? Sometimes you mortgage a bit of the future for immediate production. The tight end position is absolutely scarce right now, and getting a 26-year-old starter in Kmet could be the piece that stabilizes their lineup down the stretch.\n\nWhat's fascinating about the timing here is that this is trade number 25 of 25 this season – the final domino to fall before playoff positioning gets locked in. My understanding is both managers have been active all year, with drobs making their 14th career deal and cosmohouck their 15th. These are savvy operators who know what they're doing. For drobs, this absolutely fits their pattern as a balanced trader who's made six moves this season – they see a window and they're attacking it. The 0.4-point drop in their power score doesn't tell the full story when you consider positional scarcity. Sometimes the numbers lie, and tight end is where championships are won or lost.\n\nFrom cosmohouck's perspective, sources indicate this is a total rebuild masterstroke. They're 1-8 but boasting the number one power score in the league at 93.4 – how does that happen? It means they've been stockpiling assets all year long. Banking a 380-value receiver in Shaheed, who's in his prime years at 27 and averaging more fantasy points per game than Kmet, plus adding another draft pick to their already impressive collection? That's textbook asset accumulation. Keep an eye on this team – they've now acquired 15 draft picks historically while only trading away eight. This is a dynasty juggernaut being constructed in real-time, folks.\n\nAs for championship implications, here's my read: drobs is pushing their chips to the center of the table, and at 5-4 with four weeks to go, they're betting that Kmet's consistency at a premium position gives them a better shot than Shaheed's boom-or-bust profile at receiver. The rivalry history here – these teams are 4-4 all-time against each other – adds another layer. My understanding is drobs views this as their championship window, even if the value metrics suggest they overpaid. Meanwhile, cosmohouck is playing chess while everyone else plays checkers, setting up for 2024 and beyond with elite lineup value and ridiculous depth. This is a developing situation, but right now? I'd say both teams got exactly what they needed for where they are in their respective timelines.",
+  "generatedAt": "2025-12-29T01:55:22.662Z"
+}

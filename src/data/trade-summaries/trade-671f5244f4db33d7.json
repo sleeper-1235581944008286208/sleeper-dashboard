@@ -1,0 +1,121 @@
+{
+  "tradeId": "671f5244f4db33d7",
+  "week": 8,
+  "season": "2023",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Shogunation",
+    "drobs"
+  ],
+  "sides": [
+    {
+      "teamName": "drobs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 51.3,
+        "powerRank": 6,
+        "lineupValueScore": 53.3,
+        "performanceScore": 57.3,
+        "positionalScore": 36.8,
+        "depthScore": 38,
+        "totalTeams": 12,
+        "totalRosterValue": 25560
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 284,
+        "netValueChange": -284,
+        "estimatedPowerScoreChange": -0.3,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Tyjae Spears",
+            "value": 284
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Roschon Johnson",
+          "position": "RB",
+          "team": "CHI",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2026 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Tyjae Spears",
+          "position": "RB",
+          "team": "TEN",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "Shogunation",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 76.4,
+        "powerRank": 4,
+        "lineupValueScore": 79,
+        "performanceScore": 78.2,
+        "positionalScore": 62.7,
+        "depthScore": 80.9,
+        "totalTeams": 12,
+        "totalRosterValue": 37890
+      },
+      "tradeImpact": {
+        "valueGained": 284,
+        "valueLost": 0,
+        "netValueChange": 284,
+        "estimatedPowerScoreChange": 0.3,
+        "playersGained": [
+          {
+            "name": "Tyjae Spears",
+            "value": 284
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Tyjae Spears",
+          "position": "RB",
+          "team": "TEN",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Roschon Johnson",
+          "position": "RB",
+          "team": "CHI",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2026 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2026",
+      "round": 2,
+      "from": "Shogunation",
+      "to": "drobs"
+    }
+  ],
+  "persona": "Louis Riddick",
+  "analysis": "Look, from a front office standpoint, this is what we call a \"talent evaluation divergence\" - and let me tell you something, one of these GMs is going to look brilliant, and the other is going to be second-guessing this move for the next two years. Welcome to the high-stakes world of dynasty asset management, folks.\n\nLet me start with \"The Asset Flipper\" - that's drobs - who's made 12 trades in his career and is now on number four this season. This manager is 4-3, sitting at playoff contender status with a power score of 51.3, ranked sixth in a 12-team league. Here's what concerns me: you're giving up Tyjae Spears, who's averaging 5.8 points per game and has a dynasty value of 284, for Roschon Johnson at 4.3 PPG and a 2026 second-rounder? That's not asset management - that's asset deflation. Spears is in Tennessee where he's flashing behind Tony Pollard, showing the receiving chops and explosiveness that made him a second-round pick. Johnson? He's stuck in Chicago behind D'Andre Swift and Khalil Herbert in one of the league's worst offensive ecosystems. The organizational philosophy here makes no sense for a team trying to solidify a playoff spot. You're basically selling low on a guy approaching his peak production years - four years to decline according to these metrics - and hoping a future second-rounder bails you out. That's not how championship windows stay open.\n\nNow let's talk about \"The Vulture\" - that's Shogunation - sitting pretty at 5-2 with a 76.4 power score, ranked fourth and already a playoff lock. This manager has executed EIGHT trades this season, and brother, this might be the shrewdest one yet. This reminds me of the Stefon Diggs situation when Buffalo pounced on a disgruntled star from Minnesota - except here, you're getting Spears at a discount because his current situation in Tennessee has clouded people's evaluation of his talent. The Vikings thought they were addition by subtraction; they were dead wrong. Shogunation is betting that Spears' role expands, that his skill set translates to more opportunities, and that they're buying low on a running back entering his prime with legitimate receiving ability. The value extraction here is textbook front office work - you're getting 284 in dynasty value while giving up essentially a dart throw backup and a future second. That's called maximizing your championship window when you're already in pole position.\n\nHere's my bold prediction: Two years from now, we're going to look back at this trade and it's going to be talked about as one of those \"how did that even happen?\" moments. Spears will be a consistent RB2 with standalone value, potentially in a different backfield situation, while Roschon Johnson will be a forgotten handcuff that never materialized. The winner here is crystal clear - Shogunation just robbed the bank in broad daylight, adding a young ascending asset to an already deep roster (80.9 depth score!) while keeping their championship window wide open. The loser? The Asset Flipper just traded real dynasty value for hope and a prayer. From a team-building perspective, when you're a borderline playoff team at 4-3, you don't trade proven young assets for question marks. You consolidate talent, not dilute it. This is organizational malpractice disguised as \"staying active.\" Sometimes the best trade is the one you DON'T make, and drobs just learned that lesson the hard way.",
+  "generatedAt": "2025-12-29T01:54:34.116Z"
+}

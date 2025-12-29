@@ -1,0 +1,97 @@
+{
+  "tradeId": "a67dc15250333ac6",
+  "week": 1,
+  "season": "2023",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "cosmohouck",
+    "Shogunation"
+  ],
+  "sides": [
+    {
+      "teamName": "Shogunation",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 76.4,
+        "powerRank": 4,
+        "lineupValueScore": 79,
+        "performanceScore": 78.2,
+        "positionalScore": 62.7,
+        "depthScore": 80.9,
+        "totalTeams": 12,
+        "totalRosterValue": 37890
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "2023 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Jimmy Garoppolo",
+          "position": "QB",
+          "team": "LAR",
+          "age": 33,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Jimmy Garoppolo",
+          "position": "QB",
+          "team": "LAR",
+          "age": 33,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "2023 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2023",
+      "round": 2,
+      "from": "cosmohouck",
+      "to": "Shogunation"
+    }
+  ],
+  "persona": "Adam Schefter",
+  "analysis": "Breaking news out of this dynasty league, per sources: In a move reminiscent of the Matthew Stafford-Jared Goff swap that reshaped the NFL landscape, we're seeing a classic win-now versus rebuild transaction here. League sources tell me cosmohouck—the league's top-ranked team at 93.4 power score—is making a veteran QB acquisition, sending a 2023 second-round pick to Shogunation for 33-year-old Jimmy Garoppolo. I'm told this is exactly the type of move contenders make when they're sitting at #1 and want to push their chips to the center of the table. According to multiple sources close to the situation, cosmohouck believes Garoppolo provides the quarterback depth needed for a championship run, despite the veteran posting just 9.5 PPG over 19 games. This is \"The Consolidator\" doing what he does best—trading future assets for present-day pieces, having already moved 11 picks in his trading history while stockpiling veteran talent.\n\nHere's what I'm hearing from the Shogunation camp: \"The Pick Farmer\" is executing a textbook rebuild strategy. Sources say this middle-of-the-pack team (ranked #4 with a 76.4 power score) recognized they weren't competing with cosmohouck this season and smartly converted an aging quarterback asset into draft capital. I'm told Shogunation viewed Garoppolo—a 33-year-old with 11 years of tread on the tires—as a depreciating asset who needed to be moved before his value evaporated entirely. According to people familiar with the situation, getting a second-round pick for a QB averaging under 10 points per game represents excellent value extraction in Week 1 when everyone's still chasing upside.\n\nFrom a risk-reward standpoint, league sources indicate The Consolidator is taking on minimal risk here—he's the #1 team adding a proven veteran who knows how to manage games, and a second-round pick wasn't making his lineup anyway with that perfect 100 lineup score. But here's the concern I'm hearing: Garoppolo's 9.5 PPG suggests he's a low-end QB2 at best in dynasty formats, and cosmohouck just surrendered a pick that could yield a younger, more valuable asset. The Pick Farmer, meanwhile, faces almost zero risk—sources tell me he's playing the long game, accumulating ammunition for future drafts while his 0-5 all-time head-to-head record against cosmohouck suggests he wasn't winning this matchup anyway.\n\nPer league sources, this one's clear: Shogunation wins this trade, and it's not particularly close. I'm told The Pick Farmer just extracted draft capital for a 33-year-old backup quarterback in early September when asset values are purely speculative. The Consolidator may be the league's top team, but according to multiple people I've spoken with, he overpaid for QB depth that likely won't move the needle for a championship roster. Sometimes the best teams make the worst trades because they feel pressure to do *something*—and this, sources say, smells like exactly that scenario.",
+  "generatedAt": "2025-12-29T01:52:02.403Z"
+}

@@ -1,0 +1,145 @@
+{
+  "tradeId": "d5aabae49ddfe366",
+  "week": 1,
+  "season": "2025",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Shogunation",
+    "cosmohouck"
+  ],
+  "sides": [
+    {
+      "teamName": "Shogunation",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 76.4,
+        "powerRank": 4,
+        "lineupValueScore": 79,
+        "performanceScore": 78.2,
+        "positionalScore": 62.7,
+        "depthScore": 80.9,
+        "totalTeams": 12,
+        "totalRosterValue": 37890
+      },
+      "tradeImpact": {
+        "valueGained": 6766,
+        "valueLost": 6320,
+        "netValueChange": 446,
+        "estimatedPowerScoreChange": 0.5,
+        "playersGained": [
+          {
+            "name": "Caleb Williams",
+            "value": 6766
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Drake Maye",
+            "value": 6320
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Caleb Williams",
+          "position": "QB",
+          "team": "CHI",
+          "age": 23,
+          "careerStage": "Developing"
+        },
+        {
+          "name": "2025 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Drake Maye",
+          "position": "QB",
+          "team": "NE",
+          "age": 23,
+          "careerStage": "Developing"
+        },
+        {
+          "name": "2025 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 6320,
+        "valueLost": 6766,
+        "netValueChange": -446,
+        "estimatedPowerScoreChange": -0.5,
+        "playersGained": [
+          {
+            "name": "Drake Maye",
+            "value": 6320
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Caleb Williams",
+            "value": 6766
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Drake Maye",
+          "position": "QB",
+          "team": "NE",
+          "age": 23,
+          "careerStage": "Developing"
+        },
+        {
+          "name": "2025 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Caleb Williams",
+          "position": "QB",
+          "team": "CHI",
+          "age": 23,
+          "careerStage": "Developing"
+        },
+        {
+          "name": "2025 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2025",
+      "round": 2,
+      "from": "cosmohouck",
+      "to": "Shogunation"
+    },
+    {
+      "season": "2025",
+      "round": 2,
+      "from": "Shogunation",
+      "to": "cosmohouck"
+    }
+  ],
+  "persona": "Adam Schefter",
+  "analysis": "**BREAKING: Sources Say League Stunned as Top-Ranked Dynasty Makes Stunning QB Pivot**\n\nPer league sources, this Week 1 trade has the dynasty community buzzing, and I'm told both GMs believe they're getting the better end of what amounts to essentially a rookie QB swap-plus-pick maneuver. Shogunation—let's call him \"The Believer\"—acquires Caleb Williams and a 2025 second-rounder in exchange for Drake Maye and his own second. Meanwhile, cosmohouck—\"The Contrarian\" given his willingness to move off the higher-valued asset while sitting atop the league standings—makes the inverse move. According to multiple sources familiar with the situation, this boils down to a fundamental philosophical disagreement about these two young quarterbacks' futures. Williams outscored Maye by 4.2 points per game in Year 1 and carries a dynasty value advantage of 446 points, yet The Contrarian is betting that gap closes—or reverses entirely. The risk-reward here? The Believer is paying a premium to upgrade from Maye to Williams, banking on Chicago's offensive infrastructure and Williams' higher ceiling. The Contrarian, conversely, gets back draft capital while betting on Bill Belichick's... wait, my bad, the Patriots' development system to unlock Maye's potential at a discount price.\n\nI'm told both managers fit their historical patterns to a tee. The Believer has now completed his 14th all-time trade, consistently moving pieces to optimize his roster—he's traded away 16 players while acquiring just 11, suggesting he consolidates assets rather than hoards them. This move screams quality-over-quantity: giving up the lesser QB plus draft capital to land the presumed better one. The Contrarian, meanwhile, continues his hyperactive approach with trade number 24 all-time and his third already this season. Sources say he's been accumulating draft capital like a Wall Street trader—21 picks acquired versus just 15 dealt historically—and this move fits that MO perfectly. Getting a second-rounder back while downgrading from Williams to Maye? Classic value arbitrage from someone who clearly believes the market has overpriced Williams relative to Maye.\n\nBreaking it down from a competitive standpoint: The Contrarian enters this deal as the league's top-ranked team with a perfect 100-rated lineup component and 93.4 overall power score. He can afford to take a small hit (projected -0.5 power score change) while stockpiling assets for future moves. The Believer, ranked fourth with a 76.4 power score, needs to close the gap on the elite teams—and upgrading from the QB who averaged 10.7 PPG to the one who posted 14.9 PPG makes tactical sense for a win-now push. League sources indicate the 0.5-point power score bump for Shogunation could be understated if Williams takes another developmental leap in Year 2 under what should be an improved Bears offense.\n\nAccording to sources close to the trade talks, **The Believer wins this deal decisively**—at least in the immediate term. He's getting the better quarterback straight up, the guy who was the consensus QB1 in the 2024 draft class and who significantly outproduced Maye as a rookie. Yes, he's surrendering a second-round pick to make it happen, but when you're the fourth-ranked team chasing the top-three, you don't win by standing pat—you win by making calculated gambles on elite assets. The Contrarian's play is more nuanced: I'm told he's banking on regression to the mean, betting that Maye's superior athletic profile and improving situation in New England narrows the production gap while he pockets draft capital. It's a defensible move for the league's best team to extract value and maintain flexibility, but make no mistake—Williams has more top-five QB finish equity over the next five years, and The Believer just secured it. Both quarterbacks are 23 with 12 years until decline, but one just averaged 40% more fantasy points. Sometimes, sources say, the simplest analysis is the correct one.",
+  "generatedAt": "2025-12-29T01:33:53.193Z"
+}

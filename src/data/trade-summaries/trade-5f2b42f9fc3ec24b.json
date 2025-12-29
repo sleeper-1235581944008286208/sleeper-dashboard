@@ -1,0 +1,157 @@
+{
+  "tradeId": "5f2b42f9fc3ec24b",
+  "week": 1,
+  "season": "2025",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Shogunation",
+    "Langland"
+  ],
+  "sides": [
+    {
+      "teamName": "Shogunation",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 76.4,
+        "powerRank": 4,
+        "lineupValueScore": 79,
+        "performanceScore": 78.2,
+        "positionalScore": 62.7,
+        "depthScore": 80.9,
+        "totalTeams": 12,
+        "totalRosterValue": 37890
+      },
+      "tradeImpact": {
+        "valueGained": 1750,
+        "valueLost": 0,
+        "netValueChange": 1750,
+        "estimatedPowerScoreChange": 1.8,
+        "playersGained": [
+          {
+            "name": "Derrick Henry",
+            "value": 1438
+          },
+          {
+            "name": "Alvin Kamara",
+            "value": 312
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Derrick Henry",
+          "position": "RB",
+          "team": "BAL",
+          "age": 31,
+          "careerStage": "Veteran/End of Career"
+        },
+        {
+          "name": "Alvin Kamara",
+          "position": "RB",
+          "team": "NO",
+          "age": 30,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "2027 Round 3 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "2026 Round 1 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2027 Round 1 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "Langland",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 18.1,
+        "powerRank": 12,
+        "lineupValueScore": 27.3,
+        "performanceScore": 6.4,
+        "positionalScore": 13.9,
+        "depthScore": 7.8,
+        "totalTeams": 12,
+        "totalRosterValue": 13107
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 1750,
+        "netValueChange": -1750,
+        "estimatedPowerScoreChange": -1.8,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Derrick Henry",
+            "value": 1438
+          },
+          {
+            "name": "Alvin Kamara",
+            "value": 312
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "2026 Round 1 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2027 Round 1 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Derrick Henry",
+          "position": "RB",
+          "team": "BAL",
+          "age": 31,
+          "careerStage": "Veteran/End of Career"
+        },
+        {
+          "name": "Alvin Kamara",
+          "position": "RB",
+          "team": "NO",
+          "age": 30,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "2027 Round 3 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2026",
+      "round": 1,
+      "from": "Shogunation",
+      "to": "Langland"
+    },
+    {
+      "season": "2027",
+      "round": 1,
+      "from": "Shogunation",
+      "to": "Langland"
+    },
+    {
+      "season": "2027",
+      "round": 3,
+      "from": "Langland",
+      "to": "Shogunation"
+    }
+  ],
+  "persona": "Ian Rapoport",
+  "analysis": "My understanding is that Shogunation has been eyeing this move for weeks, and folks, this is absolutely a go-for-it-now situation that reminds me of when the Bears sent two firsts to Oakland for Khalil Mack back in 2018. You're looking at a team ranked fourth in the league with a 76.4 power score mortgaging back-to-back first-round picks to acquire two aging running backs - Derrick Henry at 31 and Alvin Kamara at 30. Sources indicate this is a calculated gamble that the championship window is RIGHT NOW, and here's the thing: when you're sitting at #4 in the power rankings, you don't make this move unless you believe you're one or two pieces away from a title. The timing is fascinating - Week 1 of the season means Shogunation is betting on projections rather than results, going all-in before seeing how their roster actually performs. That's confidence, people.\n\nNow, let's talk about what Langland is doing here, and I've got to be honest - this is a full-blown teardown. We're looking at a team sitting dead last with an 18.1 power score, and my understanding is they've completely pivoted to a rebuild strategy. Trading away productive veterans for future draft capital is textbook tanking, and here's what makes it interesting: Langland's historical profile shows they're typically a win-now trader who sells picks for talent, having moved 11 picks over their career. This represents a philosophical shift - they're finally reading the room and recognizing that a 27.3 lineup value isn't competing anytime soon. Sources tell me they're essentially punting on 2025 and possibly 2026 to stockpile assets for a complete roster overhaul.\n\nThe risk-reward here is stark for both sides, and keep an eye on this because it could blow up spectacularly or result in a championship parade. For Shogunation, you're getting immediate production - Henry averaged 15.5 PPG last season and Kamara's still putting up 11.7 - but the cliff could come at ANY moment with running backs this age. The dynasty values tell the story: Henry at 1,438 is still viewed as productive, but both players have zero years until decline according to the metrics. You're essentially trading two lottery tickets (first-round picks in a dynasty league are gold) for what might be 8-16 weeks of high-end RB production. If those backs fall off mid-season or get injured, Shogunation has gutted their future for nothing. The upside? If they win the championship this year, none of that matters.\n\nFrom where I'm sitting, Langland wins this trade long-term, and it's not particularly close. They've acquired 1,750 in net value according to the data, flipping aging assets at exactly the right time - before the inevitable decline - for premium draft capital. Two first-round picks give them control of their destiny for the next two years, allowing them to draft young studs or flip those picks for established stars once they've rebuilt properly. Shogunation? They're playing with fire, folks. This is a boom-or-bust move that adds just 1.8 to their power score while eliminating flexibility for years. My understanding is that if this doesn't result in a championship in 2025, we'll look back on this as one of those franchise-altering mistakes. The developing situation to monitor: can Henry and Kamara stay healthy and productive for a full season? Because if not, Shogunation just became the Bears in that Mack trade - except at least Chicago got a prime defender. These are running backs on their last legs, and Father Time remains undefeated.",
+  "generatedAt": "2025-12-29T01:33:21.144Z"
+}

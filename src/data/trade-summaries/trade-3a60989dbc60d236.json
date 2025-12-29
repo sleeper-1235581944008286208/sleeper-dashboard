@@ -1,0 +1,149 @@
+{
+  "tradeId": "3a60989dbc60d236",
+  "week": 7,
+  "season": "2022",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Langland",
+    "cosmohouck"
+  ],
+  "sides": [
+    {
+      "teamName": "Langland",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 18.1,
+        "powerRank": 12,
+        "lineupValueScore": 27.3,
+        "performanceScore": 6.4,
+        "positionalScore": 13.9,
+        "depthScore": 7.8,
+        "totalTeams": 12,
+        "totalRosterValue": 13107
+      },
+      "tradeImpact": {
+        "valueGained": 1438,
+        "valueLost": 0,
+        "netValueChange": 1438,
+        "estimatedPowerScoreChange": 1.5,
+        "playersGained": [
+          {
+            "name": "Derrick Henry",
+            "value": 1438
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Derrick Henry",
+          "position": "RB",
+          "team": "BAL",
+          "age": 31,
+          "careerStage": "Veteran/End of Career"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Tyler Boyd",
+          "position": "WR",
+          "team": "FA",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2023 Round 1 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2024 Round 2 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2025 Round 3 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 1438,
+        "netValueChange": -1438,
+        "estimatedPowerScoreChange": -1.5,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Derrick Henry",
+            "value": 1438
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Tyler Boyd",
+          "position": "WR",
+          "team": "FA",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2023 Round 1 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2024 Round 2 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2025 Round 3 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Derrick Henry",
+          "position": "RB",
+          "team": "BAL",
+          "age": 31,
+          "careerStage": "Veteran/End of Career"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2023",
+      "round": 1,
+      "from": "Langland",
+      "to": "cosmohouck"
+    },
+    {
+      "season": "2024",
+      "round": 2,
+      "from": "Langland",
+      "to": "cosmohouck"
+    },
+    {
+      "season": "2025",
+      "round": 3,
+      "from": "Langland",
+      "to": "cosmohouck"
+    }
+  ],
+  "persona": "Daniel Jeremiah",
+  "analysis": "Alright, let's break down this trade from a talent evaluation standpoint, because this is one of those deals that really makes you pause the tape and study the context. You've got Langland—let's call him \"The Mortgage Broker\"—sitting pretty at 5-1 and deciding to mortgage the future for a 31-year-old running back. Meanwhile, cosmohouck—and I'm dubbing this manager \"The Asset Accumulator\"—is sitting at 1-5 despite having the league's top power score at 93.4 out of 100. That's the kind of roster construction puzzle that keeps me up at night. This is their first trade ever in this league, and they're cashing in King Henry for a haul of draft capital. That's textbook rebuild mode when you finally pull the trigger.\n\nFrom a pure value perspective, the production metrics tell us everything we need to know about where Derrick Henry is in his career arc. At 31 years old with nine seasons of NFL mileage, we're talking about a running back who's already in the danger zone from a dynasty standpoint. The system has him valued at 1,438 dynasty points, but that value trajectory stamp says \"LIMITED REMAINING FANTASY VALUE\" for a reason. He's averaging 14.7 points per game, which is solid production right now, but in dynasty you're not just buying what a guy is today—you're buying what he'll be in 2024, 2025, and beyond. The Mortgage Broker is getting maybe one more quality season, possibly two if we're being generous. Meanwhile, The Asset Accumulator is collecting a 2023 first-rounder, a 2024 second, and a 2025 third, plus Tyler Boyd as a throwaway veteran piece. The athletic profile and scheme fit for Henry is excellent in Baltimore's run-heavy attack, but the runway is short, folks.\n\nNow let's talk about the championship implications here, because that's where this gets really interesting. Langland is 5-1 and clearly trying to capitalize on a hot start, but here's the red flag that jumps off the tape—they're ranked dead last in power score at 18.1 out of 100. That's 12th out of 12 teams despite having the second-best record in the league. This is a team that's been playing above their talent level, and adding a depreciating asset like Henry might push them over the edge this year, but at what cost? They're getting a projected +1.5 power score bump, which barely moves the needle when you're that far behind in roster quality. The Asset Accumulator, on the other hand, is taking a -1.5 hit, but they're operating from a position of strength with that elite 93.4 power score. They can absorb this move, reload through the draft, and still maintain that lineup value component that's already at 100 out of 100.\n\nHere's my final evaluation on the risk-reward profile: The Mortgage Broker is making an all-in push that fits their balanced trading style—this is their fourth trade all-time and third this season, so they're clearly not afraid to make moves. But mortgaging three years of draft capital for a win-now running back when you're already overperforming your talent? That's aggressive even by playoff-contender standards. If Henry stays healthy and Langland wins the championship in 2022, this trade looks brilliant in the short term. But if they fall short, they've gutted their ability to rebuild with no first-rounder in 2023 and minimal future assets. The Asset Accumulator is playing the long game beautifully—they're 1-5 because of bad luck and underperformance, not talent deficiency. They're converting a declining asset into future equity while they still can. From a pure talent evaluation standpoint, I love what cosmohouck is doing here. Sometimes the best move is recognizing when your window isn't this year and building for sustained success. The Mortgage Broker better hope King Henry has one more crown left in him, because this roster doesn't have a Plan B.",
+  "generatedAt": "2025-12-29T02:00:20.775Z"
+}

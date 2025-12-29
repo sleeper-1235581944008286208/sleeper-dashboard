@@ -1,0 +1,180 @@
+{
+  "tradeId": "58cdf7f31cf8f3eb",
+  "week": 1,
+  "season": "2023",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Langland",
+    "powerperson"
+  ],
+  "sides": [
+    {
+      "teamName": "Langland",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 18.1,
+        "powerRank": 12,
+        "lineupValueScore": 27.3,
+        "performanceScore": 6.4,
+        "positionalScore": 13.9,
+        "depthScore": 7.8,
+        "totalTeams": 12,
+        "totalRosterValue": 13107
+      },
+      "tradeImpact": {
+        "valueGained": 799,
+        "valueLost": 4583,
+        "netValueChange": -3784,
+        "estimatedPowerScoreChange": -3.9,
+        "playersGained": [
+          {
+            "name": "Quentin Johnston",
+            "value": 799
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Kareem Hunt",
+            "value": 67
+          },
+          {
+            "name": "Brock Purdy",
+            "value": 4516
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Amari Cooper",
+          "position": "WR",
+          "team": "FA",
+          "age": 31,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "JuJu Smith-Schuster",
+          "position": "WR",
+          "team": "KC",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "team": "LAC",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Kareem Hunt",
+          "position": "RB",
+          "team": "KC",
+          "age": 30,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Elijah Mitchell",
+          "position": "RB",
+          "team": "KC",
+          "age": 27,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Brock Purdy",
+          "position": "QB",
+          "team": "SF",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "powerperson",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 23.8,
+        "powerRank": 11,
+        "lineupValueScore": 26.4,
+        "performanceScore": 21.6,
+        "positionalScore": 20.9,
+        "depthScore": 19.1,
+        "totalTeams": 12,
+        "totalRosterValue": 12690
+      },
+      "tradeImpact": {
+        "valueGained": 4583,
+        "valueLost": 799,
+        "netValueChange": 3784,
+        "estimatedPowerScoreChange": 3.9,
+        "playersGained": [
+          {
+            "name": "Kareem Hunt",
+            "value": 67
+          },
+          {
+            "name": "Brock Purdy",
+            "value": 4516
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Quentin Johnston",
+            "value": 799
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Kareem Hunt",
+          "position": "RB",
+          "team": "KC",
+          "age": 30,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Elijah Mitchell",
+          "position": "RB",
+          "team": "KC",
+          "age": 27,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Brock Purdy",
+          "position": "QB",
+          "team": "SF",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Amari Cooper",
+          "position": "WR",
+          "team": "FA",
+          "age": 31,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "JuJu Smith-Schuster",
+          "position": "WR",
+          "team": "KC",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "team": "LAC",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Adam Schefter",
+  "analysis": "Breaking news out of this dynasty league, and I'm told this is a franchise-altering move that heavily favors one side. Per league sources, powerperson just acquired Brock Purdy — along with two running back depth pieces — in exchange for three aging wide receivers, and multiple sources within the league are calling this a fleecing. The value disparity here is staggering: 4,583 dynasty points received versus just 799 given up. That's not a trade, that's a heist. Langland, a known win-now trader who's dealt away six draft picks historically while acquiring talent, just made what league insiders believe could be a catastrophic miscalculation. They're sitting at dead last with an 18.1 power score, and I'm told they just traded away their franchise quarterback for spare parts.\n\nHere's what I'm hearing from sources close to the situation: this has serious parallels to the Davante Adams trade that sent shockwaves through the NFL. Adams reunited with Derek Carr in Las Vegas, leaving Aaron Rodgers behind in Green Bay. The difference? That trade at least made sense from a competitive standpoint — the Raiders were trying to win now. This? Langland is trading away a 25-year-old ascending quarterback who posted 18.0 points per game for a 31-year-old free agent receiver, a 28-year-old possession receiver on his third team, and a rookie who averaged 1.9 points in Week 1. Per sources, Purdy has ten years before decline — Cooper and JuJu are already there. The logic simply doesn't add up for a team that's ranked last in the league.\n\nAccording to multiple sources, powerperson is the runaway winner here, and it's not particularly close. They turned expendable receiver depth into a young starting quarterback with top-10 upside. The 3.9 power score swing tells the story — one team gets significantly better while the other craters. Hunt and Mitchell are backups at best, throw-ins to make the numbers work, but Purdy is the centerpiece that changes everything. I'm told powerperson's front office is celebrating this one behind closed doors, and they should be. For a team sitting at 11th in the league with a 23.8 power score, acquiring this kind of foundational asset without giving up premium draft capital is exactly how rebuilds accelerate.\n\nHere's my bold prediction, and you can take this to the bank: In two years, we'll look back at this as one of the most lopsided dynasty trades in league history. Purdy will be a QB1 throwing for 4,500 yards and 35 touchdowns while Cooper is unsigned and JuJu is fighting for roster spots. Quentin Johnston — the only piece with any future value — will be a WR3 at best, never living up to that first-round draft pedigree. League sources tell me Langland needed to address receiver depth, but trading your starting quarterback in Week 1 of a dynasty format, especially when you're already 0-0 and rebuilding from the basement, is how franchises set themselves back years. This wasn't desperation — it was self-sabotage. Mark it down: powerperson flips Purdy for a king's ransom in 2025, or rides him to a championship. Either way, they won this trade the moment the papers were signed.",
+  "generatedAt": "2025-12-29T01:49:33.015Z"
+}

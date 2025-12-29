@@ -1,0 +1,167 @@
+{
+  "tradeId": "78c2b5624c957250",
+  "week": 2,
+  "season": "2025",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "mjgrana",
+    "drobs"
+  ],
+  "sides": [
+    {
+      "teamName": "drobs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 51.3,
+        "powerRank": 6,
+        "lineupValueScore": 53.3,
+        "performanceScore": 57.3,
+        "positionalScore": 36.8,
+        "depthScore": 38,
+        "totalTeams": 12,
+        "totalRosterValue": 25560
+      },
+      "tradeImpact": {
+        "valueGained": 158,
+        "valueLost": 4625,
+        "netValueChange": -4467,
+        "estimatedPowerScoreChange": -4.7,
+        "playersGained": [
+          {
+            "name": "Marvin Mims",
+            "value": 158
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Baker Mayfield",
+            "value": 4506
+          },
+          {
+            "name": "Brian Robinson",
+            "value": 119
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Marvin Mims",
+          "position": "WR",
+          "team": "DEN",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2026 Round 2 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2027 Round 1 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "team": "TB",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Brian Robinson",
+          "position": "RB",
+          "team": "SF",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "mjgrana",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 86.7,
+        "powerRank": 2,
+        "lineupValueScore": 94.6,
+        "performanceScore": 75.9,
+        "positionalScore": 77.1,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 45417
+      },
+      "tradeImpact": {
+        "valueGained": 4625,
+        "valueLost": 158,
+        "netValueChange": 4467,
+        "estimatedPowerScoreChange": 4.7,
+        "playersGained": [
+          {
+            "name": "Baker Mayfield",
+            "value": 4506
+          },
+          {
+            "name": "Brian Robinson",
+            "value": 119
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Marvin Mims",
+            "value": 158
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "team": "TB",
+          "age": 30,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Brian Robinson",
+          "position": "RB",
+          "team": "SF",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Marvin Mims",
+          "position": "WR",
+          "team": "DEN",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2026 Round 2 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2027 Round 1 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2026",
+      "round": 2,
+      "from": "mjgrana",
+      "to": "drobs"
+    },
+    {
+      "season": "2027",
+      "round": 1,
+      "from": "mjgrana",
+      "to": "drobs"
+    }
+  ],
+  "persona": "Mel Kiper Jr.",
+  "analysis": "Look, I'm going to be straight with you here - this trade is TEXTBOOK win-now versus rebuild, and frankly, I think drobs just made a MASSIVE miscalculation. Let me tell you why.\n\nWhen I look at Baker Mayfield, I see a guy who's 30 years old, coming off a legitimate QB1 season in Tampa Bay, putting up 15.2 points per game in a Todd Bowles offense that's built to throw the football. This is NOT the Baker Mayfield who was bouncing around Cleveland and Carolina like a pinball. This is a mature, confident quarterback in the prime of his career with Mike Evans and Chris Godwin at his disposal. And drobs - sitting at 1-0 with a power score of 51.3, ranked 6th out of 12 teams - just shipped him out for WHAT? A 2026 second-rounder, a 2027 first-rounder, and Marvin Mims? Marvin Mims! Now, I like Mims - I had him as a second-round talent coming out of Oklahoma in 2023, legitimate 4.38 speed, but he's averaged 3.7 fantasy points per game over 25 career games in Denver! The tape shows upside, sure, but he's buried behind Courtland Sutton and whoever else Sean Payton decides to force-feed that week. You're telling me that speculative depth piece and future picks are worth more than a starting quarterback who can WIN YOU GAMES RIGHT NOW?\n\nHere's what really gets me about this deal - mjgrana is sitting at 0-1 but has an 86.7 power score, ranked 2nd in the league! This is a CONTENDER, folks. They've got the depth (100 depth score!), they've got the lineup (94.6!), and now they just added a legitimate starting quarterback and a rotational running back in Brian Robinson for essentially PENNIES ON THE DOLLAR. Brian Robinson might be just a flex play averaging 8.0 PPG, but he's in San Francisco now with Kyle Shanahan - you want to talk about landing spot? The tape doesn't lie on Robinson either; this guy is a RUNNER, he's physical, and even in limited work he can help you in bye weeks and injury situations. Meanwhile, drobs just took a -4.7 hit to their power score for future assets that might not materialize for YEARS. In dynasty, you need to know when you're competing and when you're rebuilding, and at 1-0, this feels like panic, not strategy.\n\nLet me make a BOLD prediction here, and you can write this down: Two years from now, when that 2027 first-rounder turns into some rookie who may or may not pan out, mjgrana will have competed for at least one championship with the pieces they added here, while drobs will STILL be waiting for Marvin Mims to break out in an offense that hasn't proven it can support consistent fantasy receivers outside of Sutton. Championship implications? This trade just WIDENED the gap between the contenders and the pretenders. mjgrana went from 86.7 to 91.4 in power score and reinforced their win-now window. drobs went from fringe playoff team to... what exactly? A team hoping draft picks hit? \n\nThe CLEAR winner here is mjgrana, and it's not even close. They gave up a dynasty value of 158 plus two picks and received 4,625 in return - that's a net value of +4,467! You know what we call that in the draft room? HIGHWAY ROBBERY. This is the type of trade that changes the complexion of your league, folks. When you're ranked 2nd with an elite roster construction and you can add legitimate starting pieces for depth and future considerations, you SLAM that accept button. drobs needed to be buyers at 1-0 with middling team strength, not sellers. This trade will haunt them come playoff time when they're on the outside looking in, watching mjgrana hoist the trophy with Baker Mayfield under center. Mark it down.",
+  "generatedAt": "2025-12-29T01:37:20.011Z"
+}
