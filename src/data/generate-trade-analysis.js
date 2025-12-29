@@ -1185,8 +1185,8 @@ DYNASTY LEAGUE WEIGHTS & VALUES:
 ` : `
 REDRAFT LEAGUE WEIGHTS & VALUES:
 1. LINEUP VALUE (35% weight - reduced from dynasty):
-   - Based on CURRENT SEASON fantasy points per game (PPG)
-   - Multiplied by positional scarcity (RB 1.5x, TE 1.2x, WR 1.0x, QB 0.8x)
+   - Based on FantasyCalc ECR trade values + Sleeper ROS projections
+   - Weighted by DYNAMIC VOR SCARCITY (see below)
    - Only measures what players are actually producing THIS SEASON
    - Ignores age, dynasty value, and future potential
 
@@ -1199,12 +1199,32 @@ REDRAFT LEAGUE WEIGHTS & VALUES:
 3. POSITIONAL ADVANTAGE (15% weight):
    - Compares starters vs league average at each position
    - Identifies teams with elite positional advantages
-   - RB1s and TE1s most valuable due to scarcity
+   - Uses VOR-based scarcity for position weighting
 
 4. DEPTH (5% weight):
    - Quality of top backup at each position
    - Critical for bye weeks and injuries
    - Late-season depth matters for playoff runs
+
+VOR (VALUE OVER REPLACEMENT) SCARCITY - DYNAMIC CALCULATION:
+This system calculates positional scarcity WEEKLY using real market data:
+- VOR = Elite Player Value - Replacement Level Value
+- Replacement Level = Player ranked at (starters needed per league)
+- Higher VOR spread = more valuable/scarce position
+- Recalculates each week to reflect injuries, bye weeks, and market shifts
+
+EXAMPLE VOR SCARCITY (normalized, WR=100 baseline):
+- QB: ~80-140 (varies by SuperFlex status)
+- RB: ~90-160 (high when bellcows injured)
+- WR: 100 (deepest position, baseline)
+- TE: ~80-150 (elite TEs create massive advantage)
+- K/DEF: ~20 (highly replaceable)
+
+WHY VOR MATTERS FOR TRADES:
+- A RB1 is worth MORE than a WR1 of equal PPG (scarcity premium)
+- Elite TEs (Kelce, Andrews tier) have outsized value due to position cliff
+- Mid-tier QBs are replaceable in 1QB but premium in SuperFlex
+- VOR helps identify when a trade is "fair by PPG" but "unfair by scarcity"
 `}
 
 INTERPRETING TRADE IMPACT:
@@ -1219,6 +1239,13 @@ POSITIONAL VALUE TIERS (Dynasty Context):
 - STRONG: Top 4-12 - reliable starters, high trade value
 - AVERAGE: Top 13-24 - startable but replaceable
 - DEPTH: 25+ - bench pieces, handcuffs, lottery tickets
+
+VOR SCARCITY BY POSITION (Dynasty - approximate multipliers):
+- RB: 150 (highest scarcity - short careers, bellcow rarity)
+- TE: 120 (elite tier very thin - Kelce/Andrews gap is real)
+- WR: 100 (baseline - deepest position with longest careers)
+- QB: 80-140 (80 in 1QB, 140+ in SuperFlex due to demand)
+- K/DEF: 20-25 (streamable, minimal dynasty value)
 
 DRAFT PICK VALUES (Dynasty Reference):
 - Future 1st Round: Premium asset, especially early picks
