@@ -126,10 +126,6 @@ const enrichedAnalyses = tradeAnalyses.map(analysis => {
     trade,
     tradeImpact
   };
-}).sort((a, b) => {
-  // Sort by season desc, then week desc
-  if (b.season !== a.season) return b.season.localeCompare(a.season);
-  return b.week - a.week;
 });
 
 // Filter options
@@ -202,6 +198,13 @@ const selectedManager = view(Inputs.select(
 ));
 ```
 
+```js
+const sortOption = view(Inputs.select(
+  ["Newest First", "Oldest First", "Biggest Wins", "Biggest Losses", "Most Lopsided", "Highest Value"],
+  { label: "Sort By", value: "Newest First" }
+));
+```
+
   </div>
 </div>
 
@@ -240,6 +243,56 @@ if (selectedPersona !== "All Analysts") {
 // Manager filter
 if (selectedManager !== "All Managers") {
   filteredAnalyses = filteredAnalyses.filter(a => a.participants.includes(selectedManager));
+}
+
+// Helper to get max net value from a trade (for sorting)
+function getMaxNetValue(analysis) {
+  if (!analysis.tradeImpact) return 0;
+  return Math.max(...Object.values(analysis.tradeImpact).map(i => i.netValue || 0));
+}
+
+function getMinNetValue(analysis) {
+  if (!analysis.tradeImpact) return 0;
+  return Math.min(...Object.values(analysis.tradeImpact).map(i => i.netValue || 0));
+}
+
+function getLopsidedValue(analysis) {
+  if (!analysis.tradeImpact) return 0;
+  const values = Object.values(analysis.tradeImpact).map(i => i.netValue || 0);
+  return Math.abs(Math.max(...values) - Math.min(...values));
+}
+
+function getTotalValue(analysis) {
+  if (!analysis.tradeImpact) return 0;
+  return Object.values(analysis.tradeImpact).reduce((sum, i) => sum + (i.valueReceived || 0), 0);
+}
+
+// Apply sorting
+switch (sortOption) {
+  case "Newest First":
+    filteredAnalyses = filteredAnalyses.sort((a, b) => {
+      if (b.season !== a.season) return b.season.localeCompare(a.season);
+      return b.week - a.week;
+    });
+    break;
+  case "Oldest First":
+    filteredAnalyses = filteredAnalyses.sort((a, b) => {
+      if (a.season !== b.season) return a.season.localeCompare(b.season);
+      return a.week - b.week;
+    });
+    break;
+  case "Biggest Wins":
+    filteredAnalyses = filteredAnalyses.sort((a, b) => getMaxNetValue(b) - getMaxNetValue(a));
+    break;
+  case "Biggest Losses":
+    filteredAnalyses = filteredAnalyses.sort((a, b) => getMinNetValue(a) - getMinNetValue(b));
+    break;
+  case "Most Lopsided":
+    filteredAnalyses = filteredAnalyses.sort((a, b) => getLopsidedValue(b) - getLopsidedValue(a));
+    break;
+  case "Highest Value":
+    filteredAnalyses = filteredAnalyses.sort((a, b) => getTotalValue(b) - getTotalValue(a));
+    break;
 }
 
 // Pagination
