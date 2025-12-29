@@ -368,7 +368,7 @@ if (tradeAnalyses.length === 0) {
                 ${analysis.season} Season • Week ${analysis.week}
               </div>
               <div style="font-size: 1.25rem; font-weight: 700; color: #f8fafc;">
-                ${analysis.participants.join(' <span style="color: #22c55e; margin: 0 0.5rem;">⇄</span> ')}
+                ${analysis.participants.join(' ⇄ ')}
               </div>
             </div>
             <div style="display: flex; gap: 0.5rem; align-items: center;">
