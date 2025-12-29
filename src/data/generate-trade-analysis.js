@@ -1157,13 +1157,15 @@ This is a REDRAFT league - rosters reset each year. Key considerations:
 `}
 
 POWER SCORE METHODOLOGY (for interpreting team strength):
-Power Score (0-100) is a composite metric measuring overall team strength:
+Power Score (0-100) is a composite metric measuring overall team strength.
 
+${LEAGUE_TYPE === 'dynasty' ? `
+DYNASTY LEAGUE WEIGHTS & VALUES:
 1. LINEUP VALUE (50% weight):
    - Based on DynastyProcess trade values (dynasty asset valuation)
-   - Calculates optimal starting lineup using best players at each position
-   - ${LEAGUE_TYPE === 'dynasty' ? 'Dynasty values factor in age, situation, and long-term outlook' : 'Note: Uses dynasty values even in redraft - focus on the relative rankings'}
-   - Higher = more valuable starting roster
+   - Factors in age, situation, contract, and long-term outlook
+   - Young studs valued higher than aging veterans
+   - Higher = more valuable dynasty assets
 
 2. PERFORMANCE (30% weight):
    - Actual on-field results: Win%, All-Play record
@@ -1180,6 +1182,30 @@ Power Score (0-100) is a composite metric measuring overall team strength:
    - Quality of top backup at each position
    - Important for injury insurance and bye week coverage
    - Less critical in dynasty since trades can address needs
+` : `
+REDRAFT LEAGUE WEIGHTS & VALUES:
+1. LINEUP VALUE (35% weight - reduced from dynasty):
+   - Based on CURRENT SEASON fantasy points per game (PPG)
+   - Multiplied by positional scarcity (RB 1.5x, TE 1.2x, WR 1.0x, QB 0.8x)
+   - Only measures what players are actually producing THIS SEASON
+   - Ignores age, dynasty value, and future potential
+
+2. PERFORMANCE (45% weight - increased from dynasty):
+   - Actual on-field results: Win%, All-Play record
+   - More heavily weighted because current production is everything
+   - All-Play = record if you played every team each week
+   - Best indicator of true team strength in redraft
+
+3. POSITIONAL ADVANTAGE (15% weight):
+   - Compares starters vs league average at each position
+   - Identifies teams with elite positional advantages
+   - RB1s and TE1s most valuable due to scarcity
+
+4. DEPTH (5% weight):
+   - Quality of top backup at each position
+   - Critical for bye weeks and injuries
+   - Late-season depth matters for playoff runs
+`}
 
 INTERPRETING TRADE IMPACT:
 - Power Score CHANGE shows immediate roster impact

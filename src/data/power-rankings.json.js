@@ -1,10 +1,22 @@
 // Data loader for Power Rankings
 // Calculates team power scores based on roster strength, performance, and positional advantages
 const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID;
+const LEAGUE_TYPE = process.env.LEAGUE_TYPE || 'dynasty'; // 'dynasty' or 'redraft'
 
-// DynastyProcess data URLs
+// DynastyProcess data URLs (for dynasty leagues)
 const DP_VALUES_URL = "https://raw.githubusercontent.com/dynastyprocess/data/master/files/values.csv";
 const DP_PLAYER_IDS_URL = "https://raw.githubusercontent.com/dynastyprocess/data/master/files/db_playerids.csv";
+
+// Positional scarcity multipliers for redraft value calculation
+// Higher = more valuable position (scarcity-based)
+const REDRAFT_POSITION_MULTIPLIERS = {
+  QB: 80,   // QBs are streamable in 1QB, more valuable in SF
+  RB: 150,  // RBs are scarce and injury-prone
+  WR: 100,  // Base value - WRs are most abundant
+  TE: 120,  // Elite TEs are rare
+  K: 20,    // Kickers are highly replaceable
+  DEF: 25   // Defenses are streamable
+};
 
 /**
  * Parse CSV string into array of objects
@@ -211,6 +223,85 @@ function matchPlayerValues(players, dpValues, dpPlayerIds, isSF) {
   });
 
   console.error(`Player matching: ${matchedById} by ID, ${matchedByName} by name, ${unmatched} unmatched`);
+
+  return playerValues;
+}
+
+/**
+ * Calculate redraft values based on current season fantasy performance
+ * Uses PPG from matchups data with positional scarcity weighting
+ */
+function calculateRedraftValues(players, matchups, isSF) {
+  const playerValues = new Map();
+  const playerStats = new Map(); // Track games and total points per player
+
+  // Aggregate player stats from all matchups
+  matchups.forEach(weekData => {
+    weekData.matchups.forEach(matchup => {
+      const starters = matchup.starters || [];
+      const playerPoints = matchup.players_points || {};
+
+      Object.entries(playerPoints).forEach(([playerId, points]) => {
+        if (points === null || points === undefined) return;
+
+        const existing = playerStats.get(playerId) || { games: 0, totalPoints: 0, starterGames: 0 };
+        existing.games++;
+        existing.totalPoints += points;
+        if (starters.includes(playerId)) {
+          existing.starterGames++;
+        }
+        playerStats.set(playerId, existing);
+      });
+    });
+  });
+
+  // Calculate PPG and convert to value
+  Object.entries(players).forEach(([playerId, player]) => {
+    if (!player || !player.first_name) return;
+
+    const fullName = `${player.first_name} ${player.last_name}`;
+    const position = player.position;
+    const stats = playerStats.get(playerId);
+
+    let value = 0;
+    let ppg = 0;
+
+    if (stats && stats.games > 0) {
+      ppg = stats.totalPoints / stats.games;
+
+      // Get position multiplier (adjust for superflex)
+      let multiplier = REDRAFT_POSITION_MULTIPLIERS[position] || 50;
+      if (isSF && position === 'QB') {
+        multiplier = 140; // QBs much more valuable in SF
+      }
+
+      // Value = PPG * position multiplier
+      // This creates values roughly comparable to dynasty values (1000-9000 range)
+      value = Math.round(ppg * multiplier);
+
+      // Bonus for consistent starters (started >50% of games played)
+      if (stats.starterGames > stats.games * 0.5) {
+        value = Math.round(value * 1.1);
+      }
+    } else {
+      // No stats - assign minimal value based on position
+      value = position === 'K' ? 50 : position === 'DEF' ? 100 : 200;
+    }
+
+    playerValues.set(playerId, {
+      value,
+      ppg: Math.round(ppg * 10) / 10,
+      gamesPlayed: stats?.games || 0,
+      name: fullName,
+      position,
+      team: player.team,
+      age: player.age
+    });
+  });
+
+  // Log some stats
+  const withValue = Array.from(playerValues.values()).filter(p => p.value > 200);
+  console.error(`Redraft values: ${withValue.length} players with meaningful production`);
 
   return playerValues;
 }
@@ -423,17 +514,20 @@ function calculateDepthScore(rosterPlayerIds, playerValues, starters, players) {
 /**
  * Calculate power score for a hypothetical roster (for trade simulation)
  */
-function calculateTeamPowerScore(rosterPlayerIds, playerValues, slots, players, allLineups, maxLineupValue, performanceScore) {
+function calculateTeamPowerScore(rosterPlayerIds, playerValues, slots, players, allLineups, maxLineupValue, performanceScore, weights = null) {
+  // Default weights if not provided (dynasty defaults)
+  const w = weights || { lineup: 0.50, performance: 0.30, positional: 0.15, depth: 0.05 };
+
   const lineupData = calculateOptimalLineupValue(rosterPlayerIds, playerValues, slots, players);
   const lineupValueScore = (lineupData.totalValue / maxLineupValue) * 100;
   const positionalScore = calculatePositionalAdvantage(lineupData, allLineups, slots);
   const depthScore = calculateDepthScore(rosterPlayerIds, playerValues, lineupData.starters, players);
 
   const powerScore = (
-    (lineupValueScore * 0.50) +
-    (performanceScore * 0.30) +
-    (positionalScore * 0.15) +
-    (depthScore * 0.05)
+    (lineupValueScore * w.lineup) +
+    (performanceScore * w.performance) +
+    (positionalScore * w.positional) +
+    (depthScore * w.depth)
   );
 
   return {
@@ -450,11 +544,31 @@ function calculateTeamPowerScore(rosterPlayerIds, playerValues, slots, players, 
  * Main power rankings calculation
  */
 async function calculatePowerRankings() {
+  console.error(`\n🏈 Power Rankings Calculator`);
+  console.error(`📊 League Type: ${LEAGUE_TYPE.toUpperCase()}`);
+
   const { league, rosters, users, players, dpValues, dpPlayerIds, matchups } = await fetchAllData();
 
   const isSF = isSuperflexLeague(league);
   const slots = getStartingSlots(league);
-  const playerValues = matchPlayerValues(players, dpValues, dpPlayerIds, isSF);
+
+  // Choose value source based on league type
+  let playerValues;
+  if (LEAGUE_TYPE === 'redraft') {
+    console.error(`📈 Using REDRAFT values (current season PPG × positional scarcity)`);
+    playerValues = calculateRedraftValues(players, matchups, isSF);
+  } else {
+    console.error(`📈 Using DYNASTY values (DynastyProcess trade values)`);
+    playerValues = matchPlayerValues(players, dpValues, dpPlayerIds, isSF);
+  }
+
+  // Adjust component weights based on league type
+  // Redraft: Performance matters more, lineup value (long-term assets) matters less
+  const weights = LEAGUE_TYPE === 'redraft'
+    ? { lineup: 0.35, performance: 0.45, positional: 0.15, depth: 0.05 }
+    : { lineup: 0.50, performance: 0.30, positional: 0.15, depth: 0.05 };
+
+  console.error(`⚖️  Weights: Lineup ${weights.lineup * 100}%, Performance ${weights.performance * 100}%, Positional ${weights.positional * 100}%, Depth ${weights.depth * 100}%`);
 
   // Calculate lineup values for all teams
   const teamLineups = rosters.map(roster => {
@@ -500,12 +614,12 @@ async function calculatePowerRankings() {
       players
     );
 
-    // Calculate final Power Score
+    // Calculate final Power Score using dynamic weights
     const powerScore = (
-      (lineupValueScore * 0.50) +
-      (actualPerformanceScore * 0.30) +
-      (positionalScore * 0.15) +
-      (depthScore * 0.05)
+      (lineupValueScore * weights.lineup) +
+      (actualPerformanceScore * weights.performance) +
+      (positionalScore * weights.positional) +
+      (depthScore * weights.depth)
     );
 
     return {
@@ -546,10 +660,13 @@ async function calculatePowerRankings() {
   const leagueInfo = {
     name: league.name,
     season: league.season,
+    leagueType: LEAGUE_TYPE,
     isSuperFlex: isSF,
     rosterSlots: slots,
     totalTeams: rosters.length,
-    currentWeek: league.settings?.leg || 1
+    currentWeek: league.settings?.leg || 1,
+    weights: weights,
+    valueSource: LEAGUE_TYPE === 'redraft' ? 'Current Season PPG' : 'DynastyProcess Trade Values'
   };
 
   // Create player values lookup for trade simulator (only rostered players + top free agents)
@@ -563,12 +680,18 @@ async function calculatePowerRankings() {
   rosteredPlayerIds.forEach(playerId => {
     const valueData = playerValues.get(playerId);
     if (valueData) {
-      playerValuesLookup[playerId] = {
+      const lookup = {
         name: valueData.name,
         position: valueData.position,
         team: valueData.team,
         value: valueData.value
       };
+      // Include PPG for redraft leagues
+      if (LEAGUE_TYPE === 'redraft' && valueData.ppg !== undefined) {
+        lookup.ppg = valueData.ppg;
+        lookup.gamesPlayed = valueData.gamesPlayed;
+      }
+      playerValuesLookup[playerId] = lookup;
     }
   });
 
@@ -590,6 +713,7 @@ async function calculatePowerRankings() {
     playerValues: playerValuesLookup,
     rosters: rosterLookup,
     maxLineupValue,
+    weights,
     lastUpdated: new Date().toISOString()
   };
 }
