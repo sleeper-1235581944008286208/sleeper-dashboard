@@ -1,0 +1,145 @@
+{
+  "tradeId": "6ab7a995f42bf2ef",
+  "week": 7,
+  "season": "2022",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "powerperson",
+    "cosmohouck"
+  ],
+  "sides": [
+    {
+      "teamName": "powerperson",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 23.8,
+        "powerRank": 11,
+        "lineupValueScore": 26.4,
+        "performanceScore": 21.6,
+        "positionalScore": 20.9,
+        "depthScore": 19.1,
+        "totalTeams": 12,
+        "totalRosterValue": 12690
+      },
+      "tradeImpact": {
+        "valueGained": 395,
+        "valueLost": 4591,
+        "netValueChange": -4196,
+        "estimatedPowerScoreChange": -4.4,
+        "playersGained": [
+          {
+            "name": "Travis Kelce",
+            "value": 395
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "George Pickens",
+            "value": 4591
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Travis Kelce",
+          "position": "TE",
+          "team": "KC",
+          "age": 36,
+          "careerStage": "Veteran/End of Career"
+        },
+        {
+          "name": "2024 Round 3 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "George Pickens",
+          "position": "WR",
+          "team": "DAL",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2024 Round 1 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 4591,
+        "valueLost": 395,
+        "netValueChange": 4196,
+        "estimatedPowerScoreChange": 4.4,
+        "playersGained": [
+          {
+            "name": "George Pickens",
+            "value": 4591
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Travis Kelce",
+            "value": 395
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "George Pickens",
+          "position": "WR",
+          "team": "DAL",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2024 Round 1 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Travis Kelce",
+          "position": "TE",
+          "team": "KC",
+          "age": 36,
+          "careerStage": "Veteran/End of Career"
+        },
+        {
+          "name": "2024 Round 3 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2024",
+      "round": 3,
+      "from": "cosmohouck",
+      "to": "powerperson"
+    },
+    {
+      "season": "2024",
+      "round": 1,
+      "from": "powerperson",
+      "to": "cosmohouck"
+    }
+  ],
+  "persona": "Daniel Jeremiah",
+  "analysis": "From a talent evaluation standpoint, this is one of the most fascinating win-now versus rebuild trades I've charted all season. You've got \"The Time Traveler\" in powerperson making their first dynasty move ever—and boy, they're going ALL-IN trying to salvage a 4-2 season that looks way better on paper than their 23.8 power score suggests. Meanwhile, \"The Asset Collector\" cosmohouck is executing a textbook teardown, sitting at 1-5 but wielding the league's top power score at 93.4. That's the scouting profile of a team that knows exactly what it's building for, and spoiler alert: it ain't 2022.\n\nLet's talk timing, because Week 7 is *precisely* when you want to execute this type of deal. Seven weeks until playoffs—that's the inflection point where contenders start panicking and pretenders start planning. The Time Traveler is reading a 4-2 record and thinking they're a Travis Kelce away from a championship run, but here's what concerns me from a metrics standpoint: you're ranked 11th out of 12 in power score despite that winning record. That tells me you've been fortunate, not dominant. Kelce's giving you 17.6 PPG right now, which is elite tight end production, but you're trading a 24-year-old wide receiver entering his prime years and a first-round pick for a 36-year-old at a position where the cliff comes fast and hard. The athletic profile at that age is concerning—we're talking about a guy with zero years to decline according to the projections. That's not a yellow flag; that's a red banner waving in your face.\n\nThe risk-reward profile here is asymmetrical in the extreme. The Asset Collector is getting 4,591 in dynasty value for 395—that's a 10-to-1 return that would make any GM salivate. George Pickens is only producing 7.6 PPG right now, sure, but we're talking about a player with six years before decline who was just drafted in the 10th round and has shown the tape to suggest breakout potential. Add in the 1st-round pick downgrade to a 3rd? That's highway robbery with a scheme fit for a rebuilding team. Meanwhile, powerperson is hemorrhaging 4.4 power score points for what amounts to a rental player with massive bust risk. The production metrics look good *right now*, but dynasty is about three-year windows, not three-month sprints.\n\nChampionship implications? For The Time Traveler, you're potentially improving your 2022 roster at the tight end premium position, but you've mortgaged 2024 and beyond for a player who could fall off the map tomorrow. With a 67% win rate but bottom-tier power ranking, this feels like desperation masquerading as aggression. For The Asset Collector, this is masterclass roster management—you're 1-5 and likely eliminated anyway, so you flip an aging asset at peak value for a young receiver with upside and draft capital. The 4.4 power score bump confirms what the tape shows: you're building a juggernaut for 2024-2026 while your opponent is trying to patch holes on a sinking ship with duct tape and hope. From a pure talent evaluation standpoint, I love the strategic vision from cosmohouck here. Sometimes the smartest move is admitting this year isn't your year and loading up for when your window actually opens.",
+  "generatedAt": "2025-12-29T01:59:53.507Z"
+}

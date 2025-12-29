@@ -1,0 +1,97 @@
+{
+  "tradeId": "040bf0984eac3308",
+  "week": 1,
+  "season": "2023",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Tishathefish",
+    "Shogunation"
+  ],
+  "sides": [
+    {
+      "teamName": "Shogunation",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 76.4,
+        "powerRank": 4,
+        "lineupValueScore": 79,
+        "performanceScore": 78.2,
+        "positionalScore": 62.7,
+        "depthScore": 80.9,
+        "totalTeams": 12,
+        "totalRosterValue": 37890
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "2025 Round 3 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Keaontay Ingram",
+          "position": "RB",
+          "team": "KC",
+          "age": 25,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "Tishathefish",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 50,
+        "powerRank": 7,
+        "lineupValueScore": 60.7,
+        "performanceScore": 36.4,
+        "positionalScore": 47.1,
+        "depthScore": 33.9,
+        "totalTeams": 12,
+        "totalRosterValue": 29125
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Keaontay Ingram",
+          "position": "RB",
+          "team": "KC",
+          "age": 25,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "2025 Round 3 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2025",
+      "round": 3,
+      "from": "Tishathefish",
+      "to": "Shogunation"
+    }
+  ],
+  "persona": "Todd McShay",
+  "analysis": "Look, I'm going to be blunt here – this is a classic case of two teams trying to squeeze blood from a stone, and frankly, I'm not sure either one accomplished much of anything. But if I'm forced to pick a side, Tishathefish is getting the slight edge here, and let me tell you why from a roster construction standpoint.\n\nWhen you look at the fundamentals, Tishathefish is sitting at #7 in the power rankings with some glaring holes – a depth score of just 33.9 tells me everything I need to know. They need bodies, they need lottery tickets, and Keaontay Ingram represents exactly that kind of upside dart throw. Yeah, he's averaging 0.8 points per game over 19 career contests, but here's the thing – he's on Kansas City's roster. Andy Reid has a history of manufacturing opportunities in that offense, and if Isiah Pacheco goes down or they need a change of pace, suddenly you've got a 25-year-old running back in his prime years getting touches in one of the league's most explosive offenses. That's value, folks. That's the kind of speculative add that can win you a week in dynasty. Meanwhile, Shogunation – already the #4 team with an 80.9 depth score – is essentially admitting they've got too much depth and converting a roster clogger into future draft capital. That's smart roster management for a win-now team that's traded away three picks already this season.\n\nBut here's where it gets interesting, and this reminds me a bit of the Odell Beckham Jr. trade when the Giants shipped him to Cleveland. Now, I'm not comparing Ingram to OBJ talent-wise – let's be clear – but the principle is similar. The Browns made that splash move thinking they were getting a game-breaker, and it completely fizzled because the situation, the scheme fit, and the expectations were all misaligned. Tishathefish is making a micro-version of that bet here. They're banking on situation and opportunity with a player who's shown virtually nothing in three NFL seasons. Sometimes these flyers hit – we've seen it with guys who get their shot late – but more often than not, a third-string running back averaging less than a point per game stays exactly that.\n\nThe real story here is what it tells us about both managers' philosophies. Shogunation has now made six trades this season alone, consistently operating in win-now mode, and this move is perfectly on-brand – liquidating the bottom of the roster for future assets. They don't need Keaontay Ingram clogging up a bench spot when they're trying to compete for a championship right now. Tishathefish, meanwhile, is doing what rebuilding teams should do: gambling on upside with minimal investment. A third-round pick in 2025? That's pick 25-36 range in a draft we know nothing about yet. If Ingram somehow carves out even a flex-worthy role this season, that's a massive win for a team sitting in the middle of the pack.\n\nHere's my bold prediction: In two years, we'll look back at this trade and it'll be a complete wash – neither team will have gained any meaningful advantage. Ingram will likely be out of the league or buried on a practice squad, and that 2025 third-rounder will turn into a replacement-level player that neither team remembers drafting. But if I'm wrong – and I hope I am because I love when deep sleepers hit – it'll be because Tishathefish identified a scheme fit before anyone else did, and that's the kind of talent evaluation that separates the contenders from the pretenders in dynasty leagues. Right now though? This is two teams exchanging pennies while the real dollars are being spent elsewhere in this league.",
+  "generatedAt": "2025-12-29T01:45:56.169Z"
+}

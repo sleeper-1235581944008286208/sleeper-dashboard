@@ -1,0 +1,121 @@
+{
+  "tradeId": "8f717193a78835ae",
+  "week": 1,
+  "season": "2023",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Langland",
+    "powerperson"
+  ],
+  "sides": [
+    {
+      "teamName": "Langland",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 18.1,
+        "powerRank": 12,
+        "lineupValueScore": 27.3,
+        "performanceScore": 6.4,
+        "positionalScore": 13.9,
+        "depthScore": 7.8,
+        "totalTeams": 12,
+        "totalRosterValue": 13107
+      },
+      "tradeImpact": {
+        "valueGained": 156,
+        "valueLost": 0,
+        "netValueChange": 156,
+        "estimatedPowerScoreChange": 0.2,
+        "playersGained": [
+          {
+            "name": "James Conner",
+            "value": 156
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "James Conner",
+          "position": "RB",
+          "team": "ARI",
+          "age": 30,
+          "careerStage": "Declining"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Allen Lazard",
+          "position": "WR",
+          "team": "NYJ",
+          "age": 29,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2026 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "powerperson",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 23.8,
+        "powerRank": 11,
+        "lineupValueScore": 26.4,
+        "performanceScore": 21.6,
+        "positionalScore": 20.9,
+        "depthScore": 19.1,
+        "totalTeams": 12,
+        "totalRosterValue": 12690
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 156,
+        "netValueChange": -156,
+        "estimatedPowerScoreChange": -0.2,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "James Conner",
+            "value": 156
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Allen Lazard",
+          "position": "WR",
+          "team": "NYJ",
+          "age": 29,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "2026 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "James Conner",
+          "position": "RB",
+          "team": "ARI",
+          "age": 30,
+          "careerStage": "Declining"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2026",
+      "round": 2,
+      "from": "Langland",
+      "to": "powerperson"
+    }
+  ],
+  "persona": "Todd McShay",
+  "analysis": "Look, I've seen a lot of trades in my years covering football, but this one has me scratching my head from a value standpoint. Langland is sitting dead last in power score at 18.1, and they're mortgaging future draft capital to acquire a 30-year-old running back who's already in decline? This isn't best player available – this is panic mode. James Conner might give you RB2 production for another season, maybe two if you're lucky, but you're giving up a 2026 second-rounder for that privilege? That's a premium price for a depreciating asset. When you're 12th out of 12 teams, you should be accumulating picks, not trading them away. This is a classic case of reaching for need instead of building through sustainable value.\n\nHere's my bold prediction: Two years from now, we're going to look back at this deal the same way we view the Russell Wilson trade to Denver. Remember that? The Broncos mortgaged their future for a declining veteran quarterback, convinced he was the missing piece, and it blew up in spectacular fashion. Conner's got the injury history, he's on the wrong side of 30, and Arizona's offense isn't exactly a well-oiled machine. Meanwhile, that 2026 second-rounder could've been a cornerstone piece for a team that desperately needs to rebuild. Langland's trading style screams \"win-now,\" but you can't win now when you're ranked 12th. This is roster construction malpractice.\n\nWhat's particularly concerning is that this perfectly fits Langland's historical pattern – they've acquired 11 players while shipping out 10 plus six draft picks. That's aggressive buyer mentality, but when you're sitting at the bottom of the standings with a 27.3 lineup score and 7.8 depth rating, you need to be a seller, not a buyer. Powerperson, meanwhile, is making the smart play here. They're 11th in power score, barely ahead of Langland, and they're flipping an aging back for a younger receiver and future draft capital. That's textbook value accumulation. They understand their competitive window isn't open right now, so they're stockpiling assets.\n\nThe market inefficiency here is glaring. Running backs age in dog years, especially ones with Conner's wear and tear. Allen Lazard might not light up the fantasy charts, but he's a year younger and playing in what should be a pass-heavy Jets offense. More importantly, that second-round pick in 2026 represents flexibility and youth – the exact building blocks Langland should be targeting. Instead, they're trying to patch holes on a sinking ship with duct tape. Powerperson gets an A for selling high on a declining asset. Langland gets a D-minus for chasing short-term production at the expense of long-term value. This is how you stay trapped at the bottom of the standings.",
+  "generatedAt": "2025-12-29T01:47:34.051Z"
+}

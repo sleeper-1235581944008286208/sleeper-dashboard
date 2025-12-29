@@ -1,0 +1,106 @@
+{
+  "tradeId": "9c2a28ae5ffe1471",
+  "week": 1,
+  "season": "2022",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Langland",
+    "Tishathefish"
+  ],
+  "sides": [
+    {
+      "teamName": "Langland",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 18.1,
+        "powerRank": 12,
+        "lineupValueScore": 27.3,
+        "performanceScore": 6.4,
+        "positionalScore": 13.9,
+        "depthScore": 7.8,
+        "totalTeams": 12,
+        "totalRosterValue": 13107
+      },
+      "tradeImpact": {
+        "valueGained": 67,
+        "valueLost": 0,
+        "netValueChange": 67,
+        "estimatedPowerScoreChange": 0.1,
+        "playersGained": [
+          {
+            "name": "Kareem Hunt",
+            "value": 67
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Kareem Hunt",
+          "position": "RB",
+          "team": "KC",
+          "age": 30,
+          "careerStage": "Declining"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Damien Harris",
+          "position": "RB",
+          "team": "FA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "Tishathefish",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 50,
+        "powerRank": 7,
+        "lineupValueScore": 60.7,
+        "performanceScore": 36.4,
+        "positionalScore": 47.1,
+        "depthScore": 33.9,
+        "totalTeams": 12,
+        "totalRosterValue": 29125
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 67,
+        "netValueChange": -67,
+        "estimatedPowerScoreChange": -0.1,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Kareem Hunt",
+            "value": 67
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Damien Harris",
+          "position": "RB",
+          "team": "FA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Kareem Hunt",
+          "position": "RB",
+          "team": "KC",
+          "age": 30,
+          "careerStage": "Declining"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Adam Schefter",
+  "analysis": "Breaking news out of this dynasty league, and I'm told this Week 1 swap has eyebrows raised across the fantasy landscape. Per league sources, Langland – sitting at the absolute bottom of the power rankings at 18.1, dead last at 12th out of 12 teams – just acquired Kareem Hunt from Tishathefish in exchange for Damien Harris. According to multiple sources familiar with the trade discussions, Langland is making moves early, and this marks their second deal already this season. Here's what I'm hearing: Hunt just put up 21.0 PPG in Week 1 while Harris managed just 6.8, and Langland's brass decided to strike while the iron was hot. The price? Essentially nothing in dynasty value terms – Harris carries zero dynasty points while Hunt checks in at 67. League sources say this is highway robbery, plain and simple.\n\nLet's call this what it is, folks: \"The Bargain Bin Bandit\" just fleeced \"The Sell-Low Specialist.\" I'm told Tishathefish – a balanced trader making their very first career move – panicked after one week of football. Think about this: you're trading away a 30-year-old back who just delivered a monster performance for a 27-year-old free agent who's essentially unemployed. Per sources close to the situation, this screams of overreaction to small sample size. Yes, Hunt is declining and on the wrong side of 30, but we're talking about Week 1 of the season with 13 weeks until the playoffs. The urgency level here should be low, yet Tishathefish acted like they needed to dump Hunt immediately. Meanwhile, Langland – who desperately needs every advantage given that 18.1 power score – just added 67 points of dynasty value for free.\n\nThe timing analysis here is critical, and I'm hearing from league insiders that Langland absolutely nailed it. This is textbook \"buy the production, sell the projection\" strategy. Yes, Hunt's value trajectory is declining and his sell window may be closing, but here's the thing: Langland isn't giving up anything of consequence. Harris is a free agent with minimal fantasy relevance who posted 6.8 PPG. According to sources, you make this deal 10 times out of 10 when you're rebuilding from the basement. The risk-reward profile heavily favors the Bargain Bin Bandit – worst case, Hunt declines rapidly and they're back where they started. Best case? They just acquired a serviceable RB2 for absolutely nothing and begin climbing out of that 12th-place hole.\n\nPer multiple sources, Tishathefish just made one of the more confusing decisions of the early season. Sitting at 50.0 power score – respectable 7th place – they had zero reason to dump a productive asset after one game for essentially a lottery ticket. I'm told the -67 net value swing explains everything you need to know about this deal. The Sell-Low Specialist gave away their best Week 1 running back performance for a player who might not see another NFL snap this season. League sources indicate this could haunt them come playoff time when running back scarcity becomes paramount. Winner: Langland, and it's not particularly close. Sometimes in this league, the best trades are the simplest ones – getting something valuable for nothing at all.",
+  "generatedAt": "2025-12-29T01:55:47.968Z"
+}

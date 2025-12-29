@@ -1,0 +1,96 @@
+{
+  "tradeId": "964ce675fc92e516",
+  "week": 1,
+  "season": "2022",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Langland",
+    "mjgrana"
+  ],
+  "sides": [
+    {
+      "teamName": "Langland",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 18.1,
+        "powerRank": 12,
+        "lineupValueScore": 27.3,
+        "performanceScore": 6.4,
+        "positionalScore": 13.9,
+        "depthScore": 7.8,
+        "totalTeams": 12,
+        "totalRosterValue": 13107
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Mark Ingram",
+          "position": "RB",
+          "team": "FA",
+          "age": 33,
+          "careerStage": "Veteran/End of Career"
+        }
+      ],
+      "gives": [
+        {
+          "name": "William Fuller",
+          "position": "WR",
+          "team": "FA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "mjgrana",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 86.7,
+        "powerRank": 2,
+        "lineupValueScore": 94.6,
+        "performanceScore": 75.9,
+        "positionalScore": 77.1,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 45417
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "William Fuller",
+          "position": "WR",
+          "team": "FA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Mark Ingram",
+          "position": "RB",
+          "team": "FA",
+          "age": 33,
+          "careerStage": "Veteran/End of Career"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Todd McShay",
+  "analysis": "Look, I'm going to be blunt here - this is essentially trading pennies for nickels at a garage sale. We're talking about Mark Ingram at 33 years old, who's been a free agent journeyman at this point in his career, going to a team ranked dead last in the league with an 18.1 power score. And what are they giving up? Will Fuller, who I'm assuming is meant to be *Will* Fuller V, a guy who's 27 but has played more games on the injury report than on the field. Neither manager has made a trade before this, and this is how they're christening their dynasty portfolios? Come on.\n\nLet's talk about timing, because that's critical here. Week 1 of the 2022 season - and both these guys are already free agents, which tells you everything you need to know about their dynasty value. Making this move in early September when you have zero data points from the current season? That's not being proactive, that's panic trading based on name recognition from three years ago. Langland is sitting at the bottom of the league rankings, and instead of targeting youth and draft capital to rebuild properly, they're acquiring a running back who's closer to a coaching job than a fantasy-relevant season. This isn't best player available philosophy - this is grasping at straws.\n\nHere's my bold prediction: In two years, both managers will have completely forgotten this trade even happened. This isn't the Matthew Stafford-Jared Goff blockbuster where the Rams went all-in and won a championship while Detroit stockpiled assets for a proper rebuild. This is more like two teams trading their 2004 Honda Civics and arguing over who has less rust. mjgrana is sitting pretty at #2 in the league with an 86.7 power score and 100-rated depth, so trading away Ingram's dust for Fuller's injury history is essentially housecleaning. But where's the vision from Langland? You're at the bottom of the standings - this should be about accumulating young talent and draft picks, not swapping aging veterans.\n\nThe real issue here is roster construction philosophy. Langland needs to be tearing it down to the studs, not laterally moving from one washed asset to another. Running back scarcity is real, sure, but Ingram isn't solving that problem in a dynasty format. mjgrana, meanwhile, is making the right move by converting a position of scarcity into receiver depth, even if Fuller's upside is a total unknown at this point. For their first trades ever, both managers needed to think bigger. This feels like two people learning to swim in the kiddie pool when they should be diving into the deep end. Value matters, and there's simply not enough of it on either side of this deal to move the needle for anyone.",
+  "generatedAt": "2025-12-29T01:56:35.334Z"
+}

@@ -1,0 +1,145 @@
+{
+  "tradeId": "32aaef5b8c53031b",
+  "week": 1,
+  "season": "2025",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "cosmohouck",
+    "powerperson"
+  ],
+  "sides": [
+    {
+      "teamName": "powerperson",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 23.8,
+        "powerRank": 11,
+        "lineupValueScore": 26.4,
+        "performanceScore": 21.6,
+        "positionalScore": 20.9,
+        "depthScore": 19.1,
+        "totalTeams": 12,
+        "totalRosterValue": 12690
+      },
+      "tradeImpact": {
+        "valueGained": 22,
+        "valueLost": 4516,
+        "netValueChange": -4494,
+        "estimatedPowerScoreChange": -4.7,
+        "playersGained": [
+          {
+            "name": "Audric Estime",
+            "value": 22
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Brock Purdy",
+            "value": 4516
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Audric Estime",
+          "position": "RB",
+          "team": "PHI",
+          "age": 22,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2026 Round 1 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2026 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Brock Purdy",
+          "position": "QB",
+          "team": "SF",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "cosmohouck",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 93.4,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 94.6,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 47988
+      },
+      "tradeImpact": {
+        "valueGained": 4516,
+        "valueLost": 22,
+        "netValueChange": 4494,
+        "estimatedPowerScoreChange": 4.7,
+        "playersGained": [
+          {
+            "name": "Brock Purdy",
+            "value": 4516
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Audric Estime",
+            "value": 22
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Brock Purdy",
+          "position": "QB",
+          "team": "SF",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Audric Estime",
+          "position": "RB",
+          "team": "PHI",
+          "age": 22,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2026 Round 1 pick",
+          "position": "PICK"
+        },
+        {
+          "name": "2026 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2026",
+      "round": 1,
+      "from": "cosmohouck",
+      "to": "powerperson"
+    },
+    {
+      "season": "2026",
+      "round": 2,
+      "from": "cosmohouck",
+      "to": "powerperson"
+    }
+  ],
+  "persona": "Louis Riddick",
+  "analysis": "Look, from a front office standpoint, this is one of those trades where you have to take a step back and ask yourself: what is your organizational philosophy? Because what we're seeing here is a CLEAR divergence in team-building strategies, and I gotta tell you, the timing of this deal tells you everything you need to know about how these two franchises view their championship windows.\n\nLet's start with cosmohouck, who's sitting at the top of this league with a 93.4 power score—that's ELITE territory, folks. This is the number one team in the league, and they just mortgaged future draft capital to acquire Brock Purdy, a 25-year-old starting quarterback who's averaging nearly 17 points per game. From an asset management perspective, when you're the best team in the league, you don't sit on first-round picks—you ATTACK. This is win-now mode, pure and simple. They're giving up Audric Estime, who frankly has been a non-factor at 2.2 points per game, plus two future picks to solidify the most important position in fantasy football. This is TEXTBOOK championship-window acceleration. You know what this reminds me of? It's like when a contending NFL team trades picks for a proven veteran at the deadline. You're all-in, and there's no apologizing for it.\n\nNow let's talk about powerperson, because THIS is where it gets concerning. You're ranked 11th out of 12 teams with a 23.8 power score, and you're trading away your starting quarterback for what amounts to lottery tickets? I don't care if you're \"future-focused\"—you just gave away 4,516 in dynasty value for essentially 22 in return value. That's not rebuilding, that's CAPITULATION. Week one of the season, and you're already waving the white flag? Listen, I understand accumulating draft capital when you're not competitive, but Brock Purdy is a 25-year-old ascending asset! This isn't trading away a declining veteran—you're selling a young quarterback in his PRIME years for pennies on the dollar. The risk-reward profile here is completely lopsided. You're banking on hitting home runs with those 2026 picks, but the hit rate on mid-to-late draft selections? It's not what you want it to be.\n\nHere's my verdict: cosmohouck WINS this trade decisively, and it's not particularly close. They identified a need, they exploited a rebuilding team, and they did it at the perfect time—early in the season when they can maximize Purdy's production over 13 remaining weeks. Their championship odds just went UP significantly. Meanwhile, powerperson? They're projecting to LOSE 4.7 power score points, and frankly, when you're already near the basement, that's a dangerous place to be. The championship implications are stark: one team just became MORE dangerous, the other just punted on 2025 entirely. Sometimes in this league, you've got to know when to push your chips in, and when to rebuild the right way. This trade represents both ends of that spectrum—executed perfectly by the contender, and questionably by the rebuilder.",
+  "generatedAt": "2025-12-29T01:35:09.164Z"
+}

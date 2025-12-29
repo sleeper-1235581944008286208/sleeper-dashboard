@@ -1,0 +1,145 @@
+{
+  "tradeId": "06418cf0bf87af4f",
+  "week": 1,
+  "season": "2023",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "mjgrana",
+    "drobs"
+  ],
+  "sides": [
+    {
+      "teamName": "drobs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 51.3,
+        "powerRank": 6,
+        "lineupValueScore": 53.3,
+        "performanceScore": 57.3,
+        "positionalScore": 36.8,
+        "depthScore": 38,
+        "totalTeams": 12,
+        "totalRosterValue": 25560
+      },
+      "tradeImpact": {
+        "valueGained": 4745,
+        "valueLost": 5020,
+        "netValueChange": -275,
+        "estimatedPowerScoreChange": -0.3,
+        "playersGained": [
+          {
+            "name": "Breece Hall",
+            "value": 4745
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Garrett Wilson",
+            "value": 5020
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Breece Hall",
+          "position": "RB",
+          "team": "NYJ",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2023 Round 2 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "team": "NYJ",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2023 Round 3 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "mjgrana",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 86.7,
+        "powerRank": 2,
+        "lineupValueScore": 94.6,
+        "performanceScore": 75.9,
+        "positionalScore": 77.1,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 45417
+      },
+      "tradeImpact": {
+        "valueGained": 5020,
+        "valueLost": 4745,
+        "netValueChange": 275,
+        "estimatedPowerScoreChange": 0.3,
+        "playersGained": [
+          {
+            "name": "Garrett Wilson",
+            "value": 5020
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Breece Hall",
+            "value": 4745
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "team": "NYJ",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2023 Round 3 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Breece Hall",
+          "position": "RB",
+          "team": "NYJ",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "2023 Round 2 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2023",
+      "round": 3,
+      "from": "drobs",
+      "to": "mjgrana"
+    },
+    {
+      "season": "2023",
+      "round": 2,
+      "from": "mjgrana",
+      "to": "drobs"
+    }
+  ],
+  "persona": "Daniel Jeremiah",
+  "analysis": "From a talent evaluation standpoint, we've got ourselves a classic case of the Jets Connection Swap here, and I'm getting some serious Russell Wilson trade vibes from this one. When Denver sent a haul to Seattle for Wilson, they were banking on an elite talent elevating their roster – but they forgot to evaluate the current trajectory and situation. Here, drobs – let's call him \"The ACL Gambler\" – is betting big on Breece Hall's upside coming off that devastating knee injury, while mjgrana – I'm dubbing him \"The Safe Money Operator\" – is cashing out on the running back before the wheels potentially fall off. The value exchange shows mjgrana winning by 275 points, and when you're sitting at an 86.7 power score ranking second in the league, you can afford to take the more stable asset.\n\nLet's talk about the athletic profiles here. Garrett Wilson is a technician at the receiver position – we're talking about a guy who posted 9.8 points per game through his early career with arguably the worst quarterback situation in football. The production metrics are there despite the circumstances, which tells you everything about his separator skills and route-running acumen. Breece Hall flashed elite explosiveness before the injury, but here's the thing that concerns me: we're in Week 1 of 2023, which means we're still in the recovery window. The timing of this trade is fascinating because The ACL Gambler is buying before we have any real sample size data on Hall's return from injury. That's either brilliant anticipatory trading or a recipe for disaster – there's no middle ground here.\n\nThe draft capital swap is interesting too – moving from a second to a third round pick might seem minor, but in dynasty formats, that's where you find your league-winners. The Safe Money Operator is essentially getting a proven commodity in Wilson, banking on volume and opportunity with improved Jets quarterback play, while also moving up in the draft. His power score jumps to 87.0 while drobs slides to 51.0, and that spread tells the story. When you're ranked sixth in a twelve-team league, you need home runs, not singles. The ACL Gambler needs Hall to return to that explosive, three-down back profile we saw in flashes as a rookie. The positional value chart says running backs are scarce, but injured running backs? That's a different evaluation altogether.\n\nHere's my bold prediction: in two years, we'll look back at this trade the way we view the Wilson-to-Denver deal – as a talent evaluator overthinking the situation and ignoring the warning signs. Breece Hall will have one Pro Bowl-caliber season that makes The ACL Gambler feel vindicated, but the long-term value will favor The Safe Money Operator. Wilson's going to quietly produce WR2 numbers for the next four seasons with multiple quarterback regimes, while Hall battles the injury concerns that plague running backs who suffered significant knee trauma. By 2025, drobs will be kicking himself for not keeping the more durable asset at the deeper position. Sometimes in dynasty, the boring move is the winning move, and from a scheme-fit standpoint, wide receivers travel better through offensive coordinator changes than running backs do. This one's going to age like milk for The ACL Gambler.",
+  "generatedAt": "2025-12-29T01:51:14.646Z"
+}
