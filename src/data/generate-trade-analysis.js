@@ -318,7 +318,7 @@ function analyzeSeasonContext(tradeWeek, tradeSeason, league) {
     urgency = 'very high';
   } else {
     seasonPhase = 'playoffs';
-    strategicContext = LEAGUE_TYPE === 'dynasty' ? 'Trading during playoffs - unusual, dynasty-focused move' : 'Trading during playoffs - rare late-season adjustment';
+    strategicContext = 'Trading during playoffs - unusual, dynasty-focused move';
     urgency = 'strategic';
   }
 
@@ -1113,7 +1113,7 @@ async function generateAnalysis(tradeData, persona, realWorldContext = []) {
 
   // ============ FINAL PROMPT ============
 
-  const prompt = `You are ${persona.name}, the legendary NFL analyst/reporter. Analyze this fantasy football ${LEAGUE_TYPE} trade in your signature style.
+  const prompt = `You are ${persona.name}, the legendary NFL analyst/reporter. Analyze this fantasy football dynasty trade in your signature style.
 
 ${promptText}
 
@@ -1153,9 +1153,8 @@ This is a REDRAFT league - rosters reset each year. Focus on:
 
 POWER SCORE CONTEXT FOR REFERENCE:
 Power Score (0-100) measures overall team strength:
-${LEAGUE_TYPE === 'dynasty' ? `- Lineup Value (50%): Dynasty asset value of optimal starters
-- Performance (30%): Actual results (win%, all-play record)` : `- Performance (45%): Actual results - THIS IS WHAT MATTERS MOST IN REDRAFT
-- Lineup Value (35%): Current season production value of optimal starters`}
+- Lineup Value (50%): ${LEAGUE_TYPE === 'dynasty' ? 'Dynasty' : 'Current season'} asset value of optimal starters
+- Performance (30%): Actual results (win%, all-play record)
 - Positional (15%): Advantage vs league average at each position
 - Depth (5%): Quality of bench/backup players
 
