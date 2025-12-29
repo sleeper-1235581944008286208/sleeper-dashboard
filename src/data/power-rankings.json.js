@@ -1,5 +1,12 @@
 // Data loader for Power Rankings
 // Calculates team power scores based on roster strength, performance, and positional advantages
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID;
 const LEAGUE_TYPE = process.env.LEAGUE_TYPE || 'dynasty'; // 'dynasty' or 'redraft'
 
@@ -329,6 +336,66 @@ function calculateDynamicScarcity(fantasyCalcData, slots, numTeams, isSF) {
   });
 
   return normalizedMultipliers;
+}
+
+/**
+ * Save VOR snapshot to history file for historical trade analysis
+ * Appends current week's scarcity values if not already present
+ * @param {string} season - Current season year
+ * @param {number} week - Current week number
+ * @param {Object} scarcityMultipliers - Calculated scarcity multipliers
+ * @param {boolean} isSF - Is Superflex league
+ */
+function saveVorSnapshot(season, week, scarcityMultipliers, isSF) {
+  const snapshotsPath = join(__dirname, 'vor-snapshots-history.json');
+
+  let history = { snapshots: [] };
+
+  // Load existing history if available
+  if (existsSync(snapshotsPath)) {
+    try {
+      history = JSON.parse(readFileSync(snapshotsPath, 'utf-8'));
+    } catch (error) {
+      console.error(`⚠️ Error reading VOR history, starting fresh: ${error.message}`);
+      history = { snapshots: [] };
+    }
+  }
+
+  // Check if we already have this week's snapshot
+  const existingIndex = history.snapshots.findIndex(s =>
+    s.season === season && s.week === week
+  );
+
+  const snapshot = {
+    season,
+    week,
+    scarcityMultipliers,
+    scarcityMethod: 'vor',
+    isSuperFlex: isSF,
+    capturedAt: new Date().toISOString()
+  };
+
+  if (existingIndex >= 0) {
+    // Update existing snapshot
+    history.snapshots[existingIndex] = snapshot;
+    console.error(`📸 Updated VOR snapshot for ${season} Week ${week}`);
+  } else {
+    // Add new snapshot
+    history.snapshots.push(snapshot);
+    // Sort by season and week
+    history.snapshots.sort((a, b) => {
+      if (a.season !== b.season) return a.season.localeCompare(b.season);
+      return a.week - b.week;
+    });
+    console.error(`📸 Saved new VOR snapshot for ${season} Week ${week} (${history.snapshots.length} total snapshots)`);
+  }
+
+  // Write back to file
+  try {
+    writeFileSync(snapshotsPath, JSON.stringify(history, null, 2));
+  } catch (error) {
+    console.error(`⚠️ Failed to save VOR snapshot: ${error.message}`);
+  }
 }
 
 /**
@@ -891,6 +958,9 @@ async function calculatePowerRankings() {
 
     // Calculate dynamic scarcity using VOR methodology
     scarcityMultipliers = calculateDynamicScarcity(fantasyCalcData, slots, numTeams, isSF);
+
+    // Save VOR snapshot for historical trade analysis
+    saveVorSnapshot(league.season, currentWeek, scarcityMultipliers, isSF);
 
     playerValues = calculateEnhancedRedraftValues(
       players,

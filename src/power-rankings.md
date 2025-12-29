@@ -99,8 +99,26 @@ const posColors = {
   K: '#94a3b8',
   DEF: '#94a3b8'
 };
+
+// Generate VOR scarcity cards
+const vorCards = Object.entries(displayScarcity)
+  .filter(([pos]) => ['QB', 'RB', 'WR', 'TE'].includes(pos))
+  .map(([pos, value]) => {
+    const label = value > 120 ? '🔥 Scarce' : value > 90 ? '⚡ Normal' : value < 50 ? '📦 Deep' : '⚖️ Baseline';
+    return html`
+      <div style="text-align: center; padding: 1rem; background: rgba(0,0,0,0.2); border-radius: 0.5rem; border: 1px solid ${posColors[pos]}40;">
+        <div style="font-size: 0.75rem; color: #94a3b8; font-weight: 600;">${pos}</div>
+        <div style="font-size: 1.75rem; font-weight: 700; color: ${posColors[pos]};">${value}</div>
+        <div style="font-size: 0.625rem; color: #64748b; margin-top: 0.25rem;">${label}</div>
+      </div>
+    `;
+  });
+
+const vorFooter = isRedraft ? 'Recalculated weekly from FantasyCalc ECR data.' : 'Based on dynasty trade value distributions.';
 ```
 
+```js
+display(html`
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.05) 100%); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
   <div style="display: flex; align-items: start; gap: 1.5rem;">
     <div style="font-size: 3rem; line-height: 1;">📊</div>
@@ -116,23 +134,17 @@ const posColors = {
         Higher values = scarcer position = more valuable stars. WR = 100 baseline.
       </p>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 1rem;">
-        ${Object.entries(displayScarcity).filter(([pos]) => ['QB', 'RB', 'WR', 'TE'].includes(pos)).map(([pos, value]) => `
-          <div style="text-align: center; padding: 1rem; background: rgba(0,0,0,0.2); border-radius: 0.5rem; border: 1px solid ${posColors[pos]}40;">
-            <div style="font-size: 0.75rem; color: #94a3b8; font-weight: 600;">${pos}</div>
-            <div style="font-size: 1.75rem; font-weight: 700; color: ${posColors[pos]};">${value}</div>
-            <div style="font-size: 0.625rem; color: #64748b; margin-top: 0.25rem;">
-              ${value > 120 ? '🔥 Scarce' : value > 90 ? '⚡ Normal' : value < 50 ? '📦 Deep' : '⚖️ Baseline'}
-            </div>
-          </div>
-        `).join('')}
+        ${vorCards}
       </div>
       <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid rgba(59, 130, 246, 0.2); font-size: 0.8125rem; color: #94a3b8;">
         <strong>What this means:</strong> A RB with 100 VOR scarcity is worth <em>more</em> than a WR with the same PPG because elite RBs are harder to replace.
-        ${isRedraft ? 'Recalculated weekly from FantasyCalc ECR data.' : 'Based on dynasty trade value distributions.'}
+        ${vorFooter}
       </div>
     </div>
   </div>
 </div>
+`);
+```
 
 ```js
 // Simulate trend by comparing lineup value rank to actual standing
