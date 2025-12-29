@@ -1,17 +1,5 @@
-<div style="margin: 0 0 2rem 0;">
-  <div style="display: inline-block; padding: 0.5rem 1.25rem; background: rgba(34, 197, 94, 0.15); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 2rem; font-size: 0.875rem; font-weight: 600; color: #22c55e; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1.5rem;">
-    Trade Analysis
-  </div>
-  <h1 style="margin: 0 0 1rem 0; font-size: 2.5rem; font-weight: 800; line-height: 1.1; background: linear-gradient(135deg, #f8fafc 0%, #22c55e 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-    AI-Powered Trade Commentary
-  </h1>
-  <p style="font-size: 1.125rem; color: #cbd5e1; margin: 0; max-width: 800px; line-height: 1.6;">
-    Expert analysis of every trade in your league history, featuring commentary from legendary NFL analysts. See trades through the eyes of the best in the business.
-  </p>
-</div>
-
 ```js
-// Load data
+// Load data first
 const tradeAnalyses = await FileAttachment("data/trade-analysis.json").json();
 const trades = await FileAttachment("data/trades.json").json();
 const players = await FileAttachment("data/players.json").json();
@@ -27,6 +15,63 @@ try {
 }
 const playerValues = powerData?.playerValues || {};
 const powerRankings = powerData?.rankings || [];
+const leagueInfo = powerData?.league || {};
+const valueSource = leagueInfo.valueSource || {};
+const scarcityMultipliers = valueSource.scarcityMultipliers || null;
+const isDynasty = leagueInfo.leagueType === 'dynasty' || !leagueInfo.leagueType;
+const isRedraft = leagueInfo.leagueType === 'redraft';
+
+// Position colors for display
+const posColors = {
+  QB: '#3b82f6',
+  RB: '#22c55e',
+  WR: '#f59e0b',
+  TE: '#8b5cf6',
+  K: '#94a3b8',
+  DEF: '#94a3b8',
+  PICK: '#6366f1'
+};
+
+// Default scarcity multipliers
+const defaultScarcity = {
+  QB: leagueInfo.isSuperFlex ? 140 : 80,
+  RB: 150,
+  WR: 100,
+  TE: 120,
+  K: 20,
+  DEF: 25
+};
+const displayScarcity = scarcityMultipliers || defaultScarcity;
+
+// League type badge styling
+const leagueTypeBadge = isDynasty
+  ? { label: '🏆 Dynasty', bg: 'rgba(34, 197, 94, 0.15)', border: 'rgba(34, 197, 94, 0.3)', color: '#22c55e' }
+  : { label: '📅 Redraft', bg: 'rgba(249, 115, 22, 0.15)', border: 'rgba(249, 115, 22, 0.3)', color: '#f97316' };
+```
+
+```js
+// Render dynamic header with league type badge
+display(html`
+<div style="margin: 0 0 2rem 0;">
+  <div style="display: flex; gap: 0.75rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+    <div style="display: inline-block; padding: 0.5rem 1.25rem; background: rgba(34, 197, 94, 0.15); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 2rem; font-size: 0.875rem; font-weight: 600; color: #22c55e; text-transform: uppercase; letter-spacing: 0.05em;">
+      Trade Analysis
+    </div>
+    <div style="display: inline-block; padding: 0.5rem 1.25rem; background: ${leagueTypeBadge.bg}; border: 1px solid ${leagueTypeBadge.border}; border-radius: 2rem; font-size: 0.875rem; font-weight: 600; color: ${leagueTypeBadge.color}; text-transform: uppercase; letter-spacing: 0.05em;">
+      ${leagueTypeBadge.label}
+    </div>
+  </div>
+  <h1 style="margin: 0 0 1rem 0; font-size: 2.5rem; font-weight: 800; line-height: 1.1; background: linear-gradient(135deg, #f8fafc 0%, #22c55e 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+    AI-Powered Trade Commentary
+  </h1>
+  <p style="font-size: 1.125rem; color: #cbd5e1; margin: 0; max-width: 800px; line-height: 1.6;">
+    Expert analysis of every trade in your league history, featuring commentary from legendary NFL analysts.
+    ${isDynasty
+      ? 'Trades evaluated using dynasty asset values and long-term outlook.'
+      : 'Trades evaluated using VOR-weighted current season production.'}
+  </p>
+</div>
+`);
 ```
 
 ```js
@@ -165,6 +210,57 @@ const totalWins = enrichedAnalyses.reduce((sum, a) => {
     <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Managers</div>
   </div>
 </div>
+
+<!-- VOR Position Scarcity (Redraft Mode) -->
+```js
+if (isRedraft && displayScarcity) {
+  display(html`
+    <div style="margin-bottom: 2rem; padding: 1.25rem; background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(249, 115, 22, 0.05) 100%); border: 1px solid rgba(249, 115, 22, 0.2); border-radius: 0.75rem;">
+      <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+        <span style="font-size: 1.25rem;">📊</span>
+        <h3 style="margin: 0; font-size: 1rem; font-weight: 700; color: #f97316;">VOR Position Scarcity</h3>
+        <span style="font-size: 0.6875rem; padding: 0.25rem 0.5rem; background: rgba(249, 115, 22, 0.2); border-radius: 0.25rem; color: #fb923c;">Dynamic</span>
+      </div>
+      <p style="font-size: 0.8125rem; color: #94a3b8; margin: 0 0 1rem 0; line-height: 1.5;">
+        Trade values adjusted using <strong>Value Over Replacement (VOR)</strong> - the gap between elite players and replacement level at each position. Higher = more scarce.
+      </p>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+        ${['QB', 'RB', 'WR', 'TE', 'K', 'DEF'].map(pos => {
+          const scarcity = displayScarcity[pos] || 100;
+          const color = posColors[pos] || '#94a3b8';
+          const intensity = Math.min(1, Math.max(0.3, scarcity / 150));
+          return html`
+            <div style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.75rem; background: rgba(${color === '#3b82f6' ? '59, 130, 246' : color === '#22c55e' ? '34, 197, 94' : color === '#f59e0b' ? '245, 158, 11' : color === '#8b5cf6' ? '139, 92, 246' : '148, 163, 184'}, ${intensity * 0.2}); border: 1px solid rgba(${color === '#3b82f6' ? '59, 130, 246' : color === '#22c55e' ? '34, 197, 94' : color === '#f59e0b' ? '245, 158, 11' : color === '#8b5cf6' ? '139, 92, 246' : '148, 163, 184'}, 0.3); border-radius: 0.5rem;">
+              <span style="font-weight: 700; color: ${color}; font-size: 0.875rem;">${pos}</span>
+              <span style="font-size: 0.75rem; color: #cbd5e1;">${scarcity}</span>
+            </div>
+          `;
+        })}
+      </div>
+      <p style="font-size: 0.6875rem; color: #64748b; margin: 0.75rem 0 0 0;">
+        WR = 100 baseline. ${leagueInfo.isSuperFlex ? 'Superflex QB premium applied.' : ''} Updated from FantasyCalc ECR data.
+      </p>
+    </div>
+  `);
+}
+```
+
+<!-- Dynasty Value Context -->
+```js
+if (isDynasty) {
+  display(html`
+    <div style="margin-bottom: 2rem; padding: 1.25rem; background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.05) 100%); border: 1px solid rgba(34, 197, 94, 0.2); border-radius: 0.75rem;">
+      <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+        <span style="font-size: 1.25rem;">🏆</span>
+        <h3 style="margin: 0; font-size: 1rem; font-weight: 700; color: #22c55e;">Dynasty Asset Values</h3>
+      </div>
+      <p style="font-size: 0.8125rem; color: #94a3b8; margin: 0; line-height: 1.5;">
+        Trade values are based on <strong>DynastyProcess</strong> crowdsourced dynasty values, reflecting long-term asset worth including age curves, talent, and situation. These values consider multi-year outlooks rather than single-season production.
+      </p>
+    </div>
+  `);
+}
+```
 
 <!-- Filter Bar -->
 <div style="background: #1a1f29; border: 1px solid rgba(148, 163, 184, 0.1); border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 2rem;">
