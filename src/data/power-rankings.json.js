@@ -1,6 +1,12 @@
 // Data loader for Power Rankings
 // Calculates team power scores based on roster strength, performance, and positional advantages
 const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID;
+const LEAGUE_TYPE = process.env.LEAGUE_TYPE || 'dynasty'; // 'dynasty' or 'redraft'
+
+// Weights vary by league type - redraft emphasizes current performance over asset value
+const WEIGHTS = LEAGUE_TYPE === 'redraft'
+  ? { lineup: 0.35, performance: 0.45, positional: 0.15, depth: 0.05 }  // Redraft: performance matters most
+  : { lineup: 0.50, performance: 0.30, positional: 0.15, depth: 0.05 }; // Dynasty: asset value matters most
 
 // DynastyProcess data URLs
 const DP_VALUES_URL = "https://raw.githubusercontent.com/dynastyprocess/data/master/files/values.csv";
@@ -430,10 +436,10 @@ function calculateTeamPowerScore(rosterPlayerIds, playerValues, slots, players, 
   const depthScore = calculateDepthScore(rosterPlayerIds, playerValues, lineupData.starters, players);
 
   const powerScore = (
-    (lineupValueScore * 0.50) +
-    (performanceScore * 0.30) +
-    (positionalScore * 0.15) +
-    (depthScore * 0.05)
+    (lineupValueScore * WEIGHTS.lineup) +
+    (performanceScore * WEIGHTS.performance) +
+    (positionalScore * WEIGHTS.positional) +
+    (depthScore * WEIGHTS.depth)
   );
 
   return {
@@ -502,10 +508,10 @@ async function calculatePowerRankings() {
 
     // Calculate final Power Score
     const powerScore = (
-      (lineupValueScore * 0.50) +
-      (actualPerformanceScore * 0.30) +
-      (positionalScore * 0.15) +
-      (depthScore * 0.05)
+      (lineupValueScore * WEIGHTS.lineup) +
+      (actualPerformanceScore * WEIGHTS.performance) +
+      (positionalScore * WEIGHTS.positional) +
+      (depthScore * WEIGHTS.depth)
     );
 
     return {
