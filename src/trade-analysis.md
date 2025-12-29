@@ -172,8 +172,10 @@ const totalWins = enrichedAnalyses.reduce((sum, a) => {
 
 ```js
 const searchInput = view(Inputs.text({
-  placeholder: "Search by player, manager, or keyword...",
-  width: 280
+  label: "Search",
+  placeholder: "Player, manager, or keyword...",
+  width: 280,
+  value: ""
 }));
 ```
 
