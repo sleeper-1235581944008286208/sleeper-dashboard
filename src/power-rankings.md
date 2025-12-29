@@ -11,16 +11,30 @@ const leagueInfo = powerData.league;
 const playerValues = powerData.playerValues;
 const rosterData = powerData.rosters;
 const maxLineupValue = powerData.maxLineupValue;
+const weights = powerData.weights || leagueInfo.weights;
+const valueSource = leagueInfo.valueSource || {};
+
+// Check if we have VOR scarcity data
+const scarcityMultipliers = valueSource.scarcityMultipliers || null;
+const isRedraft = leagueInfo.leagueType === 'redraft';
+const isDynasty = leagueInfo.leagueType === 'dynasty' || !leagueInfo.leagueType;
 ```
 
 <div style="margin: 0 0 3rem 0;">
-  <div style="display: inline-block; padding: 0.5rem 1.25rem; background: rgba(139, 92, 246, 0.15); border: 1px solid rgba(139, 92, 246, 0.3); border-radius: 2rem; font-size: 0.875rem; font-weight: 600; color: #8b5cf6; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1.5rem;">
-    Roster-Based Team Strength
+  <div style="display: flex; gap: 0.75rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+    <div style="display: inline-block; padding: 0.5rem 1.25rem; background: rgba(139, 92, 246, 0.15); border: 1px solid rgba(139, 92, 246, 0.3); border-radius: 2rem; font-size: 0.875rem; font-weight: 600; color: #8b5cf6; text-transform: uppercase; letter-spacing: 0.05em;">
+      Roster-Based Team Strength
+    </div>
+    <div style="display: inline-block; padding: 0.5rem 1.25rem; background: ${isDynasty ? 'rgba(34, 197, 94, 0.15)' : 'rgba(249, 115, 22, 0.15)'}; border: 1px solid ${isDynasty ? 'rgba(34, 197, 94, 0.3)' : 'rgba(249, 115, 22, 0.3)'}; border-radius: 2rem; font-size: 0.875rem; font-weight: 600; color: ${isDynasty ? '#22c55e' : '#f97316'}; text-transform: uppercase; letter-spacing: 0.05em;">
+      ${isDynasty ? '🏆 Dynasty' : '📅 Redraft'}
+    </div>
   </div>
   <h1 style="margin: 0 0 1rem 0;">Power Rankings</h1>
   <p style="font-size: 1.125rem; color: #cbd5e1; margin: 0; max-width: 900px; line-height: 1.6;">
     Team strength rankings based on <strong>optimal starting lineup value</strong>, actual performance, and positional advantages.
-    Unlike simple trade calculators, this accounts for <strong>roster constraints</strong> — 5 mediocre players don't equal 1 star when you can only start so many.
+    ${isDynasty
+      ? 'Dynasty values reflect long-term asset worth including age, situation, and future potential.'
+      : 'Redraft values reflect current season production weighted by <strong>VOR scarcity</strong>.'}
   </p>
 </div>
 
@@ -30,31 +44,91 @@ const maxLineupValue = powerData.maxLineupValue;
   <div style="display: flex; align-items: start; gap: 1.5rem;">
     <div style="font-size: 3rem; line-height: 1;">⚡</div>
     <div>
-      <h3 style="margin-top: 0; color: #8b5cf6;">The Power Score Formula</h3>
+      <h3 style="margin-top: 0; color: #8b5cf6;">The Power Score Formula ${isDynasty ? '(Dynasty)' : '(Redraft)'}</h3>
       <p style="color: #cbd5e1; line-height: 1.7; margin: 0 0 1rem 0;">
         Power Score combines what your roster <strong>could do</strong> with what it <strong>has done</strong>:
       </p>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
         <div style="background: rgba(139, 92, 246, 0.1); padding: 1rem; border-radius: 0.5rem; border-left: 3px solid #8b5cf6;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: #8b5cf6;">50%</div>
+          <div style="font-size: 1.5rem; font-weight: 700; color: #8b5cf6;">${Math.round((weights?.lineup || 0.5) * 100)}%</div>
           <div style="font-weight: 600; color: #f8fafc;">Optimal Lineup Value</div>
-          <div style="font-size: 0.875rem; color: #94a3b8;">Best possible starters using dynasty trade values</div>
+          <div style="font-size: 0.875rem; color: #94a3b8;">${isDynasty ? 'Best starters using dynasty trade values' : 'Best starters using ECR + VOR scarcity'}</div>
         </div>
         <div style="background: rgba(34, 197, 94, 0.1); padding: 1rem; border-radius: 0.5rem; border-left: 3px solid #22c55e;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: #22c55e;">30%</div>
+          <div style="font-size: 1.5rem; font-weight: 700; color: #22c55e;">${Math.round((weights?.performance || 0.3) * 100)}%</div>
           <div style="font-weight: 600; color: #f8fafc;">Actual Performance</div>
           <div style="font-size: 0.875rem; color: #94a3b8;">Win %, All-Play record, points scored</div>
         </div>
         <div style="background: rgba(59, 130, 246, 0.1); padding: 1rem; border-radius: 0.5rem; border-left: 3px solid #3b82f6;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: #3b82f6;">15%</div>
+          <div style="font-size: 1.5rem; font-weight: 700; color: #3b82f6;">${Math.round((weights?.positional || 0.15) * 100)}%</div>
           <div style="font-weight: 600; color: #f8fafc;">Positional Edge</div>
           <div style="font-size: 0.875rem; color: #94a3b8;">Elite players at scarce positions (RB, TE)</div>
         </div>
         <div style="background: rgba(249, 115, 22, 0.1); padding: 1rem; border-radius: 0.5rem; border-left: 3px solid #f97316;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: #f97316;">5%</div>
+          <div style="font-size: 1.5rem; font-weight: 700; color: #f97316;">${Math.round((weights?.depth || 0.05) * 100)}%</div>
           <div style="font-weight: 600; color: #f8fafc;">Usable Depth</div>
           <div style="font-size: 0.875rem; color: #94a3b8;">Meaningful backups only (top backup per position)</div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+## VOR Position Scarcity
+
+```js
+// VOR Scarcity data for display
+const defaultScarcity = {
+  QB: leagueInfo.isSuperFlex ? 140 : 80,
+  RB: 150,
+  WR: 100,
+  TE: 120,
+  K: 20,
+  DEF: 25
+};
+
+const displayScarcity = scarcityMultipliers || defaultScarcity;
+const scarcitySource = scarcityMultipliers ? 'Dynamic (VOR)' : 'Static Defaults';
+
+// Position colors
+const posColors = {
+  QB: '#3b82f6',
+  RB: '#22c55e',
+  WR: '#f59e0b',
+  TE: '#8b5cf6',
+  K: '#94a3b8',
+  DEF: '#94a3b8'
+};
+```
+
+<div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.05) 100%); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+  <div style="display: flex; align-items: start; gap: 1.5rem;">
+    <div style="font-size: 3rem; line-height: 1;">📊</div>
+    <div style="flex: 1;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+        <h3 style="margin: 0; color: #3b82f6;">Position Scarcity (VOR)</h3>
+        <div style="padding: 0.25rem 0.75rem; background: rgba(59, 130, 246, 0.2); border-radius: 1rem; font-size: 0.75rem; color: #3b82f6; font-weight: 600;">
+          ${scarcitySource}
+        </div>
+      </div>
+      <p style="color: #cbd5e1; line-height: 1.7; margin: 0.75rem 0 1.5rem 0; font-size: 0.9375rem;">
+        <strong>VOR (Value Over Replacement)</strong> measures how much better elite players are than replacement level at each position.
+        Higher values = scarcer position = more valuable stars. WR = 100 baseline.
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 1rem;">
+        ${Object.entries(displayScarcity).filter(([pos]) => ['QB', 'RB', 'WR', 'TE'].includes(pos)).map(([pos, value]) => `
+          <div style="text-align: center; padding: 1rem; background: rgba(0,0,0,0.2); border-radius: 0.5rem; border: 1px solid ${posColors[pos]}40;">
+            <div style="font-size: 0.75rem; color: #94a3b8; font-weight: 600;">${pos}</div>
+            <div style="font-size: 1.75rem; font-weight: 700; color: ${posColors[pos]};">${value}</div>
+            <div style="font-size: 0.625rem; color: #64748b; margin-top: 0.25rem;">
+              ${value > 120 ? '🔥 Scarce' : value > 90 ? '⚡ Normal' : value < 50 ? '📦 Deep' : '⚖️ Baseline'}
+            </div>
+          </div>
+        `).join('')}
+      </div>
+      <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid rgba(59, 130, 246, 0.2); font-size: 0.8125rem; color: #94a3b8;">
+        <strong>What this means:</strong> A RB with 100 VOR scarcity is worth <em>more</em> than a WR with the same PPG because elite RBs are harder to replace.
+        ${isRedraft ? 'Recalculated weekly from FantasyCalc ECR data.' : 'Based on dynasty trade value distributions.'}
       </div>
     </div>
   </div>
@@ -756,8 +830,15 @@ display(html`<details open class="section-collapse">
       <strong>trading a star player for multiple mediocre players might look fair on paper, but hurts your Power Score</strong>
       because you can only start so many players. The Optimal Lineup Value component specifically captures this.
     </p>
-    <div style="margin-top: 1.5rem; font-size: 0.875rem; color: #94a3b8;">
-      <strong>Data Source:</strong> Player values from <a href="https://github.com/dynastyprocess/data" target="_blank" style="color: #8b5cf6;">DynastyProcess.com</a> (open source, updated weekly)
+    <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; font-size: 0.875rem; color: #94a3b8;">
+      ${isDynasty ? `
+        <div><strong>Value Source:</strong> <a href="https://github.com/dynastyprocess/data" target="_blank" style="color: #8b5cf6;">DynastyProcess.com</a></div>
+      ` : `
+        <div><strong>ECR Source:</strong> <a href="https://www.fantasycalc.com" target="_blank" style="color: #8b5cf6;">FantasyCalc.com</a></div>
+        <div><strong>Projections:</strong> Sleeper ROS</div>
+      `}
+      <div><strong>Scarcity:</strong> VOR (Value Over Replacement)</div>
+      <div><strong>Updated:</strong> ${new Date(powerData.lastUpdated || Date.now()).toLocaleDateString()}</div>
     </div>
   </div>
 </div>
