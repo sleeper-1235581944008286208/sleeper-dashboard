@@ -32,7 +32,7 @@ const FETCH_REAL_WORLD_CONTEXT = process.env.FETCH_REAL_WORLD_CONTEXT === 'true'
 if (!LEAGUE_ID) {
   console.error('❌ Error: SLEEPER_LEAGUE_ID environment variable not set');
   console.error('Please add your Sleeper league ID to .env file:');
-  console.error('SLEEPER_LEAGUE_ID=your-league-id');
+  console.error('SLEEPER_LEAGUE_ID=your_league_id');
   process.exit(1);
 }
 
