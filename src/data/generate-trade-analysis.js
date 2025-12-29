@@ -114,7 +114,161 @@ async function loadData() {
     draftPicks = JSON.parse(readFileSync(draftPicksPath, 'utf-8'));
   }
 
-  return { trades, rosters, users, players, league, matchupsAllYears, powerRankings, draftPicks };
+  // Load VOR snapshots for historical trade analysis
+  const vorSnapshotsPath = join(cacheDir, 'vor-snapshots.json');
+  let vorSnapshots = null;
+  if (existsSync(vorSnapshotsPath)) {
+    vorSnapshots = JSON.parse(readFileSync(vorSnapshotsPath, 'utf-8'));
+  }
+
+  return { trades, rosters, users, players, league, matchupsAllYears, powerRankings, draftPicks, vorSnapshots };
+}
+
+/**
+ * Fetch ROS (Rest of Season) projections from Sleeper for a specific week
+ * This allows historical trades to use projections from the trade week, not current week
+ * @param {string} season - NFL season year (e.g., "2024")
+ * @param {number} fromWeek - Starting week for ROS projections
+ * @returns {Map} Map of playerId -> { rosPoints, weeklyProjections }
+ */
+async function fetchTradeWeekProjections(season, fromWeek) {
+  try {
+    const projections = new Map();
+    const endWeek = 18;
+
+    // Validate week range
+    const startWeek = Math.max(1, Math.min(fromWeek, endWeek));
+
+    console.error(`📊 Fetching ROS projections for ${season} weeks ${startWeek}-${endWeek}...`);
+
+    // Fetch projections for remaining weeks (fromWeek through 18)
+    const weekPromises = [];
+    for (let week = startWeek; week <= endWeek; week++) {
+      weekPromises.push(
+        fetch(`https://api.sleeper.app/projections/nfl/${season}/${week}?season_type=regular`)
+          .then(r => r.ok ? r.json() : [])
+          .then(data => ({ week, data }))
+          .catch(() => ({ week, data: [] }))
+      );
+    }
+
+    const weekResults = await Promise.all(weekPromises);
+
+    // Aggregate projections - sum remaining weeks for ROS projection
+    weekResults.forEach(({ week, data }) => {
+      if (!Array.isArray(data)) return;
+
+      data.forEach(proj => {
+        const playerId = proj.player?.player_id || proj.player_id;
+        if (!playerId) return;
+
+        const pts = proj.stats?.pts_ppr || proj.stats?.pts_half_ppr || 0;
+
+        const existing = projections.get(playerId) || {
+          rosPoints: 0,
+          weeklyProjections: {},
+          weeksRemaining: endWeek - startWeek + 1
+        };
+
+        existing.rosPoints += pts;
+        existing.weeklyProjections[week] = pts;
+        projections.set(playerId, existing);
+      });
+    });
+
+    console.error(`✅ Loaded ${projections.size} player projections for weeks ${startWeek}-${endWeek}`);
+    return projections;
+  } catch (error) {
+    console.error(`⚠️ Failed to fetch trade week projections: ${error.message}`);
+    return new Map();
+  }
+}
+
+/**
+ * Get VOR scarcity multipliers appropriate for a specific trade week/season
+ * Uses historical snapshots if available, falls back to season-phase defaults
+ * @param {Object} vorSnapshots - Loaded VOR snapshots data
+ * @param {string} tradeSeason - Season of the trade
+ * @param {number} tradeWeek - Week of the trade
+ * @param {boolean} isSF - Is Superflex league
+ * @returns {Object} Scarcity multipliers and source info
+ */
+function getVorScarcityForTrade(vorSnapshots, tradeSeason, tradeWeek, isSF) {
+  // Static fallback values
+  const standardFallback = { QB: 80, RB: 150, WR: 100, TE: 120, K: 20, DEF: 25 };
+  const sfFallback = { QB: 140, RB: 150, WR: 100, TE: 120, K: 20, DEF: 25 };
+  const baseFallback = isSF ? sfFallback : standardFallback;
+
+  if (!vorSnapshots?.snapshots || vorSnapshots.snapshots.length === 0) {
+    // Use season phase adjustments
+    const phaseAdjusted = { ...baseFallback };
+
+    if (tradeWeek <= 3) {
+      // Early season - RBs more valuable (injury uncertainty)
+      phaseAdjusted.RB = Math.round(phaseAdjusted.RB * 1.1);
+    } else if (tradeWeek >= 10 && tradeWeek <= 13) {
+      // Playoff push
+      phaseAdjusted.TE = Math.round(phaseAdjusted.TE * 1.1);
+    } else if (tradeWeek >= 14) {
+      // Playoffs
+      phaseAdjusted.QB = Math.round(phaseAdjusted.QB * 1.1);
+    }
+
+    return {
+      multipliers: phaseAdjusted,
+      source: 'season-phase-fallback',
+      accuracy: 'estimated'
+    };
+  }
+
+  // Look for exact match
+  const exactMatch = vorSnapshots.snapshots.find(s =>
+    s.season === tradeSeason && s.week === tradeWeek
+  );
+
+  if (exactMatch) {
+    return {
+      multipliers: exactMatch.scarcityMultipliers,
+      source: 'exact-snapshot',
+      accuracy: 'high',
+      snapshotDate: exactMatch.capturedAt
+    };
+  }
+
+  // Look for closest week in same season
+  const sameSeasonSnapshots = vorSnapshots.snapshots
+    .filter(s => s.season === tradeSeason)
+    .sort((a, b) => Math.abs(a.week - tradeWeek) - Math.abs(b.week - tradeWeek));
+
+  if (sameSeasonSnapshots.length > 0) {
+    const closest = sameSeasonSnapshots[0];
+    const weekDiff = Math.abs(closest.week - tradeWeek);
+
+    return {
+      multipliers: closest.scarcityMultipliers,
+      source: 'closest-snapshot',
+      accuracy: weekDiff <= 2 ? 'high' : 'moderate',
+      weekDifference: weekDiff,
+      snapshotWeek: closest.week,
+      snapshotDate: closest.capturedAt
+    };
+  }
+
+  // Use current snapshot if available (better than nothing)
+  if (vorSnapshots.currentSnapshot?.scarcityMultipliers) {
+    return {
+      multipliers: vorSnapshots.currentSnapshot.scarcityMultipliers,
+      source: 'current-snapshot',
+      accuracy: 'low',
+      note: 'Using current VOR values for historical trade'
+    };
+  }
+
+  return {
+    multipliers: baseFallback,
+    source: 'static-fallback',
+    accuracy: 'estimated'
+  };
 }
 
 /**
@@ -919,7 +1073,7 @@ function processTradeData(trade, users, players, rosters, matchupsAllYears, powe
  * Generate LLM analysis for a trade with comprehensive context
  */
 async function generateAnalysis(tradeData, persona, realWorldContext = []) {
-  const { sides, week, season, participants, draftPicks, seasonContext, leagueContext, headToHead, allPlayerNames } = tradeData;
+  const { sides, week, season, participants, draftPicks, seasonContext, leagueContext, headToHead, allPlayerNames, tradeWeekContext } = tradeData;
 
   // ============ BUILD COMPREHENSIVE CONTEXT ============
 
@@ -1154,6 +1308,14 @@ This is a REDRAFT league - rosters reset each year. Key considerations:
 - Ignore age/dynasty value - a 32-year-old producing is better than a 23-year-old with "upside"
 - Playoff schedule (weeks 15-17) is crucial for evaluating players
 - Injuries and bye weeks have outsized importance
+
+TRADE-WEEK SPECIFIC CONTEXT:
+${tradeWeekContext ? `
+- This trade occurred in Week ${week} with ${tradeWeekContext.weeksRemainingAtTrade} weeks remaining in the regular season
+- ROS projections are calculated from Week ${week} forward (not current week)
+- VOR scarcity data source: ${tradeWeekContext.vorScarcity?.source || 'fallback'} (${tradeWeekContext.vorScarcity?.accuracy || 'estimated'} accuracy)
+${tradeWeekContext.vorScarcity?.weekDifference ? `- Note: VOR data is from ${tradeWeekContext.vorScarcity.weekDifference} week(s) ${tradeWeekContext.vorScarcity.snapshotWeek > week ? 'later' : 'earlier'}` : ''}
+` : '- Trade-week projections not available - using current values'}
 `}
 
 POWER SCORE METHODOLOGY (for interpreting team strength):
@@ -1364,7 +1526,7 @@ async function main() {
 
   // Load data
   console.log('📊 Loading data...');
-  const { trades, rosters, users, players, league, matchupsAllYears, powerRankings, draftPicks } = await loadData();
+  const { trades, rosters, users, players, league, matchupsAllYears, powerRankings, draftPicks, vorSnapshots } = await loadData();
   console.log(`✅ Loaded ${trades.length} trades`);
   console.log(`✅ Loaded ${Object.keys(matchupsAllYears).length} seasons of matchup history`);
   if (powerRankings) {
@@ -1374,6 +1536,10 @@ async function main() {
   }
   if (draftPicks?.length > 0) {
     console.log(`✅ Loaded ${draftPicks.length} draft picks for context`);
+  }
+  if (vorSnapshots) {
+    const snapshotCount = vorSnapshots.snapshots?.length || 0;
+    console.log(`✅ Loaded ${snapshotCount} VOR snapshots for historical accuracy`);
   }
   if (FETCH_REAL_WORLD_CONTEXT) {
     console.log(`🌍 Real-world context fetching: ENABLED`);
@@ -1398,6 +1564,9 @@ async function main() {
 
   console.log(`📝 Generating analysis for ${tradesToAnalyze.length} trade(s)...\n`);
 
+  // Detect if league is superflex from power rankings
+  const isSF = powerRankings?.league?.isSuperFlex || false;
+
   // Process each trade
   for (const tradeData of tradesToAnalyze) {
     // Select random persona
@@ -1405,6 +1574,30 @@ async function main() {
 
     // Generate analysis
     try {
+      // For redraft leagues, fetch trade-week-specific projections and VOR scarcity
+      let tradeWeekContext = null;
+      if (LEAGUE_TYPE === 'redraft') {
+        console.log(`   📅 Week ${tradeData.week}, ${tradeData.season} - Fetching time-appropriate data...`);
+
+        // Fetch ROS projections from the trade week
+        const tradeWeekProjections = await fetchTradeWeekProjections(tradeData.season, tradeData.week);
+
+        // Get VOR scarcity values appropriate for the trade week
+        const vorScarcity = getVorScarcityForTrade(vorSnapshots, tradeData.season, tradeData.week, isSF);
+
+        tradeWeekContext = {
+          projections: tradeWeekProjections,
+          vorScarcity,
+          weeksRemainingAtTrade: 18 - tradeData.week + 1
+        };
+
+        console.log(`   ✅ ROS projections: ${tradeWeekProjections.size} players (weeks ${tradeData.week}-18)`);
+        console.log(`   ✅ VOR source: ${vorScarcity.source} (accuracy: ${vorScarcity.accuracy})`);
+      }
+
+      // Attach trade-week context to tradeData for analysis generation
+      tradeData.tradeWeekContext = tradeWeekContext;
+
       // Optionally fetch real-world context for players
       let realWorldContext = [];
       if (FETCH_REAL_WORLD_CONTEXT && tradeData.allPlayerNames?.length > 0) {

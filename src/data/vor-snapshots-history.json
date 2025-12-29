@@ -1,0 +1,19 @@
+{
+  "snapshots": [
+    {
+      "season": "2025",
+      "week": 17,
+      "scarcityMultipliers": {
+        "QB": 81,
+        "RB": 91,
+        "WR": 100,
+        "TE": 85,
+        "K": 20,
+        "DEF": 20
+      },
+      "scarcityMethod": "vor",
+      "isSuperFlex": true,
+      "capturedAt": "2025-12-29T04:52:09.605Z"
+    }
+  ]
+}
