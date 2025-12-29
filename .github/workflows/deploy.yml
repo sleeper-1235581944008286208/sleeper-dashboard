@@ -42,6 +42,7 @@ jobs:
         run: npm run build
         env:
           SLEEPER_LEAGUE_ID: ${{ secrets.SLEEPER_LEAGUE_ID }}
+          LEAGUE_TYPE: ${{ secrets.LEAGUE_TYPE || 'dynasty' }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
