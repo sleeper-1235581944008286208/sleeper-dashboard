@@ -1,0 +1,107 @@
+{
+  "tradeId": "5e5d8fa742aaac7a",
+  "week": 8,
+  "season": "2025",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Tishathefish",
+    "Shogunation"
+  ],
+  "sides": [
+    {
+      "teamName": "Shogunation",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 76.3,
+        "powerRank": 4,
+        "lineupValueScore": 79,
+        "performanceScore": 77.9,
+        "positionalScore": 62.7,
+        "depthScore": 80.9,
+        "totalTeams": 12,
+        "totalRosterValue": 37890
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 296,
+        "netValueChange": -296,
+        "estimatedPowerScoreChange": -0.3,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Theo Johnson",
+            "value": 296
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "2028 Round 3 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Theo Johnson",
+          "position": "TE",
+          "team": "NYG",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "Tishathefish",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 49.8,
+        "powerRank": 7,
+        "lineupValueScore": 60.7,
+        "performanceScore": 35.7,
+        "positionalScore": 47.1,
+        "depthScore": 33.9,
+        "totalTeams": 12,
+        "totalRosterValue": 29125
+      },
+      "tradeImpact": {
+        "valueGained": 296,
+        "valueLost": 0,
+        "netValueChange": 296,
+        "estimatedPowerScoreChange": 0.3,
+        "playersGained": [
+          {
+            "name": "Theo Johnson",
+            "value": 296
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Theo Johnson",
+          "position": "TE",
+          "team": "NYG",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "2028 Round 3 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2028",
+      "round": 3,
+      "from": "Tishathefish",
+      "to": "Shogunation"
+    }
+  ],
+  "persona": "Todd McShay",
+  "analysis": "Look, I've been doing this a long time, and when I see a playoff lock shipping out a young tight end with an ascending value trajectory for a 2028 third-rounder, I have to put my pen down and really ask myself: what are we doing here? This is Shogunation – sitting pretty at 5-2, fourth-best power score in the league – essentially waving the white flag on Theo Johnson for pennies on the dollar. And folks, in dynasty leagues, this is how you go from contender to pretender real quick.\n\nLet me break down the value proposition here, because this is where team-building 101 comes into play. Theo Johnson is 24 years old – that's the sweet spot for a tight end entering his prime years. The position is an absolute wasteland after your elite tier guys, and here's Shogunation giving up 296 dynasty points for what amounts to a lottery ticket three years from now. A THIRD-ROUND pick in 2028! We're talking about a dart throw that statistically has maybe a 15-20% chance of becoming a startable asset. This isn't even draft capital consolidation – this is selling low on a developing asset because... why exactly? The team is already playoff-bound with elite depth across the board. This smells like \"The Impatient Renovator\" getting antsy about a player averaging 4.6 points per game and forgetting that tight ends are notoriously slow to develop. George Kittle didn't break out until year two. Travis Kelce was a non-factor his first two seasons. Johnson's on a rebuilding Giants team – his usage should only increase as they figure out their identity.\n\nNow flip the script to Tishathefish, and suddenly we've got \"The Bargain Hunter\" making an absolute home run value play here. Sitting at 3-4, on the playoff bubble, this team desperately needs impact pieces to make a push. Their power score components tell the whole story – 35.7 performance rating, dead last in depth at 33.9. They're thin everywhere, and tight end is arguably the hardest position to fill in fantasy. Getting a 24-year-old ascending tight end for essentially nothing? That's best player available meeting immediate need. This is the kind of move that separates smart dynasty managers from the pack. Even if Johnson never becomes elite, his positional scarcity alone makes him worth way more than a future third. It's like finding a potential starting-caliber offensive lineman in the seventh round – the risk-reward is completely tilted in your favor.\n\nHere's my bottom line: Tishathefish wins this trade by a landslide, and it's not particularly close. They're adding +296 in dynasty value while maintaining their draft capital flexibility, getting a young piece that fits their competitive window, and exploiting a contender's puzzling decision to dump youth for distant future picks. Shogunation? They just gave away a rising asset at the most scarce position in fantasy for what might turn into a backup running back in three years. That's not strategic rebuilding – that's just bad asset management. When you're already a top-four team, you don't nickel-and-dime yourself out of depth pieces that could win you a championship. This is the kind of move you look back on in 2026 when Johnson is a weekly TE1 and kick yourself for making.",
+  "generatedAt": "2025-12-29T08:13:05.717Z"
+}
