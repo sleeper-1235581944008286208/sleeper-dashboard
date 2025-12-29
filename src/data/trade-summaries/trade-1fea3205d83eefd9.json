@@ -1,0 +1,116 @@
+{
+  "tradeId": "1fea3205d83eefd9",
+  "week": 10,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "jdmorris",
+    "decdweir"
+  ],
+  "sides": [
+    {
+      "teamName": "jdmorris",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 34.4,
+        "powerRank": 10,
+        "lineupValueScore": 27.2,
+        "performanceScore": 51.1,
+        "positionalScore": 32.6,
+        "depthScore": 11.9,
+        "totalTeams": 16,
+        "totalRosterValue": 16362
+      },
+      "tradeImpact": {
+        "valueGained": 4,
+        "valueLost": 1472,
+        "netValueChange": -1468,
+        "estimatedPowerScoreChange": -1.2,
+        "playersGained": [
+          {
+            "name": "Kirk Cousins",
+            "value": 4
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Rico Dowdle",
+            "value": 1472
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Kirk Cousins",
+          "position": "QB",
+          "team": "ATL",
+          "age": 37,
+          "careerStage": "Declining"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "team": "CAR",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "decdweir",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 49,
+        "powerRank": 5,
+        "lineupValueScore": 48.2,
+        "performanceScore": 50.8,
+        "positionalScore": 59.3,
+        "depthScore": 15.4,
+        "totalTeams": 16,
+        "totalRosterValue": 28925
+      },
+      "tradeImpact": {
+        "valueGained": 1472,
+        "valueLost": 4,
+        "netValueChange": 1468,
+        "estimatedPowerScoreChange": 1.2,
+        "playersGained": [
+          {
+            "name": "Rico Dowdle",
+            "value": 1472
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Kirk Cousins",
+            "value": 4
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "team": "CAR",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Kirk Cousins",
+          "position": "QB",
+          "team": "ATL",
+          "age": 37,
+          "careerStage": "Declining"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "This is absolutely shocking. Genuinely shocking. jdmorris is sitting at 4-5, right on the playoff bubble, and he's traded away a starting running back for a 37-year-old quarterback who got benched three weeks ago. Kirk Cousins isn't even playing football anymore! He's sat on the bench watching Michael Penix Jr., and this lad thinks that's going to save his season. It's madness. Pure madness. You're in Week 10, you need wins NOW, and you've just acquired a player who literally cannot help you. The man threw 9 interceptions in 5 games before getting the hook. Atlanta paid him $180 million and still decided they'd rather play the rookie. What does that tell you? It tells you Cousins is finished, and jdmorris just traded for damaged goods.\n\nLet's call this what it is: \"Desperate Dan\" jdmorris has panicked, plain and simple. Five trades this season, constantly tinkering, never getting it right. Meanwhile, decdweir - let's call him \"The Vulture\" - has swooped in and picked the bones clean. The Vulture is 5-4, sitting pretty in playoff position, and he's just added Rico Dowdle who's the lead back in Dallas. Is Dowdle Tyreek Hill? No, he's not. When Hill went to Miami from Kansas City, everyone said the Chiefs lost that trade, but they won a Super Bowl and got a haul of picks. This isn't that level of daylight robbery, but the principle is the same - one team got production, the other got promises. Dowdle is actually playing football, actually touching the ball 15-20 times a game. That's worth something in Week 10 of a redraft league. Cousins is worth absolutely nothing because he's not on the field.\n\nThe timing here is criminal. Five weeks until playoffs and you're trading your running back depth for a benchwarmer. Rico Dowdle's value is 1,472 compared to Cousins' 4 - that's not a typo, that's a massacre. The data doesn't lie even if managers do. Desperate Dan's power score drops 1.2 points while The Vulture gains 1.2. In a tight playoff race, that could be the difference between making it and going home. And here's what really gets me - jdmorris has been a \"balanced\" trader historically, but there's nothing balanced about this. This is desperation masquerading as strategy. When you're 4-5, you don't trade for players who aren't playing. You fight for every point, every position, every advantage. This is the opposite of that.\n\nThe winner here is obvious - decdweir wins this trade by a country mile. He's given up absolutely nothing for a starting running back in a redraft league where Rico Dowdle still has eight weeks to produce. Is Dowdle prime Adrian Peterson? Course he's not. But he's on the field, and that's more than you can say for Kirk Cousins. Desperate Dan has bottled it when his season was on the line. No composure, no plan, just panic. That's what separates the winners from the also-rans in this game - discipline and accountability. This trade had neither.",
+  "generatedAt": "2025-12-29T09:05:45.055Z"
+}

@@ -1,0 +1,106 @@
+{
+  "tradeId": "1a79f1dc2c4f50d9",
+  "week": 5,
+  "season": "2023",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "stevenbar24",
+    "ChunkyDog1998"
+  ],
+  "sides": [
+    {
+      "teamName": "ChunkyDog1998",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 48.4,
+        "powerRank": 6,
+        "lineupValueScore": 43.4,
+        "performanceScore": 53,
+        "positionalScore": 51.5,
+        "depthScore": 61.8,
+        "totalTeams": 16,
+        "totalRosterValue": 26033
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 17,
+        "netValueChange": -17,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Tutu Atwell",
+            "value": 17
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Tank Dell",
+          "position": "WR",
+          "team": "HOU",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Tutu Atwell",
+          "position": "WR",
+          "team": "LAR",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "stevenbar24",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 56,
+        "powerRank": 3,
+        "lineupValueScore": 51.3,
+        "performanceScore": 67.4,
+        "positionalScore": 63.5,
+        "depthScore": 13.5,
+        "totalTeams": 16,
+        "totalRosterValue": 30780
+      },
+      "tradeImpact": {
+        "valueGained": 17,
+        "valueLost": 0,
+        "netValueChange": 17,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [
+          {
+            "name": "Tutu Atwell",
+            "value": 17
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Tutu Atwell",
+          "position": "WR",
+          "team": "LAR",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Tank Dell",
+          "position": "WR",
+          "team": "HOU",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "This is absolutely pointless. Two managers swapping deck chairs on the Titanic, shuffling two injury-prone receivers who can't even crack 10 points per game. It's embarrassing, really.\n\nLet's start with ChunkyDog1998. You're 1-3, basically dead in the water already, and you're making your second trade of the season to swap Tutu Atwell for Tank Dell? What's the plan here? Dell's had his fibula snapped, his kneecap dislocated—he's made of glass. You're getting 9.5 points per game instead of 9.9. Brilliant. That half-point difference will surely turn your season around. And here's the kicker—you're LOSING value in this deal according to the data. Minus-17 net value. You're 1-3, likely eliminated from playoffs already, and you're taking a WORSE deal? There's no accountability here, no discipline. You needed to be aggressive, maybe package this lad with someone else for an actual difference-maker. Instead, you're rearranging the furniture in a burning building.\n\nNow stevenbar24. You're 3-1, sitting pretty in third place with a playoff lock looking likely. This is your FIRST trade ever in this league. You've been sat on your hands, not making moves, and THIS is what you do? You pick up a 17-point gain—fair play on extracting value—but for what? Tutu Atwell? The Rams' third or fourth option who only matters when everyone else is in the treatment room? You've got depth problems—your depth score is 13.5, which is shocking for a team trying to win now. Your lineup is strong, your performance has been excellent, but you're one injury away from disaster. And instead of addressing that glaring weakness, you're penny-pinching on boom-or-bust receivers who you'll never trust to start in the playoffs anyway.\n\nThe timing is dreadful for both sides. Week 5, ten weeks until playoffs—you've still got time to make REAL moves. This isn't desperation time yet, but it's not early enough to be speculating on lottery tickets either. This is when you should be consolidating talent, identifying your championship path. Instead, we've got two managers swapping players with identical ages, identical roles, identical mediocrity. It's a coin flip wrapped in a pointless transaction. Neither team gets better. Neither team's championship odds move an inch. ChunkyDog is still cooked, and stevenbar is still hoping his starters stay healthy because he's got nothing behind them. Absolute waste of everyone's time.",
+  "generatedAt": "2025-12-29T09:14:44.957Z"
+}

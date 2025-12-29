@@ -1,0 +1,116 @@
+{
+  "tradeId": "093644b8ae642e09",
+  "week": 11,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "jamesclarkson96",
+    "jdmorris"
+  ],
+  "sides": [
+    {
+      "teamName": "jdmorris",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 34.4,
+        "powerRank": 10,
+        "lineupValueScore": 27.2,
+        "performanceScore": 51.1,
+        "positionalScore": 32.6,
+        "depthScore": 11.9,
+        "totalTeams": 16,
+        "totalRosterValue": 16362
+      },
+      "tradeImpact": {
+        "valueGained": 1458,
+        "valueLost": 404,
+        "netValueChange": 1054,
+        "estimatedPowerScoreChange": 0.9,
+        "playersGained": [
+          {
+            "name": "Alec Pierce",
+            "value": 1458
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Aaron Jones",
+            "value": 404
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Alec Pierce",
+          "position": "WR",
+          "team": "IND",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Aaron Jones",
+          "position": "RB",
+          "team": "MIN",
+          "age": 31,
+          "careerStage": "Veteran/End of Career"
+        }
+      ]
+    },
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.6,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 48,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 404,
+        "valueLost": 1458,
+        "netValueChange": -1054,
+        "estimatedPowerScoreChange": -0.9,
+        "playersGained": [
+          {
+            "name": "Aaron Jones",
+            "value": 404
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Alec Pierce",
+            "value": 1458
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Aaron Jones",
+          "position": "RB",
+          "team": "MIN",
+          "age": 31,
+          "careerStage": "Veteran/End of Career"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Alec Pierce",
+          "position": "WR",
+          "team": "IND",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Alan Shearer",
+  "analysis": "Right, let's be absolutely clear about what's happened here: this is a classic case of two managers on the playoff bubble making completely opposite bets, and only one of them understands what redraft football is actually about.\n\n**jdmorris — \"The Dreamer\" — has absolutely bottled this one.** At 4-6 with four weeks until the playoffs, you need points NOW, not potential for next season that doesn't even exist in a redraft league. He's shipping out Aaron Jones, who's averaging 8.2 points per game and is an actual functioning running back in Minnesota's offense, for Alec Pierce, who's putting up a measly 4.6 PPG across three games. The dynasty value difference of 1,054 points? Completely meaningless when your rosters reset in January. This is like being in a cup final and substituting your proven striker for a promising youth player — it doesn't matter how much upside he has, you need goals today! And what's particularly baffling is this is jdmorris's fourth trade this season, showing he's active and engaged, yet he's traded away his seventh-most valuable asset for someone who might not even crack his starting lineup. His power score barely budges up 0.9 points, which tells you everything — the system knows this is window dressing, not a real improvement.\n\n**jamesclarkson96 — \"The Opportunist\" — has absolutely mugged his opponent here.** He's also 4-6, also on the bubble, but he understands the assignment. He's traded a bench warmer averaging under five points per game for an RB who's immediately startable and could be the difference in a playoff push. Yes, Aaron Jones is 31 years old with \"late career\" stamped all over him in dynasty terms, but this isn't dynasty! Those five \"years to decline\" for Pierce versus zero for Jones? Irrelevant! In redraft, you're not marrying these players, you're renting them for six more weeks. Jones gives you production right now, and with RB scarcity being what it is — that 150 VOR multiplier tells the story — a functioning running back is worth his weight in gold. jamesclarkson96 has made nine trades this season, clearly understands how to work the market, and this is his shrewdest move yet. His power score drops 0.9, but that's because the system is calculating long-term dynasty values that don't apply here.\n\nThe real-world context makes this even worse for jdmorris. Aaron Jones has been a consistent RB2/flex option for years, knows how to find the end zone, and is the lead back in Kevin O'Connell's offense — an offensive mind who knows how to use running backs. Meanwhile, Alec Pierce is a boom-or-bust WR4/5 who disappears for weeks at a time and whose production entirely depends on whether Anthony Richardson can complete passes beyond ten yards. In a playoff race, you take the proven 8.2 PPG over the theoretical upside of a guy who's barely on the fantasy radar. It's not complicated.\n\nAt the end of the day, this comes down to understanding your league format and your situation. Both managers are sitting at 4-6, desperately needing wins, yet one of them just traded immediate production for future value that evaporates the moment the season ends. jamesclarkson96 has pulled off highway robbery here — he's turned a bench piece into a potential playoff difference-maker while his opponent chases dynasty value in a redraft league. That's not strategy; that's a fundamental misunderstanding of the game you're playing. The Opportunist wins this one going away, and The Dreamer better wake up quickly or he'll be dreaming about what might have been when the playoffs start without him.",
+  "generatedAt": "2025-12-29T09:09:35.114Z"
+}

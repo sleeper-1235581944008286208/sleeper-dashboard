@@ -1,0 +1,116 @@
+{
+  "tradeId": "f0ad90df43e14ad5",
+  "week": 11,
+  "season": "2023",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "finthefiddle",
+    "stephen375"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 177,
+        "valueLost": 156,
+        "netValueChange": 21,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [
+          {
+            "name": "Dalton Schultz",
+            "value": 177
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Brian Robinson",
+            "value": 156
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "team": "HOU",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Brian Robinson",
+          "position": "RB",
+          "team": "SF",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "stephen375",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 27.4,
+        "powerRank": 16,
+        "lineupValueScore": 28.4,
+        "performanceScore": 23.9,
+        "positionalScore": 37.4,
+        "depthScore": 9.7,
+        "totalTeams": 16,
+        "totalRosterValue": 17055
+      },
+      "tradeImpact": {
+        "valueGained": 156,
+        "valueLost": 177,
+        "netValueChange": -21,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [
+          {
+            "name": "Brian Robinson",
+            "value": 156
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Dalton Schultz",
+            "value": 177
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Brian Robinson",
+          "position": "RB",
+          "team": "SF",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "team": "HOU",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Gary Neville",
+  "analysis": "Look, I've got to be honest here — this is one of those trades where you step back and think, \"What are we actually doing?\" You've got finthefiddle, sitting at 3-7, absolutely eliminated from playoff contention, making their seventh trade of the season like they're still building something meaningful for *this year*. But here's where it gets interesting: they've got the number one power score in the entire league at 92 out of 100. This is a team that, on paper, should be dominating, yet they're floundering at 3-7. That tells me everything I need to know about execution, about consistency, about those fine margins. And now, with four weeks until the playoffs they can't reach, \"The Tinkerman\" is swapping Brian Robinson — who's actually producing 13.5 points per game — for Dalton Schultz at 8.4 points per game. In a redraft league. When the season's already lost. It's baffling, genuinely baffling.\n\nOn the other side, you've got stephen375, \"The Silent Assassin,\" sitting pretty at 8-2 with a playoff lock secured, making just their second trade ever. This manager doesn't mess about — when they move, it means something. They're flipping a tight end who's giving them less than a TD per game for a running back who's the primary early-down and goal-line back in San Francisco's system. Context matters here, and this is where the trade swings completely: stephen375 needs RB depth for a playoff push, and Robinson provides exactly that — consistency, volume, touchdown upside. Meanwhile, they're shipping out Schultz, who in a redraft league at age 29 with 8.4 PPG is essentially a streaming option you can replace off waivers. The value calculation says finthefiddle wins by 21 points, but that's dynasty value talking. This isn't dynasty. This is win-now, and only one of these managers is positioned to actually win now.\n\nThis reminds me a bit of the Khalil Mack trade, though not in the traditional sense. The Raiders shipped out a superstar to rebuild; the Bears mortgaged picks to compete immediately. Here, finthefiddle is acting like the Bears — making aggressive moves despite having nothing to play for — while stephen375 is being ruthlessly pragmatic, identifying exactly what they need (RB depth with four weeks left) and acquiring it without overpaying. The difference? The Bears at least had playoff aspirations when they pulled the trigger. The Tinkerman is rearranging deck chairs on a sinking ship, except the ship already sank two weeks ago. Getting a tight end who provides marginal value when you're mathematically eliminated doesn't make you smarter; it makes you busy. And there's a massive difference between being active and being effective.\n\nThe championship implications here are crystal clear: stephen375 has just improved their title odds by adding a legitimate RB2/flex option who sees double-digit carries and goal-line work, while giving up a replacement-level tight end in a shallow position that, frankly, you can stream successfully if you know what you're doing. The Silent Assassin has made a textbook contender move — identify your weakness, plug it with immediate production, keep your eyes on the prize. Meanwhile, finthefiddle's power score might stay the same on paper, but what's the point? They've traded away current-week production for... what exactly? A marginally higher dynasty value in a redraft league where none of this matters come September? That's the bit that frustrates me about this deal — it's not that it's catastrophically bad for The Tinkerman, it's that it's utterly pointless. When you're 3-7 in Week 11 of a redraft league, your season is over. Start planning for your draft next year, not making lateral moves that accomplish nothing. One team here understands the moment they're in. The other is just making noise.",
+  "generatedAt": "2025-12-29T09:20:26.760Z"
+}

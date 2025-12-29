@@ -1,0 +1,152 @@
+{
+  "tradeId": "ae84adf3b389af50",
+  "week": 9,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "jamesclarkson96",
+    "bequietamy"
+  ],
+  "sides": [
+    {
+      "teamName": "bequietamy",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 32.4,
+        "powerRank": 13,
+        "lineupValueScore": 28.8,
+        "performanceScore": 43.1,
+        "positionalScore": 32.4,
+        "depthScore": 4.2,
+        "totalTeams": 16,
+        "totalRosterValue": 17294
+      },
+      "tradeImpact": {
+        "valueGained": 1257,
+        "valueLost": 481,
+        "netValueChange": 776,
+        "estimatedPowerScoreChange": 0.6,
+        "playersGained": [
+          {
+            "name": "Wan'Dale Robinson",
+            "value": 1100
+          },
+          {
+            "name": "Jalen McMillan",
+            "value": 157
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Michael Wilson",
+            "value": 481
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "team": "NYG",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jalen McMillan",
+          "position": "WR",
+          "team": "TB",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Odell Beckham",
+          "position": "WR",
+          "team": "FA",
+          "age": 32,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Michael Wilson",
+          "position": "WR",
+          "team": "ARI",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.6,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 48,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 481,
+        "valueLost": 1257,
+        "netValueChange": -776,
+        "estimatedPowerScoreChange": -0.6,
+        "playersGained": [
+          {
+            "name": "Michael Wilson",
+            "value": 481
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Wan'Dale Robinson",
+            "value": 1100
+          },
+          {
+            "name": "Jalen McMillan",
+            "value": 157
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Odell Beckham",
+          "position": "WR",
+          "team": "FA",
+          "age": 32,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Michael Wilson",
+          "position": "WR",
+          "team": "ARI",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "team": "NYG",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jalen McMillan",
+          "position": "WR",
+          "team": "TB",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Gary Neville",
+  "analysis": "Look, I have to be honest with you — when I first saw this trade come across my desk, I thought there'd been some sort of mistake in the data. bequietamy, let's call them \"The Scavenger,\" picking up other teams' discarded pieces, has absolutely fleeced jamesclarkson96, who we'll dub \"The Fire Sale Manager.\" At 2-6 and likely eliminated from playoff contention, James is shipping out the one asset with genuine PPR value in Wan'Dale Robinson for what amounts to a bag of crisps. Now, I understand the frustration of a lost season — we've all been there — but this is the kind of move that keeps you up at night six weeks from now. Robinson was averaging 7.8 points per game before his injury, operating as a volume-based PPR asset in that Giants offense, while OBJ is posting 3.3 per game and quite frankly looks finished at the highest level. Michael Wilson has some appeal with his red zone work, but he's boom-or-bust at best. This trade reminds me of the DeAndre Hopkins deal when the Texans sent him to Arizona for essentially nothing — one team giving up on a productive player too early while the other recognized value hiding in plain sight.\n\nThe Scavenger is sitting at 4-4, right on the playoff bubble, and they've just added a player who was actually producing before the injury. Context matters here, and this is where the trade swings dramatically. In a redraft league with six weeks until playoffs, you're not building for next season — you're building for *this* season. Robinson's injury timeline is concerning, certainly, but if he returns in any capacity for the fantasy playoffs, bequietamy has just acquired a PPR flex option for virtually nothing. Meanwhile, The Fire Sale Manager has given away their most valuable trade chip for two players who won't move the needle this season. OBJ is a free agent averaging under four points per game, and Wilson is fighting for scraps in an Arizona offense that's spreading targets everywhere. The value differential here is staggering — 776 points in dynasty value, and while this is redraft, that gap tells you everything about market perception.\n\nLet me make a bold prediction: This trade will be remembered as the moment bequietamy's season turned around, and the moment jamesclarkson96's rebuild became unnecessarily longer. If Robinson returns by Week 13 or 14 and provides even modest PPR production — five or six catches for 50 yards — he'll outperform Wilson and Beckham combined over the fantasy playoffs. The Scavenger understood something fundamental: in redraft leagues, you're trying to win *this year*, and a player with a chance to contribute in Weeks 15-17 is worth infinitely more than two players who are guaranteed to do nothing. The Fire Sale Manager has made the classic mistake of treating a redraft season like dynasty — collecting names and potential instead of focusing on what actually helps you win matches right now.\n\nAs for championship implications, this is where it gets really interesting. The Scavenger was already a playoff contender despite their middling 32.4 power score, and they've just improved by 0.6 points while their trading partner declined by the same margin. That might not sound significant, but in a league where they're ranked 13th of 16, every marginal gain matters. If Robinson returns healthy, they've suddenly got depth at the most important position for PPR leagues, and depth wins championships when injuries inevitably strike in December. The Fire Sale Manager? They're already at 2-6, ranked 14th in power score, and they've just made themselves weaker for no discernible reason. I cannot for the life of me understand why a team that's already eliminated is trading away their best remaining asset for players who won't help them this season. It's the kind of move that suggests they've given up entirely, and in redraft, once you've given up, you're doing a disservice to the entire league by handing out free wins to your opponents. This trade doesn't just affect these two teams — it potentially alters the entire playoff picture by strengthening a bubble team at the expense of competitive balance.",
+  "generatedAt": "2025-12-29T09:03:56.079Z"
+}

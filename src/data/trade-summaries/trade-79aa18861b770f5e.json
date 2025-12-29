@@ -1,0 +1,96 @@
+{
+  "tradeId": "79aa18861b770f5e",
+  "week": 10,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "finthefiddle",
+    "raaaaaidddderrrrrs"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Alexander Mattison",
+          "position": "RB",
+          "team": "MIA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Elijah Moore",
+          "position": "WR",
+          "team": "DEN",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "raaaaaidddderrrrrs",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 34,
+        "powerRank": 12,
+        "lineupValueScore": 23.1,
+        "performanceScore": 59.4,
+        "positionalScore": 29.1,
+        "depthScore": 4.4,
+        "totalTeams": 16,
+        "totalRosterValue": 13895
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 0,
+        "netValueChange": 0,
+        "estimatedPowerScoreChange": 0,
+        "playersGained": [],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Elijah Moore",
+          "position": "WR",
+          "team": "DEN",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Alexander Mattison",
+          "position": "RB",
+          "team": "MIA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Jamie Carragher",
+  "analysis": "Look, I've gotta be honest with you here - this is one of those trades where you step back and think, \"What are we actually doing?\" Week 10, we're five weeks from the playoffs, and we've got two players who are basically depth pieces swapping sides. Mattison for Moore. It's like watching two mid-table Premier League clubs exchange their fourth-choice strikers in January - technically it's movement, but is it really making a difference? Let me break down what's happening here, because the context tells a more interesting story than the players involved.\n\nFinthefiddle is sat there at 4-5, on the bubble, but here's what's fascinating - they've got the number one power score in the entire league at 92 out of 100. That's top of the table quality with a relegation battle record! They've been unlucky, clearly, but they're also absolutely desperate. They've made NINE trades this season alone - that's not a balanced trader, that's a manager pressing every button trying to fix something. And now they're swapping Elijah Moore, who's averaging 5.6 points per game as a fringe piece in Denver, for Alexander Mattison, who's giving you 7.2 but is completely buried in Miami's depth chart. In a redraft league, you're chasing volume, chasing opportunity, and Mattison simply doesn't have it anymore. This reminds me a bit of the Stefon Diggs situation - not in terms of talent, obviously - but in the sense that sometimes a change of scenery gets sold as the solution when the underlying problem is the player's actual usage. Diggs went from Minnesota to Buffalo and became a league-winner because he got VOLUME and TARGETS. Mattison's going from one backup role to... needing someone to get injured to matter. That's not the same story at all.\n\nRaaaaaidddderrrrrs, meanwhile, are 5-4 and in playoff position with the 12th-ranked power score. They've barely traded all season - this is only their second trade EVER in this league. They're conservative, they're methodical, and they're getting the slightly younger player in Moore who at least has a pulse of upside if something changes in Denver's passing game. Is it going to change their season? Absolutely not. But here's the thing about late-season trades in redraft - you're either going all-in for a championship push or you're punting on the year. Neither of these moves does either! It's sideways movement. Mattison's 1.6 points per game advantage sounds nice until you realize he's the third-string back and Moore's at least on the field for two-thirds of the snaps as a rotational piece.\n\nThe winner here? I'm giving it to raaaaaidddderrrrrs by the narrowest of margins, and only because they're not the ones panicking. Finthefiddle has made eighteen career trades, hemorrhaging players left and right - 32 traded away versus 26 acquired - and they're STILL sitting at 4-5 despite having elite roster construction on paper. That's not a trading problem, that's a decision-making problem. You don't fix a 4-5 record with Alexander Mattison. You fix it by playing the players who got you to that number one power score in the first place and hoping the luck evens out. This trade? It's the football equivalent of rearranging deck chairs on the Titanic. Both managers needed to be bolder if they wanted to actually move the needle with five weeks left. Instead, we've got two backup-caliber players swapping jerseys while the playoff race carries on without them.",
+  "generatedAt": "2025-12-29T09:06:42.631Z"
+}

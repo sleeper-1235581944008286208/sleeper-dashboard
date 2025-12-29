@@ -1,0 +1,106 @@
+{
+  "tradeId": "49e907d6cfe9968a",
+  "week": 11,
+  "season": "2023",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "bequietamy",
+    "stevenbar24"
+  ],
+  "sides": [
+    {
+      "teamName": "bequietamy",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 32.4,
+        "powerRank": 13,
+        "lineupValueScore": 28.8,
+        "performanceScore": 43.1,
+        "positionalScore": 32.4,
+        "depthScore": 4.2,
+        "totalTeams": 16,
+        "totalRosterValue": 17294
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 397,
+        "netValueChange": -397,
+        "estimatedPowerScoreChange": -0.3,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Tyjae Spears",
+            "value": 397
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Noah Brown",
+          "position": "WR",
+          "team": "WAS",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Tyjae Spears",
+          "position": "RB",
+          "team": "TEN",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "stevenbar24",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 56,
+        "powerRank": 3,
+        "lineupValueScore": 51.3,
+        "performanceScore": 67.4,
+        "positionalScore": 63.5,
+        "depthScore": 13.5,
+        "totalTeams": 16,
+        "totalRosterValue": 30780
+      },
+      "tradeImpact": {
+        "valueGained": 397,
+        "valueLost": 0,
+        "netValueChange": 397,
+        "estimatedPowerScoreChange": 0.3,
+        "playersGained": [
+          {
+            "name": "Tyjae Spears",
+            "value": 397
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Tyjae Spears",
+          "position": "RB",
+          "team": "TEN",
+          "age": 24,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Noah Brown",
+          "position": "WR",
+          "team": "WAS",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Alan Shearer",
+  "analysis": "Look, I've seen some head-scratching decisions in my time, but this one has me absolutely baffled. We've got \"Panic Button Amy\" absolutely bottling it against \"The Opportunist\" stevenbar24, and it's the kind of lopsided swap that reminds me of when Seattle sent Russell Wilson to Denver thinking they were getting value back. We all know how that turned out – Denver got fleeced, Wilson's production cratered, and the Seahawks looked like geniuses. The difference here? At least Denver *thought* they were getting a franchise quarterback. Amy's trading a young running back with actual dynasty value for Noah bloody Brown – a 29-year-old journeyman who's averaging 10 points over TWO games. TWO GAMES! That's not a sample size, that's a mirage.\n\nLet's talk about what's actually happening here, because the numbers tell the story clear as day. Bequietamy is sitting at 6-4, technically in playoff contention but with a power score of 32.4 that ranks 13th out of 16 teams. That's relegation form, not championship caliber. And what does she do with four weeks until playoffs? She trades away Tyjae Spears – a 24-year-old backup with 397 in dynasty value who's one Tony Pollard injury away from being an RB2 – for a waiver wire receiver who'll be back on waivers by Week 13. Noah Brown isn't moving the needle for anyone. He's a depth piece, a bye-week fill-in at best, and in a REDRAFT league where this season is all that matters, you're telling me 10.3 points per game over two contests is worth more than a running back handcuff? That's nonsense. Absolute nonsense. Spears might only be averaging 4.6 PPG now, but he's getting touches, he's involved in the passing game, and if anything happens to Pollard – which happens to running backs, doesn't it? – you've just given away a potential league-winner for nothing.\n\nMeanwhile, stevenbar24 is sitting pretty at 7-3, ranked third in the league with a 56 power score, and he's just added insurance to his roster for free. FREE. He's traded away a receiver with zero dynasty value who he probably picked up off waivers two weeks ago for a legitimate asset. That's what I call shrewd business. He's not even desperate for wins – he's a playoff lock – but he's thinking ahead, adding depth at the most valuable position in fantasy football, and he's done it without giving up anything of consequence. This is the Russell Wilson trade if Russell Wilson cost the Broncos a seventh-round pick instead of multiple first-rounders. The Opportunist has pulled off highway robbery here, and he knows it.\n\nHere's my bold prediction: By season's end, Amy will be watching the playoffs from the outside looking in, wondering why she traded away a running back with upside for two weeks of false hope from Noah Brown. And stevenbar24? He'll either be riding Spears as a flex play if Pollard gets dinged up, or he'll have the best handcuff in his league heading into the fantasy playoffs. This trade already looks bad – the -0.3 power score change for Amy and +0.3 for stevenbar tells you everything – but give it three weeks and it'll look catastrophic. At the end of the day, this comes down to points and opportunity, and Amy just traded opportunity for fool's gold. Clear winner: stevenbar24, and it's not even close. Panic Button Amy has just knocked herself out of playoff contention with one terrible decision.",
+  "generatedAt": "2025-12-29T09:19:34.703Z"
+}

@@ -1,0 +1,174 @@
+{
+  "tradeId": "d8d1946eda9a039c",
+  "week": 10,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "stephen375",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 10687,
+        "valueLost": 870,
+        "netValueChange": 9817,
+        "estimatedPowerScoreChange": 8.2,
+        "playersGained": [
+          {
+            "name": "A.J. Brown",
+            "value": 5249
+          },
+          {
+            "name": "Rome Odunze",
+            "value": 5438
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Jerry Jeudy",
+            "value": 490
+          },
+          {
+            "name": "Isiah Pacheco",
+            "value": 380
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "A.J. Brown",
+          "position": "WR",
+          "team": "PHI",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Rome Odunze",
+          "position": "WR",
+          "team": "CHI",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Austin Ekeler",
+          "position": "RB",
+          "team": "WAS",
+          "age": 30,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Jerry Jeudy",
+          "position": "WR",
+          "team": "CLE",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Isiah Pacheco",
+          "position": "RB",
+          "team": "KC",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "stephen375",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 27.4,
+        "powerRank": 16,
+        "lineupValueScore": 28.4,
+        "performanceScore": 23.9,
+        "positionalScore": 37.4,
+        "depthScore": 9.7,
+        "totalTeams": 16,
+        "totalRosterValue": 17055
+      },
+      "tradeImpact": {
+        "valueGained": 870,
+        "valueLost": 10687,
+        "netValueChange": -9817,
+        "estimatedPowerScoreChange": -8.2,
+        "playersGained": [
+          {
+            "name": "Jerry Jeudy",
+            "value": 490
+          },
+          {
+            "name": "Isiah Pacheco",
+            "value": 380
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "A.J. Brown",
+            "value": 5249
+          },
+          {
+            "name": "Rome Odunze",
+            "value": 5438
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Austin Ekeler",
+          "position": "RB",
+          "team": "WAS",
+          "age": 30,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Jerry Jeudy",
+          "position": "WR",
+          "team": "CLE",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Isiah Pacheco",
+          "position": "RB",
+          "team": "KC",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "A.J. Brown",
+          "position": "WR",
+          "team": "PHI",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Rome Odunze",
+          "position": "WR",
+          "team": "CHI",
+          "age": 23,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "Right, what have we got here then? A 4-5 team trading away three running backs for two wide receivers with five weeks left before the playoffs. Absolutely mental. This is finthefiddle trying to save their season by getting fancy, and stephen375 at 3-6 just completely waving the white flag. Look, I don't care what these dynasty values say - this is a REDRAFT league. You know what matters? The next nine weeks. That's it. And finthefiddle just gave up three RBs when running back is the scarcest position on the board. It's basic stuff, really basic.\n\nLet me tell you something about A.J. Brown - brilliant player, absolutely brilliant. But he's 28 years old playing in a run-first offense with Jalen Hurts keeping the ball himself half the time. You're betting everything on him staying healthy and getting consistent volume when Philadelphia wants to run the football. Meanwhile, you've given up Austin Ekeler who's getting touches every single week, Pacheco who's in Kansas City's offense with goal-line work, and Jeudy who's actually been decent in Cleveland. For what? Rome Odunze? A rookie averaging 6.3 points per game in Chicago's disaster of an offense? That's madness. Pure madness. This is like the Khalil Mack trade - finthefiddle mortgaging their depth and positional advantage for one superstar, except at least the Bears got a genuine game-changer. Here you're getting an injury-prone receiver and a rookie who can't get separation.\n\nThe championship implications? Look, finthefiddle is already #1 in power score with a 4-5 record, which tells me they've been unlucky but have a strong roster. So what do they do? They panic. They trade away their running back depth - the most valuable commodity in fantasy football - to stack receivers. If A.J. Brown misses two games with a hamstring, this trade torpedoes their entire season. They've gone from having RB options to pray-and-hope mode. Meanwhile stephen375, dead last in the league at 3-6, just pulled off the heist of the century. They're out of it anyway, but at least they got actual value. Three players who will score you points versus one elite receiver who needs to be perfect and one rookie who's done nothing.\n\nHere's my prediction, and write this down: By playoffs, finthefiddle will be desperately trying to trade one of their receivers back for a running back because they'll realize you can't start four wide receivers. This trade will be looked at as the moment they overthought themselves out of a championship. They had balance, they had options, they had the #1 power score for a reason. Now they've put all their eggs in the A.J. Brown basket, and in redraft, one injury ends you. Stephen375 might not make the playoffs, but they'll finish strong and wonder why they didn't do this three weeks earlier. Absolute shambles of a decision by finthefiddle. When you're on the bubble, you shore up your weaknesses - you don't create new ones. Basic football intelligence.",
+  "generatedAt": "2025-12-29T09:07:34.474Z"
+}

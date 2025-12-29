@@ -1,0 +1,196 @@
+{
+  "tradeId": "4e4f8ff76855950c",
+  "week": 8,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "jamesclarkson96",
+    "BigBishAl76"
+  ],
+  "sides": [
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.6,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 48,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 441,
+        "valueLost": 2724,
+        "netValueChange": -2283,
+        "estimatedPowerScoreChange": -1.9,
+        "playersGained": [
+          {
+            "name": "Sterling Shepard",
+            "value": 1
+          },
+          {
+            "name": "Jordan Mason",
+            "value": 440
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Kareem Hunt",
+            "value": 83
+          },
+          {
+            "name": "Xavier Worthy",
+            "value": 2195
+          },
+          {
+            "name": "Keon Coleman",
+            "value": 446
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Sterling Shepard",
+          "position": "WR",
+          "team": "TB",
+          "age": 32,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Ray-Ray McCloud",
+          "position": "WR",
+          "team": "FA",
+          "age": 29,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Jordan Mason",
+          "position": "RB",
+          "team": "MIN",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Kareem Hunt",
+          "position": "RB",
+          "team": "KC",
+          "age": 30,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Xavier Worthy",
+          "position": "WR",
+          "team": "KC",
+          "age": 22,
+          "careerStage": "Developing"
+        },
+        {
+          "name": "Keon Coleman",
+          "position": "WR",
+          "team": "BUF",
+          "age": 22,
+          "careerStage": "Developing"
+        }
+      ]
+    },
+    {
+      "teamName": "BigBishAl76",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 60.4,
+        "powerRank": 2,
+        "lineupValueScore": 53.3,
+        "performanceScore": 72.6,
+        "positionalScore": 75.6,
+        "depthScore": 12.2,
+        "totalTeams": 16,
+        "totalRosterValue": 32028
+      },
+      "tradeImpact": {
+        "valueGained": 2724,
+        "valueLost": 441,
+        "netValueChange": 2283,
+        "estimatedPowerScoreChange": 1.9,
+        "playersGained": [
+          {
+            "name": "Kareem Hunt",
+            "value": 83
+          },
+          {
+            "name": "Xavier Worthy",
+            "value": 2195
+          },
+          {
+            "name": "Keon Coleman",
+            "value": 446
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Sterling Shepard",
+            "value": 1
+          },
+          {
+            "name": "Jordan Mason",
+            "value": 440
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Kareem Hunt",
+          "position": "RB",
+          "team": "KC",
+          "age": 30,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Xavier Worthy",
+          "position": "WR",
+          "team": "KC",
+          "age": 22,
+          "careerStage": "Developing"
+        },
+        {
+          "name": "Keon Coleman",
+          "position": "WR",
+          "team": "BUF",
+          "age": 22,
+          "careerStage": "Developing"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Sterling Shepard",
+          "position": "WR",
+          "team": "TB",
+          "age": 32,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Ray-Ray McCloud",
+          "position": "WR",
+          "team": "FA",
+          "age": 29,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Jordan Mason",
+          "position": "RB",
+          "team": "MIN",
+          "age": 26,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "This is absolutely criminal. I'm looking at jamesclarkson96 at 2-5, already out of the playoff picture, and he's just handed BigBishAl76 the keys to his entire future for a bag of spare parts. Sterling Shepard? The man's 32 and his knees have more history than a museum. Ray-Ray McCloud isn't even on a team! And Jordan Mason, who's only useful if Christian McCaffrey gets hurt, which didn't happen. This is a capitulation. This is a manager waving the white flag and not even getting proper compensation for it.\n\nLet me be crystal clear about what's happened here: BigBishAl76 has pulled off the Khalil Mack heist in reverse. The Bears mortgaged everything for a superstar and it blew up in their faces. Here? BigBishAl76 has given up NOTHING – actual waiver wire fodder – and received Xavier Worthy, a 22-year-old rookie in Kansas City's offense with eight years of value trajectory ahead, plus Keon Coleman in Buffalo's system. The value difference is 2,283 points. That's not a trade, that's a robbery. And both teams are 2-5! They're in the exact same position, except one manager understands you rebuild when you're eliminated and the other is collecting players who should be on waivers. The analysis shows jamesclarkson96 as an \"active trader\" – well, being active doesn't mean being competent, does it?\n\nHere's my prediction: In two weeks, jamesclarkson96 will realize Jordan Mason isn't getting carries behind Aaron Jones in Minnesota, Sterling Shepard will be collecting dust on his bench, and he'll be watching Xavier Worthy break off deep balls from Patrick Mahomes thinking \"what have I done?\" Meanwhile, BigBishAl76, who somehow has the #2 power score despite being 2-5, just added two developing weapons to an already strong roster. This is the classic case of a manager panicking because he's losing instead of understanding WHY he's losing. His power score dropped 1.9 points – that's immediate roster damage – while his opponent gained 1.9. For what? A 26-year-old backup and two pensioners?\n\nChampionship implications? For jamesclarkson96, there are none – he's eliminated himself from contention this year AND damaged his rebuild. For BigBishAl76, this is fascinating. He's got the second-best roster in the league with a 2-5 record, which tells me he's been unlucky with scheduling. Now he's added young talent that could contribute down the stretch if he catches fire. But here's the thing: this is REDRAFT. None of this dynasty value matters! Both managers are eliminated from playoff contention with seven weeks to go, and they're trading like one's going for it all and the other's tanking. Except the one tanking is getting worse, not better. It's madness. Absolute madness. This is what happens when managers don't understand their situation, don't understand value, and don't have the discipline to make rational decisions when everything's gone wrong.",
+  "generatedAt": "2025-12-29T09:02:57.530Z"
+}

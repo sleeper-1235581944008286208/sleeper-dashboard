@@ -1,0 +1,130 @@
+{
+  "tradeId": "ac42ac14b7fac774",
+  "week": 3,
+  "season": "2023",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "mikeybhoy",
+    "jdmorris"
+  ],
+  "sides": [
+    {
+      "teamName": "jdmorris",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 34.4,
+        "powerRank": 10,
+        "lineupValueScore": 27.2,
+        "performanceScore": 51.1,
+        "positionalScore": 32.6,
+        "depthScore": 11.9,
+        "totalTeams": 16,
+        "totalRosterValue": 16362
+      },
+      "tradeImpact": {
+        "valueGained": 3969,
+        "valueLost": 162,
+        "netValueChange": 3807,
+        "estimatedPowerScoreChange": 3.2,
+        "playersGained": [
+          {
+            "name": "Josh Jacobs",
+            "value": 3969
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Darnell Mooney",
+            "value": 162
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "team": "GB",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Calvin Ridley",
+          "position": "WR",
+          "team": "TEN",
+          "age": 31,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Darnell Mooney",
+          "position": "WR",
+          "team": "ATL",
+          "age": 28,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "mikeybhoy",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 50.6,
+        "powerRank": 4,
+        "lineupValueScore": 45.4,
+        "performanceScore": 54.8,
+        "positionalScore": 62.2,
+        "depthScore": 42.1,
+        "totalTeams": 16,
+        "totalRosterValue": 27241
+      },
+      "tradeImpact": {
+        "valueGained": 162,
+        "valueLost": 3969,
+        "netValueChange": -3807,
+        "estimatedPowerScoreChange": -3.2,
+        "playersGained": [
+          {
+            "name": "Darnell Mooney",
+            "value": 162
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Josh Jacobs",
+            "value": 3969
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Calvin Ridley",
+          "position": "WR",
+          "team": "TEN",
+          "age": 31,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Darnell Mooney",
+          "position": "WR",
+          "team": "ATL",
+          "age": 28,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "team": "GB",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "Right, let's talk about this absolute shambles of a trade. We've got \"The Robbery Victim\" mikeybhoy shipping out Josh Jacobs for peanuts, and \"The Highway Bandit\" jdmorris absolutely cleaning him out in broad daylight. It's embarrassing, really.\n\nLook at the numbers – mikeybhoy is giving up nearly 4,000 in dynasty value and getting back 162. One hundred and sixty-two! That's not a trade, that's a charity case. Josh Jacobs is a proven bellcow running back in his prime, coming off a rushing title, now in Green Bay's improved offense. And you're swapping him for Calvin Ridley at 31 years old with a suspension on his record and Darnell Mooney, who's what, the third or fourth option in Atlanta? Absolute madness. Jacobs is worth more than both these receivers combined, and in a redraft league where running back scarcity is everything, you've just given away your competitive advantage. Week 3, both teams sitting at 1-1, and mikeybhoy decides this is the time to panic? There's no excuse for it.\n\nThe timing here is baffling. Week 3 means you've got 16 weeks left to compete, playoffs are miles away, and you're making desperate moves based on three games of data. Three games! Jacobs has 8.3 points per game through three weeks – that's not catastrophic, that's called settling into a new offense. Meanwhile, Ridley's putting up 9.9 and Mooney's at 4.4, so you're not even getting immediate production to justify this swap. If you're mikeybhoy and you think you need receivers that badly, you wait until you've got a bigger sample size or you find a trade partner who isn't mugging you off. This screams impatience and poor judgment.\n\nThe risk-reward profile is completely lopsided. jdmorris is getting a starting running back with virtually zero risk – Jacobs is healthy, he's the clear lead back, and running backs win championships in redraft. He's upgraded his power score by 3.2 points and shot from 34.4 to presumably the high 30s, which for a team ranked 10th out of 16 is massive. Meanwhile, mikeybhoy has dropped 3.2 points from a position of strength – he was ranked 4th with a 50.6 power score, and now he's taken on two aging receivers in an already deep position. What's the upside? Maybe Ridley has a few big games in Tennessee's questionable offense? That's not risk-reward, that's just risk.\n\nThis is the kind of trade that loses you your season in November when you're scrambling for running backs and watching Jacobs put up 20-point weeks for your rival. Both managers came into this with zero trades on the season, balanced trading styles, and now one of them looks like he's never seen a value chart in his life. jdmorris should be sending a thank-you card. mikeybhoy should be asking himself some serious questions. Accountability matters, and this decision is indefensible.",
+  "generatedAt": "2025-12-29T09:13:56.718Z"
+}

@@ -1,0 +1,130 @@
+{
+  "tradeId": "f5061b86238ad3b6",
+  "week": 8,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "stevenbar24",
+    "decdweir"
+  ],
+  "sides": [
+    {
+      "teamName": "decdweir",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 49,
+        "powerRank": 5,
+        "lineupValueScore": 48.2,
+        "performanceScore": 50.8,
+        "positionalScore": 59.3,
+        "depthScore": 15.4,
+        "totalTeams": 16,
+        "totalRosterValue": 28925
+      },
+      "tradeImpact": {
+        "valueGained": 1303,
+        "valueLost": 951,
+        "netValueChange": 352,
+        "estimatedPowerScoreChange": 0.3,
+        "playersGained": [
+          {
+            "name": "Baker Mayfield",
+            "value": 1303
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Deebo Samuel",
+            "value": 951
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "team": "TB",
+          "age": 30,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Russell Wilson",
+          "position": "QB",
+          "team": "NYG",
+          "age": 37,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Deebo Samuel",
+          "position": "WR",
+          "team": "WAS",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "stevenbar24",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 56,
+        "powerRank": 3,
+        "lineupValueScore": 51.3,
+        "performanceScore": 67.4,
+        "positionalScore": 63.5,
+        "depthScore": 13.5,
+        "totalTeams": 16,
+        "totalRosterValue": 30780
+      },
+      "tradeImpact": {
+        "valueGained": 951,
+        "valueLost": 1303,
+        "netValueChange": -352,
+        "estimatedPowerScoreChange": -0.3,
+        "playersGained": [
+          {
+            "name": "Deebo Samuel",
+            "value": 951
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Baker Mayfield",
+            "value": 1303
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Russell Wilson",
+          "position": "QB",
+          "team": "NYG",
+          "age": 37,
+          "careerStage": "Declining"
+        },
+        {
+          "name": "Deebo Samuel",
+          "position": "WR",
+          "team": "WAS",
+          "age": 29,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "team": "TB",
+          "age": 30,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Alan Shearer",
+  "analysis": "Look, at the end of the day, this is absolute madness from stevenbar24, and I'm genuinely baffled by what he's thinking here. You don't give up a quarterback averaging 20.9 points per game in Week 8 when you're sitting pretty at 5-2 and ranked third in the league. That's the kind of move that costs you championships, plain and simple.\n\nLet's call decdweir \"The Opportunist\" because he's pounced on this like a striker on a loose ball in the box – first trade all-time and he's nicked Baker Mayfield off a playoff contender for absolute peanuts. And stevenbar24? He's \"The Self-Saboteur\" – 71% win rate, 830 points scored, everything going his way, and he decides to downgrade from a quarterback producing elite numbers to 37-year-old Russell Wilson averaging 14.8 points per game. Wilson's past it, he's done, and we all saw what happened in Denver. The Steelers aren't suddenly going to turn him into his Seattle self. That's a six-point per game downgrade at the most important position when you're seven weeks from the playoffs. Criminal.\n\nThe timing here couldn't be worse for stevenbar24. Week 8 is when you consolidate your position, not when you start experimenting with has-beens at quarterback. Mayfield's got the weapons in Tampa – Evans and Godwin are proven commodities – and he's in a pass-heavy offense that feeds fantasy production. What's Wilson got? A run-first Steelers team and question marks everywhere. Deebo Samuel barely moves the needle here either – 11.2 points per game? That's not winning you weeks. The Opportunist saw a bloke asleep at the wheel and took full advantage, gaining 352 in value and improving his power score while his opponent tanks his own championship hopes.\n\nHere's my bold prediction: Come playoff time in Weeks 15-17, decdweir rides Baker Mayfield into the semifinals while stevenbar24 watches his season implode because Russell Wilson can't crack 15 points in a crucial matchup. This trade will be remembered as the moment The Self-Saboteur threw away a guaranteed playoff run, and The Opportunist will be laughing all the way to the championship match. Mark my words – this is the worst win-now trade I've seen all season, and there's simply no defending it. Results are what matter, and stevenbar24 just traded away his most reliable producer for a pensioner and a flex play. Absolute shambles.",
+  "generatedAt": "2025-12-29T09:02:06.061Z"
+}

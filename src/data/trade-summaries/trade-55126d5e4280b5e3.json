@@ -1,0 +1,188 @@
+{
+  "tradeId": "55126d5e4280b5e3",
+  "week": 10,
+  "season": "2024",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "jdmorris",
+    "jamesclarkson96"
+  ],
+  "sides": [
+    {
+      "teamName": "jdmorris",
+      "teamContext": "Playoff contender - competitive",
+      "powerScore": {
+        "powerScore": 34.4,
+        "powerRank": 10,
+        "lineupValueScore": 27.2,
+        "performanceScore": 51.1,
+        "positionalScore": 32.6,
+        "depthScore": 11.9,
+        "totalTeams": 16,
+        "totalRosterValue": 16362
+      },
+      "tradeImpact": {
+        "valueGained": 4094,
+        "valueLost": 213,
+        "netValueChange": 3881,
+        "estimatedPowerScoreChange": 3.2,
+        "playersGained": [
+          {
+            "name": "Darnell Mooney",
+            "value": 162
+          },
+          {
+            "name": "Chase Brown",
+            "value": 3932
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Cedric Tillman",
+            "value": 163
+          },
+          {
+            "name": "Chad Ryland",
+            "value": 50
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Tyler Bass",
+          "position": "K",
+          "team": "BUF",
+          "age": 28,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Darnell Mooney",
+          "position": "WR",
+          "team": "ATL",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Chase Brown",
+          "position": "RB",
+          "team": "CIN",
+          "age": 25,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Cedric Tillman",
+          "position": "WR",
+          "team": "CLE",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Chad Ryland",
+          "position": "K",
+          "team": "ARI",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jonathon Brooks",
+          "position": "RB",
+          "team": "CAR",
+          "age": 22,
+          "careerStage": "Entering Prime"
+        }
+      ]
+    },
+    {
+      "teamName": "jamesclarkson96",
+      "teamContext": "Middle of pack - unclear direction",
+      "powerScore": {
+        "powerScore": 29.6,
+        "powerRank": 14,
+        "lineupValueScore": 21.8,
+        "performanceScore": 48,
+        "positionalScore": 27.3,
+        "depthScore": 4.5,
+        "totalTeams": 16,
+        "totalRosterValue": 13067
+      },
+      "tradeImpact": {
+        "valueGained": 213,
+        "valueLost": 4094,
+        "netValueChange": -3881,
+        "estimatedPowerScoreChange": -3.2,
+        "playersGained": [
+          {
+            "name": "Cedric Tillman",
+            "value": 163
+          },
+          {
+            "name": "Chad Ryland",
+            "value": 50
+          }
+        ],
+        "playersLost": [
+          {
+            "name": "Darnell Mooney",
+            "value": 162
+          },
+          {
+            "name": "Chase Brown",
+            "value": 3932
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Cedric Tillman",
+          "position": "WR",
+          "team": "CLE",
+          "age": 25,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Chad Ryland",
+          "position": "K",
+          "team": "ARI",
+          "age": 26,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Jonathon Brooks",
+          "position": "RB",
+          "team": "CAR",
+          "age": 22,
+          "careerStage": "Entering Prime"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Tyler Bass",
+          "position": "K",
+          "team": "BUF",
+          "age": 28,
+          "careerStage": "Entering Prime"
+        },
+        {
+          "name": "Darnell Mooney",
+          "position": "WR",
+          "team": "ATL",
+          "age": 28,
+          "careerStage": "Prime Years"
+        },
+        {
+          "name": "Chase Brown",
+          "position": "RB",
+          "team": "CIN",
+          "age": 25,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Gary Lineker",
+  "analysis": "Well, well, well - this is what we call a textbook case of \"The Hail Mary versus The White Flag,\" and it's playing out exactly as you'd expect in Week 10. Let me introduce you to our protagonists: jdmorris, \"The Desperate Optimist,\" sitting at 4-5 and clinging to playoff hopes like a defender hanging onto Ja'Marr Chase's jersey, and jamesclarkson96, \"The Serial Renovator,\" at 3-6 and apparently deciding that this season belongs in the bin. What's fascinating here is that both managers are active traders - jdmorris with 3 deals this season, jamesclarkson96 with an impressive 8 - but they're operating in completely different universes right now. One's trying to salvage something from 2024, while the other seems to have forgotten they're in a redraft league entirely.\n\nThe trade itself is absolutely bonkers from a redraft perspective, and I mean that in the most analytical way possible. jdmorris is acquiring Chase Brown - a legitimate starting running back averaging 12.4 points per game in Cincinnati's offense - plus Darnell Mooney, who's putting up 10.4 PPG as Atlanta's WR2. In exchange, he's giving up Cedric Tillman (who's played three games), Chad Ryland (a kicker!), and Jonathon Brooks, who quite literally has 0.0 points per game because he hasn't played. Now, I've seen some lopsided trades in my time covering fantasy football, but this one makes Leicester's title odds look sensible. The value disparity - nearly 4,000 dynasty points - is staggering, and while dynasty values don't perfectly translate to redraft, the principle holds: jdmorris just acquired actual, productive football players for a collection of lottery tickets and a kicker you could've grabbed off waivers.\n\nHere's where it gets properly interesting though: this trade makes zero sense for jamesclarkson96 unless he's fundamentally misunderstood what league format he's in. You don't surrender your RB1 and a productive WR2 when you're 3-6 in a redraft league - there's nothing to rebuild toward! The season ends, the rosters reset, and all you've accomplished is ensuring you finish even further down the table. It's like selling your best striker in March when you're already relegated - what exactly is the plan here? The \"Serial Renovator\" nickname fits because this is his eighth trade of the season, but he's renovating a house that's being demolished in January. Jonathon Brooks might be a lovely dynasty stash, but he's averaging zero points per game through nine weeks, and Cedric Tillman's three-game sample size isn't exactly a treasure trove of reliability for the remaining five weeks until playoffs.\n\nThe clear winner here is jdmorris, and it's not particularly close. With five weeks until the playoffs, he's added immediate starting power at running back and wide receiver - the exact pieces a 4-5 team needs to make a run. Chase Brown gives him a dependable RB2/flex option with Cincinnati's passing game keeping defenses honest, and Mooney provides a solid floor even with Atlanta's quarterback uncertainty. The +3.2 power score improvement reflects this perfectly - it's a meaningful roster upgrade that could genuinely be the difference between making the playoffs and watching from home. Meanwhile, jamesclarkson96's -3.2 power score drop is just confirmation of what we already know: he's given up on 2024 and is playing a different game than everyone else. In redraft, that's not strategy - it's surrender. As I always say, football is a simple game where 22 players chase a ball for 90 minutes, and at the end, Chase Brown owners make the playoffs. Or something like that.",
+  "generatedAt": "2025-12-29T09:04:52.253Z"
+}

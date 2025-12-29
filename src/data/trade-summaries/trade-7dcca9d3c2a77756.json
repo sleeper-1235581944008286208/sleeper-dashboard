@@ -1,0 +1,106 @@
+{
+  "tradeId": "7dcca9d3c2a77756",
+  "week": 1,
+  "season": "2023",
+  "leagueId": "1235581944008286208",
+  "participants": [
+    "stephen375",
+    "finthefiddle"
+  ],
+  "sides": [
+    {
+      "teamName": "finthefiddle",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 92,
+        "powerRank": 1,
+        "lineupValueScore": 100,
+        "performanceScore": 80.6,
+        "positionalScore": 100,
+        "depthScore": 57.3,
+        "totalTeams": 16,
+        "totalRosterValue": 60046
+      },
+      "tradeImpact": {
+        "valueGained": 2938,
+        "valueLost": 0,
+        "netValueChange": 2938,
+        "estimatedPowerScoreChange": 2.4,
+        "playersGained": [
+          {
+            "name": "Kenneth Walker",
+            "value": 2938
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Kenneth Walker",
+          "position": "RB",
+          "team": "SEA",
+          "age": 25,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Raheem Mostert",
+          "position": "RB",
+          "team": "LV",
+          "age": 33,
+          "careerStage": "Veteran/End of Career"
+        }
+      ]
+    },
+    {
+      "teamName": "stephen375",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 27.4,
+        "powerRank": 16,
+        "lineupValueScore": 28.4,
+        "performanceScore": 23.9,
+        "positionalScore": 37.4,
+        "depthScore": 9.7,
+        "totalTeams": 16,
+        "totalRosterValue": 17055
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 2938,
+        "netValueChange": -2938,
+        "estimatedPowerScoreChange": -2.4,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Kenneth Walker",
+            "value": 2938
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "Raheem Mostert",
+          "position": "RB",
+          "team": "LV",
+          "age": 33,
+          "careerStage": "Veteran/End of Career"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Kenneth Walker",
+          "position": "RB",
+          "team": "SEA",
+          "age": 25,
+          "careerStage": "Prime Years"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [],
+  "persona": "Roy Keane",
+  "analysis": "This is absolutely disgraceful from stephen375. Shocking. You don't give away a 25-year-old lead back in his prime for a 33-year-old whose body is held together with tape and prayers. Week 1 of a redraft league and you're already panicking? Kenneth Walker had ONE bad game - 8.7 points - and you're shipping him out the door like he's finished. Meanwhile Mostert scores 12 points and suddenly he's Emmitt Smith? Have some backbone. This is the kind of knee-jerk, cowardly decision-making that gets you ranked dead last in the league with a 27.4 power score. There's no plan here. No thought process. Just panic.\n\nLook at what finthefiddle is doing - they're sitting at #1 in the power rankings at 92 and they're still finding ways to get better. That's what winners do. They don't rest on their laurels. They identify weakness and they exploit it ruthlessly. Walker is Seattle's clear RB1 with goal-line work. Yes, Charbonnet vultures some touches, but Walker is the guy. Three years younger than Mostert, more durable, better offense. And in a redraft league where you need these players to carry you through 18 weeks? You're betting on the horse that can actually finish the race. Mostert won't make it to Week 10 without missing time. He never does. That's not speculation, that's his entire career.\n\nThis reminds me of when the Browns traded for Odell Beckham Jr. - big splash, everyone got excited about the shiny new toy, and then reality hit. Mostert had ONE good week and stephen375 thinks they've pulled off a masterstroke. It's the same delusion. Trading for a name, trading for last week's box score instead of thinking about the next 17 weeks. You know what happened to that Browns trade? It fizzled. Beckham got hurt, the chemistry never clicked, and they wasted draft capital on a declining asset. That's exactly what's happening here - except stephen375 didn't even get draft picks back. They just gave away youth and durability for one hot game from a 33-year-old in Miami's backfield, where De'Von Achane is lurking to steal work and Mostert's next injury is a matter of when, not if.\n\nThe net value tells the whole story: -2,938 for stephen375, +2,938 for finthefiddle. That's not a trade, that's a mugging. And stephen375 is ranked 16th out of 16 teams - you need to be ACCUMULATING assets, not giving them away for short-term thinking. This is their first trade ever in this league and they've already shown they haven't got a clue. Finthefiddle absolutely robbed them blind. Walker will be a consistent RB2 all season with RB1 upside. Mostert will give you three more good weeks before he's on the injury report, and by Week 8 you'll be starting some waiver wire nobody while Walker is still grinding out 15-20 touches in Seattle. Unacceptable decision-making.",
+  "generatedAt": "2025-12-29T09:11:18.599Z"
+}
