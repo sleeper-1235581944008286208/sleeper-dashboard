@@ -472,7 +472,9 @@ function analyzeSeasonContext(tradeWeek, tradeSeason, league) {
     urgency = 'very high';
   } else {
     seasonPhase = 'playoffs';
-    strategicContext = 'Trading during playoffs - unusual, dynasty-focused move';
+    strategicContext = LEAGUE_TYPE === 'dynasty'
+      ? 'Trading during playoffs - unusual, dynasty-focused move'
+      : 'Trading during playoffs - unusual timing, must be addressing critical need';
     urgency = 'strategic';
   }
 
@@ -593,7 +595,12 @@ async function fetchPlayerRealWorldContext(playerNames, tradeDate) {
         max_tokens: 300,
         messages: [{
           role: 'user',
-          content: `Based on your knowledge, provide a brief 2-3 sentence summary of ${playerName}'s NFL situation, recent performance, and any relevant news or concerns fantasy managers should know about. Focus on facts that would be relevant for evaluating a fantasy trade. If you don't have specific recent info, mention their general reputation and role.`
+          content: `Based on your knowledge, provide a brief 2-3 sentence summary of ${playerName}'s NFL situation focusing on these key questions:
+1. Are they the PRIMARY STARTER or a BACKUP filling in for an injured player? If backup, who is injured and when are they expected back?
+2. Is their current production level sustainable, or is it temporary due to circumstances (injury to starter, other players out, favorable schedule)?
+3. Any recent performance trends, injuries, or fantasy-relevant news.
+
+Focus on facts that affect their FUTURE fantasy production, not just recent stats. Be explicit about starter vs backup status.`
         }]
       });
 
@@ -818,6 +825,40 @@ function getTeamPowerScore(rosterId, powerRankings) {
 }
 
 /**
+ * Get player projection context for trade analysis
+ * Compares historical PPG to projected PPG to identify role changes
+ */
+function getPlayerProjectionContext(playerId, tradeWeek, performanceMetrics, powerRankings) {
+  const playerValue = powerRankings?.playerValues?.[playerId];
+  const rosProjection = playerValue?.rosProjection || 0;
+  const remainingWeeks = Math.max(1, 18 - (tradeWeek || 1));
+  const projectedPPG = rosProjection / remainingWeeks;
+
+  const historicalPPG = performanceMetrics?.preTradeAvg || 0;
+  const ppgDelta = historicalPPG - projectedPPG;
+
+  // Determine role alert based on delta
+  let roleAlert = null;
+  if (historicalPPG > 15 && projectedPPG < 5) {
+    roleAlert = 'LIKELY BACKUP/FILL-IN - Production expected to drop significantly';
+  } else if (ppgDelta > 10) {
+    roleAlert = 'DECLINING ROLE - Large gap between historical and projected production';
+  } else if (ppgDelta > 5) {
+    roleAlert = 'REDUCED ROLE - Projected production below recent performance';
+  } else if (ppgDelta < -5) {
+    roleAlert = 'RISING ROLE - Projected production exceeds recent performance';
+  }
+
+  return {
+    rosProjection: Math.round(rosProjection * 10) / 10,
+    projectedPPG: Math.round(projectedPPG * 10) / 10,
+    ppgDelta: Math.round(ppgDelta * 10) / 10,
+    remainingWeeks,
+    roleAlert
+  };
+}
+
+/**
  * Calculate estimated power score change from a trade
  * Uses player dynasty values to estimate impact on lineup value score
  */
@@ -963,6 +1004,7 @@ function processTradeData(trade, users, players, rosters, matchupsAllYears, powe
         );
         const trajectory = analyzePlayerTrajectory(playerId, player, powerRankings);
         const draftContext = getPlayerDraftContext(playerId, `${player.first_name} ${player.last_name}`, draftPicksData);
+        const projectionContext = getPlayerProjectionContext(playerId, trade.week, performanceMetrics, powerRankings);
 
         sides[rosterId].receives.push({
           playerId,
@@ -975,7 +1017,8 @@ function processTradeData(trade, users, players, rosters, matchupsAllYears, powe
           positionalValue,
           performanceMetrics,
           trajectory,
-          draftContext
+          draftContext,
+          projectionContext
         });
       }
     });
@@ -996,6 +1039,7 @@ function processTradeData(trade, users, players, rosters, matchupsAllYears, powe
         );
         const trajectory = analyzePlayerTrajectory(playerId, player, powerRankings);
         const draftContext = getPlayerDraftContext(playerId, `${player.first_name} ${player.last_name}`, draftPicksData);
+        const projectionContext = getPlayerProjectionContext(playerId, trade.week, performanceMetrics, powerRankings);
 
         sides[rosterId].gives.push({
           playerId,
@@ -1008,7 +1052,8 @@ function processTradeData(trade, users, players, rosters, matchupsAllYears, powe
           positionalValue,
           performanceMetrics,
           trajectory,
-          draftContext
+          draftContext,
+          projectionContext
         });
       }
     });
@@ -1157,10 +1202,15 @@ async function generateAnalysis(tradeData, persona, realWorldContext = []) {
           promptText += `    Age: ${asset.age || 'N/A'} | Experience: ${asset.yearsExp || 0} years\n`;
           promptText += `    Career Stage: ${asset.careerStage} | Position Value: ${asset.positionalValue}\n`;
 
-          // Value trajectory
+          // Value trajectory - only show dynasty-specific info for dynasty leagues
           if (asset.trajectory) {
-            promptText += `    Value Trajectory: ${asset.trajectory.trajectory.toUpperCase()} - ${asset.trajectory.valueOutlook}\n`;
-            promptText += `    Dynasty Value: ${asset.trajectory.currentValue?.toLocaleString() || 'N/A'} | Years to Decline: ${asset.trajectory.yearsUntilDecline}\n`;
+            if (LEAGUE_TYPE === 'dynasty') {
+              promptText += `    Value Trajectory: ${asset.trajectory.trajectory.toUpperCase()} - ${asset.trajectory.valueOutlook}\n`;
+              promptText += `    Dynasty Value: ${asset.trajectory.currentValue?.toLocaleString() || 'N/A'} | Years to Decline: ${asset.trajectory.yearsUntilDecline}\n`;
+            } else {
+              // For redraft, just show trade value without dynasty terminology
+              promptText += `    Trade Value: ${asset.trajectory.currentValue?.toLocaleString() || 'N/A'}\n`;
+            }
           }
 
           // Draft context
@@ -1170,7 +1220,20 @@ async function generateAnalysis(tradeData, persona, realWorldContext = []) {
 
           // Performance metrics
           if (asset.performanceMetrics?.preTradeGames > 0) {
-            promptText += `    Fantasy Performance: ${asset.performanceMetrics.preTradeAvg.toFixed(1)} PPG (${asset.performanceMetrics.preTradeGames} games)\n`;
+            promptText += `    Fantasy Performance: ${asset.performanceMetrics.preTradeAvg.toFixed(1)} PPG historical (${asset.performanceMetrics.preTradeGames} games)\n`;
+          }
+
+          // Projection context - CRITICAL for identifying backup/fill-in situations
+          if (asset.projectionContext) {
+            const proj = asset.projectionContext;
+            promptText += `    Projected ROS: ${proj.projectedPPG} PPG (${proj.rosProjection} points over ${proj.remainingWeeks} weeks remaining)\n`;
+            if (proj.ppgDelta !== 0) {
+              const deltaSign = proj.ppgDelta > 0 ? '+' : '';
+              promptText += `    PPG Delta (Historical vs Projected): ${deltaSign}${proj.ppgDelta}\n`;
+            }
+            if (proj.roleAlert) {
+              promptText += `    ⚠️ ROLE ALERT: ${proj.roleAlert}\n`;
+            }
           }
         }
       });
@@ -1187,13 +1250,32 @@ async function generateAnalysis(tradeData, persona, realWorldContext = []) {
           promptText += `    Age: ${asset.age || 'N/A'} | Experience: ${asset.yearsExp || 0} years\n`;
           promptText += `    Career Stage: ${asset.careerStage} | Position Value: ${asset.positionalValue}\n`;
 
+          // Value trajectory - only show dynasty-specific info for dynasty leagues
           if (asset.trajectory) {
-            promptText += `    Value Trajectory: ${asset.trajectory.trajectory.toUpperCase()} - ${asset.trajectory.valueOutlook}\n`;
-            promptText += `    Dynasty Value: ${asset.trajectory.currentValue?.toLocaleString() || 'N/A'}\n`;
+            if (LEAGUE_TYPE === 'dynasty') {
+              promptText += `    Value Trajectory: ${asset.trajectory.trajectory.toUpperCase()} - ${asset.trajectory.valueOutlook}\n`;
+              promptText += `    Dynasty Value: ${asset.trajectory.currentValue?.toLocaleString() || 'N/A'}\n`;
+            } else {
+              // For redraft, just show trade value without dynasty terminology
+              promptText += `    Trade Value: ${asset.trajectory.currentValue?.toLocaleString() || 'N/A'}\n`;
+            }
           }
 
           if (asset.performanceMetrics?.preTradeGames > 0) {
-            promptText += `    Fantasy Performance: ${asset.performanceMetrics.preTradeAvg.toFixed(1)} PPG (${asset.performanceMetrics.preTradeGames} games)\n`;
+            promptText += `    Fantasy Performance: ${asset.performanceMetrics.preTradeAvg.toFixed(1)} PPG historical (${asset.performanceMetrics.preTradeGames} games)\n`;
+          }
+
+          // Projection context - CRITICAL for identifying backup/fill-in situations
+          if (asset.projectionContext) {
+            const proj = asset.projectionContext;
+            promptText += `    Projected ROS: ${proj.projectedPPG} PPG (${proj.rosProjection} points over ${proj.remainingWeeks} weeks remaining)\n`;
+            if (proj.ppgDelta !== 0) {
+              const deltaSign = proj.ppgDelta > 0 ? '+' : '';
+              promptText += `    PPG Delta (Historical vs Projected): ${deltaSign}${proj.ppgDelta}\n`;
+            }
+            if (proj.roleAlert) {
+              promptText += `    ⚠️ ROLE ALERT: ${proj.roleAlert}\n`;
+            }
           }
         }
       });
@@ -1267,7 +1349,7 @@ async function generateAnalysis(tradeData, persona, realWorldContext = []) {
 
   // ============ FINAL PROMPT ============
 
-  const prompt = `You are ${persona.name}, the legendary NFL analyst/reporter. Analyze this fantasy football dynasty trade in your signature style.
+  const prompt = `You are ${persona.name}, the legendary NFL analyst/reporter. Analyze this fantasy football ${LEAGUE_TYPE} trade in your signature style.
 
 ${promptText}
 
@@ -1289,6 +1371,21 @@ IMPORTANT GUIDELINES:
 - Make it feel like a real broadcast/article from ${persona.name}
 - Use ${persona.name}'s actual catchphrases and speaking patterns
 - Be entertaining, insightful, and occasionally controversial
+
+CRITICAL - PROJECTED VS HISTORICAL PRODUCTION:
+- Pay close attention to the PPG Delta (Historical vs Projected) for each player
+- When a player's PROJECTED PPG is significantly LOWER than HISTORICAL PPG, this indicates:
+  * The player may be a BACKUP filling in for an injured starter (e.g., backup QB starting while starter recovers)
+  * An injury that will limit future production
+  * A role change or depth chart demotion
+  * Their recent production is TEMPORARY and unsustainable
+- When you see a ROLE ALERT (e.g., "LIKELY BACKUP/FILL-IN"), HEAVILY weight this in your analysis
+- For REDRAFT leagues: PROJECTED production matters more than historical - a backup QB putting up 24 PPG while filling in is worth MUCH LESS than a starter averaging 18 PPG who will continue starting
+- Do NOT praise high historical PPG if projections show a dramatic drop - explain WHY the production is temporary
+- Examples of temporary production situations:
+  * Joe Flacco filling in for injured Joe Burrow
+  * A backup RB getting volume due to starter injury
+  * A WR with inflated stats due to other receivers being injured
 
 LEAGUE TYPE: ${LEAGUE_TYPE.toUpperCase()}
 ${LEAGUE_TYPE === 'dynasty' ? `
@@ -1396,6 +1493,7 @@ INTERPRETING TRADE IMPACT:
 - Large changes (> 5 points) are significant roster shifts
 - Consider BOTH sides: Zero-sum game means one team's gain is another's loss
 
+${LEAGUE_TYPE === 'dynasty' ? `
 POSITIONAL VALUE TIERS (Dynasty Context):
 - ELITE: Top 3 at position - league-winners, rarely traded
 - STRONG: Top 4-12 - reliable starters, high trade value
@@ -1414,6 +1512,14 @@ DRAFT PICK VALUES (Dynasty Reference):
 - Future 2nd Round: Solid value, can yield starters
 - Future 3rd+: Dart throws, best for depth
 - Current year picks more valuable as draft approaches
+` : `
+REDRAFT TRADE EVALUATION:
+- Focus ONLY on current season production - ignore age, long-term potential, and future value
+- PROJECTED points matter more than historical - a player's future role determines value
+- Pay attention to ROLE ALERTS - backup QBs filling in for injured starters have temporary value
+- Playoff schedule strength is crucial - target players with favorable Week 15-17 matchups
+- Trade value should reflect what the player will actually produce THIS SEASON, not their name recognition
+`}
 
 Return ONLY the analysis text. No preamble, headers, or meta-commentary.
 Be entertaining and insightful. Use ${persona.name}'s authentic voice, catchphrases, and speaking patterns.
