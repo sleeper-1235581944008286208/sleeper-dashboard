@@ -27,7 +27,7 @@ const __dirname = dirname(__filename);
 // Configuration
 const LEAGUE_ID = process.env.SLEEPER_LEAGUE_ID;
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
-const FETCH_REAL_WORLD_CONTEXT = process.env.FETCH_REAL_WORLD_CONTEXT !== 'false'; // Disable with FETCH_REAL_WORLD_CONTEXT=false
+const FETCH_REAL_WORLD_CONTEXT = process.env.FETCH_REAL_WORLD_CONTEXT === 'true'; // Enable with FETCH_REAL_WORLD_CONTEXT=true
 const LEAGUE_TYPE = process.env.LEAGUE_TYPE || 'dynasty'; // 'dynasty' or 'redraft'
 
 if (!LEAGUE_ID) {

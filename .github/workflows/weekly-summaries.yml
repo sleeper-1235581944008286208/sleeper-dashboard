@@ -68,7 +68,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SLEEPER_LEAGUE_ID: ${{ secrets.SLEEPER_LEAGUE_ID }}
           COMMENTATOR_REGION: ${{ github.event.inputs.region || secrets.COMMENTATOR_REGION }}
-          LEAGUE_TYPE: ${{ github.event.inputs.league_type || 'dynasty' }}
+          LEAGUE_TYPE: ${{ github.event.inputs.league_type || secrets.LEAGUE_TYPE || 'dynasty' }}
 
       - name: Check for new summaries
         id: check_changes
