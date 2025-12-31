@@ -12,34 +12,34 @@
       "teamName": "jdmorris",
       "teamContext": "Playoff contender - competitive",
       "powerScore": {
-        "powerScore": 34.5,
+        "powerScore": 42.7,
         "powerRank": 10,
-        "lineupValueScore": 27.2,
-        "performanceScore": 51.3,
-        "positionalScore": 32.6,
-        "depthScore": 11.9,
+        "lineupValueScore": 35.1,
+        "performanceScore": 50.6,
+        "positionalScore": 37.1,
+        "depthScore": 40.6,
         "totalTeams": 16,
-        "totalRosterValue": 16362
+        "totalRosterValue": 15369
       },
       "tradeImpact": {
-        "valueGained": 1164,
-        "valueLost": 230,
-        "netValueChange": 934,
-        "estimatedPowerScoreChange": 0.8,
+        "valueGained": 846,
+        "valueLost": 1684,
+        "netValueChange": -838,
+        "estimatedPowerScoreChange": -1,
         "playersGained": [
           {
             "name": "Quentin Johnston",
-            "value": 1164
+            "value": 846
           }
         ],
         "playersLost": [
           {
             "name": "Kareem Hunt",
-            "value": 83
+            "value": 1069
           },
           {
             "name": "Rashod Bateman",
-            "value": 147
+            "value": 615
           }
         ]
       },
@@ -80,34 +80,34 @@
       "teamName": "raaaaaidddderrrrrs",
       "teamContext": "Playoff contender - competitive",
       "powerScore": {
-        "powerScore": 34,
-        "powerRank": 12,
-        "lineupValueScore": 23.1,
-        "performanceScore": 59.6,
-        "positionalScore": 29.1,
-        "depthScore": 4.4,
+        "powerScore": 50.3,
+        "powerRank": 6,
+        "lineupValueScore": 45.2,
+        "performanceScore": 58.9,
+        "positionalScore": 46.6,
+        "depthScore": 20.8,
         "totalTeams": 16,
-        "totalRosterValue": 13895
+        "totalRosterValue": 19805
       },
       "tradeImpact": {
-        "valueGained": 230,
-        "valueLost": 1164,
-        "netValueChange": -934,
-        "estimatedPowerScoreChange": -0.8,
+        "valueGained": 1684,
+        "valueLost": 846,
+        "netValueChange": 838,
+        "estimatedPowerScoreChange": 1,
         "playersGained": [
           {
             "name": "Kareem Hunt",
-            "value": 83
+            "value": 1069
           },
           {
             "name": "Rashod Bateman",
-            "value": 147
+            "value": 615
           }
         ],
         "playersLost": [
           {
             "name": "Quentin Johnston",
-            "value": 1164
+            "value": 846
           }
         ]
       },
@@ -146,7 +146,7 @@
     }
   ],
   "draftPicks": [],
-  "persona": "Alan Shearer",
-  "analysis": "Right, let me tell you something about this trade - and I won't mince words here - this is absolutely baffling from raaaaaidddderrrrrs. At the end of the day, fantasy football comes down to one thing: points on the board. And what we're seeing here is a manager giving away Quentin Johnston, who's locked in as the Chargers' WR2 and actually producing (7.2 PPG historically), for two players who are nothing more than handcuffs. Kareem Hunt is 30 years old, sitting behind a healthy Nick Chubb, and Rashod Bateman is the third option in Baltimore's run-first offense. Ray Davis? He's James Cook's backup with limited touches. This is trading a starting asset for bench depth, and that's never the winning formula.\n\nLet's talk about jdmorris here - I'm calling him \"The Bargain Hunter\" because he's just pulled off an absolute heist. He's identified a manager willing to overvalue depth pieces and turned two replaceable assets into a genuine starting wide receiver. The trade value tells the whole story: he's getting back 1,164 in value while giving up just 230. That's a net gain of +934, which in plain English means he's robbed raaaaaidddderrrs blind. And here's my bold prediction: by midseason, this will look like one of the most lopsided trades in league history. Johnston will be delivering consistent WR2/WR3 production while Hunt and Bateman sit on benches collecting dust. Mark my words.\n\nNow, raaaaaidddderrrrrs - and I'm dubbing him \"The Depth Hoarder\" - has completely misread the assignment here. Both teams are sitting at 0-0 with power scores in the basement (34.5 and 34.0), which means they need impact starters, not more bench pieces. His power score is dropping by 0.8 points while jdmorris gains 0.8 - that's a 1.6 point swing between rival managers who are tied at 2-2 all-time. In a redraft league with 14 weeks until playoffs, you need reliable production NOW. Hunt might give you 5-8 points as a bye week fill-in. Bateman will frustrate you with 2-point duds followed by the occasional 12-point explosion. That's not how you build a championship roster. You need consistency, you need starters, you need players who are on the field every week.\n\nChampionship implications? For jdmorris, this move improves his title odds significantly - he's upgraded his starting lineup without sacrificing anything meaningful. For raaaaaidddderrrrrs, this is a step backward disguised as depth building. The NFL context confirms it: Johnston is entrenched as a starter, while Hunt is explicitly a backup and Bateman is boom-or-bust at best. When you're ranked 12th out of 16 teams, you cannot afford to trade away starting production for bench pieces. This is the kind of trade that looks \"balanced\" on paper because it's two-for-two, but in reality, it's absolutely one-sided. The Bargain Hunter has won this going away, and The Depth Hoarder will be kicking himself when Johnston posts another half-dozen touchdowns while his two acquisitions struggle to crack his starting lineup.",
-  "generatedAt": "2025-12-30T21:17:18.088Z"
+  "persona": "Gary Neville",
+  "analysis": "Look, this is one of those trades where you see the numbers and think, \"Right, that's fairly straightforward then\" – but when you dig into the context, you realize someone's made a proper mistake here. We're in Week 1 of the 2025 season, which means we're essentially trading on projections and preseason optimism rather than any real evidence. It's speculative trading at its purest, and that's when you've got to be particularly careful about overvaluing names versus roles. jdmorris is giving up 1,684 in trade value to receive just 846 – that's nearly a 50% haircut in value terms. The projections tell you everything you need to know: every single player in this deal is projected to produce *significantly* less than their historical averages, which should have set off alarm bells for both managers, but especially for the side hemorrhaging value.\n\nLet's talk about what jdmorris is actually doing here. They're getting Quentin Johnston, who averaged 7.2 points per game historically but is projected for just 0.9 going forward – that's a backup's workload dressed up in a starter's uniform from last season. Ray Davis is a classic handcuff play, averaging 3 points per game behind James Cook in Buffalo. What are they giving up? Kareem Hunt, who's in Kansas City's system now after producing 8.4 PPG historically, and Rashod Bateman in Baltimore's offense. Now, I'm not saying Hunt and Bateman are world-beaters – the projections show them both declining significantly as well – but this is a 30-year-old veteran running back with an actual role versus a backup and a boom-or-bust receiver whose production has cratered according to these projections. In redraft, you simply cannot afford to trade current production, even declining production, for speculative lottery tickets. This isn't dynasty where you're betting on Johnston's youth paying off in 2026 – this is about winning *this season*, and jdmorris has made their team demonstrably worse for the championship run.\n\nWhat's particularly concerning is that this fits a pattern for jdmorris, who's now made 8 trades all-time and has actually traded away more players (13) than they've acquired (12) – classic signs of a manager who tinkers too much, who sees potential over production. They're ranked 10th out of 16 with a power score of just 42.7, which tells you this is a team that needs to consolidate talent, not disperse it. Instead, they've taken a -1 power score hit here when they should be clawing their way up the standings. Meanwhile, raaaaaidddderrrrrs sits at 6th in the power rankings with a 50.3 score and has just absolutely robbed them blind – gaining that +1 power score boost by essentially swapping out depth pieces for functional starters. This is their third trade all-time, so they're not serial movers, but when they do pull the trigger, they're clearly making calculated decisions rather than emotional ones.\n\nThe winner here is crystal clear: raaaaaidddderrrrrs has taken jdmorris to the cleaners. They've nearly doubled their return in trade value terms, improved their power score, and they've done it by exploiting the exact kind of early-season uncertainty that trips up less disciplined managers. Hunt gives them an immediate RB option with a defined role, even if it's declining – that's worth its weight in gold in redraft. Bateman adds depth at receiver in an offense that, yes, is run-heavy, but at least he's on the field. What have they given up? A projected backup situation in Ray Davis and a receiver whose production is expected to collapse by over 6 points per game. This is textbook value extraction, and it's the sort of trade that can define a season. If you're jdmorris, you've got to be asking yourself: what was I thinking? Because on paper it might look like a wash to the casual observer, but context matters – this is where the trade swings decisively, and it's swung entirely in one direction.",
+  "generatedAt": "2025-12-31T00:26:54.674Z"
 }

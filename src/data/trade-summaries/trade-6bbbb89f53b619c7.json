@@ -12,38 +12,38 @@
       "teamName": "finthefiddle",
       "teamContext": "Strong contender - win-now mode",
       "powerScore": {
-        "powerScore": 92,
+        "powerScore": 88.9,
         "powerRank": 1,
         "lineupValueScore": 100,
-        "performanceScore": 80.4,
+        "performanceScore": 80.6,
         "positionalScore": 100,
-        "depthScore": 57.3,
+        "depthScore": 52,
         "totalTeams": 16,
-        "totalRosterValue": 60046
+        "totalRosterValue": 43826
       },
       "tradeImpact": {
-        "valueGained": 8373,
-        "valueLost": 6896,
-        "netValueChange": 1477,
-        "estimatedPowerScoreChange": 1.2,
+        "valueGained": 5059,
+        "valueLost": 5226,
+        "netValueChange": -167,
+        "estimatedPowerScoreChange": -0.2,
         "playersGained": [
           {
             "name": "Drake London",
-            "value": 7209
+            "value": 4213
           },
           {
             "name": "Quentin Johnston",
-            "value": 1164
+            "value": 846
           }
         ],
         "playersLost": [
           {
             "name": "Stefon Diggs",
-            "value": 635
+            "value": 2024
           },
           {
             "name": "Omarion Hampton",
-            "value": 6261
+            "value": 3202
           }
         ]
       },
@@ -91,38 +91,38 @@
       "teamName": "jdmorris",
       "teamContext": "Playoff contender - competitive",
       "powerScore": {
-        "powerScore": 34.5,
+        "powerScore": 42.7,
         "powerRank": 10,
-        "lineupValueScore": 27.2,
-        "performanceScore": 51.3,
-        "positionalScore": 32.6,
-        "depthScore": 11.9,
+        "lineupValueScore": 35.1,
+        "performanceScore": 50.6,
+        "positionalScore": 37.1,
+        "depthScore": 40.6,
         "totalTeams": 16,
-        "totalRosterValue": 16362
+        "totalRosterValue": 15369
       },
       "tradeImpact": {
-        "valueGained": 6896,
-        "valueLost": 8373,
-        "netValueChange": -1477,
-        "estimatedPowerScoreChange": -1.2,
+        "valueGained": 5226,
+        "valueLost": 5059,
+        "netValueChange": 167,
+        "estimatedPowerScoreChange": 0.2,
         "playersGained": [
           {
             "name": "Stefon Diggs",
-            "value": 635
+            "value": 2024
           },
           {
             "name": "Omarion Hampton",
-            "value": 6261
+            "value": 3202
           }
         ],
         "playersLost": [
           {
             "name": "Drake London",
-            "value": 7209
+            "value": 4213
           },
           {
             "name": "Quentin Johnston",
-            "value": 1164
+            "value": 846
           }
         ]
       },
@@ -168,7 +168,7 @@
     }
   ],
   "draftPicks": [],
-  "persona": "Gary Neville",
-  "analysis": "Look, I've seen some puzzling trades in my time, but this one? This one feels like two managers who've completely lost the plot just two weeks into the season. It reminds me of when Stefon Diggs forced his way out of Minnesota to Buffalo – everyone thought he was disgruntled, finished, past it – and then he immediately exploded for back-to-back seasons of elite production. But here's the thing: finthefiddle, who I'm calling \"The Premature Optimizer,\" is trading away Diggs *now* when he's in New England and genuinely declining. The parallel is there, but it's backwards, isn't it? They're selling the name after the production has already fallen off the cliff. And jdmorris – let's call him \"The Nostalgic Collector\" – is buying into veteran names like he's assembling a 2019 fantasy team rather than building for Week 15 in 2025.\n\nThe numbers tell you everything you need to know, and frankly, they're shocking. Every single player in this trade is projected for 0 points per game rest of season. Zero. Not a typo. Not a miscalculation. These are all players with role alerts screaming at you – reduced roles, declining production, temporary value that's already evaporated. The Premature Optimizer is sitting at 0-1 with the number one power score in the league at 92 out of 100, and they're making moves like their house is on fire. Meanwhile, The Nostalgic Collector is ranked 10th with a power score of just 34.5, desperately trying to find lightning in a bottle with aging receivers and a rookie running back whose projected production has completely dried up. On paper it's close – the trade values suggest finthefiddle is getting the better end by about 1,477 points – but context matters. This is where the trade swings: neither side is actually acquiring sustainable fantasy production.\n\nWhat really concerns me about this deal is the timing. Week 2? Week 2 of a fantasy season, and both managers are panicking like it's Week 12 and they're fighting for their playoff lives. The urgency level is marked as \"low,\" and it absolutely should be – you've got 13 weeks until the playoffs! Drake London is 24 years old, the clear WR1 in Atlanta with a new quarterback in Michael Penix Jr. who could unlock him, and jdmorris is shipping him out for two declining veterans in Diggs and Ridley who are in run-heavy offenses with limited target shares. Omarion Hampton is a rookie with just two games under his belt, and they're already bailing on him. This is where leadership comes in – great fantasy managers trust their process, stick with their draft philosophy, and don't get rattled by one bad week. Both of these managers have lost their nerve far too early.\n\nChampionship implications? I can't see how this helps either team, if I'm being brutally honest. The Premature Optimizer gains 1.2 power score points, but they're acquiring players with zero projected production going forward. That's not a path to a title – that's rearranging deck chairs. The Nostalgic Collector loses 1.2 points and is trading away youth and opportunity for immediate gratification that isn't actually immediate because these veterans aren't producing either. When you're already ranked 10th with a weak power score, you need upside swings, not lateral moves into mediocrity. The real winner here? The rest of the league, because both these teams just made themselves weaker at a time when patience would have served them far better. Sometimes in football and in fantasy, the best move is no move at all. This wasn't that time for either manager, and they'll both regret it come December.",
-  "generatedAt": "2025-12-30T21:25:09.137Z"
+  "persona": "Roy Keane",
+  "analysis": "Look at this absolute mess. Week 2, barely a ball's been kicked, and we've got \"The Panic Button\" finthefiddle trading away three players for two, thinking Drake London is going to save his season. Mate, you're 0-1 with the best power score in the league at 88.9. What are you doing? You've got 13 weeks until the playoffs and you're tearing apart your roster because of one bad week. This is amateur hour.\n\nAnd then there's \"The Bargain Hunter\" jdmorris, sitting there at rank 10 with a 42.7 power score, somehow convincing himself that two 30-something receivers on awful offenses and a rookie running back are worth more than Drake London. The lad's getting a prime-age WR1 on Atlanta and Quentin Johnston, who's actually got some upside in that Chargers offense. Instead, he's taking Stefon Diggs—who's projecting 1.5 points per game the rest of season—Calvin Ridley on the Titans disaster show, and Omarion Hampton, who's shown nothing to suggest he's anything more than a third-down back. The trade value tells you everything: jdmorris is getting 5,226 in value while giving up 5,059, but those numbers are lying to you. Those projections are screaming that Diggs and Ridley are cooked.\n\nHere's the thing that drives me mad: this reminds me of the Amari Cooper trade when Dallas gave up a first-rounder for him and everyone said they'd lost their minds. Cooper came in and was brilliant because he had talent and landed in a better situation. London's in that same spot—24 years old, locked-in WR1, decent offense around him. Meanwhile, finthefiddle is shipping him out for three players who can't get you more than 2 points per game combined based on their projections. It's madness. You don't trade away youth and opportunity for name recognition and past glory. That's how you finish tenth in a 16-team league.\n\nMy prediction? In three months, when playoffs roll around and Drake London's putting up consistent WR2 numbers while Diggs and Ridley are riding pine, finthefiddle will be wondering why his depth chart's full of ghosts. The Panic Button loses this trade badly—takes a -0.2 power score hit when he's already top of the league, all for what? Roster spots? The Bargain Hunter wins, but only because he's getting a proper asset in London. Neither manager's covered themselves in glory here, but at least jdmorris can say he fleeced the league leader. That's the only thing worth celebrating about this shambles.",
+  "generatedAt": "2025-12-31T00:34:24.509Z"
 }
