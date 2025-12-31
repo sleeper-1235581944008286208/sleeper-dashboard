@@ -1,0 +1,107 @@
+{
+  "tradeId": "601a31288b192556",
+  "week": 9,
+  "season": "2025",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "mjgrana",
+    "Langland"
+  ],
+  "sides": [
+    {
+      "teamName": "Langland",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 18.1,
+        "powerRank": 12,
+        "lineupValueScore": 27.3,
+        "performanceScore": 6.4,
+        "positionalScore": 13.9,
+        "depthScore": 7.8,
+        "totalTeams": 12,
+        "totalRosterValue": 13107
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 380,
+        "netValueChange": -380,
+        "estimatedPowerScoreChange": -0.4,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Rashid Shaheed",
+            "value": 380
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "2027 Round 3 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Rashid Shaheed",
+          "position": "WR",
+          "team": "SEA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ]
+    },
+    {
+      "teamName": "mjgrana",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 87.4,
+        "powerRank": 2,
+        "lineupValueScore": 94.6,
+        "performanceScore": 78.5,
+        "positionalScore": 77.1,
+        "depthScore": 100,
+        "totalTeams": 12,
+        "totalRosterValue": 45417
+      },
+      "tradeImpact": {
+        "valueGained": 380,
+        "valueLost": 0,
+        "netValueChange": 380,
+        "estimatedPowerScoreChange": 0.4,
+        "playersGained": [
+          {
+            "name": "Rashid Shaheed",
+            "value": 380
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Rashid Shaheed",
+          "position": "WR",
+          "team": "SEA",
+          "age": 27,
+          "careerStage": "Prime Years"
+        }
+      ],
+      "gives": [
+        {
+          "name": "2027 Round 3 pick",
+          "position": "PICK"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2027",
+      "round": 3,
+      "from": "mjgrana",
+      "to": "Langland"
+    }
+  ],
+  "persona": "Mel Kiper Jr.",
+  "analysis": "Look, let me tell you something about this trade right now - this is what we call a CLASSIC white flag situation, and \"Langland the Liquidator\" is waving it with both hands at 0-8! Meanwhile, \"MJ the Opportunist\" is doing EXACTLY what contenders should be doing at 5-3 - buying low on prime-aged assets while the season still matters!\n\nNow, Rashid Shaheed - I've been HIGH on this guy since his undrafted journey out of Weber State. We're talking about a 27-year-old receiver who's RIGHT IN THE MIDDLE of his prime production window! The tape doesn't lie here, folks. This is a legitimate NFL speed threat who's averaging 6.2 fantasy points per game over 48 contests. Is he a WR1? No. But here's what he IS - he's a football player with a defined role who can help you NOW. And MJ the Opportunist is sitting at 5-3, ranked #2 in the league with a power score of 87.4, and needs to be aggressive! This isn't rocket science - you're a playoff contender, you add talent that can contribute THIS SEASON. The Opportunist has made 10 career trades, consistently acquiring more players than he's given up, and this fits his M.O. perfectly. He's not rebuilding, he's RELOADING!\n\nBut let me get to Langland the Liquidator for a second, because THIS is where I'm getting fired up! You're 0-8! ZERO AND EIGHT! Your power score is 18.1 out of 100 - DEAD LAST in a 12-team league! And what are you getting back? A 2027 third-round pick? A THIRD ROUNDER TWO YEARS FROM NOW?! Look, I understand the rebuild mentality - you're 21 trades deep in your career, you've moved 25 players out versus 22 acquired, you're clearly in asset accumulation mode. But here's my problem with this deal: Shaheed has a dynasty value of 380, and you're selling him for essentially PENNIES on the dollar! A 2027 third-rounder is a dart throw at best - we're talking about a pick that statistically has maybe a 15-20% chance of yielding a startable fantasy asset. You're selling a KNOWN COMMODITY in his prime for lottery tickets!\n\nThis is a SLAM DUNK victory for MJ the Opportunist, and it's not even close! He gets a +0.4 power score bump while giving up essentially NOTHING that impacts his championship window. Net value of +380 on the trade calculator, and more importantly, he's adding a piece that can help him RIGHT NOW with five weeks until the playoffs. The Liquidator? He's collecting future assets, but at 0-8 with a historically bad power score, he needed to extract MORE value from one of his few tradeable pieces. This is the kind of sell-low move that keeps rebuilds going for YEARS instead of seasons. Winner: mjgrana, and frankly, it's not even a debate!",
+  "generatedAt": "2025-12-29T08:13:28.608Z"
+}

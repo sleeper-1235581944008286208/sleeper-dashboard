@@ -1,0 +1,107 @@
+{
+  "tradeId": "58e524860f30d95b",
+  "week": 8,
+  "season": "2025",
+  "leagueId": "1182940167115010048",
+  "participants": [
+    "Shogunation",
+    "Langland"
+  ],
+  "sides": [
+    {
+      "teamName": "Shogunation",
+      "teamContext": "Strong contender - win-now mode",
+      "powerScore": {
+        "powerScore": 76.3,
+        "powerRank": 4,
+        "lineupValueScore": 79,
+        "performanceScore": 77.9,
+        "positionalScore": 62.7,
+        "depthScore": 80.9,
+        "totalTeams": 12,
+        "totalRosterValue": 37890
+      },
+      "tradeImpact": {
+        "valueGained": 444,
+        "valueLost": 0,
+        "netValueChange": 444,
+        "estimatedPowerScoreChange": 0.5,
+        "playersGained": [
+          {
+            "name": "Stefon Diggs",
+            "value": 444
+          }
+        ],
+        "playersLost": []
+      },
+      "receives": [
+        {
+          "name": "Stefon Diggs",
+          "position": "WR",
+          "team": "NE",
+          "age": 32,
+          "careerStage": "Declining"
+        }
+      ],
+      "gives": [
+        {
+          "name": "2027 Round 3 pick",
+          "position": "PICK"
+        }
+      ]
+    },
+    {
+      "teamName": "Langland",
+      "teamContext": "Rebuilding - future-focused",
+      "powerScore": {
+        "powerScore": 18.1,
+        "powerRank": 12,
+        "lineupValueScore": 27.3,
+        "performanceScore": 6.4,
+        "positionalScore": 13.9,
+        "depthScore": 7.8,
+        "totalTeams": 12,
+        "totalRosterValue": 13107
+      },
+      "tradeImpact": {
+        "valueGained": 0,
+        "valueLost": 444,
+        "netValueChange": -444,
+        "estimatedPowerScoreChange": -0.5,
+        "playersGained": [],
+        "playersLost": [
+          {
+            "name": "Stefon Diggs",
+            "value": 444
+          }
+        ]
+      },
+      "receives": [
+        {
+          "name": "2027 Round 3 pick",
+          "position": "PICK"
+        }
+      ],
+      "gives": [
+        {
+          "name": "Stefon Diggs",
+          "position": "WR",
+          "team": "NE",
+          "age": 32,
+          "careerStage": "Declining"
+        }
+      ]
+    }
+  ],
+  "draftPicks": [
+    {
+      "season": "2027",
+      "round": 3,
+      "from": "Shogunation",
+      "to": "Langland"
+    }
+  ],
+  "persona": "Todd McShay",
+  "analysis": "Look, when you're sitting at 0-7 in Week 8, you're not playing for this year anymore—you're playing for 2027 and beyond. And that's exactly what Langland is doing here, folks. This is classic asset management from a team that's at the very bottom of the league—dead last in power score at 18.1—and they're making the right move for their situation. Stefon Diggs is 32 years old, he's in New England of all places, and his dynasty value is in free fall. The \"years to decline\" metric literally shows ZERO—meaning he's already there. For a team that's eliminated from playoff contention, holding onto Diggs is like watching your stock portfolio crater while refusing to hit sell. You take the 2027 third-rounder and you move on. Is it a king's ransom? Absolutely not. But it's value where there was about to be none, and for a rebuilding squad, that's a win.\n\nNow let's talk about Shogunation, because THIS is what contending teams should be doing. They're 5-2, sitting at a 76.3 power score—fourth in the league—and they just picked up a veteran receiver for basically nothing. A 2027 third-round pick? That's two years away and it's a dart throw at best. Meanwhile, they get immediate help at wide receiver from a guy who's still averaging 10.8 fantasy points per game over his career. Both these managers have active trading histories—Shogunation has made 17 deals all-time, Langland 20—so they know how to work the phones. This fits their patterns perfectly: the contender consolidating talent, the cellar-dweller accumulating picks. Shogunation's playoff push just got a veteran safety valve, and they're only giving up late-round capital that they probably wouldn't have hit on anyway.\n\nHere's the risk-reward breakdown: Shogunation is betting that Diggs has 8-10 weeks of productive football left in him this season. That's it. They don't need him for 2026, they certainly don't need him for 2027. They need him NOW, during their playoff run. The risk is minimal—if Diggs falls off a cliff, you cut him in the offseason and you're out a third-rounder. The reward? He could be the WR2/WR3 that puts you over the top in the fantasy playoffs. For Langland, the risk is that they gave up a guy who suddenly catches fire down the stretch, but who cares? They're 0-7! They've scored just 375 points—less than HALF of what Shogunation has put up. They need to be stockpiling picks and youth, not hanging onto aging veterans who won't be relevant by the time they're competitive again.\n\nThe timing here is absolutely perfect. Week 8 is when you know who you are—contenders have separated from pretenders, and these two teams are on opposite ends of the spectrum. Shogunation gets their guy with six weeks to integrate him before the playoffs. Langland gets to start the lengthy rebuild process with draft capital that'll turn over in two years when they might actually be ready to compete again. This is textbook dynasty roster construction from both sides. Not every trade needs to be a blockbuster—sometimes the best value is finding the exact right partner at the exact right time. This one checks all the boxes.",
+  "generatedAt": "2025-12-29T08:12:41.592Z"
+}
