@@ -827,17 +827,28 @@ function getTeamPowerScore(rosterId, powerRankings) {
 /**
  * Get player projection context for trade analysis
  * Compares historical PPG to projected PPG to identify role changes
+ * Returns null if projection data is not available
  */
 function getPlayerProjectionContext(playerId, tradeWeek, performanceMetrics, powerRankings) {
   const playerValue = powerRankings?.playerValues?.[playerId];
-  const rosProjection = playerValue?.rosProjection || 0;
   const remainingWeeks = Math.max(1, 18 - (tradeWeek || 1));
-  const projectedPPG = rosProjection / remainingWeeks;
 
+  // Check if we have actual projection data (rosProjection must exist and be > 0)
+  // If rosProjection is undefined or 0, we don't have valid projection data
+  const hasProjectionData = playerValue?.rosProjection !== undefined && playerValue.rosProjection > 0;
+
+  if (!hasProjectionData) {
+    // No projection data available - return null to indicate missing data
+    // This prevents false "projected at 0 PPG" alerts
+    return null;
+  }
+
+  const rosProjection = playerValue.rosProjection;
+  const projectedPPG = rosProjection / remainingWeeks;
   const historicalPPG = performanceMetrics?.preTradeAvg || 0;
   const ppgDelta = historicalPPG - projectedPPG;
 
-  // Determine role alert based on delta
+  // Determine role alert based on delta - only when we have valid projection data
   let roleAlert = null;
   if (historicalPPG > 15 && projectedPPG < 5) {
     roleAlert = 'LIKELY BACKUP/FILL-IN - Production expected to drop significantly';
@@ -854,7 +865,8 @@ function getPlayerProjectionContext(playerId, tradeWeek, performanceMetrics, pow
     projectedPPG: Math.round(projectedPPG * 10) / 10,
     ppgDelta: Math.round(ppgDelta * 10) / 10,
     remainingWeeks,
-    roleAlert
+    roleAlert,
+    hasProjectionData: true
   };
 }
 
@@ -1372,20 +1384,16 @@ IMPORTANT GUIDELINES:
 - Use ${persona.name}'s actual catchphrases and speaking patterns
 - Be entertaining, insightful, and occasionally controversial
 
-CRITICAL - PROJECTED VS HISTORICAL PRODUCTION:
-- Pay close attention to the PPG Delta (Historical vs Projected) for each player
-- When a player's PROJECTED PPG is significantly LOWER than HISTORICAL PPG, this indicates:
-  * The player may be a BACKUP filling in for an injured starter (e.g., backup QB starting while starter recovers)
-  * An injury that will limit future production
-  * A role change or depth chart demotion
-  * Their recent production is TEMPORARY and unsustainable
-- When you see a ROLE ALERT (e.g., "LIKELY BACKUP/FILL-IN"), HEAVILY weight this in your analysis
-- For REDRAFT leagues: PROJECTED production matters more than historical - a backup QB putting up 24 PPG while filling in is worth MUCH LESS than a starter averaging 18 PPG who will continue starting
-- Do NOT praise high historical PPG if projections show a dramatic drop - explain WHY the production is temporary
-- Examples of temporary production situations:
-  * Joe Flacco filling in for injured Joe Burrow
-  * A backup RB getting volume due to starter injury
-  * A WR with inflated stats due to other receivers being injured
+CRITICAL - EVALUATING PLAYER VALUE:
+- Use TRADE VALUE as the primary indicator of player worth - higher value = more valuable asset
+- If PROJECTION DATA is provided (Projected ROS PPG, PPG Delta, Role Alerts), factor it into your analysis:
+  * When PROJECTED PPG is significantly LOWER than HISTORICAL PPG, the player may be a backup or have declining role
+  * ROLE ALERTS like "LIKELY BACKUP/FILL-IN" indicate temporary production - weight heavily
+  * Do NOT praise high historical PPG if projections show it will drop
+- If NO PROJECTION DATA is shown for a player, use their TRADE VALUE and HISTORICAL PPG as indicators
+- For REDRAFT leagues: current production sustainability matters - use trade values to gauge market confidence
+- Compare trade values exchanged (e.g., receiving 3289 value vs giving up 409 = clear winner)
+- Factor in team context and timing (playoff push, rebuilding, etc.)
 
 LEAGUE TYPE: ${LEAGUE_TYPE.toUpperCase()}
 ${LEAGUE_TYPE === 'dynasty' ? `
